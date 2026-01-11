@@ -26,7 +26,9 @@ The kit includes:
 * [PSU 90W](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492437517/Common+Bedrock+accessories#psu-90w)
 * [Stand for Bedrock](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#stand)
 
-> \[!NOTE] **Ordering code**: SRBD-EVMIN
+{% hint style="info" %}
+**Ordering code**: SRBD-EVMIN
+{% endhint %}
 
 ## Power
 
