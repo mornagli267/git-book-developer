@@ -1,132 +1,104 @@
 # SolidPC Q4
 
-<a id="revision-and-notes"></a>
-
 ## Revision and Notes
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 19 Apr 2022 |     | 1.0 | Initial release |
-| Table of Contents | - [Revision and Notes](#revision-and-notes)<br>- [Product Overview](#product-overview)<br>  - [Main features](#main-features)<br>  - [Specifications](#specifications)<br>  - [What’s in the box?](#whats-in-the-box)<br>  - [Cable setup and prerequisites](#cable-setup-and-prerequisites)<br>  - [HW interfaces](#hw-interfaces)<br>- [Software Install](#software-install)<br>  - [List of supported OS](#list-of-supported-os)<br>  - [How-to flash OS](#how-to-flash-os)<br>  - [Linux terminal](#linux-terminal)<br>- [Documentation](#documentation)<br>- [Related Articles](#related-articles) |     |     |
-
-<a id="product-overview"></a>
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **Revision** | **Notes**       |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 19 Apr 2022       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 1.0          | Initial release |
+| Table of Contents | <p>- <a href="solidpc-q4.md#revision-and-notes">Revision and Notes</a><br>- <a href="solidpc-q4.md#product-overview">Product Overview</a><br>- <a href="solidpc-q4.md#main-features">Main features</a><br>- <a href="solidpc-q4.md#specifications">Specifications</a><br>- <a href="solidpc-q4.md#whats-in-the-box">What’s in the box?</a><br>- <a href="solidpc-q4.md#cable-setup-and-prerequisites">Cable setup and prerequisites</a><br>- <a href="solidpc-q4.md#hw-interfaces">HW interfaces</a><br>- <a href="solidpc-q4.md#software-install">Software Install</a><br>- <a href="solidpc-q4.md#list-of-supported-os">List of supported OS</a><br>- <a href="solidpc-q4.md#how-to-flash-os">How-to flash OS</a><br>- <a href="solidpc-q4.md#linux-terminal">Linux terminal</a><br>- <a href="solidpc-q4.md#documentation">Documentation</a><br>- <a href="solidpc-q4.md#related-articles">Related Articles</a></p> |              |                 |
 
 ## Product Overview
 
-<a id="main-features"></a>
-
 ### Main features
 
-- SoC: Intel Atom E8000 Quad Core
-- Memory: Up to 4GB
-- Storage: 8GB eMMC
-- Temperature: Commercial (0C to 70C)
-- OS: Linux, Android, Windows
-
-<a id="specifications"></a>
+* SoC: Intel Atom E8000 Quad Core
+* Memory: Up to 4GB
+* Storage: 8GB eMMC
+* Temperature: Commercial (0C to 70C)
+* OS: Linux, Android, Windows
 
 ### Specifications
 
-|     |     |
-| --- | --- |
-| **SOM Model** | **Quad Core Intel Atom E8000** |
-| Memory & Storage | Up to 4GB DDR3 |
-|     | uSD UHS-1 Support |
-|     | 8GB eMMC\* |
-|     | M.2 (2242) SSD Connector |
-| Connectivity | Displayport |
-|     | HDMI 1.4b (up to 4k30fps) |
-|     | 2 x RJ45 with PoE option |
-|     | 3 x USB 3.0 Host |
-|     | M.2 2230 Connector for WiFi/BT |
-|     | Mic-In |
-|     | Stereo Out / Toslink |
-|     | 2 x UART Headers |
-| I/O & Misc. | Power on Button |
-|     | Reset Button |
-|     | Indication LEDs |
-| OS Support | Windows |
-|     | Linux |
-|     | Android |
-| Dimensions | 100mm x 80mm |
-| Power | DC input 7V-21V |
-|     | Battery for RTC |
-| Environment | Optional metal enclosure |
-
-<a id="whats-in-the-box"></a>
+|                  |                                |
+| ---------------- | ------------------------------ |
+| **SOM Model**    | **Quad Core Intel Atom E8000** |
+| Memory & Storage | Up to 4GB DDR3                 |
+|                  | uSD UHS-1 Support              |
+|                  | 8GB eMMC\*                     |
+|                  | M.2 (2242) SSD Connector       |
+| Connectivity     | Displayport                    |
+|                  | HDMI 1.4b (up to 4k30fps)      |
+|                  | 2 x RJ45 with PoE option       |
+|                  | 3 x USB 3.0 Host               |
+|                  | M.2 2230 Connector for WiFi/BT |
+|                  | Mic-In                         |
+|                  | Stereo Out / Toslink           |
+|                  | 2 x UART Headers               |
+| I/O & Misc.      | Power on Button                |
+|                  | Reset Button                   |
+|                  | Indication LEDs                |
+| OS Support       | Windows                        |
+|                  | Linux                          |
+|                  | Android                        |
+| Dimensions       | 100mm x 80mm                   |
+| Power            | DC input 7V-21V                |
+|                  | Battery for RTC                |
+| Environment      | Optional metal enclosure       |
 
 ### What’s in the box?
 
-- SolidPC Q4
-- 12V 2.5A 220/110 Power adapter EU/US version (Optional)
-- 16GB Micro SD card (Optional)
-- Heatsink / Enclosure (Depending on the order)
-
-<a id="cable-setup-and-prerequisites"></a>
+* SolidPC Q4
+* 12V 2.5A 220/110 Power adapter EU/US version (Optional)
+* 16GB Micro SD card (Optional)
+* Heatsink / Enclosure (Depending on the order)
 
 ### Cable setup and prerequisites
 
-- Linux or Windows PC
-- SolidPC Q4
-- 12V Power adapter
-- IP router or IP switch
-
-<a id="hw-interfaces"></a>
+* Linux or Windows PC
+* SolidPC Q4
+* 12V Power adapter
+* IP router or IP switch
 
 ### HW interfaces
 
 Please see below the features overview of the connector side of the SolidPC Q4.
 
-![](./attachments/image-20220419-132740.png)
+![](.gitbook/assets/image-20220419-132740.png)
 
 Print side connector overview of the SolidPC Q4.
 
-![](./attachments/image-20220419-132757.png)
-
-<a id="software-install"></a>
+![](.gitbook/assets/image-20220419-132757.png)
 
 ## Software Install
-
-<a id="list-of-supported-os"></a>
 
 ### List of supported OS
 
 Please see our [software](https://developer.solid-run.com/knowledge-base/software-overview/) page to install the OS.
 
-<a id="how-to-flash-os"></a>
-
 ### How-to flash OS
 
 Please see how to [flash the OS](https://developer.solid-run.com/knowledge-base/flashing-an-sd-card/).
 
-How to install & Flash [BIOS](../intel-braswell-ib8000-ib3710/ib8000-bios-flash-via-dediprog.md).
-
-<a id="linux-terminal"></a>
+How to install & Flash [BIOS](intel-braswell-ib8000-ib3710/ib8000-bios-flash-via-dediprog.md).
 
 ### Linux terminal
 
-Please see our guide how to get to [Linux terminal via serial connection.](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/287801409/Serial+Connection)
-
-<a id="documentation"></a>
+Please see our guide how to get to [Linux terminal via serial connection.](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/287801409/Serial+Connection)
 
 ## Documentation
 
-      
+|                                                                                                                                                                                                                                                                                                                                                                     | File                                                                                                                           | Modified                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-f00bf8d3-fc9a-4bc6-94d5-c1c13fae161b">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3.pdf">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>      | PDF File [solidpc-q4-schematics-rev-1.3.pdf](wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3.pdf)            | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-454d0661-d6e0-4e71-bad2-646b4f182b67">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-gerbers-rev1.2.zip">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>          | ZIP Archive [solidpc-q4-gerbers-rev1.2.zip](wiki/download/attachments/349634561/solidpc-q4-gerbers-rev1.2.zip)                 | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-9de209bb-7902-4da7-9278-cdde07dffcca">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-rev1.2-component-side-silk.pdf">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [solidpc-rev1.2-component-side-silk.pdf](wiki/download/attachments/349634561/solidpc-rev1.2-component-side-silk.pdf)  | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-b54b938d-c79d-4a8a-9a57-4e94592ccd06">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/sr-ibx-solidpc-full-assy-v1.zip">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>        | ZIP Archive [sr-ibx-solidpc-full-assy-v1.zip](wiki/download/attachments/349634561/sr-ibx-solidpc-full-assy-v1.zip)             | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-1bd65aba-34cb-42cd-bfc8-34b6a9f1494b">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-bom.xlsx">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>                    | Microsoft Excel Spreadsheet [solidpc-q4-bom.xlsx](wiki/download/attachments/349634561/solidpc-q4-bom.xlsx)                     | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-628e4104-2135-487d-a08a-7b6993e12ffb">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-enclosure.zip">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>               | ZIP Archive [solidpc-q4-enclosure.zip](wiki/download/attachments/349634561/solidpc-q4-enclosure.zip)                           | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-91b3903b-1151-4c3d-989b-3f7d9209c0ff">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-heatsink.zip">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>                | ZIP Archive [solidpc-q4-heatsink.zip](wiki/download/attachments/349634561/solidpc-q4-heatsink.zip)                             | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="solidpc-q4.md#section-d093346e-307c-4e5c-bdf3-db3f7b60284c">Edit Labels</a><br><br>[Preview] <a href="wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3-dsn.zip">View</a> <a href="wiki/pages/editattachment.action">Properties</a> <a href="wiki/pages/confirmattachmentremoval.action">Delete</a></p>  | ZIP Archive [solidpc-q4-schematics-rev-1.3-dsn.zip](wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3-dsn.zip) | Apr 26, 2022 by [SolidRun](wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
 
-|     | File | Modified |
-| --- | --- | --- |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-f00bf8d3-fc9a-4bc6-94d5-c1c13fae161b)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-schematics-rev-1.3.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-schematics-rev-1.3.pdf) | PDF File [solidpc-q4-schematics-rev-1.3.pdf](/wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3.pdf?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-454d0661-d6e0-4e71-bad2-646b4f182b67)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-gerbers-rev1.2.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-gerbers-rev1.2.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-gerbers-rev1.2.zip) | ZIP Archive [solidpc-q4-gerbers-rev1.2.zip](/wiki/download/attachments/349634561/solidpc-q4-gerbers-rev1.2.zip?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-9de209bb-7902-4da7-9278-cdde07dffcca)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-rev1.2-component-side-silk.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-rev1.2-component-side-silk.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-rev1.2-component-side-silk.pdf) | PDF File [solidpc-rev1.2-component-side-silk.pdf](/wiki/download/attachments/349634561/solidpc-rev1.2-component-side-silk.pdf?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-b54b938d-c79d-4a8a-9a57-4e94592ccd06)<br><br>[Preview] [View](/wiki/download/attachments/349634561/sr-ibx-solidpc-full-assy-v1.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=sr-ibx-solidpc-full-assy-v1.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=sr-ibx-solidpc-full-assy-v1.zip) | ZIP Archive [sr-ibx-solidpc-full-assy-v1.zip](/wiki/download/attachments/349634561/sr-ibx-solidpc-full-assy-v1.zip?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-1bd65aba-34cb-42cd-bfc8-34b6a9f1494b)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-bom.xlsx?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-bom.xlsx&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-bom.xlsx) | Microsoft Excel Spreadsheet [solidpc-q4-bom.xlsx](/wiki/download/attachments/349634561/solidpc-q4-bom.xlsx?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-628e4104-2135-487d-a08a-7b6993e12ffb)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-enclosure.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-enclosure.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-enclosure.zip) | ZIP Archive [solidpc-q4-enclosure.zip](/wiki/download/attachments/349634561/solidpc-q4-enclosure.zip?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-91b3903b-1151-4c3d-989b-3f7d9209c0ff)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-heatsink.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-heatsink.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-heatsink.zip) | ZIP Archive [solidpc-q4-heatsink.zip](/wiki/download/attachments/349634561/solidpc-q4-heatsink.zip?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-d093346e-307c-4e5c-bdf3-db3f7b60284c)<br><br>[Preview] [View](/wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3-dsn.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=349634561&fileName=solidpc-q4-schematics-rev-1.3-dsn.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=349634561&fileName=solidpc-q4-schematics-rev-1.3-dsn.zip) | ZIP Archive [solidpc-q4-schematics-rev-1.3-dsn.zip](/wiki/download/attachments/349634561/solidpc-q4-schematics-rev-1.3-dsn.zip?api=v2) | Apr 26, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-
-[Download All](/wiki/download/all_attachments?pageId=349634561)
-
-<a id="related-articles"></a>
+[Download All](wiki/download/all_attachments)
 
 ## Related Articles
 
