@@ -27,7 +27,7 @@
 
 <a id="see-r7000-basic-full-size-dp-erratumhttps-solidrunatlassiannet-wiki-spaces-developer-pages-923271175-bedrockr8000r7000erratafull-size-display-port-does-not-work-in-bedrock-r7000-basic-resolved"></a>
 
-### See [R7000 Basic Full-size DP Erratum](https://solidrun.atlassian.net/wiki/spaces/developer/pages/923271175/Bedrock+R8000+R7000+Errata#full-size-display-port-does-not-work-in-bedrock-r7000-basic-resolved)
+### See [R7000 Basic Full-size DP Erratum](bedrock-r8000-technical-documentation/bedrock-r8000-r7000-errata.md#full-size-display-port-does-not-work-in-bedrock-r7000-basic-resolved)
 
 <a id="system-reboots-under-certain-conditions-while-hdmi-is-connected"></a>
 

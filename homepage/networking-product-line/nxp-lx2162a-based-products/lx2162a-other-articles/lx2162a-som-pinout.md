@@ -1,6 +1,6 @@
 # LX2162A SOM pinout
 
-Following is a pinout for the [LX2162A SOM](https://www.solid-run.com/embedded-networking/nxp-lx2160a-family/lx2162a-som/), alternatively you can [download](https://solidrun.atlassian.net/wiki/spaces/developer/pages/333578241/LX2162A+SOM+pinout#attachments) this as Excel version.
+Following is a pinout for the [LX2162A SOM](https://www.solid-run.com/embedded-networking/nxp-lx2160a-family/lx2162a-som/), alternatively you can [download](lx2162a-som-pinout.md#attachments) this as Excel version.
 
 ## J3 Header
 

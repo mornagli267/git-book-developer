@@ -9,7 +9,7 @@
 
 For details on[Introduction to SolidSense Out-of-the-Box (OOB) software image](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264667139)
 
-Any upgrades from a release higher then 0.91 is done via over the network process (OTA) and will not require any physical intervention on the gateway. See the planned roadmap below for the new features.This can also be done via [Using Mender software management | Upgrading-your-image-using-Mender](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263585806/Using+Mender+software+management#upgrading-your-image-using-mender) .
+Any upgrades from a release higher then 0.91 is done via over the network process (OTA) and will not require any physical intervention on the gateway. See the planned roadmap below for the new features.This can also be done via [Using Mender software management | Upgrading-your-image-using-Mender](using-mender-software-management.md#upgrading-your-image-using-mender) .
 
 **The upgrade is available for all SolidSense versions N6 Indoor, N6 Outdoor, N6 Industrial and the upcoming N8 Compact including Quad core.**
 

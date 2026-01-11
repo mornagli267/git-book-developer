@@ -8,14 +8,14 @@ This document describes Ubuntu installation process on Bedrock V3000.
 
 ## **Table of Contents**
 
-- [Test Setup](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#setup)
-- [Installation Process](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#installation)
-  - [Creating a Bootable USB Drive](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#bootable)
-  - [Connecting to Serial Console](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#serial)
-  - [BIOS Boot select](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#bios)
-  - [Configuring Grub](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#grub)
-  - [Live USB Settings](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#live)
-  - [Enable ttyS4 Service](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/450232321/Installing+Ubuntu+server+using+console#ttys4)
+- [Test Setup](installing-ubuntu-server-using-console.md#setup)
+- [Installation Process](installing-ubuntu-server-using-console.md#installation)
+  - [Creating a Bootable USB Drive](installing-ubuntu-server-using-console.md#bootable)
+  - [Connecting to Serial Console](installing-ubuntu-server-using-console.md#serial)
+  - [BIOS Boot select](installing-ubuntu-server-using-console.md#bios)
+  - [Configuring Grub](installing-ubuntu-server-using-console.md#grub)
+  - [Live USB Settings](installing-ubuntu-server-using-console.md#live)
+  - [Enable ttyS4 Service](installing-ubuntu-server-using-console.md#ttys4)
 
 <a id="test-setup"></a>
 

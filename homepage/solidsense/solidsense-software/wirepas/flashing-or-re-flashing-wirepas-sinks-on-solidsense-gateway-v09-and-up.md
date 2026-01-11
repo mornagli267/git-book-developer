@@ -66,7 +66,7 @@ Programming flash of type <wirepas> with file <wp_fw.hex>.
 wrote 121312 bytes from file /tmp/wp_fw.hex in 21.538822s (5.500 KiB/s)
 ```
 
-After flashing the simplest solution to enable Wirepas is to use the [Configuring and testing the Wirepas gateway software | Prerequisite-and-installation](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241/Configuring+and+testing+the+Wirepas+gateway+software#prerequisite-and-installation) .
+After flashing the simplest solution to enable Wirepas is to use the [Configuring and testing the Wirepas gateway software | Prerequisite-and-installation](configuring-and-testing-the-wirepas-gateway-software.md#prerequisite-and-installation) .
 
 #### Flashing the Wirepas sink for upgrade
 
@@ -97,6 +97,6 @@ sudo systemctl status wirepasSink1
 sudo systemctl status wirepasSink2
 ```
 
-After that operations it is necessary to re-configure the sink with the right values and re-start the transport (data) service. This needs to be done via the web interface: [Configuring and testing the Wirepas gateway software | Configuring-the-sink-service-with-Kura](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241/Configuring+and+testing+the+Wirepas+gateway+software#configuring-the-sink-service-with-kura) .
+After that operations it is necessary to re-configure the sink with the right values and re-start the transport (data) service. This needs to be done via the web interface: [Configuring and testing the Wirepas gateway software | Configuring-the-sink-service-with-Kura](configuring-and-testing-the-wirepas-gateway-software.md#configuring-the-sink-service-with-kura) .
 
 Once the sink(s) have been configured, then the transport service can be restarted either via the web interface, Or directly via  the systemctl command.

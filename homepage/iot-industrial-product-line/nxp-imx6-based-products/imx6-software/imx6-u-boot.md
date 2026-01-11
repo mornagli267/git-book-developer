@@ -288,7 +288,7 @@ Done!The Hard Way:
 
 If Linux is already running on the device, the procedure is identical to microSD. In this case the previous section can be used, where sdX is replaced with mmcblk1.
 
-However it is more likely that neither Linux nor even U-Boot are available at this point. Refer to section [i.MX6 U-Boot](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/287179374/i.MX6+U-Boot)  how to load u-boot to RAM.
+However it is more likely that neither Linux nor even U-Boot are available at this point. Refer to section [i.MX6 U-Boot](imx6-u-boot.md)  how to load u-boot to RAM.
 
 Now that at least U-Boot is running on the target system, SPL and u-boot.img can be loaded from removable media or network, and then written to the eMMC. Below are the steps for loading binaries from a USB drive and writing them to eMMC:
 

@@ -36,7 +36,7 @@ Internal port configuration issue involving the SoC firmware and BIOS.
 
 Due to some power management issues, the USB ports hot plug is disabled.  
 You can prevent the OS from using the ACPI power management policies by using this workaround.  
-[https://solidrun.atlassian.net/wiki/spaces/developer/pages/666370082/Bedrock+Troubleshooting#USB-10G-(Closest-to-console-port)-hotplug-doesn't-work](https://solidrun.atlassian.net/wiki/spaces/developer/pages/666370082/Bedrock+Troubleshooting#usb-10g-closest-to-console-port-hotplug-doesnt-work)
+[https://solidrun.atlassian.net/wiki/spaces/developer/pages/666370082/Bedrock+Troubleshooting#USB-10G-(Closest-to-console-port)-hotplug-doesn't-work](../bedrock-troubleshooting.md#usb-10g-closest-to-console-port-hotplug-doesnt-work)
 
 <a id="older-bedrock-with-ryzen-hs-do-not-support-ddr5-4800"></a>
 

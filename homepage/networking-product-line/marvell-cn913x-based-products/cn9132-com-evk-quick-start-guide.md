@@ -34,7 +34,7 @@ The guide will give a technical overview about the product and by the end of it 
 | Dimensions                       | PCBA: 172 x 214mm                                                                                                                                                                                                                                        |
 | Enclosure                        | None                                                                                                                                                                                                                                                     |
 
-> \[!NOTE] (\*) Configurable [SERDESs](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493937/CN9132+COM+Hardware+User+Manual#serdes-muxing) based on Marvell CN913x processor specifications.
+> \[!NOTE] (\*) Configurable [SERDESs](cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
 
 > \[!INFO] Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493937) .
 

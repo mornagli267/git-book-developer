@@ -30,7 +30,7 @@ The following information are to be configured
 
 **Transport enable**: true to start to gateway service, false otherwise
 
-**MQTT transport secure**: If true TLS is setup of the communication with the broker. Proper broker configuration and if needed local certificate need to be put in place (see [Configuring and testing the Wirepas gateway software | Managing-TLS-certificates-for-a-secure-connection-towards-the-MQTT-broker](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241/Configuring+and+testing+the+Wirepas+gateway+software#managing-tls-certificates-for-a-secure-connection-towards-the-mqtt-broker)
+**MQTT transport secure**: If true TLS is setup of the communication with the broker. Proper broker configuration and if needed local certificate need to be put in place (see [Configuring and testing the Wirepas gateway software | Managing-TLS-certificates-for-a-secure-connection-towards-the-MQTT-broker](../wirepas/configuring-and-testing-the-wirepas-gateway-software.md#managing-tls-certificates-for-a-secure-connection-towards-the-mqtt-broker)
 
 **MQTT broker address**
 

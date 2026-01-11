@@ -8,12 +8,12 @@
 
 The kit includes:
 
-* [PSU 90W](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492437517/Common+Bedrock+accessories#psu-90w)
-* [US AC Cable & EU AC Cable](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492437517/Common+Bedrock+accessories#us-eu-uk-au-ac-cable)
-* [Stand for Bedrock](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#stand)
-* [Wall mounting bracket](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#wall-mounting)
-* [DIN Rail bracket](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#din-rail-mounting)
-* [Console mini-USB to USB-A](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492437517/Common+Bedrock+accessories#console-mini-usb-to-usb-a)
+* [PSU 90W](../../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
+* [US AC Cable & EU AC Cable](../../other-articles/snippets/common-bedrock-accessories.md#us-eu-uk-au-ac-cable)
+* [Stand for Bedrock](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
+* [Wall mounting bracket](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
+* [DIN Rail bracket](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
+* [Console mini-USB to USB-A](../../other-articles/snippets/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
 
 > \[!NOTE] **Ordering code**: SRBD-R7BEVAL
 
@@ -23,8 +23,8 @@ Minimal evaluation kit is a low cost kit for trying out Bedrock.
 
 The kit includes:
 
-* [PSU 90W](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492437517/Common+Bedrock+accessories#psu-90w)
-* [Stand for Bedrock](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#stand)
+* [PSU 90W](../../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
+* [Stand for Bedrock](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-EVMIN
@@ -61,19 +61,19 @@ To be used with a 3rd party PSU.
 
 ### Stand for Bedrock
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#stand)
+See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 > \[!NOTE] **Ordering code**: SRBD-STAND21
 
 ### Wall mounting bracket
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#wall-mounting)
+See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
 > \[!NOTE] **Ordering code**: SRBD-WALL21
 
 ### DIN Rail bracket
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#din-rail-mounting)
+See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
 > \[!NOTE] **Ordering code**: SRBD-DIN21
 

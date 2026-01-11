@@ -267,7 +267,7 @@ With SmartShift, you can precisely control the power consumption of the CPU, tai
 
 To configure the CPU power limits, you can access the BIOS settings of our System on Module. We provide a detailed guide on how to navigate these settings and effectively set the desired power caps for your application.
 
-For step-by-step instructions on accessing and modifying these settings, please visit our detailed BIOS configuration page here: [Bedrock V3000 BIOS Settings - Power Screen](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Settings#power-screen).
+For step-by-step instructions on accessing and modifying these settings, please visit our detailed BIOS configuration page here: [Bedrock V3000 BIOS Settings - Power Screen](../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-settings.md#power-screen).
 
 By leveraging the SmartShift technology and configuring your CPU power settings via BIOS, you can optimize your system’s performance and power consumption, leading to a more efficient and tailored usage according to your specific requirements. This section of the manual ensures that you have all the necessary tools and knowledge to take full advantage of the innovative features provided by our System on Module.
 

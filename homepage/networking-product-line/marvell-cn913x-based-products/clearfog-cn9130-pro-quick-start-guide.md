@@ -276,7 +276,7 @@ Starting from April 01. 2022, the EEPROMs on Carriers, SoMs and COM-Express Modu
 
 ## Build from source
 
-* CN913x Build - [CN913x Build - Script](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/201097229/CN913x+Build+-+Script)
+* CN913x Build - [CN913x Build - Script](cn913x-software/cn913x-build.md)
 * U-Boot, Atf and Mv-ddr-marvel Build - [CN913x u-boot, atf and mv-ddr-marvell - Self Build](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/200769556/CN913x+u-boot+atf+and+mv-ddr-marvell+-+Self+Build)
 * Debian Image Builder - [GitHub - SolidRun/debian-builder](https://github.com/SolidRun/debian-builder/tree/7f1357cc6e262f19f1031e76b5c98870faeb7b79)
 

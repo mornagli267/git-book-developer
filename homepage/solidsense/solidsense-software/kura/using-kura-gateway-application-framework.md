@@ -56,7 +56,7 @@ The page is used to configure the connection between Kura and cloud applications
 The field values depends on the Kapua instance to which the gateway is to be connected:
 
 1. Broker URL:Kapua instance URL or IP and port
-2. Account-Name: the child account ([Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-Kapua-account](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142858/Using+Eclipse+Kapua+to+supervise+and+configure+SolidSense+gateways#managing-kapua-account) ) used to access the gateway data
+2. Account-Name: the child account ([Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-Kapua-account](../kapua/using-eclipse-kapua-to-supervise-and-configure-solidsense-gateways.md#managing-kapua-account) ) used to access the gateway data
 3. Username and password as defined in Kapua for the gateway connection (Thing role)
 
 We recommend not to modify the other fields, without having a good knowledge of the Kura/Kapua features.

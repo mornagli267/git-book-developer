@@ -18,7 +18,7 @@ This guide provides step-by-step instructions for setting up a RAID array with t
 ## **Test setup**
 
 * 2x A-data legend 710 NVMEs
-* Ubuntu Server 23.04 ([Customer image](https://solidrun.atlassian.net/wiki/spaces/developer/pages/537034754/Bedrock+Images+info))
+* Ubuntu Server 23.04 ([Customer image](../../../../other-articles/snippets/bedrock-images-info.md))
 
 Performance Test Results&#x20;
 

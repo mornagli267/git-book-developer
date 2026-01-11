@@ -7,11 +7,11 @@ It was tested on
 
 ### **Table of Contents**
 
-* [Required packages](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#required_packages)
-* [Driver compilation & installation](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#driver_compilation)
-  * [Method 1 (Host)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method1)
-  * [Method 2 (Docker)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method2)
-* [Testing using hailortcli benchmark](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#testing)
+* [Required packages](../../../../other-articles/snippets/hailo-8-driver-hailortcli-tappas-installation.md#required_packages)
+* [Driver compilation & installation](../../../../other-articles/snippets/hailo-8-driver-hailortcli-tappas-installation.md#driver_compilation)
+  * [Method 1 (Host)](../../../../other-articles/snippets/hailo-8-driver-hailortcli-tappas-installation.md#method1)
+  * [Method 2 (Docker)](../../../../other-articles/snippets/hailo-8-driver-hailortcli-tappas-installation.md#method2)
+* [Testing using hailortcli benchmark](../../../../other-articles/snippets/hailo-8-driver-hailortcli-tappas-installation.md#testing)
 
 ### Required packages
 

@@ -108,7 +108,7 @@ Once you installed the necessary serial connection software, you should be able 
 #### Internet
 
 Connect an Ethernet cable to your CuBox-M (for internet access during boot-up).\
-Models CuBox-M with WiFi, can be connected via [WiFi](https://solidrun.atlassian.net/wiki/spaces/developer/pages/200015887/CuBox-M+Quick+Start+Guide#wifi) or wired Ethernet.
+Models CuBox-M with WiFi, can be connected via [WiFi](cubox-m-quick-start-guide.md#wifi) or wired Ethernet.
 
 * Please check you Ethernet connection.
 * Use the following commands in order to keep your system up-to-date:

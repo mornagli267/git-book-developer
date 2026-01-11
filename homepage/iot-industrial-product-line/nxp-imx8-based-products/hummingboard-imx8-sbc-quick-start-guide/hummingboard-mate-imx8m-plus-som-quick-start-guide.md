@@ -202,7 +202,7 @@ In the end you should see with “lsblk” that the partition size is in the req
 #### Internet
 
 Connect an Ethernet cable to your HummingBoard Pulse (for internet access during boot-up).\
-Models HummingBoard with WiFi, can be connected via [WiFi](https://solidrun.atlassian.net/wiki/spaces/developer/pages/200015887/CuBox-M+Quick+Start+Guide#wifi) or wired Ethernet.
+Models HummingBoard with WiFi, can be connected via [WiFi](../cubox-m-quick-start-guide.md#wifi) or wired Ethernet.
 
 * Please check you Ethernet connection.
 * Use the following commands in order to keep your system up-to-date:
@@ -406,7 +406,7 @@ There are two options for storing MAC addresses on the i.MX8MP platform:
 2. **Store the MAC address in EEPROM using TLV format** (Recommended)
 
 * This method allows flexibility and is the preferred approach.
-* [Guidelines](https://solidrun.atlassian.net/wiki/spaces/developer/pages/344883516/iMX8MP+EEPROM+Programming+-+TLV#progammring-mac-address) for Programming a MAC Address in TLV Format
+* [Guidelines](../imx8m-other-articles/imx8mp-eeprom-programming-tlv.md#progammring-mac-address) for Programming a MAC Address in TLV Format
 
 **Default Configuration**
 

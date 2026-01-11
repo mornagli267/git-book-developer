@@ -113,4 +113,4 @@ If modifications are more important, it could be easier to extract the rootfs.ex
 tar xf <mender artifact>
 ```
 
-Then you can directly make all needed modifications (without exceeding the partition size [Introduction to SolidSense Out-of-the-Box (OOB) software image | Disk-partitioning-and-file-systems](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264667139/Introduction+to+SolidSense+Out-of-the-Box+OOB+software+image#disk-partitioning-and-file-systems) ) and then re-create the artifact and sign it.
+Then you can directly make all needed modifications (without exceeding the partition size [Introduction to SolidSense Out-of-the-Box (OOB) software image | Disk-partitioning-and-file-systems](../other-software-articles/introduction-to-solidsense-out-of-the-box-oob-software-image.md#disk-partitioning-and-file-systems) ) and then re-create the artifact and sign it.

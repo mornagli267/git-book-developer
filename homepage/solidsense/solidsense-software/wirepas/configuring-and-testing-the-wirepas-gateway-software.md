@@ -195,7 +195,7 @@ Proto file and examples in /opt/SolidSense/Wirepas-Install-1.2/wirepas-gw/grpc
 
 ## Using Kapua for remote configuration
 
-All the configuration can also be done using Kapua, using the remote device configuration service that is briefly described in: [Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-devices](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142858/Using+Eclipse+Kapua+to+supervise+and+configure+SolidSense+gateways#managing-devices)
+All the configuration can also be done using Kapua, using the remote device configuration service that is briefly described in: [Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-devices](../kapua/using-eclipse-kapua-to-supervise-and-configure-solidsense-gateways.md#managing-devices)
 
 ## Wirepas transport configuration parameters
 
