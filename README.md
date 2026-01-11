@@ -1,7 +1,6 @@
-cat > ~/work/git-book-developer/README.md << 'EOF'
 # SolidRun Developer Center
 
-![Developer Center Banner](.gitbook/assets/banner.530.jpg)
+![Developer Center Banner](.gitbook/assets/developer-center-banner.png)
 
 ---
 
