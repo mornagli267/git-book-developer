@@ -1,7 +1,35 @@
 # Bedrock PC
 
-(function(){ var data = { "addon\_key":"com.refinedwiki.confluence.cloud.refinedtheme", "uniqueKey":"com.refinedwiki.confluence.cloud.refinedtheme\_\_rw-ui-children335505089191897794", "key":"rw-ui-children", "moduleType":"dynamicContentMacros", "moduleLocation":"content", "cp":"/wiki", "general":"", "w":"", "h":"", "url":"https://refinedtheme-production.refinedwiki.com/macros/ui-children?spaceKey=developer&macroId=4f6bdab9-f69e-4b21-991a-aae1e50e3f6d&displayMode=&pageId=411271173&page=&xdm\_e=https%3A%2F%2Fdeveloper.resources.solid-run.com&xdm\_c=channel-com.refinedwiki.confluence.cloud.refinedtheme\_\_rw-ui-children335505089191897794&cp=%2Fwiki&xdm\_deprecated\_addon\_key\_do\_not\_use=com.refinedwiki.confluence.cloud.refinedtheme&lic=active&userAccess=true&cv=1000.0.0-e251f888cf33&traceId=a7227a328d16e96a80093415b58f71dd&spanId=92d0ca052d5f2c5a&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTY1NjY5Mjc4ZTVlNDAwNzBkMjlkMTciLCJxc2giOiJlYTJjZGY0NDYwMjBiZGE1ODYyMzYwMDUwZGVjY2YwMjgxYTNmMTY4ZDk3NjY5NzY0MzI0NTJlMWRhZjc2ODJhIiwiaXNzIjoiODU3ZDFjMTgtMGNiZS0zZWIyLTk5NTQtMTk1OTBmODRmNDJkIiwiY29udGV4dCI6e30sImV4cCI6MTc2ODEyMzUyMSwiaWF0IjoxNzY4MTIzMzQxfQ.wqWpiArjPjmPpfofOznRoTrT8ltMcLknqw0fa7HINX4", "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTY1NjY5Mjc4ZTVlNDAwNzBkMjlkMTciLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijg1N2QxYzE4LTBjYmUtM2ViMi05OTU0LTE5NTkwZjg0ZjQyZCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJ1cmwiOnsiZGlzcGxheVVybCI6Imh0dHBzOlwvXC9kZXZlbG9wZXIucmVzb3VyY2VzLnNvbGlkLXJ1bi5jb21cL3dpa2kifSwiY29uZmx1ZW5jZSI6eyJlZGl0b3IiOnsidmVyc2lvbiI6InYyIn0sIm1hY3JvIjp7Im91dHB1dFR5cGUiOiJlbWFpbCIsImhhc2giOiI0ZjZiZGFiOS1mNjllLTRiMjEtOTkxYS1hYWUxZTUwZTNmNmQiLCJpZCI6IjRmNmJkYWI5LWY2OWUtNGIyMS05OTFhLWFhZTFlNTBlM2Y2ZCJ9LCJ0cmFjaW5nIjp7InRyYWNlSWQiOiJhNzIyN2EzMjhkMTZlOTZhODAwOTM0MTViNThmNzFkZCIsInNwYW5JZCI6IjkyZDBjYTA1MmQ1ZjJjNWEiLCJzYW1wbGVkIjoiMCJ9LCJjb250ZW50Ijp7InR5cGUiOiJwYWdlIiwidmVyc2lvbiI6IjciLCJpZCI6IjQxMTI3MTE3MyJ9LCJzcGFjZSI6eyJrZXkiOiJkZXZlbG9wZXIiLCJpZCI6IjE5NzY4OTI5MSJ9fX0sImV4cCI6MTc2ODEyNDI0MSwiaWF0IjoxNzY4MTIzMzQxfQ.xJuICJvJzLUkzmSAFjlmQKvlrx91x0U\_Yu2\_acBKApw", "structuredContext": "{\\"license\\":{\\"active\\":true},\\"confluence\\":{\\"editor\\":{\\"version\\":\\"v2\\"},\\"macro\\":{\\"outputType\\":\\"email\\",\\"hash\\":\\"4f6bdab9-f69e-4b21-991a-aae1e50e3f6d\\",\\"id\\":\\"4f6bdab9-f69e-4b21-991a-aae1e50e3f6d\\"},\\"tracing\\":{\\"traceId\\":\\"a7227a328d16e96a80093415b58f71dd\\",\\"spanId\\":\\"92d0ca052d5f2c5a\\",\\"sampled\\":\\"0\\"},\\"content\\":{\\"type\\":\\"page\\",\\"version\\":\\"7\\",\\"id\\":\\"411271173\\"},\\"space\\":{\\"key\\":\\"developer\\",\\"id\\":\\"197689291\\"}},\\"url\\":{\\"displayUrl\\":\\"https://developer.resources.solid-run.com/wiki\\"}}", "contentClassifier":"content", "productCtx":"{\\"page.id\\":\\"411271173\\",\\"macro.hash\\":\\"4f6bdab9-f69e-4b21-991a-aae1e50e3f6d\\",\\"space.key\\":\\"developer\\",\\"tracing.sampled\\":\\"0\\",\\"page.type\\":\\"page\\",\\"content.version\\":\\"7\\",\\"page.title\\":\\"Bedrock PC\\",\\"macro.localId\\":\\"f6066eaf-f3c9-492b-b9e9-9103dfafea78\\",\\"macro.body\\":\\"\\",\\": = | RAW | = :\\":null,\\"space.id\\":\\"197689291\\",\\"macro.truncated\\":\\"false\\",\\"content.type\\":\\"page\\",\\"output.type\\":\\"email\\",\\"page.version\\":\\"7\\",\\"macro.fragmentLocalId\\":\\"\\",\\"content.id\\":\\"411271173\\",\\"tracing.traceId\\":\\"a7227a328d16e96a80093415b58f71dd\\",\\"macro.id\\":\\"4f6bdab9-f69e-4b21-991a-aae1e50e3f6d\\",\\"tracing.spanId\\":\\"92d0ca052d5f2c5a\\",\\"user.isExternalCollaborator\\":\\"false\\",\\"editor.version\\":\\"v2\\"}", "timeZone":"UTC", "origin":"https://refinedtheme-production.refinedwiki.com", "hostOrigin":"https://developer.resources.solid-run.com", "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation", "apiMigrations": { "gdpr": true } } ; if(window.AP && window.AP.subCreate) { window.\_AP.appendConnectAddon(data); } else { require(\['ac/create'\], function(create){ create.appendConnectAddon(data); }); } // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js. // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component // has not mounted yet. In CFE, we process the missed event data and disable this initial listener. const \_\_MAX\_EVENT\_ARRAY\_SIZE\_\_ = 20; const connectAppAnalytics = "ecosystem.confluence.connect.analytics"; window.connectHost && window.connectHost.onIframeEstablished((eventData) => { if (!window.\_\_CONFLUENCE\_CONNECT\_SUPPORT\_LOADED\_\_) { let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || \[\]; if (events.length >= \_\_MAX\_EVENT\_ARRAY\_SIZE\_\_) { events.shift(); } events.push(eventData); window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events)); } }); }());
+Bedrock is SolidRun's high-performance edge computing platform series, designed for demanding industrial and commercial applications.
 
-> [!INFO]
-> **Bedrock R7000** is not available for new designs and is replaced by **Bedrock R8000**.  
-> SolidRun is fully supporting existing Bedrock R7000 customers.
+## Product Documentation
+
+### [Bedrock R8000 Technical Documentation](bedrock-pc/bedrock-r8000-technical-documentation.md)
+Complete documentation for the Bedrock R8000 and R7000 series:
+
+- **Specifications** - Hardware specifications and configuration options
+- **Hardware** - Connectors, RAM compatibility, power modules, temperature ranges
+- **Software** - BIOS, Linux, Windows, and other operating systems
+- **HowTo Guides** - Practical guides for common tasks
+- **Troubleshooting** - LED documentation and diagnostics
+
+### [Bedrock V3000 Technical Documentation](bedrock-pc/bedrock-v3000-technical-documentation.md)
+Complete documentation for the Bedrock V3000 series:
+
+- **Specifications** - Hardware specifications and configuration options
+- **Hardware** - Connectors, RAM and SFP compatibility
+- **Software** - BIOS, Linux, Windows, and other operating systems
+- **HowTo Guides** - Installation and configuration guides
+
+### [Bedrock Mechanical Documentation](bedrock-pc/bedrock-mechanical-documentation.md)
+Mechanical drawings, 3D models, and mounting options:
+
+- 3D models for Bedrock, Deck, Cartridge, and SOM
+- Mounting options including DIN rail brackets
+- RAM and storage installation guides
+
+### [Bedrock Troubleshooting](bedrock-pc/bedrock-troubleshooting.md)
+General troubleshooting guides and diagnostics.
+
+### [Bedrock Accessories](bedrock-pc/bedrock-accessories.md)
+Compatible accessories and add-ons for Bedrock systems.
