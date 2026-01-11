@@ -1,64 +1,54 @@
 # Installing FreeBSD
 
-<a id="test-setup"></a>
+## Installing FreeBSD
 
-## Test setup
+### Test setup
 
 The installation was validated at SolidRun using the following setup:
 
-- Freebsd 13.2-RELEASE  
-- Terminal software:
-  - Putty
-  - Alternatively, Tio can also be used.  
-**known TIO limitation**: in BIOS, the currently selected option is displayed in the same color as the background, which makes it not visible, yet it is still fully functional.
-- USB flash disk: Kingston Data Traveler
+* Freebsd 13.2-RELEASE
+* Terminal software:
+  * Putty
+  * Alternatively, Tio can also be used.\
+    **known TIO limitation**: in BIOS, the currently selected option is displayed in the same color as the background, which makes it not visible, yet it is still fully functional.
+* USB flash disk: Kingston Data Traveler
 
-<a id="installation-process"></a>
+## Installation process
 
-# Installation process
+### Download FreeBSD Image
 
-<a id="download-freebsd-image"></a>
+* Go to: [FreeBDS AMD64 installer download](https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.2/FreeBSD-13.2-RELEASE-amd64-disc1.iso)
 
-## Download FreeBSD Image
-
-- Go to: [FreeBDS AMD64 installer download](https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.2/FreeBSD-13.2-RELEASE-amd64-disc1.iso)
-
-<a id="creating-bootable-usb-drive"></a>
-
-## Creating bootable USB drive
+### Creating bootable USB drive
 
 Please follow instructions at [Creating bootable USB drive](https://solidrun.atlassian.net/l/cp/m9Reo11r)
 
-<a id="connecting-serial-console"></a>
-
-## Connecting serial console
+### Connecting serial console
 
 Please follow instructions at [Using serial console with Bedrock V3000](https://solidrun.atlassian.net/wiki/spaces/developer/pages/472481800)
 
-<a id="bios-settings"></a>
+### BIOS settings
 
-## BIOS settings
+* Insert the USB media to the device
+* Turn on Bedrock
+* Repetitively press the DEL / ESC key to enter the BIOS setup
+* In BIOS go to -> Save & Exit -> -> yes
+* Device will reset and a PFsense boot screen will appear
 
-- Insert the USB media to the device
-- Turn on Bedrock
-- Repetitively press the DEL / ESC key to enter the BIOS setup
-- In BIOS go to -> Save & Exit -> <your bootable USB device> -> yes
-- Device will reset and a PFsense boot screen will appear
-
-<a id="boot"></a>
-
-## Boot
+### Boot
 
 When you see the main boot menu:
 
-![](./attachments/image-20231102-121643.png)
+![](../../../../../.gitbook/assets/image-20231102-121643.png)
 
-- Press "esc" or the arrow buttons to go to the boot option shell 
-- Set the console redirection (copy to the terminal): 
-- ```
-set hw.uart.console="mm:0xfedc9000,rs:2"
-boot
-```
+* Press "esc" or the arrow buttons to go to the boot option shell&#x20;
+* Set the console redirection (copy to the terminal):&#x20;
+* ```
+  ```
+
+set hw.uart.console="mm:0xfedc9000,rs:2" boot
+
+````
 - Kernel messages will start to spill out, wait until you see the following prompt:
 - Select console type, press enter for default(VT100):
 
@@ -163,27 +153,23 @@ Follow the istructions to add a new user
   - Create the `/boot/loader.conf.local` file, which will contain our changes and add: 
   - ```
 hw.uart.console="mm:0xfedc9000,rs:2" 
-```
+````
 
-> [!WARNING]
-> Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
+> \[!WARNING] Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
 
-<a id="thats-it-you-can-reboot-the-system-and-use-it"></a>
+**Thats it, you can reboot the system and use it.**
 
-#### Thats it, you can reboot the system and use it.
+### Tips
 
-<a id="tips"></a>
+**Hididng kernel output**
 
-## Tips
+* Add to /boot/loader.conf.local:&#x20;
+  * ```
+    ```
 
-<a id="hididng-kernel-output"></a>
+boot\_mute="YES"
 
-#### Hididng kernel output
-
-- Add to /boot/loader.conf.local: 
-  - ```
-boot_mute="YES"
-```
+````
 
 <a id="disabling-hyperthreading"></a>
 
@@ -192,8 +178,13 @@ boot_mute="YES"
 - Add to /boot/loader.conf.local: 
   - ```
 machdep.hyperthreading_allowed="0"
+````
+
+* To verify the change run:
+  * ```
+    ```
+
+sysctl machdep.hyperthreading\_allowed
+
 ```
-- To verify the change run:
-  - ```
-sysctl machdep.hyperthreading_allowed
 ```

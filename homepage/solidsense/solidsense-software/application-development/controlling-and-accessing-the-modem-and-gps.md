@@ -1,9 +1,6 @@
 # Controlling and accessing the modem and GPS
 
-> [!WARNING]
-> The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
-
-<a id="purpose"></a>
+> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
 
 ## Purpose
 
@@ -18,8 +15,6 @@ Here are the main features:
 5. Configuring and resetting the modem
 6. Sending and receiving SMS
 
-<a id="installation-and-introduction"></a>
-
 ## Installation and introduction
 
 The modem and GPS management service and SW is directly installed in SolidSense V1.0 images (from 0.9 on), no action needed here.
@@ -29,8 +24,6 @@ A systemd service ‘modem\_gps’ is automatically enabled and started by the p
 1. Initialization of the modem at startup
 2. Constant supervision
 3. gRPC server for modem status information and GPS information
-
-<a id="controlling-the-modem-and-gps-status-interactively"></a>
 
 ## Controlling the modem and GPS status interactively
 
@@ -55,14 +48,14 @@ All commands mentioned ‘as sudo’ are directly accessing the modem and not th
 
 Additional arguments for modem\_status -t
 
-|     |     |     |
-| --- | --- | --- |
-| arg1 | arg2 | signification |
-| cmd | AT command | send the corresponding AT command to the modem. The command must not include the leading ‘AT’ |
-| scan | <none> | Restart networks scan |
-| init | <none> | Perform a flight mode /non flight mode cycle |
-| sms | <none> | check SMS parameters |
-| gps | <none> | check the GPS |
+|      |            |                                                                                               |
+| ---- | ---------- | --------------------------------------------------------------------------------------------- |
+| arg1 | arg2       | signification                                                                                 |
+| cmd  | AT command | send the corresponding AT command to the modem. The command must not include the leading ‘AT’ |
+| scan |            | Restart networks scan                                                                         |
+| init |            | Perform a flight mode /non flight mode cycle                                                  |
+| sms  |            | check SMS parameters                                                                          |
+| gps  |            | check the GPS                                                                                 |
 
 Example of status print
 
@@ -76,8 +69,6 @@ On: HOME  PLMNID: 20801  Network: 20801  Radio: FDD LTE  Band: LTE BAND 3  LAC: 
 GPS FIXED date: 27/03/20 time: 14:59:05.000000
 LAT: 48.104156494140625 LONG: -1.6879802942276 SOG: 0.0 COG: 331.79998779296875
 ```
-
-<a id="configuration"></a>
 
 ## Configuration
 
@@ -119,19 +110,15 @@ Explanation and values for each parameters by order of importance:
 
 **timer**: Interval in seconds for the logging of the modem and GPS status
 
-**nb\_retry**: This parameter is used to perform a soft reset of the modem if it does not find a network after <n> timer interval
+**nb\_retry**: This parameter is used to perform a soft reset of the modem if it does not find a network after timer interval
 
 **log\_at**: If true all AT commends and responses with the modem are logged into the file /data/solidsense/atcmd.log. To be used only for debugging purpose.
 
-> [!WARNING]
-> **Please note**
-> Changing the SIM requires to reset the modem or even restart the gateway to be taken into account.
-
-<a id="using-the-modem-gps-micro-service-in-application"></a>
+> \[!WARNING] **Please note** Changing the SIM requires to reset the modem or even restart the gateway to be taken into account.
 
 ## Using the modem GPS micro-service in application
 
-To use the micro-service writing a gRPC client to access it is mandatory. Use [protobuf](https://developers.google.com/protocol-buffers/) and [gRPC](https://www.grpc.io/)  to generate your client stubs and serialization routines. This is existing for most of the programming language. The interface definition file is available in the installation directory (GPS\_Service.proto).
+To use the micro-service writing a gRPC client to access it is mandatory. Use [protobuf](https://developers.google.com/protocol-buffers/) and [gRPC](https://www.grpc.io/)  to generate your client stubs and serialization routines. This is existing for most of the programming language. The interface definition file is available in the installation directory (GPS\_Service.proto).
 
 2 example files in Python3 are provided:
 
@@ -141,24 +128,17 @@ Modem\_Service\_client.py: send commands to the modem
 
 SMS\_Client.py: send or receive SMS
 
-  
 Accessing the GPS and modem via MQTT
 
 From the SolidSense version (1.1) on the GPS and Modem can be remotely monitored via MQTT using the SolidSense MQTT client integrated with the SolidSense platform.
-
-<a id="troubleshooting"></a>
 
 ## Troubleshooting
 
 If the ppp connection does not come up, first check the status with ‘modem\_status’ to verify that the SIM is well recognized and a network is attached. If everything is OK here, then the APN parameters have to be verified.
 
-<a id="getting-the-modem-logs"></a>
-
 #### Getting the modem logs
 
 Logs are retrieved via journalctl. The simplest is: sudo journalctl -u modem\_gps -f (-b)
-
-<a id="modem-is-not-attaching-to-any-network"></a>
 
 #### Modem is not attaching to any network
 

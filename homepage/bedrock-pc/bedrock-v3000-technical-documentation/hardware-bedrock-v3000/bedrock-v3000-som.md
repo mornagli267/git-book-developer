@@ -1,109 +1,59 @@
 # Bedrock V3000 SoM
 
-<a id="revisions-and-notes"></a>
-
 ## Revisions and Notes
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| **Date** | **Owner** | **Revision** | **Notes** |
-| 21 Dec 2021 | Irad Stavi | 1.0 | Initial release |
-| Table of Contents | - [Revisions and Notes](#revisions-and-notes)<br>- [Introduction](#introduction)<br>  - [Description](#description)<br>  - [Main features](#main-features)<br>  - [Specifications](#specifications)<br>  - [Block diagram](#block-diagram)<br>  - [Ordering options](#ordering-options)<br>- [Interface Description](#interface-description)<br>- [B2B Connectors](#b2b-connectors)<br>  - [Pin numbering](#pin-numbering)<br>  - [Pin description](#pin-description)<br>- [Electrical Specifications](#electrical-specifications)<br>  - [Maximum ratings](#maximum-ratings)<br>  - [Operating conditions](#operating-conditions)<br>  - [Peripheral voltage levels](#peripheral-voltage-levels)<br>  - [Power consumption measurements](#power-consumption-measurements)<br>- [Mechanical](#mechanical)<br>  - [Carrier board mounting](#carrier-board-mounting)<br>  - [Thermal management](#thermal-management)<br>  - [SOM dimensions](#som-dimensions)<br>- [Documentation](#documentation)<br>  - [Simplified Schematics](#simplified-schematics)<br>  - [Mechanical Files](#mechanical-files)<br>  - [Reference Designs](#reference-designs) |     |     |
-
-<a id="introduction"></a>
+|                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |              |                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Revision** | **Notes**       |
+| 21 Dec 2021       | Irad Stavi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 1.0          | Initial release |
+| Table of Contents | <p>- <a href="bedrock-v3000-som.md#revisions-and-notes">Revisions and Notes</a><br>- <a href="bedrock-v3000-som.md#introduction">Introduction</a><br>- <a href="bedrock-v3000-som.md#description">Description</a><br>- <a href="bedrock-v3000-som.md#main-features">Main features</a><br>- <a href="bedrock-v3000-som.md#specifications">Specifications</a><br>- <a href="bedrock-v3000-som.md#block-diagram">Block diagram</a><br>- <a href="bedrock-v3000-som.md#ordering-options">Ordering options</a><br>- <a href="bedrock-v3000-som.md#interface-description">Interface Description</a><br>- <a href="bedrock-v3000-som.md#b2b-connectors">B2B Connectors</a><br>- <a href="bedrock-v3000-som.md#pin-numbering">Pin numbering</a><br>- <a href="bedrock-v3000-som.md#pin-description">Pin description</a><br>- <a href="bedrock-v3000-som.md#electrical-specifications">Electrical Specifications</a><br>- <a href="bedrock-v3000-som.md#maximum-ratings">Maximum ratings</a><br>- <a href="bedrock-v3000-som.md#operating-conditions">Operating conditions</a><br>- <a href="bedrock-v3000-som.md#peripheral-voltage-levels">Peripheral voltage levels</a><br>- <a href="bedrock-v3000-som.md#power-consumption-measurements">Power consumption measurements</a><br>- <a href="bedrock-v3000-som.md#mechanical">Mechanical</a><br>- <a href="bedrock-v3000-som.md#carrier-board-mounting">Carrier board mounting</a><br>- <a href="bedrock-v3000-som.md#thermal-management">Thermal management</a><br>- <a href="bedrock-v3000-som.md#som-dimensions">SOM dimensions</a><br>- <a href="bedrock-v3000-som.md#documentation">Documentation</a><br>- <a href="bedrock-v3000-som.md#simplified-schematics">Simplified Schematics</a><br>- <a href="bedrock-v3000-som.md#mechanical-files">Mechanical Files</a><br>- <a href="bedrock-v3000-som.md#reference-designs">Reference Designs</a></p> |              |                 |
 
 ## Introduction
 
-<a id="description"></a>
-
 #### Description
-
-<a id="main-features"></a>
 
 #### Main features
 
-<a id="specifications"></a>
-
 #### Specifications
-
-<a id="block-diagram"></a>
 
 #### Block diagram
 
-<a id="ordering-options"></a>
-
 #### Ordering options
-
-<a id="interface-description"></a>
 
 ## Interface Description
 
-<a id="b2b-connectors"></a>
-
 ## B2B Connectors
-
-<a id="pin-numbering"></a>
 
 #### Pin numbering
 
-<a id="pin-description"></a>
-
 #### Pin description
-
-<a id="electrical-specifications"></a>
 
 ## Electrical Specifications
 
-<a id="maximum-ratings"></a>
-
 #### Maximum ratings
-
-<a id="operating-conditions"></a>
 
 #### Operating conditions
 
-<a id="peripheral-voltage-levels"></a>
-
 #### Peripheral voltage levels
-
-<a id="power-consumption-measurements"></a>
 
 #### Power consumption measurements
 
-<a id="mechanical"></a>
-
 ## Mechanical
-
-<a id="carrier-board-mounting"></a>
 
 #### Carrier board mounting
 
-<a id="thermal-management"></a>
-
 #### Thermal management
-
-<a id="som-dimensions"></a>
 
 #### SOM dimensions
 
-<a id="documentation"></a>
-
 ## Documentation
-
-<a id="simplified-schematics"></a>
 
 #### Simplified Schematics
 
-    
-
-|     | File | Modified |
-| --- | --- | --- |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-0b786d26-ae72-40a2-b0ba-3ebdd94f36cc)<br><br>[Preview] [View](/wiki/download/attachments/421199877/SolidRun+Bedrock+V3000+SoM+Specifications.pdf?version=1) | PDF File [SolidRun Bedrock V3000 SoM Specifications.pdf](/wiki/download/attachments/421199877/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf?api=v2) | Dec 21, 2022 by [Irad Stavi](/wiki/people/6370e7fe9960988ef6bb7091) |
-
-<a id="mechanical-files"></a>
+|                                                                                                                                                                                                                                                                     | File                                                                                                                                                            | Modified                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| <p>Labels<br><br>- No labels<br>- <a href="bedrock-v3000-som.md#section-0b786d26-ae72-40a2-b0ba-3ebdd94f36cc">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/421199877/SolidRun+Bedrock+V3000+SoM+Specifications.pdf">View</a></p> | PDF File [SolidRun Bedrock V3000 SoM Specifications.pdf](../../../../wiki/download/attachments/421199877/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf) | Dec 21, 2022 by [Irad Stavi](../../../../wiki/people/6370e7fe9960988ef6bb7091/) |
 
 #### Mechanical Files
-
-<a id="reference-designs"></a>
 
 #### Reference Designs

@@ -1,7 +1,5 @@
 # Setting TFTP Server
 
-<a id="for-ubuntu"></a>
-
 ### For Ubuntu
 
 1. Install the TFTP Server
@@ -44,8 +42,6 @@ sudo systemctl restart tftpd-hpa
 sudo systemctl status tftpd-hpa
 ```
 
-<a id="for-any-distro-using-the-docker"></a>
-
 ### For any distro using the docker
 
 1. Create and Set Permissions for the TFTP Root Directory if needed
@@ -61,11 +57,9 @@ sudo chmod -R 775 /var/tftpboot
 docker run -p 0.0.0.0:69:69/udp -v /var/tftpboot:/var/tftpboot -i -t pghalliday/tftp
 ```
 
-<a id="for-windows"></a>
-
 ### For Windows
 
 1. [Download](https://bitbucket.org/phjounin/tftpd64/downloads/) and install tftpd64
 2. Select the network and directory with the files you need to transfer
 
-![image-20240513-101152.png](./attachments/image-20240513-101152.png)
+![image-20240513-101152.png](../../.gitbook/assets/image-20240513-101152.png)

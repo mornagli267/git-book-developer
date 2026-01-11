@@ -1,21 +1,15 @@
 # A388 Buildroot
 
-<a id="description"></a>
-
 ## Description
 
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
 
-This wiki page describes the build of complete minimal SD card image, that  
+This wiki page describes the build of complete minimal SD card image, that\
 includes U-Boot, kernel, and filesystem ready to boot.
-
-<a id="build-instructions"></a>
 
 ## Build Instructions
 
-<a id="1-download-and-extract-the-source-of-buildroot-version-201811"></a>
-
-## **1\. Download and extract the source of Buildroot version 2018.11:**
+## **1. Download and extract the source of Buildroot version 2018.11:**
 
 ```
 wget https://buildroot.org/downloads/buildroot-2018.11.tar.bz2
@@ -23,16 +17,14 @@ tar xf buildroot-2018.11.tar.bz2
 cd buildroot-2018.11/
 ```
 
-**2\. Configure and build the SD card image:**
+**2. Configure and build the SD card image:**
 
 ```
 make solidrun_clearfog_defconfig
 make
 ```
 
-At the end of the build, the SD card image file is at `output/images/sdcard.img`.
-
-<a id="deploy-instructions"></a>
+At the end of the build, the SD card image file is at `output/images/sdcard.img`.
 
 ## Deploy Instructions
 
@@ -42,14 +34,11 @@ At the end of the build, the SD card image file is at `output/images/sdcard.img
 dd if=output/images/sdcard.img of=/dev/sdX bs=1M conv=fdatasync
 ```
 
-> [!NOTE]
-> Note that `/dev/sdX` must match the device node of the SD card on your PC host.
+> \[!NOTE] Note that `/dev/sdX` must match the device node of the SD card on your PC host.
 
-2\. Set the Clearfog board DIP switches to boot from SD. See the [ClearFog A388 Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286655684)  article for details.
+2\. Set the Clearfog board DIP switches to boot from SD. See the [ClearFog A388 Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286655684)  article for details.
 
 3\. Insert your SD card to the SD card slot, and power up the board.
-
-<a id="customization-and-package-selection"></a>
 
 ## Customization and Package Selection
 
@@ -60,4 +49,4 @@ make menuconfig
 make clean all
 ```
 
-- For more details on Buildroot customization options see the [Buildroot user manual](https://buildroot.org/downloads/manual/manual.html).
+* For more details on Buildroot customization options see the [Buildroot user manual](https://buildroot.org/downloads/manual/manual.html).

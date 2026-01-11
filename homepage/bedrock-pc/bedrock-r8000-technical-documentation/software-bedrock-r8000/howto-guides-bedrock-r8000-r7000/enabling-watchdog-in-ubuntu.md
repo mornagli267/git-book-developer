@@ -1,8 +1,6 @@
 # Enabling Watchdog in Ubuntu
 
-<a id="step-1-remove-the-watchdog-module-from-modprobe-blacklists"></a>
-
-##### Step 1 - Remove the watchdog module from modprobe blacklists:
+**Step 1 - Remove the watchdog module from modprobe blacklists:**
 
 ```
 grep -r sp5100_tco /lib/modprobe.d/c
@@ -10,43 +8,35 @@ grep -r sp5100_tco /lib/modprobe.d/c
 
 And comment out every "blacklist sp5100\_tco".
 
-<a id="step-2-create-a-new-modprobed-entry"></a>
-
-##### Step 2 - Create a new modprobe.d entry:
+**Step 2 - Create a new modprobe.d entry:**
 
 ```
 echo "options sp5100_tco heartbeat=30 nowayout=1" > /etc/modprobe.d/sp5100_tco.conf
 ```
 
-<a id="step-3-install-the-watchdog-package"></a>
-
-##### Step 3 - Install the watchdog package
+**Step 3 - Install the watchdog package**
 
 ```
 apt install -y watchdog
 ```
 
-<a id="step-4-update-the-watchdog-config"></a>
-
-##### Step 4 - Update the watchdog config
+**Step 4 - Update the watchdog config**
 
 Open the /etc/watchdog.conf file.
 
 Uncomment the following line:
 
-#watchdog-device         = /dev/watchdog
+\#watchdog-device         = /dev/watchdog
 
 Uncomment and replace the following line:
 
-#watchdog-timeout = 60
+\#watchdog-timeout = 60
 
 With:
 
 watchdog-timeout = 30
 
-<a id="step-5-reboot-the-system"></a>
-
-##### Step 5 - reboot the system
+**Step 5 - reboot the system**
 
 ```
 reboot

@@ -1,12 +1,15 @@
 # Changing the IR protocol under Linux
 
-The Linux gpio-ir-recv driver defaults to the rc6 decoder.  This can be changed in two ways.
+The Linux gpio-ir-recv driver defaults to the rc6 decoder.  This can be changed in two ways.
 
 1. Change the protocol at runtime using sysfs
+
 ```
 echo rc-5 > /sys/class/rc/rc0/protocols
 ```
+
 2. Make the change in the device tree for the ir-receiver node.
+
 ```
 diff --git a/arch/arm/boot/dts/imx6qdl-hummingboard.dtsi b/arch/arm/boot/dts/imx6qdl-hummingboard.dtsi
 index d3b0b20aa05b..eda351f44d31 100644

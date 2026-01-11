@@ -1,21 +1,19 @@
 # Hailo-8 in Bedrock R8000 | R7000
 
-This guide explains how to install Hailo’s hailo\_pci driver, hailortcli and tappas.  
+## Hailo-8 in Bedrock R8000 | R7000
+
+This guide explains how to install Hailo’s hailo\_pci driver, hailortcli and tappas.\
 It was tested on
 
-<a id="table-of-contents"></a>
+### **Table of Contents**
 
-## **Table of Contents**
+* [Required packages](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#required_packages)
+* [Driver compilation & installation](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#driver_compilation)
+  * [Method 1 (Host)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method1)
+  * [Method 2 (Docker)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method2)
+* [Testing using hailortcli benchmark](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#testing)
 
-- [Required packages](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#required_packages)
-- [Driver compilation & installation](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#driver_compilation)
-  - [Method 1 (Host)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method1)
-  - [Method 2 (Docker)](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#method2)
-- [Testing using hailortcli benchmark](https://developer.resources.solid-run.com/wiki/spaces/developer/pages/663814153/Hailo+8+Driver+hailortcli+tappas+installation#testing)
-
-<a id="required-packages"></a>
-
-## Required packages
+### Required packages
 
 ```
 sudo apt-get update
@@ -38,11 +36,9 @@ sudo apt-get install -y libcairo2-dev libgirepository1.0-dev libgstreamer1.0-dev
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 
 ```
 
-<a id="driver-compilation-and-installation"></a>
+### Driver compilation and installation
 
-## Driver compilation and installation
-
-**Clone the driver repository** 
+**Clone the driver repository**&#x20;
 
 ```
 # If using Host, clone:
@@ -53,26 +49,26 @@ git checkout hailo8
 wget https://github.com/hailo-ai/hailort-drivers/archive/refs/tags/v4.15.0.zip
 ```
 
- **Compile the driver** 
+&#x20;**Compile the driver**&#x20;
 
 ```
 cd hailort-drivers/linux/pcie 
 make all
 ```
 
- **Install the driver** 
+&#x20;**Install the driver**&#x20;
 
 ```
 sudo make install
 ```
 
- **Check installation** 
+&#x20;**Check installation**&#x20;
 
 ```
 sudo modprobe hailo_pci
 ```
 
- **Download firmware** 
+&#x20;**Download firmware**&#x20;
 
 ```
 cd ../..
@@ -81,29 +77,25 @@ mkdir /lib/firmware/hailo 
 sudo mv hailo8_fw.<VERSION>.bin /lib/firmware/hailo/hailo8_fw.bin
 ```
 
-**Optional (set udev rules and reload the rules)** 
+**Optional (set udev rules and reload the rules)**&#x20;
 
 ```
 sudo cp ./linux/pcie/51-hailo-udev.rules /etc/udev/rules.d/ 
 sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
-<a id="method-1-host"></a>
+## Method 1 Host
 
-# Method 1 Host
+### Installing HailortCli
 
-<a id="installing-hailortcli"></a>
-
-## Installing HailortCli
-
-**Clone the Hailort repository** 
+**Clone the Hailort repository**&#x20;
 
 ```
 git clone https://github.com/hailo-ai/hailort.git
 git checkout hailort-v4.22.0
 ```
 
-**Compile sources** 
+**Compile sources**&#x20;
 
 ```
 cd hailort
@@ -119,7 +111,7 @@ Run:
 sudo hailortcli fw-control identify
 ```
 
-If for some reason the –target install does not install hailortcli to the machine run the following line and try retesting: 
+If for some reason the –target install does not install hailortcli to the machine run the following line and try retesting:&#x20;
 
 ```
 cp build/hailort/hailortcli/hailortcli /usr/bin/
@@ -142,11 +134,9 @@ Part Number: xxxxxxxxxxx
 Product Name: HAILO-8 AI ACC M.2 M KEY MODULE EXT TEMP 
 ```
 
-<a id="installing-tappas"></a>
+### Installing TAPPAS
 
-## Installing TAPPAS
-
-**Clone & set-up tappas repostitory** 
+**Clone & set-up tappas repostitory**&#x20;
 
 ```
 git clone https://github.com/hailo-ai/tappas.git 
@@ -163,10 +153,10 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libhailort.so.<version> /usr/lib/libhailort
 sudo ln -s /usr/lib/x86_64-linux-gnu/libgsthailo.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsthailo.so
 ```
 
-> [!NOTE]
-> Ubuntu 23.04 requires to change pybind version from 2.9 to 2.10 in:  
-> hailo-ai/tappas/scripts/build\_scripts/clone\_external\_packages.sh  
+> \[!NOTE] Ubuntu 23.04 requires to change pybind version from 2.9 to 2.10 in:\
+> hailo-ai/tappas/scripts/build\_scripts/clone\_external\_packages.sh\
 > To change version, use this command from tappas source directory:
+>
 > ```
 > sed -i 's|v2.9.0 https://github.com/pybind/pybind11.git|v2.10.0 https://github.com/pybind/pybind11.git -b v2.10.0|' scripts/build_scripts/clone_external_packages.sh
 > ```
@@ -177,14 +167,12 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libgsthailo.so /usr/lib/x86_64-linux-gnu/gs
 ./install.sh --skip-hailort
 ```
 
-<a id="method-2-docker"></a>
-
-# Method 2 Docker
+## Method 2 Docker
 
 **Download TAPPAS container**
 
-- Go to: hailo website → developer zone → software downloads
-- Download the Tappas docker container:![image-20240326-131751.png](./attachments/image-20240326-131751.png)
+* Go to: hailo website → developer zone → software downloads
+* Download the Tappas docker container:
 
 Move it to your machine and unzip the file using:
 
@@ -204,12 +192,9 @@ To resume the image after exiting you can use
 ./run_tappas_docker.sh --resume
 ```
 
-<a id="testing-using-hailortcli-benchmark"></a>
+### Testing using hailortcli benchmark
 
-## Testing using hailortcli benchmark
-
-> [!INFO]
-> Running hailortcli requires the use of sudo
+> \[!INFO] Running hailortcli requires the use of sudo
 
 To test we will benchmark the models:
 
@@ -245,5 +230,4 @@ Device 0000:01:00.0:
 
 ```
 
-> [!NOTE]
-> Numbers might be somewhat unrealistic since we are running a benchmark in a console environment without actual image processing calculations, hence the high FPS, etc…
+> \[!NOTE] Numbers might be somewhat unrealistic since we are running a benchmark in a console environment without actual image processing calculations, hence the high FPS, etc…

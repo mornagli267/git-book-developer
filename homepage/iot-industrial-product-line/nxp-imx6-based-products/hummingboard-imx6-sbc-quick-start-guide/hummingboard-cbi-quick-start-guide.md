@@ -1,17 +1,13 @@
 # HummingBoard CBi Quick Start Guide
 
-![](./attachments/HummingBoard%20CBi%20sideways%20(small).png)
-
-<a id="revision-and-notes"></a>
+![](<../../../../.gitbook/assets/HummingBoard CBi sideways (small).png>)
 
 ## Revision and Notes
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 14 Nov 2021 |     | 1.0 | Initial release |
-| Table of Contents | - [Revision and Notes](#revision-and-notes)<br>- [Introduction](#introduction)<br>- [Hardware Setup](#hardware-setup)<br>  - [Product Specifications](#product-specifications)<br>  - [Block Diagram](#block-diagram)<br>  - [Visual features overview](#visual-features-overview)<br>- [Software Setup](#software-setup)<br>  - [Cable setup and prerequisites](#cable-setup-and-prerequisites)<br>- [Booting form an SD card](#booting-form-an-sd-card)<br>- [CanBUS and RS485 Support](#canbus-and-rs485-support)<br>  - [Initial Setup](#initial-setup)<br>  - [CanBUS Enable](#canbus-enable)<br>  - [RS485 Enable](#rs485-enable)<br>- [Install to eMMC](#install-to-emmc)<br>- [More Features](#more-features)<br>  - [Internet](#internet)<br>    - [Wi-fi](#wi-fi)<br>  - [Bluetooth](#bluetooth)<br>  - [Cellular Modem](#cellular-modem)<br>  - [GPIO pins Control](#gpio-pins-control)<br>- [CanBUS and RS485 Test](#canbus-and-rs485-test)<br>- [List Of Supported OS](#list-of-supported-os)<br>- [Build U-Boot & Kernel from sources](#build-u-boot-kernel-from-sources)<br>- [Documentation](#documentation)<br>- [Related Articles](#related-articles) |     |     |
-
-<a id="introduction"></a>
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Revision** | **Notes**       |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 14 Nov 2021       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 1.0          | Initial release |
+| Table of Contents | <p>- <a href="hummingboard-cbi-quick-start-guide.md#revision-and-notes">Revision and Notes</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#introduction">Introduction</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#hardware-setup">Hardware Setup</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#product-specifications">Product Specifications</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#block-diagram">Block Diagram</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#visual-features-overview">Visual features overview</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#software-setup">Software Setup</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#cable-setup-and-prerequisites">Cable setup and prerequisites</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#booting-form-an-sd-card">Booting form an SD card</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#canbus-and-rs485-support">CanBUS and RS485 Support</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#initial-setup">Initial Setup</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#canbus-enable">CanBUS Enable</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#rs485-enable">RS485 Enable</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#install-to-emmc">Install to eMMC</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#more-features">More Features</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#internet">Internet</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#wi-fi">Wi-fi</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#bluetooth">Bluetooth</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#cellular-modem">Cellular Modem</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#gpio-pins-control">GPIO pins Control</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#canbus-and-rs485-test">CanBUS and RS485 Test</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#list-of-supported-os">List Of Supported OS</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#build-u-boot-kernel-from-sources">Build U-Boot &#x26; Kernel from sources</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#documentation">Documentation</a><br>- <a href="hummingboard-cbi-quick-start-guide.md#related-articles">Related Articles</a></p> |              |                 |
 
 ## Introduction
 
@@ -19,81 +15,66 @@ The following quick start guide provides background information about the [Hummi
 
 The guide will give a technical overview about the product and by the end of it you should be able to boot an operating system and begin testing your application.
 
-<a id="hardware-setup"></a>
-
 ## Hardware Setup
-
-<a id="product-specifications"></a>
 
 #### Product Specifications
 
-|     |     |
-| --- | --- |
-| **SOM Model** | NXP i.MX6 based Solo to Quad Core SOM |
-| **Processor** | i.MX6 Solo – Quad core ARM Cortex A9 up to 800Mhz |
-| **Memory & Storage** | Up to 2GB DDR3 |
-|     | uSD, eMMC (8GB), M.2 (2242) |
-| **Network** | 1 x RJ45 |
-| **Connectivity** | 1 x CAN bus |
-|     | 1 x RS485 |
-|     | 4 x USB 2.0 |
-|     | Mini PCIe |
-|     | M.2 |
-|     | SIM card slot |
-| **Media** | LVDS |
-|     | MIPI-DSI |
-|     | MIPI-CSI-2 |
-| **I/O** | 1 x Reset button |
-|     | 1 x Configurable push button |
-|     | 3 x LED indicators |
-|     | RTC |
-|     | IR reciver |
-| **OS Support** | Linux |
-| **Dimensions** | 102mm x 69mm |
-| **Power** | 7V – 36V wide range |
-| **Environment** | Metal Enclosure |
-|     | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355) |
+|                      |                                                                                                                                                                   |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SOM Model**        | NXP i.MX6 based Solo to Quad Core SOM                                                                                                                             |
+| **Processor**        | i.MX6 Solo – Quad core ARM Cortex A9 up to 800Mhz                                                                                                                 |
+| **Memory & Storage** | Up to 2GB DDR3                                                                                                                                                    |
+|                      | uSD, eMMC (8GB), M.2 (2242)                                                                                                                                       |
+| **Network**          | 1 x RJ45                                                                                                                                                          |
+| **Connectivity**     | 1 x CAN bus                                                                                                                                                       |
+|                      | 1 x RS485                                                                                                                                                         |
+|                      | 4 x USB 2.0                                                                                                                                                       |
+|                      | Mini PCIe                                                                                                                                                         |
+|                      | M.2                                                                                                                                                               |
+|                      | SIM card slot                                                                                                                                                     |
+| **Media**            | LVDS                                                                                                                                                              |
+|                      | MIPI-DSI                                                                                                                                                          |
+|                      | MIPI-CSI-2                                                                                                                                                        |
+| **I/O**              | 1 x Reset button                                                                                                                                                  |
+|                      | 1 x Configurable push button                                                                                                                                      |
+|                      | 3 x LED indicators                                                                                                                                                |
+|                      | RTC                                                                                                                                                               |
+|                      | IR reciver                                                                                                                                                        |
+| **OS Support**       | Linux                                                                                                                                                             |
+| **Dimensions**       | 102mm x 69mm                                                                                                                                                      |
+| **Power**            | 7V – 36V wide range                                                                                                                                               |
+| **Environment**      | Metal Enclosure                                                                                                                                                   |
+|                      | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355) |
 
-> [!INFO]
-> Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466) .
-
-<a id="block-diagram"></a>
+> \[!INFO] Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466) .
 
 #### **Block Diagram**
 
 The following figure describes the Hummingboard CBi Block Diagram.
 
-![](./attachments/HummingBoard%20CBi%20block%20diagram%20(1)-20211114-110600.png)
-
-<a id="visual-features-overview"></a>
+![](<../../../../.gitbook/assets/HummingBoard CBi block diagram (1)-20211114-110600.png>)
 
 #### Visual features overview
 
 Please see below the features overview of the connector side of the HummingBoard CBi.
 
-![](./attachments/image-20211114-110715.png)
+![](../../../../.gitbook/assets/image-20211114-110715.png)
 
 Print side connector overview of the HummingBoard CBi.
 
-![](./attachments/image-20211114-110741.png)
-
-<a id="software-setup"></a>
+![](../../../../.gitbook/assets/image-20211114-110741.png)
 
 ## Software Setup
-
-<a id="cable-setup-and-prerequisites"></a>
 
 #### Cable setup and prerequisites
 
 Here is what you will need to power up the board:
 
-- Linux or Windows PC
-- HummingBoard CBi with SOM
-- 12V Power adapter (HummingBoard CBi has wide range input of 9V-36V, it is recommended to use 12V power adapter)
-- USB to UART cable
-- IP router or IP switch
-
-<a id="booting-form-an-sd-card"></a>
+* Linux or Windows PC
+* HummingBoard CBi with SOM
+* 12V Power adapter (HummingBoard CBi has wide range input of 9V-36V, it is recommended to use 12V power adapter)
+* USB to UART cable
+* IP router or IP switch
 
 ## Booting form an SD card
 
@@ -101,14 +82,13 @@ On the HummingBoard CBi it is possible to boot from different media.
 
 For Booting from an SD card, jumpers need to be setup at J5005 as follows:
 
-![](./attachments/image-20211114-094820.png)
+![](../../../../.gitbook/assets/image-20211114-094820.png)
 
-> [!NOTE]
-> Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../../nxp-imx6-based-products/imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
+> \[!NOTE] Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
 
 Once you setup the jumpers, you can apply the following for booting from an SD card.
 
-**1\. Downloading the Debian image**
+**1. Downloading the Debian image**
 
 Download the Debian image by running the following command on your Linux/Windows PC:
 
@@ -116,9 +96,9 @@ Download the Debian image by running the following command on your Linux/Windows
 wget https://solid-run-images.sos-de-fra-1.exo.io/IMX6/Debian/sr-imx6-debian-bullseye-20220712-cli-sdhc.img.xz
 ```
 
-- For more Debian releases, please visit [Debian Release](https://images.solid-run.com/IMX6/Debian).
+* For more Debian releases, please visit [Debian Release](https://images.solid-run.com/IMX6/Debian).
 
-**2\. Writing the image to the SD card**
+**2. Writing the image to the SD card**
 
 Use the following commands for writing the image to an SD card:
 
@@ -126,27 +106,25 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-imx6-debian-bullseye-20220712-cli-sdhc.img.xz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-- For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
+* For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> [!NOTE]
-> Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 
-**3\. SD card insertion**
+**3. SD card insertion**
 
 Please Insert the SD card into your device.
 
-**4\. Power connection**
+**4. Power connection**
 
 Connect your power adaptor to the DC jack, and then connect the adaptor to mains supply.
 
-**5\. Serial connection**
+**5. Serial connection**
 
 Please connect the UART cable to the pins on connector J25 as shown in the below picture, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
 
-![](./attachments/image-20211114-100743.png)
+![](../../../../.gitbook/assets/image-20211114-100743.png)
 
-> [!INFO]
-> For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../../nxp-imx6-based-products/imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
+> \[!INFO] For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
 
 Once you installed the necessary serial connection software, please run the following:
 
@@ -156,17 +134,13 @@ setenv som_rev 'V15'; saveenv; boot
 
 And you should be able to see the following:
 
-![](./attachments/image-20210926-110202.png)
+![](../../../../.gitbook/assets/image-20210926-110202.png)
 
-- In order to be able to log in , please insert “debian” as a username and password as follows:
+* In order to be able to log in , please insert “debian” as a username and password as follows:
 
-![](./attachments/image-20210926-110919.png)
-
-<a id="canbus-and-rs485-support"></a>
+![](../../../../.gitbook/assets/image-20210926-110919.png)
 
 ## CanBUS and RS485 Support
-
-<a id="initial-setup"></a>
 
 #### **Initial Setup**
 
@@ -186,8 +160,6 @@ apt-get update
 apt-get upgrade 
 reboot
 ```
-
-<a id="canbus-enable"></a>
 
 #### CanBUS Enable
 
@@ -209,8 +181,6 @@ unzip -o /tmp/hb-cbi-dtbs-k5.10.zip -d /boot/dtbs/5.10.0-8-armmp/
 reboot
 ```
 
-<a id="rs485-enable"></a>
-
 #### RS485 Enable
 
 1\. Add a support for rs485conf and compile an exec file by runnig the following:
@@ -221,9 +191,7 @@ cd rs485conf
 make
 ```
 
-> [!NOTE]
-> Before you run the above, please install some helping commands by running:
-> `apt-get install make gcc git`
+> \[!NOTE] Before you run the above, please install some helping commands by running: `apt-get install make gcc git`
 
 2\. Copy the output of the exec file bu running:
 
@@ -237,22 +205,16 @@ cp rs485conf /usr/bin/
  chmod +x /usr/bin/rs485conf
 ```
 
-<a id="install-to-emmc"></a>
-
 ## Install to eMMC
 
-- You can follow this document [Install to eMMC](https://github.com/SolidRun/documentation/blob/bsp/imx6/debian-11_sr1.md#install-to-emmc) to install debian to an eMMC device.
-
-<a id="more-features"></a>
+* You can follow this document [Install to eMMC](https://github.com/SolidRun/documentation/blob/bsp/imx6/debian-11_sr1.md#install-to-emmc) to install debian to an eMMC device.
 
 ## More Features
 
-<a id="internet"></a>
-
 #### Internet
 
-- Please check you Ethernet connection.
-- Use the following commands in order to keep your system up-to-date:
+* Please check you Ethernet connection.
+* Use the following commands in order to keep your system up-to-date:
 
 ```
 apt-get update 
@@ -260,13 +222,11 @@ apt-get upgrade
 reboot
 ```
 
-- For more detailed information, please refer to [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717) .
+* For more detailed information, please refer to [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717) .
 
-<a id="wi-fi"></a>
+**Wi-fi**
 
-##### Wi-fi
-
-- You can connect to WiFi using any application, such as : [connmanctl](https://manpages.debian.org/testing/connman/connmanctl.1.en.html) or [wpa\_spplicant](https://wiki.archlinux.org/title/wpa_supplicant).
+* You can connect to WiFi using any application, such as : [connmanctl](https://manpages.debian.org/testing/connman/connmanctl.1.en.html) or [wpa\_spplicant](https://wiki.archlinux.org/title/wpa_supplicant).
 
 An example for connecting to WiFi using wpa\_supplicant:
 
@@ -276,8 +236,7 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> [!NOTE]
-> To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 
 2\. Install the wpa\_supplicant package:
 
@@ -314,16 +273,13 @@ network={
 EOF
 ```
 
-> [!NOTE]
-> Check your personal ssids by running : ‘iw dev wlan0 scan’
+> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
 
 5\. Make sure it works:
 
 Restart your device and it should connect to the wireless network. If it doesn't, repeat above steps or get help from an adult.
 
-- For more information about using wpa\_supplicant , you can refer to [wpa\_supplicant](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant) or [wpa\_supplicant](https://blog.nelhage.com/2008/08/using-wpa_supplicant-on-debianubuntu/).
-
-<a id="bluetooth"></a>
+* For more information about using wpa\_supplicant , you can refer to [wpa\_supplicant](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant) or [wpa\_supplicant](https://blog.nelhage.com/2008/08/using-wpa_supplicant-on-debianubuntu/).
 
 #### Bluetooth
 
@@ -354,25 +310,23 @@ hciconfig hci0 piscan
 
 5\. If you want to connect to other devices:
 
-- Start by scanning for other Bluetooth devices:
+* Start by scanning for other Bluetooth devices:
 
 ```
 hcitool scan
 ```
 
-- Choose a MAC address and connect :
+* Choose a MAC address and connect :
 
 ```
 rfcomm connect 0  $MAC 10 & 
 ```
 
-- You can check the communication between the devices by writing :
+* You can check the communication between the devices by writing :
 
 ```
 l2ping -c 4  $MAC
 ```
-
-<a id="cellular-modem"></a>
 
 #### Cellular Modem
 
@@ -380,58 +334,44 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-- For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454).
-
-<a id="gpio-pins-control"></a>
+* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454).
 
 #### GPIO pins Control
 
-In order to be able to control the GPIO pins, please refer to [HummingBoard Edge/Gate/CBi GPIO Pins Control](../../nxp-imx6-based-products/imx6-other-articles/hummingboard-edge-gate-cbi-gpio-pins-control.md) .
-
-<a id="canbus-and-rs485-test"></a>
+In order to be able to control the GPIO pins, please refer to [HummingBoard Edge/Gate/CBi GPIO Pins Control](../imx6-other-articles/hummingboard-edge-gate-cbi-gpio-pins-control.md) .
 
 ## CanBUS and RS485 Test
 
 For testing your CANBus and RS-485 interfaces, please refer to [HummingBoard CBi RS485 and CAN bus](https://solidrun.atlassian.net/wiki/spaces/developer/pages/272334892) .
 
-<a id="list-of-supported-os"></a>
-
 ## List Of Supported OS
 
-| **OS** |     |
-| --- | --- |
-| ![](./attachments/image-20211223-104106.png) | [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717) |
-| ![](./attachments/image-20211223-104124.png) | [Yocto for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277558) |
-| ![](./attachments/image-20211223-104144.png) | [i.MX6 Archlinux](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179285) |
-| ![](./attachments/image-20211223-104259.png) | [XBian for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212021) |
-
-<a id="build-u-boot-kernel-from-sources"></a>
+| **OS**                                                     |                                                                                         |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717)    |
+| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277558) |
+| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179285) |
+| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212021) |
 
 ## Build U-Boot & Kernel from sources
 
-- Build a Linux kernel -  [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)
-- Build a U-Boot - [i.MX6 U-Boot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179374)
-
-<a id="documentation"></a>
+* Build a Linux kernel -  [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)
+* Build a U-Boot - [i.MX6 U-Boot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179374)
 
 ## Documentation
 
-      
+|                                                                                                                                                                                                                                                                                                                                                                                                                                       | File                                                                                                                                                               | Modified                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-4f3fdc85-c706-4bc4-b472-4b7cecff4bbf">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2+Assembly-Files.zip">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>             | ZIP Archive [HummingBoard2 Assembly-Files.zip](../../../../wiki/download/attachments/270631021/HummingBoard2%20Assembly-Files.zip)                                 | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-0b96cc41-1924-44e8-ab9d-bca7fe19e31d">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2+Enclosure-Files.zip">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>            | ZIP Archive [HummingBoard2 Enclosure-Files.zip](../../../../wiki/download/attachments/270631021/HummingBoard2%20Enclosure-Files.zip)                               | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-b367f5e9-14fd-429c-9ed1-be70e0a6099a">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2-v1.4-layout_pcb.zip">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>            | ZIP Archive [HummingBoard2-v1.4-layout\_pcb.zip](../../../../wiki/download/attachments/270631021/HummingBoard2-v1.4-layout_pcb.zip)                                | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-cf0b8ea0-3080-490d-b386-a51f35560420">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2-gerber-rev1.2.zip">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>              | ZIP Archive [HummingBoard2-gerber-rev1.2.zip](../../../../wiki/download/attachments/270631021/HummingBoard2-gerber-rev1.2.zip)                                     | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-dcf52e9f-88cf-49ec-82ae-f14246ca1e7f">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2+PCB+parts+assembly+Rev+1.4.zip">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [HummingBoard2 PCB parts assembly Rev 1.4.zip](../../../../wiki/download/attachments/270631021/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip) | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-cbi-quick-start-guide.md#section-b065cc56-21f0-4ad0-837f-38b72dab115f">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/270631021/HummingBoard2+Schematics.pdf">View</a> <a href="../../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>                 | PDF File [HummingBoard2 Schematics.pdf](../../../../wiki/download/attachments/270631021/HummingBoard2%20Schematics.pdf)                                            | Dec 26, 2021 by [SolidRun](../../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
 
-|     | File | Modified |
-| --- | --- | --- |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-4f3fdc85-c706-4bc4-b472-4b7cecff4bbf)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2+Assembly-Files.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2+Assembly-Files.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2+Assembly-Files.zip) | ZIP Archive [HummingBoard2 Assembly-Files.zip](/wiki/download/attachments/270631021/HummingBoard2%20Assembly-Files.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-0b96cc41-1924-44e8-ab9d-bca7fe19e31d)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2+Enclosure-Files.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2+Enclosure-Files.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2+Enclosure-Files.zip) | ZIP Archive [HummingBoard2 Enclosure-Files.zip](/wiki/download/attachments/270631021/HummingBoard2%20Enclosure-Files.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-b367f5e9-14fd-429c-9ed1-be70e0a6099a)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2-v1.4-layout_pcb.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2-v1.4-layout_pcb.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2-v1.4-layout_pcb.zip) | ZIP Archive [HummingBoard2-v1.4-layout\_pcb.zip](/wiki/download/attachments/270631021/HummingBoard2-v1.4-layout_pcb.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-cf0b8ea0-3080-490d-b386-a51f35560420)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2-gerber-rev1.2.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2-gerber-rev1.2.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2-gerber-rev1.2.zip) | ZIP Archive [HummingBoard2-gerber-rev1.2.zip](/wiki/download/attachments/270631021/HummingBoard2-gerber-rev1.2.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-dcf52e9f-88cf-49ec-82ae-f14246ca1e7f)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2+PCB+parts+assembly+Rev+1.4.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2+PCB+parts+assembly+Rev+1.4.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2+PCB+parts+assembly+Rev+1.4.zip) | ZIP Archive [HummingBoard2 PCB parts assembly Rev 1.4.zip](/wiki/download/attachments/270631021/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-b065cc56-21f0-4ad0-837f-38b72dab115f)<br><br>[Preview] [View](/wiki/download/attachments/270631021/HummingBoard2+Schematics.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=270631021&fileName=HummingBoard2+Schematics.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=270631021&fileName=HummingBoard2+Schematics.pdf) | PDF File [HummingBoard2 Schematics.pdf](/wiki/download/attachments/270631021/HummingBoard2%20Schematics.pdf?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-
-[Download All](/wiki/download/all_attachments?pageId=270631021)
+[Download All](../../../../wiki/download/all_attachments)
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355)
-
-<a id="related-articles"></a>
 
 ## Related Articles
 

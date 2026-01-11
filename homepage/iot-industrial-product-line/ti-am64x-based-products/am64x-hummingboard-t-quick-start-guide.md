@@ -1,63 +1,46 @@
 # AM64x HummingBoard-T Quick Start Guide
 
-<a id="revision-and-notes"></a>
-
 ## Revision and Notes
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 26/10/2021 | Josua Mayer | 1.0 | Initial release |
-| 26/06/2023 | Josua Mayer | 1.1 | Production release |
-| Table of Contents | - [Revision and Notes](#revision-and-notes)<br>- [Purpose](#purpose)<br>- [Hardware Setup](#hardware-setup)<br>  - [Connections](#connections)<br>  - [Boot Select](#boot-select)<br>  - [Console](#console)<br>- [Software Setup](#software-setup)<br>  - [Prepare bootable microSD Card](#prepare-bootable-microsd-card)<br>- [First Steps with Debian reference system](#first-steps-with-debian-reference-system)<br>  - [Log-In](#log-in)<br>  - [Networking](#networking)<br>  - [Log-In via SSH](#log-in-via-ssh)<br>  - [Expand Root Filesystem](#expand-root-filesystem)<br>- [Additional Information](#additional-information) |     |     |
-
-<a id="purpose"></a>
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | **Revision** | **Notes**          |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------ |
+| 26/10/2021        | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 1.0          | Initial release    |
+| 26/06/2023        | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 1.1          | Production release |
+| Table of Contents | <p>- <a href="am64x-hummingboard-t-quick-start-guide.md#revision-and-notes">Revision and Notes</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#purpose">Purpose</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#hardware-setup">Hardware Setup</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#connections">Connections</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#boot-select">Boot Select</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#console">Console</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#software-setup">Software Setup</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#prepare-bootable-microsd-card">Prepare bootable microSD Card</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#first-steps-with-debian-reference-system">First Steps with Debian reference system</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#log-in">Log-In</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#networking">Networking</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#log-in-via-ssh">Log-In via SSH</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#expand-root-filesystem">Expand Root Filesystem</a><br>- <a href="am64x-hummingboard-t-quick-start-guide.md#additional-information">Additional Information</a></p> |              |                    |
 
 ## Purpose
 
 This guide provides basic instructions for operating the SolidRun AM64 HummingBoard-T and booting into Linux. Advanced usage scenarios are covered by separate technical documentation.
 
-<a id="hardware-setup"></a>
-
 ## Hardware Setup
-
-<a id="connections"></a>
 
 ### Connections
 
-- 12V DC Power Adapter (12V recommended, HummingBoard-T supports 9V-36V)
-- microUSB cable for serial console
-- microSD card for storing bootable SW
+* 12V DC Power Adapter (12V recommended, HummingBoard-T supports 9V-36V)
+* microUSB cable for serial console
+* microSD card for storing bootable SW
 
-![](./attachments/TI%20AM64X%20Quick%20Guide%202023%20Front%20(1).jpg)
+![](<../../../.gitbook/assets/TI AM64X Quick Guide 2023 Front (1).jpg>)
 
-![](./attachments/TI%20AM64X%20Quick%20Guide%202023.jpg)
-
-<a id="boot-select"></a>
+![](<../../../.gitbook/assets/TI AM64X Quick Guide 2023.jpg>)
 
 ### Boot Select
 
 Configure the boot-mode for microSD using onboard DIP switch S1:
 
-| Switch | 1   | 2   | 3   | 4   | 5   | 6   |
-| --- | --- | --- | --- | --- | --- | --- |
-| microSD (FAT partition) | 0   | 0   | 0   | 1   | 0   | 1   |
-| microSD (RAW) | 1   | 0   | 0   | 0   | 1   | 1   |
-| eMMC | 1   | 0   | 0   | 1   | X   | X   |
+| Switch                  | 1 | 2 | 3 | 4 | 5 | 6 |
+| ----------------------- | - | - | - | - | - | - |
+| microSD (FAT partition) | 0 | 0 | 0 | 1 | 0 | 1 |
+| microSD (RAW)           | 1 | 0 | 0 | 0 | 1 | 1 |
+| eMMC                    | 1 | 0 | 0 | 1 | X | X |
 
-> [!INFO]
-> **Note:** 0 = OFF, 1 = ON, X = don't care.
-
-<a id="console"></a>
+> \[!INFO] **Note:** 0 = OFF, 1 = ON, X = don't care.
 
 ### Console
 
-Start an application for serial console - such as [PuTTY](https://www.putty.org/) or [tio](https://github.com/tio/tio). Configure it for baud rate 115200 and the COMx or ttyUSBy interface representing the micro-USB console connection. For details also see [Serial Connection](../../../homepage/other-articles/serial-connection.md).
-
-<a id="software-setup"></a>
+Start an application for serial console - such as [PuTTY](https://www.putty.org/) or [tio](https://github.com/tio/tio). Configure it for baud rate 115200 and the COMx or ttyUSBy interface representing the micro-USB console connection. For details also see [Serial Connection](../../other-articles/serial-connection.md).
 
 ## Software Setup
-
-<a id="prepare-bootable-microsd-card"></a>
 
 #### Prepare bootable microSD Card
 
@@ -65,15 +48,9 @@ Start an application for serial console - such as [PuTTY](https://www.putty.org/
 2. uncompress downloaded image file
 3. write image file to microSD card to create a byte-for-byte copy. [https://etcher.io/](https://etcher.io/) is recommended, professionals may use unix “dd” command.
 
-> [!NOTE]
-> **Attention:** The AM64x SOM modules are programmed with critical identifying information, including the product name and SKU, stored in an EEPROM at I2C bus 0, address 0x50. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data.
-> **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support immediately for assistance.
-
-<a id="first-steps-with-debian-reference-system"></a>
+> \[!NOTE] **Attention:** The AM64x SOM modules are programmed with critical identifying information, including the product name and SKU, stored in an EEPROM at I2C bus 0, address 0x50. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data. **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support immediately for assistance.
 
 ## First Steps with Debian reference system
-
-<a id="log-in"></a>
 
 ### Log-In
 
@@ -96,8 +73,6 @@ root@3f60b4ebfc7f:~#
 
 Log in with user-name “root”, no password.
 
-<a id="networking"></a>
-
 ### Networking
 
 By default networking is not configured. For advanced or persistent configurations please refer to the [Debian Documentation](https://wiki.debian.org/NetworkConfiguration).
@@ -117,8 +92,6 @@ root@3f60b4ebfc7f:~# ip addr show eth0
        valid_lft forever preferred_lft forever
 ```
 
-<a id="log-in-via-ssh"></a>
-
 ### Log-In via SSH
 
 To log in via SSH, an ssh key must be installed first. Copy your favourite public key, e.g. from `~/.ssh/id_ed25519.pub`, into a new file in the root users home directory at `~/.ssh/authorized_keys`:
@@ -130,13 +103,12 @@ ssh-ed25519 AAAAinsertyour pubkey@here
 EOF
 ```
 
-<a id="expand-root-filesystem"></a>
-
 ### Expand Root Filesystem
 
 After flashing the root filesystem is smaller than the eMMC. To utilize all space, resize both the rootfs partition - and then the filesystem:
 
 1. inspect partitions:Using fdisk, view the current partitions. Take note of the start sector for partition 2!
+
 ```
 root@3f60b4ebfc7f:~# fdisk /dev/mmcblk1
 Welcome to fdisk (util-linux 2.36.1).
@@ -154,7 +126,9 @@ Device         Boot  Start     End Sectors  Size Id Type
 /dev/mmcblk1p2      131072 2048000 1916929  936M 83 Linux
 Command (m for help):
 ```
+
 2. resize partition 1:Drop and re-create partition 2 at the same starting sector noted before, keeping the ext4 signature when prompted:
+
 ```
 Command (m for help): d
 Partition number (1,2, default 2): 2
@@ -184,13 +158,13 @@ Command (m for help): w
 The partition table has been altered.
 Syncing disks.
 ```
+
 3. resize root filesystem:Linux supports online-resizing for the ext4 filesystem. Invoke `resize2fs` on partition 1 to do so:
+
 ```
 root@3f60b4ebfc7f:~# resize2fs /dev/mmcblk1p2
 ```
 
-<a id="additional-information"></a>
-
 ## Additional Information
 
-- [Developer documentation for reference image](https://github.com/SolidRun/ti_am64x_build)
+* [Developer documentation for reference image](https://github.com/SolidRun/ti_am64x_build)

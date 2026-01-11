@@ -1,8 +1,8 @@
-# i.MX6  Dual-lite with 2GB DDR
+# i.MX6 Dual-lite with 2GB DDR
 
-For  SOM iMX6 Dual-lite with **2GB** DDR requires a special U-Boot change to support the **2GB** DDR with imx6 Dual-lite...
+For  SOM iMX6 Dual-lite with **2GB** DDR requires a special U-Boot change to support the **2GB** DDR with imx6 Dual-lite...
 
-By default the general iMX6 U-Boot configured to support **1GB** DDR when detected imx6 Dual-liteSOM version, so you need to rebuild your U-Boot with applying the attached patch to support the **2GB** DDR with SOM iMX6 Dual-lite (the attached patch should replace the default settings of the imx6 Dual-lite from 1GB to 2GB and adding the DDR calibration for the 2GB DDR).
+By default the general iMX6 U-Boot configured to support **1GB** DDR when detected imx6 Dual-liteSOM version, so you need to rebuild your U-Boot with applying the attached patch to support the **2GB** DDR with SOM iMX6 Dual-lite (the attached patch should replace the default settings of the imx6 Dual-lite from 1GB to 2GB and adding the DDR calibration for the 2GB DDR).
 
 ```
 diff --git a/board/solidrun/mx6cuboxi/mx6cuboxi.c b/board/solidrun/mx6cuboxi/mx6cuboxi.c
@@ -45,13 +45,13 @@ index 8fad3febf9..450399088d 100644
 2.25.1
 ```
 
-you can follow the [i.MX6 U-Boot](../../nxp-imx6-based-products/imx6-software/imx6-u-boot.md) guide to generate a new U-Boot for imx6 SOM.
+you can follow the [i.MX6 U-Boot](../imx6-software/imx6-u-boot.md) guide to generate a new U-Boot for imx6 SOM.
 
 The quick test can be:
 
 1- install general i.MX6 image from Solidrun web ([sr-imx6-debian-buster-20220731-cli.img.xz](https://solid-run-images.sos-de-fra-1.exo.io/IMX6/Debian/sr-imx6-debian-buster-20220731-cli.img.xz)) & uncompress & flash it on SD Card
 
-2- override the bootloader (U-Boot & SPL) of the SD card using the commands below: 
+2- override the bootloader (U-Boot & SPL) of the SD card using the commands below:&#x20;
 
 ```
 dd if=SPL of=/dev/sdX bs=1k seek=1 conv=sync
@@ -60,6 +60,4 @@ dd if=u-boot.img of=/dev/sdX bs=1k seek=69 conv=sync
 
 Attached here is a pre-built U-Boot and SPL with the above changes applied.
 
-[u-boot.img](./attachments/u-boot.img)
-[SPL](./attachments/SPL)
-[0001-add-imx6dl_2g_mmcd_calib.patch](./attachments/0001-add-imx6dl_2g_mmcd_calib.patch)
+[u-boot.img](attachments/u-boot.img) [SPL](attachments/SPL/) [0001-add-imx6dl\_2g\_mmcd\_calib.patch](attachments/0001-add-imx6dl_2g_mmcd_calib.patch)

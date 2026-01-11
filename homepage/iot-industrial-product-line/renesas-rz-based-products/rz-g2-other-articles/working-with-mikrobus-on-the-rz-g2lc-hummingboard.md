@@ -1,33 +1,31 @@
 # Working with mikroBUS on the RZ/G2LC HummingBoard
 
+## Working with mikroBUS on the RZ/G2LC HummingBoard
+
 This guide will show you how to control the mikroBUS GPIOs, SPI, I2C, and UART from the RZ/G2LC HummingBoard Linux userspace.
 
-- [Choosing the pin function](#choosing-the-pin-function)
-- [GPIO](#gpio)
-- [UART](#uart)
-- [CANFD](#canfd)
-- [I2C](#i2c)
-- [SPI](#spi)
+* [Choosing the pin function](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#choosing-the-pin-function)
+* [GPIO](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#gpio)
+* [UART](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#uart)
+* [CANFD](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#canfd)
+* [I2C](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#i2c)
+* [SPI](working-with-mikrobus-on-the-rz-g2lc-hummingboard.md#spi)
 
 Here is a microBUS connector pinout:
 
-![](./attachments/g2lc_mikrobus.jpg)
+![](../../../../.gitbook/assets/g2lc_mikrobus.jpg)
 
-<a id="choosing-the-pin-function"></a>
-
-# Choosing the pin function
+## Choosing the pin function
 
 According to the SOC specification, most pins can be used as GPIO or alternative function pins.
 
-- The pin P45\_2 can be used as GPIO.
-- The pins P44\_3, P44\_0, P44\_2, and P44\_1 can be used as GPIOs by default. Enable the `spi1` node in the devise tree to use them as SPI.
-- By default, the pins P41\_0, P41\_1, P40\_1, and P40\_0 are used as uart ttySC1. Disable the `scif1` node in the devise tree to use them as GPIOs.
-- The pins P40\_1, and P40\_0 Can be used as CANFD RX/TX. Disable the `scif1` node and enable canfd node in the devise tree to use them as CANFD.
-- I2C0\_SCL and I2C0\_SDA can’t be used as GPIOs, only as I2C pins.
+* The pin P45\_2 can be used as GPIO.
+* The pins P44\_3, P44\_0, P44\_2, and P44\_1 can be used as GPIOs by default. Enable the `spi1` node in the devise tree to use them as SPI.
+* By default, the pins P41\_0, P41\_1, P40\_1, and P40\_0 are used as uart ttySC1. Disable the `scif1` node in the devise tree to use them as GPIOs.
+* The pins P40\_1, and P40\_0 Can be used as CANFD RX/TX. Disable the `scif1` node and enable canfd node in the devise tree to use them as CANFD.
+* I2C0\_SCL and I2C0\_SDA can’t be used as GPIOs, only as I2C pins.
 
-<a id="gpio"></a>
-
-# GPIO
+## GPIO
 
 To use GPIO in Linux, either gpiod or sysfs can be used.
 
@@ -46,8 +44,7 @@ Setting GPIO using gpiod:
 gpioset -m wait gpiochip0 362=1
 ```
 
-> [!INFO]
-> Note: after exit, the gpioset utility will reset GPIO to its default state (input hi-z); for more info, read about [gpioset modes](https://manpages.debian.org/bookworm/gpiod/gpioset.1.en.html).
+> \[!INFO] Note: after exit, the gpioset utility will reset GPIO to its default state (input hi-z); for more info, read about [gpioset modes](https://manpages.debian.org/bookworm/gpiod/gpioset.1.en.html).
 
 Reading GPIO using gpiod:
 
@@ -74,17 +71,12 @@ echo out > /sys/class/gpio/P45_2/direction
 echo 1 > /sys/class/gpio/P45_2/value 
 ```
 
-> [!NOTE]
-> The GPIO number can be calculated using the function below:  
-> **XX** = Linux gpio number = <GPIO\_controll\_base> + <GPIO\_Bank> \* 8 + <GPIO\_Bit>  
-> → **XX =** 120 + <GPIO\_Bank> \* 8 + <gpio\_bit>
-> **Example:** To calculate the GPIO number of mikroBus J8 \[pin 2\] (RST)  
-> **Pad Name:** P45\_2 → {**GPIO\_Bank**\= 45; **GPIO\_Bit** = 2}
-> **XX** = 120 + ( 45) \* 8 + 2 = 120 + 362 = 482
+> \[!NOTE] The GPIO number can be calculated using the function below:\
+> **XX** = Linux gpio number = \<GPIO\_controll\_base> + \<GPIO\_Bank> \* 8 + \<GPIO\_Bit>\
+> → **XX =** 120 + \<GPIO\_Bank> \* 8 + \<gpio\_bit> **Example:** To calculate the GPIO number of mikroBus J8 \[pin 2] (RST)\
+> **Pad Name:** P45\_2 → {**GPIO\_Bank**= 45; **GPIO\_Bit** = 2} **XX** = 120 + ( 45) \* 8 + 2 = 120 + 362 = 482
 
-<a id="uart"></a>
-
-# UART
+## UART
 
 UART is available in Linux as a standard serial device /dev/ttySC1.
 
@@ -97,9 +89,7 @@ To use it, you can use the default utilities:
 
 You can also use Picocom, minicom, screen, etc.
 
-<a id="canfd"></a>
-
-# CANFD
+## CANFD
 
 The CANFD RX/TX pins are available on P40\_1 and P40\_0. These pins conflict with SCIF1 RX/TX. To enable CANFD, the `scif1` node needs to be disabled, and the `canfd` node needs to be enabled in the dts.
 
@@ -123,15 +113,11 @@ Basic CAN usage:
 # candump can0
 ```
 
-> [!INFO]
-> Note: this CANFD controller supports a nominal bit rate: max. 1Mbps, data bit rate: max. 4Mbps
+> \[!INFO] Note: this CANFD controller supports a nominal bit rate: max. 1Mbps, data bit rate: max. 4Mbps
 
-> [!CAUTION]
-> For the electrical connection, a CANFD transceiver should be used. Do not connect the RX/TX pins to the CAN\_H/CAN\_L lines directly; this will damage the SOM.
+> \[!CAUTION] For the electrical connection, a CANFD transceiver should be used. Do not connect the RX/TX pins to the CAN\_H/CAN\_L lines directly; this will damage the SOM.
 
-<a id="i2c"></a>
-
-# I2C
+## I2C
 
 The I2C0\_SCL and I2C0\_SDA pins can be utilized as an I2C0 connection and are available via /dev/i2c-0.
 
@@ -150,18 +136,15 @@ $ i2cdetect -y 0
 70: -- -- -- -- -- -- -- --       
 ```
 
-> [!WARNING]
-> Note: The I2C0 bus is used for many devices on the board. Be careful connecting to this pin something that can fault the I2C bus.
+> \[!WARNING] Note: The I2C0 bus is used for many devices on the board. Be careful connecting to this pin something that can fault the I2C bus.
 
 Options to control the device:
 
-- i2c-tools utilities
-- Add device to i2c0 node in the dts
-- Also possible that the kernel will bind the driver automatically during the i2c bus scan
+* i2c-tools utilities
+* Add device to i2c0 node in the dts
+* Also possible that the kernel will bind the driver automatically during the i2c bus scan
 
-<a id="spi"></a>
-
-# SPI
+## SPI
 
 The mikroBUS connector's SPI pins are connected to the SOC's SPI1 interface. To use them, configure the `spi1` node in the dts first.
 

@@ -1,24 +1,19 @@
 # LX2160A COM Hardware User Manual
 
-<a id="revisions-and-notes"></a>
-
 ## Revisions and Notes
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| **Date** | **Owner** | **Revision** | **Notes** |
-| 08 Jan 2019 | Rabeeh Khoury | 1.0 |     |
-| May 2, 2023 | Rabeeh Khoury | 1.1 | Updated notes about I2C pull-ups -<br><br>- All I2C are 2.2k pulled-up from root I2C bus before I2C mux. All leaf I2C busses are 10k pulled-up<br>- B13,B14,B33 and B44 are 2.2k pulled-up. |
-| Feb 19, 2024 | Rabeeh Khoury | 1.2 | Updated COM express 3D model to PCB rev 2.1 |
-| Oct 9, 2024 | Josua Mayer | 1.3 | Updated PTP & Sync-E signal names to match LX2160 Datasheet |
-| Nov 4, 2024 | Josua Mayer | 1.4 | Added assembly option and component locations for PTP & Sync-E (not CEX-7 spec) |
-| Oct 9, 2025 | Rabeeh Khoury | 1.5 | Removed simplified schematics version 1.6 and kept latest version 2.1<br><br>Fixed typo of IEEE\_RCLK0 |
-| Table of Contents | - [Revisions and Notes](#revisions-and-notes)<br>- [Introduction](#introduction)<br>- [Specifications](#specifications)<br>- [Overview](#overview)<br>- [Description](#description)<br>  - [Block Diagram](#block-diagram)<br>- [Simplified Schematics](#simplified-schematics)<br>- [S-Parameters](#s-parameters)<br>- [Module Power Consumption Measurements](#module-power-consumption-measurements)<br>- [Maximum Current Consumption](#maximum-current-consumption)<br>- [PCIe Lane Numbers and Bucket Grouping](#pcie-lane-numbers-and-bucket-grouping)<br>  - [Bucket B1 – lanes #0 .. #7](#bucket-b1-lanes-0-7)<br>  - [Bucket B2 – lanes #8 .. #15](#bucket-b2-lanes-8-15)<br>  - [Bucket B3 – lanes #16 .. #23](#bucket-b3-lanes-16-23)<br>  - [Bucket B4 – lanes #24 .. #31](#bucket-b4-lanes-24-31)<br>- [SERDES configuration](#serdes-configuration)<br>  - [SERDES block #1 (SD1)](#serdes-block-1-sd1)<br>  - [AB Header](#ab-header)<br>  - [CD Header](#cd-header)<br>- [PTP / Sync-E Assembly Option](#ptp-sync-e-assembly-option)<br>  - [PTP / Sync-E Assembly Option Locations](#ptp-sync-e-assembly-option-locations)<br>- [Accessing JTAG](#accessing-jtag)<br>- [Documentation](#documentation)<br>- [Related Articles](#related-articles) |     |     |
+|                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |              |                                                                                                                                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Revision** | **Notes**                                                                                                                                                                                          |
+| 08 Jan 2019       | Rabeeh Khoury                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 1.0          |                                                                                                                                                                                                    |
+| May 2, 2023       | Rabeeh Khoury                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 1.1          | <p>Updated notes about I2C pull-ups -<br><br>- All I2C are 2.2k pulled-up from root I2C bus before I2C mux. All leaf I2C busses are 10k pulled-up<br>- B13,B14,B33 and B44 are 2.2k pulled-up.</p> |
+| Feb 19, 2024      | Rabeeh Khoury                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 1.2          | Updated COM express 3D model to PCB rev 2.1                                                                                                                                                        |
+| Oct 9, 2024       | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 1.3          | Updated PTP & Sync-E signal names to match LX2160 Datasheet                                                                                                                                        |
+| Nov 4, 2024       | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 1.4          | Added assembly option and component locations for PTP & Sync-E (not CEX-7 spec)                                                                                                                    |
+| Oct 9, 2025       | Rabeeh Khoury                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 1.5          | <p>Removed simplified schematics version 1.6 and kept latest version 2.1<br><br>Fixed typo of IEEE_RCLK0</p>                                                                                       |
+| Table of Contents | <p>- <a href="lx2160a-com-hardware-user-manual.md#revisions-and-notes">Revisions and Notes</a><br>- <a href="lx2160a-com-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="lx2160a-com-hardware-user-manual.md#specifications">Specifications</a><br>- <a href="lx2160a-com-hardware-user-manual.md#overview">Overview</a><br>- <a href="lx2160a-com-hardware-user-manual.md#description">Description</a><br>- <a href="lx2160a-com-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="lx2160a-com-hardware-user-manual.md#simplified-schematics">Simplified Schematics</a><br>- <a href="lx2160a-com-hardware-user-manual.md#s-parameters">S-Parameters</a><br>- <a href="lx2160a-com-hardware-user-manual.md#module-power-consumption-measurements">Module Power Consumption Measurements</a><br>- <a href="lx2160a-com-hardware-user-manual.md#maximum-current-consumption">Maximum Current Consumption</a><br>- <a href="lx2160a-com-hardware-user-manual.md#pcie-lane-numbers-and-bucket-grouping">PCIe Lane Numbers and Bucket Grouping</a><br>- <a href="lx2160a-com-hardware-user-manual.md#bucket-b1-lanes-0-7">Bucket B1 – lanes #0 .. #7</a><br>- <a href="lx2160a-com-hardware-user-manual.md#bucket-b2-lanes-8-15">Bucket B2 – lanes #8 .. #15</a><br>- <a href="lx2160a-com-hardware-user-manual.md#bucket-b3-lanes-16-23">Bucket B3 – lanes #16 .. #23</a><br>- <a href="lx2160a-com-hardware-user-manual.md#bucket-b4-lanes-24-31">Bucket B4 – lanes #24 .. #31</a><br>- <a href="lx2160a-com-hardware-user-manual.md#serdes-configuration">SERDES configuration</a><br>- <a href="lx2160a-com-hardware-user-manual.md#serdes-block-1-sd1">SERDES block #1 (SD1)</a><br>- <a href="lx2160a-com-hardware-user-manual.md#ab-header">AB Header</a><br>- <a href="lx2160a-com-hardware-user-manual.md#cd-header">CD Header</a><br>- <a href="lx2160a-com-hardware-user-manual.md#ptp-sync-e-assembly-option">PTP / Sync-E Assembly Option</a><br>- <a href="lx2160a-com-hardware-user-manual.md#ptp-sync-e-assembly-option-locations">PTP / Sync-E Assembly Option Locations</a><br>- <a href="lx2160a-com-hardware-user-manual.md#accessing-jtag">Accessing JTAG</a><br>- <a href="lx2160a-com-hardware-user-manual.md#documentation">Documentation</a><br>- <a href="lx2160a-com-hardware-user-manual.md#related-articles">Related Articles</a></p> |              |                                                                                                                                                                                                    |
 
-> [!INFO]
-> No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
-
-<a id="introduction"></a>
+> \[!INFO] No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 
 ## Introduction
 
@@ -28,38 +23,34 @@ This document is intended for hardware engineers that are willing to integrate
 
 The document provides details with regards LX2160A module rev 1.3, 1.4, 1.5 and 1.6.
 
-<a id="specifications"></a>
-
 ## Specifications
 
-|     |     |
-| --- | --- |
-| **Form Factor** | COM Express type 7 |
-| **Processor Core** | 16 core Arm Cortex A72 |
-| **Processor speed** | Up to 2GHz |
-| **Memory** | Dual channel SO-DIMM DDR4; up to 64GB 3200MT/s (not included by default)\* |
-| **ECC** | Optional |
-| **eMMC** | 64GB by default (up to 128GB)  <br>64MB SPI memory |
-| **SATA** | 2 x SATA (Gen III)\*\* |
-| **Security** | NXP LX2160A Secure Boot |
-| **Supported OS** | Linux kernel 4.14x  <br>Yocto  <br>DPDK  <br>UEFI  <br>KVM/QEMU/Containers  <br>NFV  <br>Openstack compute node |
-| **XFI/RXAUI/SGMII** | 4\*\* |
-| **PCIe gen 3.0** | 18 (5 controllers)\*\* |
-| **SGMII** | 1 with built in phy |
-| **USB 3.0** | 4   |
-| **I2C** | 6   |
-| **UART** | 2   |
-| **SPI bus** | ✓   |
-| **Power** | 12V (9V-15V)  <br>50W full system |
-| **Environment** | Commercial: 0°C to 70°C  <br>Industrial: -40°C to 85°C  <br>Humidity (non-condensing): 10% – 90% |
-| **Dimensions** | 125mm X 95mm |
-|     | [Buy Now](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/) |
-
-<a id="overview"></a>
+|                     |                                                                                                                    |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Form Factor**     | COM Express type 7                                                                                                 |
+| **Processor Core**  | 16 core Arm Cortex A72                                                                                             |
+| **Processor speed** | Up to 2GHz                                                                                                         |
+| **Memory**          | Dual channel SO-DIMM DDR4; up to 64GB 3200MT/s (not included by default)\*                                         |
+| **ECC**             | Optional                                                                                                           |
+| **eMMC**            | <p>64GB by default (up to 128GB)<br>64MB SPI memory</p>                                                            |
+| **SATA**            | 2 x SATA (Gen III)\*\*                                                                                             |
+| **Security**        | NXP LX2160A Secure Boot                                                                                            |
+| **Supported OS**    | <p>Linux kernel 4.14x<br>Yocto<br>DPDK<br>UEFI<br>KVM/QEMU/Containers<br>NFV<br>Openstack compute node</p>         |
+| **XFI/RXAUI/SGMII** | 4\*\*                                                                                                              |
+| **PCIe gen 3.0**    | 18 (5 controllers)\*\*                                                                                             |
+| **SGMII**           | 1 with built in phy                                                                                                |
+| **USB 3.0**         | 4                                                                                                                  |
+| **I2C**             | 6                                                                                                                  |
+| **UART**            | 2                                                                                                                  |
+| **SPI bus**         | ✓                                                                                                                  |
+| **Power**           | <p>12V (9V-15V)<br>50W full system</p>                                                                             |
+| **Environment**     | <p>Commercial: 0°C to 70°C<br>Industrial: -40°C to 85°C<br>Humidity (non-condensing): 10% – 90%</p>                |
+| **Dimensions**      | 125mm X 95mm                                                                                                       |
+|                     | [Buy Now](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/) |
 
 ## Overview
 
-LX2160A COM express type 7 is a highly integrated COM modules based on NXP’s [LX2160A](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/layerscape-lx2160a-multicore-communications-processor:LX2160A) SoC.
+LX2160A COM express type 7 is a highly integrated COM modules based on NXP’s [LX2160A](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/layerscape-lx2160a-multicore-communications-processor:LX2160A) SoC.
 
 The SoC highlights are up to 2.0GHz 16 x Cortex A72 Arm cores, two DDR4 controllers up to 3200Mtps and 24 high speed SERDESes.
 
@@ -69,19 +60,13 @@ The module integrates the following features –
 2. Two SO-DIMM DDR4 connected to the two DDR contorllers. Each SO-DIMM supports up to 32GByte SO-DIMM DDR4 3200Mtps memory with and without ECC, registered or non-registered; total up to 64GByte system memory.
 3. Single 12v DC-input is required.
 
-<a id="description"></a>
-
 ## Description
-
-<a id="block-diagram"></a>
 
 #### Block Diagram
 
 The following figure describes the LX2160A COM express type 7 Blocks Diagram.
 
-![](./attachments/LX2160A%20CEx7%20block%20diagram%202021.png)
-
-<a id="simplified-schematics"></a>
+![](<../../../.gitbook/assets/LX2160A CEx7 block diagram 2021.png>)
 
 ## Simplified Schematics
 
@@ -90,8 +75,6 @@ Look below in the documentation section for the LX2160A COM express type 7 simpl
 1. Software and firmware engineers that enables them to understand the IO and signal connectivity of the COM express design.
 2. Hardware engineers that are willing to use the COM express and build their own development board. This document completes the CEx7 LX2160A reference manual from description of signal and implementation wise.
 
-<a id="s-parameters"></a>
-
 ## S-Parameters
 
 Browse below in the Documentation section in other files section to download LX2160A-CEX7 S-parameters.
@@ -99,8 +82,6 @@ Browse below in the Documentation section in other files section to download LX2
 The 25 GbE files refer to the 10G KR signals – total 32 ports model up to 20GHz and the second PCIe file refers to all other SERDESes while the model is up to 6GHz.
 
 The S-parameters models includes the PCB extraction with the COM express header AND receptacle based on models from EPT.
-
-<a id="module-power-consumption-measurements"></a>
 
 ## Module Power Consumption Measurements
 
@@ -116,21 +97,15 @@ The following power consumption measurements were conducted on the following set
 
 Since the measurement is done on the input of the pico-psu; the SoC consumption all together with the DDR and all the DC-DC losses are measured too.
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| **Test** | **Power (Watt)** | **PCB Temperature (Celsius)** | **Die Temperature (Celsius)** |
-| Linux idle | 21.5 | 40  | 44.6 |
-| 16x memtester 100M (\*) | 36.5 | 48  | 56.9 |
-| 2x cpuburn-krait (\*\*) | 35.6 | 48.4 | 59.1 |
-| 2x cpuburn-krait (\*\*\*) – no fan | 40.1 | 78.8 | 105 |
+|                                    |                  |                               |                               |
+| ---------------------------------- | ---------------- | ----------------------------- | ----------------------------- |
+| **Test**                           | **Power (Watt)** | **PCB Temperature (Celsius)** | **Die Temperature (Celsius)** |
+| Linux idle                         | 21.5             | 40                            | 44.6                          |
+| 16x memtester 100M (\*)            | 36.5             | 48                            | 56.9                          |
+| 2x cpuburn-krait (\*\*)            | 35.6             | 48.4                          | 59.1                          |
+| 2x cpuburn-krait (\*\*\*) – no fan | 40.1             | 78.8                          | 105                           |
 
-> [!WARNING]
-> **Please note**
-> (\*) – The Linux command is ‘memtester 100M > /dev/null &’ ran 16x times where 16 is the core count
-> (\*\*) – The Linux command ‘cpuburn-krait’ is ran two times in background. The reason cpuburn-krait was chosen since it can generate most heat out of the cores (the core pipeline most utilized).
-> (\*\*\*) – This measurement was taken when the fan is disconnected and the power was measured when the die reached 105c. Notice that keeping the fan disconnected will make the processor reach temperatures that are out of spec.
-
-<a id="maximum-current-consumption"></a>
+> \[!WARNING] **Please note** (\*) – The Linux command is ‘memtester 100M > /dev/null &’ ran 16x times where 16 is the core count (\*\*) – The Linux command ‘cpuburn-krait’ is ran two times in background. The reason cpuburn-krait was chosen since it can generate most heat out of the cores (the core pipeline most utilized). (\*\*\*) – This measurement was taken when the fan is disconnected and the power was measured when the die reached 105c. Notice that keeping the fan disconnected will make the processor reach temperatures that are out of spec.
 
 ## Maximum Current Consumption
 
@@ -138,17 +113,13 @@ The LX2160A type 7 uses only the 12v power rail to supply it’s internal compon
 
 The user of this module must make sure that the 12v power rail provided to the COM can sustain 5A, i.e. total 60W.
 
-Notice the above section on power measurement using memtester and cpuburn applications which is worst case scenario of ~40@ when the core junction is at 105c; taking into account different SO-DIMMs used and variance in processor leakage due to silicon manufacturing environments, we recommend to design the carrier board to sustain those 5A on the 12V rail.
-
-<a id="pcie-lane-numbers-and-bucket-grouping"></a>
+Notice the above section on power measurement using memtester and cpuburn applications which is worst case scenario of \~40@ when the core junction is at 105c; taking into account different SO-DIMMs used and variance in processor leakage due to silicon manufacturing environments, we recommend to design the carrier board to sustain those 5A on the 12V rail.
 
 ## PCIe Lane Numbers and Bucket Grouping
 
 Following is the bucket grouping of the different PCIe lanes.
 
-<a id="bucket-b1-lanes-0-7"></a>
-
-##### Bucket B1 – lanes #0 .. #7
+**Bucket B1 – lanes #0 .. #7**
 
 There is a single configuration in this bucket –
 
@@ -158,333 +129,313 @@ x2 PCIe lanes 4,5 connected to controller #4 (SERDES SD2 lanes 4,5)
 
 PCIe lanes 6,7 are NC
 
-- Notice that it is possible to gang PCIe lanes 0..5 with SATA0 and SATA1 and which makes all SD2 lanes 0..7 and have a single x8 gen3 controller #3. In this configuration the on COM module DC bias serial capacitors are required to be changed to 220nF instead of 10nF (contact SolidRun for more information)
+* Notice that it is possible to gang PCIe lanes 0..5 with SATA0 and SATA1 and which makes all SD2 lanes 0..7 and have a single x8 gen3 controller #3. In this configuration the on COM module DC bias serial capacitors are required to be changed to 220nF instead of 10nF (contact SolidRun for more information)
 
-<a id="bucket-b2-lanes-8-15"></a>
-
-##### Bucket B2 – lanes #8 .. #15
+**Bucket B2 – lanes #8 .. #15**
 
 There are two possible configurations in this bucket –
 
 1. 2 times x4 – Lanes 8 to 11 connected to controller #5 and lanes 12 to 15 connected to controller #6.
 2. 1 time x8 -Lanes 8 to 15 are connected to controller #5
 
-<a id="bucket-b3-lanes-16-23"></a>
-
-##### Bucket B3 – lanes #16 .. #23
+**Bucket B3 – lanes #16 .. #23**
 
 There is a single configuration in this bucket –
 
-1. Up to 1 time x4 – lanes 16 .. 19 on controller #2.  
-Lanes 20 to 23 are NC.
+1. Up to 1 time x4 – lanes 16 .. 19 on controller #2.\
+   Lanes 20 to 23 are NC.
 
-- Notice that this configuration highly depends on the SD1 SERDES protocol number configuration. Please follow SD1 protocol number configuration in this document that explains how those lanes are affected.
+* Notice that this configuration highly depends on the SD1 SERDES protocol number configuration. Please follow SD1 protocol number configuration in this document that explains how those lanes are affected.
 
-<a id="bucket-b4-lanes-24-31"></a>
-
-##### Bucket B4 – lanes #24 .. #31
+**Bucket B4 – lanes #24 .. #31**
 
 All lanes in this bucket are NC.
-
-<a id="serdes-configuration"></a>
 
 ## SERDES configuration
 
 LX2160A has 3 SERDES blocks named SD1, SD2 and SD3.
 
-<a id="serdes-block-1-sd1"></a>
-
-##### SERDES block #1 (SD1)
+**SERDES block #1 (SD1)**
 
 SERDES block #1 (SD1) has the most different options to configure from. By default the board is assembled with PLLF=161.1328125MHz and PLLS=100MHz, spread spectrum disabled.
 
 In order to swap both PLLF and PLLS to be 100MHz:
 
-- Move C996 and C997 to C80 and C81 (same value 100nF low ESL 0402 capacitor). This will move the 161.1328125MHz from PLLF to PLLS
-- Move R383 and R384 to R381 and R382 (zero ohm 0402 resistors). This will move the 100MHz reference clock from PLLS to PLLF
+* Move C996 and C997 to C80 and C81 (same value 100nF low ESL 0402 capacitor). This will move the 161.1328125MHz from PLLF to PLLS
+* Move R383 and R384 to R381 and R382 (zero ohm 0402 resistors). This will move the 100MHz reference clock from PLLS to PLLF
 
 \*\* these capacitors/resistors have shared pads as shown in the picture below
 
-![](./attachments/image-20220412-154802.png)
+![](../../../.gitbook/assets/image-20220412-154802.png)
 
-![](./attachments/image-20220412-154839.png)
+![](../../../.gitbook/assets/image-20220412-154839.png)
 
 Each SERDES block has 8 SERDESes that can be configured by protocol number.
 
 Noticve: The Default clock assembly limits the amount of configurations according to the table below:
 
-|     |     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|              |                    |                     |                    |                    |                   |                   |                   |                   |           |
+| ------------ | ------------------ | ------------------- | ------------------ | ------------------ | ----------------- | ----------------- | ----------------- | ----------------- | --------- |
 | **Protocol** | **Lane 0 10G-KR0** | **Lane 1 10G- KR1** | **Lane 2 10G-KR2** | **Lane 3 10G-KR3** | **Lane 4 PCIe16** | **Lane 5 PCIe17** | **Lane 6 PCIe18** | **Lane 7 PCIe19** | **Notes** |
-| 0   | off | off | off | off | off | off | off | off |     |
-| 1   | PCIe.1 x4 |     |     |     | PCIe.2 x4 |     |     |     | (\*) |
-| 2   | SGMII.3 | SGMII.4 | SGMII.5 | SGMII.6 | PCIe.2 x4 |     |     |     | (\*) |
-| 7   | XFI.3 | XFI.4 |     |     |     |     |     |     |     |
-
-<a id="ab-header"></a>
+| 0            | off                | off                 | off                | off                | off               | off               | off               | off               |           |
+| 1            | PCIe.1 x4          |                     |                    |                    | PCIe.2 x4         |                   |                   |                   | (\*)      |
+| 2            | SGMII.3            | SGMII.4             | SGMII.5            | SGMII.6            | PCIe.2 x4         |                   |                   |                   | (\*)      |
+| 7            | XFI.3              | XFI.4               |                    |                    |                   |                   |                   |                   |           |
 
 #### AB Header
 
-|     | **Notes** | **Driving IC** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC** | **Notes** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1   |     |     | GND (FIXED) | A1  | B1  | GND (FIXED) |     |     |
-| 2   |     | AR8035 | GBE0\_MDI3- | A2  | B2  | GBE0\_ACT# | AR8035 LED\_ACT |     |
-| 3   |     | AR8035 | GBE0\_MDI3+ | A3  | B3  | ~LPC\_FRAME#~ |     |     |
-| 4   | Not used |     | ~GBE0\_LINK100#~ | A4  | B4  | ~LPC\_AD0~ |     |     |
-| 5   |     | AR8035 LED\_1000 pin 22 | GBE0\_LINK1000# | A5  | B5  | ~LPC\_AD1~ |     |     |
-| 6   |     | AR8035 | GBE0\_MDI2- | A6  | B6  | ~LPC\_AD2~ |     |     |
-| 7   |     | AR8035 | GBE0\_MDI2+ | A7  | B7  | ~LPC\_AD3~ |     |     |
-| 8   |     | AR8035 LED\_10\_100 pin 24 | GBE0\_LINK# | A8  | B8  | ~LPC\_DRQ0#~ |     |     |
-| 9   |     | AR8035 | GBE0\_MDI1- | A9  | B9  | ~LPC\_DRQ1#~ |     |     |
-| 10  |     | AR8035 | GBE0\_MDI1+ | A10 | B10 | ~LPC\_CLK~ |     |     |
-| 11  |     |     | GND (FIXED) | A11 | B11 | GND (FIXED) |     |     |
-| 12  |     | AR8035 | GBE0\_MDI0- | A12 | B12 | PWRBTN# | 3.3v, GPIO3\[6\], 2.2k pull-up |     |
-| 13  |     | AR8035 | GBE0\_MDI0+ | A13 | B13 | SMB\_CK | I2C1 - CH#3 | 2.2k pulled-up |
-| 14  | Not used |     | ~GBE0\_CTREF~ | A14 | B14 | SMB\_DAT | I2C1 - CH#3 | 2.2k pulled-up |
-| 15  |     |     | ~SUS\_S3#~ | A15 | B15 | SMB\_ALERT# | 3.3v, EVT0, GPIO3\[12\], 2.2k pull-up |     |
-| 16  | Serial 10nF | LX2160A SD2 SRDS6 | SATA0\_TX+ | A16 | B16 | SATA1\_TX+ | LX2160A SD2 SRDS7 | Serial 10nF |
-| 17  | Serial 10nF | LX2160A SD2 SRDS6 | SATA0\_TX | A17 | B17 | SATA1\_TX | LX2160A SD2 SRDS7 | Serial 10nF |
-| 18  |     |     | ~SUS\_S4#~ | A18 | B18 | ~SUS\_STAT#~ |     |     |
-| 19  | Serial 10nF | LX2160A SD2 SRDS6 | SATA0\_RX+ | A19 | B19 | SATA1\_RX+ | LX2160A SD2 SRDS7 | Serial 10nF |
-| 20  | Serial 10nF | LX2160A SD2 SRDS6 | SATA0\_RX | A20 | B20 | SATA1\_RX | LX2160A SD2 SRDS7 | Serial 10nF |
-| 21  |     |     | GND (FIXED) | A21 | B21 | GND (FIXED) |     |     |
-| 22  | Serial 220nF | LX2160A SD3 SRDS7 | PCIE\_TX15+ | A22 | B22 | PCIE\_RX15+ | LX2160A SD3 SRDS7 |     |
-| 23  | Serial 220nF | LX2160A SD3 SRDS7 | PCIE\_TX15- | A23 | B23 | PCIE\_RX15- | LX2160A SD3 SRDS7 |     |
-| 24  | 3.3v, GPIO3\[7\], 2.2k pull-up |     | SUS\_S5# | A24 | B24 | PWR\_OK | Power management IC | Refer to power-up sequence |
-| 25  | Serial 220nF | LX2160A SD3 SRDS6 | PCIE\_TX14+ | A25 | B25 | PCIE\_RX14+ | LX2160A SD3 SRDS6 |     |
-| 26  | Serial 220nF | LX2160A SD3 SRDS6 | PCIE\_TX14- | A26 | B26 | PCIE\_RX14+ | LX2160A SD3 SRDS6 |     |
-| 27  | 3.3v, EVT4, GPIO3\[16\], 2.2k pull-up |     | BATLOW# | A27 | B27 | ~WDT~ |     |     |
-| 28  |     |     | ~SATA\_ACT#~ | A28 | B28 | RSVD |     |     |
-| 29  |     |     | RSVD | A29 | B29 | RSVD |     |     |
-| 30  |     |     | RSVD | A30 | B30 | RSVD |     |     |
-| 31  |     |     | GND (FIXED) | A31 | B31 | GND (FIXED) |     |     |
-| 32  |     |     | RSVD | A32 | B32 | ~SPKR~ |     |     |
-| 33  |     |     | RSVD | A33 | B33 | I2C\_CK | LX2160A I2C2 | 2.2k pulled-up |
-| 34  | SPI CS0/1 switch, 3.3v, 2.2k pull-up |     | BIOS\_DIS0# | A34 | B34 | I2C\_DAT | LX2160A I2C2 | 2.2k pulled-up |
-| 35  |     |     | ~THRMTRIP#~ | A35 | B35 | THRM# | 3.3v, EVT1, GPIO3\[13\], 2.2k pull-up |     |
-| 36  | Serial 220nF | LX2160A SD3 SRDS5 | PCIE\_TX13+ | A36 | B36 | PCIE\_RX13+ | LX2160A SD3 SRDS5 |     |
-| 37  | Serial 220nF | LX2160A SD3 SRDS5 | PCIE\_TX13- | A37 | B37 | PCIE\_RX13- | LX2160A SD3 SRDS5 |     |
-| 38  |     |     | GND | A38 | B38 | GND |     |     |
-| 39  | Serial 220nF | LX2160A SD3 SRDS4 | PCIE\_TX12+ | A39 | B39 | PCIE\_RX12+ | LX2160A SD3 SRDS4 |     |
-| 40  | Serial 220nF | LX2160A SD3 SRDS4 | PCIE\_TX12- | A40 | B40 | PCIE\_RX12+ | LX2160A SD3 SRDS4 |     |
-| 41  |     |     | GND (FIXED) | A41 | B41 | GND (FIXED) |     |     |
-| 42  |     | USB3.0 HUB port 2 | USB2- | A42 | B42 | USB3- | USB3.0 HUB port 3 |     |
-| 43  |     | USB3.0 HUB port 2 | USB2+ | A43 | B43 | USB3+ | USB3.0 HUB port 3 |     |
-| 44  |     |     | ~USB\_2\_3\_OC#~ | A44 | B44 | ~USB\_0\_1\_OC#~ |     |     |
-| 45  |     | LX2160A USB0 | USB0- | A45 | B45 | USB1- | USB3.0 HUB port 1 |     |
-| 46  |     | LX2160A USB0 | USB0+ | A46 | B46 | USB1+ | USB3.0 HUB port 1 |     |
-| 47  | 100nF and 22uF on module | PCF2129AT | VCC\_RTC | A47 | B47 | ~ESPI\_EN~ |     |     |
-| 48  |     |     | RSVD | A48 | B48 | RSVD |     |     |
-| 49  |     | LX2160A TSEC\_1588\_TRIG\_IN1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. | RSVD | A49 | B49 | SYS\_RESET# | 3.3v, 2.2k pull-up, sys reset input |     |
-| 50  |     |     | ~LPC\_SERIRQ~ | A50 | B50 | CB\_RESET# | 3.3v, carrier board reset output (1uF capacitance) |     |
-| 51  |     |     | GND (FIXED) | A51 | B51 | GND (FIXED) |     |     |
-| 52  | Serial 220nF | LX2160A SD2 SRDS5 | PCIE\_TX5+ | A52 | B52 | PCIE\_RX5+ | LX2160A SD2 SRDS5 |     |
-| 53  | Serial 220nF | LX2160A SD2 SRDS5 | PCIE\_TX5- | A53 | B53 | PCIE\_RX5- | LX2160A SD2 SRDS5 |     |
-| 54  |     | micro SD D0 | GPI0 | A54 | B54 | GPO1 | micro SD CMD |     |
-| 55  | Serial 220nF | LX2160A SD2 SRDS4 | PCIE\_TX4+ | A55 | B55 | PCIE\_RX4+ | LX2160A SD2 SRDS4 |     |
-| 56  | Serial 220nF | LX2160A SD2 SRDS4 | PCIE\_TX4- | A56 | B56 | PCIE\_RX4- | LX2160A SD2 SRDS4 |     |
-| 57  |     |     | GND | A57 | B57 | GPO2 | 3.3v, GPIO3\[5\], 2.2k pull-up |     |
-| 58  | Serial 220nF | LX2160A SD2 SRDS3 | PCIE\_TX3+ | A58 | B58 | PCIE\_RX3+ | LX2160A SD2 SRDS3 |     |
-| 59  | Serial 220nF | LX2160A SD2 SRDS3 | PCIE\_TX3- | A59 | B59 | PCIE\_RX3- | LX2160A SD2 SRDS3 |     |
-| 60  |     |     | GND (FIXED) | A60 | B60 | GND (FIXED) |     |     |
-| 61  | Serial 220nF | LX2160A SD2 SRDS2 | PCIE\_TX2+ | A61 | B61 | PCIE\_RX2+ | LX2160A SD2 SRDS2 |     |
-| 62  | Serial 220nF | LX2160A SD2 SRDS2 | PCIE\_TX2- | A62 | B62 | PCIE\_RX2- | LX2160A SD2 SRDS2 |     |
-| 63  |     | micro SD D1 | GPI1 | A63 | B63 | GPO3/SD\_CD | micro SD CD (2.2k 3.3v pulled-up) |     |
-| 64  | Serial 220nF | LX2160A SD2 SRDS1 | PCIE\_TX1+ | A64 | B64 | PCIE\_RX1+ | LX2160A SD2 SRDS1 |     |
-| 65  | Serial 220nF | LX2160A SD2 SRDS1 | PCIE\_TX1- | A65 | B65 | PCIE\_RX1- | LX2160A SD2 SRDS1 |     |
-| 66  |     |     | GND | A66 | B66 | ~WAKE0#~ |     |     |
-| 67  |     | micro SD D2 | GPI2 | A67 | B67 | ~WAKE1#~ |     |     |
-| 68  | Serial 220nF | LX2160A SD2 SRDS0 | PCIE\_TX0+ | A68 | B68 | PCIE\_RX0+ | LX2160A SD2 SRDS0 |     |
-| 69  | Serial 220nF | LX2160A SD2 SRDS0 | PCIE\_TX0- | A69 | B69 | PCIE\_RX0- | LX2160A SD2 SRDS0 |     |
-| 70  |     |     | GND (FIXED) | A70 | B70 | GND (FIXED) |     |     |
-| 71  | Serial 220nF | LX2160A SD3 SRDS0 | PCIE\_TX8+ | A71 | B71 | PCIE\_RX8+ | LX2160A SD3 SRDS0 |     |
-| 72  | Serial 220nF | LX2160A SD3 SRDS0 | PCIE\_TX8- | A72 | B72 | PCIE\_RX8- | LX2160A SD3 SRDS0 |     |
-| 73  |     |     | GND | A73 | B73 | GND |     |     |
-| 74  | Serial 220nF | LX2160A SD3 SRDS1 | PCIE\_TX9+ | A74 | B74 | PCIE\_RX9+ | LX2160A SD3 SRDS1 |     |
-| 75  | Serial 220nF | LX2160A SD3 SRDS1 | PCIE\_TX9- | A75 | B75 | PCIE\_RX9- | LX2160A SD3 SRDS1 |     |
-| 76  |     |     | GND | A76 | B76 | GND |     |     |
-| 77  | Serial 220nF | LX2160A SD3 SRDS2 | PCIE\_TX10+ | A77 | B77 | PCIE\_RX10+ | LX2160A SD3 SRDS2 |     |
-| 78  | Serial 220nF | LX2160A SD3 SRDS2 | PCIE\_TX10- | A78 | B78 | PCIE\_RX10- | LX2160A SD3 SRDS2 |     |
-| 79  |     |     | GND | A79 | B79 | GND |     |     |
-| 80  |     |     | GND (FIXED) | A80 | B80 | GND (FIXED) |     |     |
-| 81  | Serial 220nF | LX2160A SD3 SRDS3 | PCIE\_TX11+ | A81 | B81 | PCIE\_RX11+ | LX2160A SD3 SRDS3 |     |
-| 82  | Serial 220nF | LX2160A SD3 SRDS3 | PCIE\_TX11- | A82 | B82 | PCIE\_RX11- | LX2160A SD3 SRDS3 |     |
-| 83  |     |     | GND | A83 | B83 | GND |     |     |
-| 84  |     |     | ~NCSI\_TX\_EN~ | A84 | B84 | ~VCC\_5V\_SBY~ |     |     |
-| 85  |     | micro SD D3 | GPI3 | A85 | B85 | ~VCC\_5V\_SBY~ |     |     |
-| 86  |     |     | RSVD | A86 | B86 | ~VCC\_5V\_SBY~ |     |     |
-| 87  |     |     | RSVD | A87 | B87 | ~VCC\_5V\_SBY~ |     |     |
-| 88  | HCSL PCIe Gen4 compliant | 100MHz clock gen | PCIE\_CK\_REF+ | A88 | B88 | ~BIOS\_DIS1#~ |     |     |
-| 89  | HCSL PCIe Gen4 compliant | 100MHz clock gen | PCIE\_CK\_REF | A89 | B89 | ~NCSI\_RX\_ER~ |     |     |
-| 90  |     |     | GND (FIXED) | A90 | B90 | GND (FIXED) |     |     |
-| 91  |     | 3.3v power. gated by 12v input | SPI\_POWER | A91 | B91 | ~NCSI\_CLK\_IN~ |     |     |
-| 92  |     | 3.3v SPI MISO | SPI\_MISO | A92 | B92 | ~NCSI\_RXD1~ |     |     |
-| 93  |     | micro SD CLK | GPO0 | A93 | B93 | ~NCSI\_RXD0~ |     |     |
-| 94  |     | 3.3v SPI CLK | SPI\_CLK | A94 | B94 | ~NCSI\_CRS\_DV~ |     |     |
-| 95  |     | 3.3v SPI MOSI | SPI\_MOSI | A95 | B95 | ~NCSI\_TXD1~ |     |     |
-| 96  |     |     | ~TPM\_PP~ | A96 | B96 | ~NCSI\_TXD0~ |     |     |
-| 97  |     |     | ~TYPE10#~ | A97 | B97 | SPI\_CS# | 3.3v SPI CS# |     |
-| 98  |     | LX2160A UART1 (main) | SER0\_TX | A98 | B98 | ~NCSI\_ARB\_IN~ |     |     |
-| 99  |     | LX2160A UART1 (main) | SER0\_RX | A99 | B99 | ~NCSI\_ARB\_OUT~ |     |     |
-| 100 |     |     | GND (FIXED) | A100 | B100 | GND (FIXED) |     |     |
-| 101 |     | LX2160A UART2 | CAN0/SER1\_TX | A101 | B101 | FAN\_PWMOUT | AMC6821 PWM-OUT (pin 1) |     |
-| 102 |     | LX2160A UART2 | CAN0/SER1\_RX | A102 | B102 | FAN\_TACHIN | AMC6821 TACH (pin 2) through 3.3v level shifter |     |
-| 103 |     |     | ~LID#~ | A103 | B103 | ~SLEEP#~ |     |     |
-| 104 |     | 12v input (9v-15v) | VCC\_12V | A104 | B104 | VCC\_12V | 12v input (9v-15v) |     |
-| 105 |     | 12v input (9v-15v) | VCC\_12V | A105 | B105 | VCC\_12V | 12v input (9v-15v) |     |
-| 106 |     | 12v input (9v-15v) | VCC\_12V | A106 | B106 | VCC\_12V | 12v input (9v-15v) |     |
-| 107 |     | 12v input (9v-15v) | VCC\_12V | A107 | B107 | VCC\_12V | 12v input (9v-15v) |     |
-| 108 |     | 12v input (9v-15v) | VCC\_12V | A108 | B108 | VCC\_12V | 12v input (9v-15v) |     |
-| 109 |     | 12v input (9v-15v) | VCC\_12V | A109 | B109 | VCC\_12V | 12v input (9v-15v) |     |
-| 110 |     |     | GND (FIXED) | A110 | B110 | GND (FIXED) |     |     |
-
-<a id="cd-header"></a>
+|     | **Notes**                            | **Driving IC**                                                                        | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC**                                     | **Notes**                  |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------------- | -------------- | -------------- | ----------------------- | -------------------------------------------------- | -------------------------- |
+| 1   |                                      |                                                                                       | GND (FIXED)             | A1             | B1             | GND (FIXED)             |                                                    |                            |
+| 2   |                                      | AR8035                                                                                | GBE0\_MDI3-             | A2             | B2             | GBE0\_ACT#              | AR8035 LED\_ACT                                    |                            |
+| 3   |                                      | AR8035                                                                                | GBE0\_MDI3+             | A3             | B3             | ~~LPC\_FRAME#~~         |                                                    |                            |
+| 4   | Not used                             |                                                                                       | ~~GBE0\_LINK100#~~      | A4             | B4             | ~~LPC\_AD0~~            |                                                    |                            |
+| 5   |                                      | AR8035 LED\_1000 pin 22                                                               | GBE0\_LINK1000#         | A5             | B5             | ~~LPC\_AD1~~            |                                                    |                            |
+| 6   |                                      | AR8035                                                                                | GBE0\_MDI2-             | A6             | B6             | ~~LPC\_AD2~~            |                                                    |                            |
+| 7   |                                      | AR8035                                                                                | GBE0\_MDI2+             | A7             | B7             | ~~LPC\_AD3~~            |                                                    |                            |
+| 8   |                                      | AR8035 LED\_10\_100 pin 24                                                            | GBE0\_LINK#             | A8             | B8             | ~~LPC\_DRQ0#~~          |                                                    |                            |
+| 9   |                                      | AR8035                                                                                | GBE0\_MDI1-             | A9             | B9             | ~~LPC\_DRQ1#~~          |                                                    |                            |
+| 10  |                                      | AR8035                                                                                | GBE0\_MDI1+             | A10            | B10            | ~~LPC\_CLK~~            |                                                    |                            |
+| 11  |                                      |                                                                                       | GND (FIXED)             | A11            | B11            | GND (FIXED)             |                                                    |                            |
+| 12  |                                      | AR8035                                                                                | GBE0\_MDI0-             | A12            | B12            | PWRBTN#                 | 3.3v, GPIO3\[6], 2.2k pull-up                      |                            |
+| 13  |                                      | AR8035                                                                                | GBE0\_MDI0+             | A13            | B13            | SMB\_CK                 | I2C1 - CH#3                                        | 2.2k pulled-up             |
+| 14  | Not used                             |                                                                                       | ~~GBE0\_CTREF~~         | A14            | B14            | SMB\_DAT                | I2C1 - CH#3                                        | 2.2k pulled-up             |
+| 15  |                                      |                                                                                       | ~~SUS\_S3#~~            | A15            | B15            | SMB\_ALERT#             | 3.3v, EVT0, GPIO3\[12], 2.2k pull-up               |                            |
+| 16  | Serial 10nF                          | LX2160A SD2 SRDS6                                                                     | SATA0\_TX+              | A16            | B16            | SATA1\_TX+              | LX2160A SD2 SRDS7                                  | Serial 10nF                |
+| 17  | Serial 10nF                          | LX2160A SD2 SRDS6                                                                     | SATA0\_TX               | A17            | B17            | SATA1\_TX               | LX2160A SD2 SRDS7                                  | Serial 10nF                |
+| 18  |                                      |                                                                                       | ~~SUS\_S4#~~            | A18            | B18            | ~~SUS\_STAT#~~          |                                                    |                            |
+| 19  | Serial 10nF                          | LX2160A SD2 SRDS6                                                                     | SATA0\_RX+              | A19            | B19            | SATA1\_RX+              | LX2160A SD2 SRDS7                                  | Serial 10nF                |
+| 20  | Serial 10nF                          | LX2160A SD2 SRDS6                                                                     | SATA0\_RX               | A20            | B20            | SATA1\_RX               | LX2160A SD2 SRDS7                                  | Serial 10nF                |
+| 21  |                                      |                                                                                       | GND (FIXED)             | A21            | B21            | GND (FIXED)             |                                                    |                            |
+| 22  | Serial 220nF                         | LX2160A SD3 SRDS7                                                                     | PCIE\_TX15+             | A22            | B22            | PCIE\_RX15+             | LX2160A SD3 SRDS7                                  |                            |
+| 23  | Serial 220nF                         | LX2160A SD3 SRDS7                                                                     | PCIE\_TX15-             | A23            | B23            | PCIE\_RX15-             | LX2160A SD3 SRDS7                                  |                            |
+| 24  | 3.3v, GPIO3\[7], 2.2k pull-up        |                                                                                       | SUS\_S5#                | A24            | B24            | PWR\_OK                 | Power management IC                                | Refer to power-up sequence |
+| 25  | Serial 220nF                         | LX2160A SD3 SRDS6                                                                     | PCIE\_TX14+             | A25            | B25            | PCIE\_RX14+             | LX2160A SD3 SRDS6                                  |                            |
+| 26  | Serial 220nF                         | LX2160A SD3 SRDS6                                                                     | PCIE\_TX14-             | A26            | B26            | PCIE\_RX14+             | LX2160A SD3 SRDS6                                  |                            |
+| 27  | 3.3v, EVT4, GPIO3\[16], 2.2k pull-up |                                                                                       | BATLOW#                 | A27            | B27            | ~~WDT~~                 |                                                    |                            |
+| 28  |                                      |                                                                                       | ~~SATA\_ACT#~~          | A28            | B28            | RSVD                    |                                                    |                            |
+| 29  |                                      |                                                                                       | RSVD                    | A29            | B29            | RSVD                    |                                                    |                            |
+| 30  |                                      |                                                                                       | RSVD                    | A30            | B30            | RSVD                    |                                                    |                            |
+| 31  |                                      |                                                                                       | GND (FIXED)             | A31            | B31            | GND (FIXED)             |                                                    |                            |
+| 32  |                                      |                                                                                       | RSVD                    | A32            | B32            | ~~SPKR~~                |                                                    |                            |
+| 33  |                                      |                                                                                       | RSVD                    | A33            | B33            | I2C\_CK                 | LX2160A I2C2                                       | 2.2k pulled-up             |
+| 34  | SPI CS0/1 switch, 3.3v, 2.2k pull-up |                                                                                       | BIOS\_DIS0#             | A34            | B34            | I2C\_DAT                | LX2160A I2C2                                       | 2.2k pulled-up             |
+| 35  |                                      |                                                                                       | ~~THRMTRIP#~~           | A35            | B35            | THRM#                   | 3.3v, EVT1, GPIO3\[13], 2.2k pull-up               |                            |
+| 36  | Serial 220nF                         | LX2160A SD3 SRDS5                                                                     | PCIE\_TX13+             | A36            | B36            | PCIE\_RX13+             | LX2160A SD3 SRDS5                                  |                            |
+| 37  | Serial 220nF                         | LX2160A SD3 SRDS5                                                                     | PCIE\_TX13-             | A37            | B37            | PCIE\_RX13-             | LX2160A SD3 SRDS5                                  |                            |
+| 38  |                                      |                                                                                       | GND                     | A38            | B38            | GND                     |                                                    |                            |
+| 39  | Serial 220nF                         | LX2160A SD3 SRDS4                                                                     | PCIE\_TX12+             | A39            | B39            | PCIE\_RX12+             | LX2160A SD3 SRDS4                                  |                            |
+| 40  | Serial 220nF                         | LX2160A SD3 SRDS4                                                                     | PCIE\_TX12-             | A40            | B40            | PCIE\_RX12+             | LX2160A SD3 SRDS4                                  |                            |
+| 41  |                                      |                                                                                       | GND (FIXED)             | A41            | B41            | GND (FIXED)             |                                                    |                            |
+| 42  |                                      | USB3.0 HUB port 2                                                                     | USB2-                   | A42            | B42            | USB3-                   | USB3.0 HUB port 3                                  |                            |
+| 43  |                                      | USB3.0 HUB port 2                                                                     | USB2+                   | A43            | B43            | USB3+                   | USB3.0 HUB port 3                                  |                            |
+| 44  |                                      |                                                                                       | ~~USB\_2\_3\_OC#~~      | A44            | B44            | ~~USB\_0\_1\_OC#~~      |                                                    |                            |
+| 45  |                                      | LX2160A USB0                                                                          | USB0-                   | A45            | B45            | USB1-                   | USB3.0 HUB port 1                                  |                            |
+| 46  |                                      | LX2160A USB0                                                                          | USB0+                   | A46            | B46            | USB1+                   | USB3.0 HUB port 1                                  |                            |
+| 47  | 100nF and 22uF on module             | PCF2129AT                                                                             | VCC\_RTC                | A47            | B47            | ~~ESPI\_EN~~            |                                                    |                            |
+| 48  |                                      |                                                                                       | RSVD                    | A48            | B48            | RSVD                    |                                                    |                            |
+| 49  |                                      | LX2160A TSEC\_1588\_TRIG\_IN1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. | RSVD                    | A49            | B49            | SYS\_RESET#             | 3.3v, 2.2k pull-up, sys reset input                |                            |
+| 50  |                                      |                                                                                       | ~~LPC\_SERIRQ~~         | A50            | B50            | CB\_RESET#              | 3.3v, carrier board reset output (1uF capacitance) |                            |
+| 51  |                                      |                                                                                       | GND (FIXED)             | A51            | B51            | GND (FIXED)             |                                                    |                            |
+| 52  | Serial 220nF                         | LX2160A SD2 SRDS5                                                                     | PCIE\_TX5+              | A52            | B52            | PCIE\_RX5+              | LX2160A SD2 SRDS5                                  |                            |
+| 53  | Serial 220nF                         | LX2160A SD2 SRDS5                                                                     | PCIE\_TX5-              | A53            | B53            | PCIE\_RX5-              | LX2160A SD2 SRDS5                                  |                            |
+| 54  |                                      | micro SD D0                                                                           | GPI0                    | A54            | B54            | GPO1                    | micro SD CMD                                       |                            |
+| 55  | Serial 220nF                         | LX2160A SD2 SRDS4                                                                     | PCIE\_TX4+              | A55            | B55            | PCIE\_RX4+              | LX2160A SD2 SRDS4                                  |                            |
+| 56  | Serial 220nF                         | LX2160A SD2 SRDS4                                                                     | PCIE\_TX4-              | A56            | B56            | PCIE\_RX4-              | LX2160A SD2 SRDS4                                  |                            |
+| 57  |                                      |                                                                                       | GND                     | A57            | B57            | GPO2                    | 3.3v, GPIO3\[5], 2.2k pull-up                      |                            |
+| 58  | Serial 220nF                         | LX2160A SD2 SRDS3                                                                     | PCIE\_TX3+              | A58            | B58            | PCIE\_RX3+              | LX2160A SD2 SRDS3                                  |                            |
+| 59  | Serial 220nF                         | LX2160A SD2 SRDS3                                                                     | PCIE\_TX3-              | A59            | B59            | PCIE\_RX3-              | LX2160A SD2 SRDS3                                  |                            |
+| 60  |                                      |                                                                                       | GND (FIXED)             | A60            | B60            | GND (FIXED)             |                                                    |                            |
+| 61  | Serial 220nF                         | LX2160A SD2 SRDS2                                                                     | PCIE\_TX2+              | A61            | B61            | PCIE\_RX2+              | LX2160A SD2 SRDS2                                  |                            |
+| 62  | Serial 220nF                         | LX2160A SD2 SRDS2                                                                     | PCIE\_TX2-              | A62            | B62            | PCIE\_RX2-              | LX2160A SD2 SRDS2                                  |                            |
+| 63  |                                      | micro SD D1                                                                           | GPI1                    | A63            | B63            | GPO3/SD\_CD             | micro SD CD (2.2k 3.3v pulled-up)                  |                            |
+| 64  | Serial 220nF                         | LX2160A SD2 SRDS1                                                                     | PCIE\_TX1+              | A64            | B64            | PCIE\_RX1+              | LX2160A SD2 SRDS1                                  |                            |
+| 65  | Serial 220nF                         | LX2160A SD2 SRDS1                                                                     | PCIE\_TX1-              | A65            | B65            | PCIE\_RX1-              | LX2160A SD2 SRDS1                                  |                            |
+| 66  |                                      |                                                                                       | GND                     | A66            | B66            | ~~WAKE0#~~              |                                                    |                            |
+| 67  |                                      | micro SD D2                                                                           | GPI2                    | A67            | B67            | ~~WAKE1#~~              |                                                    |                            |
+| 68  | Serial 220nF                         | LX2160A SD2 SRDS0                                                                     | PCIE\_TX0+              | A68            | B68            | PCIE\_RX0+              | LX2160A SD2 SRDS0                                  |                            |
+| 69  | Serial 220nF                         | LX2160A SD2 SRDS0                                                                     | PCIE\_TX0-              | A69            | B69            | PCIE\_RX0-              | LX2160A SD2 SRDS0                                  |                            |
+| 70  |                                      |                                                                                       | GND (FIXED)             | A70            | B70            | GND (FIXED)             |                                                    |                            |
+| 71  | Serial 220nF                         | LX2160A SD3 SRDS0                                                                     | PCIE\_TX8+              | A71            | B71            | PCIE\_RX8+              | LX2160A SD3 SRDS0                                  |                            |
+| 72  | Serial 220nF                         | LX2160A SD3 SRDS0                                                                     | PCIE\_TX8-              | A72            | B72            | PCIE\_RX8-              | LX2160A SD3 SRDS0                                  |                            |
+| 73  |                                      |                                                                                       | GND                     | A73            | B73            | GND                     |                                                    |                            |
+| 74  | Serial 220nF                         | LX2160A SD3 SRDS1                                                                     | PCIE\_TX9+              | A74            | B74            | PCIE\_RX9+              | LX2160A SD3 SRDS1                                  |                            |
+| 75  | Serial 220nF                         | LX2160A SD3 SRDS1                                                                     | PCIE\_TX9-              | A75            | B75            | PCIE\_RX9-              | LX2160A SD3 SRDS1                                  |                            |
+| 76  |                                      |                                                                                       | GND                     | A76            | B76            | GND                     |                                                    |                            |
+| 77  | Serial 220nF                         | LX2160A SD3 SRDS2                                                                     | PCIE\_TX10+             | A77            | B77            | PCIE\_RX10+             | LX2160A SD3 SRDS2                                  |                            |
+| 78  | Serial 220nF                         | LX2160A SD3 SRDS2                                                                     | PCIE\_TX10-             | A78            | B78            | PCIE\_RX10-             | LX2160A SD3 SRDS2                                  |                            |
+| 79  |                                      |                                                                                       | GND                     | A79            | B79            | GND                     |                                                    |                            |
+| 80  |                                      |                                                                                       | GND (FIXED)             | A80            | B80            | GND (FIXED)             |                                                    |                            |
+| 81  | Serial 220nF                         | LX2160A SD3 SRDS3                                                                     | PCIE\_TX11+             | A81            | B81            | PCIE\_RX11+             | LX2160A SD3 SRDS3                                  |                            |
+| 82  | Serial 220nF                         | LX2160A SD3 SRDS3                                                                     | PCIE\_TX11-             | A82            | B82            | PCIE\_RX11-             | LX2160A SD3 SRDS3                                  |                            |
+| 83  |                                      |                                                                                       | GND                     | A83            | B83            | GND                     |                                                    |                            |
+| 84  |                                      |                                                                                       | ~~NCSI\_TX\_EN~~        | A84            | B84            | ~~VCC\_5V\_SBY~~        |                                                    |                            |
+| 85  |                                      | micro SD D3                                                                           | GPI3                    | A85            | B85            | ~~VCC\_5V\_SBY~~        |                                                    |                            |
+| 86  |                                      |                                                                                       | RSVD                    | A86            | B86            | ~~VCC\_5V\_SBY~~        |                                                    |                            |
+| 87  |                                      |                                                                                       | RSVD                    | A87            | B87            | ~~VCC\_5V\_SBY~~        |                                                    |                            |
+| 88  | HCSL PCIe Gen4 compliant             | 100MHz clock gen                                                                      | PCIE\_CK\_REF+          | A88            | B88            | ~~BIOS\_DIS1#~~         |                                                    |                            |
+| 89  | HCSL PCIe Gen4 compliant             | 100MHz clock gen                                                                      | PCIE\_CK\_REF           | A89            | B89            | ~~NCSI\_RX\_ER~~        |                                                    |                            |
+| 90  |                                      |                                                                                       | GND (FIXED)             | A90            | B90            | GND (FIXED)             |                                                    |                            |
+| 91  |                                      | 3.3v power. gated by 12v input                                                        | SPI\_POWER              | A91            | B91            | ~~NCSI\_CLK\_IN~~       |                                                    |                            |
+| 92  |                                      | 3.3v SPI MISO                                                                         | SPI\_MISO               | A92            | B92            | ~~NCSI\_RXD1~~          |                                                    |                            |
+| 93  |                                      | micro SD CLK                                                                          | GPO0                    | A93            | B93            | ~~NCSI\_RXD0~~          |                                                    |                            |
+| 94  |                                      | 3.3v SPI CLK                                                                          | SPI\_CLK                | A94            | B94            | ~~NCSI\_CRS\_DV~~       |                                                    |                            |
+| 95  |                                      | 3.3v SPI MOSI                                                                         | SPI\_MOSI               | A95            | B95            | ~~NCSI\_TXD1~~          |                                                    |                            |
+| 96  |                                      |                                                                                       | ~~TPM\_PP~~             | A96            | B96            | ~~NCSI\_TXD0~~          |                                                    |                            |
+| 97  |                                      |                                                                                       | ~~TYPE10#~~             | A97            | B97            | SPI\_CS#                | 3.3v SPI CS#                                       |                            |
+| 98  |                                      | LX2160A UART1 (main)                                                                  | SER0\_TX                | A98            | B98            | ~~NCSI\_ARB\_IN~~       |                                                    |                            |
+| 99  |                                      | LX2160A UART1 (main)                                                                  | SER0\_RX                | A99            | B99            | ~~NCSI\_ARB\_OUT~~      |                                                    |                            |
+| 100 |                                      |                                                                                       | GND (FIXED)             | A100           | B100           | GND (FIXED)             |                                                    |                            |
+| 101 |                                      | LX2160A UART2                                                                         | CAN0/SER1\_TX           | A101           | B101           | FAN\_PWMOUT             | AMC6821 PWM-OUT (pin 1)                            |                            |
+| 102 |                                      | LX2160A UART2                                                                         | CAN0/SER1\_RX           | A102           | B102           | FAN\_TACHIN             | AMC6821 TACH (pin 2) through 3.3v level shifter    |                            |
+| 103 |                                      |                                                                                       | ~~LID#~~                | A103           | B103           | ~~SLEEP#~~              |                                                    |                            |
+| 104 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A104           | B104           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 105 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A105           | B105           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 106 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A106           | B106           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 107 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A107           | B107           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 108 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A108           | B108           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 109 |                                      | 12v input (9v-15v)                                                                    | VCC\_12V                | A109           | B109           | VCC\_12V                | 12v input (9v-15v)                                 |                            |
+| 110 |                                      |                                                                                       | GND (FIXED)             | A110           | B110           | GND (FIXED)             |                                                    |                            |
 
 #### CD Header
 
-|     | **Notes** | **Driving IC** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC** | **Notes** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1   |     |     | GND (FIXED) | C1  | D1  | GND (FIXED) |     |     |
-| 2   |     |     | GND | C2  | D2  | GND |     |     |
-| 3   |     | LX2160A USB0 | USB\_SSRX0- | C3  | D3  | USB\_SSTX0- | LX2160A USB0 | Serial 100nF |
-| 4   |     | LX2160A USB0 | USB\_SSRX0+ | C4  | D4  | USB\_SSTX0+ | LX2160A USB0 | Serial 100nF |
-| 5   |     |     | GND | C5  | D5  | GND |     |     |
-| 6   |     | USB3.0 HUB port 1 | USB\_SSRX1- | C6  | D6  | USB\_SSTX1- | USB3.0 HUB port 1 | Serial 100nF |
-| 7   |     | USB3.0 HUB port 1 | USB\_SSRX1+ | C7  | D7  | USB\_SSTX1+ | USB3.0 HUB port 1 | Serial 100nF |
-| 8   |     |     | GND | C8  | D8  | GND |     |     |
-| 9   |     | USB3.0 HUB port 2 | USB\_SSRX2- | C9  | D9  | USB\_SSTX2- | USB3.0 HUB port 2 | Serial 100nF |
-| 10  |     | USB3.0 HUB port 2 | USB\_SSRX2+ | C10 | D10 | USB\_SSTX2+ | USB3.0 HUB port 2 | Serial 100nF |
-| 11  |     |     | GND(FIXED) | C11 | D11 | GND (FIXED) |     |     |
-| 12  |     | USB3.0 HUB port 3 | USB\_SSRX3- | C12 | D12 | USB\_SSTX3- | USB3.0 HUB port 3 | Serial 100nF |
-| 13  |     | USB3.0 HUB port 3 | USB\_SSRX3+ | C13 | D13 | USB\_SSTX3+ | USB3.0 HUB port 3 | Serial 100nF |
-| 14  |     |     | GND | C14 | D14 | GND |     |     |
-| 15  | 3.3v 2.2k pull-up, shared with pin C45 | LX2160A MDC2 | 10G\_PHY\_MDC\_SCL3 | C15 | D15 | 10G\_PHY\_MDIO\_SDA3 | LX2160A MDIO2 | 3.3v 2.2k pull-up, shared with pin D45 |
-| 16  | 3.3v 2.2k pull-up, shared with pin C46 | LX2160A MDC1 | 10G\_PHY\_MDC\_SCL2 | C16 | D16 | 10G\_PHY\_MDIO\_SDA2 | LX2160A MDIO1 | 3.3v 2.2k pull-up, shared with pin D46 |
-| 17  |     | LX2160A - TSEC\_1588\_CLK\_IN - Only rev 1.6 and newer; 1.8v signal; assembly-option. | 10G\_SDP2 | C17 | D17 | 10G\_SDP3 | LX2160A - TSEC\_1588\_TRIG\_IN2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 18  |     |     | GND | C18 | D18 | GND |     |     |
-| 19  |     |     | ~PCIE\_RX6+~ | C19 | D19 | ~PCIE\_TX6+~ |     |     |
-| 20  |     |     | ~PCIE\_RX6-~ | C20 | D20 | ~PCIE\_TX6-~ |     |     |
-| 21  |     |     | GND (FIXED) | C21 | D21 | GND (FIXED) |     |     |
-| 22  |     |     | ~PCIE\_RX7+~ | C22 | D22 | ~PCIE\_TX7+~ |     |     |
-| 23  |     |     | ~PCIE\_RX7-~ | C23 | D23 | ~PCIE\_TX7-~ |     |     |
-| 24  |     | LX2160A IRQ10 GPIO3\[10\] | 10G\_INT2 | C24 | D24 | 10G\_INT3 | LX2160A IRQ11 GPIO3\[11\] |     |
-| 25  |     |     | GND | C25 | D25 | GND |     |     |
-| 26  | no DC blocking capacitors | LX2160A SD1 SRDS3 | 10G\_KR\_RX3+ | C26 | D26 | 10G\_KR\_TX3+ | LX2160A SD1 SRDS3 | no DC blocking capacitors |
-| 27  | no DC blocking capacitors | LX2160A SD1 SRDS3 | 10G\_KR\_RX3- | C27 | D27 | 10G\_KR\_TX3- | LX2160A SD1 SRDS3 | no DC blocking capacitors |
-| 28  |     |     | GND | C28 | D28 | GND |     |     |
-| 29  | no DC blocking capacitors | LX2160A SD1 SRDS2 | 10G\_KR\_RX2+ | C29 | D29 | 10G\_KR\_TX2+ | LX2160A SD1 SRDS2 | no DC blocking capacitors |
-| 30  | no DC blocking capacitors | LX2160A SD1 SRDS2 | 10G\_KR\_RX2- | C30 | D30 | 10G\_KR\_TX2- | LX2160A SD1 SRDS2 | no DC blocking capacitors |
-| 31  |     |     | GND (FIXED) | C31 | D31 | GND (FIXED) |     |     |
-| 32  | 2.2k pulled-up | I2C1 CH7 | 10G\_SFP\_SDA3 | C32 | D32 | 10G\_SFP\_SCL3 | I2C1 CH7 | 2.2k pulled-up |
-| 33  | 2.2k pulled-up | I2C1 CH6 | 10G\_SFP\_SDA2 | C33 | D33 | 10G\_SFP\_SCL2 | I2C1 CH6 | 2.2k pulled-up |
-| 34  | 3.3v, 2.2k pull-up | LX2160A EVT2 GPIO3\[14\] | 10G\_PHY\_RST\_23 | C34 | D34 | ~10G\_PHY\_CAP\_23~ |     |     |
-| 35  | 3.3v, 2.2k pull-up | LX2160A EVT3 GPIO3\[15\] | 10G\_PHY\_RST\_01 | C35 | D35 | ~10G\_PHY\_CAP\_01~ |     |     |
-| 36  | 2.2k pulled-up | I2C1 CH3 | 10G\_LED\_SDA | C36 | D36 | RSVD |     |     |
-| 37  | 2.2k pulled-up | I2C1 CH3 | 10G\_LED\_SCL | C37 | D37 | RSVD |     |     |
-| 38  | 2.2k pulled-up | I2C1 CH5 | 10G\_SFP\_SDA1 | C38 | D38 | 10G\_SFP\_SCL1 | I2C1 CH5 | 2.2k pulled-up |
-| 39  | 2.2k pulled-up | I2C1 CH4 | 10G\_SFP\_SDA0 | C39 | D39 | 10G\_SFP\_SCL0 | I2C1 CH4 | 2.2k pulled-up |
-| 40  |     | LX2160A TSEC\_1588\_PULSE\_OUT1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. | 10G\_SDP0 | C40 | D40 | 10G\_SDP1 | LX2160A TSEC\_1588\_PULSE\_OUT2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 41  |     |     | GND (FIXED) | C41 | D41 | GND (FIXED) |     |     |
-| 42  | no DC blocking capacitors | LX2160A SD1 SRDS1 | 10G\_KR\_RX1+ | C42 | D42 | 10G\_KR\_TX1+ | LX2160A SD1 SRDS1 | no DC blocking capacitors |
-| 43  | no DC blocking capacitors | LX2160A SD1 SRDS1 | 10G\_KR\_RX1- | C43 | D43 | 10G\_KR\_TX1- | LX2160A SD1 SRDS1 | no DC blocking capacitors |
-| 44  |     |     | GND | C44 | D44 | GND |     |     |
-| 45  | 3.3v 2.2k pull-up, shared with pin C15 | LX2160A MDC2 | 10G\_PHY\_MDC\_SCL1 | C45 | D45 | 10G\_PHY\_MDIO\_SDA1 | LX2160A MDIO2 | 3.3v 2.2k pull-up, shared with pin D15 |
-| 46  | 3.3v 2.2k pull-up, shared with pin C16 | LX2160A MDC1 | 10G\_PHY\_MDC\_SCL0 | C46 | D46 | 10G\_PHY\_MDIO\_SDA0 | LX2160A MDIO1 | 3.3v 2.2k pull-up, shared with pin D16 |
-| 47  |     | LX2160A IRQ00 GPIO3\[0\] | 10G\_INT0 | C47 | D47 | 10G\_INT1 | LX2160A IRQ09 GPIO3\[9\] |     |
-| 48  |     |     | GND | C48 | D48 | GND |     |     |
-| 49  | no DC blocking capacitors | LX2160A SD1 SRDS0 | 10G\_KR\_RX0+ | C49 | D49 | 10G\_KR\_TX0+ | LX2160A SD1 SRDS0 | no DC blocking capacitors |
-| 50  | no DC blocking capacitors | LX2160A SD1 SRDS0 | 10G\_KR\_RX0- | C50 | D50 | 10G\_KR\_TX0- | LX2160A SD1 SRDS0 | no DC blocking capacitors |
-| 51  |     |     | GND (FIXED) | C51 | D51 | GND (FIXED) |     |     |
-| 52  |     | LX2160A SD1 SRDS4 | PCIE\_RX16+ | C52 | D52 | PCIE\_TX16+ | LX2160A SD1 SRDS4 | Serial 220nF |
-| 53  |     | LX2160A SD1 SRDS4 | PCIE\_RX16- | C53 | D53 | PCIE\_TX16- | LX2160A SD1 SRDS4 | Serial 220nF |
-| 54  | Indicate TYPE 7# | Grounded | TYPE0# | C54 | D54 | RSVD |     |     |
-| 55  |     | LX2160A SD1 SRDS5 | PCIE\_RX17+ | C55 | D55 | PCIE\_TX17+ | LX2160A SD1 SRDS5 | Serial 220nF |
-| 56  |     | LX2160A SD1 SRDS5 | PCIE\_RX17- | C56 | D56 | PCIE\_TX17- | LX2160A SD1 SRDS5 | Serial 220nF |
-| 57  |     |     | TYPE1# | C57 | D57 | TYPE2# | Grounded | Indicate TYPE 7# |
-| 58  |     | LX2160A SD1 SRDS6 | PCIE\_RX18+ | C58 | D58 | PCIE\_TX18+ | LX2160A SD1 SRDS6 | Serial 220nF |
-| 59  |     | LX2160A SD1 SRDS6 | PCIE\_RX18- | C59 | D59 | PCIE\_TX18- | LX2160A SD1 SRDS6 | Serial 220nF |
-| 60  |     |     | GND (FIXED) | C60 | D60 | GND (FIXED) |     |     |
-| 61  |     | LX2160A SD1 SRDS7 | PCIE\_RX19+ | C61 | D61 | PCIE\_TX19+ | LX2160A SD1 SRDS7 | Serial 220nF |
-| 62  |     | LX2160A SD1 SRDS7 | PCIE\_RX19- | C62 | D62 | PCIE\_TX19- | LX2160A SD1 SRDS7 | Serial 220nF |
-| 63  |     |     | RSVD | C63 | D63 | RSVD | LX2160A - IEEE\_RCLK1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 64  |     |     | RSVD | C64 | D64 | RSVD | LX2160A TSEC\_1588\_ALARM\_OUT2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 65  |     |     | ~PCIE\_RX20+~ | C65 | D65 | ~PCIE\_TX20+~ |     |     |
-| 66  |     |     | ~PCIE\_RX20-~ | C66 | D66 | ~PCIE\_TX20-~ |     |     |
-| 67  |     |     | ~RAPID\_SHUTDOWN~ | C67 | D67 | GND |     |     |
-| 68  |     |     | ~PCIE\_RX21+~ | C68 | D68 | ~PCIE\_TX21+~ |     |     |
-| 69  |     |     | ~PCIE\_RX21-~ | C69 | D69 | ~PCIE\_TX21-~ |     |     |
-| 70  |     |     | GND (FIXED) | C70 | D70 | GND (FIXED) |     |     |
-| 71  |     |     | ~PCIE\_RX22+~ | C71 | D71 | ~PCIE\_TX22+~ |     |     |
-| 72  |     |     | ~PCIE\_RX22-~ | C72 | D72 | ~PCIE\_TX22-~ |     |     |
-| 73  |     |     | GND | C73 | D73 | GND |     |     |
-| 74  |     |     | ~PCIE\_RX23+~ | C74 | D74 | ~PCIE\_TX23+~ |     |     |
-| 75  |     |     | ~PCIE\_RX23-~ | C75 | D75 | ~PCIE\_TX23-~ |     |     |
-| 76  |     |     | GND | C76 | D76 | GND |     |     |
-| 77  |     |     | RSVD | C77 | D77 | RSVD | LX2160A - TSEC\_1588\_CLK\_OUT - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 78  |     |     | ~PCIE\_RX24+~ | C78 | D78 | ~PCIE\_TX24+~ |     |     |
-| 79  |     |     | ~PCIE\_RX24-~ | C79 | D79 | ~PCIE\_TX24-~ |     |     |
-| 80  |     |     | GND (FIXED) | C80 | D80 | GND (FIXED) |     |     |
-| 81  |     |     | ~PCIE\_RX25+~ | C81 | D81 | ~PCIE\_TX25+~ |     |     |
-| 82  |     |     | ~PCIE\_RX25-~ | C82 | D82 | ~PCIE\_TX25-~ |     |     |
-| 83  |     |     | RSVD | C83 | D83 | RSVD | LX2160A TSEC\_1588\_ALARM\_OUT1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 84  |     |     | GND | C84 | D84 | GND |     |     |
-| 85  |     |     | ~PCIE\_RX26+~ | C85 | D85 | ~PCIE\_TX26+~ |     |     |
-| 86  |     |     | ~PCIE\_RX26-~ | C86 | D86 | ~PCIE\_TX26-~ |     |     |
-| 87  |     |     | GND | C87 | D87 | GND |     |     |
-| 88  |     |     | ~PCIE\_RX27+~ | C88 | D88 | ~PCIE\_TX27+~ |     |     |
-| 89  |     |     | ~PCIE\_RX27-~ | C89 | D89 | ~PCIE\_TX27-~ |     |     |
-| 90  |     |     | GND (FIXED) | C90 | D90 | GND (FIXED) |     |     |
-| 91  |     |     | ~PCIE\_RX28+~ | C91 | D91 | ~PCIE\_TX28+~ |     |     |
-| 92  |     |     | ~PCIE\_RX28-~ | C92 | D92 | ~PCIE\_TX28-~ |     |     |
-| 93  |     |     | GND | C93 | D93 | GND |     |     |
-| 94  |     |     | ~PCIE\_RX29+~ | C94 | D94 | ~PCIE\_TX29+~ |     |     |
-| 95  |     |     | ~PCIE\_RX29-~ | C95 | D95 | ~PCIE\_TX29-~ |     |     |
-| 96  |     |     | GND | C96 | D96 | GND |     |     |
-| 97  |     |     | RSVD | C97 | D97 | RSVD | LX2160A - IEEE\_RCLK0 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |     |
-| 98  |     |     | ~PCIE\_RX30+~ | C98 | D98 | ~PCIE\_TX30+~ |     |     |
-| 99  |     |     | ~PCIE\_RX30-~ | C99 | D99 | ~PCIE\_TX30-~ |     |     |
-| 100 |     |     | GND (FIXED) | C100 | D100 | GND (FIXED) |     |     |
-| 101 |     |     | ~PCIE\_RX31+~ | C101 | D101 | ~PCIE\_TX31+~ |     |     |
-| 102 |     |     | ~PCIE\_RX31-~ | C102 | D102 | ~PCIE\_TX31-~ |     |     |
-| 103 |     |     | GND | C103 | D103 | GND |     |     |
-| 104 |     | 12v input (9v-15v) | VCC\_12V | C104 | D104 | VCC\_12V | 12v input (9v-15v) |     |
-| 105 |     | 12v input (9v-15v) | VCC\_12V | C105 | D105 | VCC\_12V | 12v input (9v-15v) |     |
-| 106 |     | 12v input (9v-15v) | VCC\_12V | C106 | D106 | VCC\_12V | 12v input (9v-15v) |     |
-| 107 |     | 12v input (9v-15v) | VCC\_12V | C107 | D107 | VCC\_12V | 12v input (9v-15v) |     |
-| 108 |     | 12v input (9v-15v) | VCC\_12V | C108 | D108 | VCC\_12V | 12v input (9v-15v) |     |
-| 109 |     | 12v input (9v-15v) | VCC\_12V | C109 | D109 | VCC\_12V | 12v input (9v-15v) |     |
-| 110 |     |     | GND (FIXED) | C110 | D110 | GND (FIXED) |     |     |
-
-<a id="ptp-sync-e-assembly-option"></a>
+|     | **Notes**                              | **Driving IC**                                                                          | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC**                                                                          | **Notes**                              |
+| --- | -------------------------------------- | --------------------------------------------------------------------------------------- | ----------------------- | -------------- | -------------- | ----------------------- | --------------------------------------------------------------------------------------- | -------------------------------------- |
+| 1   |                                        |                                                                                         | GND (FIXED)             | C1             | D1             | GND (FIXED)             |                                                                                         |                                        |
+| 2   |                                        |                                                                                         | GND                     | C2             | D2             | GND                     |                                                                                         |                                        |
+| 3   |                                        | LX2160A USB0                                                                            | USB\_SSRX0-             | C3             | D3             | USB\_SSTX0-             | LX2160A USB0                                                                            | Serial 100nF                           |
+| 4   |                                        | LX2160A USB0                                                                            | USB\_SSRX0+             | C4             | D4             | USB\_SSTX0+             | LX2160A USB0                                                                            | Serial 100nF                           |
+| 5   |                                        |                                                                                         | GND                     | C5             | D5             | GND                     |                                                                                         |                                        |
+| 6   |                                        | USB3.0 HUB port 1                                                                       | USB\_SSRX1-             | C6             | D6             | USB\_SSTX1-             | USB3.0 HUB port 1                                                                       | Serial 100nF                           |
+| 7   |                                        | USB3.0 HUB port 1                                                                       | USB\_SSRX1+             | C7             | D7             | USB\_SSTX1+             | USB3.0 HUB port 1                                                                       | Serial 100nF                           |
+| 8   |                                        |                                                                                         | GND                     | C8             | D8             | GND                     |                                                                                         |                                        |
+| 9   |                                        | USB3.0 HUB port 2                                                                       | USB\_SSRX2-             | C9             | D9             | USB\_SSTX2-             | USB3.0 HUB port 2                                                                       | Serial 100nF                           |
+| 10  |                                        | USB3.0 HUB port 2                                                                       | USB\_SSRX2+             | C10            | D10            | USB\_SSTX2+             | USB3.0 HUB port 2                                                                       | Serial 100nF                           |
+| 11  |                                        |                                                                                         | GND(FIXED)              | C11            | D11            | GND (FIXED)             |                                                                                         |                                        |
+| 12  |                                        | USB3.0 HUB port 3                                                                       | USB\_SSRX3-             | C12            | D12            | USB\_SSTX3-             | USB3.0 HUB port 3                                                                       | Serial 100nF                           |
+| 13  |                                        | USB3.0 HUB port 3                                                                       | USB\_SSRX3+             | C13            | D13            | USB\_SSTX3+             | USB3.0 HUB port 3                                                                       | Serial 100nF                           |
+| 14  |                                        |                                                                                         | GND                     | C14            | D14            | GND                     |                                                                                         |                                        |
+| 15  | 3.3v 2.2k pull-up, shared with pin C45 | LX2160A MDC2                                                                            | 10G\_PHY\_MDC\_SCL3     | C15            | D15            | 10G\_PHY\_MDIO\_SDA3    | LX2160A MDIO2                                                                           | 3.3v 2.2k pull-up, shared with pin D45 |
+| 16  | 3.3v 2.2k pull-up, shared with pin C46 | LX2160A MDC1                                                                            | 10G\_PHY\_MDC\_SCL2     | C16            | D16            | 10G\_PHY\_MDIO\_SDA2    | LX2160A MDIO1                                                                           | 3.3v 2.2k pull-up, shared with pin D46 |
+| 17  |                                        | LX2160A - TSEC\_1588\_CLK\_IN - Only rev 1.6 and newer; 1.8v signal; assembly-option.   | 10G\_SDP2               | C17            | D17            | 10G\_SDP3               | LX2160A - TSEC\_1588\_TRIG\_IN2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |                                        |
+| 18  |                                        |                                                                                         | GND                     | C18            | D18            | GND                     |                                                                                         |                                        |
+| 19  |                                        |                                                                                         | ~~PCIE\_RX6+~~          | C19            | D19            | ~~PCIE\_TX6+~~          |                                                                                         |                                        |
+| 20  |                                        |                                                                                         | ~~PCIE\_RX6-~~          | C20            | D20            | ~~PCIE\_TX6-~~          |                                                                                         |                                        |
+| 21  |                                        |                                                                                         | GND (FIXED)             | C21            | D21            | GND (FIXED)             |                                                                                         |                                        |
+| 22  |                                        |                                                                                         | ~~PCIE\_RX7+~~          | C22            | D22            | ~~PCIE\_TX7+~~          |                                                                                         |                                        |
+| 23  |                                        |                                                                                         | ~~PCIE\_RX7-~~          | C23            | D23            | ~~PCIE\_TX7-~~          |                                                                                         |                                        |
+| 24  |                                        | LX2160A IRQ10 GPIO3\[10]                                                                | 10G\_INT2               | C24            | D24            | 10G\_INT3               | LX2160A IRQ11 GPIO3\[11]                                                                |                                        |
+| 25  |                                        |                                                                                         | GND                     | C25            | D25            | GND                     |                                                                                         |                                        |
+| 26  | no DC blocking capacitors              | LX2160A SD1 SRDS3                                                                       | 10G\_KR\_RX3+           | C26            | D26            | 10G\_KR\_TX3+           | LX2160A SD1 SRDS3                                                                       | no DC blocking capacitors              |
+| 27  | no DC blocking capacitors              | LX2160A SD1 SRDS3                                                                       | 10G\_KR\_RX3-           | C27            | D27            | 10G\_KR\_TX3-           | LX2160A SD1 SRDS3                                                                       | no DC blocking capacitors              |
+| 28  |                                        |                                                                                         | GND                     | C28            | D28            | GND                     |                                                                                         |                                        |
+| 29  | no DC blocking capacitors              | LX2160A SD1 SRDS2                                                                       | 10G\_KR\_RX2+           | C29            | D29            | 10G\_KR\_TX2+           | LX2160A SD1 SRDS2                                                                       | no DC blocking capacitors              |
+| 30  | no DC blocking capacitors              | LX2160A SD1 SRDS2                                                                       | 10G\_KR\_RX2-           | C30            | D30            | 10G\_KR\_TX2-           | LX2160A SD1 SRDS2                                                                       | no DC blocking capacitors              |
+| 31  |                                        |                                                                                         | GND (FIXED)             | C31            | D31            | GND (FIXED)             |                                                                                         |                                        |
+| 32  | 2.2k pulled-up                         | I2C1 CH7                                                                                | 10G\_SFP\_SDA3          | C32            | D32            | 10G\_SFP\_SCL3          | I2C1 CH7                                                                                | 2.2k pulled-up                         |
+| 33  | 2.2k pulled-up                         | I2C1 CH6                                                                                | 10G\_SFP\_SDA2          | C33            | D33            | 10G\_SFP\_SCL2          | I2C1 CH6                                                                                | 2.2k pulled-up                         |
+| 34  | 3.3v, 2.2k pull-up                     | LX2160A EVT2 GPIO3\[14]                                                                 | 10G\_PHY\_RST\_23       | C34            | D34            | ~~10G\_PHY\_CAP\_23~~   |                                                                                         |                                        |
+| 35  | 3.3v, 2.2k pull-up                     | LX2160A EVT3 GPIO3\[15]                                                                 | 10G\_PHY\_RST\_01       | C35            | D35            | ~~10G\_PHY\_CAP\_01~~   |                                                                                         |                                        |
+| 36  | 2.2k pulled-up                         | I2C1 CH3                                                                                | 10G\_LED\_SDA           | C36            | D36            | RSVD                    |                                                                                         |                                        |
+| 37  | 2.2k pulled-up                         | I2C1 CH3                                                                                | 10G\_LED\_SCL           | C37            | D37            | RSVD                    |                                                                                         |                                        |
+| 38  | 2.2k pulled-up                         | I2C1 CH5                                                                                | 10G\_SFP\_SDA1          | C38            | D38            | 10G\_SFP\_SCL1          | I2C1 CH5                                                                                | 2.2k pulled-up                         |
+| 39  | 2.2k pulled-up                         | I2C1 CH4                                                                                | 10G\_SFP\_SDA0          | C39            | D39            | 10G\_SFP\_SCL0          | I2C1 CH4                                                                                | 2.2k pulled-up                         |
+| 40  |                                        | LX2160A TSEC\_1588\_PULSE\_OUT1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. | 10G\_SDP0               | C40            | D40            | 10G\_SDP1               | LX2160A TSEC\_1588\_PULSE\_OUT2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |                                        |
+| 41  |                                        |                                                                                         | GND (FIXED)             | C41            | D41            | GND (FIXED)             |                                                                                         |                                        |
+| 42  | no DC blocking capacitors              | LX2160A SD1 SRDS1                                                                       | 10G\_KR\_RX1+           | C42            | D42            | 10G\_KR\_TX1+           | LX2160A SD1 SRDS1                                                                       | no DC blocking capacitors              |
+| 43  | no DC blocking capacitors              | LX2160A SD1 SRDS1                                                                       | 10G\_KR\_RX1-           | C43            | D43            | 10G\_KR\_TX1-           | LX2160A SD1 SRDS1                                                                       | no DC blocking capacitors              |
+| 44  |                                        |                                                                                         | GND                     | C44            | D44            | GND                     |                                                                                         |                                        |
+| 45  | 3.3v 2.2k pull-up, shared with pin C15 | LX2160A MDC2                                                                            | 10G\_PHY\_MDC\_SCL1     | C45            | D45            | 10G\_PHY\_MDIO\_SDA1    | LX2160A MDIO2                                                                           | 3.3v 2.2k pull-up, shared with pin D15 |
+| 46  | 3.3v 2.2k pull-up, shared with pin C16 | LX2160A MDC1                                                                            | 10G\_PHY\_MDC\_SCL0     | C46            | D46            | 10G\_PHY\_MDIO\_SDA0    | LX2160A MDIO1                                                                           | 3.3v 2.2k pull-up, shared with pin D16 |
+| 47  |                                        | LX2160A IRQ00 GPIO3\[0]                                                                 | 10G\_INT0               | C47            | D47            | 10G\_INT1               | LX2160A IRQ09 GPIO3\[9]                                                                 |                                        |
+| 48  |                                        |                                                                                         | GND                     | C48            | D48            | GND                     |                                                                                         |                                        |
+| 49  | no DC blocking capacitors              | LX2160A SD1 SRDS0                                                                       | 10G\_KR\_RX0+           | C49            | D49            | 10G\_KR\_TX0+           | LX2160A SD1 SRDS0                                                                       | no DC blocking capacitors              |
+| 50  | no DC blocking capacitors              | LX2160A SD1 SRDS0                                                                       | 10G\_KR\_RX0-           | C50            | D50            | 10G\_KR\_TX0-           | LX2160A SD1 SRDS0                                                                       | no DC blocking capacitors              |
+| 51  |                                        |                                                                                         | GND (FIXED)             | C51            | D51            | GND (FIXED)             |                                                                                         |                                        |
+| 52  |                                        | LX2160A SD1 SRDS4                                                                       | PCIE\_RX16+             | C52            | D52            | PCIE\_TX16+             | LX2160A SD1 SRDS4                                                                       | Serial 220nF                           |
+| 53  |                                        | LX2160A SD1 SRDS4                                                                       | PCIE\_RX16-             | C53            | D53            | PCIE\_TX16-             | LX2160A SD1 SRDS4                                                                       | Serial 220nF                           |
+| 54  | Indicate TYPE 7#                       | Grounded                                                                                | TYPE0#                  | C54            | D54            | RSVD                    |                                                                                         |                                        |
+| 55  |                                        | LX2160A SD1 SRDS5                                                                       | PCIE\_RX17+             | C55            | D55            | PCIE\_TX17+             | LX2160A SD1 SRDS5                                                                       | Serial 220nF                           |
+| 56  |                                        | LX2160A SD1 SRDS5                                                                       | PCIE\_RX17-             | C56            | D56            | PCIE\_TX17-             | LX2160A SD1 SRDS5                                                                       | Serial 220nF                           |
+| 57  |                                        |                                                                                         | TYPE1#                  | C57            | D57            | TYPE2#                  | Grounded                                                                                | Indicate TYPE 7#                       |
+| 58  |                                        | LX2160A SD1 SRDS6                                                                       | PCIE\_RX18+             | C58            | D58            | PCIE\_TX18+             | LX2160A SD1 SRDS6                                                                       | Serial 220nF                           |
+| 59  |                                        | LX2160A SD1 SRDS6                                                                       | PCIE\_RX18-             | C59            | D59            | PCIE\_TX18-             | LX2160A SD1 SRDS6                                                                       | Serial 220nF                           |
+| 60  |                                        |                                                                                         | GND (FIXED)             | C60            | D60            | GND (FIXED)             |                                                                                         |                                        |
+| 61  |                                        | LX2160A SD1 SRDS7                                                                       | PCIE\_RX19+             | C61            | D61            | PCIE\_TX19+             | LX2160A SD1 SRDS7                                                                       | Serial 220nF                           |
+| 62  |                                        | LX2160A SD1 SRDS7                                                                       | PCIE\_RX19-             | C62            | D62            | PCIE\_TX19-             | LX2160A SD1 SRDS7                                                                       | Serial 220nF                           |
+| 63  |                                        |                                                                                         | RSVD                    | C63            | D63            | RSVD                    | LX2160A - IEEE\_RCLK1 - Only rev 1.6 and newer; 1.8v signal; assembly-option.           |                                        |
+| 64  |                                        |                                                                                         | RSVD                    | C64            | D64            | RSVD                    | LX2160A TSEC\_1588\_ALARM\_OUT2 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |                                        |
+| 65  |                                        |                                                                                         | ~~PCIE\_RX20+~~         | C65            | D65            | ~~PCIE\_TX20+~~         |                                                                                         |                                        |
+| 66  |                                        |                                                                                         | ~~PCIE\_RX20-~~         | C66            | D66            | ~~PCIE\_TX20-~~         |                                                                                         |                                        |
+| 67  |                                        |                                                                                         | ~~RAPID\_SHUTDOWN~~     | C67            | D67            | GND                     |                                                                                         |                                        |
+| 68  |                                        |                                                                                         | ~~PCIE\_RX21+~~         | C68            | D68            | ~~PCIE\_TX21+~~         |                                                                                         |                                        |
+| 69  |                                        |                                                                                         | ~~PCIE\_RX21-~~         | C69            | D69            | ~~PCIE\_TX21-~~         |                                                                                         |                                        |
+| 70  |                                        |                                                                                         | GND (FIXED)             | C70            | D70            | GND (FIXED)             |                                                                                         |                                        |
+| 71  |                                        |                                                                                         | ~~PCIE\_RX22+~~         | C71            | D71            | ~~PCIE\_TX22+~~         |                                                                                         |                                        |
+| 72  |                                        |                                                                                         | ~~PCIE\_RX22-~~         | C72            | D72            | ~~PCIE\_TX22-~~         |                                                                                         |                                        |
+| 73  |                                        |                                                                                         | GND                     | C73            | D73            | GND                     |                                                                                         |                                        |
+| 74  |                                        |                                                                                         | ~~PCIE\_RX23+~~         | C74            | D74            | ~~PCIE\_TX23+~~         |                                                                                         |                                        |
+| 75  |                                        |                                                                                         | ~~PCIE\_RX23-~~         | C75            | D75            | ~~PCIE\_TX23-~~         |                                                                                         |                                        |
+| 76  |                                        |                                                                                         | GND                     | C76            | D76            | GND                     |                                                                                         |                                        |
+| 77  |                                        |                                                                                         | RSVD                    | C77            | D77            | RSVD                    | LX2160A - TSEC\_1588\_CLK\_OUT - Only rev 1.6 and newer; 1.8v signal; assembly-option.  |                                        |
+| 78  |                                        |                                                                                         | ~~PCIE\_RX24+~~         | C78            | D78            | ~~PCIE\_TX24+~~         |                                                                                         |                                        |
+| 79  |                                        |                                                                                         | ~~PCIE\_RX24-~~         | C79            | D79            | ~~PCIE\_TX24-~~         |                                                                                         |                                        |
+| 80  |                                        |                                                                                         | GND (FIXED)             | C80            | D80            | GND (FIXED)             |                                                                                         |                                        |
+| 81  |                                        |                                                                                         | ~~PCIE\_RX25+~~         | C81            | D81            | ~~PCIE\_TX25+~~         |                                                                                         |                                        |
+| 82  |                                        |                                                                                         | ~~PCIE\_RX25-~~         | C82            | D82            | ~~PCIE\_TX25-~~         |                                                                                         |                                        |
+| 83  |                                        |                                                                                         | RSVD                    | C83            | D83            | RSVD                    | LX2160A TSEC\_1588\_ALARM\_OUT1 - Only rev 1.6 and newer; 1.8v signal; assembly-option. |                                        |
+| 84  |                                        |                                                                                         | GND                     | C84            | D84            | GND                     |                                                                                         |                                        |
+| 85  |                                        |                                                                                         | ~~PCIE\_RX26+~~         | C85            | D85            | ~~PCIE\_TX26+~~         |                                                                                         |                                        |
+| 86  |                                        |                                                                                         | ~~PCIE\_RX26-~~         | C86            | D86            | ~~PCIE\_TX26-~~         |                                                                                         |                                        |
+| 87  |                                        |                                                                                         | GND                     | C87            | D87            | GND                     |                                                                                         |                                        |
+| 88  |                                        |                                                                                         | ~~PCIE\_RX27+~~         | C88            | D88            | ~~PCIE\_TX27+~~         |                                                                                         |                                        |
+| 89  |                                        |                                                                                         | ~~PCIE\_RX27-~~         | C89            | D89            | ~~PCIE\_TX27-~~         |                                                                                         |                                        |
+| 90  |                                        |                                                                                         | GND (FIXED)             | C90            | D90            | GND (FIXED)             |                                                                                         |                                        |
+| 91  |                                        |                                                                                         | ~~PCIE\_RX28+~~         | C91            | D91            | ~~PCIE\_TX28+~~         |                                                                                         |                                        |
+| 92  |                                        |                                                                                         | ~~PCIE\_RX28-~~         | C92            | D92            | ~~PCIE\_TX28-~~         |                                                                                         |                                        |
+| 93  |                                        |                                                                                         | GND                     | C93            | D93            | GND                     |                                                                                         |                                        |
+| 94  |                                        |                                                                                         | ~~PCIE\_RX29+~~         | C94            | D94            | ~~PCIE\_TX29+~~         |                                                                                         |                                        |
+| 95  |                                        |                                                                                         | ~~PCIE\_RX29-~~         | C95            | D95            | ~~PCIE\_TX29-~~         |                                                                                         |                                        |
+| 96  |                                        |                                                                                         | GND                     | C96            | D96            | GND                     |                                                                                         |                                        |
+| 97  |                                        |                                                                                         | RSVD                    | C97            | D97            | RSVD                    | LX2160A - IEEE\_RCLK0 - Only rev 1.6 and newer; 1.8v signal; assembly-option.           |                                        |
+| 98  |                                        |                                                                                         | ~~PCIE\_RX30+~~         | C98            | D98            | ~~PCIE\_TX30+~~         |                                                                                         |                                        |
+| 99  |                                        |                                                                                         | ~~PCIE\_RX30-~~         | C99            | D99            | ~~PCIE\_TX30-~~         |                                                                                         |                                        |
+| 100 |                                        |                                                                                         | GND (FIXED)             | C100           | D100           | GND (FIXED)             |                                                                                         |                                        |
+| 101 |                                        |                                                                                         | ~~PCIE\_RX31+~~         | C101           | D101           | ~~PCIE\_TX31+~~         |                                                                                         |                                        |
+| 102 |                                        |                                                                                         | ~~PCIE\_RX31-~~         | C102           | D102           | ~~PCIE\_TX31-~~         |                                                                                         |                                        |
+| 103 |                                        |                                                                                         | GND                     | C103           | D103           | GND                     |                                                                                         |                                        |
+| 104 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C104           | D104           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 105 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C105           | D105           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 106 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C106           | D106           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 107 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C107           | D107           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 108 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C108           | D108           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 109 |                                        | 12v input (9v-15v)                                                                      | VCC\_12V                | C109           | D109           | VCC\_12V                | 12v input (9v-15v)                                                                      |                                        |
+| 110 |                                        |                                                                                         | GND (FIXED)             | C110           | D110           | GND (FIXED)             |                                                                                         |                                        |
 
 ## PTP / Sync-E Assembly Option
 
 COM-Express Type 7 dos not define pins for PTP and Syncrhonous Ethernet. However the SolidRun module can expose the related LX2160A signals on B2B Connector by assembling 0-Ohm resistors:
 
 | **LX2160A Signal** | **B2B Connector Pin** | **Resistor** |
-| --- | --- | --- |
-| I1588\_TRIG\_IN1 | A49 | R520 |
-| I1588\_ALARM\_OUT1 | D83 | R521 |
-| I1588\_ALARM\_OUT2 | D64 | R522 |
-| I1588\_CLK\_IN | C17 | R523 |
-| I1588\_CLK\_OUT | D77 | R524 |
-| I1588\_PULSE\_OUT1 | C40 | R525 |
-| I1588\_PULSE\_OUT2 | D40 | R526 |
-| I1588\_TRIG\_IN2 | D17 | R527 |
-| IEEE\_RCLK0 | D97 | R528 |
-| IEEE\_RCLK1 | D63 | R529 |
+| ------------------ | --------------------- | ------------ |
+| I1588\_TRIG\_IN1   | A49                   | R520         |
+| I1588\_ALARM\_OUT1 | D83                   | R521         |
+| I1588\_ALARM\_OUT2 | D64                   | R522         |
+| I1588\_CLK\_IN     | C17                   | R523         |
+| I1588\_CLK\_OUT    | D77                   | R524         |
+| I1588\_PULSE\_OUT1 | C40                   | R525         |
+| I1588\_PULSE\_OUT2 | D40                   | R526         |
+| I1588\_TRIG\_IN2   | D17                   | R527         |
+| IEEE\_RCLK0        | D97                   | R528         |
+| IEEE\_RCLK1        | D63                   | R529         |
 
 SolidRun recommend selecting only the specific resistor which are required for a certain application, and assembling those. Locations are indicated in the photos below:
 
-<a id="ptp-sync-e-assembly-option-locations"></a>
-
 ### PTP / Sync-E Assembly Option Locations
 
-![lx2160acex7-ptp-ps_photo.jpeg](./attachments/lx2160acex7-ptp-ps_photo.jpeg)
+![lx2160acex7-ptp-ps\_photo.jpeg](../../../.gitbook/assets/lx2160acex7-ptp-ps_photo.jpeg)
 
-![lx2160acex7-ptp-cs_photo.jpeg](./attachments/lx2160acex7-ptp-cs_photo.jpeg)
-
-<a id="accessing-jtag"></a>
+![lx2160acex7-ptp-cs\_photo.jpeg](../../../.gitbook/assets/lx2160acex7-ptp-cs_photo.jpeg)
 
 ## Accessing JTAG
 
@@ -492,39 +443,33 @@ Since LX2160A COM type 7 rev 2.0 and newer JTAG state machine is connected to PO
 
 In order to get access to the JTAG just after PORESET\_B signal is deasserted the user needs to remove the zero ohm 0402 resistor R9399 that is beneath the heatsink as follows -
 
-![](./attachments/image-20230403-084933.png)
+![](../../../.gitbook/assets/image-20230403-084933.png)
 
 and magnified -
 
-![](./attachments/image-20230403-085727.png)
+![](../../../.gitbook/assets/image-20230403-085727.png)
 
 and then the user needs to connect the CodeWarrior TAP 50mil 10 pin header to the connector near the DIP switches -
 
-![](./attachments/image-20230403-085447.png)
+![](../../../.gitbook/assets/image-20230403-085447.png)
 
 and then install the NXP CodeWarrior Development Studio for QorIQ LS series - ARM V8 ISA and follow NXP insutrctions and manuals.
 
-<a id="documentation"></a>
-
 ## Documentation
 
-       
+|                                                                                                                                                                                                                                                                                                                                                                                                                              | File                                                                                                                                                             | Modified                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-b11cc39e-d830-472f-9892-530d8df999fd">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/LX2160A-CEX7-Rev+2.1-3D-Model.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>              | ZIP Archive [LX2160A-CEX7-Rev 2.1-3D-Model.zip](../../../wiki/download/attachments/197493994/LX2160A-CEX7-Rev%202.1-3D-Model.zip)                                | Feb 19, 2024 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-9464ac6b-1ce0-40ef-9aab-77a1ff50cfe0">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/LX2160A-CEX7-Rev+2.1-AssyPS.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>                | PDF File [LX2160A-CEX7-Rev 2.1-AssyPS.pdf](../../../wiki/download/attachments/197493994/LX2160A-CEX7-Rev%202.1-AssyPS.pdf)                                       | Jun 20, 2023 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-5bffe75d-5076-49a2-b980-db4d9f56c435">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/lx2160a-cex7-2.1-simplified-schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>     | PDF File [lx2160a-cex7-2.1-simplified-schematics.pdf](../../../wiki/download/attachments/197493994/lx2160a-cex7-2.1-simplified-schematics.pdf)                   | Jun 20, 2023 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-0d546fcc-d1ea-4d30-9165-28b0642b586e">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/LX2160A+1U+low+profile+heat-sink+datasheet.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [LX2160A 1U low profile heat-sink datasheet.pdf](../../../wiki/download/attachments/197493994/LX2160A%201U%20low%20profile%20heat-sink%20datasheet.pdf) | Feb 23, 2022 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/)      |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-2db6dd65-0877-4c9f-9b0f-e8af5814ff8a">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/LX2160A+1U+low+profile+heat-sink+3D.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>        | ZIP Archive [LX2160A 1U low profile heat-sink 3D.zip](../../../wiki/download/attachments/197493994/LX2160A%201U%20low%20profile%20heat-sink%203D.zip)            | Feb 23, 2022 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/)      |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-6decd911-6932-4d79-a872-dea40d70e2f7">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/S-Parameters+-+LX2160A_CEX7.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>                | ZIP Archive [S-Parameters - LX2160A\_CEX7.zip](../../../wiki/download/attachments/197493994/S-Parameters%20-%20LX2160A_CEX7.zip)                                 | Dec 26, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/)      |
+| <p>Labels<br><br>- No labels<br>- <a href="lx2160a-com-hardware-user-manual.md#section-86826af8-4627-4a62-bdd7-2b7b05efde35">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493994/MTBF+For+LX2160A+COM.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>                       | PDF File [MTBF For LX2160A COM.pdf](../../../wiki/download/attachments/197493994/MTBF%20For%20LX2160A%20COM.pdf)                                                 | Dec 26, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/)      |
 
-|     | File | Modified |
-| --- | --- | --- |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-b11cc39e-d830-472f-9892-530d8df999fd)<br><br>[Preview] [View](/wiki/download/attachments/197493994/LX2160A-CEX7-Rev+2.1-3D-Model.zip?version=3) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=LX2160A-CEX7-Rev+2.1-3D-Model.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=LX2160A-CEX7-Rev+2.1-3D-Model.zip) | ZIP Archive [LX2160A-CEX7-Rev 2.1-3D-Model.zip](/wiki/download/attachments/197493994/LX2160A-CEX7-Rev%202.1-3D-Model.zip?api=v2) | Feb 19, 2024 by [Rabeeh Khoury](/wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-9464ac6b-1ce0-40ef-9aab-77a1ff50cfe0)<br><br>[Preview] [View](/wiki/download/attachments/197493994/LX2160A-CEX7-Rev+2.1-AssyPS.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=LX2160A-CEX7-Rev+2.1-AssyPS.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=LX2160A-CEX7-Rev+2.1-AssyPS.pdf) | PDF File [LX2160A-CEX7-Rev 2.1-AssyPS.pdf](/wiki/download/attachments/197493994/LX2160A-CEX7-Rev%202.1-AssyPS.pdf?api=v2) | Jun 20, 2023 by [Rabeeh Khoury](/wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-5bffe75d-5076-49a2-b980-db4d9f56c435)<br><br>[Preview] [View](/wiki/download/attachments/197493994/lx2160a-cex7-2.1-simplified-schematics.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=lx2160a-cex7-2.1-simplified-schematics.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=lx2160a-cex7-2.1-simplified-schematics.pdf) | PDF File [lx2160a-cex7-2.1-simplified-schematics.pdf](/wiki/download/attachments/197493994/lx2160a-cex7-2.1-simplified-schematics.pdf?api=v2) | Jun 20, 2023 by [Rabeeh Khoury](/wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-0d546fcc-d1ea-4d30-9165-28b0642b586e)<br><br>[Preview] [View](/wiki/download/attachments/197493994/LX2160A+1U+low+profile+heat-sink+datasheet.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=LX2160A+1U+low+profile+heat-sink+datasheet.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=LX2160A+1U+low+profile+heat-sink+datasheet.pdf) | PDF File [LX2160A 1U low profile heat-sink datasheet.pdf](/wiki/download/attachments/197493994/LX2160A%201U%20low%20profile%20heat-sink%20datasheet.pdf?api=v2) | Feb 23, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-2db6dd65-0877-4c9f-9b0f-e8af5814ff8a)<br><br>[Preview] [View](/wiki/download/attachments/197493994/LX2160A+1U+low+profile+heat-sink+3D.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=LX2160A+1U+low+profile+heat-sink+3D.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=LX2160A+1U+low+profile+heat-sink+3D.zip) | ZIP Archive [LX2160A 1U low profile heat-sink 3D.zip](/wiki/download/attachments/197493994/LX2160A%201U%20low%20profile%20heat-sink%203D.zip?api=v2) | Feb 23, 2022 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-6decd911-6932-4d79-a872-dea40d70e2f7)<br><br>[Preview] [View](/wiki/download/attachments/197493994/S-Parameters+-+LX2160A_CEX7.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=S-Parameters+-+LX2160A_CEX7.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=S-Parameters+-+LX2160A_CEX7.zip) | ZIP Archive [S-Parameters - LX2160A\_CEX7.zip](/wiki/download/attachments/197493994/S-Parameters%20-%20LX2160A_CEX7.zip?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
-| Labels<br><br>- No labels<br>- [Edit Labels](#section-86826af8-4627-4a62-bdd7-2b7b05efde35)<br><br>[Preview] [View](/wiki/download/attachments/197493994/MTBF+For+LX2160A+COM.pdf?version=1) [Properties](/wiki/pages/editattachment.action?pageId=197493994&fileName=MTBF+For+LX2160A+COM.pdf&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=197493994&fileName=MTBF+For+LX2160A+COM.pdf) | PDF File [MTBF For LX2160A COM.pdf](/wiki/download/attachments/197493994/MTBF%20For%20LX2160A%20COM.pdf?api=v2) | Dec 26, 2021 by [SolidRun](/wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f) |
+[Download All](../../../wiki/download/all_attachments)
 
-[Download All](/wiki/download/all_attachments?pageId=197493994)
-
-[ Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
-
-<a id="related-articles"></a>
+[Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
 
 ## Related Articles
 

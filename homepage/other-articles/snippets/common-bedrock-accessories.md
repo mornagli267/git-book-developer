@@ -1,123 +1,91 @@
 # Common Bedrock accessories
 
-<a id="power"></a>
+## Common Bedrock accessories
 
-# Power
+## Power
 
-<a id="psu-90w"></a>
+### PSU 90W
 
-## PSU 90W
-
-90W power supply.  
+90W power supply.\
 Requires AC cable C13 ("Kettle lead")
 
-> [!NOTE]
-> **Ordering code**: SRBD-PSU90
+> \[!NOTE] **Ordering code**: SRBD-PSU90
 
-![](./attachments/1698238206024.jpg)
+![](../../../.gitbook/assets/1698238206024.jpg)
 
-<a id="us-eu-uk-au-ac-cable"></a>
-
-## US | EU | UK | AU AC Cable
+### US | EU | UK | AU AC Cable
 
 1.8m AC cord for PSU (C13 "Kettle lead") with regional plug.
 
-| **Ordering code** | **AC Plug** |
-| --- | --- |
-| SRBD-CABUS | North America |
-| SRBD-CABEU | Europlug |
-| SRBD-CABUK | UK plug |
-| SRBD-CABAU | Australia / New Zealand plug |
+| **Ordering code** | **AC Plug**                  |
+| ----------------- | ---------------------------- |
+| SRBD-CABUS        | North America                |
+| SRBD-CABEU        | Europlug                     |
+| SRBD-CABUK        | UK plug                      |
+| SRBD-CABAU        | Australia / New Zealand plug |
 
-![](./attachments/IMG20231025153358.jpg)
+![](../../../.gitbook/assets/IMG20231025153358.jpg)
 
-<a id="dc-cable-phoenix-connector"></a>
+### DC Cable Phoenix connector
 
-## DC Cable Phoenix connector
-
-Pigtail DC cable for Bedrock.  
+Pigtail DC cable for Bedrock.\
 To be used with a 3rd party PSU.
 
-> [!NOTE]
-> **Ordering code**: SRBD-CABDC
+> \[!NOTE] **Ordering code**: SRBD-CABDC
 
-![](./attachments/169823820600322.jpg)
+![](../../../.gitbook/assets/169823820600322.jpg)
 
-<a id="mounting"></a>
+## Mounting
 
-# Mounting
-
-<a id="stand-for-bedrock"></a>
-
-## Stand for Bedrock
+### Stand for Bedrock
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#stand)
 
-> [!NOTE]
-> **Ordering code**: SRBD-STAND21
+> \[!NOTE] **Ordering code**: SRBD-STAND21
 
-![](./attachments/1698238205961.jpg)
+![](../../../.gitbook/assets/1698238205961.jpg)
 
-<a id="wall-mounting-bracket"></a>
-
-## Wall mounting bracket
+### Wall mounting bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#wall-mounting)
 
-> [!NOTE]
-> **Ordering code**: SRBD-WALL21
+> \[!NOTE] **Ordering code**: SRBD-WALL21
 
-![](./attachments/1698238205942.jpg)
+![](../../../.gitbook/assets/1698238205942.jpg)
 
-<a id="din-rail-bracket"></a>
-
-## DIN Rail bracket
+### DIN Rail bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#din-rail-mounting)
 
-> [!NOTE]
-> **Ordering code**: SRBD-DIN21
+> \[!NOTE] **Ordering code**: SRBD-DIN21
 
-![](./attachments/1698238205922.jpg)
+![](../../../.gitbook/assets/1698238205922.jpg)
 
-<a id="cable-accessories"></a>
+## Cable accessories
 
-# Cable accessories
+### Remote on/off
 
-<a id="remote-on-off"></a>
-
-## Remote on/off
-
-<a id="remote-power-button"></a>
-
-### Remote power button
+#### Remote power button
 
 A power button on a wire for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> [!NOTE]
-> **Ordering code**: SRBD-CABBTN
+> \[!NOTE] **Ordering code**: SRBD-CABBTN
 
-![](./attachments/1698238205904.jpg)
+![](../../../.gitbook/assets/1698238205904.jpg)
 
-<a id="harness-for-custom-remote-power-button"></a>
-
-### Harness for custom remote power button
+#### Harness for custom remote power button
 
 A wire harness for soldering custom power button (optionally with LED) for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> [!NOTE]
-> **Ordering code**: SRBD-CABNOBTN
+> \[!NOTE] **Ordering code**: SRBD-CABNOBTN
 
-![](./attachments/1698238205889.jpg)
+![](../../../.gitbook/assets/1698238205889.jpg)
 
-<a id="console-mini-usb-to-usb-a"></a>
+### Console mini-USB to USB-A
 
-## Console mini-USB to USB-A
-
-Console is mini-USB connector with standard USB interface.  
+Console is mini-USB connector with standard USB interface.\
 The mini-USB to USB-A allows connecting to a host PC.
 
-> [!NOTE]
-> **Ordering code**: SRBD-CABCON
+> \[!NOTE] **Ordering code**: SRBD-CABCON
 
-![](./attachments/1698238205873.jpg)
+![](<../../../.gitbook/assets/1698238205873 (1).jpg>)

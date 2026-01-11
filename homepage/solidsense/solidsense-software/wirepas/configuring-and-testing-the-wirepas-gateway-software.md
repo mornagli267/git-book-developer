@@ -1,47 +1,37 @@
 # Configuring and testing the Wirepas gateway software
 
-> [!WARNING]
-> The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi (documentation page)
-
-<a id="prerequisite-and-installation"></a>
+> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software. [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi (documentation page)
 
 ## Prerequisite and installation
 
 From the version 0.9 on, the Wirepas gateway software is installed in the base image.From version 1.0 on (Solidsense-1.0-2020032700) and for orders with the Wirepas option, no installation step is required.
 
-<a id="purpose-and-features"></a>
-
 ## Purpose and features
 
-The SolidSense Wirepas service exposes the full gateway API from Wirepas compliant to the **Wirepas reference design 1.3.0**. For detailed information see the [Wirepas gateway API documentation](https://github.com/wirepas/backend-apis/blob/master/gateway_to_backend/README.md). From version 2.0 on, the gateway implements **Wirepas reference design 1.4**.
+The SolidSense Wirepas service exposes the full gateway API from Wirepas compliant to the **Wirepas reference design 1.3.0**. For detailed information see the [Wirepas gateway API documentation](https://github.com/wirepas/backend-apis/blob/master/gateway_to_backend/README.md). From version 2.0 on, the gateway implements **Wirepas reference design 1.4**.
 
-Practically that means that the gateway is directly compatible with all Wirepas cloud features, mainly the **WNT** for configuration and control of the Wirepas network and **WPE** for asset tracking features.
+Practically that means that the gateway is directly compatible with all Wirepas cloud features, mainly the **WNT** for configuration and control of the Wirepas network and **WPE** for asset tracking features.
 
 This is not preventing to develop additional applications on the gateway itself either by directly interfacing the sink services or by having messages routed to the local MQTT broker and writing a client (Python is preferred) that will process the payload locally.
-
-<a id="mapping-of-wirepas-sinks-with-physical-ports"></a>
 
 ## Mapping of Wirepas sinks with physical ports
 
 The Wirepas are connected to the CPU via UART. Here is the device mapping
 
-| Gateway type | Sink 1 | Sink 2 |
-| --- | --- | --- |
-| N6 Indoor | /dev/ttymxc1 | /dev/ttymxc2 |
-| N6 Outdoor | /dev/ttymxc1 | /dev/ttymxc2 |
+| Gateway type  | Sink 1       | Sink 2       |
+| ------------- | ------------ | ------------ |
+| N6 Indoor     | /dev/ttymxc1 | /dev/ttymxc2 |
+| N6 Outdoor    | /dev/ttymxc1 | /dev/ttymxc2 |
 | N6 Industrial | /dev/ttymxc1 | /dev/ttymxc2 |
-| N8 Compact | /dev/ttymxc3 | N/A |
-
-<a id="specific-installation-steps"></a>
+| N8 Compact    | /dev/ttymxc3 | N/A          |
 
 ## Specific installation steps
 
-For gateway in version 0.9 that do not have their Wirepas sink factory flashed (Wirepas licensees) the procedure is here: [Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)](../wirepas/flashing-or-re-flashing-wirepas-sinks-on-solidsense-gateway-v09-and-up.md) .
+For gateway in version 0.9 that do not have their Wirepas sink factory flashed (Wirepas licensees) the procedure is here: [Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)](flashing-or-re-flashing-wirepas-sinks-on-solidsense-gateway-v09-and-up.md) .
 
 If the Wirepas configuration services do not appear on the Kura interface, then the following step have to be applied:
 
-1. Download the [Wirepas sample configuration file](https://images.solidsense.io/SolidSense/config/SolidSense-conf-custom.yml). This can be done either on your PC or directly from the gateway.
+1. Download the [Wirepas sample configuration file](https://images.solidsense.io/SolidSense/config/SolidSense-conf-custom.yml). This can be done either on your PC or directly from the gateway.
 2. Copy the file in /data/solidsense/config/SolidSense-conf-custom.yml. That file can be edited first so you can directly enter your parameters. Otherwise you can always program them via Kura/Kapua
 3. Restart the gateway for reconfiguration (being su) /opt/SolidSense/bin/restart –config. Warning all network parameters will fall back to factory default.
 
@@ -54,8 +44,6 @@ Exemple using ssh directly on the gateway connected to Internet
 > sudo su
 su# /opt/SolidSense/bin/restart --config
 ```
-
-<a id="sample-wirepas-configuration-in-yaml"></a>
 
 #### Sample Wirepas configuration in Yaml
 
@@ -150,32 +138,25 @@ services:
         passwd: $PASSWORD
 ```
 
-<a id="configuring-the-sink-service-with-kura"></a>
-
 ## Configuring the sink service with Kura
 
 Open the Kura web interface and go the Wirepas Sink Configuration menu
 
-![](./attachments/Kura-Wirepas-Sink.png)
+![](../../../../.gitbook/assets/Kura-Wirepas-Sink.png)
 
 On this page you need to configure the Wirepas network parameter for each sink: The Network ID (in decimal) and channel number. After applying the changes, the wirepas sink services are updated with the new parameters. Each sink is to be configured separately and the Web interface does not record the configuration for each sink. Only the visible parameters are stored.
 
-> [!WARNING]
-> **Warning: the value displayed are the one stored in the Kura database and do not reflect the actual values in the sinks**
-
-<a id="configuring-the-sink-service-with-kura-solidsense-v20"></a>
+> \[!WARNING] **Warning: the value displayed are the one stored in the Kura database and do not reflect the actual values in the sinks**
 
 ## Configuring the sink service with Kura SolidSense V2.0
 
-![](./attachments/Kura-Wirepas-Sink-V2.0.png)
+![](../../../../.gitbook/assets/Kura-Wirepas-Sink-V2.0.png)
 
 In V2.0 major improvements have been added to the Sink Service:
 
-- Values displayed are the actual ones
-- More features can be configured
-- The number of sinks displayed reflect the gateway configuration
-
-<a id="configuring-the-wirepas-data-transport"></a>
+* Values displayed are the actual ones
+* More features can be configured
+* The number of sinks displayed reflect the gateway configuration
 
 ## Configuring the Wirepas Data transport
 
@@ -187,25 +168,22 @@ Up to 3 communication channels, working simultaneously, can be configured via th
 2. Optional MQTT transport
 3. Local micro service on gRPC
 
-![](./attachments/Kura-Wirepas-Data-V2.0.png)
+![](../../../../.gitbook/assets/Kura-Wirepas-Data-V2.0.png)
 
 Each MQTT transport has the following configuration items
 
-- Enable for operational
-- Enable transport secure. communication to be performed over TLS
-- transport persistence mode: if true set the MQTT Clean Session parameter to False. No message loss.
-- MQTT Broker URL
-- MQTT Broker username
-- MQTT Broker password
-- **Maximum buffered packets and maximum delay without publish: these parameters control the “black hole” mechanism. If they are non zero the “black hole” feature is enabled, meaning that when the MQTT connection is cut if one of the limit is crossed htne the sink cost is raise to maximum, so the gateway is not taking any messages from the Wirepas network**
-- Expert mode is used to pass any parameter not defined with a field on the page. Syntax is YAML like,with one parameter per line.
+* Enable for operational
+* Enable transport secure. communication to be performed over TLS
+* transport persistence mode: if true set the MQTT Clean Session parameter to False. No message loss.
+* MQTT Broker URL
+* MQTT Broker username
+* MQTT Broker password
+* **Maximum buffered packets and maximum delay without publish: these parameters control the “black hole” mechanism. If they are non zero the “black hole” feature is enabled, meaning that when the MQTT connection is cut if one of the limit is crossed htne the sink cost is raise to maximum, so the gateway is not taking any messages from the Wirepas network**
+* Expert mode is used to pass any parameter not defined with a field on the page. Syntax is YAML like,with one parameter per line.
 
-> [!WARNING]
-> **Note:** if a specific certificate is needed for TLS communication with the MQTT broker, then that certificate must be configured on the gateway. The procedure is explained [here](https://developer.solid-run.com/knowledge-base/gateway-secure-communication-and-vpn/)
+> \[!WARNING] **Note:** if a specific certificate is needed for TLS communication with the MQTT broker, then that certificate must be configured on the gateway. The procedure is explained [here](https://developer.solid-run.com/knowledge-base/gateway-secure-communication-and-vpn/)
 
 After applying the changes all enabled data transport are started or restarted and the gateway should be operational.
-
-<a id="micro-service-grpc-configuration"></a>
 
 ## Micro-service gRPC configuration
 
@@ -215,13 +193,9 @@ Default port: 9883
 
 Proto file and examples in /opt/SolidSense/Wirepas-Install-1.2/wirepas-gw/grpc
 
-<a id="using-kapua-for-remote-configuration"></a>
-
 ## Using Kapua for remote configuration
 
-All the configuration can also be done using Kapua, using the remote device configuration service that is briefly described in: [Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-devices](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142858/Using+Eclipse+Kapua+to+supervise+and+configure+SolidSense+gateways#managing-devices)
-
-<a id="wirepas-transport-configuration-parameters"></a>
+All the configuration can also be done using Kapua, using the remote device configuration service that is briefly described in: [Using Eclipse Kapua to supervise and configure SolidSense gateways | Managing-devices](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142858/Using+Eclipse+Kapua+to+supervise+and+configure+SolidSense+gateways#managing-devices)
 
 ## Wirepas transport configuration parameters
 
@@ -229,8 +203,8 @@ Here below the list of all parameters. many of them can be configured directly v
 
 The wirepas transport services are using the parameters located in /data/solidsense/wirepas
 
-- Main MQTT (wirepasTransport1) in wirepasTransport1.service.cfg
-- Secondary (wirepasTransport2) in wirepasTransport2.service.cfg
+* Main MQTT (wirepasTransport1) in wirepasTransport1.service.cfg
+* Secondary (wirepasTransport2) in wirepasTransport2.service.cfg
 
 These file are directly written by the Kura configuration plugin, so any manual edit will be lost if the plugin is used.
 
@@ -327,19 +301,13 @@ buffering:
                         (default: 0)
 ```
 
-<a id="checking-the-status-of-the-data-transport"></a>
-
 ## Checking the status of the data transport
 
 The feature is available only in 2.0
 
-![](./attachments/Kura-Wirepas-Data-Status.png)
-
-<a id="testing-and-troubleshooting-the-wirepas-configuration"></a>
+![](../../../../.gitbook/assets/Kura-Wirepas-Data-Status.png)
 
 ## Testing and troubleshooting the Wirepas configuration
-
-<a id="sink-services"></a>
 
 ### Sink services
 
@@ -350,19 +318,17 @@ The sink service ensure the communication with the Wirepas software running on t
 
 After the Sink(s) is (are) configured the gateway is connected to the Sink and as soon the data transport is configured the data are sent to the MQTT broker(s)
 
-<a id="simple-check-of-sink-configuration"></a>
-
 #### Simple check of sink configuration
 
-From the shell (or Kura/Kapua) you can enter  
+From the shell (or Kura/Kapua) you can enter\
 **sinkctl**
 
 This will display the sink configuration as follows
 
-Sink sink1 Network: 5063237 Channel: 38 Address: 3268760 Stack Started  
+Sink sink1 Network: 5063237 Channel: 38 Address: 3268760 Stack Started\
 Sink sink2 Network: 5063237 Channel: 38 Address: 3268761 Stack Started
 
-The **sinkctl** command can also start and stop the Wirepas stack by adding the ‘start’ or ‘stop’ option to the command:
+The **sinkctl** command can also start and stop the Wirepas stack by adding the ‘start’ or ‘stop’ option to the command:
 
 ```
 # stop all the sinks
@@ -370,8 +336,6 @@ sinkctl stop
 # start all sinks
 sinkctl start
 ```
-
-<a id="firmware-verification"></a>
 
 #### Firmware verification
 
@@ -398,8 +362,6 @@ Wirepas Firmware version: 4.0.50.0
 Wirepas Network config: 176377:11259375:2
 ```
 
-<a id="advanced-troubleshooting-with-systemd"></a>
-
 #### Advanced troubleshooting with systemd
 
 To check that the service is communicating correctly with the sink
@@ -425,9 +387,7 @@ solidsense@BS184300123:~$ sudo journalctl -u wirepasSink1
 Aug 04 19:28:02 BS184300123 systemd[1]: Started Wirepas sink manager for sink connected to /dev/ttymxc1.
 ```
 
-> [!WARNING]
-> **Please Note**
-> The Wirepas sinks are managed by 2 linux services: wirepasSink1 wirepasSink2
+> \[!WARNING] **Please Note** The Wirepas sinks are managed by 2 linux services: wirepasSink1 wirepasSink2
 
 If one of the Sink is not flashed with Wirepas or not used you can disable the service by using the following command:
 
@@ -445,8 +405,6 @@ sudo systemctl enable wirepasSink<n>
 
 The service is started when configured using the Kura configuration service.
 
-<a id="data-transport-services"></a>
-
 ### Data transport services
 
 There are many more reasons to have problems with the data transport as it supports all communication parameters from the Wirepas network and towards the cloud applications.
@@ -463,13 +421,9 @@ If there is no traces of packets from the Wirepas network, check the sink servic
 
 For any other error, including “deadlock errors”, this is due to communication problems with the broker.
 
-<a id="managing-tls-certificates-for-a-secure-connection-towards-the-mqtt-broker"></a>
-
 ### Managing TLS certificates for a secure connection towards the MQTT broker
 
-In this version, the TLS certificate is not anymore hard coded and if a secure connection is to be implemented. **By default the TLS handshake shall work with the broker and no specific configuration is needed**. However, if some specific secure communication scheme have to be implemented, the corresponding certificate (.pem file) needs to be properly installed on the gateway.For that operation, it is necessary to open a ssh session on the gateway, there is for now no interactive procedure.
-
-<a id="obtaining-the-ssl-certificate"></a>
+In this version, the TLS certificate is not anymore hard coded and if a secure connection is to be implemented. **By default the TLS handshake shall work with the broker and no specific configuration is needed**. However, if some specific secure communication scheme have to be implemented, the corresponding certificate (.pem file) needs to be properly installed on the gateway.For that operation, it is necessary to open a ssh session on the gateway, there is for now no interactive procedure.
 
 #### Obtaining the SSL certificate
 
@@ -480,8 +434,6 @@ echo -n | openssl s_client -connect <MQTT Broker>:8883 | sed -ne '/-BEGIN CERTIF
 ```
 
 If you have the certificate on your PC you can transfer it on the gateway by your preferred mean: scp/sftp/USB stick
-
-<a id="adding-the-certificate-to-the-list-of-managed-certificates"></a>
 
 #### Adding the certificate to the list of managed certificates
 

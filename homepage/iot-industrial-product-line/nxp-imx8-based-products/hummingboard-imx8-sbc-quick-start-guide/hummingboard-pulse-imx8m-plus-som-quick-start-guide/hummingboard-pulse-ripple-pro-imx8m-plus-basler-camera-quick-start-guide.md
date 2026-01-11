@@ -1,41 +1,31 @@
 # HummingBoard Pulse/Ripple/Pro & i.MX8M Plus - Basler Camera Quick Start Guide
 
-<a id="revision-and-notes"></a>
-
 ## Revision and Notes
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 17 Feb 2022 |     | 1.0 | Initial release |
-| 08 Jun 2025 |     | 1.1 | Update for new BSP |
-| Table of Contents | - [Revision and Notes](#revision-and-notes)<br>- [Introduction](#introduction)<br>- [Software Setup](#software-setup)<br>  - [Cable setup and prerequisites](#cable-setup-and-prerequisites)<br>- [Image download and SD card preparation](#image-download-and-sd-card-preparation)<br>- [Camera Test](#camera-test) |     |     |
-
-<a id="introduction"></a>
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Revision** | **Notes**          |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------ |
+| 17 Feb 2022       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 1.0          | Initial release    |
+| 08 Jun 2025       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 1.1          | Update for new BSP |
+| Table of Contents | <p>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#revision-and-notes">Revision and Notes</a><br>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#introduction">Introduction</a><br>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#software-setup">Software Setup</a><br>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#cable-setup-and-prerequisites">Cable setup and prerequisites</a><br>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#image-download-and-sd-card-preparation">Image download and SD card preparation</a><br>- <a href="hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md#camera-test">Camera Test</a></p> |              |                    |
 
 ## Introduction
 
 The following provides a quick guide to start using the Camera Module on your HummingBoard Pulse and i.MX8M Plus SOM.
 
-- For more information, please visit [i.MX8M PLUS SOM](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8m-plus-som/).
-
-<a id="software-setup"></a>
+* For more information, please visit [i.MX8M PLUS SOM](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8m-plus-som/).
 
 ## Software Setup
-
-<a id="cable-setup-and-prerequisites"></a>
 
 #### Cable setup and prerequisites
 
 Here are the additional cables and prerequisites you will need for being able to get started with your Camera:
 
-- HDMI / micro - HDMI cable.
-- Camera kit ( see our [i.MX8M Plus - Camera Kit](https://www.solid-run.com/blog/articles/i-mx8m-plus-som-camera-kit/) ).
-
-<a id="image-download-and-sd-card-preparation"></a>
+* HDMI / micro - HDMI cable.
+* Camera kit ( see our [i.MX8M Plus - Camera Kit](https://www.solid-run.com/blog/articles/i-mx8m-plus-som-camera-kit/) ).
 
 ## Image download and SD card preparation
 
-**1\. Downloading the Yocto image:**
+**1. Downloading the Yocto image:**
 
 Find the latest `imx-image-full-*.wic.{zst,bmap}` targeting the i.MX8M Plus SoM at [images.solid-run.com](https://images.solid-run.com/IMX8/meta-solidrun-arm-imx8) - e.g. at the time of writing:
 
@@ -44,7 +34,7 @@ wget https://images.solid-run.com/IMX8/meta-solidrun-arm-imx8/scarthgap-lf-6.6.5
 wget https://images.solid-run.com/IMX8/meta-solidrun-arm-imx8/scarthgap-lf-6.6.52-2.2.0/2025-06-08_24a365b/imx8mp-sr-som/imx-image-full-imx8mp-sr-som.rootfs.wic.bmap
 ```
 
-**2\. Writing the image to the SD card**
+**2. Writing the image to the SD card**
 
 Use the following commands for writing the image to an SD card:
 
@@ -55,35 +45,33 @@ sudo bmaptool copy imx-image-full-imx8mp-sr-som.rootfs.wic.zst /dev/sdX
 zstdcat imx-image-full-imx8mp-sr-som.rootfs.wic.zst | sudo dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-- For more information, please visit [Flashing an SD Card](../../../../../homepage/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
-> [!NOTE]
-> **Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+> \[!NOTE] **Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 
-**3\. SD card insertion**
+**3. SD card insertion**
 
 Please Insert the SD card into your device.
 
-**4\. Power connection**
+**4. Power connection**
 
 Connect your power adaptor to the DC jack, and then connect the adaptor to mains supply.
 
-**5\. Serial Connection**
+**5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../../homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, reboot your device and you should be able to see the following:
 
-![](./attachments/image-20220217-161316.png)
+![](../../../../../.gitbook/assets/image-20220217-161316.png)
 
-- Please inset ‘root’ as a username for being able to log in as shown in the above picture.
-
-<a id="camera-test"></a>
+* Please inset ‘root’ as a username for being able to log in as shown in the above picture.
 
 ## Camera Test
 
-1. **Enable Basler Cameras in Software:**  
-Edit file `extlinux.conf` on the first partition of the board adding the line starting with “FDTOVERLAYS” - either from a PC, or from the device serial console, **then reboot**. The resulting file should look similar to the example below (line 5 is the important addition):
+1. **Enable Basler Cameras in Software:**\
+   Edit file `extlinux.conf` on the first partition of the board adding the line starting with “FDTOVERLAYS” - either from a PC, or from the device serial console, **then reboot**. The resulting file should look similar to the example below (line 5 is the important addition):
+
 ```
 default Yocto
 label Yocto
@@ -92,8 +80,9 @@ label Yocto
    FDTOVERLAYS ../freescale/imx8mp-sr-som-basler.dtbo ../freescale/imx8mp-hummingboard-pulse-basler.dtbo
 append root=PARTUUID=076c4a2a-02 rootwait
 ```
-  
+
 For editing on device can use `nano` text editor:
+
 ```
 mount /dev/mmcblk1p1 /boot
 nano /boot/extlinux/extlinux.conf
@@ -101,19 +90,19 @@ nano /boot/extlinux/extlinux.conf
 sync
 reboot
 ```
+
 2. **Connect your HDMI cable.**
 
-> [!NOTE]
-> **Note:** The camera preview only works when a monitor is connected to your Board.
+> \[!NOTE] **Note:** The camera preview only works when a monitor is connected to your Board.
 
-3. **Connect your Camera to the CSI 2.0 of the carrier as shown in the picture below:**![](./attachments/image-20220217-160655.png)
+3. **Connect your Camera to the CSI 2.0 of the carrier as shown in the picture below:**![](../../../../../.gitbook/assets/image-20220217-160655.png)
 
-> [!TIP]
-> A green LED will light up at the back panel of your camera. This is an indication of Camera is operating. See the following figure:
+> \[!TIP] A green LED will light up at the back panel of your camera. This is an indication of Camera is operating. See the following figure:
 
-![](./attachments/image-20220222-092818.png)
+![](../../../../../.gitbook/assets/image-20220222-092818.png)
 
 4. **Check available devices by running the following on your monitor:**
+
 ```
 v4l2-ctl --list-devices
 # Example Output:
@@ -144,18 +133,21 @@ vsi_v4l2enc (platform:vsi_v4l2enc):
 viv_media (platform:vvcam-video.0):
         /dev/media1
 ```
-The relevant capture devices associated with the cameras are the ones named “VIV (platform:vivX)”:  
-\- “VIV (platform:viv0)” (`/dev/video3`): Camera Connector on HummingBoard  
-\- “VIV (platform:viv1)” (`/dev/video4`): Camera Connector on System on Module  
-If the numbering changed, substitute the video device numbers (3,4) accordingly in the following steps.
-5. **Render from Camera to HDMI Display with gstreamer:**
+
+The relevant capture devices associated with the cameras are the ones named “VIV (platform:vivX)”:\
+\- “VIV (platform:viv0)” (`/dev/video3`): Camera Connector on HummingBoard\
+\- “VIV (platform:viv1)” (`/dev/video4`): Camera Connector on System on Module\
+If the numbering changed, substitute the video device numbers (3,4) accordingly in the following steps. 5. **Render from Camera to HDMI Display with gstreamer:**
+
 ```
 # for HummingBoard Camera Connector
 gst-launch-1.0 -v v4l2src device=/dev/video3 ! "video/x-raw,format=YUY2,width=1920,height=1080" ! queue ! imxvideoconvert_g2d ! waylandsink
 # for System on Module Camera Connector
 gst-launch-1.0 -v v4l2src device=/dev/video4 ! "video/x-raw,format=YUY2,width=1920,height=1080" ! queue ! imxvideoconvert_g2d ! waylandsink
 ```
+
 6. **Run NXP Video Demo to render from Camera to HDMI Display:**
+
 ```
 systemctl stop weston weston.socket
 cd /opt/imx8-isp/bin
@@ -167,8 +159,8 @@ cd /opt/imx8-isp/bin
 
 Once you run the previous commands, you can direct your camera to an object and start monitoring as shown in the following figure:
 
-![](./attachments/unnamed%20(1)-20220223-084738.jpg)
+![](<../../../../../.gitbook/assets/unnamed (1)-20220223-084738.jpg>)
 
 The following is an implementation of what the camera displays on the monitor screen.
 
-![](./attachments/IMG-2338-20220217-150818.jpg)
+![](../../../../../.gitbook/assets/IMG-2338-20220217-150818.jpg)

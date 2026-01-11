@@ -1,15 +1,10 @@
 # i.MX6 HummingBoard – CAN bus
 
-> [!WARNING]
-> **CAN Bus is only supported on Hummingboard Edge/Gate/CBi and i.MX6 SOM Rev. v1.5 and higher.**
-
-<a id="overview"></a>
+> \[!WARNING] **CAN Bus is only supported on Hummingboard Edge/Gate/CBi and i.MX6 SOM Rev. v1.5 and higher.**
 
 ### Overview
 
 A Controller Area Network (CAN bus) is a robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based protocol, designed originally for multiplex electrical wiring within automobiles to save on copper, but is also used in many other contexts. (source [http://wikipedia.com](http://wikipedia.com) ).
-
-<a id="hardware-modification"></a>
 
 ### Hardware Modification
 
@@ -19,27 +14,25 @@ A Controller Area Network (CAN bus) is a robust vehicle bus standard designed to
 2. Requires HummingBoard Edge/Gate/CBi
 3. Overlaps with HDMI connector CEC function. So only this or the HDMI connector can be assembled
 
-![](./attachments/image-20211226-132717.png)
+![](../../../../.gitbook/assets/image-20211226-132717.png)
 
 In order to get the CAN bus up and running, following hardware modifications need to be done:
 
-- Disassemble D5 and the HDMI connector
-- Assemble:
-- R54
-- R53
-- C100
-- U10003 (CAN transceiver , for example TJA1050)
-- R55
-- L12
-- L13
-- C101
-- C102
-- L13
-- J28
+* Disassemble D5 and the HDMI connector
+* Assemble:
+* R54
+* R53
+* C100
+* U10003 (CAN transceiver , for example TJA1050)
+* R55
+* L12
+* L13
+* C101
+* C102
+* L13
+* J28
 
 Per the HummingBoard CBi schematics:[HummingBoard CBi Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/270631021)
-
-<a id="software-modification"></a>
 
 ## Software Modification
 
@@ -47,10 +40,8 @@ Per the HummingBoard CBi schematics:[HummingBoard CBi Quick Start Guide](https:/
 
 **Edit following lines in the Device tree**
 
-- Disable HDMI-CEC by setting status = “disabled” – in [Github DeviceTree](https://github.com/SolidRun/linux-fslc/blob/3.14-1.0.x-mx6-sr-next/arch/arm/boot/dts/imx6qdl-hummingboard2.dtsi#l259)
-- Enable Flexcan1 in [Github DeviceTree](https://github.com/SolidRun/linux-fslc/blob/3.14-1.0.x-mx6-sr-next/arch/arm/boot/dts/imx6qdl-hummingboard2.dtsi#l237)
-
-<a id="re-compile-devicetree"></a>
+* Disable HDMI-CEC by setting status = “disabled” – in [Github DeviceTree](https://github.com/SolidRun/linux-fslc/blob/3.14-1.0.x-mx6-sr-next/arch/arm/boot/dts/imx6qdl-hummingboard2.dtsi#l259)
+* Enable Flexcan1 in [Github DeviceTree](https://github.com/SolidRun/linux-fslc/blob/3.14-1.0.x-mx6-sr-next/arch/arm/boot/dts/imx6qdl-hummingboard2.dtsi#l237)
 
 #### (Re-)Compile DeviceTree
 
@@ -60,12 +51,9 @@ Generically speaking, the raw .dts files can be compiled into .dtb using the dev
 make dtbs
 ```
 
-The kernel-tree needs to be configured first. Please refer to [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)  for generic instructions, or consult the distro documentation
+The kernel-tree needs to be configured first. Please refer to [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)  for generic instructions, or consult the distro documentation
 
-> [!TIP]
-> **DTB files can also be de- and recompiled. Consult the manpage of** ***dtc*** **for additional information.**
-
-<a id="re-compile-linux-kernel"></a>
+> \[!TIP] **DTB files can also be de- and recompiled. Consult the manpage of** _**dtc**_ **for additional information.**
 
 #### (Re-)Compile Linux Kernel
 
@@ -101,7 +89,7 @@ ip link set can0 up type can bitrate xxxxxx
 ip -details link show can0
 ```
 
-The easiest way to test the CanBUS is to use the [CAN-Utils](https://github.com/linux-can/can-utils), which are available for Debain/Ubuntu etc.
+The easiest way to test the CanBUS is to use the [CAN-Utils](https://github.com/linux-can/can-utils), which are available for Debain/Ubuntu etc.
 
 Example commands:
 

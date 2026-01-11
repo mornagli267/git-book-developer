@@ -1,42 +1,35 @@
 # i.MX6 Application Note – Thermal Analysis
 
-<a id="introduction"></a>
-
 ## Introduction
 
 This Application Note notes the thermal grades of SolidRun i.MX6 products.
 
-<a id="imx6-som"></a>
-
 ## i.MX6 SOM
 
-|     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Grade** | **SolidRun SKU** | **i.MX6 CPU** | **DDR3** | **Ethernet**<br><br>**PHY** | **Crystal** | **PWR Mngmnt** | **WiFi (\*)** |
-| **Commercial** | SRMX6SO\*V15C0 | Cj  | C   | I   | I   | I   | E   |
-|     | SRMX6DL\*V15C0 | Cj  | C   | I   | I   | I   | E   |
-|     | SRMX6DU\*V15C0 | Ej  | C   | I   | I   | I   | E   |
-|     | SRMX6QD\*V15C0 | Ej  | C   | I   | I   | I   | E   |
-|     |     |     |     |     |     |     |     |
-| **Extended** | SRMX6SO\*V15E0 | Ej  | I   | I   | I   | I   | E   |
-|     | SRMX6DL\*V15E0 | Ej  | I   | I   | I   | I   | E   |
-|     | SRMX6DU\*V15C0 | Ej  | I   | I   | I   | I   | E   |
-|     | SRMX6QD\*V15C0 | Ej  | I   | I   | I   | I   | E   |
-|     |     |     |     |     |     |     |     |
-| **Industrial** | SRMX6SO\*V15I0 | Ij  | I   | I   | I   | I   | E   |
-|     | SRMX6DL\*V15I0 | Ij  | I   | I   | I   | I   | E   |
-|     | SRMX6DU\*V15I0 | Ij  | I   | I   | I   | I   | E   |
-|     | SRMX6QD\*V15I0 | Ij  | I   | I   | I   | I   | E   |
-|     |     |     |     |     |     |     |     |
-| **Industrial Extended** | SRMX6SO\*V15A0 | Aj  | I   | I   | I   | I   | E   |
-|     | SRMX6DL\*V15A0 | Aj  | I   | I   | I   | I   | E   |
-|     | SRMX6DU\*V15A0 | Aj  | I   | I   | I   | I   | E   |
-|     | SRMX6QD\*V15A0 | Aj  | I   | I   | I   | I   | E   |
+|                         |                  |               |          |                                                              |             |                |               |
+| ----------------------- | ---------------- | ------------- | -------- | ------------------------------------------------------------ | ----------- | -------------- | ------------- |
+| **Grade**               | **SolidRun SKU** | **i.MX6 CPU** | **DDR3** | <p><strong>Ethernet</strong><br><br><strong>PHY</strong></p> | **Crystal** | **PWR Mngmnt** | **WiFi (\*)** |
+| **Commercial**          | SRMX6SO\*V15C0   | Cj            | C        | I                                                            | I           | I              | E             |
+|                         | SRMX6DL\*V15C0   | Cj            | C        | I                                                            | I           | I              | E             |
+|                         | SRMX6DU\*V15C0   | Ej            | C        | I                                                            | I           | I              | E             |
+|                         | SRMX6QD\*V15C0   | Ej            | C        | I                                                            | I           | I              | E             |
+|                         |                  |               |          |                                                              |             |                |               |
+| **Extended**            | SRMX6SO\*V15E0   | Ej            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DL\*V15E0   | Ej            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DU\*V15C0   | Ej            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6QD\*V15C0   | Ej            | I        | I                                                            | I           | I              | E             |
+|                         |                  |               |          |                                                              |             |                |               |
+| **Industrial**          | SRMX6SO\*V15I0   | Ij            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DL\*V15I0   | Ij            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DU\*V15I0   | Ij            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6QD\*V15I0   | Ij            | I        | I                                                            | I           | I              | E             |
+|                         |                  |               |          |                                                              |             |                |               |
+| **Industrial Extended** | SRMX6SO\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DL\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6DU\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
+|                         | SRMX6QD\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
 
-> [!INFO]
-> **Please note**
-> By default the i.MX6 Dual and Quad core CPU are “commercial extended” by default
-> (\*) For WiFi there is an industrial ordering option – Please contact SolidRun for additional information
+> \[!INFO] **Please note** By default the i.MX6 Dual and Quad core CPU are “commercial extended” by default (\*) For WiFi there is an industrial ordering option – Please contact SolidRun for additional information
 
 **Comments**
 
@@ -48,57 +41,45 @@ C= Commercial – Ambient 0C-70C
 
 E= Extended – Ambient -20C-70C
 
-I=  Industrial – Ambient -40C-85C
+I=  Industrial – Ambient -40C-85C
 
 Cj= Commercial – Junction Temperature 0C-95C
 
 Ej= Extended – Junction Temperature -20C-105C
 
-Ij=  Industrial – Junction Temperature -40C-105C
+Ij=  Industrial – Junction Temperature -40C-105C
 
 Aj= Automotive – Junction Temperature -40C- 125C
 
 NXP i.MX6 Order-able CPUs options (Solo and Dual-lite):
 
-![](./attachments/image-20211104-093559.png)
+![](../../../../.gitbook/assets/image-20211104-093559.png)
 
 NXP i.MX6 Order-able CPUs options (Dual and Quad):
 
-  
-
-![](./attachments/image-20211104-093616.png)
-
-<a id="hummingboard-base-pro"></a>
+![](../../../../.gitbook/assets/image-20211104-093616.png)
 
 ## HummingBoard Base/Pro
 
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| **Grade** | **SolidRun SKU** | **USB HUB** | **Analog Audio** | **RTC** |
-| **Commercial** | SRHBCBE000CV35 – HummingBoard Base\|Com. Temp | C   | –   | –   |
-|     | SRHBCPE000CV35 – HummingBoard Pro\|Com. Temp | C   | C   | C   |
-| **Industrial** | SRHBCBE000IV35 – HummingBoard Base\|Ind. Temp | I   | –   | –   |
-|     | SRHBCPE000IV35 – HummingBoard Pro\|Ind. Temp | I   | I   | I   |
-
-<a id="hummingboard-gate-edge"></a>
+|                |                                               |             |                  |         |
+| -------------- | --------------------------------------------- | ----------- | ---------------- | ------- |
+| **Grade**      | **SolidRun SKU**                              | **USB HUB** | **Analog Audio** | **RTC** |
+| **Commercial** | SRHBCBE000CV35 – HummingBoard Base\|Com. Temp | C           | –                | –       |
+|                | SRHBCPE000CV35 – HummingBoard Pro\|Com. Temp  | C           | C                | C       |
+| **Industrial** | SRHBCBE000IV35 – HummingBoard Base\|Ind. Temp | I           | –                | –       |
+|                | SRHBCPE000IV35 – HummingBoard Pro\|Ind. Temp  | I           | I                | I       |
 
 ## HummingBoard Gate/Edge
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| **Grade** | **SolidRun SKU** | **USB HUB** | **RTC** |
-| **Commercial** | SRHBCGE000CV14 – HummingBoard Gate\|Com. Temp | I   | C   |
-|     | SRHBCEE000CV14 – HummingBoard Edge \|Com. Temp | I   | C   |
-| **Industrial** | SRHBCGE000IV14 – HummingBoard Gate \|Ind. Temp | I   | Removed |
-|     | SRHBCEE000IV14 – HummingBoard Edge \|Ind. Temp | I   | Removed |
+|                |                                                |             |         |
+| -------------- | ---------------------------------------------- | ----------- | ------- |
+| **Grade**      | **SolidRun SKU**                               | **USB HUB** | **RTC** |
+| **Commercial** | SRHBCGE000CV14 – HummingBoard Gate\|Com. Temp  | I           | C       |
+|                | SRHBCEE000CV14 – HummingBoard Edge \|Com. Temp | I           | C       |
+| **Industrial** | SRHBCGE000IV14 – HummingBoard Gate \|Ind. Temp | I           | Removed |
+|                | SRHBCEE000IV14 – HummingBoard Edge \|Ind. Temp | I           | Removed |
 
-> [!WARNING]
-> **Comments**
-> The temperatures of the components are Operating Ta (ambient):
-> Commercial: 0C-70C
-> Industrial: -40C-85C
-
-<a id="cubox-i"></a>
+> \[!WARNING] **Comments** The temperatures of the components are Operating Ta (ambient): Commercial: 0C-70C Industrial: -40C-85C
 
 ## CuBox-i
 

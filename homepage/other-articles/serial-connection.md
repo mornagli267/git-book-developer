@@ -1,54 +1,42 @@
 # Serial Connection
 
-<a id="serial-connection-windows"></a>
-
 ## Serial Connection – Windows
-
-<a id="overview"></a>
 
 #### Overview
 
 This page will walk you through installing drivers and software necessary for serial connection in Windows.
 
-<a id="prerequisites"></a>
-
 #### Prerequisites
 
 1. FTDI drivers:
 
-FTDI drivers come preinstalled on Linux systems and newer versions of the Windows. If your Windows does not support FTDI drivers, you will need to download them from [here](http://domoticx.com/pl2303-usb-to-uart-bridge-drivers-windows/). If you get stuck, you can check out our step by step [Installing FTDI drivers guide](http://wiki.macchiatobin.net/tiki-index.php?page=Installing+FTDI+drivers).
+FTDI drivers come preinstalled on Linux systems and newer versions of the Windows. If your Windows does not support FTDI drivers, you will need to download them from [here](http://domoticx.com/pl2303-usb-to-uart-bridge-drivers-windows/). If you get stuck, you can check out our step by step [Installing FTDI drivers guide](http://wiki.macchiatobin.net/tiki-index.php?page=Installing+FTDI+drivers).
 
 1. PuTTY:
 
-For Windows PC you will need PuTTY, although you can use PuTTY with Linux as well. Get it [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Instructions for connecting with PuTTY are listed below.
-
-<a id="connecting-with-putty-windows"></a>
+For Windows PC you will need PuTTY, although you can use PuTTY with Linux as well. Get it [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Instructions for connecting with PuTTY are listed below.
 
 #### Connecting with PuTTY (Windows)
 
-To connect with PuTTY, first we must connect the laptop to the board via micro USB cable. After that, we have to make sure the board was recognized. For that we go to **Device Manager → Ports (COM & LPT)** and, after we powered on the board, we will see a new COM port which we will need to note **(COMnumber)**. In this example, the new COM port is COM9:
+To connect with PuTTY, first we must connect the laptop to the board via micro USB cable. After that, we have to make sure the board was recognized. For that we go to **Device Manager → Ports (COM & LPT)** and, after we powered on the board, we will see a new COM port which we will need to note **(COMnumber)**. In this example, the new COM port is COM9:
 
-![](./attachments/image-20211228-083808.png)
+![](../../.gitbook/assets/image-20211228-083808.png)
 
-The next step is to run PuTTY and select **Serial** under **Connection type**. There we will input the COM port from the previous step (in our example **COM9**) and also set **Speed** to **115200**):  
+The next step is to run PuTTY and select **Serial** under **Connection type**. There we will input the COM port from the previous step (in our example **COM9**) and also set **Speed** to **115200**):
 
-![](./attachments/image-20211228-083816.png)
+![](../../.gitbook/assets/image-20211228-083816.png)
 
-and you should get access to the console:  
+and you should get access to the console:
 
-![](./attachments/image-20211228-083825.png)
-
-<a id="serial-connection-linux"></a>
+![](../../.gitbook/assets/image-20211228-083825.png)
 
 #### Serial Connection – Linux
 
-<a id="overview"></a>
-
-###### Overview
+**Overview**
 
 This page will walk you through installing necessary serial connection software for Linux. FTDI drivers needed for Windows come preinstalled with your Linux system.
 
-First, we need to find out the correct USB to which our serial has connected to after we have plugged in the micro USB cable. We can do this using **dmesg**:
+First, we need to find out the correct USB to which our serial has connected to after we have plugged in the micro USB cable. We can do this using **dmesg**:
 
 ```
 ~$dmesg
@@ -69,12 +57,9 @@ First, we need to find out the correct USB to which our serial has connected to 
 [518569.331514] usb 1-6: FTDI USB Serial Device converter now attached to ttyUSB0
 ```
 
-Here we can see that the serial converter connected to **USB0 (ttyUSB0)** USB number.
+Here we can see that the serial converter connected to **USB0 (ttyUSB0)** USB number.
 
-> [!WARNING]
-> Here and bellow we will use **/dev/ttyUSB0** as an example. Make sure to verify and use an actual usb device.
-
-<a id="connecting-with-tio"></a>
+> \[!WARNING] Here and bellow we will use **/dev/ttyUSB0** as an example. Make sure to verify and use an actual usb device.
 
 #### Connecting with tio
 
@@ -84,8 +69,6 @@ $ sudo tio -b 115200 /dev/ttyUSB0
 
 Use `Ctrl+t q` to exit tio.
 
-<a id="connecting-with-minicom"></a>
-
 #### Connecting with Minicom
 
 ```
@@ -94,32 +77,22 @@ $ sudo minicom -b 115200 -D /dev/ttyUSB0
 
 Use `Ctrl+a x` to exit minicom.
 
-<a id="serial-connection-macosx"></a>
-
 ## Serial Connection – MacOSX
-
-<a id="overview"></a>
 
 #### Overview
 
 This page will walk you through installing drivers and software necessary for serial connection in MacOSX.
 
-<a id="prerequisites"></a>
-
 #### Prerequisites
 
-First, download and install the [FTDI VCP drivers](http://www.ftdichip.com/Drivers/VCP.htm)  
+First, download and install the [FTDI VCP drivers](http://www.ftdichip.com/Drivers/VCP.htm)\
 Once you connect the cable, the kernel should load the usbserial module. Look for the device.
 
 ```
 ls -l /dev/*usbserial*
 ```
 
-<a id="connection"></a>
-
 #### Connection
-
-<a id="tio"></a>
 
 #### tio
 
@@ -127,28 +100,22 @@ ls -l /dev/*usbserial*
 tio -b 115200 /dev/tty.usbserial-DB008OZL
 ```
 
-<a id="screen"></a>
-
 #### Screen
 
-OS X ships with screen by default. Open a terminal and type
+OS X ships with screen by default. Open a terminal and type
 
 ```
 screen /dev/tty.usbserial-DB008OZL 115200
 ```
 
-<a id="zterm"></a>
-
 #### ZTerm
 
-You can also download [ZTerm](http://www.macupdate.com/app/mac/6888/zterm-x).
+You can also download [ZTerm](http://www.macupdate.com/app/mac/6888/zterm-x).
 
 ```
 Open Settings, Connection and set the values to 115200 8 N 1 (uncheck Local Echo).
 Open File, Transfer Convert and set Binary Data.
 ```
-
-<a id="video"></a>
 
 ## Video
 

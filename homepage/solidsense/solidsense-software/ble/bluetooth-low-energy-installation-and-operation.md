@@ -1,17 +1,14 @@
 # Bluetooth Low Energy – Installation and operation
 
-> [!WARNING]
-> The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
-
-<a id="introduction"></a>
+> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
 
 ## Introduction
 
-From version 1.1 on, the BLE gateway is integrated in the SolidSense MQTT gateway. Please refer to the [SolidSense MQTT gateway](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142849) . Alternatively the Kura framework can be used as well to develop BLE applications connected to the cloud. Please refer to Kura documentation and to the corresponding section in the SolidSense documentation.
+From version 1.1 on, the BLE gateway is integrated in the SolidSense MQTT gateway. Please refer to the [SolidSense MQTT gateway](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142849) . Alternatively the Kura framework can be used as well to develop BLE applications connected to the cloud. Please refer to Kura documentation and to the corresponding section in the SolidSense documentation.
 
 This software package allows to easily develop Bluetooth Low Energy (BLE 4.2) applications on top of the SolidSense gateway. It can be used either on the TI WL1831 chip (hci0) or one of the Nordic chip (nRF52832 on indoor or nRF52840 on outdoor) if they are not used by Wirepas. The Nordic are on the interfaces hc1 and hci2. Gateways delivered before February 2020 do not have a BLE stack flashed on the Nordic chip, in that case the Bluetooth stack can be flashed from the shell. See the corresponding paragraph below.
 
-The detailed MQTT interface definition can be found in the [MQTT Interface definition document](https://images.solidsense.io/SolidSense/doc/SolidSense%20MQTT%20Gateway%20-%20Specifications%20-%20V2.0.0-Draft-200616.pdf).
+The detailed MQTT interface definition can be found in the [MQTT Interface definition document](https://images.solidsense.io/SolidSense/doc/SolidSense%20MQTT%20Gateway%20-%20Specifications%20-%20V2.0.0-Draft-200616.pdf).
 
 The key features are the following:
 
@@ -21,8 +18,6 @@ The key features are the following:
 4. Local configuration via Kura or remote via Kapua
 5. Secured TLS communication with the MQTT broker
 
-<a id="configuration"></a>
-
 ## Configuration
 
 The hci0 interface supported by the TI WL1831 is always available and does not need any specific configuration.
@@ -31,10 +26,8 @@ One or both Nordic chips can be configured to support Bluetooth Low Energy and b
 
 In order to be effective, there are several steps that needs to be performed:
 
-1. The Nordic chip needs to be flashed with the Bluetooth stack. This is explained here: [Bluetooth Low Energy – Installation and operation | Flashing-the-Nordic-chip-with-BLE-stack-–-N6-Indoor](https://solidrun.atlassian.net/wiki/spaces/developer/pages/267026433#flashing-the-nordic-chip-with-ble-stack-n6-indoor)
+1. The Nordic chip needs to be flashed with the Bluetooth stack. This is explained here: [Bluetooth Low Energy – Installation and operation | Flashing-the-Nordic-chip-with-BLE-stack-–-N6-Indoor](https://solidrun.atlassian.net/wiki/spaces/developer/pages/267026433#flashing-the-nordic-chip-with-ble-stack-n6-indoor)
 2. The supporting systemd services ble1 and ble2 respectively needs to be enabled and started. Alternatively, the custom configuration file can be edited to configure automatically the BLE services during provisioning.
-
-<a id="automatic-provisioning-of-bluetooth-hc1-and-or-hci2"></a>
 
 ### Automatic provisioning of Bluetooth hc1 and/or hci2
 
@@ -63,8 +56,6 @@ To have the bluetooth services being configured using gateway provisioning, the 
         port: ttymxc2
 ```
 
-<a id="troubleshooting"></a>
-
 ## Troubleshooting
 
 For pure Bluetooth level troubleshooting and basic testing, you can use the following tools
@@ -81,21 +72,17 @@ hciconfig
 
 List existing hci interfaces and their status.
 
-<a id="errors-reported-in-mqtt"></a>
-
 ## Errors reported in MQTT
 
 In the current version there is a limited number of errors that are reported in MQTT messages (gatt\_result topic only)
 
-Error 3: Connection failed or the device was not detected in the previous scan  
-Error 4: Communication error during GATT transaction  
-Error 6: GATT read error. Likely to be a wrong Characteristic UUID  
-Error 9: GATT Write error  
+Error 3: Connection failed or the device was not detected in the previous scan\
+Error 4: Communication error during GATT transaction\
+Error 6: GATT read error. Likely to be a wrong Characteristic UUID\
+Error 9: GATT Write error\
 Error 11: Notification setup error
 
 Error reporting is planned to be improved in later release.
-
-<a id="flashing-the-nordic-chip-with-ble-stack-n6-indoor"></a>
 
 ## Flashing the Nordic chip with BLE stack – N6 Indoor
 
@@ -105,10 +92,10 @@ If the Nordic chip has been previously flashed with Wirepas the flashing will pr
 
 In the picture below
 
-- Chip#1 corresponding to hci1 is the lower 2.4Ghz antenna
-- Chip#2 corresponding to hc2 is the upper 2.4 Ghz antenna
+* Chip#1 corresponding to hci1 is the lower 2.4Ghz antenna
+* Chip#2 corresponding to hc2 is the upper 2.4 Ghz antenna
 
-![](./attachments/image-20211104-092447.png)
+![](../../../../.gitbook/assets/image-20211104-092447.png)
 
 If any service was previously using the chip it shall be stopped. The gateway must have been previously upgrade to V0.95 or higher
 
@@ -132,11 +119,10 @@ curl -o blehci-1.2.0.img https://images.solidsense.io/SolidSense/nina-b1/blehci-
 
 Perform a power cycle after re-flashing
 
-  
 N6 Indoor and N6 Industrial
 
 These units are using nRF52840 and therefore needs different binaries
 
-For boot use: [https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3\_boot-1.8.1.bin](https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3_boot-1.8.1.bin)
+For boot use: [https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3\_boot-1.8.1.bin](https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3_boot-1.8.1.bin)
 
-For program use: [https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3\_blehci-1.8.1.bin](https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3_blehci-1.8.1.bin)
+For program use: [https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3\_blehci-1.8.1.bin](https://images.solidsense.io/SolidSense/bluetooth/nina-b3/nina-b3_blehci-1.8.1.bin)

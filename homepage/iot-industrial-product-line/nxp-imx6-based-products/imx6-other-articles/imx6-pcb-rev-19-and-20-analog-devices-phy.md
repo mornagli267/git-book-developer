@@ -4,16 +4,13 @@ i.MX6 SOM rev 1.9 and 2.0 migrates from Atheros PHY AR8035 to Analog Devices ADI
 
 This article comes to detail the software modifications required to accomodate this hardware change.
 
-> [!INFO]
-> Please note that using those modifications you will be able to support both the AR8035 and the ADIN1300 phys in the same kernel / u-boot images.
-
-<a id="u-boot"></a>
+> \[!INFO] Please note that using those modifications you will be able to support both the AR8035 and the ADIN1300 phys in the same kernel / u-boot images.
 
 ## U-boot
 
 In order to add support for this PHY in U-boot, you can perform **one** of the follow options:
 
-- Clone and build SolidRun's U-boot repository, branch  **v2018.01-solidrun-imx6**, which includes the PHY support. [https://github.com/SolidRun/u-boot/](https://github.com/SolidRun/u-boot/)
+* Clone and build SolidRun's U-boot repository, branch  **v2018.01-solidrun-imx6**, which includes the PHY support. [https://github.com/SolidRun/u-boot/](https://github.com/SolidRun/u-boot/)
 
 ```
 git clone https://github.com/SolidRun/u-boot.git -b v2018.01-solidrun-imx6
@@ -21,7 +18,8 @@ git clone https://github.com/SolidRun/u-boot.git -b v2018.01-solidrun-imx6
 
 Or
 
-- Apply the following patch to your U-boot repository (If you're using SolidRun's u-boot)
+* Apply the following patch to your U-boot repository (If you're using SolidRun's u-boot)
+
 ```
 From 1b9da6319d32cb66cc05df695bc07fd8cf65a311 Mon Sep 17 00:00:00 2001
 From: Alvaro-Karsz <alvaro.karsz@solid-run.com>
@@ -139,13 +137,11 @@ index adc2c6a00e..a4b85d758f 100644
 2.25.1
 ```
 
-<a id="linux-kernel"></a>
-
 ## Linux Kernel
 
 In order to add support in Linux kernel, you can perform **one** of the follow options:
 
-- Clone and build SolidRun's Linux repository(4.9),  which includes the PHY support. [https://github.com/SolidRun/linux-fslc](https://github.com/SolidRun/linux-fslc)
+* Clone and build SolidRun's Linux repository(4.9),  which includes the PHY support. [https://github.com/SolidRun/linux-fslc](https://github.com/SolidRun/linux-fslc)
 
 ```
 git clone https://github.com/SolidRun/linux-fslc.git
@@ -153,7 +149,7 @@ git clone https://github.com/SolidRun/linux-fslc.git
 
 Or
 
-- Apply the following patch to your Linux repository (If you're using SolidRun's Linux)
+* Apply the following patch to your Linux repository (If you're using SolidRun's Linux)
 
 ```
 From d625f2afc9f329226c9b08a9bebb72cd4d8412e3 Mon Sep 17 00:00:00 2001

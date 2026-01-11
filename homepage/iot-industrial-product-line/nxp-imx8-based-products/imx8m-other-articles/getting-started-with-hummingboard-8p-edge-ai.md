@@ -1,41 +1,33 @@
 # Getting started with HUMMINGBOARD 8P EDGE AI
 
-<a id="introduction"></a>
+## Getting started with HUMMINGBOARD 8P EDGE AI
 
-# Introduction
+## Introduction
 
 This guide contains tips and resources for a quick start with IMX8MP HummingBoard Pro and [Hailo-8 AI accelerator](https://hailo.ai/products/hailo-8-m2-module/).
 
-<a id="revision-and-notes"></a>
+## Revision and Notes
 
-# Revision and Notes
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **Revision** | **Notes**                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------------------------------------ |
+| 07 Aug 2023       | Mikhail Anikin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 1            | Initial release                            |
+| 27 Jul 2025       | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2            | Fix boot select switch setting for microSD |
+| Table of Contents | <p>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#introduction">Introduction</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#revision-and-notes">Revision and Notes</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#setup">Setup</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#cable-setup-and-prerequisites">Cable setup and prerequisites</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#preparing-a-boot-sd-card">Preparing a boot SD card</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#boot-select">Boot Select</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#booting-from-sd-card">Booting from SD card</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#preparing-the-board">Preparing the board</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#boot">Boot</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#launching-demo-applications">Launching demo applications</a><br>- <a href="getting-started-with-hummingboard-8p-edge-ai.md#additional-autostart-demos">Additional autostart demos</a></p> |              |                                            |
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 07 Aug 2023 | Mikhail Anikin | 1   | Initial release |
-| 27 Jul 2025 | Josua Mayer | 2   | Fix boot select switch setting for microSD |
-| Table of Contents | - [Introduction](#introduction)<br>- [Revision and Notes](#revision-and-notes)<br>- [Setup](#setup)<br>  - [Cable setup and prerequisites](#cable-setup-and-prerequisites)<br>  - [Preparing a boot SD card](#preparing-a-boot-sd-card)<br>  - [Boot Select](#boot-select)<br>  - [Booting from SD card](#booting-from-sd-card)<br>  - [Preparing the board](#preparing-the-board)<br>- [Boot](#boot)<br>- [Launching demo applications](#launching-demo-applications)<br>- [Additional autostart demos](#additional-autostart-demos) |     |     |
+## Setup
 
-<a id="setup"></a>
-
-# Setup
-
-<a id="cable-setup-and-prerequisites"></a>
-
-## Cable setup and prerequisites
+### Cable setup and prerequisites
 
 Here is what you will need to power up and use the board:
 
-- Linux or Windows PC
-- HummingBoard Pro with IMX.8MP SOM and Hailo-8 M.2 B+M module (hummingBoard 8P EDGE AI kit)
-- 12V Power adapter (HummingBoard Pro has wide range input of 7V-28V), alternatively you can use a PoE injector to power the device.
-- Micro USB to USB cable.
-- HDMI Cable and monitor
-- MicroSD Card
+* Linux or Windows PC
+* HummingBoard Pro with IMX.8MP SOM and Hailo-8 M.2 B+M module (hummingBoard 8P EDGE AI kit)
+* 12V Power adapter (HummingBoard Pro has wide range input of 7V-28V), alternatively you can use a PoE injector to power the device.
+* Micro USB to USB cable.
+* HDMI Cable and monitor
+* MicroSD Card
 
-<a id="preparing-a-boot-sd-card"></a>
-
-## Preparing a boot SD card
+### Preparing a boot SD card
 
 To start the IMX.8 HummingBoard Pro with Hailo-8, [download the prebuilt demo image](https://images.solid-run.com/IMX8/meta-solidrun-arm-imx8/kirkstone-lf-5.15.71-2.2.2) or [build the demo image from the sources](https://github.com/SolidRun/meta-solidrun-arm-imx8/tree/kirkstone-imx8m).
 
@@ -48,55 +40,45 @@ zstd -k -d imx-hailo-demo-image-imx8mpsolidrun.wic.zst
 sudo dd if=imx-hailo-demo-image-imx8mpsolidrun.wic of=/dev/sdX bs=1M
 ```
 
-- For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025).
+* For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025).
 
-> [!NOTE]
-> Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all its partitions are unmounted.
+> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all its partitions are unmounted.
 
-<a id="boot-select"></a>
-
-## Boot Select
+### Boot Select
 
 Before powering up the board for the first time it is recommended to select the boot media. On first use microSD is recommended source, configure dip switch S3 as follows:
 
 | **Function/Switch** | **1** | **2** | **3** | **4** | **5** | **6** |
-| --- | --- | --- | --- | --- | --- | --- |
-| microSD | ON  | ON  | X   | X   | X   | X   |
+| ------------------- | ----- | ----- | ----- | ----- | ----- | ----- |
+| microSD             | ON    | ON    | X     | X     | X     | X     |
 
 “X” means don’t care, leave as is.
 
 For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) page.
 
-<a id="booting-from-sd-card"></a>
-
-## Booting from SD card
+### Booting from SD card
 
 The following shows how to set the switches on the boot source selector:
 
-![Unbenannt.png](./attachments/Unbenannt.png)
+![Unbenannt.png](<../../../../.gitbook/assets/Unbenannt (1).png>)
 
-> [!INFO]
-> Note: The black rectangle represents the switch position.
+> \[!INFO] Note: The black rectangle represents the switch position.
 
 Once you set the switches, you can apply the following for booting from an SD card.
 
-<a id="preparing-the-board"></a>
-
-## Preparing the board
+### Preparing the board
 
 Ensure the Hailo-8 M.2 module with a heatsink is installed into the M.2 connector on the bottom of the board.
 
-- Connect an HDMI and micro USB cable.
-- Insert an SD card into the board.
-- \[optional\] Connect the MIPI camera to the MIPI interface.
+* Connect an HDMI and micro USB cable.
+* Insert an SD card into the board.
+* \[optional] Connect the MIPI camera to the MIPI interface.
 
-![](./attachments/IMX8MP_HB_PRO_Hailo8_Top-20231020-110556.png)
+![](../../../../.gitbook/assets/IMX8MP_HB_PRO_Hailo8_Top-20231020-110556.png)
 
-![](./attachments/IMX8MP_HB_PRO_Hailo8_Bottom-20231020-110552.png)
+![](../../../../.gitbook/assets/IMX8MP_HB_PRO_Hailo8_Bottom-20231020-110552.png)
 
-<a id="boot"></a>
-
-# Boot
+## Boot
 
 Please refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing the necessary serial connection software in Linux/Windows. You are ready to boot the board once you have installed the required serial connection software. Plug the DC power supply. The board will start booting, and you will see the boot log in your terminal.
 
@@ -123,17 +105,15 @@ The default user is **root**.
 
 Also, you will see a Weston desktop environment on the monitor screen:
 
-![](./attachments/Screenshot%202023-08-06%2013-00-59-20230806-100059.png)
+![](<../../../../.gitbook/assets/Screenshot 2023-08-06 13-00-59-20230806-100059.png>)
 
-<a id="launching-demo-applications"></a>
-
-# Launching demo applications
+## Launching demo applications
 
 By default, there are three demo applications included in the imx-hailo-demo-image.
 
-- detection
-- license\_plate\_recognition
-- multistream\_detection
+* detection
+* license\_plate\_recognition
+* multistream\_detection
 
 The **detection** demo takes the video source from the v4l video device, and you need a camera connected to the device to run this demo.
 
@@ -153,7 +133,7 @@ To run this demo:
 ./apps/license_plate_recognition/license_plate_recognition.sh
 ```
 
-![](./attachments/Screenshot%202023-08-06%2014-41-04-20230806-114104.png)
+![](<../../../../.gitbook/assets/Screenshot 2023-08-06 14-41-04-20230806-114104.png>)
 
 The **multistream\_detection** demo uses prerecorded videos. To run this demo:
 
@@ -165,9 +145,7 @@ For more demo applications, please refer to the [Hailo Tappas repo](https://gith
 
 For more info about the hailo devices, libraries, and network training, please refer to the [Hailo Developer Zone](https://hailo.ai/developer-zone/).
 
-<a id="additional-autostart-demos"></a>
-
-# Additional autostart demos
+## Additional autostart demos
 
 It is possible to include additional demos into the image that will be running at the start.
 
@@ -187,9 +165,8 @@ HAILO_DEMO_APP = "lpr_loop.sh"
 
 Available demos:
 
-- general\_detection.sh - Live stream from MIPI-CSI camera with general object detection.
-- lpr\_loop.sh - Looped license plate recognition demo.
-- multistream\_detection.sh - Live stream from two MIPI-CSI cameras with general object detection.
+* general\_detection.sh - Live stream from MIPI-CSI camera with general object detection.
+* lpr\_loop.sh - Looped license plate recognition demo.
+* multistream\_detection.sh - Live stream from two MIPI-CSI cameras with general object detection.
 
-> [!INFO]
-> Note: these demos are tested only with imx-hailo-demo-image.
+> \[!INFO] Note: these demos are tested only with imx-hailo-demo-image.

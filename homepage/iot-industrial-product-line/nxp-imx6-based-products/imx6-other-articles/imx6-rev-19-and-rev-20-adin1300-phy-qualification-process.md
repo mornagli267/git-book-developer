@@ -1,23 +1,17 @@
 # i.MX6 Rev 1.9 and Rev 2.0 ADIN1300 PHY Qualification Process
 
-| **Date** | **Owner** | **Revision** | **Notes** |
-| --- | --- | --- | --- |
-| 21 Feb 2022 | Alvaro Karsz | 1.0 |     |
-| Table of Contents | - [Background](#background)<br>- [Auto negotiation (A/N) test](#auto-negotiation-a-n-test)<br>  - [1Gbps](#1gbps)<br>  - [100Mbps](#100mbps)<br>  - [10Mbps](#10mbps)<br>- [Stress test](#stress-test)<br>  - [Retries for 100M cable iperf](#retries-for-100m-cable-iperf)<br>- [Thermal](#thermal)<br>- [Conclusion](#conclusion) |     |     |
-
-<a id="background"></a>
+| **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Revision** | **Notes** |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- |
+| 21 Feb 2022       | Alvaro Karsz                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 1.0          |           |
+| Table of Contents | <p>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#background">Background</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#auto-negotiation-a-n-test">Auto negotiation (A/N) test</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#1gbps">1Gbps</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#100mbps">100Mbps</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#10mbps">10Mbps</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#stress-test">Stress test</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#retries-for-100m-cable-iperf">Retries for 100M cable iperf</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#thermal">Thermal</a><br>- <a href="imx6-rev-19-and-rev-20-adin1300-phy-qualification-process.md#conclusion">Conclusion</a></p> |              |           |
 
 ## **Background**
 
 Following SolidRun’s PCN on i.MX6 SOM Rev 1.5 migrating to Rev 1.9 and Rev 2.0, this article explains the qualification procedure that SolidRun performed to make sure the performance of Analog Devices ADIN1300 PHY is adequate and no performance / quality / stability issues are affecting any customer.
 
-<a id="auto-negotiation-a-n-test"></a>
-
 ## Auto negotiation (A/N) test
 
 ethtool was used to select the speed with A/N on.
-
-<a id="1gbps"></a>
 
 #### **1Gbps**
 
@@ -27,8 +21,6 @@ $ ethtool -s eth0 speed 1000 duplex full autoneg on
 [ 8551.757596] fec 2188000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
 ```
 
-<a id="100mbps"></a>
-
 #### **100Mbps**
 
 ```
@@ -36,8 +28,6 @@ $ ethtool -s eth0 speed 100 duplex full autoneg on
 [ 8617.585894] fec 2188000.ethernet eth0: Link is Down
 [ 8620.397596] fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
 ```
-
-<a id="10mbps"></a>
 
 #### **10Mbps**
 
@@ -47,8 +37,6 @@ $ ethtool -s eth0 speed 10 duplex full autoneg on
 [ 8650.557544] fec 2188000.ethernet eth0: Link is Up - 10Mbps/Full - flow control rx/tx
 ```
 
-<a id="stress-test"></a>
-
 ## Stress test
 
 Stress test using iperf for 30 minutes.
@@ -57,14 +45,12 @@ Stress test using iperf for 30 minutes.
 $ iperf3 -c <iperf server IP> -t 1800
 ```
 
-|     |     |     |
-| --- | --- | --- |
-| **Cable length \[m\]** | **Speed \[Mpbs\]** | **Number of retries** |
-| 3   | 1000 | 0   |
-| 50  | 1000 | 0   |
-| 100 | 1000 | 49  |
-
-<a id="retries-for-100m-cable-iperf"></a>
+|                       |                   |                       |
+| --------------------- | ----------------- | --------------------- |
+| **Cable length \[m]** | **Speed \[Mpbs]** | **Number of retries** |
+| 3                     | 1000              | 0                     |
+| 50                    | 1000              | 0                     |
+| 100                   | 1000              | 49                    |
 
 #### Retries for 100M cable iperf
 
@@ -74,20 +60,15 @@ $ iperf3 -c <iperf server IP> -t 1800
 [  5]   0.00-1800.11 sec  80.6 GBytes   384 Mbits/sec                  receiver
 ```
 
-<a id="thermal"></a>
-
 ## Thermal
 
-![](./attachments/Screenshot%20from%202022-02-21%2013-19-13.png)
+![](<../../../../.gitbook/assets/Screenshot from 2022-02-21 13-19-13.png>)
 
-Max. temperature in PHY (Poly 1): ~71 °C.
+Max. temperature in PHY (Poly 1): \~71 °C.
 
-Max. temperature in the SOM (Poly 3): ~75°C in SoC.
+Max. temperature in the SOM (Poly 3): \~75°C in SoC.
 
-> [!NOTE]
-> Thermal snapshot was taken after a weekend long iperf, without a heat-sink.
-
-<a id="conclusion"></a>
+> \[!NOTE] Thermal snapshot was taken after a weekend long iperf, without a heat-sink.
 
 ## Conclusion
 
