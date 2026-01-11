@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intel Braswell IB8000/IB3710 MOR](README.md)
+* [Intel Braswell IB8000/IB3710](README.md)
   * [SolidPC Q4](solidpc-q4.md)
   * [How to prepare an Installation Media for IB8000](how-to-prepare-an-installation-media-for-ib8000.md)
   * [IB8000 Bios Flash Via DediProg](ib8000-bios-flash-via-dediprog.md)
