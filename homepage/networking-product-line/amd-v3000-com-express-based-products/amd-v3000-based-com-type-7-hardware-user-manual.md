@@ -1,0 +1,408 @@
+# AMD V3000 Based COM Type 7 Hardware User Manual
+
+<a id="revisions-and-notes"></a>
+
+## Revisions and Notes
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+| **Date** | **Owner** | **Revision** | **Notes** |
+| January 31, 2024 | Rabeeh Khoury | WIP |     |
+|     |     |     |     |
+| Table of Contents | - [Revisions and Notes](#revisions-and-notes)<br>- [Introduction](#introduction)<br>- [Specifications](#specifications)<br>- [Overview](#overview)<br>- [Description](#description)<br>  - [Block Diagram](#block-diagram)<br>- [Simplified Schematics](#simplified-schematics)<br>- [Heatsink and Cooling](#heatsink-and-cooling)<br>- [Module Power Consumption Measurements](#module-power-consumption-measurements)<br>- [Maximum Current Consumption](#maximum-current-consumption)<br>- [PCIe Lane Numbers and Bucket Grouping](#pcie-lane-numbers-and-bucket-grouping)<br>- [SERDES configuration](#serdes-configuration)<br>  - [AB Header](#ab-header)<br>  - [CD Header](#cd-header)<br>- [Documentation](#documentation)<br>- [Related Articles](#related-articles) |     |     |
+
+> [!INFO]
+> No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+
+> [!NOTE]
+> Page is under construction and NOT final
+
+<a id="introduction"></a>
+
+## Introduction
+
+This document is intended for hardware engineers that are willing to integrate the SolidRun AMD V3000 FP7r2 based COM express type 7 module.
+
+The document provides details with regards module rev 1.0
+
+<a id="specifications"></a>
+
+## Specifications
+
+|     |     |
+| --- | --- |
+| **Form Factor** | COM Express type 7 |
+| **Processor Core** | 8 Ryzen cores, 16 threads |
+| **Processor speed** |     |
+| **Memory** | Dual SO-DIMM DDR5 4800 up to 96GByte combined |
+| **ECC** | Optional |
+| **SPI for BIOS** | 32MB |
+| **SATA** | 2 x SATA (Gen III) |
+| **Security** | fTPM with optional discrete TPM (not soldered by default) |
+| **Supported OS** | Linux, Yocto, FreeBSD etc… |
+| **10G ports** | Two ports |
+| **PCIe gen 4.0** |     |
+|     |     |
+| **USB 3.2** | 4   |
+| **I2C** |     |
+| **UART** |     |
+| **SPI bus** |     |
+| **Power** | 12V (9V-24V) |
+| **Environment** | Commercial: 0°C to 70°C  <br>Industrial: -40°C to 85°C  <br>Humidity (non-condensing): 10% – 90% |
+| **Dimensions** | 125mm X 95mm |
+|     | [Buy Now](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/) |
+
+<a id="overview"></a>
+
+## Overview
+
+SolidRun’s AMD based V3000 COM type 7 is a highly integrated COM modules where special care was taken care for the module’s height to accomodate thin and low profile designs.
+
+The module integrates the following features –
+
+1. AMD V3000 FP7r2 series. Other FP7r2 processors can be assembled. Please refer to SolidRun’s sales about more details.
+2. Two SO-DIMM DDR5 connected to quad independent DDR5 contorllers. Each SO-DIMM supports up to 48GByte SO-DIMM DDR4 4800Mtps memory with and without ECC; total up to 96GByte system memory.
+3. Single 12v DC-input is required. 5V Standby not required and not supported.
+
+Since this module is based on SolidRun’s Bedrock product line, it shares lots of the design and features such as memory modules that were tested -
+
+[List of SO-DIMM RAM modules tested with Bedrock V3000](../../../homepage/bedrock-pc/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/list-of-so-dimm-ram-modules-tested-with-bedrock-v3000.md)
+
+<a id="description"></a>
+
+## Description
+
+<a id="block-diagram"></a>
+
+#### Block Diagram
+
+The following figure describes the AMD V3000 COM express type 7 Blocks Diagram.
+
+<a id="simplified-schematics"></a>
+
+## Simplified Schematics
+
+Following is a link to that simplified schematics of the board :
+
+The AMD V3000 COM express type 7 simplified schematics is intended for the following audience – <TBD>
+
+1. Software and firmware engineers that enables them to understand the IO and signal connectivity of the COM express design.
+2. Hardware engineers that are willing to use the COM express and build their own solution. This document completes the reference manual from description of signal and implementation wise.
+
+<a id="heatsink-and-cooling"></a>
+
+## Heatsink and Cooling
+
+A heatsink for this COM module was developed to accomodate multiple scenarios. Please look below for rendering without a fan -
+
+![HS00030-Rendering.png](./attachments/HS00030-Rendering.png)
+
+This heatsink can be used as in the following -
+
+1. With 40mm or 60mm fan - please refer to the M2.5 screws on the top of the heatsink. Take into account that the max thread inside the heatsink is 6mm.
+2. In a 1U chassis where an air flow goes thru the fins of the heatsink
+3. Standalone - The customer is required to assemble the heatsink the fan and measure max load can be used in his specific application and specific air movement and ambient temperatures
+
+The fan part number is HS00030 and is offered with the module when bought as samples.
+
+Refer to the documentation section withregards 3D model of HS00030.
+
+<a id="module-power-consumption-measurements"></a>
+
+## Module Power Consumption Measurements
+
+The following power consumption measurements were conducted on the following setup –
+
+1. HoneyComb AMD V3000 mini-ITX motherboard with pico-psu ATX power source
+2. AMD V3000 V3C18I processor on COM express type 7 module connected.
+3. Two SO-DIMM DDR5 at 4800Mtps (total 2x48GB = 96GByte system memory)
+4. During the tests a 1.3Watt fan mounted on the processor. The idle, memtester and first cpu-burn power measurements below includes those 1.3Watt, the measurements with die temperature of 65c and above has the fan disconnected.
+5. Temperature measurement was done using Linux ‘sensors’ commands, that reads both the PCB (print side of the board away from the center) and the processor die temperature.
+6. Software running is standard Linux Ubuntu distribution software release.
+7. A 12v PSU is connected to a pico-psu (12v to ATX); and power is measured by multiplying the current and the voltage on the 12v input rail.
+
+Since the measurement are done on the input of the pico-psu; the SoC consumption all together with the DDR and all the DC-DC losses are measured too.
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+| **Test** | **Power (Watt)** | **PCB Temperature (Celsius)** | **Die Temperature (Celsius)** |
+| Linux idle | TBD | TBD | TBD |
+| 16x memtester 100M (\*) | TBD | TBD | TBD |
+| 2x cpuburn-krait (\*\*) | TBD | TBD | TBD |
+
+> [!WARNING]
+> **Please note**
+> (\*) – The Linux command is ‘memtester 100M > /dev/null &’ ran 16x times where 16 is the thread count
+> (\*\*) – The Linux command ‘cpuburn’ is ran two times in background. The reason cpuburn was chosen since it can generate most heat out of the cores (the core pipeline most utilized).
+> (\*\*\*) – This measurement was taken when the fan is disconnected and the power was measured when the die reached 105c. Notice that keeping the fan disconnected will make the processor reach temperatures that are out of spec.
+
+<a id="maximum-current-consumption"></a>
+
+## Maximum Current Consumption
+
+TBD
+
+<a id="pcie-lane-numbers-and-bucket-grouping"></a>
+
+## PCIe Lane Numbers and Bucket Grouping
+
+TBD
+
+<a id="serdes-configuration"></a>
+
+## SERDES configuration
+
+TBD
+
+<a id="ab-header"></a>
+
+#### AB Header
+
+|     | **Notes** | **Driving IC** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC** | **Notes** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   |     |     | GND (FIXED) | A1  | B1  | GND (FIXED) |     |     |
+| 2   |     | Intel i.226 | GBE0\_MDI3- | A2  | B2  | GBE0\_ACT# | Intel i.226 |     |
+| 3   |     | Intel i.226 | GBE0\_MDI3+ | A3  | B3  | ESPI\_CS# |     | 1.8v with 3.3v protection |
+| 4   |     | Intel i.226 | GBE0\_LINK1000# | A4  | B4  | ESPI\_DAT0\_EC |     | 1.8v with 3.3v protection |
+| 5   |     | Intel i.226 | GBE0\_LINK2500# | A5  | B5  | ESPI\_DAT1\_EC |     | 1.8v with 3.3v protection |
+| 6   |     | Intel i.226 | GBE0\_MDI2- | A6  | B6  | ESPI\_DAT2\_EC |     | 1.8v with 3.3v protection |
+| 7   |     | Intel i.226 | GBE0\_MDI2+ | A7  | B7  | ESPI\_DAT3\_EC |     | 1.8v with 3.3v protection |
+| 8   |     | Shorted to pin A5 (LINK2500#) | GBE0\_LINK# | A8  | B8  | ESPI\_ALERT# |     | 1.8v with 3.3v protection |
+| 9   |     | Intel i.226 | GBE0\_MDI1- | A9  | B9  | ~LPC\_DRQ1#~ |     |     |
+| 10  |     | Intel i.226 | GBE0\_MDI1+ | A10 | B10 | ESPI\_CLK\_EC |     | 1.8v with 3.3v protection |
+| 11  |     |     | GND (FIXED) | A11 | B11 | GND (FIXED) |     |     |
+| 12  |     | Intel i.226 | GBE0\_MDI0- | A12 | B12 | PWRBTN# | AMD Power button | OD 3.3v level shifted |
+| 13  |     | Intel i.226 | GBE0\_MDI0+ | A13 | B13 | SMB\_CK | APU\_SCLK1 | 3.3v 2.2k pulled-up OD.<br><br>2Kb EEPROM at address 0x50 on COM |
+| 14  | Not used |     | ~GBE0\_CTREF~ | A14 | B14 | SMB\_DAT | APU\_SCLK1 |
+| 15  | 3.3v AMD SLP\_S3# via series 1K Ohm resistor.<br><br>Do not load. If used buffer it | AMD | SUS\_S3# | A15 | B15 | ~SMB\_ALERT#~ |     |     |
+| 16  | Serial 10nF | AMD GPP TX11 | SATA0\_TX+ | A16 | B16 | SATA1\_TX+ | AMD GPP TX10 | Serial 10nF |
+| 17  | SATA0\_TX | A17 | B17 | SATA1\_TX- |
+| 18  |     |     | ~SUS\_S4#~ | A18 | B18 | ESPI\_RESET | AMD ESPI Reset | 1.8v with 3.3v protection |
+| 19  | Serial 10nF | AMD GPP TX11 | SATA0\_RX+ | A19 | B19 | SATA1\_RX+ | AMD GPP RX10 | Serial 10nF |
+| 20  | SATA0\_RX | A20 | B20 | SATA1\_RX- |
+| 21  |     |     | GND (FIXED) | A21 | B21 | GND (FIXED) |     |     |
+| 22  |     |     | ~PCIE\_TX15+~ | A22 | B22 | ~PCIE\_RX15+~ |     |     |
+| 23  |     |     | ~PCIE\_TX15~\- | A23 | B23 | ~PCIE\_RX15-~ |     |     |
+| 24  | 3.3v AMD SLP\_S5# via series 1K Ohm resistor.<br><br>Do not load. If used buffer it | AMD | SUS\_S5# | A24 | B24 | PWR\_OK | Power management IC | Refer to power-up sequence |
+| 25  |     |     | ~PCIE\_TX14+~ | A25 | B25 | ~PCIE\_RX14+~ |     |     |
+| 26  |     |     | ~PCIE\_TX14-~ | A26 | B26 | ~PCIE\_RX14+~ |     |     |
+| 27  |     |     | ~BATLOW#~ | A27 | B27 | WDT |     |     |
+| 28  | 3.3v output via AMD AGPIO130 / Sata activity pin | AMD | SATA\_ACT# | A28 | B28 | GND |     | New added in COM spec rev 3.1 |
+| 29  | 3.3v I2C Clock | PMIC and processor thermal Diode I2C Clock | RSVD | A29 | B29 | PCIE\_CLK1P | AMD GPP CLK 1 | New added in COM spec rev 3.1 |
+| 30  | 3.3v I2C Data | PMIC and processor thermal Diode I2C Data | RSVD | A30 | B30 | PCIE\_CLK1P |
+| 31  |     |     | GND (FIXED) | A31 | B31 | GND (FIXED) |     |     |
+| 32  |     |     | RSVD | A32 | B32 | ~SPKR~ |     |     |
+| 33  |     |     | RSVD | A33 | B33 | I2C\_CK | AMD APU I2C0 | 3.3v 2.2k pulled-up OD |
+| 34  |     |     | ~BIOS\_DIS0#~ | A34 | B34 | I2C\_DAT |
+| 35  |     |     | ~THRMTRIP#~ | A35 | B35 | ~THRM#~ |     |     |
+| 36  |     |     | ~PCIE\_TX13+~ | A36 | B36 | ~PCIE\_RX13+~ |     |     |
+| 37  |     |     | ~PCIE\_TX13-~ | A37 | B37 | ~PCIE\_RX13-~ |     |     |
+| 38  |     |     | GND | A38 | B38 | GND |     |     |
+| 39  |     |     | ~PCIE\_TX12+~ | A39 | B39 | ~PCIE\_RX12+~ |     |     |
+| 40  |     | ~PCIE\_TX12~\- | A40 | B40 | ~PCIE\_RX12+~ |     |     |
+| 41  |     |     | GND (FIXED) | A41 | B41 | GND (FIXED) |     |     |
+| 42  |     | AMD | USB2- | A42 | B42 | USB3- | AMD |     |
+| 43  |     | USB2+ | A43 | B43 | USB3+ | AMD |     |
+| 44  | 3.3v 2.2k pulled-up OD. Shorted to COM B44 | AMD | USB\_2\_3\_OC# | A44 | B44 | USB\_0\_1\_OC# | AMD | 3.3v 2.2k pulled-up OD Shorted to COM A44 |
+| 45  |     | AMD | USB0- | A45 | B45 | USB1- | AMD |     |
+| 46  |     | USB0+ | A46 | B46 | USB1+ | AMD |     |
+| 47  | Connected to BAT54C Oring Diode | AMD | VCC\_RTC | A47 | B47 | ~ESPI\_EN~ |     |     |
+| 48  | RSMRST# via R9487 zero ohm resistor | AMD | RSVD | A48 | B48 | ~RSVD~ |     |     |
+| 49  | Pulled down with 100k ohm to GND | Intel i.226 pin 15 | PHY 1 SDP | A49 | B49 | SYS\_RESET# | AMD | 3.3v, 2.2k pull-up, sys reset input |
+| 50  |     |     | ~LPC\_SERIRQ~ | A50 | B50 | CB\_RESET# | AMD PCIe Reset | 3.3v with series 22ohm resistor and 220pF to GND (snubber) |
+| 51  |     |     | GND (FIXED) | A51 | B51 | GND (FIXED) |     |     |
+| 52  | Serial 220nF | AMD GPP TX13 | PCIE\_TX5+ | A52 | B52 | PCIE\_RX5+ | AMD GPP RX13 |     |
+| 53  | PCIE\_TX5- | A53 | B53 | PCIE\_RX5- |     |
+| 54  |     | micro SD D0 | GPI0 | A54 | B54 | GPO1 | AMD thru SN74AVC4T774PW | 3.3v AGPIO4 Output only |
+| 55  | Serial 220nF | AMD GPP TX12 | PCIE\_TX4+ | A55 | B55 | PCIE\_RX4+ | AMD GPP RX12 |     |
+| 56  | PCIE\_TX4- | A56 | B56 | PCIE\_RX4- |     |
+| 57  |     |     | GND | A57 | B57 | GPO2 | AMD thru SN74AVC4T774PW | 3.3v AGPIO11 Output only |
+| 58  | Serial 220nF | AMD GPP TX19 | PCIE\_TX3+ | A58 | B58 | PCIE\_RX3+ | AMD GPP RX19 |     |
+| 59  | PCIE\_TX3- | A59 | B59 | PCIE\_RX3- |     |
+| 60  |     |     | GND (FIXED) | A60 | B60 | GND (FIXED) |     |     |
+| 61  | Serial 220nF | AMD GPP TX18 | PCIE\_TX2+ | A61 | B61 | PCIE\_RX2+ | AMD GPP RX18 |     |
+| 62  | PCIE\_TX2- | A62 | B62 | PCIE\_RX2- |     |
+| 63  |     | micro SD D1 | GPI1 | A63 | B63 | GPO3/SD\_CD | AMD thru SN74AVC4T774PW | 3.3v AGPIO17 Output only |
+| 64  | Serial 220nF | AMD GPP TX17 | PCIE\_TX1+ | A64 | B64 | PCIE\_RX1+ | AMD GPP RX17 |     |
+| 65  | PCIE\_TX1- | A65 | B65 | PCIE\_RX1- |     |
+| 66  |     |     | GND | A66 | B66 | WAKE0# | AMD | 3.3v OD PCIe Wake |
+| 67  |     | micro SD D2 | GPI2 | A67 | B67 | ~WAKE1#~ |     |     |
+| 68  | Serial 220nF | AMD GPP TX16 | PCIE\_TX0+ | A68 | B68 | PCIE\_RX0+ | AMD GPP RX16 |     |
+| 69  | PCIE\_TX0- | A69 | B69 | PCIE\_RX0- |     |
+| 70  |     |     | GND (FIXED) | A70 | B70 | GND (FIXED) |     |     |
+| 71  |     |     | ~PCIE\_TX8+~ | A71 | B71 | ~PCIE\_RX8+~ |     |     |
+| 72  |     |     | ~PCIE\_TX8-~ | A72 | B72 | ~PCIE\_RX8-~ |     |     |
+| 73  |     |     | GND | A73 | B73 | GND |     |     |
+| 74  |     |     | ~PCIE\_TX9+~ | A74 | B74 | ~PCIE\_RX9+~ |     |     |
+| 75  |     |     | ~PCIE\_TX9-~ | A75 | B75 | ~PCIE\_RX9-~ |     |     |
+| 76  |     |     | GND | A76 | B76 | GND |     |     |
+| 77  |     |     | ~PCIE\_TX10+~ | A77 | B77 | ~PCIE\_RX10+~ |     |     |
+| 78  |     |     | ~PCIE\_TX10-~ | A78 | B78 | ~PCIE\_RX10-~ |     |     |
+| 79  |     |     | GND | A79 | B79 | GND |     |     |
+| 80  |     |     | GND (FIXED) | A80 | B80 | GND (FIXED) |     |     |
+| 81  |     |     | ~PCIE\_TX11+~ | A81 | B81 | ~PCIE\_RX11+~ |     |     |
+| 82  |     |     | ~PCIE\_TX11-~ | A82 | B82 | ~PCIE\_RX11-~ |     |     |
+| 83  |     |     | GND | A83 | B83 | GND |     |     |
+| 84  |     |     | ~NCSI\_TX\_EN~ | A84 | B84 | ~VCC\_5V\_SBY~ |     |     |
+| 85  | 3.3v AGPIO18 | AMD thru SN74AVC4T774PW | GPI3 | A85 | B85 | ~VCC\_5V\_SBY~ |     |     |
+| 86  |     |     | RSVD | A86 | B86 | ~VCC\_5V\_SBY~ |     |     |
+| 87  | GND in COM spec rev 3.1 |     | GND | A87 | B87 | ~VCC\_5V\_SBY~ |     |     |
+| 88  | GPP Clock 0 | AMD PCIe clock | PCIE\_CK\_REF+ | A88 | B88 | ~BIOS\_DIS1#~ |     |     |
+| 89  | PCIE\_CK\_REF | A89 | B89 | ~NCSI\_RX\_ER~ |     |     |
+| 90  |     |     | GND (FIXED) | A90 | B90 | GND (FIXED) |     |     |
+| 91  |     | 3.3v power. gated by 12v input | SPI\_POWER | A91 | B91 | ~NCSI\_CLK\_IN~ |     |     |
+| 92  | 3.3v | AMD SPI2 | SPI\_MISO | A92 | B92 | ~NCSI\_RXD1~ |     |     |
+| 93  | 3.3v AGPIO3 Output only | AMD thru SN74AVC4T774PW | GPO0 | A93 | B93 | ~NCSI\_RXD0~ |     |     |
+| 94  | 3.3v | AMD SPI2 | SPI\_CLK | A94 | B94 | ~NCSI\_CRS\_DV~ |     |     |
+| 95  | 3.3v | AMD SPI2 | SPI\_MOSI | A95 | B95 | ~NCSI\_TXD1~ |     |     |
+| 96  |     |     | ~TPM\_PP~ | A96 | B96 | ~NCSI\_TXD0~ |     |     |
+| 97  |     |     | ~TYPE10#~ | A97 | B97 | SPI\_CS# | AMD SPI2 CS1# | 3.3v |
+| 98  | 3.3v Level shifted | AMD UART0 (Main console) | SER0\_TX | A98 | B98 | ~NCSI\_ARB\_IN~ |     |     |
+| 99  | SER0\_RX | A99 | B99 | ~NCSI\_ARB\_OUT~ |     |     |
+| 100 |     |     | GND (FIXED) | A100 | B100 | GND (FIXED) |     |     |
+| 101 | 3.3v Level shifted | AMD UART1 | CAN0/SER1\_TX | A101 | B101 | FAN\_PWMOUT | AMD | 3.3v |
+| 102 | CAN0/SER1\_RX | A102 | B102 | FAN\_TACHIN | AMD | 3.3v |
+| 103 |     |     | ~LID#~ | A103 | B103 | ~SLEEP#~ |     |     |
+| 104 |     | 12v input (9v-24v) | VCC\_12V | A104 | B104 | VCC\_12V | 12v input (9v-24v) |     |
+| 105 |     | VCC\_12V | A105 | B105 | VCC\_12V |     |
+| 106 |     | VCC\_12V | A106 | B106 | VCC\_12V |     |
+| 107 |     | VCC\_12V | A107 | B107 | VCC\_12V |     |
+| 108 |     | VCC\_12V | A108 | B108 | VCC\_12V |     |
+| 109 |     | VCC\_12V | A109 | B109 | VCC\_12V |     |
+| 110 |     |     | GND (FIXED) | A110 | B110 | GND (FIXED) |     |     |
+
+<a id="cd-header"></a>
+
+#### CD Header
+
+|     | **Notes** | **Driving IC** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **Driving IC** | **Notes** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   |     |     | GND (FIXED) | C1  | D1  | GND (FIXED) |     |     |
+| 2   |     |     | GND | C2  | D2  | GND |     |     |
+| 3   |     | AMD | USB\_SSRX0- | C3  | D3  | USB\_SSTX0- | AMD | Serial 100nF |
+| 4   |     | USB\_SSRX0+ | C4  | D4  | USB\_SSTX0+ |
+| 5   |     |     | GND | C5  | D5  | GND |     |     |
+| 6   |     | AMD | USB\_SSRX1- | C6  | D6  | USB\_SSTX1- | AMD | Serial 100nF |
+| 7   |     | USB\_SSRX1+ | C7  | D7  | USB\_SSTX1+ |
+| 8   |     |     | GND | C8  | D8  | GND |     |     |
+| 9   |     | AMD | USB\_SSRX2- | C9  | D9  | USB\_SSTX2- | AMD | Serial 100nF |
+| 10  |     | USB\_SSRX2+ | C10 | D10 | USB\_SSTX2+ |
+| 11  |     |     | GND(FIXED) | C11 | D11 | GND (FIXED) |     |     |
+| 12  |     | AMD | USB\_SSRX3- | C12 | D12 | USB\_SSTX3- | AMD | Serial 100nF |
+| 13  |     | USB\_SSRX3+ | C13 | D13 | USB\_SSTX3+ |
+| 14  |     |     | GND | C14 | D14 | GND |     |     |
+| 15  |     |     | ~10G\_PHY\_MDC\_SCL3~ | C15 | D15 | RSVD |     |     |
+| 16  |     |     | ~10G\_PHY\_MDC\_SCL2~ | C16 | D16 | RSVD |     |     |
+| 17  | 3.3v OD Bi-directional level shifter to AGPIO139 | AMD | 10G\_SDP2 | C17 | D17 | 10G\_SDP3 | AMD | 3.3v OD Bi-directional level shifter to AGPIO157 |
+| 18  |     |     | GND | C18 | D18 | GND |     |     |
+| 19  | Typically connected to on COM Intel i.226 NIC. With assemly option can disable the NIC and rerouted to the COM headers | AMD GPP RX14 | PCIE\_RX6+ | C19 | D19 | PCIE\_TX6+<br><br>PCIE\_TX6- | AMD GPP TX14 | Typically connected to on COM Intel i.226 NIC. With assemly option can disable the NIC and rerouted to the COM headers thru serial 220nF |
+| 20  | PCIE\_RX6- | C20 | D20 |
+| 21  |     |     | GND (FIXED) | C21 | D21 | GND (FIXED) |     |     |
+| 22  |     | AMD GPP RX15 | PCIE\_RX7+ | C22 | D22 | PCIE\_TX7+ | AMD GPP TX15 | Serial 220nF |
+| 23  | PCIE\_RX7- | C23 | D23 | PCIE\_TX7- |
+| 24  |     |     | ~10G\_INT2~ | C24 | D24 | RSVD |     |     |
+| 25  |     |     | GND | C25 | D25 | GND |     |     |
+| 26  |     |     | ~10G\_KR\_RX3+~ | C26 | D26 | ~10G\_KR\_TX3+~ |     |     |
+| 27  |     |     | ~10G\_KR\_RX3-~ | C27 | D27 | ~10G\_KR\_TX3-~ |     |     |
+| 28  |     |     | GND | C28 | D28 | GND |     |     |
+| 29  |     |     | ~10G\_KR\_RX2+~ | C29 | D29 | ~10G\_KR\_TX2+~ |     |     |
+| 30  |     |     | ~10G\_KR\_RX2-~ | C30 | D30 | ~10G\_KR\_TX2-~ |     |     |
+| 31  |     |     | GND (FIXED) | C31 | D31 | GND (FIXED) |     |     |
+| 32  |     |     | RSVD | C32 | D32 | RSVD |     |     |
+| 33  |     |     | RSVD | C33 | D33 | RSVD |     |     |
+| 34  |     |     | RSVD | C34 | D34 | RSVD |     |     |
+| 35  |     | AMD PCIE\_RST# | CEI\_RST# | C35 | D35 | CEI\_PRSNT# |     |     |
+| 36  |     |     | RSVD | C36 | D36 | RSVD |     |     |
+| 37  |     |     | RSVD | C37 | D37 | RSVD |     |     |
+| 38  | 10k pulled-up | AMD MDIO1\_SDA | RSVD | C38 | D38 | RSVD | AMD MDIO1\_SCL | 10k pulled-up |
+| 39  | 10k pulled-up | AMD MDIO0\_SDA | CEI\_SDA | C39 | D39 | CEI\_SCL | AMD MDIO0\_SCL | 10k pulled-up |
+| 40  | 3.3v OD Bi-directional level shifter to AGPIO42 | AMD | 10G\_SDP0 | C40 | D40 | 10G\_SDP1 | AMD | 3.3v OD Bi-directional level shifter to AGPIO8 |
+| 41  |     |     | GND (FIXED) | C41 | D41 | GND (FIXED) |     |     |
+| 42  | 100nF DC block capacitors | AMD GPP RX9 | 10G\_KR\_RX1+ | C42 | D42 | 10G\_KR\_TX1+ | AMD GPP TX9 | no DC blocking capacitors |
+| 43  | 10G\_KR\_RX1- | C43 | D43 | 10G\_KR\_TX1- |
+| 44  |     |     | GND | C44 | D44 | GND |     |     |
+| 45  | Shorted to pin D38 | AMD MDIO1\_SCL | RSVD | C45 | D45 | RSVD | AMD MDIO1\_SDA | 10k pulled-up |
+| 46  | Shorted to D39 | AMD MDIO0\_SCL | CEI\_MDC | C46 | D46 | CEI\_MDIO | AMD MDIO0\_SDA | 10k pulled-up |
+| 47  | 3.3v OD Bi-directional level shifter to AGPIO32 | AMD | 10G\_INT0 | C47 | D47 | 10G\_INT1 | AMD | 3.3v OD Bi-directional level shifter to AGPIO24 |
+| 48  |     |     | GND | C48 | D48 | GND |     |     |
+| 49  | 100nF DC block capacitors | AMD GPP RX8 | 10G\_KR\_RX0+ | C49 | D49 | 10G\_KR\_TX0+ | AMD GPP TX8 | no DC blocking capacitors |
+| 50  | 10G\_KR\_RX0- | C50 | D50 | 10G\_KR\_TX0- |
+| 51  |     |     | GND (FIXED) | C51 | D51 | GND (FIXED) |     |     |
+| 52  |     | AMD GPP RX0 | PCIE\_RX16+ | C52 | D52 | PCIE\_TX16+ | AMD GPP TX0 | Serial 220nF |
+| 53  | PCIE\_RX16- | C53 | D53 | PCIE\_TX16- |
+| 54  | Indicate TYPE 7# | Grounded | TYPE0# | C54 | D54 | RSVD |     |     |
+| 55  |     | AMD GPP RX1 | PCIE\_RX17+ | C55 | D55 | PCIE\_TX17+ | AMD GPP TX1 | Serial 220nF |
+| 56  | PCIE\_RX17- | C56 | D56 | PCIE\_TX17- |
+| 57  |     |     | TYPE1# | C57 | D57 | TYPE2# | Grounded | Indicate TYPE 7# |
+| 58  |     | AMD GPP RX2 | PCIE\_RX18+ | C58 | D58 | PCIE\_TX18+ | AMD GPP TX2 | Serial 220nF |
+| 59  | PCIE\_RX18- | C59 | D59 | PCIE\_TX18- |
+| 60  |     |     | GND (FIXED) | C60 | D60 | GND (FIXED) |     |     |
+| 61  |     | AMD GPP RX3 | PCIE\_RX19+ | C61 | D61 | PCIE\_TX19+ | AMD GPP TX3 | Serial 220nF |
+| 62  | PCIE\_RX19- | C62 | D62 | PCIE\_TX19- |
+| 63  | GND in COM spec rev 3.1 |     | GND | C63 | D63 | GND |     | GND in COM spec rev 3.1 |
+| 64  | GND in COM spec rev 3.1 |     | GND | C64 | D64 | GND |     | GND in COM spec rev 3.1 |
+| 65  |     | AMD GPP RX4 | PCIE\_RX20+ | C65 | D65 | PCIE\_TX20+ | AMD GPP TX4 | Serial 220nF |
+| 66  | PCIE\_RX20- | C66 | D66 | PCIE\_TX20- |
+| 67  |     |     | ~RAPID\_SHUTDOWN~ | C67 | D67 | GND |     |     |
+| 68  |     | AMD GPP RX5 | PCIE\_RX21+ | C68 | D68 | PCIE\_TX21+ | AMD GPP TX5 | Serial 220nF |
+| 69  | PCIE\_RX21- | C69 | D69 | PCIE\_TX21- |
+| 70  |     |     | GND (FIXED) | C70 | D70 | GND (FIXED) |     |     |
+| 71  |     | AMD GPP RX6 | PCIE\_RX22+<br><br>PCIE\_RX22- | C71 | D71 | PCIE\_TX22+ | AMD GPP TX6 | Serial 220nF |
+| 72  | C72 | D72 | PCIE\_TX22- |
+| 73  |     |     | GND | C73 | D73 | GND |     |     |
+| 74  |     | AMD GPP RX7 | PCIE\_RX23+<br><br>PCIE\_RX23- | C74 | D74 | PCIE\_TX23+ | AMD GPP TX7 | Serial 220nF |
+| 75  | C75 | D75 | PCIE\_TX23- |
+| 76  |     |     | GND | C76 | D76 | GND |     |     |
+| 77  | GND in COM spec rev 3.1 |     | GND | C77 | D77 | GND |     | GND in COM spec rev 3.1 |
+| 78  |     |     | ~PCIE\_RX24+~ | C78 | D78 | ~PCIE\_TX24+~ |     |     |
+| 79  |     |     | ~PCIE\_RX24-~ | C79 | D79 | ~PCIE\_TX24-~ |     |     |
+| 80  |     |     | GND (FIXED) | C80 | D80 | GND (FIXED) |     |     |
+| 81  |     |     | ~PCIE\_RX25+~ | C81 | D81 | PCIE\_TX25+ | 1.8v Flash voltage | Fixed 1.8v to SPI BIOS/MUX when COM in shutdown via R9528 (assembled by default) |
+| 82  |     |     | ~PCIE\_RX25-~ | C82 | D82 | PCIE\_TX25- | BMC SPI CS# | 1.8v SPI CS# from BMC via R9529 (assembled by default) |
+| 83  |     |     | RSVD | C83 | D83 | GND |     | GND in COM spec rev 3.1 |
+| 84  |     |     | GND | C84 | D84 | GND |     |     |
+| 85  |     |     | ~PCIE\_RX26+~ | C85 | D85 | PCIE\_TX26+ | BMC SPI DATA IN (MISO) | 1.8v SPI MISO from BMC via R9530 (assembled by default) |
+| 86  |     |     | ~PCIE\_RX26-~ | C86 | D86 | PCIE\_TX26- | BMC SPI CLK | 1.8v SPI CLK from BMC via R9535 (assembled by default) |
+| 87  |     |     | GND | C87 | D87 | GND |     |     |
+| 88  |     |     | ~PCIE\_RX27+~ | C88 | D88 | PCIE\_TX27+ | BMC SPI DAT OUT (MOSI) | 1.8v SPI MOSI from BMC via R9532 (assembled by default) |
+| 89  |     |     | ~PCIE\_RX27-~ | C89 | D89 | PCIE\_TX27- | BMC\_PROGRAMMING# | 1.8v Active low to set SPI programming MUX via R9533 (assembled by default) |
+| 90  |     |     | GND (FIXED) | C90 | D90 | GND (FIXED) |     |     |
+| 91  |     |     | ~PCIE\_RX28+~ | C91 | D91 | ~PCIE\_TX28+~ |     |     |
+| 92  | 1.8v via R9538 zero ohm resistor. Uninstalled by default. | AMD Intruder alert | ~PCIE\_RX28-~ | C92 | D92 | ~PCIE\_TX28-~ |     |     |
+| 93  |     |     | GND | C93 | D93 | GND |     |     |
+| 94  |     |     | ~PCIE\_RX29+~ | C94 | D94 | ~PCIE\_TX29+~ |     |     |
+| 95  |     |     | ~PCIE\_RX29-~ | C95 | D95 | ~PCIE\_TX29-~ |     |     |
+| 96  |     |     | GND | C96 | D96 | GND |     |     |
+| 97  | GND in COM spec rev 3.1 |     | GND | C97 | D97 | GND |     | GND in COM spec rev 3.1 |
+| 98  | 1.8v via R9536 zero ohm resistor. Uninstalled by default. | AMD SPI\_ROM\_REQ# | PCIE\_RX30+ | C98 | D98 | ~PCIE\_TX30+~ |     |     |
+| 99  | 1.8v via R9537 zero ohm resistor. Uninstalled by default. | AMD SPI\_ROM\_GNT# | PCIE\_RX30- | C99 | D99 | ~PCIE\_TX30-~ |     |     |
+| 100 |     |     | GND (FIXED) | C100 | D100 | GND (FIXED) |     |     |
+| 101 |     |     | ~PCIE\_RX31+~ | C101 | D101 | ~PCIE\_TX31+~ |     |     |
+| 102 |     |     | ~PCIE\_RX31-~ | C102 | D102 | ~PCIE\_TX31-~ |     |     |
+| 103 |     |     | GND | C103 | D103 | GND |     |     |
+| 104 |     | 12v input (9v-24v) | VCC\_12V | C104 | D104 | VCC\_12V | 12v input (9v-24v) |     |
+| 105 |     | VCC\_12V | C105 | D105 | VCC\_12V |     |
+| 106 |     | VCC\_12V | C106 | D106 | VCC\_12V |     |
+| 107 |     | VCC\_12V | C107 | D107 | VCC\_12V |     |
+| 108 |     | VCC\_12V | C108 | D108 | VCC\_12V |     |
+| 109 |     | VCC\_12V | C109 | D109 | VCC\_12V |     |
+| 110 |     |     | GND (FIXED) | C110 | D110 | GND (FIXED) |     |     |
+
+<a id="documentation"></a>
+
+## Documentation
+
+      
+
+|     | File | Modified |
+| --- | --- | --- |
+| Labels<br><br>- No labels<br>- [Edit Labels](#section-c2eb1521-0bc9-49b4-b486-d5f39421c281)<br><br>[Preview] [View](/wiki/download/attachments/593395713/HS00030+heatsink+rev+1.1+STEP.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=593395713&fileName=HS00030+heatsink+rev+1.1+STEP.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=593395713&fileName=HS00030+heatsink+rev+1.1+STEP.zip) | ZIP Archive [HS00030 heatsink rev 1.1 STEP.zip](/wiki/download/attachments/593395713/HS00030%20heatsink%20rev%201.1%20STEP.zip?api=v2) | Jul 23, 2024 by [Rabeeh Khoury](/wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e) |
+| Labels<br><br>- No labels<br>- [Edit Labels](#section-05e351b3-4df3-43c9-9588-6a1b88ac8332)<br><br>[Preview] [View](/wiki/download/attachments/593395713/AMD-V3K-CEX7+STEP-rev-1_0.zip?version=1) [Properties](/wiki/pages/editattachment.action?pageId=593395713&fileName=AMD-V3K-CEX7+STEP-rev-1_0.zip&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=593395713&fileName=AMD-V3K-CEX7+STEP-rev-1_0.zip) | ZIP Archive [AMD-V3K-CEX7 STEP-rev-1\_0.zip](/wiki/download/attachments/593395713/AMD-V3K-CEX7%20STEP-rev-1_0.zip?api=v2) | Feb 01, 2024 by [Rabeeh Khoury](/wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e) |
+
+- Drag and drop to upload or [browse for files] ![](/wiki/images/icons/wait.gif)
+
+Upload file 
+
+File description  
+
+</form> </div> </div> <div> <a class="download-all-link" href="/wiki/download/all\_attachments?pageId=593395713" title="Download all the latest versions of attachments on this content as single zip file.">Download All</a> </div> </div> </div> </div> </div> <div class="columnLayout three-equal" data-layout="three-equal"> <div class="cell normal" data-type="normal"> <div class="innerCell"> <p /></div> </div> <div class="cell normal" data-type="normal"> <div class="innerCell"> <p><a class="external-link" href="https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/" rel="nofollow" style="display: inline-block;padding: 0 15.0px;height: 32.0px;font-size: 14.0px;line-height: 32.0px;background: rgb(236,63,63);color: rgb(255,255,255);cursor: pointer;border-radius: 2.0px;margin-right: 10.0px;" title=""><style>\[data-colorid=fh7pza7mep\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=fh7pza7mep\]{color:#cf2600}\[data-colorid=y24lnh4v40\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=y24lnh4v40\]{color:#cf2600}\[data-colorid=cslh458w20\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=cslh458w20\]{color:#cf2600}\[data-colorid=otyk94g2l9\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=otyk94g2l9\]{color:#cf2600}\[data-colorid=i6mxqyvxk8\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=i6mxqyvxk8\]{color:#cf2600}\[data-colorid=dvr7h8lnpx\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=dvr7h8lnpx\]{color:#cf2600}\[data-colorid=pmbuwmq5dl\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=pmbuwmq5dl\]{color:#cf2600}\[data-colorid=rg3ky8yuox\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=rg3ky8yuox\]{color:#cf2600}\[data-colorid=hhy5sn1urp\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=hhy5sn1urp\]{color:#cf2600}\[data-colorid=xuxnej2c7g\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=xuxnej2c7g\]{color:#cf2600}\[data-colorid=gpj2wyagrt\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=gpj2wyagrt\]{color:#cf2600}\[data-colorid=ehf9ja4k70\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=ehf9ja4k70\]{color:#cf2600}\[data-colorid=c60k5t9mpn\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=c60k5t9mpn\]{color:#cf2600}\[data-colorid=svnm4vs8a8\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=svnm4vs8a8\]{color:#cf2600}\[data-colorid=n0uflri48u\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=n0uflri48u\]{color:#cf2600}\[data-colorid=htl9wy3lsc\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=htl9wy3lsc\]{color:#cf2600}\[data-colorid=piec8si7pv\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=piec8si7pv\]{color:#cf2600}\[data-colorid=xa361gtwms\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=xa361gtwms\]{color:#cf2600}\[data-colorid=b635gma25s\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=b635gma25s\]{color:#cf2600}\[data-colorid=a5ji9bm80u\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=a5ji9bm80u\]{color:#cf2600}\[data-colorid=z1h0hmzznx\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=z1h0hmzznx\]{color:#cf2600}\[data-colorid=rtzeonh9f7\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=rtzeonh9f7\]{color:#cf2600}\[data-colorid=mf1n4vo6zf\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=mf1n4vo6zf\]{color:#cf2600}\[data-colorid=pfe3l0smve\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=pfe3l0smve\]{color:#cf2600}\[data-colorid=ul26yt2ry0\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=ul26yt2ry0\]{color:#cf2600}\[data-colorid=t1gohhqzfc\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=t1gohhqzfc\]{color:#cf2600}\[data-colorid=awa9hjpsu6\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=awa9hjpsu6\]{color:#cf2600}\[data-colorid=ior3xvmnhw\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=ior3xvmnhw\]{color:#cf2600}\[data-colorid=dwaqkjnui6\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=dwaqkjnui6\]{color:#cf2600}\[data-colorid=gw6h2qigsk\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=gw6h2qigsk\]{color:#cf2600}\[data-colorid=nodi95kfje\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=nodi95kfje\]{color:#cf2600}\[data-colorid=amnvhs7hk4\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=amnvhs7hk4\]{color:#cf2600}\[data-colorid=qeuid3xojv\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=qeuid3xojv\]{color:#cf2600}\[data-colorid=y22t8vywmw\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=y22t8vywmw\]{color:#cf2600}\[data-colorid=zz2t650hl4\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=zz2t650hl4\]{color:#cf2600}\[data-colorid=nzwmh7w2zs\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=nzwmh7w2zs\]{color:#cf2600}\[data-colorid=uhqj6x9jfp\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=uhqj6x9jfp\]{color:#cf2600}\[data-colorid=vmi8yy5419\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=vmi8yy5419\]{color:#cf2600}\[data-colorid=lkwac4aw2p\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=lkwac4aw2p\]{color:#cf2600}\[data-colorid=znqz8xuh66\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=znqz8xuh66\]{color:#cf2600}\[data-colorid=o2hrk5ko60\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=o2hrk5ko60\]{color:#cf2600}\[data-colorid=hj93m2u7a4\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=hj93m2u7a4\]{color:#cf2600}\[data-colorid=mgaa0b8ghf\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=mgaa0b8ghf\]{color:#cf2600}\[data-colorid=ngvhdexa16\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=ngvhdexa16\]{color:#cf2600}\[data-colorid=rswobdzaz3\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=rswobdzaz3\]{color:#cf2600}\[data-colorid=jnqje0o5e2\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=jnqje0o5e2\]{color:#cf2600}\[data-colorid=x6wc36iu15\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=x6wc36iu15\]{color:#cf2600}\[data-colorid=pe6apkm8sl\]{color:#ff5630} html\[data-color-mode=dark\] \[data-colorid=pe6apkm8sl\]{color:#cf2600}</style> Buy a Sample Online </a></p></div> </div> <div class="cell normal" data-type="normal"> <div class="innerCell"> <p /></div> </div> </div> <div class="columnLayout fixed-width" data-layout="fixed-width"> <div class="cell normal" data-type="normal"> <div class="innerCell"> <h2 id="AMDV3000BasedCOMType7HardwareUserManual-RelatedArticles">Related Articles</h2><div class="error">Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden</div><p /></div> </div> </div> </div></x-turndown>

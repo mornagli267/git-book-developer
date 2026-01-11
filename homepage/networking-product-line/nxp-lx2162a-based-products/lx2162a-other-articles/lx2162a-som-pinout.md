@@ -1,0 +1,132 @@
+# LX2162A SOM pinout
+
+Following is a pinout for the [LX2162A SOM](https://www.solid-run.com/embedded-networking/nxp-lx2160a-family/lx2162a-som/), alternatively you can [download](https://solidrun.atlassian.net/wiki/spaces/developer/pages/333578241/LX2162A+SOM+pinout#attachments) this as Excel version.
+
+<a id="j3-header"></a>
+
+## J3 Header
+
+|     | **Notes** | **Driving IC** | **IC ball number** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **IC ball number** | **Driving IC** | **Notes** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   |     |     |     | PWR\_OK | 2   | 1   | EVT0\_B | T4  | 1.8V, GPIO\_3\[12\], 4.7K Pull-up | SMB\_ALERT# |
+| 2   |     |     |     | VBAT | 4   | 3   | EVT1\_B | T6  | 1.8V, GPIO\_3\[13\], 4.7K Pull-up | THRM# |
+| 3   |     |     |     | 5V  | 6   | 5   | EVT2\_B | U5  | 1.8V, GPIO\_3\[14\], 4.7K Pull-up |     |
+| 4   |     |     |     | 5V  | 8   | 7   | EVT4\_B | AA3 | 1.8V, GPIO\_3\[16\], 4.7K Pull-up |     |
+| 5   | PROC\_TMS | LX2162A | E21 | DUT\_TMS | 10  | 9   | EVT3\_B | Y4  | 1.8V, GPIO\_3\[15\], 4.7K Pull-up |     |
+| 6   | PROC\_TCK | LX2162A | E23 | DUT\_TCK | 12  | 11  | TA\_BB\_VDD |     |     |     |
+| 7   |     |     |     | 3.3V | 14  | 13  | TMP\_DETECT\_B | Y6  | 1.8V, 4.7K Pull-up |     |
+| 8   | PROC\_TDI | LX2162A | F20 | DUT\_TDI | 16  | 15  | OVDD |     |     |     |
+| 9   |     |     |     | I2C\_MASTER\_SCL | 18  | 17  | V\_2.5 |     |     |     |
+| 10  |     |     |     | I2C\_MASTER\_SDA | 20  | 19  | V\_2.5 |     |     |     |
+| 11  | PROC\_TDO | LX2162A | E19 | DUT\_TDO | 22  | 21  | I2C1\_SCL\_3p3 |     | NTSX2102GD, 2.2K Pull-up |     |
+| 12  |     |     |     | TA\_PROG\_SFP | 24  | 23  | I2C1\_SDA\_3p3 |     | NTSX2102GD, 2.2K Pull-up |     |
+| 13  | FTM1\_CH4 / GPIO\_3\[0\] | 1.8V,  4.7K Pull-up | R5  | PROC\_IRQ0 | 26  | 25  | SPI\_D0\_1v8 |     |     |     |
+| 14  |     |     |     | SPI\_MUX\_1v8\_3v3 | 28  | 27  | SPI\_D1\_1v8 |     |     |     |
+| 15  |     |     |     | SPI\_CS\_B\_1v8 | 30  | 29  | SPI\_SCK\_1v8 |     |     |     |
+
+<a id="j2-header"></a>
+
+## J2 Header
+
+|     | **Notes** | **Driving IC** | **IC ball number** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **IC ball number** | **Driving IC** | **Notes** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   | Diff 100 Ohm | AR8035 |     | MDI\_P0 | 2   | 1   | 12V |     |     |     |
+| 2   | Diff 100 Ohm | AR8035 |     | MDI\_N0 | 4   | 3   | 12V |     |     |     |
+| 3   |     |     |     | GND | 6   | 5   | 12V |     |     |     |
+| 4   | Diff 100 Ohm | AR8035 |     | MDI\_P1 | 8   | 7   | 12V |     |     |     |
+| 5   | Diff 100 Ohm | AR8035 |     | MDI\_N1 | 10  | 9   | 12V |     |     |     |
+| 6   |     |     |     | GND | 12  | 11  | 12V |     |     |     |
+| 7   | Diff 100 Ohm | AR8035 |     | MDI\_P2 | 14  | 13  | 12V |     |     |     |
+| 8   | Diff 100 Ohm | AR8035 |     | MDI\_N2 | 16  | 15  | 12V |     |     |     |
+| 9   |     |     |     | GND | 18  | 17  | GND |     |     |     |
+| 10  | Diff 100 Ohm | AR8035 |     | MDI\_P3 | 20  | 19  | SYS\_RESET\_IN\_1v8# |     | PT7M3808G01 |     |
+| 11  | Diff 100 Ohm | AR8035 |     | MDI\_N3 | 22  | 21  | SYSRST\_OUT\_3v3# |     | MC74VHC1GT08 |     |
+| 12  |     |     |     | GND | 24  | 23  | PROC\_EC2\_RXD0 | AW3 | LX2162A | TSEC\_1588\_TRIG\_IN2 / GPIO\_4\[21\] |
+| 13  |     | AR8035 |     | GBE0\_LINK1000# | 26  | 25  | PROC\_EC2\_RXD1 | AV2 | LX2162A | TSEC\_1588\_PULSE\_OUT1 / GPIO\_4\[20\] |
+| 14  |     | AR8035 |     | GBE0\_ACT# | 28  | 27  | PROC\_EC2\_RXD2 | AU1 | LX2162A | GPIO\_4\[19\] |
+| 15  |     | AR8035 |     | GBE0\_LINK# | 30  | 29  | PROC\_EC2\_RXD3 | AR1 | LX2162A | GPIO\_4\[18\] |
+| 16  |     | 1.8V, CFG\_RCW\_SRC3, 10K Pull-up | AH6 | CFG\_RCW\_SRC3 | 32  | 31  | PROC\_EC2\_RX\_CLK | AR3 | LX2162A | TSEC\_1588\_CLK\_IN / GPIO\_4\[22\] |
+| 17  | CFG\_RCW\_SRC0 | LX2162A | AH4 | UART2\_TXD\_1v8 | 34  | 33  | GND |     |     |     |
+| 18  |     | LX2162A | AE3 | UART2\_RXD\_1v8 | 36  | 35  | I1588\_TRIG\_IN1 | AW1 | LX2162A | TSEC\_1588\_TRIG\_IN1 / GPIO\_4\[23\] |
+| 19  | PWRBTN# | 1.8V, GPIO3\[6\],  <br>4.7K Pull-up |     | PROC\_IRQ6 | 38  | 37  | I1588\_ALARM\_OUT2 | AR5 | LX2162A | TSEC\_1588\_ALARM\_OUT2 / GPIO\_4\[12\] |
+| 20  | ASLEEP / EVT9\_B / GPIO\_2\[6\] | 1.8V,  10K Pull-up | AC1 | CFG\_RCW\_SRC2 | 40  | 39  | I1588\_CLK\_OUT | AU3 | LX2162A | TSEC\_1588\_CLK\_OUT / GPIO\_4\[14\] / EC2\_TXD1\_S |
+| 21  | LX2162A\_RCLK0 |     | AV6 | IEEE\_RCLK0 | 42  | 41  | I1588\_PULSE\_OUT2 | AU5 | LX2162A | TSEC\_1588\_PULSE\_OUT2 / GPIO\_4\[15\] / EC2\_TXD0\_S |
+| 22  | LX2162A\_RCLK1 |     | AT6 | IEEE\_RCLK1 | 44  | 43  | I1588\_ALARM\_OUT1 | AT4 | LX2162A | TSEC\_1588\_ALARM\_OUT1 / GPIO\_4\[13\] / EC2\_TXD2\_S |
+| 23  | GPIO\_3\[10\] | 1.8V,  4.7K Pull-up | U3  | PROC\_IRQ10 | 46  | 45  | UART1\_TXD\_1v8 | AD4 | LX2162A | CFG\_RCW\_SRC1 |
+| 24  | SUS\_S5# | 1.8V,  4.7K Pull-up | R1  | PROC\_IRQ7 | 48  | 47  | UART1\_RXD\_1v8 | AC3 | LX2162A |     |
+| 25  |     | 1.8V,  2.2K Pull-up | AG1 | EMI2\_MDC | 50  | 49  | PROC\_IRQ11 | U1  | LX2162A |     |
+| 26  |     | 1.8V,  2.2K Pull-up | AG3 | EMI2\_MDIO | 52  | 51  | EMI1\_3V3\_MDC |     | NTSX2102GD |     |
+| 27  |     | LX2162A | W5  | TA\_BB\_TMP\_DETECT\_B | 54  | 53  | EMI1\_3V3\_MDIO |     | NTSX2102GD |     |
+| 28  | GPIO\_4\[17\] / EC2\_GTX\_CLK\_S | LX2162A | AP6 | PROC\_EC2\_GTX\_CLK | 56  | 55  | FAN\_TACHIN |     |     |     |
+| 29  |     |     |     | GND | 58  | 57  | PROC\_EC2\_TX\_EN | AV4 | LX2162A | GPIO\_4\[16\] / EC2\_TX\_CTL\_S |
+| 30  |     | NVT4857UK |     | SD\_CMD | 60  | 59  | PROC\_IRQ9 | AA1 | 1.8V,  4.7K Pull-up |     |
+| 31  |     | NVT4857UK |     | SD\_D0 | 62  | 61  | PROC\_IRQ5 | W1  | 1.8V,  4.7K Pull-up |     |
+| 32  |     | NVT4857UK |     | SD\_D1 | 64  | 63  | PROC\_IRQ1 | P2  | 1.8V,  4.7K Pull-up |     |
+| 33  |     | NVT4857UK |     | SD\_D2 | 66  | 65  | I2C3\_SCL | P6  | LX2162A |     |
+| 34  |     | NVT4857UK |     | SD\_D3 | 68  | 67  | I2C3\_SDA | N6  | LX2162A |     |
+| 35  |     | NVT4857UK |     | SD\_CD | 70  | 69  | I2C5\_SDA | K2  | LX2162A |     |
+| 36  |     | NVT4857UK |     | SD\_CLK | 72  | 71  | I2C5\_SCL | J1  | LX2162A |     |
+| 37  | Diff 90 Ohm | LX2162A | A5  | USB\_SSRX0+ | 74  | 73  | USB0+ | A9  | LX2162A | Diff 90 Ohm |
+| 38  | Diff 90 Ohm | LX2162A | B6  | USB\_SSRX0- | 76  | 75  | USB0- | B10 | LX2162A | Diff 90 Ohm |
+| 39  | Diff 90 Ohm | LX2162A | A7  | USB\_SSTX0+ | 78  | 77  | GND |     |     |     |
+| 40  | Diff 90 Ohm | LX2162A | B8  | USB\_SSTX0- | 80  | 79  | FAN\_PWM |     |     |     |
+
+<a id="j1-header"></a>
+
+## J1 Header\*
+
+|     | **Notes** | **Driving IC** | **IC ball number** | **Schematics Pin Name** | **Pin Number** | **Pin Number** | **Schematics Pin Name** | **IC ball number** | **Driving IC** | **Notes** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   |     |     |     | GND | 2   | 1   | GND |     |     |     |
+| 2   | Diff 100 Ohm | LX2162A | BG7 | SD1\_RX3\_P | 4   | 3   | SD1\_TX3\_P | BE9 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 3   | Diff 100 Ohm | LX2162A | BH8 | SD1\_RX3\_N | 6   | 5   | SD1\_TX3\_N | BD10 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 4   |     |     |     | GND | 8   | 7   | GND |     |     |     |
+| 5   | Diff 100 Ohm | LX2162A | BG5 | SD1\_RX2\_P | 10  | 9   | SD1\_TX2\_P | BE7 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 6   | Diff 100 Ohm | LX2162A | BH6 | SD1\_RX2\_N | 12  | 11  | SD1\_TX2\_N | BD8 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 7   |     |     |     | GND | 14  | 13  | GND |     |     |     |
+| 8   | Diff 100 Ohm | LX2162A | BC1 | SD1\_RX1\_P | 16  | 15  | SD1\_TX1\_P | BC5 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 9   | Diff 100 Ohm | LX2162A | BD2 | SD1\_RX1\_N | 18  | 17  | SD1\_TX1\_N | BD4 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 10  |     |     |     | GND | 20  | 19  | GND |     |     |     |
+| 11  | Diff 100 Ohm | LX2162A | BA1 | SD1\_RX0\_P | 22  | 21  | SD1\_TX0\_P | BA5 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 12  | Diff 100 Ohm | LX2162A | BB2 | SD1\_RX0\_N | 24  | 23  | SD1\_TX0\_N | BB4 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 13  |     |     |     | GND | 26  | 25  | GND |     |     |     |
+| 14  | Diff 100 Ohm | LX2162A | BG9 | SD2\_RX0\_P | 28  | 27  | SD2\_TX0\_P | BE11 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 15  | Diff 100 Ohm | LX2162A | BH10 | SD2\_RX0\_N | 30  | 29  | SD2\_TX0\_N | BD12 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 16  |     |     |     | GND | 32  | 31  | GND |     |     |     |
+| 17  | Diff 100 Ohm | LX2162A | BG11 | SD2\_RX1\_P | 34  | 33  | SD2\_TX1\_P | BE13 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 18  | Diff 100 Ohm | LX2162A | BH12 | SD2\_RX1\_N | 36  | 35  | SD2\_TX1\_N | BD14 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 19  |     |     |     | GND | 38  | 37  | GND |     |     |     |
+| 20  | Diff 100 Ohm | LX2162A | BG13 | SD2\_RX2\_P | 40  | 39  | SD2\_TX2\_P | BE15 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 21  | Diff 100 Ohm | LX2162A | BH14 | SD2\_RX2\_N | 42  | 41  | SD2\_TX2\_N | BD16 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 22  |     |     |     | GND | 44  | 43  | GND |     |     |     |
+| 23  | Diff 100 Ohm | LX2162A | BG15 | SD2\_RX3\_P | 46  | 45  | SD2\_TX3\_P | BE17 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 24  | Diff 100 Ohm | LX2162A | BH16 | SD2\_RX3\_N | 48  | 47  | SD2\_TX3\_N | BD18 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 25  |     |     |     | GND | 50  | 49  | GND |     |     |     |
+| 26  | Diff 100 Ohm / SD2\_PLLF\_REF\_CLK\_P | \*100M HCSL required | BG19 | CLK\_SLOT1\_P | 52  | 51  | CLK\_161\_BYP\_P |     |     | Not Connected |
+| 27  | Diff 100 Ohm/ SD2\_PLLF\_REF\_CLK\_N | \*100M HCSL required | BH20 | CLK\_SLOT1\_N | 54  | 53  | CLK\_161\_BYP\_N |     |     | Not Connected |
+| 28  |     |     |     | GND | 56  | 55  | GND |     |     |     |
+| 29  | Diff 100 Ohm | LX2162A | BG23 | SD2\_RX4\_P | 58  | 57  | SD2\_TX4\_P | BE23 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 30  | Diff 100 Ohm | LX2162A | BH24 | SD2\_RX4\_N | 60  | 59  | SD2\_TX4\_N | BD24 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 31  |     |     |     | GND | 62  | 61  | GND |     |     |     |
+| 32  | Diff 100 Ohm | LX2162A | BG25 | SD2\_RX5\_P | 64  | 63  | SD2\_TX5\_P | BE25 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 33  | Diff 100 Ohm | LX2162A | BH26 | SD2\_RX5\_N | 66  | 65  | SD2\_TX5\_N | BD26 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 34  |     |     |     | GND | 68  | 67  | GND |     |     |     |
+| 35  | Diff 100 Ohm | LX2162A | BG27 | SD2\_RX6\_P | 70  | 69  | SD2\_TX6\_P | BE27 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 36  | Diff 100 Ohm | LX2162A | BH28 | SD2\_RX6\_N | 72  | 71  | SD2\_TX6\_N | BD28 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 37  |     |     |     | GND | 74  | 73  | GND |     |     |     |
+| 38  | Diff 100 Ohm | LX2162A | BG29 | SD2\_RX7\_P | 76  | 75  | SD2\_TX7\_P | BE29 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 39  | Diff 100 Ohm | LX2162A | BH30 | SD2\_RX7\_N | 78  | 77  | SD2\_TX7\_N | BD30 | LX2162A | Diff 100 Ohm \*DC block capacitor required |
+| 40  |     |     |     | GND | 80  | 79  | GND |     |     |     |
+
+> [!INFO]
+> \*No DC blocking capacitor on any of the SerDes lanes
+
+<a id="attachments"></a>
+
+## Attachments
+
+      
+
+|     | File | Modified |
+| --- | --- | --- |
+| Labels<br><br>- No labels<br>- [Edit Labels](#section-113ef0c3-4720-4009-8200-43c233243d6f)<br><br>[Preview] [View](/wiki/download/attachments/333578241/LX2162A+SOM+pinout.xlsx?version=2) [Properties](/wiki/pages/editattachment.action?pageId=333578241&fileName=LX2162A+SOM+pinout.xlsx&isFromPageView=true) [Delete](/wiki/pages/confirmattachmentremoval.action?pageId=333578241&fileName=LX2162A+SOM+pinout.xlsx) | Microsoft Excel Spreadsheet [LX2162A SOM pinout.xlsx](/wiki/download/attachments/333578241/LX2162A%20SOM%20pinout.xlsx?api=v2) | Mar 17, 2022 by [Ilan Braun](/wiki/people/6231e3991f014e0069cd4610) |

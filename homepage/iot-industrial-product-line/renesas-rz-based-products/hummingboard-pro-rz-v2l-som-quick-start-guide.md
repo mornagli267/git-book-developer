@@ -1,0 +1,452 @@
+# HummingBoard Pro & RZ/V2L SOM Quick Start Guide
+
+<a id="introduction"></a>
+
+## Introduction
+
+The following quick start guide provides background information about the [HummingBoard Pro RZ/V2L](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-v2l-som/).
+
+The guide will give a technical overview about the product and by the end of it you should be able to boot an operating system and begin testing your application.
+
+<a id="revision-and-notes"></a>
+
+## Revision and Notes
+
+| **Date** | **Owner** | **Revision** | **Notes** |
+| --- | --- | --- | --- |
+| 21 Aug 2023 | Yazan Shhady | 1.0 | Initial release |
+| Nov 12, 2023 | Shahar Fridman | 1.1 | Update for the first boot and for the features |
+| 11 Dec 2025 | Yazan Shhady | 1.2 | Correct DC input voltage range to 7V–18V |
+| Table of Contents | - [Introduction](#introduction)<br>- [Revision and Notes](#revision-and-notes)<br>- [Hardware Setup](#hardware-setup)<br>  - [Product specifications](#product-specifications)<br>  - [Block Diagram](#block-diagram)<br>  - [Visual features overview](#visual-features-overview)<br>- [Software Setup](#software-setup)<br>  - [Cable setup and prerequisites](#cable-setup-and-prerequisites)<br>- [Boot Select](#boot-select)<br>- [Generating Yocto, Buildroot and Debian image](#generating-yocto-buildroot-and-debian-image)<br>- [Booting from SD card](#booting-from-sd-card)<br>  - [More Features](#more-features)<br>    - [Internet](#internet)<br>      - [WiFi](#wifi)<br>    - [Bluetooth](#bluetooth)<br>    - [Cellular Modem](#cellular-modem)<br>- [List Of Supported OS](#list-of-supported-os)<br>- [Build from source](#build-from-source)<br>- [Documentation](#documentation)<br>- [Related Articles](#related-articles) |     |     |
+
+<a id="hardware-setup"></a>
+
+## Hardware Setup
+
+<a id="product-specifications"></a>
+
+#### Product specifications
+
+|     | HUMMINGBOARD Pro RZ/V2L |
+| --- | --- |
+| I/Os | 2 x USB 2.0  <br>1 x MIPI-CSI  <br>1 x Digital audio (Riser interface fpC connector) |
+| Networking | 2 x Ethernet RJ45 10/100/1000  <br>1 x 802.11 a/b/g/n/ac WiFi and Bluetooth (2.4/5 GHz) |
+| Processor | Renesas RZ/V2L Solo/Dual core Arm Cortex A55 up to 1.2GHz + Cortex M33 |
+| Memory & Storage | up to 2GB DDR4 RAM  <br>Starting from 16GB eMMC  <br>MicroSD |
+| Display | HDMI (ADI bridge MIPI-DSI to HDMI) |
+| Misc. | 1 x Reset button  <br>1 x Configurable push button  <br>3 x LED indicators  <br>RTC |
+| Development and Debug interfaces | Micro USB |
+| Power | 7V – 18V |
+| Expansion card I/Os | mikroBUS header  <br>Mini Pcie with SIM holder |
+| Temperature | Commercial: 0°C to 70°C<br><br>Industrial: -40°C to 85°C |
+| Dimensions | PCBA: 100 x 70mm<br><br>Enclosure 120 x 80 x 30mm |
+| Enclosure | Extruded aluminium |
+|     | [Buy Now](https://shop.solid-run.com/product/SRV2L-EVKHBPRO-R01) |
+
+> [!INFO]
+> Supported with RZ/V2L SOM. For more detailed information about our SOM RZ/V2L series please visit this user manual : [RZ/V2L SOM Hardware User Manual](../renesas-rz-based-products/rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
+
+<a id="block-diagram"></a>
+
+#### Block Diagram
+
+The following figure describes the RZ/G2L Block Diagram.
+
+![](./attachments/image-20230830-165517.png)
+
+<a id="visual-features-overview"></a>
+
+#### Visual features overview
+
+Please see below the features overview of the connector side of the HummingBoard Pro & RZ/V2L SOM.
+
+![](./attachments/HummingBoard%20Extended%20V2L%20Front%20layout.png)
+
+Print side connector overview of the HummingBoard Pro & RZ/V2L SOM.
+
+![](./attachments/HummingBoard%20Extended%20RZ_V2L%20layout.png)
+
+<a id="software-setup"></a>
+
+## Software Setup
+
+<a id="cable-setup-and-prerequisites"></a>
+
+#### Cable setup and prerequisites
+
+Here is what you will need to power up and use the board:
+
+- Linux or Windows PC
+- HummingBoard Pro with RZ/G2L SOM (HummingBoard Pro & RZ/V2L SOM)
+- 12V Power adapter (HummingBoard Extended has wide range input of 7V-36V, it is recommended to use 12V power adapter).
+- Micro USB to USB for console, the HummingBoard Extended has an onboard FTDI chip.
+- IP router or IP switch
+- USB Disk and SD Card
+
+<a id="boot-select"></a>
+
+## Boot Select
+
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/V2L Boot Select](../renesas-rz-based-products/rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md) .
+
+> [!NOTE]
+> eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → on : eMMC , off : SD
+
+<a id="generating-yocto-buildroot-and-debian-image"></a>
+
+## Generating Yocto, Buildroot and Debian image
+
+**Yocto**
+
+1. Clone the repository from the “List of supported OS” link and move your terminal to this directory.
+2. Download the layers by this command
+```
+$ repo init -u https://github.com/SolidRun/meta-solidrun-arm-rzg2lc.git -b dunfell -m meta-solidrun-arm-rzg2lc.xml
+$ repo sync  
+```
+3. In this stage you can modify your image configs as you want, you can find more info about it the the repository.
+4. For graphics support you need to explore in the readme file in the github and follow the instructions of this utility.
+5. Set the environment of the image that going to be build by this command
+```
+$ TEMPLATECONF=$PWD/meta-solidrun-arm-rzg2lc/docs/template/conf/rzg2lc-solidrun source poky/oe-init-build-env build
+```
+6. Build your own Yocto image by this command
+```
+$ MACHINE=rzv2l-hummingboard bitbake <target>
+```
+  - NOTE: Choose your relevant target, for example:  
+\-core-image-bsp: cli image.  
+\-core-image-weston: graphical image.  
+\-core-image-qt: graphical image including qt.
+
+**Buildroot/Debian**
+
+1. Clone the repository from the “List of supported OS” link and move your terminal to this directory.
+2. In this stage you can modify your image configs as you want, you can find more info about it the the repository.
+3. Build your own image by this command
+```
+$ MACHINE=rzv2l-hummingboard Distro=<Buildroot/Debian> ./runme.sh
+```
+
+<a id="booting-from-sd-card"></a>
+
+## Booting from SD card
+
+The following shows how to set the switches on the boot source selector:
+
+![](./attachments/image-20221123-220813.png)
+
+> [!INFO]
+> Please Note:
+> The black rectangle represents the switch position.
+
+Once you set the switches, you can apply the following for booting from SD card:
+
+1. **Downloading the image**  
+Download the image (for example Debian) by running the following command on your Linux/Windows PC:
+```
+https://solid-run-images.sos-de-fra-1.exo.io/RZ/Debian/build_date_20240529-git_rev_f22483f/rzv2l-solidrun-sd-debian-f22483f.img.xz
+```
+  - For more Debian releases, please visit [Debian Releases for RZ/V2L](https://images.solid-run.com/RZ/rzg2lc_build).
+2. **Writing the image to the SD card**  
+Use the following commands for writing the image to an SD card:
+```
+xz -dc rzv2l-solidrun-sd-debian-f22483f.img.xz | dd of=/dev/sdX oflag=direct status=progress 
+```
+  - For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
+  - **Note:** Plug a micro SD into your Linux PC, the following assumes that the USB-Disk / Micro-SD is added as /dev/sdX and all it’s partitions are unmounted.
+3. **SD card insertion**  
+Please Insert the SD card into your device.
+4. Power connection  
+Connect your power adaptor to the DC jack, and then connect the adaptor to mains supply.
+5. **Power On**  
+Hold on the **On/Off** Power button - **SW1** (as shown in the figure below)![](./attachments/image-20230228-151346.png)
+  - **Note:** The system should turn on by default when the power is connected (without pressing the button).
+6. **Serial Connection**  
+Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+
+- In order to be able to log in , please insert “root” as a username as follows:  
+![](./attachments/image-20231128-150935.png)
+
+**Final stages**
+
+The following stages need to be done in order to finalise the imaging:
+
+1. Run `fdisk /dev/mmcblk0` if using SD or eMMC.
+2. Recreate the rootfs partition (mostly the second partition) by deleting it and then creating a new partition that starts at the next sector after the first one and extends to the end of the drive (or less depending on your needs).
+3. Write the new partition, when prompt about ‘Do you want to remove the signature?’ then answer with Yes.
+4. Run `resize2fs /dev/mmcblk0p2` if using SD Card or eMMC.
+5. In this stage the root partition should be big enough to start populating it; but first update the RTC clock.
+6. Connect the RJ45 to your network with internet access (and DHCP server); and then run `dhclient`.
+7. Update the RTC clock by running `ntpdate pool.ntp.org` and then `hwclock -w`.
+8. Run apt-update commands below and then populate the root filesystem as you wish.
+
+```
+$ apt-get update && apt-get upgrade -y
+```
+
+Here is an example of the same process in the rzg2lc device until the 3rd step (include):
+
+![](./attachments/image-20231206-093535.png)
+
+After those steps you should end the process in this way (step 4 to the end):
+
+![](./attachments/image-20231206-094407.png)
+
+In the end you should see with “lsblk” that the partition size is in the required size.
+
+<a id="more-features"></a>
+
+### **More Features**
+
+<a id="internet"></a>
+
+#### Internet
+
+Connect an Ethernet cable to your HummingBoard Pulse (for internet access during boot-up).  
+Models HummingBoard with WiFi, can be connected via [WiFi](https://solidrun.atlassian.net/wiki/spaces/developer/pages/200015887/CuBox-M+Quick+Start+Guide#wifi) or wired Ethernet.
+
+- Please check you Ethernet connection.
+- Use the following commands in order to keep your system up-to-date:
+
+```
+apt-get update 
+apt-get upgrade 
+reboot
+```
+
+- For more detailed information, please refer to [RZ/G2LC Debian](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr8.md) .
+
+<a id="wifi"></a>
+
+##### WiFi
+
+- You can connect to WiFi using any application, such as : [connmanctl](https://manpages.debian.org/testing/connman/connmanctl.1.en.html) or [wpa\_spplicant](https://wiki.archlinux.org/title/wpa_supplicant).
+
+An example for connecting to WiFi using wpa\_supplicant:
+
+1. To bring a WiFi interface up, run the following :
+
+```
+$ ifconfig wlan0 up 
+```
+
+> [!NOTE]
+> To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+
+2. Install the wpa\_supplicant package:
+
+```
+$ apt-get install wpasupplicant 
+```
+
+3. Edit network interfaces file :
+
+At the bottom of the file, add the following lines to allow wlan as a network connection:
+
+```
+cat <<EOF > /etc/network/interfaces.d/wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp
+EOF
+
+```
+
+4. Create a configuration file with the relevant ssid:
+
+```
+cat <<EOF > /etc/wpa_supplicant/wpa_supplicant.conf
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+network={
+    ssid="MYSSID"
+    psk="passphrase" 
+}
+EOF
+
+```
+
+> [!NOTE]
+> Check your personal ssids by running : ‘iw dev wlan0 scan’
+
+5. Make sure it works:
+
+Restart your device and it should connect to the wireless network. You can check it by running the command `$ iwconfig` . If it doesn't, repeat above steps or get help from an adult.
+
+- For more information about using wpa\_supplicant , you can refer to [wpa\_supplicant](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant) or [wpa\_supplicant](https://blog.nelhage.com/2008/08/using-wpa_supplicant-on-debianubuntu/).
+
+<a id="bluetooth"></a>
+
+#### Bluetooth
+
+1. For showing all Bluetooth devices, run the following:
+
+```
+$ apt-get install bluez
+$ bluetoothctl
+```
+
+2. Turn the device on:
+
+```
+[bluetooth]# power on
+```
+
+3. Make your Bluetooth detectable by other devices:
+
+```
+[bluetooth]# discoverable on
+```
+
+4. If you want to connect to other devices:
+
+- Start by scanning for other Bluetooth devices:
+
+```
+[bluetooth]# scan on
+```
+
+- Choose a MAC address and connect :
+
+```
+[bluetooth]# pair $MAC 
+```
+
+- You can check the pairing list between the devices by writing :
+
+```
+[bluetooth]# paired-devices
+```
+
+<a id="cellular-modem"></a>
+
+#### Cellular Modem
+
+The cellular modem is a more fully featured extension of which contains a cellular module with additional hardware interfaces and a SIM card slot.
+
+You can connect your cellular modem to the mPCIe, and insert a SIM card.
+
+- How to connect to the network:  
+1\. Install “modemmanager” package on your debian.
+```
+ $ sudo apt install modemmanager
+```
+2\. Search for your modem location:
+```
+$ mmcli -L
+```
+3\. Connect to your modem:
+```
+$ mmcli --modem=/your/modem/location
+```
+4\. Enable the modem:
+```
+$ mmcli --modem=/your/modem/location -e
+```
+5\. Scan for networks:
+```
+$ mmcli --modem=/your/modem/location --3gpp-scan
+```
+6\. connect to 3gpp network:
+```
+$ mmcli --modem=/your/modem/location --3gpp-register-in-operator=<network ID>
+```
+7\. Make sure the connection was created:
+```
+$ mmcli --modem=/your/modem/location 
+```
+- For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+
+**GUI On Debian**
+
+There is an option with the **Debian** image, up to the user, to work with a GUI like Weston, GNOME and etc.  
+For applying this option do the following steps:
+
+First, connect your device to a screen using the working output (HDMI / uHDMI).
+
+For working with **Weston** GUI:
+
+1. Install the Weston package.
+```
+sudo apt install weston
+```
+2. Set the XDG\_RUNTIME\_DIR env param.
+```
+cat << 'EOF' > /etc/profile.d/weston.sh
+if test -z "$XDG_RUNTIME_DIR"; then
+    export XDG_RUNTIME_DIR=/run/user/`id -u`
+    if ! test -d "${XDG_RUNTIME_DIR}"; then
+        # Make a directory for the output of the Weston GUI
+        mkdir --parents "${XDG_RUNTIME_DIR}"
+        chmod 0700 "${XDG_RUNTIME_DIR}"
+    fi
+fi
+EOF
+```
+3. Restart the system
+```
+reboot
+```
+4. Start Weston (must be run from the **Dissplay Terminal**)
+```
+weston
+```
+
+> [!NOTE]
+> Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
+
+For working with **GNOME** GUI on top of Xorg:
+
+1. Install Xorg.
+```
+$ sudo apt install xorg
+```
+2. Install your desired gnome.
+```
+$ sudo apt install gnome-session
+```
+NOTE: ‘gnome-session’ is an example of gnome that we can work with, you can replace the ‘session' with another GNOME extention.
+3. Start your GNOME GUI.
+```
+$ sudo systemctl start gdm
+```
+  - For logging in you need a user on your device to log into it. You can create one before step 3 by this command (replace the ‘username’ with name that you want) :
+```
+$ sudo adduser username
+```
+  - You can jump between GUIs that you install (like gnome-session) by the setting button that locates in the down right corner of the home screen.
+
+<a id="list-of-supported-os"></a>
+
+## List Of Supported OS
+
+| **OS** |     |
+| --- | --- |
+| ![](./attachments/image-20211024-150854.png) | [Debian](https://github.com/SolidRun/build_rzg2lc) |
+| ![](./attachments/image-20211024-151110.png) | [RZ/G2L Yocto](https://github.com/SolidRun/meta-solidrun-arm-rzg2lc) |
+| ![](./attachments/image-20211024-150920.png) | [Buildroot](https://github.com/SolidRun/build_rzg2lc) |
+
+<a id="build-from-source"></a>
+
+## Build from source
+
+- [https://github.com/SolidRun/build\_rzg2lc](https://github.com/SolidRun/build_rzg2lc)
+
+[ Buy a Sample Now](https://shop.solid-run.com/product/SRG2L-EVKHR-R00/)
+
+<a id="documentation"></a>
+
+## Documentation
+
+       
+
+|     | File | Modified |
+| --- | --- | --- |
+
+<a id="related-articles"></a>
+
+## Related Articles
+
+Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden

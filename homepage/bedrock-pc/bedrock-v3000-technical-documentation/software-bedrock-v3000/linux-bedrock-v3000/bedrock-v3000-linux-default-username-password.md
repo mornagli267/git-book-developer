@@ -1,0 +1,34 @@
+# Bedrock V3000 Linux default username & password
+
+<a id="bedrock-default-linux-credentials"></a>
+
+## **Bedrock, default Linux credentials**
+
+- root user:
+
+```
+Username: root
+Password: root
+```
+
+- bedrock user:
+
+```
+Username: bedrock
+Password: root
+```
+
+> [!INFO]
+> To change the password use
+> ```
+> sudo passwd <username>
+> ```
+
+<a id="windows-rdp-remote-desktop-connection-credentials"></a>
+
+## Windows RDP (remote desktop connection) credentials
+
+```
+Username: bedrock
+Password: root
+```
