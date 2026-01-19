@@ -245,7 +245,7 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 ## SIM Card Slot
 
-{% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4 (2).pdf" %}
+{% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4.pdf" %}
 
 [clearfog-base-schematics-rev1.4.pdf](../../../.gitbook/assets/clearfog-base-schematics-rev1.4.pdf)
 

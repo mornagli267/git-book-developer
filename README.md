@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # SolidRun Developer Center
 
 ![Developer Center Banner](.gitbook/assets/developer-center-banner.png)
