@@ -47,17 +47,21 @@ For each disk you want to include in the RAID configuration:
 * Use mdadm to create the RAID array:
   * `mdadm --create --verbose /dev/md0 --raid-devices=<number of disks> --level=0 /dev/<partition of first disk> /dev/<partition of second disk> <more disks>`
 
-> \[!INFO]
->
-> * Replace , , ,\
->   with the appropriate values.
-> * The RAID device will be named /dev/md0
+{% hint style="info" %}
+* Replace , , ,\
+with the appropriate values.
+* The RAID device will be named /dev/md0
+{% endhint %}
+
 
 ### Format RAID Device
 
 * Format RAID device with: `mkfs.ext4 /dev/md0`
 
-> \[!INFO] /dev/md0 is used because in the previous command we created it with the name /dev/md0
+{% hint style="info" %}
+/dev/md0 is used because in the previous command we created it with the name /dev/md0
+{% endhint %}
+
 
 ### Retrieve UUID of the RAID Partition
 
@@ -76,5 +80,8 @@ For each disk you want to include in the RAID configuration:
 * Run `mount -a` to mount all filesystems
 * Verify with `df -h` to see if the filesystem got mounted
 
-> \[!WARNING] Always ensure you have a backup of your data before making changes to disk or configurations.\
-> RAID 0 offers improved performance but no redundancy, meaning if one disk fails, all data is lost.
+{% hint style="warning" %}
+Always ensure you have a backup of your data before making changes to disk or configurations.\
+RAID 0 offers improved performance but no redundancy, meaning if one disk fails, all data is lost.
+{% endhint %}
+

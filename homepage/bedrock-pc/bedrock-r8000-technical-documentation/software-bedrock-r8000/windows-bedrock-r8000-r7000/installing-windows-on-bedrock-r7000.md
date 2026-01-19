@@ -20,7 +20,10 @@ Windows 10 is also supported.
 
 * Boot into BIOS (insert power supply or reboot and press ‘DEL’ repetitively to enter the BIOS setup menu).
 
-> \[!INFO] If you have problems with installation, please disable secure boot in BIOS → boot> security → secure boot-> disable
+{% hint style="info" %}
+If you have problems with installation, please disable secure boot in BIOS → boot> security → secure boot-> disable
+{% endhint %}
+
 
 * In BIOS boot from the USB flash drive from the save & exit menu
 * When Windows installer boots select language and keyboard layout![](../../../../../.gitbook/assets/image-20231017-055056.png)
@@ -35,7 +38,10 @@ Windows 10 is also supported.
   * For each partition, click on it, and click on delete, to free the space of this partition after which, this partition will be displayed as Unallocated space.
   * In the end you want something like this:![](../../../../../.gitbook/assets/image-20231017-060310.png)
 
-> \[!CAUTION] If you have multiple drives, make sure you select and clean the correct one, cleaning the wrong drive will probably lead to data loss.
+{% hint style="warning" %}
+If you have multiple drives, make sure you select and clean the correct one, cleaning the wrong drive will probably lead to data loss.
+{% endhint %}
+
 
 * Click next![](../../../../../.gitbook/assets/image-20231017-060648.png)
 * Wait for the installation process to finish![](../../../../../.gitbook/assets/image-20231017-060801.png)
@@ -49,19 +55,28 @@ Windows 10 is also supported.
 * If you're connected to the internert, windows will check for updates\
   ![](../../../../../.gitbook/assets/image-20231017-061532.png)
 
-> \[!NOTE] Intels i226-IT drivers are not installed by default so you will have to use wifi or a USB → ethernet adapter to be able to update at this point.
+{% hint style="info" %}
+Intels i226-IT drivers are not installed by default so you will have to use wifi or a USB → ethernet adapter to be able to update at this point.
+{% endhint %}
+
 
 * Name your device or skip this step![](../../../../../.gitbook/assets/image-20231017-061610.png)
 * Select the usage of this device![](../../../../../.gitbook/assets/image-20231017-061649.png)
 * Now you will need to sign in to your Microsoft account![](../../../../../.gitbook/assets/image-20231017-061813.png)
 
-> \[!INFO] If you dont want to Sign in, you can choose Sign in options → Offline account
+{% hint style="info" %}
+If you dont want to Sign in, you can choose Sign in options → Offline account
+{% endhint %}
+
 
 * If you skipped Microsoft will explain what is a Microsoft account, you can just skip it![](../../../../../.gitbook/assets/image-20231017-062135.png)
 * Set up the users name and press Next![](../../../../../.gitbook/assets/image-20231017-062208.png)
 * Choose password, if you dont want a password, just leave empty and press Next![](../../../../../.gitbook/assets/image-20231017-062316.png)
 * Choose privacy settings for your device![](../../../../../.gitbook/assets/image-20231017-062353.png)
 
-> \[!INFO] We recommend turning everything OFF for minimal collection of your data
+{% hint style="info" %}
+We recommend turning everything OFF for minimal collection of your data
+{% endhint %}
+
 
 * Wait while Windows gets things ready for you.

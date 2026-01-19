@@ -36,7 +36,10 @@ SolidRun offers an advanced DIN Rail mounting bracket for Bedrock PC with the fo
 * Quick dismounting and remounting
 * Bracket locking prevents accidental dismounting
 
-> \[!INFO] DIN Rail mounting bracket ordering PN: **SRBD-DIN21**
+{% hint style="info" %}
+DIN Rail mounting bracket ordering PN: **SRBD-DIN21**
+{% endhint %}
+
 
 [DIN Rail bracket assembly and usage diagrams](bedrock-mounting-options/din-rail-bracket-assembly-and-usage-diagrams.md)
 
@@ -56,7 +59,10 @@ The bracket has the following features:
 
 ![](../../../.gitbook/assets/image-20230414-142535.png)
 
-> \[!INFO] Wall mounting bracket ordering PN: **SRBD-WALL21**
+{% hint style="info" %}
+Wall mounting bracket ordering PN: **SRBD-WALL21**
+{% endhint %}
+
 
 ## Stand
 
@@ -73,7 +79,10 @@ The Stand is recommended for Bedrock evaluation.
 
 [Bedrock%20Stand.zip](attachments/Bedrock%20Stand.zip)
 
-> \[!INFO] Stand ordering PN: **SRBD-STAND21**
+{% hint style="info" %}
+Stand ordering PN: **SRBD-STAND21**
+{% endhint %}
+
 
 ## Bedrock Tile mounting
 
@@ -91,7 +100,10 @@ See also:
 
 [Tile mounting DXF](https://drive.google.com/file/d/1wf_gfwiS42YFro6vGq571TXwSYFNx1Jk/view?usp=drive_link)
 
-> \[!INFO] Tile is an ordering option of Bedrock
+{% hint style="info" %}
+Tile is an ordering option of Bedrock
+{% endhint %}
+
 
 ## Designing custom mounting for Bedrock PC
 

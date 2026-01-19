@@ -155,7 +155,10 @@ Follow the istructions to add a new user
 hw.uart.console="mm:0xfedc9000,rs:2" 
 ````
 
-> \[!WARNING] Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
+{% hint style="warning" %}
+Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
+{% endhint %}
+
 
 **Thats it, you can reboot the system and use it.**
 

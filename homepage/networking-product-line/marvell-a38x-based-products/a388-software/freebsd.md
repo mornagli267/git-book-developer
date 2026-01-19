@@ -46,8 +46,10 @@ Adjust the card to the Clearfog boot from SD requirements – let’s assume the
 
 ### Install FreeBSD on uSD card
 
-> [!WARNING]
-> This part must be done on the FreeBSD host (via virtual machine or natively). It’s impossible to build it directly on other OS.
+{% hint style="warning" %}
+This part must be done on the FreeBSD host (via virtual machine or natively). It’s impossible to build it directly on other OS.
+{% endhint %}
+
 
 <a id="download-sources"></a>
 
@@ -154,8 +156,10 @@ Following part of tutorial will cover all things necessary to build u-boot
 
 ### U-Boot
 
-> [!WARNING]
-> Remember switch to linux machine.
+{% hint style="warning" %}
+Remember switch to linux machine.
+{% endhint %}
+
 
 <a id="get-toolchain-and-set-env-variables-for-cross-compilation"></a>
 

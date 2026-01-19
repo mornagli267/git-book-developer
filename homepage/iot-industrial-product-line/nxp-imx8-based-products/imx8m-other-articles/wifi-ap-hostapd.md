@@ -66,16 +66,18 @@ rsn_pairwise=CCMP
 EOF
 ```
 
-> [!NOTE]
-> Here can find more information about the hostapd configuration
-> [https://web.mit.edu/freebsd/head/contrib/wpa/hostapd/hostapd.conf](https://web.mit.edu/freebsd/head/contrib/wpa/hostapd/hostapd.conf)
-> The `hw_mode` parameter can take one of the following values:
-> - `a`: Specifies 5 GHz (802.11a)
-> - `b`: Specifies 2.4 GHz (802.11b)
-> - `g`: Specifies 2.4 GHz (802.11g)
-> - `ad`: Specifies 60 GHz (802.11ad)
-> - `n`: Specifies 2.4 GHz or 5 GHz (802.11n)
-> - `ac`: Specifies 5 GHz (802.11ac)
+{% hint style="info" %}
+Here can find more information about the hostapd configuration
+[https://web.mit.edu/freebsd/head/contrib/wpa/hostapd/hostapd.conf](https://web.mit.edu/freebsd/head/contrib/wpa/hostapd/hostapd.conf)
+The `hw_mode` parameter can take one of the following values:
+- `a`: Specifies 5 GHz (802.11a)
+- `b`: Specifies 2.4 GHz (802.11b)
+- `g`: Specifies 2.4 GHz (802.11g)
+- `ad`: Specifies 60 GHz (802.11ad)
+- `n`: Specifies 2.4 GHz or 5 GHz (802.11n)
+- `ac`: Specifies 5 GHz (802.11ac)
+{% endhint %}
+
 
 **Update Hostapd Configuration:**
 

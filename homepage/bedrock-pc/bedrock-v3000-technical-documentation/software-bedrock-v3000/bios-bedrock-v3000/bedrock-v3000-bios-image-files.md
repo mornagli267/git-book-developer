@@ -1,11 +1,15 @@
 # Bedrock V3000 BIOS Image Files
 
-> [!NOTE]
-> Please follow [BIOS update procedure](../bios-bedrock-v3000/bios-update-procedure.md) carefully.
-> Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% hint style="info" %}
+Please follow [BIOS update procedure](../bios-bedrock-v3000/bios-update-procedure.md) carefully.
+Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% endhint %}
 
-> [!INFO]
-> Before updating BIOS, you are advised to [check current BIOS version](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Documentation#how-to-check-bios-version)
+
+{% hint style="info" %}
+Before updating BIOS, you are advised to [check current BIOS version](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Documentation#how-to-check-bios-version)
+{% endhint %}
+
 
 <a id="current-bios-version"></a>
 
@@ -70,6 +74,8 @@
 - AGESA 1.0.0.5
 - Console encoding was set to VT-UTF8
 
-> [!NOTE]
-> Early Bedrock V3000 samples shipped before 25-Aug-2023 (serial number B3D-230825 or smaller) may have an issue with BIOS update due to signature incompatibility.
-> If you have such a Bedrock V3000 sample and need to update BIOS please contact SolidRun.
+{% hint style="info" %}
+Early Bedrock V3000 samples shipped before 25-Aug-2023 (serial number B3D-230825 or smaller) may have an issue with BIOS update due to signature incompatibility.
+If you have such a Bedrock V3000 sample and need to update BIOS please contact SolidRun.
+{% endhint %}
+

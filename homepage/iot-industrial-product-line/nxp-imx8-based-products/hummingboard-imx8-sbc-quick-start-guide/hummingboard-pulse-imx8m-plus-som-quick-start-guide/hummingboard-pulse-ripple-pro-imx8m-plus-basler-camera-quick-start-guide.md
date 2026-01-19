@@ -47,7 +47,10 @@ zstdcat imx-image-full-imx8mp-sr-som.rootfs.wic.zst | sudo dd of=/dev/sdX bs=4M 
 
 * For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] **Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+**Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -93,11 +96,17 @@ reboot
 
 2. **Connect your HDMI cable.**
 
-> \[!NOTE] **Note:** The camera preview only works when a monitor is connected to your Board.
+{% hint style="info" %}
+**Note:** The camera preview only works when a monitor is connected to your Board.
+{% endhint %}
+
 
 3. **Connect your Camera to the CSI 2.0 of the carrier as shown in the picture below:**![](../../../../../.gitbook/assets/image-20220217-160655.png)
 
-> \[!TIP] A green LED will light up at the back panel of your camera. This is an indication of Camera is operating. See the following figure:
+{% hint style="success" %}
+A green LED will light up at the back panel of your camera. This is an indication of Camera is operating. See the following figure:
+{% endhint %}
+
 
 ![](../../../../../.gitbook/assets/image-20220222-092818.png)
 

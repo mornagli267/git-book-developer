@@ -46,7 +46,10 @@ The guide will give a technical overview about the product and by the end of it 
 | Power                     | 7V – 28V wide range                                                                                                                            |
 |                           | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Mate%22\&post_type=product&_ga=2.97546908.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!INFO] Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493766).
+{% hint style="info" %}
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493766).
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -94,7 +97,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../../.gitbook/assets/image-20240107-134808.png)
 
-> \[!INFO] Please Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Please Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -118,7 +124,10 @@ xz -dc debian-bootimg-cffbac8.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -227,7 +236,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -264,7 +276,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 
@@ -350,7 +365,10 @@ echo 1 > /sys/class/gpio/gpio1/value
 
 ```
 
-> \[!NOTE] **Please Note** mPCIe interface doesn't support PCIe interface - it supports USB 3.0 only.
+{% hint style="info" %}
+**Please Note** mPCIe interface doesn't support PCIe interface - it supports USB 3.0 only.
+{% endhint %}
+
 
 #### Cellular Modem
 

@@ -6,9 +6,11 @@
 
 The below table describes the available input/output of the i.MX6 SOM. Specific functions are detailed on the 1st column.
 
-> [!WARNING]
-> **Please note**
-> GPIOs marked in green take part in the booting process, please take special care on their state during reset.
+{% hint style="warning" %}
+**Please note**
+GPIOs marked in green take part in the booting process, please take special care on their state during reset.
+{% endhint %}
+
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |

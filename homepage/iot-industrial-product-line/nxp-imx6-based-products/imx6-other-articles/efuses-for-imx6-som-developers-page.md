@@ -46,7 +46,10 @@ Bus 002 Device 059: ID 15a2:0061 Freescale Semiconductor, Inc.
 
 ### Blowing fuses to program the unit MAC address
 
-> \[!CAUTION] **Blowing fuses is an irreversible act. If you set a bit from ‘0’ to ‘1’ you can not set it back to ‘0’.**
+{% hint style="warning" %}
+**Blowing fuses is an irreversible act. If you set a bit from ‘0’ to ‘1’ you can not set it back to ‘0’.**
+{% endhint %}
+
 
 echo \<high 16 bit of the MAC address> > /sys/fsl\_otp/HW\_OCOTP\_MAC1\
 echo \<lower 32bit of the MAC address> > /sys/fsl\_otp/HW\_OCOTP\_MAC0 \
@@ -151,4 +154,7 @@ dd if=u-boot.img of=/dev/mmcblk2 bs=1K seek=42
 
 When finished and want to restart the system, you need to either power cycle the unit or click the reset button. Running the ‘reboot’ command will not work since new fuses values will not be activated.
 
-> \[!NOTE] **When finished and want to restart the system, you need to either power cycle the unit or click the reset button. Running the ‘reboot’ command will not work since new fuses values will not be activated.**
+{% hint style="info" %}
+**When finished and want to restart the system, you need to either power cycle the unit or click the reset button. Running the ‘reboot’ command will not work since new fuses values will not be activated.**
+{% endhint %}
+

@@ -1,8 +1,10 @@
 # Using Remote.it to access SolidSense gateway
 
-> [!WARNING]
-> The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.  
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 When a gateway is in operation, it is seldom directly accessible because it own IP address is local to the sub-network it is hooked on and behind NAT routers and firewalls. A gateway can access a remote application crossing the routers (if the port is open), but the reverse is not true.
 

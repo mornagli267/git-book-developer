@@ -20,11 +20,13 @@ Username: bedrock
 Password: root
 ```
 
-> [!INFO]
-> To change the password use
-> ```
-> sudo passwd <username>
-> ```
+{% hint style="info" %}
+To change the password use
+```
+sudo passwd <username>
+```
+{% endhint %}
+
 
 <a id="windows-rdp-remote-desktop-connection-credentials"></a>
 

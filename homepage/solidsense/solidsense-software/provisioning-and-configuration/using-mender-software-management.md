@@ -1,7 +1,9 @@
 # Using Mender software management
 
-> [!WARNING]
-> The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% endhint %}
+
 
 <a id="introduction-to-mender"></a>
 
@@ -82,9 +84,11 @@ Solution 2: Building your own Yocto image from the recipe (see article)
 
 In both cases you will have to update the /etc/mender directory with your own parameters and generate a Mender “Artifact”.
 
-> [!WARNING]
-> **Please Note**
-> The current article gives an overview on the process to create or modify Mender artifacts to have the full control of the software. It requires Linux expertise and a detailed reading of the Mender documentation. SolidRun can propose support packages to help though the process.
+{% hint style="warning" %}
+**Please Note**
+The current article gives an overview on the process to create or modify Mender artifacts to have the full control of the software. It requires Linux expertise and a detailed reading of the Mender documentation. SolidRun can propose support packages to help though the process.
+{% endhint %}
+
 
 In any case the first point is to understand how to manage and generate Mender artifact. [Here is the corresponding documentation](https://docs.mender.io/artifact-creation).
 

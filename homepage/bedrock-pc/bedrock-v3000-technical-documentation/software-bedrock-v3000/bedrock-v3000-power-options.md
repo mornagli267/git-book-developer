@@ -19,4 +19,7 @@ Clone the [bedrockpower github repository](https://github.com/SolidRun/BedrockPo
 
 Support is experimental and might not work for all devices, This is a great option to test your bedrock with different power configurations and then go to BIOS and set it persistently.
 
-> \[!NOTE] BedrockPower changes **DO NOT** persist over reboots
+{% hint style="info" %}
+BedrockPower changes **DO NOT** persist over reboots
+{% endhint %}
+

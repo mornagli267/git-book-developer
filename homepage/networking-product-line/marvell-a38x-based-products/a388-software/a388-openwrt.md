@@ -1,7 +1,9 @@
 # A388 OpenWrt
 
-> [!INFO]
-> **The information below is outdated and ClearFog A388 Base/Pro support is already mainlined to OpenWrt repositories.**
+{% hint style="info" %}
+**The information below is outdated and ClearFog A388 Base/Pro support is already mainlined to OpenWrt repositories.**
+{% endhint %}
+
 
 <a id="description"></a>
 

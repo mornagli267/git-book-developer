@@ -1,7 +1,10 @@
 # Configuring SolidSense networking with Kura
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 ## Foreword on Kura versions
 
@@ -52,7 +55,10 @@ Network
 
 Cloud Connections
 
-> \[!WARNING] **Please Note** By default during installation, the gateway is initialized with Kapua credential on an internal SolidRun account (SOLIDSENSE-NURSERY). If the gateway is connected to the Internet you can see the status “connected”. See the relevant section below to configure your own access
+{% hint style="warning" %}
+**Please Note** By default during installation, the gateway is initialized with Kapua credential on an internal SolidRun account (SOLIDSENSE-NURSERY). If the gateway is connected to the Internet you can see the status “connected”. See the relevant section below to configure your own access
+{% endhint %}
+
 
 Cellular (ppp0) => disabled. When never configured appears as ‘2-1.2’
 
@@ -117,7 +123,10 @@ SolidRun is providing an instance for its customer to help the rapid setup of th
 
 [More on the usage of Kapua](../kapua/using-eclipse-kapua-to-supervise-and-configure-solidsense-gateways.md)
 
-> \[!WARNING] **Please Note** The Kapua instance referred by the URL above is provided by SolidRun as a convenience during early test and development phases. It cannot be used for production. No warranty for availability of the service is provided by SolidRun for these services
+{% hint style="warning" %}
+**Please Note** The Kapua instance referred by the URL above is provided by SolidRun as a convenience during early test and development phases. It cannot be used for production. No warranty for availability of the service is provided by SolidRun for these services
+{% endhint %}
+
 
 The configuration of the connectivity is realized using the Cloud Service/MQTT Data Transport page
 

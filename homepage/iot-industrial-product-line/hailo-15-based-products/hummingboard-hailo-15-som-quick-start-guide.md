@@ -37,7 +37,10 @@ The guide will give a technical overview of the product. By the end of it, you s
 | Dimensions                       | <p>PCBA: 100 x 70mm<br><br>Enclosure 120 x 80 x 30mm</p>                     |
 | Enclosure                        | Extruded aluminium                                                           |
 
-> \[!INFO] For more detailed information about Hailo 15 SOM, please visit the hardware user manual: [HAILO 15 SOM Hardware User Manual](hailo-15-som-hardware-user-manual.md)
+{% hint style="info" %}
+For more detailed information about Hailo 15 SOM, please visit the hardware user manual: [HAILO 15 SOM Hardware User Manual](hailo-15-som-hardware-user-manual.md)
+{% endhint %}
+
 
 **Visual Features Overview**
 
@@ -138,7 +141,10 @@ For Windows:
 * **Run the Installer**: Execute the downloaded file. During installation, **select "Complete Installation"** to install all basic plugins.
 * **Set Environment Variables**: To use GStreamer from the command line, add GStreamer to your system's PATH as described [here](https://gstreamer.freedesktop.org/documentation/installing/on-windows.html?gi-language=c).
 
-> \[!INFO] For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% hint style="info" %}
+For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% endhint %}
+
 
 2. Run the gstreamer pipeline to start receiving a stream.
 
@@ -175,7 +181,10 @@ For Windows:
 * **Download the Installer**: Go to the [VLC official website](https://www.videolan.org/) and download the appropriate installer for your Windows version.
 * **Run the Installer**: Execute the downloaded file. During installation, **select "Complete Installation"** to install all basic plugins.
 
-> \[!INFO] For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% hint style="info" %}
+For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% endhint %}
+
 
 2. Create a stream configuration file `stream.sdp` with the following content:
 
@@ -199,12 +208,14 @@ a=rtpmap:96 H264/90000
 root@hailo15:~# ./apps/detection/detection.sh
 ```
 
-> \[!NOTE] Note: VLC inserts its own 1s latency into the stream during the network cashing. You can decrease this latency in the settings.
->
-> * Go to Tools > Preferences.
-> * Show settings: select All at the bottom left to switch to the advanced preferences.
-> * Under Input / Codecs, find Network.
-> * Locate Network caching (ms) and reduce its value. The default is typically around 1000 ms (1 second). You might try lowering it to 100-300 ms, but be aware that too low a value can lead to stream instability or increased packet loss.
+{% hint style="info" %}
+Note: VLC inserts its own 1s latency into the stream during the network cashing. You can decrease this latency in the settings.
+* Go to Tools > Preferences.
+* Show settings: select All at the bottom left to switch to the advanced preferences.
+* Under Input / Codecs, find Network.
+* Locate Network caching (ms) and reduce its value. The default is typically around 1000 ms (1 second). You might try lowering it to 100-300 ms, but be aware that too low a value can lead to stream instability or increased packet loss.
+{% endhint %}
+
 
 ## Firmware update process
 
@@ -232,9 +243,15 @@ sudo python3 -m http.server 80
   Press UP/DOWN to move, ENTER to select, ESC/CTRL+C to quit
 ```
 
-> \[!INFO] If there is no SWUpdate item in the menu or an update was unsuccessful for any reason, please proceed to the next chapter “Manual firmware reflashing“.
+{% hint style="info" %}
+If there is no SWUpdate item in the menu or an update was unsuccessful for any reason, please proceed to the next chapter “Manual firmware reflashing“.
+{% endhint %}
 
-> \[!INFO] A/B updates will be added in future firmware releases.
+
+{% hint style="info" %}
+A/B updates will be added in future firmware releases.
+{% endhint %}
+
 
 3. The board will boot, load the update image from IP 10.0.0.2, port 80 and update all the firmware components.
 
@@ -244,10 +261,12 @@ sudo python3 -m http.server 80
 
 Reflashing QSPI is only possible under Linux.
 
-> \[!WARNING] Please make sure that u-boot-tools are installed in your system:
->
-> * For Ubuntu/Debian: `sudo apt-get install u-boot-tools`
-> * For Fedora/RHEL: `sudo dnf install uboot-tools`
+{% hint style="warning" %}
+Please make sure that u-boot-tools are installed in your system:
+* For Ubuntu/Debian: `sudo apt-get install u-boot-tools`
+* For Fedora/RHEL: `sudo dnf install uboot-tools`
+{% endhint %}
+
 
 1. Download the flashing tool and install it into your system.
 
@@ -270,13 +289,18 @@ uart_boot_fw_loader --serial-device-name /dev/ttyUSB0 --firmware hailo15_uart_re
 hailo15_spi_flash_program --serial-device-name /dev/ttyUSB0 --uart-load --scu-bootloader ./hailo15_scu_bl.bin --scu-bootloader-config scu_bl_cfg_a.bin --scu-firmware ./hailo15_scu_fw.bin --uboot-device-tree ./u-boot.dtb.signed --bootloader ./u-boot-spl.bin --bootloader-env ./u-boot-initial-env --customer-certificate ./customer_certificate.bin
 ```
 
-> \[!INFO] Note: `hailo15_spi_flash_program` also allows to reflash selected parts of the QSPI Flash:
->
-> * `hailo15_spi_flash_program --serial-device-name /dev/ttyUSB0 --uart-load --bootloader ./u-boot-spl.bin --bootloader-env ./u-boot-initial-env--scu-bootloader ./hailo15_scu_bl.bin`
-> * `hailo15_spi_flash_program --serial-device-name /dev/ttyUSB0 --uart-load --uboot-device-tree ./u-boot.dtb.signed`
-> * etc.
+{% hint style="info" %}
+Note: `hailo15_spi_flash_program` also allows to reflash selected parts of the QSPI Flash:
+* `hailo15_spi_flash_program --serial-device-name /dev/ttyUSB0 --uart-load --bootloader ./u-boot-spl.bin --bootloader-env ./u-boot-initial-env--scu-bootloader ./hailo15_scu_bl.bin`
+* `hailo15_spi_flash_program --serial-device-name /dev/ttyUSB0 --uart-load --uboot-device-tree ./u-boot.dtb.signed`
+* etc.
+{% endhint %}
 
-> \[!WARNING] This guide assumes that your serial terminal is `/dev/ttyUSB0`. Replace it with the proper device for your system.
+
+{% hint style="warning" %}
+This guide assumes that your serial terminal is `/dev/ttyUSB0`. Replace it with the proper device for your system.
+{% endhint %}
+
 
 #### Sending u-boot over uart
 

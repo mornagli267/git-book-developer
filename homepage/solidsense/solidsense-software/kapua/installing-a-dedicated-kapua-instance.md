@@ -1,6 +1,9 @@
 # Installing a dedicated Kapua instance
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% endhint %}
+
 
 The SolidSense Kapua instance is not meant for production purpose, so we recommend the deployment of  a dedicated instance when Kapua is to be used in production, in particular if data have to be stored in the Kapua database.
 
@@ -32,7 +35,10 @@ User: kapua-sys
 
 Password: kapua-password
 
-> \[!WARNING] **Please Note** We strongly recommend to change the the password as soon as possible.
+{% hint style="warning" %}
+**Please Note** We strongly recommend to change the the password as soon as possible.
+{% endhint %}
+
 
 ### Changing Kapua sysadmin password
 

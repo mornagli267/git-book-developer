@@ -120,7 +120,10 @@ SD0 of the RZG2LC/UL can be configured as an 8-bit eMMC interface or a 4-bit SDI
 
 Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog switch.
 
-> \[!INFO] The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
+{% hint style="info" %}
+The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
+{% endhint %}
+
 
 &#x20;**eMMC**
 
@@ -164,7 +167,10 @@ Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog sw
 * eSPI1/nSS0
 * Can be used as BOOT NVM \*
 
-> \[!CAUTION] **\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
+{% hint style="warning" %}
+**\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
+{% endhint %}
+
 
 #### **10/100 Mbps Ethernet PHY**
 
@@ -226,7 +232,10 @@ The USB’s main features are:
 * DRD(Dual-Role-Device) function (Static switch between Host and Function).
 * Power control signals are not part of the USB module, any available GPIO can be used.
 
-> \[!WARNING] **Note – The voltage on VBUS is 5V.**
+{% hint style="warning" %}
+**Note – The voltage on VBUS is 5V.**
+{% endhint %}
+
 
 #### MIPI CSI
 
@@ -271,9 +280,15 @@ The Audio main features are:
 * I2S format, Monaural format and TDM format.
 * MSB first, data can be left-justified or right-justified.
 
-> \[!WARNING] Note – Audio Clock signal is an input, should be provided by the carrier board.
+{% hint style="warning" %}
+Note – Audio Clock signal is an input, should be provided by the carrier board.
+{% endhint %}
 
-> \[!WARNING] Note – Some of the signals are multiplexed with other functionalities. Check datasheet for more information.
+
+{% hint style="warning" %}
+Note – Some of the signals are multiplexed with other functionalities. Check datasheet for more information.
+{% endhint %}
+
 
 #### UART
 
@@ -289,7 +304,10 @@ The UART interface's main features are:
 * UART 3 supports TX and RX.
 * Selectable bit rate with an on-chip baud rate generator.
 
-> \[!WARNING] **Note – UART interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note – UART interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### SPI
 
@@ -303,7 +321,10 @@ Up to 3 SPI interfaces. The following figure describes the eSPI interface.
 * Switching of the clock phase of serial transfer.
 * Transfer bit-length is selectable as 8, 16, or 32 bits.
 
-> \[!WARNING] **Note UART interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note UART interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### I2C
 
@@ -322,7 +343,10 @@ The I2C main features are:
 * Up to three slave-address settings can be made.
 * Internal time-out function is capable of detecting long-interval stop of the SCL (clock signal).
 
-> \[!WARNING] **Note – I2C interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note – I2C interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### uSD
 

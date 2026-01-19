@@ -25,7 +25,10 @@ Bot NICs are Realtek RTL8111 (100/1000mbit) and have external magnetics (ATPL-45
 
 ## Power over Ethernet Option (POE)
 
-> \[!TIP] The SolidPC offers you the option to use a PoE module – which is not assembled!
+{% hint style="success" %}
+The SolidPC offers you the option to use a PoE module – which is not assembled!
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/image-20220419-144350.png)
 

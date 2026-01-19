@@ -1,6 +1,9 @@
 # SolidSense N8 Compact RS485 and CAN bus
 
-> \[!INFO] On SolidSense OOB image RS485 and CAN utilities are already built-in
+{% hint style="info" %}
+On SolidSense OOB image RS485 and CAN utilities are already built-in
+{% endhint %}
+
 
 ## Test CAN bus communication
 
@@ -18,7 +21,10 @@ ip link set can0 up type can bitrate xxxxxx
 ifconfig can0 up
 ```
 
-> \[!NOTE] To discover your CAN bus interface name, please run ‘ ip link show ’.
+{% hint style="info" %}
+To discover your CAN bus interface name, please run ‘ ip link show ’.
+{% endhint %}
+
 
 **3. To start testing the CanBUS, you have to install the can-utils package by running:**
 

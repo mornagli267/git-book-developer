@@ -70,7 +70,10 @@ dd if=SPL of=/dev/sdX bs=1k seek=1 conv=sync
 dd if=u-boot.img of=/dev/sdX bs=1k seek=69 conv=sync
 ```
 
-> \[!WARNING] **Note – Take your time while identifying where your designated SD-Card is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% hint style="warning" %}
+**Note – Take your time while identifying where your designated SD-Card is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% endhint %}
+
 
 #### SATA
 
@@ -83,7 +86,10 @@ dd if=SPL of=/dev/sdX bs=1k seek=1 conv=sync
 dd if=u-boot.img of=/dev/sdX bs=1k seek=69 conv=sync
 ```
 
-> \[!WARNING] **Note – Take your time while identifying where your designated SD-Card is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% hint style="warning" %}
+**Note – Take your time while identifying where your designated SD-Card is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% endhint %}
+
 
 ### Booting from USB (OTG)
 
@@ -218,7 +224,10 @@ dd if=SPL of=/dev/sdX bs=1k seek=1 conv=sync
 dd if=u-boot.img of=/dev/sdX bs=1k seek=69 conv=sync
 ```
 
-> \[!WARNING] **Note – Take your time while identifying where the board is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% hint style="warning" %}
+**Note – Take your time while identifying where the board is mapped on your linux system. Failure to do so can result in overwriting an arbitrary disk on your system!**
+{% endhint %}
+
 
 #### Using DFU:
 
@@ -333,7 +342,10 @@ There are many magic numbers in this short script that require **attention!:**
   * y = 0 is disable eMMC boot
   * b is partition access enable, values same as y: 0, 1, 2, 7
 
-> \[!WARNING] **It is highly recommended to write U-Boot from either Linux, or over the USB OTG port with DFU, which are both easier to use!**
+{% hint style="warning" %}
+**It is highly recommended to write U-Boot from either Linux, or over the USB OTG port with DFU, which are both easier to use!**
+{% endhint %}
+
 
 ### Boot Process after U-Boot has loaded
 
@@ -378,7 +390,10 @@ setenv bootcmd 'load mmc 0:1 ${scriptaddr} legacyboot.scr; source ${scriptaddr}'
 saveenv
 ```
 
-> \[!WARNING] **This legacy script hasn’t been thoroughly tested. There may be bugs and unexpected behaviour!**
+{% hint style="warning" %}
+**This legacy script hasn’t been thoroughly tested. There may be bugs and unexpected behaviour!**
+{% endhint %}
+
 
 ## Compiling from source
 

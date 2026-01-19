@@ -6,7 +6,10 @@ Installation was tested on:
 * Ubuntu 23.04
 * Ubuntu 24.04
 
-> \[!INFO] Ubuntu **20.04** does not have intel i226 \[igc] driver on kernel **5.4**
+{% hint style="info" %}
+Ubuntu **20.04** does not have intel i226 \[igc] driver on kernel **5.4**
+{% endhint %}
+
 
 ## [Create bootable usb drive](../howto-guides-bedrock-r8000-r7000/creating-bootable-usb-drive-for-bedrock-r7000.md)
 
@@ -16,7 +19,10 @@ Installation was tested on:
 * Press 'DEL' repetitively to enter BIOS setup
 * Go to the save & exit tab and boot from your USB flash drive
 
-> \[!INFO] If you have problems with installation, please disable secure boot in BIOS → boot> security → secure boot-> disable
+{% hint style="info" %}
+If you have problems with installation, please disable secure boot in BIOS → boot> security → secure boot-> disable
+{% endhint %}
+
 
 ## Installation
 

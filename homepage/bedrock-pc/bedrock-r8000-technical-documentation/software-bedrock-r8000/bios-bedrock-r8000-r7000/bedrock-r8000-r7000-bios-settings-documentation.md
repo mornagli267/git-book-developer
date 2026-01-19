@@ -1,7 +1,9 @@
 # Bedrock R8000 | R7000 BIOS Settings Documentation
 
-> [!INFO]
-> Bedrock R8000 and Bedrock R7000 share the same BIOS
+{% hint style="info" %}
+Bedrock R8000 and Bedrock R7000 share the same BIOS
+{% endhint %}
+
 
 [Bedrock R7000 BIOS Settings documentation - PDF](https://drive.google.com/file/d/1prix4gyopDy_za78FPHUeJj1ufm5J2el/view?usp=drive_link)
 

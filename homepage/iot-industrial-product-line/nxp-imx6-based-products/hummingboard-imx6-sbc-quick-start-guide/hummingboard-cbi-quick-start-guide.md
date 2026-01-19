@@ -46,7 +46,10 @@ The guide will give a technical overview about the product and by the end of it 
 | **Environment**      | Metal Enclosure                                                                                                                                                   |
 |                      | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!INFO] Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466) .
+{% hint style="info" %}
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466) .
+{% endhint %}
+
 
 #### **Block Diagram**
 
@@ -84,7 +87,10 @@ For Booting from an SD card, jumpers need to be setup at J5005 as follows:
 
 ![](../../../../.gitbook/assets/image-20211114-094820.png)
 
-> \[!NOTE] Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
+{% hint style="info" %}
+Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
+{% endhint %}
+
 
 Once you setup the jumpers, you can apply the following for booting from an SD card.
 
@@ -108,7 +114,10 @@ xz -dc sr-imx6-debian-bullseye-20220712-cli-sdhc.img.xz | dd of=/dev/sdX bs=4M c
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -124,7 +133,10 @@ Please connect the UART cable to the pins on connector J25 as shown in the below
 
 ![](../../../../.gitbook/assets/image-20211114-100743.png)
 
-> \[!INFO] For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
+{% hint style="info" %}
+For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
+{% endhint %}
+
 
 Once you installed the necessary serial connection software, please run the following:
 
@@ -191,7 +203,10 @@ cd rs485conf
 make
 ```
 
-> \[!NOTE] Before you run the above, please install some helping commands by running: `apt-get install make gcc git`
+{% hint style="info" %}
+Before you run the above, please install some helping commands by running: `apt-get install make gcc git`
+{% endhint %}
+
 
 2\. Copy the output of the exec file bu running:
 
@@ -236,7 +251,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -273,7 +291,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 

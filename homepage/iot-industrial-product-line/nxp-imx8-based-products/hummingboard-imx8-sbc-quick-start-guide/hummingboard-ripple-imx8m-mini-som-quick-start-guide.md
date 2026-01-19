@@ -49,11 +49,17 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure                 | Optional extruded aluminum (IP32) enclosure                                                                                                      |
 |                           | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Ripple%22\&post_type=product&_ga=2.89019160.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!INFO] Supported with i.MX8M-MINI SOM. For more detailed informaiton about our SOM-i.MX8M series please visit our user manual : [i.MX8M Mini SOM Hardware User Manual](../imx8m-mini-som-hardware-user-manual.md)
+{% hint style="info" %}
+Supported with i.MX8M-MINI SOM. For more detailed informaiton about our SOM-i.MX8M series please visit our user manual : [i.MX8M Mini SOM Hardware User Manual](../imx8m-mini-som-hardware-user-manual.md)
+{% endhint %}
 
-> \[!NOTE] **Please Note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
-> (\*\*) Only supported with the i.MX8M SoC.\
-> (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+
+{% hint style="info" %}
+**Please Note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
+(\*\*) Only supported with the i.MX8M SoC.\
+(\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -93,7 +99,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../../.gitbook/assets/image-20211104-141324.png)
 
-> \[!INFO] Please Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Please Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -117,7 +126,10 @@ xz -dc sr-imx8-debian-buster-20210706-cli-imx8mm-sdhc-hummingboard-pulse.img.xz 
 
 * For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 3\. SD card insertion
 
@@ -169,7 +181,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -206,7 +221,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 

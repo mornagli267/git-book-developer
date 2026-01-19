@@ -1,6 +1,9 @@
 # Setting DDR memory frequency on Bedrock R8000 | R7000
 
-> \[!NOTE] Incorrect memory settings might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% hint style="info" %}
+Incorrect memory settings might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% endhint %}
+
 
 To set the DDR memory frequency to your desired value open BIOS menu by booting the device and pressing the 'DEL' key repettitively until BIOS menu opens.
 

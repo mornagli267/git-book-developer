@@ -6,8 +6,10 @@
 
 There are many distributions for CuBox-i & Hummingboard. Before a distribution can be used, it must be flashed to an SD card. How this works depends on your operating system. Below are general instructions for flashing an image to an SD card. A distribution might have specific instructions, or a script that will do all these steps for you. As a general rule, it is easiest to flash a distributions on a Linux PC, especially if more advanced configuration is needed. However, you can use Windows or OS X as well. Many distributions are available as an .img.xz file. This .img extension indicates that this is a full disk image. The .xz extension indicates that the file is compressed using xz. There is no need to format the SD card before you begin. It is also not needed to create any partitions manually.
 
-> [!WARNING]
-> **Flashing an image will erase all files and partitions of the target device. Make sure you choose the SD card as the target device, or you can seriously damage your existing operating system.**
+{% hint style="warning" %}
+**Flashing an image will erase all files and partitions of the target device. Make sure you choose the SD card as the target device, or you can seriously damage your existing operating system.**
+{% endhint %}
+
 
 You do not need to format the SD card before use. Images fully overwrite the card’s contents, including the boot loader and the partition table.
 

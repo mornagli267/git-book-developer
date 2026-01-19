@@ -7,7 +7,10 @@
 | 03 Jan 2020       | Noam Weidenfeld                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 1.0          |           |
 | Table of Contents | <p>- <a href="imx8m-mini-som-hardware-user-manual.md#revision-and-notes">Revision and Notes</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#overview">Overview</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#description">Description</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#features-summary">Features Summary</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#imx8m-mini-soc-family">i.MX8M Mini SoC Family</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#memory">Memory</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#10-100-1000-mbps-ethernet-phy">10/100/1000 MBPS ETHERNET PHY</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#wi-fi-11ac-b-g-n-bt-50-ble">WI-FI (11AC/B/G/N) BT (5.0 BLE)</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#imx8m-mini-external-interfaces">i.MX8M-Mini External Interfaces</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#general">General</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#pcie">PCIe</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#usb-20">USB 2.0</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#mipi-csi">MIPI CSI</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#mipi-dsi">MIPI DSI</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#audio">Audio</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#uart">UART</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#espi">eSPI</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#i2c">I2C</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#usd">uSD</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#b2b-connectors-signal-description">B2B Connector’s Signal Description</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#j5001">J5001</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#j7">J7</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#j9">J9</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#power-and-reset">Power and Reset</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#power-architecture">Power Architecture</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#reset">Reset</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#imx8m-mini-integration-manual">i.MX8M-Mini Integration Manual</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#power-up-sequence">Power Up Sequence</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#booting-options">Booting Options</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#fuses-booting">Fuses Booting</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#booting-from-resistors-setting">Booting from Resistors setting</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#i2c-interfaces">I2C Interfaces</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#gpio-interfaces">GPIO Interfaces</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#imx8m-mini-som-debugging-capability">i.MX8M Mini SOM Debugging Capability</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#imx8m-mini-som-mechanical-description">i.MX8M-Mini SOM Mechanical Description</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#documentation">Documentation</a><br>- <a href="imx8m-mini-som-hardware-user-manual.md#related-articles">Related Articles</a></p> |              |           |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -136,7 +139,10 @@ The i.MX8M-Mini SOM support varieties of memory interfaces for booting and data 
 * i.MX8M-Mini eSPI2/nSS0
 * Can be used as BOOT NVM \*
 
-> \[!INFO] (\*) All boot configuration signals are available on the SOM connector.
+{% hint style="info" %}
+(\*) All boot configuration signals are available on the SOM connector.
+{% endhint %}
+
 
 #### 10/100/1000 MBPS ETHERNET PHY
 
@@ -251,7 +257,10 @@ The Audio main features are:
 
 For more details check the i.MX8M-Mini [datasheet](https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i.mx-applications-processors/i.mx-8-processors/i.mx-8m-mini-arm-cortex-a53-cortex-m4-audio-voice-video:i.MX8MMINI?tab=Documentation_Tab) and AN.
 
-> \[!CAUTION] SAI1 signals are used as boot configuration during POR.
+{% hint style="warning" %}
+SAI1 signals are used as boot configuration during POR.
+{% endhint %}
+
 
 #### UART
 
@@ -290,7 +299,10 @@ The i.MX8M-Mini SOM supports an eSPI interface. The following figure describes t
 * Master/Slave configurable.
 * Polarity and phase of the Chip Select (SS) and SPI Clock (SCLK) are configurable.
 
-> \[!WARNING] eSPI Shares signals with UART-4.
+{% hint style="warning" %}
+eSPI Shares signals with UART-4.
+{% endhint %}
+
 
 #### I2C
 
@@ -385,11 +397,13 @@ The following table describes how the booting signals need to be set to support 
 
 ![](../../../.gitbook/assets/image-20211107-122254.png)
 
-> \[!WARNING] **Please note**
->
-> * NAND booting is not an option on the i.MX8M-mini SOM.
-> * SPI NOR is an option on the carrier board (Not on the SOM).
-> * The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
+{% hint style="warning" %}
+**Please note**
+* NAND booting is not an option on the i.MX8M-mini SOM.
+* SPI NOR is an option on the carrier board (Not on the SOM).
+* The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
+{% endhint %}
+
 
 #### I2C Interfaces
 

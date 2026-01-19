@@ -8,7 +8,10 @@
 | 01 Aug 2019       | Noam Weidenfeld                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 1.1          | Revision update |
 | Table of Contents | <p>- <a href="imx8m-som-hardware-user-manual.md#revision-and-notes">Revision and Notes</a><br>- <a href="imx8m-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="imx8m-som-hardware-user-manual.md#overview">Overview</a><br>- <a href="imx8m-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="imx8m-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="imx8m-som-hardware-user-manual.md#description">Description</a><br>- <a href="imx8m-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="imx8m-som-hardware-user-manual.md#feature-summary">Feature Summary</a><br>- <a href="imx8m-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="imx8m-som-hardware-user-manual.md#imx8-soc-family">i.MX8 SoC Family</a><br>- <a href="imx8m-som-hardware-user-manual.md#memory">Memory</a><br>- <a href="imx8m-som-hardware-user-manual.md#lpddr4">LPDDR4</a><br>- <a href="imx8m-som-hardware-user-manual.md#emmc-nand-flash">eMMC NAND Flash</a><br>- <a href="imx8m-som-hardware-user-manual.md#quad-serial-nor-flash-som">Quad Serial NOR Flash (SOM)</a><br>- <a href="imx8m-som-hardware-user-manual.md#eeprom-som">EEPROM (SOM)</a><br>- <a href="imx8m-som-hardware-user-manual.md#micro-sd-carrier">Micro-SD (Carrier)</a><br>- <a href="imx8m-som-hardware-user-manual.md#serial-nor-flash-carrier">Serial NOR Flash (Carrier)</a><br>- <a href="imx8m-som-hardware-user-manual.md#10-100-1000-mbps-ethernet-phy">10/100/1000 MBPS Ethernet PHY</a><br>- <a href="imx8m-som-hardware-user-manual.md#wi-fi-11ac-b-g-n-2tx2r-type-1216-and-bt-50">WI-FI (11AC/B/G/N 2TX2R) TYPE 1216 AND BT 5.0</a><br>- <a href="imx8m-som-hardware-user-manual.md#the-following-figure-describes-the-wi-fi-and-bt-support-in-the-imx-8-som">The following figure describes the WI-FI and BT support in the IMX-8 SOM.</a><br>- <a href="imx8m-som-hardware-user-manual.md#wi-fi">WI-FI</a><br>- <a href="imx8m-som-hardware-user-manual.md#bt-50">BT 5.0</a><br>- <a href="imx8m-som-hardware-user-manual.md#mipi-csi-2-camera-interface">MIPI CSI-2 CAMERA INTERFACE</a><br>- <a href="imx8m-som-hardware-user-manual.md#imx8m-som-external-interfaces">i.MX8M SOM External Interfaces</a><br>- <a href="imx8m-som-hardware-user-manual.md#general">General</a><br>- <a href="imx8m-som-hardware-user-manual.md#pcie">PCIe</a><br>- <a href="imx8m-som-hardware-user-manual.md#usb-30">USB 3.0</a><br>- <a href="imx8m-som-hardware-user-manual.md#mipi-csi">MIPI CSI</a><br>- <a href="imx8m-som-hardware-user-manual.md#mipi-dsi">MIPI DSI</a><br>- <a href="imx8m-som-hardware-user-manual.md#audio">Audio</a><br>- <a href="imx8m-som-hardware-user-manual.md#hdmi">HDMI</a><br>- <a href="imx8m-som-hardware-user-manual.md#uart">UART</a><br>- <a href="imx8m-som-hardware-user-manual.md#espi">eSPI</a><br>- <a href="imx8m-som-hardware-user-manual.md#i2c">I2C</a><br>- <a href="imx8m-som-hardware-user-manual.md#microsd">MicroSD</a><br>- <a href="imx8m-som-hardware-user-manual.md#b2b-connectors-signal-description">B2B Connector’s Signal Description</a><br>- <a href="imx8m-som-hardware-user-manual.md#j5001">J5001</a><br>- <a href="imx8m-som-hardware-user-manual.md#j7">J7</a><br>- <a href="imx8m-som-hardware-user-manual.md#j9">J9</a><br>- <a href="imx8m-som-hardware-user-manual.md#power-and-reset">Power and Reset</a><br>- <a href="imx8m-som-hardware-user-manual.md#reset">Reset</a><br>- <a href="imx8m-som-hardware-user-manual.md#imx8m-som-integration-manual">i.MX8M SOM Integration Manual</a><br>- <a href="imx8m-som-hardware-user-manual.md#power-up-sequence">Power up sequence</a><br>- <a href="imx8m-som-hardware-user-manual.md#booting-options">Booting Options</a><br>- <a href="imx8m-som-hardware-user-manual.md#fuses-booting">Fuses Booting</a><br>- <a href="imx8m-som-hardware-user-manual.md#booting-from-resistors-settings">Booting From Resistors Settings</a><br>- <a href="imx8m-som-hardware-user-manual.md#i2c-interfaces">I2C Interfaces</a><br>- <a href="imx8m-som-hardware-user-manual.md#gpio-interfaces">GPIO Interfaces</a><br>- <a href="imx8m-som-hardware-user-manual.md#imx8m-som-debugging-capability">i.MX8M SOM Debugging Capability</a><br>- <a href="imx8m-som-hardware-user-manual.md#imx8m-som-mechanical-description">i.MX8M SOM Mechanical Description</a><br>- <a href="imx8m-som-hardware-user-manual.md#documentation">Documentation</a></p> |              |                 |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -151,7 +154,10 @@ The i.MX8M SOM support varieties of memory interfaces for booting and data stora
 * IMX-8 eSPI2/nSS0
 * Can be used as BOOT NVM \*
 
-> \[!INFO] **Please Note** All boot configuration signals are available on the SOM connector.
+{% hint style="info" %}
+**Please Note** All boot configuration signals are available on the SOM connector.
+{% endhint %}
+
 
 #### 10/100/1000 MBPS Ethernet PHY
 
@@ -196,7 +202,10 @@ The i.MX8 SOM uses U-BLOX’s NINA-B111 module. The module is based on Nordic’
 * External
 * Global
 
-> \[!WARNING] **Please note** The Silex M.2 module doesn’t support BT over UART.
+{% hint style="warning" %}
+**Please note** The Silex M.2 module doesn’t support BT over UART.
+{% endhint %}
+
 
 #### MIPI CSI-2 CAMERA INTERFACE
 
@@ -309,7 +318,10 @@ The Audio main features are:
 
 For more details check the i.MX8M datasheet and AN.
 
-> \[!WARNING] **Please note** SAI1 signals are used as boot configuration during POR.
+{% hint style="warning" %}
+**Please note** SAI1 signals are used as boot configuration during POR.
+{% endhint %}
+
 
 #### HDMI
 
@@ -326,7 +338,10 @@ The HDMI main features are:
 
 For more details check the i.MX8 datasheet.
 
-> \[!WARNING] **Please note** To support DPI, the pull-Up termination resistors are not assembled.
+{% hint style="warning" %}
+**Please note** To support DPI, the pull-Up termination resistors are not assembled.
+{% endhint %}
+
 
 #### UART
 
@@ -363,7 +378,10 @@ The i.MX8 SOM supports an eSPI interface. The following figure describes the eSP
 * Master/Slave configurable.
 * Polarity and phase of the Chip Select (SS) and SPI Clock (SCLK) are configurable.
 
-> \[!WARNING] **Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
+{% hint style="warning" %}
+**Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
+{% endhint %}
+
 
 #### I2C
 
@@ -578,7 +596,10 @@ The following table describes how the booting signals need to be set to support 
 
 ![](../../../.gitbook/assets/image-20211228-123823.png)
 
-> \[!INFO] NAND booting is not an option on the i.MX8M SOM. 2. SPI NOR is an option on the carrier board (Not on the SOM). 3. The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
+{% hint style="info" %}
+NAND booting is not an option on the i.MX8M SOM. 2. SPI NOR is an option on the carrier board (Not on the SOM). 3. The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
+{% endhint %}
+
 
 #### I2C Interfaces
 

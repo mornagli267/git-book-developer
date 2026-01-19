@@ -81,8 +81,10 @@ A trip point describes a point in the temperature domain at which the system tak
 
 When the temperature in the SOC reaches the passive trip point temperature, the SOC generates an interrupt and the driver sends a notification. Other drivers may subscribe to such notifications in order to trigger cooling actions, such as reducing their clock frequency.
 
-> [!INFO]
-> On the current BSP, the GPU driver subscribes to the temperature monitor to lower the GPU frequency when the passive trip point is reached. Expect a performance impact on graphical applications when this happens.
+{% hint style="info" %}
+On the current BSP, the GPU driver subscribes to the temperature monitor to lower the GPU frequency when the passive trip point is reached. Expect a performance impact on graphical applications when this happens.
+{% endhint %}
+
 
 The passive trip point has a hysteresis of 10 °C. This means that only when the die temperature has gone 10 °C below the passive trip point, the system is considered within normal parameters and the cooling actions can be cancelled.
 
@@ -124,6 +126,8 @@ To set a different temperature for the critical trip point, write the new temper
 # echo 90000 > /sys/class/thermal/thermal_zone0/trip_point_1_temperature
 ```
 
-> [!NOTE]
-> **Note:**
-> Modifying the temperature is not necessary for i.mx6 as the driver checks the temperature grade and adapts temperatures automatically.
+{% hint style="info" %}
+**Note:**
+Modifying the temperature is not necessary for i.mx6 as the driver checks the temperature grade and adapts temperatures automatically.
+{% endhint %}
+

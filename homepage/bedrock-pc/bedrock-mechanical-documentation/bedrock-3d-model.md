@@ -13,7 +13,10 @@
   * Enclosure **60W**
 * Enable / disable **Antennas**
 
-> \[!INFO] The 3D model is for integration. It is accurate externally , with no internal features.
+{% hint style="info" %}
+The 3D model is for integration. It is accurate externally , with no internal features.
+{% endhint %}
+
 
 ## Installation notes
 
@@ -23,7 +26,10 @@ See also: [Bedrock Mounting options](bedrock-mounting-options.md)
 
 Bedrock 30W and Bedrock 60W should be installed in vertical position with at least 2 cm clearance below and above for airflow.
 
-> \[!INFO] Other mounting orientation can be considered with active cooling.
+{% hint style="info" %}
+Other mounting orientation can be considered with active cooling.
+{% endhint %}
+
 
 Bedrock Tile should have at least one of the walls thermally coupled to a cold plate.
 

@@ -8,7 +8,10 @@
 
 If you consider embedding Bedrock-boards inside a fully custom enclosure, you would be using **Bedrock Deck**.
 
-> \[!INFO] SolidRun recommends using [Bedrock Tile](bedrock-mounting-options.md#bedrock-tile-mounting) which is much easier to integrate
+{% hint style="info" %}
+SolidRun recommends using [Bedrock Tile](bedrock-mounting-options.md#bedrock-tile-mounting) which is much easier to integrate
+{% endhint %}
+
 
 ![image-20240613-100001.png](../../../.gitbook/assets/image-20240613-100001.png)
 

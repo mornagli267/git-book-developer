@@ -48,7 +48,10 @@ The guide will give a technical overview about the product and by the end of it 
 | **Enclosure**        | Optional metal enclosure                                                                                                                    |
 |                      | [Buy Now](https://shop.solid-run.com/?s=ClearFog+Pro+CN9130\&post_type=product&_ga=2.122003336.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!INFO] Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](cn9130-som-hardware-user-manual.md) .
+{% hint style="info" %}
+Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](cn9130-som-hardware-user-manual.md) .
+{% endhint %}
+
 
 ## **Block Diagram**
 
@@ -66,20 +69,17 @@ Print side connector overview of the ClearFog Pro.
 
 ![](../../../.gitbook/assets/image-20211207-180820.png)
 
-> \[!NOTE]
->
-> #### **mPCIe Connectors and SIM Holder Interface Mapping**
->
-> **CON2 (mPCIe Connector)**
->
-> * **Supported Interfaces:** PCIe only
-> * **Associated SIM Holder:** **CON1** (Upper SIM holder) – Connected to **CON2 mPCIe interface**
->
-> **CON3 (mPCIe Connector)**
->
-> * **Supported Interfaces:** PCIe and USB
-> * **Associated SIM Holder:** **CON10** (Lower uSIM holder) – Connected to **CON3 mPCIe interface**
-> * **Tested with:** **LTE Quectel EC25** – Confirmed full functionality, successfully detecting **uSIM in CON10**.
+{% hint style="info" %}
+#### **mPCIe Connectors and SIM Holder Interface Mapping**
+**CON2 (mPCIe Connector)**
+* **Supported Interfaces:** PCIe only
+* **Associated SIM Holder:** **CON1** (Upper SIM holder) – Connected to **CON2 mPCIe interface**
+**CON3 (mPCIe Connector)**
+* **Supported Interfaces:** PCIe and USB
+* **Associated SIM Holder:** **CON10** (Lower uSIM holder) – Connected to **CON3 mPCIe interface**
+* **Tested with:** **LTE Quectel EC25** – Confirmed full functionality, successfully detecting **uSIM in CON10**.
+{% endhint %}
+
 
 ## Software Setup
 
@@ -122,7 +122,10 @@ The following shows how to set the switches on the boot source selector:
 
 Once you set the switches, you can apply the following for booting from an **SPI** card and loading the Ubuntu from an **SD** card.
 
-> \[!WARNING] **Please Note:** The **SPI** includes U-Boot by default.
+{% hint style="warning" %}
+**Please Note:** The **SPI** includes U-Boot by default.
+{% endhint %}
+
 
 **1. Downloading the Ubuntu 20.04 image**
 
@@ -142,7 +145,10 @@ xz -dc ubuntu-cn9130-cf-pro-mmc:1:0.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 
 * For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md).
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -167,7 +173,10 @@ saveenv
 boot
 ```
 
-> \[!WARNING] **Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
+{% hint style="warning" %}
+**Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
+{% endhint %}
+
 
 Once you installed the necessary serial connection software and ran the above commands, you should be able to see the following:
 
@@ -261,7 +270,10 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 It is possible to utilize a Cellular connection by inserting a SIM card into the SIM card slot. Please observe that a GSM Cellular modem needs to be installed utilizing the mini PCIe connection in order to exploit the cellular connection.
 
-> \[!WARNING] **Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% hint style="warning" %}
+**Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% endhint %}
+
 
 ## TLV EEPROM Support
 

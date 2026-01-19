@@ -39,11 +39,11 @@ Please see our pages [Cubox-i](https://solidrun.atlassian.net/wiki/spaces/develo
 
 4\. Connect your Male to Male USB-A cable to the OTG port on your device.
 
-> \[!INFO]
->
-> **Identify the OTG port**
->
-> To quote our developer Jon: “it is the top port next to the Ethernet jack” More formally it is the top port on the U5 header. This holds true of all our i.MX6 based boards.
+{% hint style="info" %}
+**Identify the OTG port**
+To quote our developer Jon: “it is the top port next to the Ethernet jack” More formally it is the top port on the U5 header. This holds true of all our i.MX6 based boards.
+{% endhint %}
+
 
 * Make sure you can detect the USB = NXP Semiconductors in the usb devices list with the exact same vendor ID as shown in the following example:
 
@@ -69,7 +69,10 @@ sudo ./imx_usb u-boot-imx6-sdhc.img
 
 ![](../../../../.gitbook/assets/image-20220228-082434.png)
 
-> \[!TIP] **Success Indicator for Cubox-i**\
-> The Cubox-i has an LED that is off by default and turned on by u-boot. So if the LED turns red, U-Boot was loaded successfully.
+{% hint style="success" %}
+**Success Indicator for Cubox-i**\
+The Cubox-i has an LED that is off by default and turned on by u-boot. So if the LED turns red, U-Boot was loaded successfully.
+{% endhint %}
+
 
 At this point U-Boot has been loaded to RAM and is running.

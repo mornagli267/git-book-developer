@@ -22,8 +22,10 @@ All SO-DIMMs that are tested are SO-DIMM DDR4 type with different sizes, speeds,
 
 The table is based on modules that SolidRun have tested and on modules that are being used and were validated by customers.  
 
-> [!INFO]
-> The list is sorted alphabetical.
+{% hint style="info" %}
+The list is sorted alphabetical.
+{% endhint %}
+
 
 |     |     |     |     |     |
 | --- | --- | --- | --- | --- |

@@ -1,7 +1,10 @@
 # Using Eclipse Kapua to supervise and configure SolidSense gateways
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 ## Foreword
 
@@ -45,11 +48,17 @@ If a device that is expected to be seen is not appearing, this is most of the ca
 
 ![](../../../../.gitbook/assets/Kapua-Devices-Configuration.png)
 
-> \[!WARNING] **Please note** Changing the MQTT data transport parameters allow to re-parent a gateway to another account or another cloud, but if any parameter is wrong a direct connection to the gateway (via Kura web) will be needed to recover.
+{% hint style="warning" %}
+**Please note** Changing the MQTT data transport parameters allow to re-parent a gateway to another account or another cloud, but if any parameter is wrong a direct connection to the gateway (via Kura web) will be needed to recover.
+{% endhint %}
+
 
 ![](../../../../.gitbook/assets/Kapua-Devices-Commands.png)
 
-> \[!WARNING] **Please note** Commands are executed as root and there is no control nor security mechanism. So to use with great care to avoid to put the gateway in a non reachable state to will force a field operation to recover it.
+{% hint style="warning" %}
+**Please note** Commands are executed as root and there is no control nor security mechanism. So to use with great care to avoid to put the gateway in a non reachable state to will force a field operation to recover it.
+{% endhint %}
+
 
 ## Managing Kapua account
 

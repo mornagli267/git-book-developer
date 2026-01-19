@@ -68,7 +68,10 @@ Max. temperature in PHY (Poly 1): \~71 °C.
 
 Max. temperature in the SOM (Poly 3): \~75°C in SoC.
 
-> \[!NOTE] Thermal snapshot was taken after a weekend long iperf, without a heat-sink.
+{% hint style="info" %}
+Thermal snapshot was taken after a weekend long iperf, without a heat-sink.
+{% endhint %}
+
 
 ## Conclusion
 

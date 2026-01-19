@@ -21,7 +21,10 @@ git clone https://github.com/NXPmicro/mfgtools.git
 
 * Please follow the [Build instructions](https://github.com/NXPmicro/mfgtools#linux).
 
-> \[!INFO] Please make sure to have cmake 3.19 or a newer version.
+{% hint style="info" %}
+Please make sure to have cmake 3.19 or a newer version.
+{% endhint %}
+
 
 2\. Install U-Boot binaries
 
@@ -39,8 +42,11 @@ Connect your micro USB cable to your device.
 
 5\. Connect the Male to Male USB-A cable to the OTG port on your device.
 
-> \[!INFO] **Identify the OTG port**\
-> It’s the upper USB port. This holds true of all our i.MX8 based boards.
+{% hint style="info" %}
+**Identify the OTG port**\
+It’s the upper USB port. This holds true of all our i.MX8 based boards.
+{% endhint %}
+
 
 * Make sure you can detect the USB = NXP Semiconductors in the usb devices list.
 

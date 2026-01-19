@@ -27,8 +27,10 @@ Run the “runme.sh” script to start the build, the output is presented in the
 
 #### Blowing fuses to program the unit MAC address
 
-> [!CAUTION]
-> **Blowing fuses is an irreversible act. If you set a bit from ‘0’ to ‘1’ you can not set it back to ‘0’.**
+{% hint style="warning" %}
+**Blowing fuses is an irreversible act. If you set a bit from ‘0’ to ‘1’ you can not set it back to ‘0’.**
+{% endhint %}
+
 
 echo <high 16 bit of the MAC address> > /sys/fsl\_otp/HW\_OCOTP\_MAC\_ADDR1
 
@@ -91,8 +93,10 @@ fuse prog -y 1 3 0x10001400
 
 ### **From eMMC**
 
-> [!WARNING]
-> Booting from eMMC is trickier than MicroSD since the device is soldered on the board and can’t be modified by simply taking it out and flashing it on a PC. So when flashing u-boot to the eMMC device, make sure you use a u-boot image that you can get into it’s console in case you need to modify it afterwards.
+{% hint style="warning" %}
+Booting from eMMC is trickier than MicroSD since the device is soldered on the board and can’t be modified by simply taking it out and flashing it on a PC. So when flashing u-boot to the eMMC device, make sure you use a u-boot image that you can get into it’s console in case you need to modify it afterwards.
+{% endhint %}
+
 
 **Under Linux –**
 
@@ -113,5 +117,7 @@ wget <URL>/flash.bin
 dd if=flash.bin of=/dev/mmcblk2 bs=1K seek=33
 ```
 
-> [!TIP]
-> When finished and want to restart the system, you need to either power cycle the unit or click the reset button. Running the ‘reboot’ command will not work since new fuses values will not be activated.
+{% hint style="success" %}
+When finished and want to restart the system, you need to either power cycle the unit or click the reset button. Running the ‘reboot’ command will not work since new fuses values will not be activated.
+{% endhint %}
+

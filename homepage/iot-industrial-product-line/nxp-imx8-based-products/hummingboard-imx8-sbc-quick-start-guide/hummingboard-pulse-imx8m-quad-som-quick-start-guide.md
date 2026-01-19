@@ -34,11 +34,17 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure        | Optional extruded aluminum (IP32) enclosure                                                                                                                                                                                                                                 |
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product)                                                                                                                                                                                        |
 
-> \[!INFO] Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=287899798) .
+{% hint style="info" %}
+Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=287899798) .
+{% endhint %}
 
-> \[!NOTE] **Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
-> (\*\*) Only supported with the i.MX8M SoC.\
-> (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+
+{% hint style="info" %}
+**Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
+(\*\*) Only supported with the i.MX8M SoC.\
+(\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -78,7 +84,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../../.gitbook/assets/image-20211107-114816.png)
 
-> \[!INFO] Please Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Please Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -100,7 +109,10 @@ xz -dc sr-imx8-debian-bullseye-20201020-cli-imx8mq-sdhc-hummingboard-pulse.img.x
 
 * For more information, please visit Flashing an SD card.
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -152,7 +164,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -189,7 +204,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 
@@ -209,7 +227,10 @@ You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
 * For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
 
-> \[!INFO] Please Note: In order to use the mini-PCIe, a HummingBoard Pulse must not be combined with a microSOM that has WIFI. For more information, please refer to: [mini-PCIe](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md#mini-pcie-by-default-not-functional-on-hummingboard-pulse)
+{% hint style="info" %}
+Please Note: In order to use the mini-PCIe, a HummingBoard Pulse must not be combined with a microSOM that has WIFI. For more information, please refer to: [mini-PCIe](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md#mini-pcie-by-default-not-functional-on-hummingboard-pulse)
+{% endhint %}
+
 
 ## List Of Supported OS
 

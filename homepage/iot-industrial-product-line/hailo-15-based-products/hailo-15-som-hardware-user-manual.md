@@ -11,7 +11,10 @@
 | 26 Nov 2024       | Yazan Shhady                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 1.1          | Add Power Consumption Measurement |
 | Table of Contents | <p>- <a href="hailo-15-som-hardware-user-manual.md#revisions-and-notes">Revisions and Notes</a><br>- <a href="hailo-15-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="hailo-15-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="hailo-15-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="hailo-15-som-hardware-user-manual.md#description">Description</a><br>- <a href="hailo-15-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="hailo-15-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-soc-family">Hailo 15 SoC Family</a><br>- <a href="hailo-15-som-hardware-user-manual.md#memories">Memories</a><br>- <a href="hailo-15-som-hardware-user-manual.md#ethernet-phy-10-100-1000-mbps">Ethernet PHY 10/100/1000 Mbps</a><br>- <a href="hailo-15-som-hardware-user-manual.md#wi-fi-80211a-b-g-n-ac-and-bt-50-muratas-certified-module">WI-FI (802.11a/b/g/n/AC) and BT 5.0 (Murata's Certified Module)</a><br>- <a href="hailo-15-som-hardware-user-manual.md#mipi-csi-2-soms-camera-interface">MIPI CSI-2 SOM’s Camera Interface</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-external-interfaces">Hailo 15 External Interfaces</a><br>- <a href="hailo-15-som-hardware-user-manual.md#general">General</a><br>- <a href="hailo-15-som-hardware-user-manual.md#supported-interfaces">Supported Interfaces</a><br>- <a href="hailo-15-som-hardware-user-manual.md#usb30-20-and-pcie">USB3.0/2.0 and PCIe</a><br>- <a href="hailo-15-som-hardware-user-manual.md#usb-30-20">USB-3.0/2.0</a><br>- <a href="hailo-15-som-hardware-user-manual.md#pcie">PCIe</a><br>- <a href="hailo-15-som-hardware-user-manual.md#mipi-csi">MIPI CSI</a><br>- <a href="hailo-15-som-hardware-user-manual.md#mipi-dsi">MIPI DSI</a><br>- <a href="hailo-15-som-hardware-user-manual.md#audio">Audio</a><br>- <a href="hailo-15-som-hardware-user-manual.md#uart">UART</a><br>- <a href="hailo-15-som-hardware-user-manual.md#qspi">QSPI</a><br>- <a href="hailo-15-som-hardware-user-manual.md#i2c">I2C</a><br>- <a href="hailo-15-som-hardware-user-manual.md#connectors-signal-description">Connector’s Signal Description</a><br>- <a href="hailo-15-som-hardware-user-manual.md#power-reset">Power &#x26; Reset</a><br>- <a href="hailo-15-som-hardware-user-manual.md#power-architecture">Power Architecture</a><br>- <a href="hailo-15-som-hardware-user-manual.md#power-consumption">Power Consumption</a><br>- <a href="hailo-15-som-hardware-user-manual.md#reset">Reset</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-integration-manual">Hailo 15 Integration Manual</a><br>- <a href="hailo-15-som-hardware-user-manual.md#power-up-sequence">Power Up Sequence</a><br>- <a href="hailo-15-som-hardware-user-manual.md#booting-options">Booting Options</a><br>- <a href="hailo-15-som-hardware-user-manual.md#i2c-interfaces">I2C Interfaces</a><br>- <a href="hailo-15-som-hardware-user-manual.md#gpio-interfaces">GPIO Interfaces</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-som-debugging-capability">Hailo 15 SOM Debugging Capability</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-typical-power-consumption">Hailo 15 Typical Power Consumption</a><br>- <a href="hailo-15-som-hardware-user-manual.md#hailo-15-som-mechanical-description">Hailo 15 SOM Mechanical Description</a><br>- <a href="hailo-15-som-hardware-user-manual.md#ordering-information">Ordering Information</a><br>- <a href="hailo-15-som-hardware-user-manual.md#federal-communications-commission-fcc-statement">Federal Communications Commission (FCC) Statement</a></p> |              |                                   |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -89,7 +92,10 @@ The Hailo 15 SOM supports varieties of memory interfaces for booting and data st
 * Up to HS200 (800 Mbps).
 * Can be used as BOOT NVM \*
 
-> \[!NOTE] Note – in current revision the eMMC can’t be used fro UBOOT, it can only be used as a secondary boot memory after running the UBOOT on the QSPI memory.
+{% hint style="info" %}
+Note – in current revision the eMMC can’t be used fro UBOOT, it can only be used as a secondary boot memory after running the UBOOT on the QSPI memory.
+{% endhint %}
+
 
 **Quad Serial NOR Flash (SOM)**
 
@@ -175,11 +181,12 @@ The Hailo 15 supports 4 ser/des interfaces that can be shared between the PCIe a
 
 The single PCIe controller can support 1, 2 or 4 lanes.
 
-> \[!NOTE]
->
-> * **When supporting 4 lanes there is no support for USB3.**
-> * **Only the fourth lane can support the USB3 interface.**
-> * **USB2 is always supported.**
+{% hint style="info" %}
+* **When supporting 4 lanes there is no support for USB3.**
+* **Only the fourth lane can support the USB3 interface.**
+* **USB2 is always supported.**
+{% endhint %}
+
 
 ![image-20240407-132633.png](../../../.gitbook/assets/image-20240407-132633.png)
 
@@ -195,10 +202,11 @@ The USB main features are:
 * Supports four programmable, bidirectional USB endpoints.
 * Power control signal are not part of the USB module, any available GPIO can be used.
 
-> \[!NOTE]
->
-> * **The voltage on VBUS is 5V.**
-> * **There are decupling capacitors on the SOM.**
+{% hint style="info" %}
+* **The voltage on VBUS is 5V.**
+* **There are decupling capacitors on the SOM.**
+{% endhint %}
+
 
 **PCIe**
 
@@ -235,9 +243,10 @@ The Audio main features are:
 * Audio resolution of 12, 16, 20, 24 and 32 bits
 * External SCLK gating and enable signals.
 
-> \[!NOTE]
->
-> * **A second I2S line is multiplexed with Ios.**
+{% hint style="info" %}
+* **A second I2S line is multiplexed with Ios.**
+{% endhint %}
+
 
 **UART**
 
@@ -254,10 +263,11 @@ The UART interfaces main features are:
 * High-speed TIA/EIA-232-F compatible, up to 2Mbit/s.
 * 8-bits communication with parity and fixed one stop bit.
 
-> \[!NOTE]
->
-> * **UART2 and UART3 are available as ALT functional signals of other signals.**
-> * **Handshake signals (RTS/CTS) can be used by I/Os (SW). No HW control.**
+{% hint style="info" %}
+* **UART2 and UART3 are available as ALT functional signals of other signals.**
+* **Handshake signals (RTS/CTS) can be used by I/Os (SW). No HW control.**
+{% endhint %}
+
 
 **QSPI**
 
@@ -329,7 +339,10 @@ Hailo 15 SOM Power Table:
 | All utilities are active in the same time (Wifi, AI stress, CPU stress, Ethernet)\[stress running for **1 minute**]  | 5V          | 1.52A       | 7.6W      | 98°C                                                   | 72°C                                                 |
 | All utilities are active in the same time (Wifi, AI stress, CPU stress, Ethernet)\[stress running for **3 minutes**] | 5V          | 1.56A       | 7.8W      | 116°C                                                  | 82°C                                                 |
 
-> \[!NOTE] Power and thermal tests were conducted at room temperature. \[\*] AI Stress by running `hailortcli run apps/detection/resources/yolov5m_wo_spp_60p_nv12_640.hef --power-mode ultra_performance`
+{% hint style="info" %}
+Power and thermal tests were conducted at room temperature. \[\*] AI Stress by running `hailortcli run apps/detection/resources/yolov5m_wo_spp_60p_nv12_640.hef --power-mode ultra_performance`
+{% endhint %}
+
 
 #### Reset
 
@@ -337,9 +350,10 @@ The Hilo 15 power is monitored by a voltage supervisor.
 
 A reset can be triggered by an external reset signal (Switch) or the internal power fail. There is a pull-up on the SOM.
 
-> \[!NOTE]
->
-> * **Resetting the SOM doesn’t turn the power rails off including the 1.8V out.**
+{% hint style="info" %}
+* **Resetting the SOM doesn’t turn the power rails off including the 1.8V out.**
+{% endhint %}
+
 
 ## Hailo 15 Integration Manual
 
@@ -376,9 +390,10 @@ The Hailo 15 uses I2C0 interface for its internal configurations.
 | **U16**  | **0P8V Core PWR**  | **0**        | **1**         | **0** | **0** | **0** | **0** | **0** | **0** | **RW** | **40H**  | **Buck control**            |
 | **J2**   | **Leopard Camera** | **0**        |               |       |       |       |       |       |       |        |          | **Check camera datasheet.** |
 
-> \[!NOTE]
->
-> * **I2C0 is available only on the SOM.**
+{% hint style="info" %}
+* **I2C0 is available only on the SOM.**
+{% endhint %}
+
 
 #### GPIO Interfaces
 
@@ -410,7 +425,10 @@ JTAG interface is on the Hailo 15 SOM and is exposed as test pins on components 
 
 ![image-20240407-133729.png](../../../.gitbook/assets/image-20240407-133729.png)
 
-> \[!INFO] **TP-11 ->** JTAG\_TRSTN **TP-7 ->** JTAG\_TDI **TP-8 ->** JTAG\_TMS **TP-9 ->** JTAG\_TCK **TP-10 ->** JTAG\_TDO.
+{% hint style="info" %}
+**TP-11 ->** JTAG\_TRSTN **TP-7 ->** JTAG\_TDI **TP-8 ->** JTAG\_TMS **TP-9 ->** JTAG\_TCK **TP-10 ->** JTAG\_TDO.
+{% endhint %}
+
 
 ## Hailo 15 Typical Power Consumption
 

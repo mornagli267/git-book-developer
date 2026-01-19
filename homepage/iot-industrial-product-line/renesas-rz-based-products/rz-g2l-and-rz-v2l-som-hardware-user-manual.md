@@ -122,7 +122,10 @@ SD0 of the RZG2L/V2L can be configured as an 8-bit eMMC interface or a 4-bit SDI
 
 Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog switch.
 
-> \[!INFO] The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
+{% hint style="info" %}
+The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
+{% endhint %}
+
 
 &#x20;**eMMC**
 
@@ -166,7 +169,10 @@ Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog sw
 * eSPI1/nSS0
 * Can be used as BOOT NVM \*
 
-> \[!CAUTION] **\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
+{% hint style="warning" %}
+**\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
+{% endhint %}
+
 
 #### **10/100/1000 Mbps Ethernet PHY**
 
@@ -227,7 +233,10 @@ The USB’s main features are:
 * DRD (Dual-Role-Device) function (Static switch between Host and Function).
 * Power control signals are not part of the USB module, any available GPIO can be used.
 
-> \[!WARNING] **Note – The voltage on VBUS is 5V.**
+{% hint style="warning" %}
+**Note – The voltage on VBUS is 5V.**
+{% endhint %}
+
 
 #### MIPI CSI
 
@@ -279,7 +288,10 @@ The UART interface's main features are:
 * UART 3 supports TX and RX.
 * Selectable bit rate with an on-chip baud rate generator.
 
-> \[!WARNING] **Note – UART interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note – UART interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### SPI
 
@@ -293,7 +305,10 @@ Up to 3 SPI interfaces. The following figure describes the eSPI interface.
 * Switching of the clock phase of serial transfer.
 * Transfer bit-length is selectable as 8, 16, or 32 bits.
 
-> \[!WARNING] **Note SPI interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note SPI interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### I2C
 
@@ -312,7 +327,10 @@ The I2C main features are:
 * Up to three slave-address settings can be made.
 * Internal time-out function is capable of detecting long-interval stop of the SCL (clock signal).
 
-> \[!WARNING] **Note – I2C interfaces are available as ALT functional signals of other signals.**
+{% hint style="warning" %}
+**Note – I2C interfaces are available as ALT functional signals of other signals.**
+{% endhint %}
+
 
 #### uSD
 
@@ -560,7 +578,10 @@ The PMIC supports a Power ON/OFF\* signal to disable/enable all power signals be
 
 The PMIC supports an RTC that can be powered by a battery (J7-63).
 
-> \[!INFO] **(\*) Note – The PMIC enables the power at Power-Up (No need to push the ON/OFF).**
+{% hint style="info" %}
+**(\*) Note – The PMIC enables the power at Power-Up (No need to push the ON/OFF).**
+{% endhint %}
+
 
 ## RZG2L/V2L INTEGRATION MANUAL
 
@@ -583,7 +604,10 @@ The RZG2L/V2L boost from different NVM or serial interfaces according to externa
 | 0                                           | 1                                          | 1                                          | N/A                                              | SPI Single/Quad/Octal (1.8V) |
 | 1                                           | 0                                          | 1                                          | N/A                                              | SCIF Download                |
 
-> \[!INFO] Note – There are setting resistors on the SOM, but they are not assembled in the default configuration. Setting is done on the carrier board.
+{% hint style="info" %}
+Note – There are setting resistors on the SOM, but they are not assembled in the default configuration. Setting is done on the carrier board.
+{% endhint %}
+
 
 #### I2C INTERFACES
 

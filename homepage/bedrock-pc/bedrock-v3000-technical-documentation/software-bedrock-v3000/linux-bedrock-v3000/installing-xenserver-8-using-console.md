@@ -77,8 +77,10 @@ module2 /boot/vmlinuz console=hvc0 console=tty0 console=ttyS4,115200n8
 ```
 - Wait for the live USB to boot to the installer
 
-> [!INFO]
-> **might take some time for the installer to run, so just give it some time**
+{% hint style="info" %}
+**might take some time for the installer to run, so just give it some time**
+{% endhint %}
+
 
 <a id="live-usb-settings"></a>
 

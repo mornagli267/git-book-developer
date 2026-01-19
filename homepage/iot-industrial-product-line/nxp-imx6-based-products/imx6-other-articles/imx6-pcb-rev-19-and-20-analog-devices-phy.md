@@ -4,7 +4,10 @@ i.MX6 SOM rev 1.9 and 2.0 migrates from Atheros PHY AR8035 to Analog Devices ADI
 
 This article comes to detail the software modifications required to accomodate this hardware change.
 
-> \[!INFO] Please note that using those modifications you will be able to support both the AR8035 and the ADIN1300 phys in the same kernel / u-boot images.
+{% hint style="info" %}
+Please note that using those modifications you will be able to support both the AR8035 and the ADIN1300 phys in the same kernel / u-boot images.
+{% endhint %}
+
 
 ## U-boot
 

@@ -42,6 +42,8 @@
   - After setting the desired VRAM size, save your changes.
   - Exit the BIOS and restart your computer for the changes to take effect
 
-> [!WARNING]
-> **Troubleshooting:**
-> - If your system fails to boot or displays graphics issues after changing VRAM settings, use the BIOS reset button loacted near the console port to reset the BIOS settings to default.
+{% hint style="warning" %}
+**Troubleshooting:**
+- If your system fails to boot or displays graphics issues after changing VRAM settings, use the BIOS reset button loacted near the console port to reset the BIOS settings to default.
+{% endhint %}
+

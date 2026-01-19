@@ -9,7 +9,10 @@
 90W power supply.\
 Requires AC cable C13 ("Kettle lead")
 
-> \[!NOTE] **Ordering code**: SRBD-PSU90
+{% hint style="info" %}
+**Ordering code**: SRBD-PSU90
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238206024.jpg)
 
@@ -31,7 +34,10 @@ Requires AC cable C13 ("Kettle lead")
 Pigtail DC cable for Bedrock.\
 To be used with a 3rd party PSU.
 
-> \[!NOTE] **Ordering code**: SRBD-CABDC
+{% hint style="info" %}
+**Ordering code**: SRBD-CABDC
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/169823820600322.jpg)
 
@@ -41,7 +47,10 @@ To be used with a 3rd party PSU.
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
-> \[!NOTE] **Ordering code**: SRBD-STAND21
+{% hint style="info" %}
+**Ordering code**: SRBD-STAND21
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238205961.jpg)
 
@@ -49,7 +58,10 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-WALL21
+{% hint style="info" %}
+**Ordering code**: SRBD-WALL21
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238205942.jpg)
 
@@ -57,7 +69,10 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-DIN21
+{% hint style="info" %}
+**Ordering code**: SRBD-DIN21
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238205922.jpg)
 
@@ -69,7 +84,10 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 A power button on a wire for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABBTN
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238205904.jpg)
 
@@ -77,7 +95,10 @@ A power button on a wire for turning Bedrock on/off when Bedrock is installed in
 
 A wire harness for soldering custom power button (optionally with LED) for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABNOBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABNOBTN
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/1698238205889.jpg)
 
@@ -86,6 +107,9 @@ A wire harness for soldering custom power button (optionally with LED) for turni
 Console is mini-USB connector with standard USB interface.\
 The mini-USB to USB-A allows connecting to a host PC.
 
-> \[!NOTE] **Ordering code**: SRBD-CABCON
+{% hint style="info" %}
+**Ordering code**: SRBD-CABCON
+{% endhint %}
+
 
 ![](<../../../.gitbook/assets/1698238205873 (1).jpg>)

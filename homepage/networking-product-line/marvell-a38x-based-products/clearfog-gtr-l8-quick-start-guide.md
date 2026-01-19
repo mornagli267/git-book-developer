@@ -32,7 +32,10 @@ The guide will give a technical overview about the product and by the end of it 
 | Dimensions                       | <p>PCBA: 238 x 130mm<br>Enclosure : 253 x 132 x 32mm</p>                                                                                                       |
 | Enclosure                        | Extruded aluminum                                                                                                                                              |
 
-> \[!INFO] (\*) 802.3bt supported only on 4 x RJ45 ports (90W each), 802.3at/af is supported on all 8 ports (30W each).
+{% hint style="info" %}
+(\*) 802.3bt supported only on 4 x RJ45 ports (90W each), 802.3at/af is supported on all 8 ports (30W each).
+{% endhint %}
+
 
 ## Block Diagram
 
@@ -62,10 +65,12 @@ Here is what you will need to power up the board:
 * Micro USB to USB for console, the ClearFog Pro has an onboard FTDI chip.
 * IP router or IP switch
 
-> \[!INFO] The ClearFog GTR L8 has a wide range of 10V-54V input power supplies:
->
-> * 10V – 54V when not enabling PoE PSE
-> * 48V – 54V when enabling PoE PSE
+{% hint style="info" %}
+The ClearFog GTR L8 has a wide range of 10V-54V input power supplies:
+* 10V – 54V when not enabling PoE PSE
+* 48V – 54V when enabling PoE PSE
+{% endhint %}
+
 
 ## Recommended Cables
 
@@ -94,7 +99,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../.gitbook/assets/image-20220118-105955.png)
 
-> \[!TIP] The ClearFog GTR including [U-Boot](https://solid-run-images.sos-de-fra-1.exo.io/A38X/U-Boot/u-boot-clearfog-gtr-mmc.kwb) into eMMC by default. **Note:** Here can find the U-Boot Binaries - [SolidRun Images](https://images.solid-run.com/A38X/U-Boot)
+{% hint style="success" %}
+The ClearFog GTR including [U-Boot](https://solid-run-images.sos-de-fra-1.exo.io/A38X/U-Boot/u-boot-clearfog-gtr-mmc.kwb) into eMMC by default. **Note:** Here can find the U-Boot Binaries - [SolidRun Images](https://images.solid-run.com/A38X/U-Boot)
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from an eMMC card.
 
@@ -116,7 +124,10 @@ xz -dc sr-a38x-debian-buster-20200114.img.xz | dd of=/dev/sdX bs=4k conv=fdatasy
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a USB Disk into your Linux PC, the following assumes that the USB is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a USB Disk into your Linux PC, the following assumes that the USB is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. USB Disk insertion**
 

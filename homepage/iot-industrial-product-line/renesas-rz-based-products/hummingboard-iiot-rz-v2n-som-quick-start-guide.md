@@ -35,7 +35,10 @@ The guide will give a technical overview about the product and by the end of it 
 | **Enclosure**           | Extruded aluminum                                                                                                                                                             |
 |                         | [Buy Now](https://www.solid-run.com/contact-us/)                                                                                                                              |
 
-> \[!INFO] Supported with RZ/V2N SOM. For more detailed information about our SOM RZ/V2N series please visit this user manual : RZ/V2N SOM Hardware User Manual .
+{% hint style="info" %}
+Supported with RZ/V2N SOM. For more detailed information about our SOM RZ/V2N series please visit this user manual : RZ/V2N SOM Hardware User Manual .
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -63,7 +66,10 @@ Print side connector overview of the HummingBoard IIOT & RZ/V2N SOM.
   * **+ (Positive)**: Left terminal (as marked in the image).
   * **- (Negative)**: Right terminal (as marked in the image).
 
-> \[!NOTE] Plug for connector **J1** : 2 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm).
+{% hint style="info" %}
+Plug for connector **J1** : 2 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm).
+{% endhint %}
+
 
 **J5004** {2x RS485, 2x CAN-FD, 2x RS232, DIG\_IN, DIG\_OUT}
 
@@ -71,7 +77,10 @@ Print side connector overview of the HummingBoard IIOT & RZ/V2N SOM.
 
 ![image-20241121-134703.png](<../../../.gitbook/assets/image-20241121-134703 (1).png>)
 
-> \[!NOTE] Plug for connector **J5004** : 20 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm) like [this](https://www.digikey.com/en/products/detail/phoenix-contact/1738885/3606115).
+{% hint style="info" %}
+Plug for connector **J5004** : 20 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm) like [this](https://www.digikey.com/en/products/detail/phoenix-contact/1738885/3606115).
+{% endhint %}
+
 
 ## Software Setup
 
@@ -97,11 +106,13 @@ Before powering up the board for the first time it is recommended to select the 
 | **eMMC**              | **ON**                             | OFF                                | X                                | X                                | OFF                                     | **ON**                                  |
 | **Serial Dowanloder** | **ON**                             | **ON**                             | X                                | X                                | OFF                                     | **ON**                                  |
 
-> \[!INFO] **MDx = BOOT\_MODEx.**\
-> **VDD\_BOOT** can be either **1.8V** or **3.3V** (selectable via **S5\[5]** or **S5\[6]**).
->
-> * **BOOT\_MODE2 = ‘1’** → fixed to **1.8V** at the SOM level
-> * **BOOT\_MODE3** and **BOOT\_MODE4** → fixed to **GND** at the SOM level **Note:** MD1 and MD0 are swapped between **PCB version 1.1** and **PCB version 1.0**.
+{% hint style="info" %}
+**MDx = BOOT\_MODEx.**\
+**VDD\_BOOT** can be either **1.8V** or **3.3V** (selectable via **S5\[5]** or **S5\[6]**).
+* **BOOT\_MODE2 = ‘1’** → fixed to **1.8V** at the SOM level
+* **BOOT\_MODE3** and **BOOT\_MODE4** → fixed to **GND** at the SOM level **Note:** MD1 and MD0 are swapped between **PCB version 1.1** and **PCB version 1.0**.
+{% endhint %}
+
 
 ## Booting from SPI and loading Yocto from uSD card
 
@@ -111,7 +122,10 @@ Here is the correct DIP switch position for SPI boot:
 
 ![image-20251120-125321.png](../../../.gitbook/assets/image-20251120-125321.png)
 
-> \[!INFO] Note: The black rectangle represents the switch position. The unit comes with a pre-programmed bootloader on the SPI NOR flash.
+{% hint style="info" %}
+Note: The black rectangle represents the switch position. The unit comes with a pre-programmed bootloader on the SPI NOR flash.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from an SPI card.
 
@@ -135,7 +149,10 @@ gunzip -dc core-image-weston-rzv2n-evk.rootfs-20251224162903.wic.gz | dd of=/dev
 
 * For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 3. **SD card insertion**
 
@@ -194,7 +211,10 @@ For Windows:
 * **Run the Installer**: Execute the downloaded file. During installation, **select "Complete Installation"** to install all basic plugins.
 * **Set Environment Variables**: To use GStreamer from the command line, add GStreamer to your system's PATH as described [here](https://gstreamer.freedesktop.org/documentation/installing/on-windows.html?gi-language=c).
 
-> \[!INFO] For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% hint style="info" %}
+For Windows, you might need to configure the Firewall to allow the stream. Make sure that `10.0.0.2` is a private network.
+{% endhint %}
+
 
 ### **3. Verifying Webcam Detection on RZ/V2N (Yocto)**
 
@@ -224,15 +244,14 @@ Expected:
 /dev/video0
 ```
 
-> \[!NOTE]
->
-> #### **If no /dev/video0 found**
->
-> Enable UVC driver:
->
-> ```
-> modprobe uvcvideo
-> ```
+{% hint style="info" %}
+#### **If no /dev/video0 found**
+Enable UVC driver:
+```
+modprobe uvcvideo
+```
+{% endhint %}
+
 
 #### **Check supported formats**
 

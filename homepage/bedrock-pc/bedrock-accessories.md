@@ -6,7 +6,10 @@
 
 ### Full evaluation kit for Bedrock V3000 Basic
 
-> \[!INFO] The recommended kit for evaluating Bedrock V3000 Basic.
+{% hint style="info" %}
+The recommended kit for evaluating Bedrock V3000 Basic.
+{% endhint %}
+
 
 The kit includes:
 
@@ -23,7 +26,10 @@ The kit includes:
 | ![](../../.gitbook/assets/0e6593fd-7423-4204-83ff-eecb6f08d8d2#media-blob-url=true\&id=3dbfdde9-fa49-4f40-8921-03545cddaeeb\&collection=contentId-492437517\&contextId=492994561\&height=1846\&width=4000\&alt=) | ![](../../.gitbook/assets/image-20231217-112111.png) | ![](../../.gitbook/assets/image-20231217-111810.png) |
 | ![](../../.gitbook/assets/image-20231217-112338.png)                                                                                                                                                             | ![](../../.gitbook/assets/image-20231217-112519.png) | ![](../../.gitbook/assets/1698238205873.jpg)         |
 
-> \[!NOTE] **Ordering code**: SRBD-V3BEVAL
+{% hint style="info" %}
+**Ordering code**: SRBD-V3BEVAL
+{% endhint %}
+
 
 ### Minimal evaluation kit for Bedrock
 
@@ -38,7 +44,10 @@ The kit includes:
 
 ![](../../.gitbook/assets/image-20231217-111810.png)
 
-> \[!NOTE] **Ordering code**: SRBD-EVMIN
+{% hint style="info" %}
+**Ordering code**: SRBD-EVMIN
+{% endhint %}
+
 
 ### M.2 display adapter
 
@@ -46,15 +55,21 @@ The kit includes:
 
 Turns the headless Bedrock V3000 into a development board with a display. Simplifies initial setup and OS installation.
 
-> \[!INFO] Requires Bedrock with SX-4M2 (option SX:4M2).\
-> Requires working with an open-chassis Bedrock. Suitable for bring-up only. Not suitable for field deployment.
+{% hint style="info" %}
+Requires Bedrock with SX-4M2 (option SX:4M2).\
+Requires working with an open-chassis Bedrock. Suitable for bring-up only. Not suitable for field deployment.
+{% endhint %}
+
 
 The kit includes:
 
 * M.2 display adapter (SM768)
 * HDMI cable
 
-> \[!NOTE] **Ordering code**: SRBD-M2DISP
+{% hint style="info" %}
+**Ordering code**: SRBD-M2DISP
+{% endhint %}
+
 
 ## Power
 
@@ -63,7 +78,10 @@ The kit includes:
 90W power supply.\
 Requires AC cable C13 ("Kettle lead")
 
-> \[!NOTE] **Ordering code**: SRBD-PSU90
+{% hint style="info" %}
+**Ordering code**: SRBD-PSU90
+{% endhint %}
+
 
 ### US | EU | UK | AU AC Cable
 
@@ -81,7 +99,10 @@ Requires AC cable C13 ("Kettle lead")
 Pigtail DC cable for Bedrock.\
 To be used with a 3rd party PSU.
 
-> \[!NOTE] **Ordering code**: SRBD-CABDC
+{% hint style="info" %}
+**Ordering code**: SRBD-CABDC
+{% endhint %}
+
 
 ## Mounting
 
@@ -89,19 +110,28 @@ To be used with a 3rd party PSU.
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
-> \[!NOTE] **Ordering code**: SRBD-STAND21
+{% hint style="info" %}
+**Ordering code**: SRBD-STAND21
+{% endhint %}
+
 
 ### Wall mounting bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-WALL21
+{% hint style="info" %}
+**Ordering code**: SRBD-WALL21
+{% endhint %}
+
 
 ### DIN Rail bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-DIN21
+{% hint style="info" %}
+**Ordering code**: SRBD-DIN21
+{% endhint %}
+
 
 ## Cable accessories
 
@@ -111,20 +141,29 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 A power button on a wire for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABBTN
+{% endhint %}
+
 
 #### Harness for custom remote power button
 
 A wire harness for soldering custom power button (optionally with LED) for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABNOBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABNOBTN
+{% endhint %}
+
 
 ### Console mini-USB to USB-A
 
 Console is mini-USB connector with standard USB interface.\
 The mini-USB to USB-A allows connecting to a host PC.
 
-> \[!NOTE] **Ordering code**: SRBD-CABCON
+{% hint style="info" %}
+**Ordering code**: SRBD-CABCON
+{% endhint %}
+
 
 ![](../../.gitbook/assets/1698238205873.jpg)
 
@@ -134,16 +173,25 @@ The mini-USB to USB-A allows connecting to a host PC.
 
 SFP Module - direct attached cable
 
-> \[!NOTE] **Ordering code**: SRBD-SFPDAC
+{% hint style="info" %}
+**Ordering code**: SRBD-SFPDAC
+{% endhint %}
+
 
 ### SFP+ Module Copper
 
 SFP+ module with RJ45
 
-> \[!NOTE] **Ordering code**: SRBD-SFP10GBT
+{% hint style="info" %}
+**Ordering code**: SRBD-SFP10GBT
+{% endhint %}
+
 
 ### SFP+ Module Fiber
 
 SFP Module for Fibre Optics cable
 
-> \[!NOTE] **Ordering code**: SRBD-SFPOPT
+{% hint style="info" %}
+**Ordering code**: SRBD-SFPOPT
+{% endhint %}
+

@@ -35,7 +35,10 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure                        | ABS Plastic                                                                                 |
 |                                  | [Buy Now](https://shop.solid-run.com/?s=CuBox+M\&post_type=product)                         |
 
-> \[!INFO] Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](imx8m-plus-som-hardware-user-manual.md) .
+{% hint style="info" %}
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](imx8m-plus-som-hardware-user-manual.md) .
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -57,7 +60,10 @@ The following figure describes the i.MX8M-PLUS Block Diagram.
 * Linux or Windows PC
 * Router or switch with Ethernet cable
 
-> \[!WARNING] Note that using an adaptor with an output voltage which is higher than 12V will damage your device and possibly other connected USB devices.
+{% hint style="warning" %}
+Note that using an adaptor with an output voltage which is higher than 12V will damage your device and possibly other connected USB devices.
+{% endhint %}
+
 
 ## Booting form an SD card
 
@@ -81,7 +87,10 @@ xz -dc imx8mp-sdhc-debian-87b97f9.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -133,7 +142,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -170,7 +182,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 

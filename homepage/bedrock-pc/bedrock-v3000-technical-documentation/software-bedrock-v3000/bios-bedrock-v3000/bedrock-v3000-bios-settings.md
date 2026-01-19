@@ -154,8 +154,11 @@ Debug Port Table Configuration
 
 Option ROM Dispatch Policy
 
-> \[!WARNING] **WARNING**:\
-> Changing Device(s) Option ROM dispatch policy may affect system’s ability to post and/or boot!
+{% hint style="warning" %}
+**WARNING**:\
+Changing Device(s) Option ROM dispatch policy may affect system’s ability to post and/or boot!
+{% endhint %}
+
 
 * Restore if Failure: Disabled / Enabled (if enabled and system fails to boot it will restore this and CSM screens settings to default)
 * Primary Video Ignore: Disabled / Enabled
@@ -170,8 +173,11 @@ Option ROM Dispatch Policy
 
 PCI Subsystem Settings
 
-> \[!WARNING] **WARNING**:\
-> Changing PCIE Device(s) settings may have unwanted side effects! System may HANG!
+{% hint style="warning" %}
+**WARNING**:\
+Changing PCIE Device(s) settings may have unwanted side effects! System may HANG!
+{% endhint %}
+
 
 * Above 4G Decoding: Disabled / Enabled
 * Re-Size BAR Support: Disabled / Enabled

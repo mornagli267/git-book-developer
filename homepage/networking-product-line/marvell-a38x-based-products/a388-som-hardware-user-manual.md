@@ -33,10 +33,12 @@ The A388 SOM has one global ground domain, four power input domains and one powe
 | B2B V RTC     |                      | 3.0V – 3.3V | \~0w      | Recommend to use two diodes to connect to backup battery and to B2B V 3V3                  |
 | B2B V 1V8 VHV |                      | 1.8V        | \~0w      | Connect to B2B V 1V8 to enable programming internal fuses. Otherwise keep floating.        |
 
-> \[!NOTE] **Notes:**
->
-> 1. Power consumption of 7.5W on B2B V MAIN domain assuming all devices are assembled and all functions are operating at full utilization.
-> 2. The A388 SOM has one B2B V 1V8 output power domain which is used to power the High Speed SERDES PHYs as well as the GigE PHY. In addition to those loads, the B2B 1V8 source can provide additional 0.5A to loads on carrier board.
+{% hint style="info" %}
+**Notes:**
+1. Power consumption of 7.5W on B2B V MAIN domain assuming all devices are assembled and all functions are operating at full utilization.
+2. The A388 SOM has one B2B V 1V8 output power domain which is used to power the High Speed SERDES PHYs as well as the GigE PHY. In addition to those loads, the B2B 1V8 source can provide additional 0.5A to loads on carrier board.
+{% endhint %}
+
 
 In addition to the power domain signals, there are other signals which are used for power management and power-up/down sequencing:
 
@@ -131,7 +133,10 @@ A GigE PHY {Marvell 88E1512) is integrated into the A388 SOM and is connected to
 | B2B GE1 LED1 K | B2B V 1V8 | 510 O series resistor | Drive low on link. Blink on activity.1            |
 | B2B GE1 LED2 K | B2B V 1V8 | 510 O series resistor | Drive low on 1000Mbps link1                       |
 
-> \[!INFO] **Note** Based on default PHY device driver programming of PHY configuration registers.
+{% hint style="info" %}
+**Note** Based on default PHY device driver programming of PHY configuration registers.
+{% endhint %}
+
 
 Following is one way of connecting the B2B GE1 LEDx K signals to the actual LED devices. Notice that the LED devices must have a high enough Vf {Forward voltage) to ensure no light is emitted when the B2B GE1 LEDx K signals are high {approximately 1.8v).
 

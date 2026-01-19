@@ -153,13 +153,15 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libhailort.so.<version> /usr/lib/libhailort
 sudo ln -s /usr/lib/x86_64-linux-gnu/libgsthailo.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsthailo.so
 ```
 
-> \[!NOTE] Ubuntu 23.04 requires to change pybind version from 2.9 to 2.10 in:\
-> hailo-ai/tappas/scripts/build\_scripts/clone\_external\_packages.sh\
-> To change version, use this command from tappas source directory:
->
-> ```
-> sed -i 's|v2.9.0 https://github.com/pybind/pybind11.git|v2.10.0 https://github.com/pybind/pybind11.git -b v2.10.0|' scripts/build_scripts/clone_external_packages.sh
-> ```
+{% hint style="info" %}
+Ubuntu 23.04 requires to change pybind version from 2.9 to 2.10 in:\
+hailo-ai/tappas/scripts/build\_scripts/clone\_external\_packages.sh\
+To change version, use this command from tappas source directory:
+```
+sed -i 's|v2.9.0 https://github.com/pybind/pybind11.git|v2.10.0 https://github.com/pybind/pybind11.git -b v2.10.0|' scripts/build_scripts/clone_external_packages.sh
+```
+{% endhint %}
+
 
 **Install**
 
@@ -194,7 +196,10 @@ To resume the image after exiting you can use
 
 ### Testing using hailortcli benchmark
 
-> \[!INFO] Running hailortcli requires the use of sudo
+{% hint style="info" %}
+Running hailortcli requires the use of sudo
+{% endhint %}
+
 
 To test we will benchmark the models:
 
@@ -230,4 +235,7 @@ Device 0000:01:00.0:
 
 ```
 
-> \[!NOTE] Numbers might be somewhat unrealistic since we are running a benchmark in a console environment without actual image processing calculations, hence the high FPS, etc…
+{% hint style="info" %}
+Numbers might be somewhat unrealistic since we are running a benchmark in a console environment without actual image processing calculations, hence the high FPS, etc…
+{% endhint %}
+

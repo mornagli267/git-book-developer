@@ -46,7 +46,10 @@ Configure the boot-mode for microSD using onboard DIP switches S3 & S4:
 | eMMC            | 1              | 0              | 0              | 0                       |
 | Serial Download | 1              | 0              | 1              | X                       |
 
-> \[!INFO] **Note:** 0 = OFF, 1 = ON, X = don't care.
+{% hint style="info" %}
+**Note:** 0 = OFF, 1 = ON, X = don't care.
+{% endhint %}
+
 
 ### Console
 
@@ -70,7 +73,10 @@ Note that the serial device only appears after powering up the board. On first u
 2. uncompress downloaded image file
 3. write image file to microSD card to create a byte-for-byte copy. [https://etcher.io/](https://etcher.io/) is recommended, professionals may use unix “dd” command.
 
-> \[!NOTE] **Attention:** The SoM modules and carrier boards are programmed with critical identifying information, including the product name and SKU, stored in an EEPROMs at I2C bus 0, addresses 0x50 and 0x57. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data. **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support for assistance.
+{% hint style="info" %}
+**Attention:** The SoM modules and carrier boards are programmed with critical identifying information, including the product name and SKU, stored in an EEPROMs at I2C bus 0, addresses 0x50 and 0x57. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data. **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support for assistance.
+{% endhint %}
+
 
 ## First Steps with Buildroot reference system
 

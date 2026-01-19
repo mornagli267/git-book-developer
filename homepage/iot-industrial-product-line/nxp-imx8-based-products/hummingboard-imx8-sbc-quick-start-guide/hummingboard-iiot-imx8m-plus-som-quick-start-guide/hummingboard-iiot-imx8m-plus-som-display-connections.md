@@ -21,9 +21,15 @@ Instructions are provided below for particular supported panels.
 * Winstar WF70A8SYJHLNGA (LVDS):\
   `imx8mp-hummingboard-iiot-panel-lvds-WF70A8SYJHLNGA.dtso`
 
-> \[!NOTE] **Note:** The DSI panel is sold part of “HummingBoard i.MX8M IIOT” Evaluation Kits, for separate availability contact [sales@solid-run.com](mailto:sales@solid-run.com).
+{% hint style="info" %}
+**Note:** The DSI panel is sold part of “HummingBoard i.MX8M IIOT” Evaluation Kits, for separate availability contact [sales@solid-run.com](mailto:sales@solid-run.com).
+{% endhint %}
 
-> \[!NOTE] **Note:** Using both DSI and LVDS panels at the same time leads to various software issues and is not recommended.
+
+{% hint style="info" %}
+**Note:** Using both DSI and LVDS panels at the same time leads to various software issues and is not recommended.
+{% endhint %}
+
 
 ## Enable Panel in Software
 
@@ -40,9 +46,15 @@ label Yocto
 append root=PARTUUID=076c4a2a-02 rootwait
 ```
 
-> \[!NOTE] **Note:** Note the FDTOVERLAYS line can be extended with additional overlays e.g. for adding cameras.
+{% hint style="info" %}
+**Note:** Note the FDTOVERLAYS line can be extended with additional overlays e.g. for adding cameras.
+{% endhint %}
 
-> \[!NOTE] **Note:** Enabling both DSI and LVDS panel overlays at the same time leads to various software issues and is not recommended.
+
+{% hint style="info" %}
+**Note:** Enabling both DSI and LVDS panel overlays at the same time leads to various software issues and is not recommended.
+{% endhint %}
+
 
 For editing on device can use `nano` text editor:
 
@@ -64,7 +76,10 @@ LVDS panel is connected to J25 on the HB-IIoT (same side of PCB as SoM and M.2 c
 
 ![imx8mp-hb-iiot-dsi-panel.jpg](../../../../../.gitbook/assets/imx8mp-hb-iiot-dsi-panel.jpg)
 
-> \[!NOTE] **Note:** Ensure cable is connected exactly as shown in the picture, wrong orientation may damage the panel.
+{% hint style="info" %}
+**Note:** Ensure cable is connected exactly as shown in the picture, wrong orientation may damage the panel.
+{% endhint %}
+
 
 ### Winstar WF70A8SYJHLNGA (LVDS)
 
@@ -72,4 +87,7 @@ LVDS panel is connected to J24 on the HB-IIoT (same side of PCB as USB and Ether
 
 ![HummingBoard IIoT connected LVDS.png](<../../../../../.gitbook/assets/HummingBoard IIoT connected LVDS.png>)
 
-> \[!NOTE] **Note:** Ensure cable is connected exactly as shown in the picture, wrong orientation may damage the panel.
+{% hint style="info" %}
+**Note:** Ensure cable is connected exactly as shown in the picture, wrong orientation may damage the panel.
+{% endhint %}
+

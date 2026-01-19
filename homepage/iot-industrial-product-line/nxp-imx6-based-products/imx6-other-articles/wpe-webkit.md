@@ -28,8 +28,10 @@ git clone --branch sumo https://github.com/Freescale/meta-freescale-distro.git
 git clone --branch master https://github.com/Igalia/meta-webkit.git
 ```
 
-> [!INFO]
-> This list refers to a fork of meta-solidrun-arm-imx6 adding support for the sumo release. Double-Check if upstream [meta-solidrun-arm-imx6](https://github.com/SolidRun/meta-solidrun-arm-imx6.git) has meanwhile added a sumo branch!
+{% hint style="info" %}
+This list refers to a fork of meta-solidrun-arm-imx6 adding support for the sumo release. Double-Check if upstream [meta-solidrun-arm-imx6](https://github.com/SolidRun/meta-solidrun-arm-imx6.git) has meanwhile added a sumo branch!
+{% endhint %}
+
 
 <a id="configure"></a>
 

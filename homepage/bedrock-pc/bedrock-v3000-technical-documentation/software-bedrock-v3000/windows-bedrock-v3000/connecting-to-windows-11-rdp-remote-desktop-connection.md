@@ -20,7 +20,10 @@ This document describesthe RDP connection process on Bedrock V3000.
 
 ### Identifying Bedrock IP on your LAN
 
-> \[!INFO] For easier identifrication you can check the label on the back side of the Bedrock to check the mac units addresses.
+{% hint style="info" %}
+For easier identifrication you can check the label on the back side of the Bedrock to check the mac units addresses.
+{% endhint %}
+
 
 #### Method 1
 
@@ -55,8 +58,11 @@ DESKTOP-S57BJI2.lan (192.168.17.182) at d0:63:b4:05:b3:63 [ether] on enxb04f13d1
 
 ### Connecting to RDP
 
-> \[!NOTE] **Default credentials:** Username: bedrock\
-> password: root
+{% hint style="info" %}
+**Default credentials:** Username: bedrock\
+password: root
+{% endhint %}
+
 
 #### Windows
 
@@ -93,5 +99,8 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 * Enter the username and password
 * Click save and connect
 
-> \[!INFO] Note:\
-> You can also cnhange the connection connection name in the upper part. You can also share a folder with the windows machine you are connecting to.
+{% hint style="info" %}
+Note:\
+You can also cnhange the connection connection name in the upper part. You can also share a folder with the windows machine you are connecting to.
+{% endhint %}
+

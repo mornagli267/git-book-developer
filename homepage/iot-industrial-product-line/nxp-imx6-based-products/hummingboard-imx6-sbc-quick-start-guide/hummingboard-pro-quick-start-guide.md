@@ -42,11 +42,17 @@ The guide will give a technical overview about the product and by the end of it 
 | **Power**            | 5V, uUSB                              |
 | **Environment**      | No enclosure                          |
 
-> \[!INFO] Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466).
+{% hint style="info" %}
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466).
+{% endhint %}
 
-> \[!NOTE] **Please Note** (\*) RAM type and speed dependent on SOM\
-> (\*\*) Supported with SOM i.MX6 Dual and above\
-> (\*\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
+
+{% hint style="info" %}
+**Please Note** (\*) RAM type and speed dependent on SOM\
+(\*\*) Supported with SOM i.MX6 Dual and above\
+(\*\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
+{% endhint %}
+
 
 #### **Block Diagram**
 
@@ -98,7 +104,10 @@ gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=f
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -151,7 +160,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -188,7 +200,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 
@@ -258,11 +273,17 @@ Pin 1 3.3V\
 Pin 8 buffered i.MX6 UART TX – pulled up to 3.3v\
 Pin 10 buffered i.MX6 UART RX – pulled up to 3.3v
 
-> \[!NOTE] Notice that the pin number starts as pin #1 on the edge of the board, then number #2 is the one towards the corner of the board.
+{% hint style="info" %}
+Notice that the pin number starts as pin #1 on the edge of the board, then number #2 is the one towards the corner of the board.
+{% endhint %}
+
 
 #### Install GUI Support
 
-> \[!INFO] Note that HDMI doesn’t display anything by default.
+{% hint style="info" %}
+Note that HDMI doesn’t display anything by default.
+{% endhint %}
+
 
 **Wayland**
 
@@ -276,7 +297,10 @@ Pin 10 buffered i.MX6 UART RX – pulled up to 3.3v
 
 ![](../../../../.gitbook/assets/IMG-6928-20211014-134838.jpg)
 
-> \[!NOTE] By default one application is available, the terminal emulator, at the upper left corner.
+{% hint style="info" %}
+By default one application is available, the terminal emulator, at the upper left corner.
+{% endhint %}
+
 
 2\. Start weston FROM A PHYSICAL TERMINAL (from the above terminal, not remote or serial session):
 
@@ -284,7 +308,10 @@ Pin 10 buffered i.MX6 UART RX – pulled up to 3.3v
   weston-launch -- --backend=drm-backend.so
 ```
 
-> \[!WARNING] Make sure to run the above without sudo.
+{% hint style="warning" %}
+Make sure to run the above without sudo.
+{% endhint %}
+
 
 This will bring up the following:
 

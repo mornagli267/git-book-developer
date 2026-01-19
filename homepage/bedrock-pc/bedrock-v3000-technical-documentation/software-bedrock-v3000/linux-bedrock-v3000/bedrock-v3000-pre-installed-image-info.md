@@ -31,8 +31,10 @@ Please verify the MD5 checksum after downloading to ensure the file has not been
 - **Download Link**  
 **Temporarily unavailable**
 
-> [!INFO]
-> Early Bedrock V3000 samples shipped before 06-Sep-2023 have Ubuntu server 22.04 without the AMD kernel, it is recommended to upgrade to the newer version.
+{% hint style="info" %}
+Early Bedrock V3000 samples shipped before 06-Sep-2023 have Ubuntu server 22.04 without the AMD kernel, it is recommended to upgrade to the newer version.
+{% endhint %}
+
 
 <a id="how-to-verify-md5-checksums"></a>
 

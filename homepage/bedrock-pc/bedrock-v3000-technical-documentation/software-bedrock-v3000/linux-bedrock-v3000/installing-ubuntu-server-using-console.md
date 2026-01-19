@@ -76,8 +76,10 @@ linux /casper/vmlinuz console=tty1 console=ttyS4,115200n8 systemd.wants=serial-g
 ```
 - Wait for the live USB to boot
 
-> [!INFO]
-> **might take some time for the installer to run, so just give it some time**
+{% hint style="info" %}
+**might take some time for the installer to run, so just give it some time**
+{% endhint %}
+
 
 <a id="live-usb-settings"></a>
 
@@ -96,8 +98,10 @@ linux /casper/vmlinuz console=tty1 console=ttyS4,115200n8 systemd.wants=serial-g
 
 ## Enable ttyS4 service
 
-> [!INFO]
-> On Ubuntu 24+ this step is not required, installer does this on its own.
+{% hint style="info" %}
+On Ubuntu 24+ this step is not required, installer does this on its own.
+{% endhint %}
+
 
 Enable the ttyS4 console to be able to interact with the system.
 

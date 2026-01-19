@@ -1,14 +1,18 @@
 # Yocto for i.MX6
 
-> [!WARNING]
-> Documentation for SolidRun Yocto Releases has been moved to the [SolidRun GitHub](https://github.com/SolidRun/meta-solidrun-arm-imx6/tree/develop).
+{% hint style="warning" %}
+Documentation for SolidRun Yocto Releases has been moved to the [SolidRun GitHub](https://github.com/SolidRun/meta-solidrun-arm-imx6/tree/develop).
+{% endhint %}
+
 
 <a id="yocto-for-imx6-31-and-earlier"></a>
 
 # Yocto for i.MX6 (3.1 and earlier)
 
-> [!WARNING]
-> The documentation below is covers unmaintained versions of Yocto, please upgrade to 4.0 or later under the link above.
+{% hint style="warning" %}
+The documentation below is covers unmaintained versions of Yocto, please upgrade to 4.0 or later under the link above.
+{% endhint %}
+
 
 <a id="description"></a>
 

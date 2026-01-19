@@ -42,7 +42,10 @@ Each section of this manual provides detailed information and technical specific
 
 ![image-20240523-104242.png](../../.gitbook/assets/image-20240523-104242.png)
 
-> \[!NOTE] Please note that Port 9 (Lanes: 17-20) are used for the SoM’s Internal NVME.
+{% hint style="info" %}
+Please note that Port 9 (Lanes: 17-20) are used for the SoM’s Internal NVME.
+{% endhint %}
+
 
 Feature Summary:
 
@@ -304,13 +307,19 @@ The tests outlined in the table above were conducted while the system was runnin
 | 80000                    | 80000                        | 80000                               | 80000                                                           | [78.3](https://drive.google.com/file/d/1g3dyy5c2ZNryTH-cI2v58KTu9AbWRPEt/view?usp=sharing) |                                                                                            |
 | 90000                    | 90000                        | 90000                               | 90000                                                           | [78.6](https://drive.google.com/file/d/1g4Ml3iRr8IPlix3-W7jV-sMqgiIoeCX8/view?usp=sharing) |                                                                                            |
 
-> \[!NOTE] Note: the measurements were performed with 19V input voltage.
+{% hint style="info" %}
+Note: the measurements were performed with 19V input voltage.
+{% endhint %}
+
 
 ## **Power Input**
 
 The recommended input range for the SoM is 12V-24V.
 
-> \[!WARNING] Note: there is no reverse polarity protection on the SoM, please be careful not to confuse between the “+” and “-” signs. (**Red is Positive “+”**, **Black is Negative “-”**)
+{% hint style="warning" %}
+Note: there is no reverse polarity protection on the SoM, please be careful not to confuse between the “+” and “-” signs. (**Red is Positive “+”**, **Black is Negative “-”**)
+{% endhint %}
+
 
 ![](../../.gitbook/assets/0RMlhOtSRfdf6sYgznDfNW8KbIKu-vGoG9YKoVizeQ7d1LjR4kq3HED-OB8BCpMVnxkVBfZJGZPmCBWpiGi_qQC4qE8NLQc81Ku5AqJLHfH_eFjUgjF3tqsrxv1LTWdJb_K0AuLgAIDiO2ifUYE0V6I)
 

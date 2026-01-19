@@ -32,8 +32,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 $ ifconfig wlan0 up 
 ```
 
-> [!NOTE]
-> To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2. Install the wpa\_supplicant package:
 
@@ -69,8 +71,10 @@ EOF
 
 ```
 
-> [!NOTE]
-> Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5. Make sure it works:
 
@@ -195,8 +199,10 @@ reboot
 weston
 ```
 
-> [!NOTE]
-> Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
+{% hint style="info" %}
+Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
+{% endhint %}
+
 
 For working with **GNOME** GUI on top of Xorg:
 

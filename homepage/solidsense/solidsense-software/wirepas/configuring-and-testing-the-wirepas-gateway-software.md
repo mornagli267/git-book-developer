@@ -1,6 +1,9 @@
 # Configuring and testing the Wirepas gateway software
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software. [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi (documentation page)
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software. [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi (documentation page)
+{% endhint %}
+
 
 ## Prerequisite and installation
 
@@ -146,7 +149,10 @@ Open the Kura web interface and go the Wirepas Sink Configuration menu
 
 On this page you need to configure the Wirepas network parameter for each sink: The Network ID (in decimal) and channel number. After applying the changes, the wirepas sink services are updated with the new parameters. Each sink is to be configured separately and the Web interface does not record the configuration for each sink. Only the visible parameters are stored.
 
-> \[!WARNING] **Warning: the value displayed are the one stored in the Kura database and do not reflect the actual values in the sinks**
+{% hint style="warning" %}
+**Warning: the value displayed are the one stored in the Kura database and do not reflect the actual values in the sinks**
+{% endhint %}
+
 
 ## Configuring the sink service with Kura SolidSense V2.0
 
@@ -181,7 +187,10 @@ Each MQTT transport has the following configuration items
 * **Maximum buffered packets and maximum delay without publish: these parameters control the “black hole” mechanism. If they are non zero the “black hole” feature is enabled, meaning that when the MQTT connection is cut if one of the limit is crossed htne the sink cost is raise to maximum, so the gateway is not taking any messages from the Wirepas network**
 * Expert mode is used to pass any parameter not defined with a field on the page. Syntax is YAML like,with one parameter per line.
 
-> \[!WARNING] **Note:** if a specific certificate is needed for TLS communication with the MQTT broker, then that certificate must be configured on the gateway. The procedure is explained [here](https://developer.solid-run.com/knowledge-base/gateway-secure-communication-and-vpn/)
+{% hint style="warning" %}
+**Note:** if a specific certificate is needed for TLS communication with the MQTT broker, then that certificate must be configured on the gateway. The procedure is explained [here](https://developer.solid-run.com/knowledge-base/gateway-secure-communication-and-vpn/)
+{% endhint %}
+
 
 After applying the changes all enabled data transport are started or restarted and the gateway should be operational.
 
@@ -387,7 +396,10 @@ solidsense@BS184300123:~$ sudo journalctl -u wirepasSink1
 Aug 04 19:28:02 BS184300123 systemd[1]: Started Wirepas sink manager for sink connected to /dev/ttymxc1.
 ```
 
-> \[!WARNING] **Please Note** The Wirepas sinks are managed by 2 linux services: wirepasSink1 wirepasSink2
+{% hint style="warning" %}
+**Please Note** The Wirepas sinks are managed by 2 linux services: wirepasSink1 wirepasSink2
+{% endhint %}
+
 
 If one of the Sink is not flashed with Wirepas or not used you can disable the service by using the following command:
 

@@ -44,7 +44,10 @@ Setting GPIO using gpiod:
 gpioset -m wait gpiochip0 362=1
 ```
 
-> \[!INFO] Note: after exit, the gpioset utility will reset GPIO to its default state (input hi-z); for more info, read about [gpioset modes](https://manpages.debian.org/bookworm/gpiod/gpioset.1.en.html).
+{% hint style="info" %}
+Note: after exit, the gpioset utility will reset GPIO to its default state (input hi-z); for more info, read about [gpioset modes](https://manpages.debian.org/bookworm/gpiod/gpioset.1.en.html).
+{% endhint %}
+
 
 Reading GPIO using gpiod:
 
@@ -71,10 +74,13 @@ echo out > /sys/class/gpio/P45_2/direction
 echo 1 > /sys/class/gpio/P45_2/value 
 ```
 
-> \[!NOTE] The GPIO number can be calculated using the function below:\
-> **XX** = Linux gpio number = \<GPIO\_controll\_base> + \<GPIO\_Bank> \* 8 + \<GPIO\_Bit>\
-> → **XX =** 120 + \<GPIO\_Bank> \* 8 + \<gpio\_bit> **Example:** To calculate the GPIO number of mikroBus J8 \[pin 2] (RST)\
-> **Pad Name:** P45\_2 → {**GPIO\_Bank**= 45; **GPIO\_Bit** = 2} **XX** = 120 + ( 45) \* 8 + 2 = 120 + 362 = 482
+{% hint style="info" %}
+The GPIO number can be calculated using the function below:\
+**XX** = Linux gpio number = \<GPIO\_controll\_base> + \<GPIO\_Bank> \* 8 + \<GPIO\_Bit>\
+→ **XX =** 120 + \<GPIO\_Bank> \* 8 + \<gpio\_bit> **Example:** To calculate the GPIO number of mikroBus J8 \[pin 2] (RST)\
+**Pad Name:** P45\_2 → {**GPIO\_Bank**= 45; **GPIO\_Bit** = 2} **XX** = 120 + ( 45) \* 8 + 2 = 120 + 362 = 482
+{% endhint %}
+
 
 ## UART
 
@@ -113,9 +119,15 @@ Basic CAN usage:
 # candump can0
 ```
 
-> \[!INFO] Note: this CANFD controller supports a nominal bit rate: max. 1Mbps, data bit rate: max. 4Mbps
+{% hint style="info" %}
+Note: this CANFD controller supports a nominal bit rate: max. 1Mbps, data bit rate: max. 4Mbps
+{% endhint %}
 
-> \[!CAUTION] For the electrical connection, a CANFD transceiver should be used. Do not connect the RX/TX pins to the CAN\_H/CAN\_L lines directly; this will damage the SOM.
+
+{% hint style="warning" %}
+For the electrical connection, a CANFD transceiver should be used. Do not connect the RX/TX pins to the CAN\_H/CAN\_L lines directly; this will damage the SOM.
+{% endhint %}
+
 
 ## I2C
 
@@ -136,7 +148,10 @@ $ i2cdetect -y 0
 70: -- -- -- -- -- -- -- --       
 ```
 
-> \[!WARNING] Note: The I2C0 bus is used for many devices on the board. Be careful connecting to this pin something that can fault the I2C bus.
+{% hint style="warning" %}
+Note: The I2C0 bus is used for many devices on the board. Be careful connecting to this pin something that can fault the I2C bus.
+{% endhint %}
+
 
 Options to control the device:
 

@@ -44,7 +44,10 @@ Tools required for this task:
 
 7\. When the application opens, you should receive a query regarding Memory Type Ambiguity. Please select MX25U6435F
 
-> \[!WARNING] **Please Note:** The programmer must drive 1.8v signals; otherwise the main processor might get damaged
+{% hint style="warning" %}
+**Please Note:** The programmer must drive 1.8v signals; otherwise the main processor might get damaged
+{% endhint %}
+
 
 ![](../../../.gitbook/assets/image-20220418-153305.png)
 

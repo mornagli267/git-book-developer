@@ -1,8 +1,10 @@
 # A388 Kernel
 
-> [!WARNING]
-> **Please Note**
-> This article contains outdated information and A388 support is linux kernel mainlined.
+{% hint style="warning" %}
+**Please Note**
+This article contains outdated information and A388 support is linux kernel mainlined.
+{% endhint %}
+
 
 <a id="description"></a>
 
@@ -32,8 +34,10 @@ To build the kernel perform the following on a Linux PC –
 - \# optionally modify the default configuration
 - make zImage dtbs modules
 
-> [!WARNING]
-> The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd!
+{% hint style="warning" %}
+The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd!
+{% endhint %}
+
 
 <a id="build-instructions-310y-legacy"></a>
 
@@ -48,8 +52,10 @@ To build the kernel perform the following on a Linux PC –
 - \# optionally modify the default configuration
 - make zImage dtbs modules
 
-> [!WARNING]
-> The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd!
+{% hint style="warning" %}
+The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd!
+{% endhint %}
+
 
 If extended kernel features is requested to be included by the build then you can replace
 
@@ -82,5 +88,7 @@ CONFIG_PROC_FS=y
 CONFIG_SYSFS=y
 ```
 
-> [!TIP]
-> For additional information on systemd requirements, inlcuding where exactly to find these options, see this helpful wiki page of the Gentoo project: [https://wiki.gentoo.org/wiki/Systemd#Kernel](https://wiki.gentoo.org/wiki/Systemd#kernel)
+{% hint style="success" %}
+For additional information on systemd requirements, inlcuding where exactly to find these options, see this helpful wiki page of the Gentoo project: [https://wiki.gentoo.org/wiki/Systemd#Kernel](https://wiki.gentoo.org/wiki/Systemd#kernel)
+{% endhint %}
+

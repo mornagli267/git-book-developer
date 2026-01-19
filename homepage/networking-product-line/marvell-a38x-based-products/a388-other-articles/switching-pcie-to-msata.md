@@ -15,8 +15,17 @@ On both carrier boards – the boot device can be chosen by using the SW1 Dipswi
 
 ![](../../../../.gitbook/assets/image-20211228-082458.png)
 
-> \[!INFO] White is the dip position. Black is the background.
+{% hint style="info" %}
+White is the dip position. Black is the background.
+{% endhint %}
 
-> \[!WARNING] UART Booting does **not** work with above configuration! Instead, use **01001** where 1 means on, and 0 means off.
 
-> \[!WARNING] Additional Information: If the SOM has eMMC onboard – SD interface will not work.
+{% hint style="warning" %}
+UART Booting does **not** work with above configuration! Instead, use **01001** where 1 means on, and 0 means off.
+{% endhint %}
+
+
+{% hint style="warning" %}
+Additional Information: If the SOM has eMMC onboard – SD interface will not work.
+{% endhint %}
+

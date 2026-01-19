@@ -45,8 +45,11 @@ GPIO interfaces are different than other capabilities on a circuit board (like L
 | J2 \[pin 25]   | GND         | -            | -             | -                          |
 | J2 \[pin 26]   | ECSPI2\_SS1 | EIM\_LBA     | GPIO2\_IO27   | 59                         |
 
-> \[!NOTE] Pins 16 and 18 are actually SD3\_CMD and SD3\_CLK signals that can be muxed to support flex can TX/RX interface (i.e. those can be connected to an external CAN).\
-> (\*) SPI and I2C can also be muxed to be GPIO
+{% hint style="info" %}
+Pins 16 and 18 are actually SD3\_CMD and SD3\_CLK signals that can be muxed to support flex can TX/RX interface (i.e. those can be connected to an external CAN).\
+(\*) SPI and I2C can also be muxed to be GPIO
+{% endhint %}
+
 
 ### Serial UART port access
 
@@ -124,7 +127,10 @@ GPIO Bank = 3, GPIO bit = 8
 
 **XX** = (3 - 1) \* 32 + 8 = 72
 
-> \[!NOTE] You can take the GPIO Number from the above table (\*)
+{% hint style="info" %}
+You can take the GPIO Number from the above table (\*)
+{% endhint %}
+
 
 ### External Links and References
 

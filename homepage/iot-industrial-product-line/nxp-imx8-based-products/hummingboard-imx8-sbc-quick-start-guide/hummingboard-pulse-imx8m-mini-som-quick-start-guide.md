@@ -34,11 +34,17 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure        | Optional extruded aluminum (IP32) enclosure                                                                                                                                                                                                                                 |
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product\&filter_som-com-family=nxp-i-mx8m-mini)                                                                                                                                                 |
 
-> \[!INFO] Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=197493788) .
+{% hint style="info" %}
+Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=197493788) .
+{% endhint %}
 
-> \[!NOTE] **Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
-> (\*\*) Only supported with the i.MX8M SoC.\
-> (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+
+{% hint style="info" %}
+**Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
+(\*\*) Only supported with the i.MX8M SoC.\
+(\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -78,7 +84,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../../.gitbook/assets/image-20211107-112357.png)
 
-> \[!INFO] Please Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Please Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -102,7 +111,10 @@ xz -dc sr-imx8-debian-buster-20210706-cli-imx8mm-sdhc-hummingboard-pulse.img.xz 
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -154,7 +166,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -191,7 +206,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 

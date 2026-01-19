@@ -1,6 +1,9 @@
 # i.MX6 HummingBoard – CAN bus
 
-> \[!WARNING] **CAN Bus is only supported on Hummingboard Edge/Gate/CBi and i.MX6 SOM Rev. v1.5 and higher.**
+{% hint style="warning" %}
+**CAN Bus is only supported on Hummingboard Edge/Gate/CBi and i.MX6 SOM Rev. v1.5 and higher.**
+{% endhint %}
+
 
 ### Overview
 
@@ -53,7 +56,10 @@ make dtbs
 
 The kernel-tree needs to be configured first. Please refer to [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)  for generic instructions, or consult the distro documentation
 
-> \[!TIP] **DTB files can also be de- and recompiled. Consult the manpage of** _**dtc**_ **for additional information.**
+{% hint style="success" %}
+**DTB files can also be de- and recompiled. Consult the manpage of** _**dtc**_ **for additional information.**
+{% endhint %}
+
 
 #### (Re-)Compile Linux Kernel
 

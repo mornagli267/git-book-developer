@@ -21,5 +21,7 @@ The purpose of the article is to summarize and identify the main differences bet
 | B2B Interface | COM Express Type 7 Headers | 3 x Hirose DF40 connectors |
 | Temperature Grade | Commercial: 0°C to 70°C<br><br>Industrial: -40°C to 85°C | Commercial: 0°C to 70°C |
 
-> [!INFO]
-> (\*) Configurable SERDESs based on NXP LX2160A processor specifications.
+{% hint style="info" %}
+(\*) Configurable SERDESs based on NXP LX2160A processor specifications.
+{% endhint %}
+

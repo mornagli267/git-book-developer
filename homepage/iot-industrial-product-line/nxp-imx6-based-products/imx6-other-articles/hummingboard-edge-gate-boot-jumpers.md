@@ -1,6 +1,9 @@
 # HummingBoard Edge/Gate Boot Jumpers
 
-> \[!WARNING] Only available for HummingBoard Gate/Edge rev 1.3 and above!
+{% hint style="warning" %}
+Only available for HummingBoard Gate/Edge rev 1.3 and above!
+{% endhint %}
+
 
 On the HummingBoard Gate/Edge it is possible to boot from different media – without blowing the eFuses.
 

@@ -387,6 +387,12 @@ Following are some tips and recommendations intended to make your work efficient
 
 ## Restrictions
 
-> \[!WARNING] **Please Note** The tool is currently available in Beta version
+{% hint style="warning" %}
+**Please Note** The tool is currently available in Beta version
+{% endhint %}
 
-> \[!INFO] **Please Note** SolidRun will in no way bear responsibility for faults that may be caused due to inaccuracy of the database or the tool.
+
+{% hint style="info" %}
+**Please Note** SolidRun will in no way bear responsibility for faults that may be caused due to inaccuracy of the database or the tool.
+{% endhint %}
+

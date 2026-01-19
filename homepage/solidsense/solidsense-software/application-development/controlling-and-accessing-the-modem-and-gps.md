@@ -1,6 +1,9 @@
 # Controlling and accessing the modem and GPS
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.
+{% endhint %}
+
 
 ## Purpose
 
@@ -114,7 +117,10 @@ Explanation and values for each parameters by order of importance:
 
 **log\_at**: If true all AT commends and responses with the modem are logged into the file /data/solidsense/atcmd.log. To be used only for debugging purpose.
 
-> \[!WARNING] **Please note** Changing the SIM requires to reset the modem or even restart the gateway to be taken into account.
+{% hint style="warning" %}
+**Please note** Changing the SIM requires to reset the modem or even restart the gateway to be taken into account.
+{% endhint %}
+
 
 ## Using the modem GPS micro-service in application
 

@@ -19,7 +19,10 @@ Short-circuit the SPI bus MISO and MOSI lines to create a loopback enables the b
 
 ![](../../../../.gitbook/assets/image-20220227-142813.png)
 
-> \[!NOTE] **Note:** To be able to control the SPI1 device, the DT must be customized accordingly. See the above schematics to get the SPI1 Som side Pad Names.
+{% hint style="info" %}
+**Note:** To be able to control the SPI1 device, the DT must be customized accordingly. See the above schematics to get the SPI1 Som side Pad Names.
+{% endhint %}
+
 
 ## DT and kernel configuration
 

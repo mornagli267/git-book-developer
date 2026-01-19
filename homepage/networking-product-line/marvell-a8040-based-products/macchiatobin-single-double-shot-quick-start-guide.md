@@ -53,7 +53,10 @@ The 8040 board offers one low speed expansion: Marvell TDM module header
 
 ![](../../../.gitbook/assets/image-20211223-153432.png)
 
-> \[!TIP] TDM Header pinout. Pin-1 marked on PCB
+{% hint style="success" %}
+TDM Header pinout. Pin-1 marked on PCB
+{% endhint %}
+
 
 | Pin | Function | Connection | Pin | Function  | Connection |
 | --- | -------- | ---------- | --- | --------- | ---------- |
@@ -80,7 +83,10 @@ The 8040 board offers different interfaces for development and debugging:
 
 ![](../../../.gitbook/assets/image-20211223-153251.png)
 
-> \[!TIP] UART Header pinout. Pin-1 marked on PCB
+{% hint style="success" %}
+UART Header pinout. Pin-1 marked on PCB
+{% endhint %}
+
 
 **UART Header 1 (CAP1-UA0) Pinout**
 
@@ -216,7 +222,10 @@ Following is configuration of SW1\[2:5] –
 
 This connector is for internal use only!
 
-> \[!CAUTION] Do not connect USB Type C accessories!
+{% hint style="warning" %}
+Do not connect USB Type C accessories!
+{% endhint %}
+
 
 #### Reset
 

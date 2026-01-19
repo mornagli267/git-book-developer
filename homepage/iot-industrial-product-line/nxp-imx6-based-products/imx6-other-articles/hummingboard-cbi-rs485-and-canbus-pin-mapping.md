@@ -16,4 +16,7 @@ The pin mapping on the HummingBoard CBi RS485 connector is as follows;
 
 ![Pasted-into-HummingBoard-CBi-RS485-and-CANBus-pin-mapping.png](../../../../.gitbook/assets/Pasted-into-HummingBoard-CBi-RS485-and-CANBus-pin-mapping.png)
 
-> \[!INFO] **More information** For more information please reference the board schematics [HummingBoard CBi Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/270631021) .
+{% hint style="info" %}
+**More information** For more information please reference the board schematics [HummingBoard CBi Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/270631021) .
+{% endhint %}
+

@@ -41,9 +41,11 @@ The supported platforms are the HummingBoard Gate/Edge which are based on the NX
 | eMMC | V   |
 | SDHC | V   |
 
-> [!WARNING]
-> **Please Note**
-> This OS is not being maintained by SolidRun directly and SolidRun does not offer technical support for it.
+{% hint style="warning" %}
+**Please Note**
+This OS is not being maintained by SolidRun directly and SolidRun does not offer technical support for it.
+{% endhint %}
+
 
 <a id="download"></a>
 
@@ -51,13 +53,15 @@ The supported platforms are the HummingBoard Gate/Edge which are based on the NX
 
 Below you can find the pre-built images for the specific HummingBoard configuration.
 
-> [!WARNING]
-> **Please Note**
-> The provided Windows 10 IoT Core images is for pre-production/development use only. For more information and production options please see:
-> 1. NXP resources:
-> [https://www.nxp.com/design/software/embedded-software/i-mx-software/windows-10-iot-core-for-i-mx-applications-processors:IMXWIN10IOT](https://www.nxp.com/design/software/embedded-software/i-mx-software/windows-10-iot-core-for-i-mx-applications-processors:IMXWIN10IOT)
-> 1. Microsoft resources:
-> [https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp)
+{% hint style="warning" %}
+**Please Note**
+The provided Windows 10 IoT Core images is for pre-production/development use only. For more information and production options please see:
+1. NXP resources:
+[https://www.nxp.com/design/software/embedded-software/i-mx-software/windows-10-iot-core-for-i-mx-applications-processors:IMXWIN10IOT](https://www.nxp.com/design/software/embedded-software/i-mx-software/windows-10-iot-core-for-i-mx-applications-processors:IMXWIN10IOT)
+1. Microsoft resources:
+[https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp)
+{% endhint %}
+
 
 |     |     |
 | --- | --- |

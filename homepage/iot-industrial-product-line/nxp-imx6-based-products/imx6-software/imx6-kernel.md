@@ -44,7 +44,10 @@ A successful build produces both a kernel image and DeviceTree Binaries:
 * arch/arm/zImage
 * arch/arm/boot/dts/\*.dtb
 
-> \[!INFO] The standard configuration should suffice general use. We only recommend making changes if custom hardware or esoteric filesystems are being used.
+{% hint style="info" %}
+The standard configuration should suffice general use. We only recommend making changes if custom hardware or esoteric filesystems are being used.
+{% endhint %}
+
 
 ### Build Instructions Mainline (>= 4.16)
 
@@ -61,7 +64,10 @@ A successful build produces both a kernel image and DeviceTree Binaries:
 * arch/arm/zImage
 * arch/arm/boot/dts/\*.dtb
 
-> \[!WARNING] The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd! For more information about systemd, refer to [the corresponding wiki page of the Gentoo project](https://wiki.gentoo.org/wiki/Systemd#kernel).
+{% hint style="warning" %}
+The standard configuration is very minimal, you will want to add additional features such as file systems, PCI device drivers and Control-Group support for systemd! For more information about systemd, refer to [the corresponding wiki page of the Gentoo project](https://wiki.gentoo.org/wiki/Systemd#kernel).
+{% endhint %}
+
 
 ### Build Instructions 3.14.y (Legacy)
 
@@ -79,7 +85,10 @@ A successful build produces both a kernel image and DeviceTree Binaries:
 * arch/arm/zImage
 * arch/arm/boot/dts/\*.dtb
 
-> \[!INFO] The standard configuration should suffice general use. We only recommend making changes if custom hardware or esoteric filesystems are being used.
+{% hint style="info" %}
+The standard configuration should suffice general use. We only recommend making changes if custom hardware or esoteric filesystems are being used.
+{% endhint %}
+
 
 ### Archived Versions
 

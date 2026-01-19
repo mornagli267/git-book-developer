@@ -10,7 +10,10 @@
 | Dec 12, 2023      | Josua Mayer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 1.2          | <p>Update Pinout Tables:<br><br>- add SoC ball names<br>- add SoC ball numbers<br>- update usafe by carrier for hummingboard v1.2</p> |
 | Table of Contents | <p>- <a href="am64x-som-hardware-user-manual.md#revisions-and-notes">Revisions and Notes</a><br>- <a href="am64x-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="am64x-som-hardware-user-manual.md#overview">Overview</a><br>- <a href="am64x-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="am64x-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="am64x-som-hardware-user-manual.md#description">Description</a><br>- <a href="am64x-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="am64x-som-hardware-user-manual.md#features-summary">Features Summary</a><br>- <a href="am64x-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="am64x-som-hardware-user-manual.md#am64xx-sitara-soc-family">AM64xx Sitara SoC Family</a><br>- <a href="am64x-som-hardware-user-manual.md#memories">Memories</a><br>- <a href="am64x-som-hardware-user-manual.md#ddr4">DDR4</a><br>- <a href="am64x-som-hardware-user-manual.md#emmc-nand-flash">eMMC NAND Flash</a><br>- <a href="am64x-som-hardware-user-manual.md#octal-serial-nor-flash-som">Octal Serial NOR Flash (SOM)</a><br>- <a href="am64x-som-hardware-user-manual.md#eeprom-som">EEPROM (SOM)</a><br>- <a href="am64x-som-hardware-user-manual.md#micro-sd-carrier">Micro-SD (Carrier)</a><br>- <a href="am64x-som-hardware-user-manual.md#10-100-1000-mbps-ethernet-interfaces">10/100/1000 Mbps Ethernet Interfaces</a><br>- <a href="am64x-som-hardware-user-manual.md#pru_icssg">PRU_ICSSG</a><br>- <a href="am64x-som-hardware-user-manual.md#cpsw3g">CPSW3G</a><br>- <a href="am64x-som-hardware-user-manual.md#clock-chaining">Clock Chaining</a><br>- <a href="am64x-som-hardware-user-manual.md#am64xx-external-interfaces">AM64xx External Interfaces</a><br>- <a href="am64x-som-hardware-user-manual.md#general">General</a><br>- <a href="am64x-som-hardware-user-manual.md#supported-interfaces-main">Supported Interfaces - Main</a><br>- <a href="am64x-som-hardware-user-manual.md#pcie-usb3">PCIe &#x26; USB3</a><br>- <a href="am64x-som-hardware-user-manual.md#uart">UART</a><br>- <a href="am64x-som-hardware-user-manual.md#espi">eSPI</a><br>- <a href="am64x-som-hardware-user-manual.md#i2c">I2C</a><br>- <a href="am64x-som-hardware-user-manual.md#usd">uSD</a><br>- <a href="am64x-som-hardware-user-manual.md#mcan">MCAN</a><br>- <a href="am64x-som-hardware-user-manual.md#adc">ADC</a><br>- <a href="am64x-som-hardware-user-manual.md#gpio">GPIO</a><br>- <a href="am64x-som-hardware-user-manual.md#connectors-signal-description">Connector’s Signal Description</a><br>- <a href="am64x-som-hardware-user-manual.md#j5001">J5001</a><br>- <a href="am64x-som-hardware-user-manual.md#j7">J7</a><br>- <a href="am64x-som-hardware-user-manual.md#j9">J9</a><br>- <a href="am64x-som-hardware-user-manual.md#power-reset">Power &#x26; Reset</a><br>- <a href="am64x-som-hardware-user-manual.md#power-architecture">Power Architecture</a><br>- <a href="am64x-som-hardware-user-manual.md#vpp_1v8">VPP_1V8</a><br>- <a href="am64x-som-hardware-user-manual.md#reset">Reset</a><br>- <a href="am64x-som-hardware-user-manual.md#power-consumption">Power Consumption</a><br>- <a href="am64x-som-hardware-user-manual.md#integration-manual">Integration Manual</a><br>- <a href="am64x-som-hardware-user-manual.md#power-up-sequence">Power Up Sequence</a><br>- <a href="am64x-som-hardware-user-manual.md#booting-options">Booting Options</a><br>- <a href="am64x-som-hardware-user-manual.md#fuses-booting">Fuses Booting</a><br>- <a href="am64x-som-hardware-user-manual.md#booting-from-resistors-setting">Booting from Resistors setting</a><br>- <a href="am64x-som-hardware-user-manual.md#i2c-interfaces">I2C Interfaces</a><br>- <a href="am64x-som-hardware-user-manual.md#gpio-interfaces">GPIO Interfaces</a><br>- <a href="am64x-som-hardware-user-manual.md#am64xx-debugging-capability">AM64xx Debugging Capability</a><br>- <a href="am64x-som-hardware-user-manual.md#mechanical-description">Mechanical Description</a><br>- <a href="am64x-som-hardware-user-manual.md#documentation">Documentation</a><br>- <a href="am64x-som-hardware-user-manual.md#related-articles">Related Articles</a></p> |              |                                                                                                                                       |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -155,7 +158,10 @@ The AM64xx SOM supports varieties of memory interfaces for booting and data stor
 
 ·        Can be used as BOOT NVM \*
 
-> \[!WARNING] **\*Note – All boot configuration signals are available on the SOM connector.**
+{% hint style="warning" %}
+**\*Note – All boot configuration signals are available on the SOM connector.**
+{% endhint %}
+
 
 #### 10/100/1000 Mbps Ethernet Interfaces
 
@@ -207,7 +213,10 @@ The 25Mhz clock source is the CPU’s CLOCOUT1 signal. It is connected to the CP
 
 ICSSG1 clock is connected to CPSW3G output clock and ICSSG2 is connected to ICSSG1 clock.
 
-> \[!WARNING] **Note – Clock need to be active before reset signal is de-asserts**
+{% hint style="warning" %}
+**Note – Clock need to be active before reset signal is de-asserts**
+{% endhint %}
+
 
 ## AM64xx External Interfaces
 
@@ -271,7 +280,10 @@ The AM64xx supports a single Ser/Des interface. The Ser/Des can be configured as
 
 ·         ECC on internal RAMs
 
-> \[!WARNING] **NOTE – USB 2.0 is always available even if the Ser/Des is configured as PCIe**.
+{% hint style="warning" %}
+**NOTE – USB 2.0 is always available even if the Ser/Des is configured as PCIe**.
+{% endhint %}
+
 
 #### UART
 
@@ -297,7 +309,10 @@ The UART interfaces main features are:
 
 ·         Optional multi-drop transmission.
 
-> \[!WARNING] **Note – The UART signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% hint style="warning" %}
+**Note – The UART signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% endhint %}
+
 
 #### eSPI
 
@@ -311,7 +326,10 @@ The AM64xx SOM supports two eSPI interface. The following figure describes the e
 
 ·         Serial clock with programmable frequency, polarity, and phase for each channel.
 
-> \[!WARNING] **Note – The eSPI signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% hint style="warning" %}
+**Note – The eSPI signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% endhint %}
+
 
 #### I2C
 
@@ -333,7 +351,10 @@ The I2C main features are:
 
 ·         In Fast mode, data transfer rates up to 400 kbits/s can be achieved.
 
-> \[!WARNING] **Note – The I2C signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% hint style="warning" %}
+**Note – The I2C signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% endhint %}
+
 
 #### uSD
 
@@ -355,7 +376,10 @@ The uSD supports the following features:
 
 ·        Can be used as BOOT NVM \*
 
-> \[!WARNING] **Note – The SDIO signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% hint style="warning" %}
+**Note – The SDIO signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% endhint %}
+
 
 #### MCAN
 
@@ -369,7 +393,10 @@ MCAN main features are:
 
 ·         Full CAN FD support (up to 64 data bytes).
 
-> \[!WARNING] **Note – The MCAN signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% hint style="warning" %}
+**Note – The MCAN signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
+{% endhint %}
+
 
 #### ADC
 
@@ -397,7 +424,10 @@ The AM64xx support GPIO interfaces that can be multiplex with alternative functi
 
 ·         More
 
-> \[!INFO] Refer to the Pin MUX tools for optional functionalities.
+{% hint style="info" %}
+Refer to the Pin MUX tools for optional functionalities.
+{% endhint %}
+
 
 ## Connector’s Signal Description
 
@@ -715,13 +745,19 @@ The available booting NVM are:
 
 ·         USB
 
-> \[!CAUTION] Note – Ethernet boot is NOT supported
+{% hint style="warning" %}
+Note – Ethernet boot is NOT supported
+{% endhint %}
+
 
 There are 16 boot mode signals \[BOOTMODE 0-15]. The table below describes the supported boot option in the AM64xx system (SOM and Carrier).
 
 ![](../../../.gitbook/assets/image-20220525-051926.png)
 
-> \[!WARNING] **Note – the PLL frequency is set on the SOM. Other frequencies required a special SKU.** **Note – The Boot signals have an alternative functionality. Make sure it fixed during reset.**
+{% hint style="warning" %}
+**Note – the PLL frequency is set on the SOM. Other frequencies required a special SKU.** **Note – The Boot signals have an alternative functionality. Make sure it fixed during reset.**
+{% endhint %}
+
 
 #### I2C Interfaces
 

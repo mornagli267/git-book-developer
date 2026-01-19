@@ -1,7 +1,10 @@
 # SolidSense Support Overview
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 #### How to contact support
 
@@ -9,7 +12,10 @@ If you need support for your SolidSense device please fill our our contact form 
 
 Alternatively, you can use the direct email address : [solidsense-support@solid-run.com](mailto:solidsense-support@solid-run.com)&#x20;
 
-> \[!INFO] **Please note** Once your ticket has been submitted, our support team will contact you within 2 business days.
+{% hint style="info" %}
+**Please note** Once your ticket has been submitted, our support team will contact you within 2 business days.
+{% endhint %}
+
 
 #### Free support
 
@@ -61,8 +67,11 @@ Software services include:
 * Support to integration testing and validation in the Customer system
 * Source code and documentation
 
-> \[!INFO] **Please note** As SolidRun is actively promoting open source, modifications in existing software will be proposed to be pushed upstream to limit the long-term maintenance load.\
-> A specific commercial proposal shall be agreed upon – based on the Scope of Work.
+{% hint style="info" %}
+**Please note** As SolidRun is actively promoting open source, modifications in existing software will be proposed to be pushed upstream to limit the long-term maintenance load.\
+A specific commercial proposal shall be agreed upon – based on the Scope of Work.
+{% endhint %}
+
 
 #### Device Management Cloud Support
 

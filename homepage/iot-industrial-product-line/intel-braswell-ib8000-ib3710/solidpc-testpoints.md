@@ -33,7 +33,10 @@ Testpoints are designed to provide a secure anchoring point on a printed circuit
 
 ![](../../../.gitbook/assets/image-20220419-150325.png)
 
-> \[!TIP] **Missing TP-names on PCB:**
+{% hint style="success" %}
+**Missing TP-names on PCB:**
+{% endhint %}
+
 
 Few TP points are not named on the pcb:
 

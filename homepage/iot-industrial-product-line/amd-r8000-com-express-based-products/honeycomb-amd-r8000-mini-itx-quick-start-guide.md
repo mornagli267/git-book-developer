@@ -69,7 +69,10 @@ gunzip <image_name.img.gz>
 dd if=<image_name.img> of=/dev/sdx bs=1M status=progress; sync
 ```
 
-> \[!NOTE] NOTE: check the /dev/sdx device you need using the `lsblk` command
+{% hint style="info" %}
+NOTE: check the /dev/sdx device you need using the `lsblk` command
+{% endhint %}
+
 
 ## Booting to OS
 
@@ -77,7 +80,10 @@ Insert the USB stick to the device and power it on.
 
 Wait for the device to boot.
 
-> \[!INFO] Very first boot might take a while due to DDR training
+{% hint style="info" %}
+Very first boot might take a while due to DDR training
+{% endhint %}
+
 
 ## SO-DIMM Modules
 
@@ -95,9 +101,15 @@ For some SO-DIMM modules that work on SolidRun hardware platforms, please refer 
 | ![image-20240429-100633.png](../../../.gitbook/assets/image-20240429-100633.png) | <p><a href="https://www.pfsense.org/download/">PFsense</a><br><br><a href="../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-pfsense.md">Console installation instructions</a></p>  |
 | ![image-20240429-100713.png](../../../.gitbook/assets/image-20240429-100713.png) | <p><a href="https://opnsense.org/download/">OPNsense</a><br><br><a href="../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-opnsense.md">Console installation instructions</a></p>   |
 
-> \[!INFO] (1) HoneyComb AMD R8000 can be used in headless mode with no displays connected, installation will require monitors to be connected to install Windows.
+{% hint style="info" %}
+(1) HoneyComb AMD R8000 can be used in headless mode with no displays connected, installation will require monitors to be connected to install Windows.
+{% endhint %}
 
-> \[!INFO] (2) As of JUL 7 2024 (FreeBSD 14.01) the AMD XGBE driver on **FreeBSD** does not fully support SFP, later versions will eventually have the driver fixed.
+
+{% hint style="info" %}
+(2) As of JUL 7 2024 (FreeBSD 14.01) the AMD XGBE driver on **FreeBSD** does not fully support SFP, later versions will eventually have the driver fixed.
+{% endhint %}
+
 
 ## Documentation
 

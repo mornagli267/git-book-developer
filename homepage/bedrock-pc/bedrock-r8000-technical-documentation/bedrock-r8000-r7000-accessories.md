@@ -4,7 +4,10 @@
 
 ### Full evaluation kit for Bedrock R7000 Basic
 
-> \[!INFO] The recommended kit for evaluating Bedrock R7000 Basic.
+{% hint style="info" %}
+The recommended kit for evaluating Bedrock R7000 Basic.
+{% endhint %}
+
 
 The kit includes:
 
@@ -15,7 +18,10 @@ The kit includes:
 * [DIN Rail bracket](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 * [Console mini-USB to USB-A](../../other-articles/snippets/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
 
-> \[!NOTE] **Ordering code**: SRBD-R7BEVAL
+{% hint style="info" %}
+**Ordering code**: SRBD-R7BEVAL
+{% endhint %}
+
 
 ### Minimal evaluation kit for Bedrock
 
@@ -37,7 +43,10 @@ The kit includes:
 90W power supply.\
 Requires AC cable C13 ("Kettle lead")
 
-> \[!NOTE] **Ordering code**: SRBD-PSU90
+{% hint style="info" %}
+**Ordering code**: SRBD-PSU90
+{% endhint %}
+
 
 ### US | EU | UK | AU AC Cable
 
@@ -55,7 +64,10 @@ Requires AC cable C13 ("Kettle lead")
 Pigtail DC cable for Bedrock.\
 To be used with a 3rd party PSU.
 
-> \[!NOTE] **Ordering code**: SRBD-CABDC
+{% hint style="info" %}
+**Ordering code**: SRBD-CABDC
+{% endhint %}
+
 
 ## Mounting
 
@@ -63,19 +75,28 @@ To be used with a 3rd party PSU.
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
-> \[!NOTE] **Ordering code**: SRBD-STAND21
+{% hint style="info" %}
+**Ordering code**: SRBD-STAND21
+{% endhint %}
+
 
 ### Wall mounting bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-WALL21
+{% hint style="info" %}
+**Ordering code**: SRBD-WALL21
+{% endhint %}
+
 
 ### DIN Rail bracket
 
 See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
-> \[!NOTE] **Ordering code**: SRBD-DIN21
+{% hint style="info" %}
+**Ordering code**: SRBD-DIN21
+{% endhint %}
+
 
 ## Cable accessories
 
@@ -85,17 +106,26 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 A power button on a wire for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABBTN
+{% endhint %}
+
 
 #### Harness for custom remote power button
 
 A wire harness for soldering custom power button (optionally with LED) for turning Bedrock on/off when Bedrock is installed in an inaccessible location.
 
-> \[!NOTE] **Ordering code**: SRBD-CABNOBTN
+{% hint style="info" %}
+**Ordering code**: SRBD-CABNOBTN
+{% endhint %}
+
 
 ### Console mini-USB to USB-A
 
 Console is mini-USB connector with standard USB interface.\
 The mini-USB to USB-A allows connecting to a host PC.
 
-> \[!NOTE] **Ordering code**: SRBD-CABCON
+{% hint style="info" %}
+**Ordering code**: SRBD-CABCON
+{% endhint %}
+

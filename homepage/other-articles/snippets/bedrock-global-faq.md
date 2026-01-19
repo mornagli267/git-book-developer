@@ -27,7 +27,10 @@ The standard Bedrock package measures 24 x 18 x 11 cm (4.7 liter)
 
 Weight varies according to Bedrock configuration between 1.5 Kg and 4 Kg.
 
-> \[!INFO] PSU, cables and accessories are not included in the box and are shipped in a separate box.
+{% hint style="info" %}
+PSU, cables and accessories are not included in the box and are shipped in a separate box.
+{% endhint %}
+
 
 ### What is the difference between industrial temperature Bedrock and commercial temperature one?
 

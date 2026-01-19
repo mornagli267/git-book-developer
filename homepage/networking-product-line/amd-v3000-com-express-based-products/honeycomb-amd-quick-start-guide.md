@@ -36,12 +36,13 @@ The guide will give a technical overview about the product and by the end of it 
 
 ![](../../../.gitbook/assets/image-20220112-162250.png)
 
-> \[!NOTE]
->
-> * See list of tested [LX2160A COM Tested SO-DIMM Memory](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197494332) modules.
-> * The difference between the two versions is that HoneyComb does not have a QSFP interface
-> * Serdes-1 lanes 0..3 are routed to the QSFP28 connector via TI retimers
-> * Serdes-1 lanes 4..7 are directly connected to the 4xSFP+ ports
+{% hint style="info" %}
+* See list of tested [LX2160A COM Tested SO-DIMM Memory](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197494332) modules.
+* The difference between the two versions is that HoneyComb does not have a QSFP interface
+* Serdes-1 lanes 0..3 are routed to the QSFP28 connector via TI retimers
+* Serdes-1 lanes 4..7 are directly connected to the 4xSFP+ ports
+{% endhint %}
+
 
 ## **Block Diagram**
 
@@ -113,7 +114,10 @@ Download a pre-built snapshot image from [SolidRun Images](https://images.solid-
 
 Those images are built with the suffix of the commit ID of the [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)  project that you can clone and build by yourself.
 
-> \[!NOTE] **Please note** The prebuilt images are configured for SO-DIMM DDR4 with speed of 3200, 2900, 2600 and 2400 Mtps (with or without ECC support),. Images that have the prefix lx2160a\_xspi are intended to be flashed into SPI and recommended for later use after being booted from micro SD
+{% hint style="info" %}
+**Please note** The prebuilt images are configured for SO-DIMM DDR4 with speed of 3200, 2900, 2600 and 2400 Mtps (with or without ECC support),. Images that have the prefix lx2160a\_xspi are intended to be flashed into SPI and recommended for later use after being booted from micro SD
+{% endhint %}
+
 
 You can build your own image using the script in here – [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)
 
@@ -127,7 +131,10 @@ xz -dc lx2160acex7_2000_700_....img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -147,7 +154,10 @@ Please insert the micro USB into your device, then you can refer to [Serial Conn
 
 To flash to eMMC run the following commands (it will wipre your data on the eMMC device).
 
-> \[!WARNING] For this to work eMMC distroboot support is required (patch is here – [LSDK-19.09 u-boot support · SolidRun/lx2160a\_build@75891e5](https://github.com/SolidRun/lx2160a_build/commit/75891e5cb4d2171a2094c1e35087374b1f47acdd)  )
+{% hint style="warning" %}
+For this to work eMMC distroboot support is required (patch is here – [LSDK-19.09 u-boot support · SolidRun/lx2160a\_build@75891e5](https://github.com/SolidRun/lx2160a_build/commit/75891e5cb4d2171a2094c1e35087374b1f47acdd)  )
+{% endhint %}
+
 
 ```
 load mmc 0:1 0xa4000000 ubuntu-core.img
@@ -157,7 +167,10 @@ mmc write 0xa4000000 0 0xd2000
 
 ![](../../../.gitbook/assets/image-20220112-165616.png)
 
-> \[!WARNING] **Please Note:** The above commands should be run only once (in the fist boot).
+{% hint style="warning" %}
+**Please Note:** The above commands should be run only once (in the fist boot).
+{% endhint %}
+
 
 Boot the machine by running ‘**boot**’ in u-boot.
 
@@ -169,7 +182,10 @@ Once you installed the necessary serial connection software and ran the above co
 
 ![](../../../.gitbook/assets/image-20211216-145039.png)
 
-> \[!WARNING] **Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
+{% hint style="warning" %}
+**Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
+{% endhint %}
+
 
 **6. Final stages**
 
@@ -306,15 +322,19 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
  reboot
 ```
 
-> \[!WARNING] **Please note**
->
-> * If you need to install the Gentoo to the SATA change the /dev/nvme0n1p1 to /dev/sdx.
-> * In the same way, can install Debian or another Linux arm64 distribution.
+{% hint style="warning" %}
+**Please note**
+* If you need to install the Gentoo to the SATA change the /dev/nvme0n1p1 to /dev/sdx.
+* In the same way, can install Debian or another Linux arm64 distribution.
+{% endhint %}
 
-> \[!WARNING] **Please note**
->
-> * The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
-> * The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
+
+{% hint style="warning" %}
+**Please note**
+* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
+* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
+{% endhint %}
+
 
 ## Build From Source
 
@@ -322,10 +342,11 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 * Generating UEFI firmware for the LX2160a - [GitHub - SolidRun/lx2160a\_uefi](https://github.com/SolidRun/lx2160a_uefi)
 * Using HoneyComb LX2K as a Desktop - [https://github.com/Wooty-B/LX2K\_Guide](https://github.com/Wooty-B/LX2K_Guide)
 
-> \[!TIP]
->
-> * Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
-> * Download a UEFI firmware for the LX2160a from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_uefi)
+{% hint style="success" %}
+* Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
+* Download a UEFI firmware for the LX2160a from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_uefi)
+{% endhint %}
+
 
 ## Documentation
 

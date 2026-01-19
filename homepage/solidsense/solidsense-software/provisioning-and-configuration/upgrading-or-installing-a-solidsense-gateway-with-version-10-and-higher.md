@@ -1,7 +1,10 @@
 # Upgrading or installing a SolidSense gateway with version 1.0 and higher
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 ## Installing SolidSense gateways
 
@@ -17,7 +20,10 @@ Any upgrades from a release higher then 0.91 is done via over the network proces
 
 The new upgrade mechanism requires a new hard disk (eMMC) layout and therefore all pre-existing data will be lost upon upgrade. Please back-up any sensible data. All pre-existing configuration will also be lost and in particular Wirepas sink and transport configurations will have to be re-applied.
 
-> \[!WARNING] **Please Note** Re-flashing the full eMMC shall be used if no SolidSense is already installed. For any software upgrade prefer using Mender via OTA or via local upgrade.
+{% hint style="warning" %}
+**Please Note** Re-flashing the full eMMC shall be used if no SolidSense is already installed. For any software upgrade prefer using Mender via OTA or via local upgrade.
+{% endhint %}
+
 
 #### Procedure for full re-flashing of the eMMC
 

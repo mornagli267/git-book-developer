@@ -44,7 +44,10 @@ IMAGE=$(ls redpesk*.raw)
 sudo dd if=$IMAGE of=/dev/sdX bs=4M status=progress
 ```
 
-> \[!NOTE] **Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+**Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 ## Connect to the SolidSense N8 IoT Compact
 

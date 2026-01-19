@@ -10,7 +10,10 @@
 | 02 Nov 2023       | Shahar Fridman                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 1.2          | Add Power Consumption Measurement |
 | Table of Contents | <p>- <a href="imx8m-plus-som-hardware-user-manual.md#revisions-and-notes">Revisions and Notes</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#description">Description</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#features-summary">Features Summary</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#imx8m-plus-soc-family">i.MX8M PLUS SoC Family</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#memory">Memory</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#lpddr4">LPDDR4</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#emmc-nand-flash">eMMC NAND Flash</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#quad-serial-nor-flash-som">Quad Serial NOR Flash (SOM)</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#eeprom-som">EEPROM (SOM)</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#micro-sd-carrier">Micro-SD (Carrier)</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#serial-nor-flash-carrier">Serial NOR Flash (Carrier)</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#10-100-1000-mbps-ethernet-phy">10/100/1000 MBPS ETHERNET PHY</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#wi-fi-11ac-b-g-n-bt-50-ble">WI-FI (11AC/B/G/N) BT (5.0 BLE)</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#mipi-csi">MIPI-CSI</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#lvds-interface">LVDS Interface</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#external-interfaces">External Interfaces</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#general">General</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#pcie">PCIe</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#usb-30">USB 3.0</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#mipi-csi">MIPI CSI</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#mipi-dsi">MIPI DSI</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#audio">Audio</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#hdmi">HDMI</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#uart">UART</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#espi">eSPI</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#i2c">I2C</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#usd">uSD</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#b2b-connectors-signal-description">B2B Connector’s Signal Description</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#j5001">J5001</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#j7">J7</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#power-and-reset">Power and Reset</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#power-architecture">Power Architecture</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#power-consumption">Power Consumption</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#reset">Reset</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#integration-manual">Integration Manual</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#power-up-sequence">Power-Up Sequence</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#booting-options">Booting Options</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#fuses-booting">Fuses Booting</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#booting-from-resistors-setting">Booting from Resistors setting</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#i2c-interfaces">I2C Interfaces</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#gpio-interfaces">GPIO Interfaces</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#som-debugging-capability">SOM Debugging Capability</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#mechanical-description">Mechanical Description</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#documentation">Documentation</a><br>- <a href="imx8m-plus-som-hardware-user-manual.md#related-articles">Related Articles</a></p> |              |                                   |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -161,7 +164,10 @@ The i.MX8M-PLUS SOM supports varieties of memory interfaces for booting and data
 
 The SOM supports two Giga Ethernet interfaces. Both interfaces are connected to Analog Device’s ADIN1300 PHY.
 
-> \[!WARNING] Please note that default SOM configuration includes only 1 PHY. For 2nd PHY option please contact us for details.
+{% hint style="warning" %}
+Please note that default SOM configuration includes only 1 PHY. For 2nd PHY option please contact us for details.
+{% endhint %}
+
 
 * ![](../../../.gitbook/assets/image-20211228-143312.png) RGMII interface.
 * 3 Ethernet interfaces for 1000BASE-T, 100BASE-TX, and10BASE-T.
@@ -197,7 +203,10 @@ The i.MX8M-PLUS SOM supports a 4-Lanes MIPI CSI-2 interface. A 28 pins FPC conne
 * When two cameras are used, each supports up to 1080p80.
 * Virtual Channel support.
 
-> \[!WARNING] **Please note** To connect CSI channel 2 to the ISP core, both ISPs need to be activated.
+{% hint style="warning" %}
+**Please note** To connect CSI channel 2 to the ISP core, both ISPs need to be activated.
+{% endhint %}
+
 
 #### LVDS Interface
 
@@ -263,9 +272,15 @@ The USB main features are:
   * Device Mode: SS/HS/FS
 * Power control signal are not part of the USB module, any available GPIO can be used.
 
-> \[!WARNING] **Please note** The voltage on VBUS is limited to 3.3V.
+{% hint style="warning" %}
+**Please note** The voltage on VBUS is limited to 3.3V.
+{% endhint %}
 
-> \[!WARNING] **Please note** There are no decupling capacitors on the SOM.
+
+{% hint style="warning" %}
+**Please note** There are no decupling capacitors on the SOM.
+{% endhint %}
+
 
 #### MIPI CSI
 
@@ -311,7 +326,10 @@ The Audio main features are:
 * All ports support 49.152 MHz BCLK.
 * 8-channel PDM mic input.
 
-> \[!WARNING] **Please note** SAI1 signals are not directly output to the B-t-B connector. It can be used as an ALT function using other signals.
+{% hint style="warning" %}
+**Please note** SAI1 signals are not directly output to the B-t-B connector. It can be used as an ALT function using other signals.
+{% endhint %}
+
 
 #### HDMI
 
@@ -344,7 +362,10 @@ The UART interfaces main features are:
 * Auto baud rate detection (up to 115.2 Kbit/s).
 * DCE/DTE capability.
 
-> \[!WARNING] **Please note** UART interfaces are available as ALT functional signals of other signals.
+{% hint style="warning" %}
+**Please note** UART interfaces are available as ALT functional signals of other signals.
+{% endhint %}
+
 
 #### eSPI
 
@@ -356,7 +377,10 @@ The i.MX8M-PLUS SOM supports an eSPI interface. The following figure describes t
 * Single chip select nSS0.
 * Master/Slave configurable.
 
-> \[!WARNING] **Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
+{% hint style="warning" %}
+**Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
+{% endhint %}
+
 
 #### I2C
 
@@ -373,7 +397,10 @@ The I2C main features are:
 * In Standard mode, I2C supports the data transfer rates up to 100 kbits/s.
 * In Fast mode, data transfer rates up to 400 kbits/s can be achieved.
 
-> \[!WARNING] **Please note** I2C interfaces are available as ALT functional signals of other signals.
+{% hint style="warning" %}
+**Please note** I2C interfaces are available as ALT functional signals of other signals.
+{% endhint %}
+
 
 #### uSD
 
@@ -571,9 +598,15 @@ The i.MX8M-PLUS POR signal is activated by the PMIC output. The following figure
 
 A reset can be triggered by an external reset signal (Switch) or the internal Watch-Dog. An ON/OFF switch is connected to the i.MX8M-PLUS and can change it into low power mode.
 
-> \[!WARNING] **Please note** Resetting the SOM also turn the power rails off including the 3.3V out.
+{% hint style="warning" %}
+**Please note** Resetting the SOM also turn the power rails off including the 3.3V out.
+{% endhint %}
 
-> \[!WARNING] **Please note** Pressing the reset switch trigger a reset pulse in the PMIC
+
+{% hint style="warning" %}
+**Please note** Pressing the reset switch trigger a reset pulse in the PMIC
+{% endhint %}
+
 
 ## Integration Manual
 

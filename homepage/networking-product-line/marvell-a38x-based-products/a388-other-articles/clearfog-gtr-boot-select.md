@@ -13,7 +13,8 @@ Before powering up the board  for the first time it is recommended to select the
 | M.2 SSD | ON           | ON           | ON           | OFF          | OFF          |
 | UART    | OFF          | ON           | OFF          | OFF          | ON           |
 
-> \[!INFO]
->
-> * The ClearFog GTR including U-Boot into eMMC by default.
-> * The ClearFog GTR does not have an SD card slot.
+{% hint style="info" %}
+* The ClearFog GTR including U-Boot into eMMC by default.
+* The ClearFog GTR does not have an SD card slot.
+{% endhint %}
+

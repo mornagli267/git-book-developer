@@ -41,11 +41,13 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | Enclosed: 195 x 118 x 32mm                                 |
 | Enclosure        | Optional ruggedized extruded aluminum (IP32) enclosure     |
 
-> \[!TIP] **Please note** (\*) The default configuration in the release software:
->
-> * CON4 = mPCIe0 configure to be PCIe
-> * CON3 = mPCI1 configure to SATA (can use mpcie to m.2 adapter)
-> * CON2 = mPCI2 configure to be USB 3.0 (can connect an LTE modem, this slot has a SIM connection) You can change the configuration as needed
+{% hint style="success" %}
+**Please note** (\*) The default configuration in the release software:
+* CON4 = mPCIe0 configure to be PCIe
+* CON3 = mPCI1 configure to SATA (can use mpcie to m.2 adapter)
+* CON2 = mPCI2 configure to be USB 3.0 (can connect an LTE modem, this slot has a SIM connection) You can change the configuration as needed
+{% endhint %}
+
 
 ## **Block Diagram**
 
@@ -122,7 +124,10 @@ The following shows how to set the switches on the boot source selector:&#x20;
 
 Once you set the switches, you can apply the following for booting from an SD card.
 
-> \[!WARNING] **Please Note:** Boot is made from SPI by default
+{% hint style="warning" %}
+**Please Note:** Boot is made from SPI by default
+{% endhint %}
+
 
 **1. Downloading the Debian image**
 
@@ -144,7 +149,10 @@ xz -dc sr-8040-debian-buster-20190616-cfgt-sdhc.img.xz | dd of=/dev/sdX bs=4k co
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -164,7 +172,10 @@ On the top side of the ClearFog GT 8K, there is a header for connecting the adap
 
 ![](https://developer.solid-run.com/wp-content/uploads/2018/11/PICT_20190909_121046-300x225.jpg)
 
-> \[!WARNING] **Please Note** The pin that is closest to the mechanical hole should be connected to the ground cable (black), the middle pin should be connected to the Tx (green cable) and the 3’rd pin should be connected to the Rx (white). The red cable should not be connected!
+{% hint style="warning" %}
+**Please Note** The pin that is closest to the mechanical hole should be connected to the ground cable (black), the middle pin should be connected to the Tx (green cable) and the 3’rd pin should be connected to the Rx (white). The red cable should not be connected!
+{% endhint %}
+
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 

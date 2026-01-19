@@ -1,6 +1,9 @@
 # eFuses for i.MX6 SOM
 
-> \[!WARNING] **An updated version of this article can be found here:** [**Setting the eFuses (developers)**](efuses-for-imx6-som-developers-page.md) **.**
+{% hint style="warning" %}
+**An updated version of this article can be found here:** [**Setting the eFuses (developers)**](efuses-for-imx6-som-developers-page.md) **.**
+{% endhint %}
+
 
 ### Setting the eFuses for MicroSOM and Hummingboard
 
@@ -8,7 +11,10 @@ If an end-user orders a SOM together with a HummingBoard carrier board, the ship
 
 This tutorial provides the information on blowing the i.MX6 eFuses on the SoC integrated on the SOM in order to boot from the Micro-SD cart.
 
-> \[!CAUTION] **Please note that this operation is irreversible.**
+{% hint style="warning" %}
+**Please note that this operation is irreversible.**
+{% endhint %}
+
 
 ### USB host to host cable preparation
 
@@ -51,7 +57,10 @@ Note – The fuse that contains the lower 32 bits of the MAC address is programm
 
 ### Booting from other sources
 
-> \[!NOTE] [i.MX 6Dual/6Quad Applications Processor Reference Manual by NXP: Available Here](http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx-6quad-processors-high-performance-3d-graphics-hd-video-arm-cortex-a9-core:i.MX6Q?tab=Documentation_Tab)
+{% hint style="info" %}
+[i.MX 6Dual/6Quad Applications Processor Reference Manual by NXP: Available Here](http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx-6quad-processors-high-performance-3d-graphics-hd-video-arm-cortex-a9-core:i.MX6Q?tab=Documentation_Tab)
+{% endhint %}
+
 
 In the previous section the value 0x2840 was written to address 0x5; which states booting from SD1.
 

@@ -23,7 +23,10 @@ The maximum frequency to be used depends on the SoC present in the module, see t
 
 ## CPU Frequency
 
-> \[!NOTE] **Please Note:** The operation below requires root access.
+{% hint style="info" %}
+**Please Note:** The operation below requires root access.
+{% endhint %}
+
 
 CPU frequency can be changed by using one of the following methods:
 
@@ -55,7 +58,10 @@ Where **performance** is the name of the scaling governor.
 
 ### Changing CPU frequency
 
-> \[!NOTE] **Please Note:** CPU frequency can be changed only when the scaling governor is set to userspace.
+{% hint style="info" %}
+**Please Note:** CPU frequency can be changed only when the scaling governor is set to userspace.
+{% endhint %}
+
 
 Available frequencies values can be seen through "scaling\_available\_frequencies" file:
 
@@ -79,7 +85,10 @@ echo frequency > /sys/devices/system/cpu/cpufreq/policy0/scaling_setspeed
 
 Where **frequency** is one of the available CPU frequencies.
 
-> \[!INFO] **Note:** The userspace governor must be set to change the frequency value.
+{% hint style="info" %}
+**Note:** The userspace governor must be set to change the frequency value.
+{% endhint %}
+
 
 The system will adjust to an appropriate voltage according to frequency. Please note that depending on the board/die temperature, thermal throttling might limit the current frequency in use.
 

@@ -25,7 +25,10 @@ Manufacturer PN: 1827703
 
 [https://www.phoenixcontact.com/en-us/products/pcb-plug-mc-15-2-stf-381-1827703](https://www.phoenixcontact.com/en-us/products/pcb-plug-mc-15-2-stf-381-1827703)
 
-> \[!INFO] SolidRun offers [SRBD-CABDC](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492470278/Bedrock+R7000+Accessories#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
+{% hint style="info" %}
+SolidRun offers [SRBD-CABDC](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492470278/Bedrock+R7000+Accessories#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
+{% endhint %}
+
 
 ## Remote power button connector
 

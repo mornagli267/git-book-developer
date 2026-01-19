@@ -42,7 +42,10 @@ sudo dd if=imx-hailo-demo-image-imx8mpsolidrun.wic of=/dev/sdX bs=1M
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025).
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all its partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all its partitions are unmounted.
+{% endhint %}
+
 
 ### Boot Select
 
@@ -62,7 +65,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![Unbenannt.png](<../../../../.gitbook/assets/Unbenannt (1).png>)
 
-> \[!INFO] Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from an SD card.
 
@@ -169,4 +175,7 @@ Available demos:
 * lpr\_loop.sh - Looped license plate recognition demo.
 * multistream\_detection.sh - Live stream from two MIPI-CSI cameras with general object detection.
 
-> \[!INFO] Note: these demos are tested only with imx-hailo-demo-image.
+{% hint style="info" %}
+Note: these demos are tested only with imx-hailo-demo-image.
+{% endhint %}
+

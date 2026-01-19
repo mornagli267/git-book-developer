@@ -11,6 +11,8 @@ fuse prog -y 9 0 04050607
 fuse prog -y 9 1 0203
 ```
 
-> [!WARNING]
-> **Please Note**
-> Fuse programming is irreversible.
+{% hint style="warning" %}
+**Please Note**
+Fuse programming is irreversible.
+{% endhint %}
+

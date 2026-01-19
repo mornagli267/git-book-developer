@@ -18,8 +18,10 @@ Bluetooth LED does not work.
 
 Swapped RJ45 LEDs in ports 3,4.
 
-> [!INFO]
-> Applies to Bedrock V3000 units earlier than 16-Oct-2023 with SN smaller than **B3D-231016-001**
+{% hint style="info" %}
+Applies to Bedrock V3000 units earlier than 16-Oct-2023 with SN smaller than **B3D-231016-001**
+{% endhint %}
+
 
 <a id="pmic-programming"></a>
 
@@ -27,8 +29,10 @@ Swapped RJ45 LEDs in ports 3,4.
 
 Random crashes due to incorrect PMIC programming.
 
-> [!INFO]
-> Applies to some Bedrock V3000 units earlier than 5-Sep-2023 with SN smaller than **B3D-230905-001**
+{% hint style="info" %}
+Applies to some Bedrock V3000 units earlier than 5-Sep-2023 with SN smaller than **B3D-230905-001**
+{% endhint %}
+
 
 To verify PMIC programming please follow the instructions below:
 

@@ -16,10 +16,16 @@ On **R7000** platforms, with BIOS V1.1 ([0ACTF10](https://eip.ami.com/eip/access
 
 ![image-20250217-185030.png](../../../.gitbook/assets/image-20250217-185030.png)
 
-> \[!INFO] You can hold the button indefinitely, however as long as you hold it, the device will keep rebooting this is expected behavior.
+{% hint style="info" %}
+You can hold the button indefinitely, however as long as you hold it, the device will keep rebooting this is expected behavior.
+{% endhint %}
+
 
 5. Release the button and allow the device to boot up.
 
-> \[!NOTE] First boot, might take some time for the device to boot up due to DDR training.
+{% hint style="info" %}
+First boot, might take some time for the device to boot up due to DDR training.
+{% endhint %}
+
 
 By following these steps, you should be able to reset the Bedrock BIOS to its default settings and restore normal operation.

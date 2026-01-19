@@ -26,7 +26,10 @@
    Open **“Disks”** (aka **GNOME Disks**).
 2. On the left panel, select your **USB drive**.
 
-> \[!WARNING] Double-check it’s not your system drive!
+{% hint style="warning" %}
+Double-check it’s not your system drive!
+{% endhint %}
+
 
 ![image-20250513-090015.png](../../../../../.gitbook/assets/image-20250513-090015.png)
 
@@ -76,10 +79,16 @@ Now that your USB is formatted and mounted, you’ll copy the necessary boot fil
 5. navigate to your mounted USB drive (mine is the EFI-USB)
 6. Paste the efi folder in the **root** of the USB![image-20250513-092519.png](../../../../../.gitbook/assets/image-20250513-092519.png)
 
-> \[!TIP] **Your USB drive is now ready** You can **safely unmount it** **(important)** from Ubuntu and **plug it into any computer** that supports UEFI.\
-> After booting from the USB, the system will launch directly into the **UEFI Shell environment**.
+{% hint style="success" %}
+**Your USB drive is now ready** You can **safely unmount it** **(important)** from Ubuntu and **plug it into any computer** that supports UEFI.\
+After booting from the USB, the system will launch directly into the **UEFI Shell environment**.
+{% endhint %}
 
-> \[!INFO] You can put EFI programs such as AFUEFI in the root directory of the usb drive and use these commands in the EFI shell.
+
+{% hint style="info" %}
+You can put EFI programs such as AFUEFI in the root directory of the usb drive and use these commands in the EFI shell.
+{% endhint %}
+
 
 ## Guide for WINDOWS
 
@@ -103,7 +112,13 @@ Now that your USB is formatted and mounted, you’ll copy the necessary boot fil
 4. Navigate to your **formatted USB drive**.
 5. **Paste** the copied files into the **root** of the USB (not inside any other folder).
 
-> \[!TIP] **Your USB drive is now ready** You can **safely unmount it** **(important)** from Ubuntu and **plug it into any computer** that supports UEFI.\
-> After booting from the USB, the system will launch directly into the **UEFI Shell environment**.
+{% hint style="success" %}
+**Your USB drive is now ready** You can **safely unmount it** **(important)** from Ubuntu and **plug it into any computer** that supports UEFI.\
+After booting from the USB, the system will launch directly into the **UEFI Shell environment**.
+{% endhint %}
 
-> \[!INFO] You can put EFI programs such as AFUEFI in the root directory of the usb drive and use these commands in the EFI shell.
+
+{% hint style="info" %}
+You can put EFI programs such as AFUEFI in the root directory of the usb drive and use these commands in the EFI shell.
+{% endhint %}
+

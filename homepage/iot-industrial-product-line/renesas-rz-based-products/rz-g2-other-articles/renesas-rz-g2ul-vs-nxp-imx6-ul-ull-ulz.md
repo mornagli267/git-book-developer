@@ -74,6 +74,8 @@ Below is a summary table of the key features and differences between the platfor
 | Longevity | 2032 | 2035 | 2035 | 2031 | 2028 |
 | **Pricing** | From $25 | From $45 | From $25 | From $25 | From $25 |
 
-> [!TIP]
-> SolidRun offers Renesas RZ/G2LC and RZ/G2UL based SOMs with more information available [here.](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2lc-som/)
-> A detailed hardware user guide is available [here](#section-7d3b2386-6e99-4b5d-b628-f5f35a07e90f).
+{% hint style="success" %}
+SolidRun offers Renesas RZ/G2LC and RZ/G2UL based SOMs with more information available [here.](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2lc-som/)
+A detailed hardware user guide is available [here](#section-7d3b2386-6e99-4b5d-b628-f5f35a07e90f).
+{% endhint %}
+

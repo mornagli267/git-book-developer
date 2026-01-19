@@ -10,7 +10,10 @@
 | 12 Nov 2024       | Yazan Shhady                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 1.3          | Updated pin descriptions to include notes indicating where pins are unavailable on SOM version V1.9+. |
 | Table of Contents | <p>- <a href="imx6-som-hardware-user-manual.md#revision-and-notes">Revision and Notes</a><br>- <a href="imx6-som-hardware-user-manual.md#introduction">Introduction</a><br>- <a href="imx6-som-hardware-user-manual.md#overview">Overview</a><br>- <a href="imx6-som-hardware-user-manual.md#highlighted-features">Highlighted Features</a><br>- <a href="imx6-som-hardware-user-manual.md#supporting-products">Supporting Products</a><br>- <a href="imx6-som-hardware-user-manual.md#summary-of-features">Summary of Features</a><br>- <a href="imx6-som-hardware-user-manual.md#block-diagram">Block Diagram</a><br>- <a href="imx6-som-hardware-user-manual.md#core-system-components">Core System Components</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-soc-family">i.MX6 SOC Family</a><br>- <a href="imx6-som-hardware-user-manual.md#10-100-1000-mbps-ethernet-phy">10/100/1000 MBPS Ethernet PHY</a><br>- <a href="imx6-som-hardware-user-manual.md#bcm-4330-based-som-rev-13-wireless-lan-80211-b-g-n-bluetooth-40-sip">BCM 4330 Based (SOM Rev 1.3) – Wireless LAN 802.11 B/G/N &#x26; Bluetooth 4.0 SiP</a><br>- <a href="imx6-som-hardware-user-manual.md#ti-wilink8-basedsom-rev-15-wireless-lan-80211-b-g-n-bluetooth-41-sip">TI WiLink8 Based(SOM Rev 1.5) – Wireless LAN 802.11 B/G/N &#x26; Bluetooth 4.1 SiP</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-interfaces">i.MX6 SOM Interfaces</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-external-interfaces-brief">i.MX6 SOM- External Interfaces Brief</a><br>- <a href="imx6-som-hardware-user-manual.md#sr-som-mx6-on-board-functions">SR-SOM-MX6 ON Board Functions</a><br>- <a href="imx6-som-hardware-user-manual.md#10-100-1000-mbps-phy">10/100/1000 Mbps PHY</a><br>- <a href="imx6-som-hardware-user-manual.md#80211-b-g-n-and-bluetooth-sip">802.11 b/g/n and Bluetooth SiP</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-external-interfaces-detailed-description">i.MX6 SOM External Interfaces Detailed Description</a><br>- <a href="imx6-som-hardware-user-manual.md#j5002-board-to-board-header-pin-description">J5002 Board to Board Header Pin Description</a><br>- <a href="imx6-som-hardware-user-manual.md#j8004-board-to-board-header-pin-description">J8004 Board to Board Header Pin Description</a><br>- <a href="imx6-som-hardware-user-manual.md#j5001-board-to-board-header-pin-description">J5001 Board to Board Header Pin Description</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-power-up-sequence">i.MX6 SOM Power Up Sequence</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-gpio-internal-boot-source-configuration">i.MX6 SOM GPIO (Internal) Boot Source Configuration</a><br>- <a href="imx6-som-hardware-user-manual.md#boot-from-sdhc2-external-sd-card">Boot from SDHC2 External SD Card</a><br>- <a href="imx6-som-hardware-user-manual.md#boot-from-sdhc3-emmc">Boot from SDHC3 eMMC</a><br>- <a href="imx6-som-hardware-user-manual.md#boot-from-sata">Boot from SATA</a><br>- <a href="imx6-som-hardware-user-manual.md#rev-13-debugging-capability">Rev 1.3 Debugging Capability</a><br>- <a href="imx6-som-hardware-user-manual.md#rev-15-debugging-capability">Rev 1.5 Debugging Capability</a><br>- <a href="imx6-som-hardware-user-manual.md#differences-between-som-versions">Differences Between SOM Versions</a><br>- <a href="imx6-som-hardware-user-manual.md#changes-between-som-rev-10-to-rev-12">Changes Between SOM Rev 1.0 to Rev 1.2</a><br>- <a href="imx6-som-hardware-user-manual.md#changes-between-som-rev-12-to-rev-13">Changes Between SOM Rev 1.2 to Rev 1.3</a><br>- <a href="imx6-som-hardware-user-manual.md#changes-between-som-rev-13-to-rev-15">Changes Between SOM Rev 1.3 to Rev 1.5</a><br>- <a href="imx6-som-hardware-user-manual.md#typical-power-consumption">Typical Power Consumption</a><br>- <a href="imx6-som-hardware-user-manual.md#imx6-som-power-consumption">imx6 SOM Power Consumption</a><br>- <a href="imx6-som-hardware-user-manual.md#maximum-rating">Maximum Rating</a><br>- <a href="imx6-som-hardware-user-manual.md#mechanical-description">Mechanical Description</a><br>- <a href="imx6-som-hardware-user-manual.md#documentation">Documentation</a><br>- <a href="imx6-som-hardware-user-manual.md#related-articles">Related Articles</a></p> |              |                                                                                                       |
 
-> \[!INFO] **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% hint style="info" %}
+**Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
+{% endhint %}
+
 
 ## Introduction
 
@@ -119,7 +122,10 @@ The Freescale i.MX6 SoC is an implementation of the ARM CortexTM-A9 core, which 
     * Misc. SD and MMC interface with 3.3v / 1.8v voltage level support (for UHS-1 speeds)
   * Misc. serial interfaces (SPI, NOR, I2S, I2C, CAN etc…)
 
-> \[!NOTE] Please refer to Freescale i.MX6 datasheets with regards to differences between the various devices, number of processors, L2 cache size, GPU supported (i.e. gc880 vs gc2000), etc…
+{% hint style="info" %}
+Please refer to Freescale i.MX6 datasheets with regards to differences between the various devices, number of processors, L2 cache size, GPU supported (i.e. gc880 vs gc2000), etc…
+{% endhint %}
+
 
 #### 10/100/1000 MBPS Ethernet PHY
 
@@ -226,7 +232,10 @@ The SOM incorporates a Qualcomm / Atheros AR8035 PHY. The PHY connectivity is as
 * Phy reset function via i.MX6 pad V5 (KEY\_ROW4). Active low
 * Default phy address either 0x0 or 0x4 (depends on LED activity reset strap, either pulled down or pulled up)
 
-> \[!WARNING] **Please note** Note that due to internal i.MX6 buses the 1000Mbps interface speed is limited to 470Mbps.
+{% hint style="warning" %}
+**Please note** Note that due to internal i.MX6 buses the 1000Mbps interface speed is limited to 470Mbps.
+{% endhint %}
+
 
 #### 802.11 b/g/n and Bluetooth SiP
 
@@ -382,7 +391,10 @@ Integration with the SR-SOM-MX6 is easy, power sequencing wise. Note the followi
 * The SOM internal power management contains a soft-start clamp that gradually raises its internally generated power supplies once VIN\_5V0 is applied. The soft-start timing is set to be 800us (typ.). SNVS\_3V0 must be applied well ahead of the internal power rails. We recommend that SNVS\_3V0 be applied no later than 200uS after
 * SNVS\_3V0 must be applied before NVCC\_EIM0, NVCC\_SD2 and NVCC\_SD3. Alternatively, SNVS\_3V0 can be shorted with those power supplies as long as they do not exceed 3.3v (absolute maximum including overvoltage ripples).
 
-> \[!WARNING] **Please note** Notice the HummingBoard design, where there is a single 3.2V power rail generated from the 5V DC IN (either via LDO or external DC-DC), and that rail is directly applied to VSNVS\_3V0, NVCC\_EIM0 together with the VIN\_5V0.
+{% hint style="warning" %}
+**Please note** Notice the HummingBoard design, where there is a single 3.2V power rail generated from the 5V DC IN (either via LDO or external DC-DC), and that rail is directly applied to VSNVS\_3V0, NVCC\_EIM0 together with the VIN\_5V0.
+{% endhint %}
+
 
 * Notice that a cost saving practice when integrating SR-SOM-MX6 is to have a single DC-DC of output voltage 3.2v, and -+100mV ripple that supplies all the SR-SOM-MX6 supplies, except the USB\_OTG\_VBUS and USB\_HOST\_VBUS which are 5V when
 
@@ -392,9 +404,15 @@ Integration with the SR-SOM-MX6 is easy, power sequencing wise. Note the followi
 
 Blowing the device’s eFuses is alternative to using GPIOs in order to set boot source. This topic is widely covered on the SolidRun [eFuses for i.MX6 SOM (Developers page)](imx6-other-articles/efuses-for-imx6-som-developers-page.md) .
 
-> \[!CAUTION] If the boot method is set, via eFuses (irreversible operation) then boot select via GPIO pull up/down will be void and ONLY the eFusing configuration regulates the boot device.
+{% hint style="warning" %}
+If the boot method is set, via eFuses (irreversible operation) then boot select via GPIO pull up/down will be void and ONLY the eFusing configuration regulates the boot device.
+{% endhint %}
 
-> \[!WARNING] The section below assumes that the SOM’s boot eFuses are not set, it also assumes that the boot mode is set to BOOT\_MODE\[1:0] = 0b10, indicating boot from GPIOs.
+
+{% hint style="warning" %}
+The section below assumes that the SOM’s boot eFuses are not set, it also assumes that the boot mode is set to BOOT\_MODE\[1:0] = 0b10, indicating boot from GPIOs.
+{% endhint %}
+
 
 The following are the general instructions on how to perform boot from different common sources, the guideline in general is the following –
 
@@ -419,7 +437,10 @@ The following must be pulled up (10 kohm or lower):
 | BOOT\_CFG1\[6]    | EIM\_DA6           | DISP1\_DATA03           |
 | BOOT\_CFG2\[3]    | EIM\_DA11          | DI1\_PIN02              |
 
-> \[!WARNING] **Please note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% hint style="warning" %}
+**Please note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% endhint %}
+
 
 |                   |                    |                         |                                       |
 | ----------------- | ------------------ | ----------------------- | ------------------------------------- |
@@ -458,7 +479,10 @@ The following must be pulled up (10 kohm or lower):
 | BOOT\_CFG1\[6]    | EIM\_DA6           | DISP1\_DATA03           |
 | BOOT\_CFG2\[4]    | EIM\_DA12          | DI1\_PIN03              |
 
-> \[!WARNING] SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% hint style="warning" %}
+SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% endhint %}
+
 
 |                   |                    |                         |                         |
 | ----------------- | ------------------ | ----------------------- | ----------------------- |
@@ -493,7 +517,10 @@ The following must be pulled up (10 kohm or lower):
 | BOOT\_CFG1\[5]    | EIM\_DA5           | DISP1\_DATA04           |
 | BOOT\_CFG2\[4]    | EIM\_DA11          | DI1\_PIN03              |
 
-> \[!WARNING] **Please Note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% hint style="warning" %}
+**Please Note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
+{% endhint %}
+
 
 |                   |                    |                         |                                                         |
 | ----------------- | ------------------ | ----------------------- | ------------------------------------------------------- |
@@ -577,7 +604,10 @@ Notes:
 1. CuBox-i uses an LDO that provides 5V to 3.3V conversion that feeds the Ethernet PHY on the SOM. Due to that, the addition of 100mA on the 3.3V rail when PHY is set to 1Gbps, adds 100mA consumption on the 5.0V power rails.
 2. Notice the power difference between the same workload while Tjunction of the die is 55c and 87c (\~110mA difference from the 5V power rail).
 
-> \[!INFO] It takes about 60 minutes to reach that stable 87c Tjunction.
+{% hint style="info" %}
+It takes about 60 minutes to reach that stable 87c Tjunction.
+{% endhint %}
+
 
 1. This is using Linux suspend to memory when the front LED is off. This consumption is mainly due to DDR entering self-refresh (2GByte) and some consumption on the 3.3V LDO and leakage on the processor and SoC digital part rails.
 
@@ -610,14 +640,20 @@ Following are the maximum ratings on different power signals and power rails.
 | SD3 I/O                                                                                                       | NVCC\_SD3                    | –       | 40 (3)                     | mA       |
 | Supplies all SR-SOM-MX6 power management devices.                                                             | VIN\_5V0                     | –       | <p>1500 (4)<br><br>(5)</p> | mA       |
 
-> \[!WARNING] HDMI I2C is voltage boosted using VIN\_5V0 power rail. Due to that VIN\_5V0 = 5V is recommended since HDMI EDID requires 5V voltage.
+{% hint style="warning" %}
+HDMI I2C is voltage boosted using VIN\_5V0 power rail. Due to that VIN\_5V0 = 5V is recommended since HDMI EDID requires 5V voltage.
+{% endhint %}
+
 
 1. AR8035 Gigabit Ethernet PHY consumes 150mA out of those in a 100-meter cable configuration.
 2. This is reduced to 150mA when the AR8035 is not active.
 3. Assumes ultra-high speed: 1.8v, 100MHz clock rate and double data rate on data; 4-bit data on SD2 and 8-bit data on SD3.
 4. Assumes VIN\_5V0 = 5v. When supplying less than 5V, the maximum current increases accordingly; it is recommended to add additional margins on current limit.
 
-> \[!WARNING] Notice that a common practice when integrating SR-SOM-MX6 is to have a single DC-DC, of 3.2v that supplies all the SR-SOM-MX6 supplies, except the USB\_OTG\_VBUS and USB\_HOST\_VBUS.
+{% hint style="warning" %}
+Notice that a common practice when integrating SR-SOM-MX6 is to have a single DC-DC, of 3.2v that supplies all the SR-SOM-MX6 supplies, except the USB\_OTG\_VBUS and USB\_HOST\_VBUS.
+{% endhint %}
+
 
 5\. SR-SOM-MX6 rev 1.5 incorporates TI WiLink8 based device vs. BCM4330. This adds 285mA on the NVCC\_EIM0 but remove 200mA requirement from VIN\_5V0.
 
@@ -631,7 +667,10 @@ Note the following details:
 
 * The carrier board must use the same footprint as in the above mechanical
 
-> \[!INFO] Since this is a TOP VIEW of the print side of the SR-SOM-MX6, the diagram above describes the dimensions and placement of the board-to-board headers, mechanical holes and boundaries of the SR-SOM-MX6, as-is.
+{% hint style="info" %}
+Since this is a TOP VIEW of the print side of the SR-SOM-MX6, the diagram above describes the dimensions and placement of the board-to-board headers, mechanical holes and boundaries of the SR-SOM-MX6, as-is.
+{% endhint %}
+
 
 * J5002 is the main board-to-board header (bottom side in the diagram).
 * J8004 is the second board-to-board header (upper side in the diagram).

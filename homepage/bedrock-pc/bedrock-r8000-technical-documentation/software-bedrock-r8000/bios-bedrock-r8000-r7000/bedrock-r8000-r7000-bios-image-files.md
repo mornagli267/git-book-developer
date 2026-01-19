@@ -1,11 +1,15 @@
 # Bedrock R8000 | R7000 BIOS Image Files
 
-> [!NOTE]
-> Please follow [BIOS update procedure](../../../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
-> Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% hint style="info" %}
+Please follow [BIOS update procedure](../../../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
+Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% endhint %}
 
-> [!INFO]
-> Before updating BIOS, you are advised to [check current BIOS version](../../../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-settings.md#how-to-check-bios-version)
+
+{% hint style="info" %}
+Before updating BIOS, you are advised to [check current BIOS version](../../../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-settings.md#how-to-check-bios-version)
+{% endhint %}
+
 
 <a id="table-fo-contents"></a>
 
@@ -15,8 +19,10 @@
 
 # Current BIOS version
 
-> [!TIP]
-> Recommended version
+{% hint style="success" %}
+Recommended version
+{% endhint %}
+
 
 <a id="bios-v106-release-for-bedrock-r8000-r7000"></a>
 

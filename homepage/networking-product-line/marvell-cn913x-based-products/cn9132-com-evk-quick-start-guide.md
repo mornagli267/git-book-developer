@@ -34,9 +34,15 @@ The guide will give a technical overview about the product and by the end of it 
 | Dimensions                       | PCBA: 172 x 214mm                                                                                                                                                                                                                                        |
 | Enclosure                        | None                                                                                                                                                                                                                                                     |
 
-> \[!NOTE] (\*) Configurable [SERDESs](cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
+{% hint style="info" %}
+(\*) Configurable [SERDESs](cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
+{% endhint %}
 
-> \[!INFO] Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493937) .
+
+{% hint style="info" %}
+Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493937) .
+{% endhint %}
+
 
 ## **Block Diagram**
 
@@ -74,8 +80,11 @@ Here is what you will need to power up the board:
 * Micro USB to USB for console, the CN9132 EVK has an onboard FTDI chip.
 * IP router or IP switch
 
-> \[!NOTE] **Please Note** For Application using CN9132 COM express with multiple M.2 modules, SATAs and PCIe add-in card , a power supply 12V@5A is required.\
-> For Applications using CN9130 with few additional interfaces, a power supply of 12V@2.5A is sufficient.
+{% hint style="info" %}
+**Please Note** For Application using CN9132 COM express with multiple M.2 modules, SATAs and PCIe add-in card , a power supply 12V@5A is required.\
+For Applications using CN9130 with few additional interfaces, a power supply of 12V@2.5A is sufficient.
+{% endhint %}
+
 
 ## Recommended Cables
 
@@ -106,7 +115,10 @@ The following shows how to set the switches on the boot source selector:
 
 Once you set the switches, you can apply the following for booting from an **SPI** card and loading the Ubuntu from an **SD** card.
 
-> \[!WARNING] **Please Note:** The **SPI** including U-Boot by default.
+{% hint style="warning" %}
+**Please Note:** The **SPI** including U-Boot by default.
+{% endhint %}
+
 
 **1. Downloading the Ubuntu 20.04 image**
 
@@ -126,7 +138,10 @@ xz -dc cn9130-cex7_config_0_ubuntu-4cbe176.img.xz | dd of=/dev/sdX bs=4k conv=fd
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -150,7 +165,10 @@ saveenv
 boot
 ```
 
-> \[!WARNING] **Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
+{% hint style="warning" %}
+**Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
+{% endhint %}
+
 
 Once you installed the necessary serial connection software and ran the above commands , you should be able to see the following:
 
@@ -185,7 +203,10 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 It is possible to utilize a Cellular connection by inserting a SIM card into the SIM card slot. Please observe that a GSM Cellular modem needs to be installed utilizing the mini PCIe connection in order to exploit the cellular connection.
 
-> \[!WARNING] **Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% hint style="warning" %}
+**Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% endhint %}
+
 
 ## Build from source
 

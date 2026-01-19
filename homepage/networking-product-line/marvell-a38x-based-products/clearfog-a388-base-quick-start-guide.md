@@ -48,10 +48,16 @@ For CN9130 SOM Software, please refrer to the following link:[CN913x Build](../m
 | **Enclosure**        | Optional Metal Enclosure                                                                                                                                                |
 |                      | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/marvell-family/clearfog-base-pro/?_ga=2.126128654.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!NOTE] **Please Note :** (\*\*) M.2 includes USB 3.0, SATA, GNSS, 3G modules support (in carrier Base only)\
-> (\*\*\*) Assembly option on the SOM
+{% hint style="info" %}
+**Please Note :** (\*\*) M.2 includes USB 3.0, SATA, GNSS, 3G modules support (in carrier Base only)\
+(\*\*\*) Assembly option on the SOM
+{% endhint %}
 
-> \[!INFO] Supported with A388 SOM. For more detailed information about our A388 SOM series please visit this user manual : [A388 SOM Hardware User Manual](a388-som-hardware-user-manual.md) .
+
+{% hint style="info" %}
+Supported with A388 SOM. For more detailed information about our A388 SOM series please visit this user manual : [A388 SOM Hardware User Manual](a388-som-hardware-user-manual.md) .
+{% endhint %}
+
 
 ## **Block Diagram**
 
@@ -128,7 +134,10 @@ xz -dc sr-a38x-debian-bullseye-20220427.img.xz | dd of=/dev/sdX bs=4k conv=fdata
 
 * For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. U-Boot installation**
 
@@ -176,7 +185,10 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 It is possible to utilize a Cellular connection by inserting a SIM card into the SIM card slot. Please observe that a GSM Cellular modem needs to be installed utilizing the mini PCIe connection in order to exploit the cellular connection.
 
-> \[!WARNING] **Please Note** If your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% hint style="warning" %}
+**Please Note** If your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
+{% endhint %}
+
 
 ## List Of Supported OS
 

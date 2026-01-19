@@ -35,7 +35,10 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure                        | Extruded aluminium                                                                                                                                                                                                                                                                                                                                                          |
 |                                  | [Buy Now](https://shop.solid-run.com/product/SRG2L-EVKHBPRO-R01/?_gl=1*a7bvju*_gcl_aw*R0NMLjE3MDA0MDYzMzAuRUFJYUlRb2JDaE1JdGJHbmdlTy1nZ01WRXkwR0FCMnlqZ2dfRUFBWUFTQUFFZ0loNl9EX0J3RQ..*_gcl_au*NzcxNzAzMjc2LjE2OTgxNTc0NTc.&_ga=2.143329333.1607792420.1701175848-1805271611.1656861289&_gac=1.44876432.1700406450.EAIaIQobChMItbGngeO-ggMVEy0GAB2yjgg_EAAYASAAEgIh6_D_BwE) |
 
-> \[!INFO] Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
+{% hint style="info" %}
+Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -70,7 +73,10 @@ Here is what you will need to power up and use the board:
 
 Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/G2L Boot Select](rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md) .
 
-> \[!NOTE] eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → on : eMMC , off : SD
+{% hint style="info" %}
+eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → on : eMMC , off : SD
+{% endhint %}
+
 
 ## Generating Yocto, Buildroot and Debian image
 
@@ -119,7 +125,10 @@ The following shows how to set the switches on the boot source selector:
 
 ![](../../../.gitbook/assets/image-20231130-115106.png)
 
-> \[!INFO] Please Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Please Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -221,7 +230,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 $ ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2. Install the wpa\_supplicant package:
 
@@ -257,7 +269,10 @@ EOF
 
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5. Make sure it works:
 
@@ -399,7 +414,10 @@ reboot
 weston
 ```
 
-> \[!NOTE] Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
+{% hint style="info" %}
+Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
+{% endhint %}
+
 
 For working with **GNOME** GUI on top of Xorg:
 

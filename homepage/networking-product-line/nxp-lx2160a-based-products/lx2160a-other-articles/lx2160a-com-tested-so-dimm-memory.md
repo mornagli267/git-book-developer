@@ -22,8 +22,10 @@ All SO-DIMMs that are tested are SO-DIMM DDR4 type with different sizes, speeds,
 
 The table is first published around when the LX2160A module started shipping to customers; it is expected to grow slightly in case all memory devices passes as in the current state and will update only the failed cases.
 
-> [!INFO]
-> The list is sorted alphabetical.
+{% hint style="info" %}
+The list is sorted alphabetical.
+{% endhint %}
+
 
 |     |     |     |     |     |
 | --- | --- | --- | --- | --- |
@@ -49,5 +51,7 @@ The table is first published around when the LX2160A module started shipping to 
 | Virtium VL47A1H36B-C3SD | 8GByte 3200 Mtps | V   |     |     |
 | Virtium VL41A2G63A-N8SC-S1 | 16GByte 2666 Mtps + ECC Industrial temp | V   |     |     |
 
-> [!INFO]
-> Notice that the above tests were performed when LX2160A COM express type 7 module core VDD was set to 780mV; which is the default setting when shipping the module.
+{% hint style="info" %}
+Notice that the above tests were performed when LX2160A COM express type 7 module core VDD was set to 780mV; which is the default setting when shipping the module.
+{% endhint %}
+

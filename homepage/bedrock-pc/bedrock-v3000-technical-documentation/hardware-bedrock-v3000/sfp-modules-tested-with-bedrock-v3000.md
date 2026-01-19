@@ -56,5 +56,7 @@ This page lists the SFP modules that have been tested on Bedrock PC by SolidRun.
 | OEM | SPT-PE-T2 | V   | 941 Mbits/sec |     |
 | FS  | SFP-GB-GE-T | V   | 940 Mbits/sec |     |
 
-> [!INFO]
-> List will be updated as soon as SolidRun tests more SFP modules on bedrock PC.
+{% hint style="info" %}
+List will be updated as soon as SolidRun tests more SFP modules on bedrock PC.
+{% endhint %}
+

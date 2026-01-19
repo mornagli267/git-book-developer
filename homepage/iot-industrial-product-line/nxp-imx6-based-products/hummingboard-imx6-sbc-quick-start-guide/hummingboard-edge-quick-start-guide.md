@@ -42,11 +42,17 @@ The guide will give a technical overview about the product and by the end of it 
 | **Environment**      | Optional metal enclosure                                                                                                        |
 |                      | [Buy Now](https://shop.solid-run.com/product-tag/hummingboard-edge/?_ga=2.56061992.2016484779.1641802897-2012112798.1622706355) |
 
-> \[!INFO] Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../imx6-som-hardware-user-manual.md).
+{% hint style="info" %}
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../imx6-som-hardware-user-manual.md).
+{% endhint %}
 
-> \[!NOTE] **Please Note**\
-> (\*) RAM type and speed dependent on SOM\
-> (\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
+
+{% hint style="info" %}
+**Please Note**\
+(\*) RAM type and speed dependent on SOM\
+(\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
+{% endhint %}
+
 
 #### **Block Diagram**
 
@@ -84,7 +90,10 @@ For Booting from an SD card, jumpers need to be setup at J5005 as follows:
 
 ![](../../../../.gitbook/assets/image-20211114-094820.png)
 
-> \[!NOTE] Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
+{% hint style="info" %}
+Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
+{% endhint %}
+
 
 Once you setup the jumpers, you can apply the following for booting from an SD card.
 
@@ -108,7 +117,10 @@ gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=s
 
 * For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -124,7 +136,10 @@ Please connect the UART cable to the pins on connector J25 as shown in the below
 
 ![](../../../../.gitbook/assets/image-20211114-100743.png)
 
-> \[!INFO] For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
+{% hint style="info" %}
+For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
+{% endhint %}
+
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -165,7 +180,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2\. Install the wpa\_supplicant package:
 
@@ -202,7 +220,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5\. Make sure it works:
 
@@ -271,7 +292,10 @@ In order to be able to control the GPIO pins, please refer to [HummingBoard Edge
 
 #### Install GUI Support
 
-> \[!NOTE] Note that HDMI doesn’t display anything by default.
+{% hint style="info" %}
+Note that HDMI doesn’t display anything by default.
+{% endhint %}
+
 
 **Wayland**
 
@@ -285,7 +309,10 @@ In order to be able to control the GPIO pins, please refer to [HummingBoard Edge
 
 ![](../../../../.gitbook/assets/IMG-6928-20211014-134838.jpg)
 
-> \[!NOTE] `By default one application is available, the terminal emulator, at the upper left corner.`
+{% hint style="info" %}
+`By default one application is available, the terminal emulator, at the upper left corner.`
+{% endhint %}
+
 
 2\. Start Weston FROM A PHYSICAL TERMINAL (from the above terminal, not remote or serial session):
 
@@ -293,7 +320,10 @@ In order to be able to control the GPIO pins, please refer to [HummingBoard Edge
   weston-launch -- --backend=drm-backend.so
 ```
 
-> \[!WARNING] Make sure to run the above without sudo.
+{% hint style="warning" %}
+Make sure to run the above without sudo.
+{% endhint %}
+
 
 This will bring up the following:
 

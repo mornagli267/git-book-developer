@@ -1,18 +1,24 @@
 # AMD V3000 COM Express BIOS Image Files
 
-> [!NOTE]
-> Please follow [BIOS update procedure](../../../../homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
-> Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% hint style="info" %}
+Please follow [BIOS update procedure](../../../../homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
+Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
+{% endhint %}
 
-> [!INFO]
-> Before updating BIOS, you are advised to [check current BIOS version](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Documentation#how-to-check-bios-version)
+
+{% hint style="info" %}
+Before updating BIOS, you are advised to [check current BIOS version](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Documentation#how-to-check-bios-version)
+{% endhint %}
+
 
 <a id="current-bios-version"></a>
 
 # Current BIOS version
 
-> [!TIP]
-> Recommended for use
+{% hint style="success" %}
+Recommended for use
+{% endhint %}
+
 
 <a id="bios-v118-release-for-amd-v3000-com-express"></a>
 

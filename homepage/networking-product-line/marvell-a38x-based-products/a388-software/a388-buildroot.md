@@ -34,7 +34,10 @@ At the end of the build, the SD card image file is at `output/images/sdcard.img`
 dd if=output/images/sdcard.img of=/dev/sdX bs=1M conv=fdatasync
 ```
 
-> \[!NOTE] Note that `/dev/sdX` must match the device node of the SD card on your PC host.
+{% hint style="info" %}
+Note that `/dev/sdX` must match the device node of the SD card on your PC host.
+{% endhint %}
+
 
 2\. Set the Clearfog board DIP switches to boot from SD. See the [ClearFog A388 Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286655684)  article for details.
 

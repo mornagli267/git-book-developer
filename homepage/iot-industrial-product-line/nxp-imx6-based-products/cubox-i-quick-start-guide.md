@@ -37,7 +37,10 @@ The guide will give a technical overview about the product and by the end of it 
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355)
 
-> \[!INFO] Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466).
+{% hint style="info" %}
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466).
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -63,7 +66,10 @@ The following figure describes the i.MX6 Block Diagram.
 * Linux or Windows PC
 * Router or switch with Ethernet cable
 
-> \[!WARNING] Note that using an adaptor with an output voltage which is higher than 5V will damage your device and possibly other connected USB devices.
+{% hint style="warning" %}
+Note that using an adaptor with an output voltage which is higher than 5V will damage your device and possibly other connected USB devices.
+{% endhint %}
+
 
 ## Booting form an SD card
 
@@ -87,7 +93,10 @@ gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=f
 
 * For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 **3. SD card insertion**
 
@@ -97,7 +106,10 @@ Please Insert the SD card into your device.
 
 Connect your power adaptor to the DC jack, and then connect the adaptor to mains supply.
 
-> \[!TIP] A red LED will light up at the front panel. This is an indication of boot loader firmware is running.If you find you need additional help, please contact us and we’ll do our best to get back to you with more personal support.
+{% hint style="success" %}
+A red LED will light up at the front panel. This is an indication of boot loader firmware is running.If you find you need additional help, please contact us and we’ll do our best to get back to you with more personal support.
+{% endhint %}
+
 
 **5. Serial Connection**
 

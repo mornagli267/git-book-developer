@@ -73,7 +73,10 @@ LTE – Quectel EC25 (Main) | SMA
 
 ![](../../../.gitbook/assets/image-20220117-162928.png)
 
-> \[!TIP] **Please Note** For more information about the antennas used (optional) with the SolidSense N6 indoor please see this article : [SolidSense N6 Indoor Kits](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916781)
+{% hint style="success" %}
+**Please Note** For more information about the antennas used (optional) with the SolidSense N6 indoor please see this article : [SolidSense N6 Indoor Kits](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916781)
+{% endhint %}
+
 
 The assembly of the u.FL to SMA cables can be seen in the picture below;
 
@@ -102,7 +105,10 @@ SolidSense uses PN ZM90-15000-0BR1 by CEN LINK, Datasheet can be seen here: [htt
 
 SolidSense uses PN B50(15-02)G8-09-A023-B52 by BTOP : [http://www.magnetic-rj45jack.com/sale-10691195-bicolor-led-rj45-connector-port-high-performance-for-maximum-emi-suppression.html](http://www.magnetic-rj45jack.com/sale-10691195-bicolor-led-rj45-connector-port-high-performance-for-maximum-emi-suppression.html)
 
-> \[!NOTE] **Please Note** Due to internal i.MX6 buses the 1000Mbps interface speed is limited to 470Mbps.
+{% hint style="info" %}
+**Please Note** Due to internal i.MX6 buses the 1000Mbps interface speed is limited to 470Mbps.
+{% endhint %}
+
 
 ### DC jack
 
@@ -120,7 +126,10 @@ Please refer to this article for more information :  [i.MX6 Application Note –
 3. Create your own SolidSense image derived from SolidSense OOB.
 4. From bare metal. You can create your own Linux image starting from SolidRun BSP. The support for these developments are not covered in the SolidSense section.
 
-> \[!TIP] The product comes with a SolidSense built in software and ready to go.
+{% hint style="success" %}
+The product comes with a SolidSense built in software and ready to go.
+{% endhint %}
+
 
 ## Network Configuration
 
@@ -199,7 +208,10 @@ Approvals
 | GSM EDGE                        |                |     | 296(DL)/236.8(UL) |     | Kbps  |
 | GSM GPRS                        |                |     | 107(DL)/85.6(UL)  |     | Kbps  |
 
-> \[!NOTE] **Please Note** DL = Download UL = Upload
+{% hint style="info" %}
+**Please Note** DL = Download UL = Upload
+{% endhint %}
+
 
 |                            |         |               |                          |
 | -------------------------- | ------- | ------------- | ------------------------ |
@@ -264,7 +276,10 @@ Approvals
 * NBTC (Thailand)
 * Anatel (Brazil)
 
-> \[!NOTE] **Please note** (\*) Under development
+{% hint style="info" %}
+**Please note** (\*) Under development
+{% endhint %}
+
 
 ## Labels
 

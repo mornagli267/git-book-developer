@@ -1,7 +1,10 @@
 # Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)
 
-> \[!WARNING] The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
-> [Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% hint style="warning" %}
+The documentation for SolidSense software is not maintained by SolidRun and the information herein is not actual with the latest version of the software, please contact our partner [SolidSense Connect](https://solidsense-connect.com/) who is now developing the SolidSense software.\
+[Here](https://github.com/solidsense-connect/solidsense-connect-gateway/wiki) is the Solidsense-Connect WiKi documentation page.
+{% endhint %}
+
 
 #### Foreword
 
@@ -37,7 +40,10 @@ For N6 Indoor and Outdoor versions here is the schematic if needed:&#x20;
 
 The gateway firmware level must be at least solidsense-V0.9-2019111100 (This can be verified by checking the Device page in Kura). If you are not in that revision or up please ask Solid Run support for assistance.
 
-> \[!WARNING] **Warning: Flashing a Nordic chip with the Wirepas stack is erasing the MAC address of the chip. The chip can then be reprogrammed when needed but a specific process is to be applied (contact support).**
+{% hint style="warning" %}
+**Warning: Flashing a Nordic chip with the Wirepas stack is erasing the MAC address of the chip. The chip can then be reprogrammed when needed but a specific process is to be applied (contact support).**
+{% endhint %}
+
 
 All operations require to access the gateway via ssh. ([SSH / FTP access to SolidSense gateway](../other-software-articles/ssh-ftp-access-to-solidsense-gateway.md) )
 

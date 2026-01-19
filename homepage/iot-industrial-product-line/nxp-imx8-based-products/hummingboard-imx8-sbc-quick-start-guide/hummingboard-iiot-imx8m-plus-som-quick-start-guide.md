@@ -37,7 +37,10 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure        | Optional extruded aluminum (IP32) enclosure                                                                                                                                                                               |
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product&_ga=2.156269240.2016484779.1641802897-2012112798.1622706355)                                                                          |
 
-> \[!INFO] Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](../imx8m-plus-som-hardware-user-manual.md) .
+{% hint style="info" %}
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](../imx8m-plus-som-hardware-user-manual.md) .
+{% endhint %}
+
 
 #### Block Diagram
 
@@ -65,7 +68,10 @@ Print side connector overview of the HummingBoard IIOT.
   * **+ (Positive)**: Left terminal (as marked in the image).
   * **- (Negative)**: Right terminal (as marked in the image).
 
-> \[!NOTE] Plug for connector **J1** : 2 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm).
+{% hint style="info" %}
+Plug for connector **J1** : 2 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm).
+{% endhint %}
+
 
 **J5004** {2x RS485, 2x CAN-FD, 2x RS232, DIG\_IN, DIG\_OUT}
 
@@ -73,7 +79,10 @@ Print side connector overview of the HummingBoard IIOT.
 
 ![image-20241121-134703.png](../../../../.gitbook/assets/image-20241121-134703.png)
 
-> \[!NOTE] Plug for connector **J5004** : 20 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm) like [this](https://www.digikey.com/en/products/detail/phoenix-contact/1738885/3606115).
+{% hint style="info" %}
+Plug for connector **J5004** : 20 Position Terminal Block Plug, Female Sockets 0.138" (3.50mm) like [this](https://www.digikey.com/en/products/detail/phoenix-contact/1738885/3606115).
+{% endhint %}
+
 
 ## Software Setup
 
@@ -100,8 +109,11 @@ Before powering up the board for the first time it is recommended to select the 
 | **USB OTG**        | **ON**                             | OFF                                | OFF                                | OFF                                | **ON**                                  | OFF                                     |
 | **Internal Fuses** | OFF                                | OFF                                | OFF                                | OFF                                | **ON**                                  | OFF                                     |
 
-> \[!INFO] **MDx** = BOOT\_MODEx, **VDD\_BOOT** = 1.8V **or** 3.3V (Select S5\[5] **or** S5\[6]) .\
-> **Note** that **MD1** and **MD0** have been swapped between PCB version 1.1 and PCB version 1.0.
+{% hint style="info" %}
+**MDx** = BOOT\_MODEx, **VDD\_BOOT** = 1.8V **or** 3.3V (Select S5\[5] **or** S5\[6]) .\
+**Note** that **MD1** and **MD0** have been swapped between PCB version 1.1 and PCB version 1.0.
+{% endhint %}
+
 
 ## Booting from SD card
 
@@ -111,7 +123,10 @@ Here is the correct DIP switch position for SD boot:
 
 ![image-20240901-120609.png](../../../../.gitbook/assets/image-20240901-120609.png)
 
-> \[!INFO] Note: The black rectangle represents the switch position.
+{% hint style="info" %}
+Note: The black rectangle represents the switch position.
+{% endhint %}
+
 
 Once you set the switches, you can apply the following for booting from an SD card.
 
@@ -135,7 +150,10 @@ xz -dc debian-bootimg-68e87c8.img.xz | sudo dd of=/dev/sdX bs=4k conv=fdatasync 
 
 * For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 3. **SD card insertion**
 
@@ -244,7 +262,10 @@ An example for connecting to WiFi using wpa\_supplicant:
 ifconfig wlan0 up 
 ```
 
-> \[!NOTE] To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% hint style="info" %}
+To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
+{% endhint %}
+
 
 2. Install the wpa\_supplicant package:
 
@@ -281,7 +302,10 @@ network={
 EOF
 ```
 
-> \[!NOTE] Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% hint style="info" %}
+Check your personal ssids by running : ‘iw dev wlan0 scan’
+{% endhint %}
+
 
 5. Make sure it works:
 

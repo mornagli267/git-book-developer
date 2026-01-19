@@ -112,7 +112,10 @@ Following is a pinout for the [LX2162A SOM](https://www.solid-run.com/embedded-n
 | 39 | Diff 100 Ohm                          | LX2162A              | BH30               | SD2\_RX7\_N             | 78             | 77             | SD2\_TX7\_N             | BD30               | LX2162A        | Diff 100 Ohm \*DC block capacitor required |
 | 40 |                                       |                      |                    | GND                     | 80             | 79             | GND                     |                    |                |                                            |
 
-> \[!INFO] \*No DC blocking capacitor on any of the SerDes lanes
+{% hint style="info" %}
+\*No DC blocking capacitor on any of the SerDes lanes
+{% endhint %}
+
 
 ## Attachments
 

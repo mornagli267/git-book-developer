@@ -8,13 +8,19 @@ Before powering up a board for the first time it is recommended to select specif
 
 ![](../../../../.gitbook/assets/boot-select.png)
 
-> \[!INFO] **The black rectangle represents the switch position.**
+{% hint style="info" %}
+**The black rectangle represents the switch position.**
+{% endhint %}
+
 
 ## i.MX8M Mini SoM
 
 ![](../../../../.gitbook/assets/image-20211226-125732.png)
 
-> \[!INFO] **The black rectangle represents the switch position.**
+{% hint style="info" %}
+**The black rectangle represents the switch position.**
+{% endhint %}
+
 
 ## i.MX8M SoM
 
@@ -26,10 +32,16 @@ Please note , after HummingBoard Pulse/Ripple revision 2.3 and up the dip switch
 
 ![](../../../../.gitbook/assets/image-20211226-125712.png)
 
-> \[!INFO] **The black rectangle represents the switch position.**
+{% hint style="info" %}
+**The black rectangle represents the switch position.**
+{% endhint %}
+
 
 ### Carrier Revision 2.2 and earlier:
 
 ![](../../../../.gitbook/assets/image-20211226-125653.png)
 
-> \[!INFO] **The black rectangle represents the switch position.**
+{% hint style="info" %}
+**The black rectangle represents the switch position.**
+{% endhint %}
+

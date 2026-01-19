@@ -24,7 +24,10 @@ Dual 10 GbE ports are present in both Basic and Minimal.
 
 Bedrock V3000 Basic and Bedrock V3000 Minimal use the same BIOS and support the same operating systems.
 
-> \[!INFO] 10 GbE is currently **not** supported in Windows. Therefore, Bedrock V3000 Minimal is not recommended for running Windows due to lack of wired networking.
+{% hint style="info" %}
+10 GbE is currently **not** supported in Windows. Therefore, Bedrock V3000 Minimal is not recommended for running Windows due to lack of wired networking.
+{% endhint %}
+
 
 ## Mechanical
 
@@ -37,4 +40,7 @@ Basic and Minimal have identical mechanical design.
 
 Bedrock V3000 Minimal is priced lower than Bedrock V3000 Basic.
 
-> \[!INFO] Please contact [SolidRun](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#evaluate-bedrock) or [Bedrock resellers](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#bedrock-resellers) for a quotation.
+{% hint style="info" %}
+Please contact [SolidRun](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#evaluate-bedrock) or [Bedrock resellers](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#bedrock-resellers) for a quotation.
+{% endhint %}
+

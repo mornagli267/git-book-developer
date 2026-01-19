@@ -46,12 +46,14 @@ OS: Linux
 | Dimensions                       | 150 x 85 x 40mm                                                                                       | 150 x 85 x 40mm                                                                                                                                | 150 x 85 x 40mm                                                                                            | 150 x 85 x 40mm                                                                                                                                |
 | Enclosure                        | Plastic casing with internal antennas for WiFi-Bluetooth/BLE                                          | Plastic casing with internal antenna for WiFi-Bluetooth. One SMA port for LTE.                                                                 | Plastic casing with internal antenna for WiFi-Bluetooth                                                    | Plastic casing with internal antenna for WiFi-Bluetooth. One SMA port for LTE.                                                                 |
 
-> \[!INFO] **Please Note** (\*) Only accessible with case open.
->
-> * All **SRG40X.01SD** {X: 1, 2, 5} SKUs comes with U-Blox Nina-B1 (U-Blox comes with BLE FW by default except if you order the version with SW except SD like SRG40x.01SW **will come with Wirepass FW** )
-> * All **SRG40X.02SD** {X: 1, 2, 5} SKUs comes with fwm7blz22 (FWM7BLZ22 comes with BLE FW by default except if you order the version with SW except SD like SRG40x.02SW will come with Wirepass FW )
-> * **SRG405.02SD** = full assembled (including all options in the list...)\
->   -> SolidSense N8 Compact - WiFi BLE-FWM LTE POE RS485 CAN ETH-ADIN
+{% hint style="info" %}
+**Please Note** (\*) Only accessible with case open.
+* All **SRG40X.01SD** {X: 1, 2, 5} SKUs comes with U-Blox Nina-B1 (U-Blox comes with BLE FW by default except if you order the version with SW except SD like SRG40x.01SW **will come with Wirepass FW** )
+* All **SRG40X.02SD** {X: 1, 2, 5} SKUs comes with fwm7blz22 (FWM7BLZ22 comes with BLE FW by default except if you order the version with SW except SD like SRG40x.02SW will come with Wirepass FW )
+* **SRG405.02SD** = full assembled (including all options in the list...)\
+-> SolidSense N8 Compact - WiFi BLE-FWM LTE POE RS485 CAN ETH-ADIN
+{% endhint %}
+
 
 ![](<../../../.gitbook/assets/masterLayer.0003 (3).png>)
 
@@ -67,8 +69,11 @@ Please see below the features overview of the front side of the product.
 
 ![](../../../.gitbook/assets/image-20211219-111337.png)
 
-> \[!NOTE] **Note**\
-> The unit has two Dual-Band Antennas (for WIFI Module and U-Blox): RF ANT 2.4GHZ/5.4GHZ FLAT PATCH .
+{% hint style="info" %}
+**Note**\
+The unit has two Dual-Band Antennas (for WIFI Module and U-Blox): RF ANT 2.4GHZ/5.4GHZ FLAT PATCH .
+{% endhint %}
+
 
 The system can be used in 4 ways:
 
@@ -77,14 +82,20 @@ The system can be used in 4 ways:
 3. Create your own SolidSense image derived from SolidSense OOB.
 4. From bare metal. You can create your own Linux image starting from SolidRun BSP. The support for these developments are not covered in the SolidSense section.
 
-> \[!TIP] The product comes with a SolidSense built in software and ready to go.
+{% hint style="success" %}
+The product comes with a SolidSense built in software and ready to go.
+{% endhint %}
+
 
 ### Power Connection
 
 Connect your power adaptor to the DC jack (12-36 V), and then connect the adaptor to mains supply.
 
-> \[!TIP] A green LED will light up at the front panel. This is an indication of your device working.\
-> If it didn’t seem to be lit, then you have to press the on/off button.
+{% hint style="success" %}
+A green LED will light up at the front panel. This is an indication of your device working.\
+If it didn’t seem to be lit, then you have to press the on/off button.
+{% endhint %}
+
 
 ### Network Configuration
 
@@ -121,9 +132,15 @@ If you are using SolidSense as a Wirepas gateway you can directly configure your
 
 For flashing or re-flashing wirepas sinks, please refer to [Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)](../solidsense-software/wirepas/flashing-or-re-flashing-wirepas-sinks-on-solidsense-gateway-v09-and-up.md) .
 
-> \[!NOTE] When using the Solidsense software, UART4 (displayed as `/dev/ttymxc3` in Linux) should be linked to `wirepasSink1.service` for proper sink configuration on the N8 Compact.
+{% hint style="info" %}
+When using the Solidsense software, UART4 (displayed as `/dev/ttymxc3` in Linux) should be linked to `wirepasSink1.service` for proper sink configuration on the N8 Compact.
+{% endhint %}
 
-> \[!INFO] Wirepas is exclusively supported by our distribution partner [CTHINGS.CO | Edge IoT Solutions](https://cthings.co/)
+
+{% hint style="info" %}
+Wirepas is exclusively supported by our distribution partner [CTHINGS.CO | Edge IoT Solutions](https://cthings.co/)
+{% endhint %}
+
 
 #### BLE Firmware
 
@@ -131,7 +148,10 @@ This module supports BLE and can be programmed with BLE firmware on N8 products.
 To build and program the BLE firmware, please follow the instructions in the repository: [SolidRun BLE Firmware Guide](https://github.com/SolidRun/mynewt-sr-blehci/tree/master).\
 The firmware is built on the Apache Mynewt OS, using the Apache NimBLE application to provide BLE functionality and HCI protocol support.
 
-> \[!NOTE] The SRG40X.0**Y**SD SKUs (`X`: 1, 2, 5; `Y`: 1, 2) come with BLE firmware pre-programmed by default.
+{% hint style="info" %}
+The SRG40X.0**Y**SD SKUs (`X`: 1, 2, 5; `Y`: 1, 2) come with BLE firmware pre-programmed by default.
+{% endhint %}
+
 
 #### Sink Device - UART4
 

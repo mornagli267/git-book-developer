@@ -45,8 +45,10 @@ Tested SO-DIMM modules are DDR5 with different capacity, rate, and temperature r
 
 Tested ECC SO-DIMM modules are DDR5 with different capacity, rate, and temperature rating.
 
-> [!INFO]
-> Bedrock R7000 does **not** support ECC RAM and is therefore not listed
+{% hint style="info" %}
+Bedrock R7000 does **not** support ECC RAM and is therefore not listed
+{% endhint %}
+
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |

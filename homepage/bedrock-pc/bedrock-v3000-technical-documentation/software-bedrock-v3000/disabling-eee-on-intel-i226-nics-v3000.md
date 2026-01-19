@@ -14,7 +14,9 @@ To disable EEE on a NIC:
 ethtool --set-eee <INTERFACE_NAME> eee off
 ```
 
-> [!INFO]
-> When using ethtool, every reboot will reset the setting so you will need to do it each time you reboot the system.
+{% hint style="info" %}
+When using ethtool, every reboot will reset the setting so you will need to do it each time you reboot the system.
+{% endhint %}
+
 
 EEE could also be disabled in the NICs settings using Intels Lanfonf tool if you have access to it.

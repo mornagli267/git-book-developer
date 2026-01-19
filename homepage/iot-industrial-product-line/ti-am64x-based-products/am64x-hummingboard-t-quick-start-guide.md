@@ -34,7 +34,10 @@ Configure the boot-mode for microSD using onboard DIP switch S1:
 | microSD (RAW)           | 1 | 0 | 0 | 0 | 1 | 1 |
 | eMMC                    | 1 | 0 | 0 | 1 | X | X |
 
-> \[!INFO] **Note:** 0 = OFF, 1 = ON, X = don't care.
+{% hint style="info" %}
+**Note:** 0 = OFF, 1 = ON, X = don't care.
+{% endhint %}
+
 
 ### Console
 
@@ -48,7 +51,10 @@ Start an application for serial console - such as [PuTTY](https://www.putty.org/
 2. uncompress downloaded image file
 3. write image file to microSD card to create a byte-for-byte copy. [https://etcher.io/](https://etcher.io/) is recommended, professionals may use unix “dd” command.
 
-> \[!NOTE] **Attention:** The AM64x SOM modules are programmed with critical identifying information, including the product name and SKU, stored in an EEPROM at I2C bus 0, address 0x50. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data. **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support immediately for assistance.
+{% hint style="info" %}
+**Attention:** The AM64x SOM modules are programmed with critical identifying information, including the product name and SKU, stored in an EEPROM at I2C bus 0, address 0x50. This data is structured according to the [ONIE TLV](https://opencomputeproject.github.io/onie/design-spec/hw_requirements.html#board-eeprom-information-format) standard and is essential for initializing the product and aligning the software accordingly. The `tlv_eeprom` command in U-Boot can be used to read this data. **Important:** If this information is deleted or becomes corrupted, it will impact the correct initialization and functionality of the product. In such cases, please contact SolidRun support immediately for assistance.
+{% endhint %}
+
 
 ## First Steps with Debian reference system
 

@@ -40,10 +40,11 @@ The following figure describes the ClearFog LX2162A Block Diagram.
 
 ![](<../../../.gitbook/assets/ClearFog - LX2162A Block Diagram (1).jpg>)
 
-> \[!NOTE]
->
-> * Serdes-1 lanes are routed to the 2x SFP28 (via TI retimer) and 2x SFP+ connector
-> * Serdes-2 lanes are routed to 8x 1GbE RJ-45 ports trough Marvell Octal PHY \*or 6x 1GbE RJ-45 ports trough Marvell Octal PHY and 2 mPCIe x1 Gen 3.0
+{% hint style="info" %}
+* Serdes-1 lanes are routed to the 2x SFP28 (via TI retimer) and 2x SFP+ connector
+* Serdes-2 lanes are routed to 8x 1GbE RJ-45 ports trough Marvell Octal PHY \*or 6x 1GbE RJ-45 ports trough Marvell Octal PHY and 2 mPCIe x1 Gen 3.0
+{% endhint %}
+
 
 ## Visual features overview
 
@@ -127,7 +128,10 @@ xz -dc lx2160a_....img.xz | dd of=/dev/sdX bs=4M conv=fsync
 
 * For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
 
-> \[!NOTE] Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% hint style="info" %}
+Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
+{% endhint %}
+
 
 1. SD card insertion\
    Please Insert the SD card into your device.
@@ -158,12 +162,18 @@ mmc dev 0
 mmc write 0xa4000000 0 0xd2000
 ```
 
-> \[!WARNING] **Please Note:**\
-> After programming to eMMC **and** removing microSD, the Boot Select switch must be changed to “eMMC” as shown in the table above.
+{% hint style="warning" %}
+**Please Note:**\
+After programming to eMMC **and** removing microSD, the Boot Select switch must be changed to “eMMC” as shown in the table above.
+{% endhint %}
+
 
 ![](<../../../.gitbook/assets/image-20220112-165616 (2).png>)
 
-> \[!WARNING] **Please Note:** The above commands should be run only once (in the fist boot), or when a new image is to be used.
+{% hint style="warning" %}
+**Please Note:** The above commands should be run only once (in the fist boot), or when a new image is to be used.
+{% endhint %}
+
 
 Boot the machine by running ‘**boot**’ in u-boot.
 
@@ -175,7 +185,10 @@ Once you installed the necessary serial connection software and ran the above co
 
 ![](<../../../.gitbook/assets/image-20211216-145039 (3).png>)
 
-> \[!WARNING] **Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
+{% hint style="warning" %}
+**Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
+{% endhint %}
+
 
 1. Final stages
 
@@ -292,22 +305,27 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 
 ```
 
-> \[!WARNING] **Please note**
->
-> * In the same way, can install Debian or another Linux arm64 distribution.
+{% hint style="warning" %}
+**Please note**
+* In the same way, can install Debian or another Linux arm64 distribution.
+{% endhint %}
 
-> \[!WARNING] **Please note**
->
-> * The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
-> * The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
+
+{% hint style="warning" %}
+**Please note**
+* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
+* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
+{% endhint %}
+
 
 ## Build From Source
 
 * You can build your own image using the script in here – [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)
 
-> \[!TIP]
->
-> * Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
+{% hint style="success" %}
+* Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
+{% endhint %}
+
 
 ## Documentation
 

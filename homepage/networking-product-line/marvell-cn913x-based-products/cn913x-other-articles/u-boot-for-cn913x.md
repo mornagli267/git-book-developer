@@ -154,6 +154,8 @@ The tool provided by Marvell is available in our [cn913x\_build repository on Gi
 
 - [https://github.com/SolidRun/cn913x\_build/](https://github.com/SolidRun/cn913x_build/)
 
-> [!NOTE]
-> **Please Note:**
-> This repository is based on Marvell sources v2019.10
+{% hint style="info" %}
+**Please Note:**
+This repository is based on Marvell sources v2019.10
+{% endhint %}
+

@@ -29,7 +29,10 @@ This Application Note notes the thermal grades of SolidRun i.MX6 products.
 |                         | SRMX6DU\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
 |                         | SRMX6QD\*V15A0   | Aj            | I        | I                                                            | I           | I              | E             |
 
-> \[!INFO] **Please note** By default the i.MX6 Dual and Quad core CPU are “commercial extended” by default (\*) For WiFi there is an industrial ordering option – Please contact SolidRun for additional information
+{% hint style="info" %}
+**Please note** By default the i.MX6 Dual and Quad core CPU are “commercial extended” by default (\*) For WiFi there is an industrial ordering option – Please contact SolidRun for additional information
+{% endhint %}
+
 
 **Comments**
 
@@ -79,7 +82,10 @@ NXP i.MX6 Order-able CPUs options (Dual and Quad):
 | **Industrial** | SRHBCGE000IV14 – HummingBoard Gate \|Ind. Temp | I           | Removed |
 |                | SRHBCEE000IV14 – HummingBoard Edge \|Ind. Temp | I           | Removed |
 
-> \[!WARNING] **Comments** The temperatures of the components are Operating Ta (ambient): Commercial: 0C-70C Industrial: -40C-85C
+{% hint style="warning" %}
+**Comments** The temperatures of the components are Operating Ta (ambient): Commercial: 0C-70C Industrial: -40C-85C
+{% endhint %}
+
 
 ## CuBox-i
 

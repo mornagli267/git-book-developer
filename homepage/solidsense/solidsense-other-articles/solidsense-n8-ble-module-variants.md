@@ -30,7 +30,10 @@ Both variants are functionally compatible at the system level but differ in BLE 
   * **SRG0405.01SD** — N8 Compact with Wi-Fi, BLE-**u-blox**, LTE, RS485, CAN, ETH-Atheros
   * **SRG0405.02SD** — N8 Compact with Wi-Fi, BLE-**FWM7BLZ22**, LTE, PoE, RS485, CAN, ETH-ADIN
 
-> \[!NOTE] **Note:** **“.02SD”** SKUs ship FWM7BLZ22 with **BLE firmware** by default. **“.02SW”** SKUs (e.g., `SRG40x.02SW`) ship with **Wirepas** firmware.
+{% hint style="info" %}
+**Note:** **“.02SD”** SKUs ship FWM7BLZ22 with **BLE firmware** by default. **“.02SW”** SKUs (e.g., `SRG40x.02SW`) ship with **Wirepas** firmware.
+{% endhint %}
+
 
 ***
 

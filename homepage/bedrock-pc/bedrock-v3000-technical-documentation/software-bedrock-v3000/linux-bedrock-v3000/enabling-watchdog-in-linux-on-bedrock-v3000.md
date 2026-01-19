@@ -71,5 +71,7 @@ To test if the watchdog is working correctly, you can intentionally trigger a ke
 
 After executing the above command, the kernel will crash. If the watchdog is correctly configured, the system should reboot automatically within 30 seconds.
 
-> [!WARNING]
-> **Warning**: The test command will cause system instability and an immediate reboot. Ensure you've saved all your work before executing the test command.
+{% hint style="warning" %}
+**Warning**: The test command will cause system instability and an immediate reboot. Ensure you've saved all your work before executing the test command.
+{% endhint %}
+

@@ -30,11 +30,15 @@ This guide compatible with all the RZ family. For using with a specific device y
 $ sudo dd if=images/rzxxxx_solidrun_buildroot-sd-xxxxxxx.img of=/dev/sdX bs=1M
 ```
 
-> [!INFO]
-> Note: xxxxxxx in the file name is the software revision number that changes over time.
+{% hint style="info" %}
+Note: xxxxxxx in the file name is the software revision number that changes over time.
+{% endhint %}
 
-> [!INFO]
-> Note: the SD card is assumed to be connected to /dev/sdX device and unmounted. Don’t forget to change X to the actual device letter.
+
+{% hint style="info" %}
+Note: the SD card is assumed to be connected to /dev/sdX device and unmounted. Don’t forget to change X to the actual device letter.
+{% endhint %}
+
 
 - Set the [S3 DIP switch to “Boot from uSD](../rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md). “
 - Connect the USB cable and open the serial terminal. If you have trouble with this step, refer to [the serial connection article](../../../../homepage/other-articles/serial-connection.md).
@@ -60,8 +64,10 @@ $ sudo dd if=images/rzxxxx_solidrun-sd-bootloader-xxxxxxx.img of=/dev/sdX bs=1M
 $ sudo dd if=images/rzxxxx_solidrun_buildroot-sd-xxxxxxx.img of=/dev/sdX bs=1M
 ```
 
-> [!INFO]
-> Note: the USB drive is assumed to be connected to /dev/sdX device and unmounted. Don’t forget to change X to the actual device letter.
+{% hint style="info" %}
+Note: the USB drive is assumed to be connected to /dev/sdX device and unmounted. Don’t forget to change X to the actual device letter.
+{% endhint %}
+
 
 - Set the [S3 DIP switch to “Boot from uSD](../rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md). “
 - Connect the USB cable and open the serial terminal. If you have trouble with this step, refer to [the serial connection article](../../../../homepage/other-articles/serial-connection.md).
@@ -91,8 +97,10 @@ After this step, the board will boot. Stop it in the U-Boot command line in your
 # load usb 0:1 $fdt_addr_r boot/rzxxx-hummingboard.dtb
 ```
 
-> [!INFO]
-> Note: make sure to choose the correct dtb file according to your device.
+{% hint style="info" %}
+Note: make sure to choose the correct dtb file according to your device.
+{% endhint %}
+
 
 - If you need an eMMC access from Linux:
 
@@ -136,8 +144,10 @@ After this step, the board will boot. Stop it in the U-Boot command line in your
 # setenv serverip <the.server.ip.addr>
 ```
 
-> [!INFO]
-> the server ip address is the ip of the device that you created the server on.
+{% hint style="info" %}
+the server ip address is the ip of the device that you created the server on.
+{% endhint %}
+
 
 - Get the IP address:
 
@@ -169,8 +179,10 @@ After this step, the board will boot. Stop it in the U-Boot command line in your
 
 After that step, the board will boot using the ramdisk rootfs.
 
-> [!INFO]
-> Note: since the rootfs is in the RAM, all changes in the filesystem will be lost after reboot.
+{% hint style="info" %}
+Note: since the rootfs is in the RAM, all changes in the filesystem will be lost after reboot.
+{% endhint %}
+
 
 <a id="flashing-bootloaders-and-rootfs-from-linux"></a>
 
@@ -234,8 +246,10 @@ On your PC terminal go to the flash-writer script dir:
 $ cd build_scripts/flash-writer/
 ```
 
-> [!INFO]
-> Note: The config.ini file contains all the necessary script configuration, including binaries paths and the serial device. That config sets `/dev/ttyUSB0` as the default serial device. Don’t forget to change the `SERIAL_DEVICE_INTERFACE` variable to the actual device if it’s different in your system.
+{% hint style="info" %}
+Note: The config.ini file contains all the necessary script configuration, including binaries paths and the serial device. That config sets `/dev/ttyUSB0` as the default serial device. Don’t forget to change the `SERIAL_DEVICE_INTERFACE` variable to the actual device if it’s different in your system.
+{% endhint %}
+
 
 Flash the bootloaders:
 
@@ -246,8 +260,10 @@ $ sudo ./flash_writer_tool.sh config.ini fip
 $ sudo ./flash_writer_tool.sh config.ini emmc_config
 ```
 
-> [!INFO]
-> Note: The fw command uploads the flash-writer bare-metal software to the RAM. You can change the order or skip some of the commands if you need, but the fw command should always come first since it uploads the necessary software for the other commands.
+{% hint style="info" %}
+Note: The fw command uploads the flash-writer bare-metal software to the RAM. You can change the order or skip some of the commands if you need, but the fw command should always come first since it uploads the necessary software for the other commands.
+{% endhint %}
+
 
 Set the [S3 DIP switch to eMMC boot](../rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md) and press reset.
 
@@ -255,6 +271,8 @@ Set the [S3 DIP switch to eMMC boot](../rz-g2-other-articles/hummingboard-rz-g2l
 
 # Pre-programmed SOMs
 
-> [!NOTE]
-> - Pre-programmed SOMs (bootloader/custom\_image on eMMC) can be ordered from Solid-Run for high volume (programming will be done during the production test process).
-> - It is possible to order SOMs from Solidrun with preprogrammed [General](https://images.solid-run.com/RZ/U-Boot/build_date_20231225-git_rev_cd172f8)/Custom bootloader on eMMC and then you can load the Linux & FS over [USB-Disk](hummingboard-rz-family-boot-options.md#boot-from-usb) / [Ethernet (TFTP/DHCP)](hummingboard-rz-family-boot-options.md#boot-using-tftp) and then program the custom image from Linux…
+{% hint style="info" %}
+- Pre-programmed SOMs (bootloader/custom\_image on eMMC) can be ordered from Solid-Run for high volume (programming will be done during the production test process).
+- It is possible to order SOMs from Solidrun with preprogrammed [General](https://images.solid-run.com/RZ/U-Boot/build_date_20231225-git_rev_cd172f8)/Custom bootloader on eMMC and then you can load the Linux & FS over [USB-Disk](hummingboard-rz-family-boot-options.md#boot-from-usb) / [Ethernet (TFTP/DHCP)](hummingboard-rz-family-boot-options.md#boot-using-tftp) and then program the custom image from Linux…
+{% endhint %}
+

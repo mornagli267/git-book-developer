@@ -44,9 +44,11 @@ root@sr-imx8:/home/debian# modprobe qmi_wwan
 qmicli --device=/dev/cdc-wdm0
 ```
 
-> [!INFO]
-> **Note:**
-> If the driver is not correctly loaded, please verify that the module is set to expose the correct USB endpoints configuration toward the host system and that you have followed the provided guides from the cellular module vendors, regarding how to implement the module in Linux.
+{% hint style="info" %}
+**Note:**
+If the driver is not correctly loaded, please verify that the module is set to expose the correct USB endpoints configuration toward the host system and that you have followed the provided guides from the cellular module vendors, regarding how to implement the module in Linux.
+{% endhint %}
+
 
 3.Install the required packages
 
@@ -95,9 +97,11 @@ sudo ip link set wwan0 up
 sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="apn='YOUR_APN',username='YOUR_USERNAME',password='YOUR_PASSWORD',ip-type=4" --client-no-release-cid
 ```
 
-> [!NOTE]
-> **Note:**
-> Your APN information will vary according to the card you have.
+{% hint style="info" %}
+**Note:**
+Your APN information will vary according to the card you have.
+{% endhint %}
+
 
 You will get something similar to this:
 

@@ -59,7 +59,10 @@ First, we need to find out the correct USB to which our serial has connected to 
 
 Here we can see that the serial converter connected to **USB0 (ttyUSB0)** USB number.
 
-> \[!WARNING] Here and bellow we will use **/dev/ttyUSB0** as an example. Make sure to verify and use an actual usb device.
+{% hint style="warning" %}
+Here and bellow we will use **/dev/ttyUSB0** as an example. Make sure to verify and use an actual usb device.
+{% endhint %}
+
 
 #### Connecting with tio
 

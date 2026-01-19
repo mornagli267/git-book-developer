@@ -187,13 +187,17 @@ Now FIT images can still be built like in the previous section, but then they wo
 
 Look for *Sign algo* and *Sign value* fields in the onscreen output. If there is no signature value, something went wrong!
 
-> [!TIP]
-> It might make sense to sign the configuration, instead of kernel and dtb. This can prevent a mix-and-match attack in case there are multiple kernels / DTBs / ramdisks available in the image. According to the documentation, a signature for a configuration will also contain signatures for the hashes of all files that are part of the configuration. So signatures are then not required in kernel and fdt sections.
+{% hint style="success" %}
+It might make sense to sign the configuration, instead of kernel and dtb. This can prevent a mix-and-match attack in case there are multiple kernels / DTBs / ramdisks available in the image. According to the documentation, a signature for a configuration will also contain signatures for the hashes of all files that are part of the configuration. So signatures are then not required in kernel and fdt sections.
+{% endhint %}
+
 
 * * *
 
-> [!TIP]
-> FIT images can also be signed \*after\* creating them, by using mkimage’s *\-f* and *\-F* options!
+{% hint style="success" %}
+FIT images can also be signed \*after\* creating them, by using mkimage’s *\-f* and *\-F* options!
+{% endhint %}
+
 
 <a id="include-public-signing-key-in-u-boot"></a>
 
@@ -205,13 +209,17 @@ For signature validation to be of any use, the public key has to be available *
 ./tools/mkimage -f kernel_fdt_signed.its -k keys -K dts/dt.dtb -r image fitImage
 ```
 
-> [!TIP]
-> The *\-r* option tells u-boot which signatures are **required** to be checked at boot. When it is omitted, u-boot will happily boot any signed, unsigned or wrongly signed images. This option takes two possible values: *image* and *conf*. The latter should be used if the configuration section is signed!
+{% hint style="success" %}
+The *\-r* option tells u-boot which signatures are **required** to be checked at boot. When it is omitted, u-boot will happily boot any signed, unsigned or wrongly signed images. This option takes two possible values: *image* and *conf*. The latter should be used if the configuration section is signed!
+{% endhint %}
+
 
 Now the changed dtb has to be embedded into the U-Boot SPL. This can easily be achieved by rerunning make*Italic Text*, while triple-checking that dts/dt.dtb is **not** changed by make.
 
-> [!WARNING]
-> This section was only tested on the Clearfog. Especially the path dts/dt.dtb **might** be different for other targets.
+{% hint style="warning" %}
+This section was only tested on the Clearfog. Especially the path dts/dt.dtb **might** be different for other targets.
+{% endhint %}
+
 
 <a id="additional-resources"></a>
 

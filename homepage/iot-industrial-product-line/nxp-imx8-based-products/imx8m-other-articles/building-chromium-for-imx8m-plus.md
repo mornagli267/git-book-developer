@@ -2,8 +2,10 @@
 
 In order to compile an i.MX8M Plus image with chromium, please follow these steps. Please notice that building Yocto takes around **300GByte of disk storage and requires 64GByte system memory** or 32GByte with a tweak to build first rust-native as described below.
 
-> [!INFO]
-> These steps were tested on a Ubuntu 22.04 build machine.
+{% hint style="info" %}
+These steps were tested on a Ubuntu 22.04 build machine.
+{% endhint %}
+
 
 <a id="install-required-packages"></a>
 

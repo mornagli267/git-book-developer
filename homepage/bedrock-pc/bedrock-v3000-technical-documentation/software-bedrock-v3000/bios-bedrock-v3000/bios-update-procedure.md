@@ -17,7 +17,10 @@ Download the [AFU Utility from AMI](https://www.ami.com/bios-uefi-utilities/)'s 
 * Press Flash
 * System will reboot and the new BIOS will be installed
 
-> \[!WARNING] Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+{% hint style="warning" %}
+Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+{% endhint %}
+
 
 * After the update is finished, press any key to reboot the system
 * After the update, the device can reset upt to 3 times, this is OK.
@@ -33,12 +36,18 @@ Download the [AFU Utility from AMI](https://www.ami.com/bios-uefi-utilities/)'s 
     * It is recommended to paste the BIOS image in the same directory
 * System will reboot and the new BIOS will be installed
 
-> \[!INFO] If you get: …\
-> …\
-> Erasing Main Block ………………………………………. 0x01000000 (0%)\
-> 43 - Error: Problem erasing flash. Add the **/CAPSULE** parameter to the command
+{% hint style="info" %}
+If you get: …\
+…\
+Erasing Main Block ………………………………………. 0x01000000 (0%)\
+43 - Error: Problem erasing flash. Add the **/CAPSULE** parameter to the command
+{% endhint %}
 
-> \[!WARNING] Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+
+{% hint style="warning" %}
+Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+{% endhint %}
+
 
 * When disconnecting power from the device for the firtst time after update, you might need to press the power button in order to turn on the device.
 * After the update, the device can reset upt to 3 times, this is OK.
@@ -55,12 +64,18 @@ Download the [AFU Utility from AMI](https://www.ami.com/bios-uefi-utilities/)'s 
   * AfuEfix64.efi \<YOUR\_BIOS\_IMAGE> /P /B /K /N /L /REBOOT
 * System will reboot and the new BIOS will be installed
 
-> \[!INFO] If you get: …\
-> …\
-> Erasing Main Block ………………………………………. 0x01000000 (0%)\
-> 43 - Error: Problem erasing flash. Add the **/CAPSULE** parameter to the command
+{% hint style="info" %}
+If you get: …\
+…\
+Erasing Main Block ………………………………………. 0x01000000 (0%)\
+43 - Error: Problem erasing flash. Add the **/CAPSULE** parameter to the command
+{% endhint %}
 
-> \[!WARNING] Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+
+{% hint style="warning" %}
+Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+{% endhint %}
+
 
 * When disconnecting power from the device for the firtst time after update, you might need to press the power button in order to turn on the device.
 * After the update, the device can reset upt to 3 times, this is OK.
