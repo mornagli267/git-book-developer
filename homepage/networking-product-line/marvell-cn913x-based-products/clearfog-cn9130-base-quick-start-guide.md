@@ -249,7 +249,11 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 {% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4 (2).pdf" %}
 
+HALLO
 
+[clearfog-base-schematics-rev1.4.pdf](../../../.gitbook/assets/clearfog-base-schematics-rev1.4.pdf)
+
+[ClearFogCX CN9K Schematics.pdf](attachments/ClearFog CX CN9K Schematics.pdf)
 
 It is possible to utilize a Cellular connection by inserting a SIM card into the SIM card slot. Please observe that a GSM Cellular modem needs to be installed utilizing the mini PCIe connection in order to exploit the cellular connection.
 
