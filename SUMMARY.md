@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Homepage](README.md)
-* [Homepage](<README (1).md>)
   * [IoT & Industrial Product Line](homepage/iot-industrial-product-line.md)
     * [AMD R8000 COM Express Based Products](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products.md)
       * [AMD R8000 Based COM Type 6 Hardware User Manual](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products/amd-r8000-based-com-type-6-hardware-user-manual.md)
