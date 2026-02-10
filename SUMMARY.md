@@ -8,7 +8,7 @@
       * [AMD R8000 COM Express Type 6 Software and Guides](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products/amd-r8000-com-express-type-6-software-and-guides.md)
         * [AMD R8000 COM Express BIOS Image Files](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products/amd-r8000-com-express-type-6-software-and-guides/amd-r8000-com-express-bios-image-files.md)
       * [Bedrock SOM V3000 / R7000 / R8000 - Hardware User Manual](homepage/iot-industrial-product-line/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md)
-      * [Bedrock R7000 SoM](homepage/bedrock-pc/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/_bedrock-r7000-som.md)
+      * [Bedrock R7000 SoM](homepage/bedrock-pc/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/bedrock-r7000-som.md)
     * [SBC / Platform](amd/r8000-r7000/sbc-platform.md)
       * [HoneyComb AMD R8000 mini ITX Hardware User Manual](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products/honeycomb-amd-r8000-mini-itx-hardware-user-manual.md)
       * [HoneyComb AMD R8000 mini ITX Quick Start Guide](homepage/iot-industrial-product-line/amd-r8000-com-express-based-products/honeycomb-amd-r8000-mini-itx-quick-start-guide.md)
