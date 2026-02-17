@@ -5,7 +5,7 @@
 
 ---
 
-## Find Your Technical Articles
+## Find Your Technical Articlesss
 
 Welcome to the SolidRun Developer Center - your comprehensive resource for hardware documentation, quick start guides, and software references.
 
