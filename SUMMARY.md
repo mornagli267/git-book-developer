@@ -136,6 +136,7 @@
         * [FreeBSD](homepage/networking-product-line/marvell-a38x-based-products/a388-software/freebsd.md)
         * [Yocto for Clearfog Platforms](homepage/networking-product-line/marvell-a38x-based-products/a388-software/yocto-for-clearfog-platforms.md)
   * [ARMADA A8040](marvell/a8040.md)
+    * [COM / SOM](marvell/a8040/com-som.md)
     * [SBC / Platform](marvell/a8040/sbc-platform.md)
       * [ClearFog GT 8K Quick Start Guide](homepage/networking-product-line/marvell-a8040-based-products/clearfog-gt-8k-quick-start-guide.md)
       * [MACCHIATObin Single/Double Shot Quick Start Guide](homepage/networking-product-line/marvell-a8040-based-products/macchiatobin-single-double-shot-quick-start-guide.md)
