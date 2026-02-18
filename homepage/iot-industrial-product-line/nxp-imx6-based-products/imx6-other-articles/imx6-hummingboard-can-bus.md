@@ -35,7 +35,7 @@ In order to get the CAN bus up and running, following hardware modifications nee
 * L13
 * J28
 
-Per the HummingBoard CBi schematics:[HummingBoard CBi Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/270631021)
+Per the HummingBoard CBi schematics:[HummingBoard CBi Quick Start Guide](/homepage/iot-industrial-product-line/nxp-imx6-based-products/hummingboard-imx6-sbc-quick-start-guide/hummingboard-cbi-quick-start-guide.md)
 
 ## Software Modification
 
@@ -54,7 +54,7 @@ Generically speaking, the raw .dts files can be compiled into .dtb using the dev
 make dtbs
 ```
 
-The kernel-tree needs to be configured first. Please refer to [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)  for generic instructions, or consult the distro documentation
+The kernel-tree needs to be configured first. Please refer to [i.MX6 Kernel](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-kernel.md)  for generic instructions, or consult the distro documentation
 
 {% hint style="success" %}
 **DTB files can also be de- and recompiled. Consult the manpage of** _**dtc**_ **for additional information.**

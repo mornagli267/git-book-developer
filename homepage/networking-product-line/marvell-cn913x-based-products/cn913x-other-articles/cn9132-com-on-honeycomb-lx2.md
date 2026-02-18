@@ -56,7 +56,7 @@ Please see below the features overview of the connector side of the HoneyComb LX
 
 ## Pinout Comparison
 
-For Pinout comparison, please refer to the [Pinout Planner Tool Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/201392150) .
+For Pinout comparison, please refer to the [Pinout Planner Tool Guide](/homepage/pinout-planner-tool-guide.md) .
 
 ## List Of Supported OS
 

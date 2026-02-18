@@ -37,7 +37,7 @@ Notice – the reason for the 10 ohm resistor is to protect the CuBox-i/HummingB
 * If you use a USB OTG cable without a custom resistor, you are operating without a safety. Initially, both the Hummingboard USB and the host USB of your Windows PC will be carrying an electrical charge. If you are plugged into the wrong port, or are otherwise connected with this dual-power mode for too long, you may damage your device.
 
 1. The MFGTool provided by Freescale requires a Windows based PC, prefereably with an intel based chipset. (Freescale’s detection routines in the MFGTool can be picky when it comes to chipsets.)
-2. Download the SolidRun-MicroSOM-Fusing.zip archive and unzip it to a known location. (Download from [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466)  page)
+2. Download the SolidRun-MicroSOM-Fusing.zip archive and unzip it to a known location. (Download from [i.MX6 SOM Hardware User Manual](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-som-hardware-user-manual.md)  page)
 3. Choose the right directory according to the i.MX6 device (either solo/dual lite OR dual/quad).
 4. Double click on the mfgtool2.exe
 5. Connect one side of the USB host to host cable to your PC and other to the upper USB port of CuBox-i or HummingBoard carrier with the intended SOM to configure connected.

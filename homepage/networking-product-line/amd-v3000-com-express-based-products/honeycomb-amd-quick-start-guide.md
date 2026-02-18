@@ -37,7 +37,7 @@ The guide will give a technical overview about the product and by the end of it 
 ![](../../../.gitbook/assets/image-20220112-162250.png)
 
 {% hint style="info" %}
-* See list of tested [LX2160A COM Tested SO-DIMM Memory](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197494332) modules.
+* See list of tested [LX2160A COM Tested SO-DIMM Memory](/homepage/networking-product-line/nxp-lx2160a-based-products/lx2160a-other-articles/lx2160a-com-tested-so-dimm-memory.md) modules.
 * The difference between the two versions is that HoneyComb does not have a QSFP interface
 * Serdes-1 lanes 0..3 are routed to the QSFP28 connector via TI retimers
 * Serdes-1 lanes 4..7 are directly connected to the 4xSFP+ ports
@@ -146,7 +146,7 @@ Connect your power ATX, and then connect the adaptor to mains supply.
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 &#x20;Stop the u-boot count down by clicking any key –
 
@@ -210,7 +210,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212203) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](/homepage/networking-product-line/marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
 
 ## Using the built-in NICs
 

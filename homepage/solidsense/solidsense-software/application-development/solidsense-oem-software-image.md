@@ -23,7 +23,7 @@ The resulting development can then be directly used or re-package to run on top 
 [https://images.solidsense.io/SolidSense/SolidSense-OEM-debian-buster.img.xz](https://images.solidsense.io/SolidSense/SolidSense-OEM-debian-buster.img.xz)
 
 * Open the top cover of your device by removing the 6 x screws.
-* Connect a TTL UART cable and open a serial connection console. You can refer to [serial connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing the necessary serial connection software.
+* Connect a TTL UART cable and open a serial connection console. You can refer to [serial connection](/homepage/other-articles/serial-connection.md) for installing the necessary serial connection software.
 * Stop booting in U-Boot and run the commands below - only at the first boot :
 
 `setenv bootcmd "env run findfdt; usb start; ls usb 0:1; run bootcmd_usb0; run bootcmd_mmc0; $bootcmd"; saveenv; boot`

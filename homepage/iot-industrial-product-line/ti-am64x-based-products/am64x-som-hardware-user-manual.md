@@ -47,7 +47,7 @@ The SolidRun’s SR-SOM-AM64xx is a low power, low-cost high performance micro s
 
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard AM64x](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493843)– A board computer that incorporates the SOM retains the same Linux distributions while adding extra hardware functionalities and access to the hardware.
+* [HummingBoard AM64x](/homepage/iot-industrial-product-line/ti-am64x-based-products/am64x-hummingboard-t-quick-start-guide.md)– A board computer that incorporates the SOM retains the same Linux distributions while adding extra hardware functionalities and access to the hardware.
 
 ## Description
 

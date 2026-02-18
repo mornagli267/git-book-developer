@@ -107,7 +107,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GT-8K Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288063489) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GT-8K Boot Select](/homepage/networking-product-line/marvell-a8040-based-products/a8040-other-articles/clearfog-gt-8k-boot-select.md) .
 
 ## Booting from an SPI card
 
@@ -164,7 +164,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 ### Connecting a USB to UART adapter to ClearFog GT 8K
 

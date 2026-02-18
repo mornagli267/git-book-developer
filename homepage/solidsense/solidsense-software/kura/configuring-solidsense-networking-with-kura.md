@@ -80,7 +80,7 @@ The WiFi interface can be set as Access Point (default) or Station. All paramete
 
 The following actions are needed
 
-1. Insert a SIM with NO PIN in the system and reboot. The automatic SIM detection feature is not enabled. If your SIM card is protected by a PIN code, see how to unlock it via the [Controlling and accessing the modem and GPS](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264634376) . You can then configure the PIN code in the service configuration file.
+1. Insert a SIM with NO PIN in the system and reboot. The automatic SIM detection feature is not enabled. If your SIM card is protected by a PIN code, see how to unlock it via the [Controlling and accessing the modem and GPS](/homepage/solidsense/solidsense-software/application-development/controlling-and-accessing-the-modem-and-gps.md) . You can then configure the PIN code in the service configuration file.
 2. Set the eth0 as a LAN interface instead of WAN. Only 1 WAN interface can exist
 3. On the ppp0 (or 2-2.1) page
 4. Set the Status as Enabled for WAN
@@ -99,7 +99,7 @@ Routing between WiFi and LTE shall work. If any routing problem, check the DHCP 
 
 ![](../../../../.gitbook/assets/image-20211226-121527.png)
 
-Modem troubleshooting: if the connection via cellular is not coming up, more explanations and troubleshooting tips in [Controlling and accessing the modem and GPS](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264634376) .
+Modem troubleshooting: if the connection via cellular is not coming up, more explanations and troubleshooting tips in [Controlling and accessing the modem and GPS](/homepage/solidsense/solidsense-software/application-development/controlling-and-accessing-the-modem-and-gps.md) .
 
 #### SIM Format
 
@@ -119,7 +119,7 @@ Kapua is providing several resources from the Cloud to supervise the gateways an
 
 SolidRun is providing an instance for its customer to help the rapid setup of their systems and applications: [http://kapua.solidsense.io:8080/](http://kapua.solidsense.io:8080/) Or better using https (available since January 2020): [https://kapua.solidsense.io](https://kapua.solidsense.io/)
 
-**Contact your SolidRun representative to obtain your account and credentials for the gateways and users into Kapua. (**[SolidSense Support Overview](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264437768) **)**
+**Contact your SolidRun representative to obtain your account and credentials for the gateways and users into Kapua. (**[SolidSense Support Overview](/homepage/solidsense/solidsense-software/other-software-articles/solidsense-support-overview.md) **)**
 
 [More on the usage of Kapua](../kapua/using-eclipse-kapua-to-supervise-and-configure-solidsense-gateways.md)
 

@@ -10,7 +10,7 @@ The documentation for SolidSense software is not maintained by SolidRun and the 
 
 **SolidSense gateways are shipped with SolidSense OOB 1.0 (or up) pre-flashed unless otherwise specified for specific orders.**
 
-For details on[Introduction to SolidSense Out-of-the-Box (OOB) software image](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264667139)
+For details on[Introduction to SolidSense Out-of-the-Box (OOB) software image](/homepage/solidsense/solidsense-software/other-software-articles/introduction-to-solidsense-out-of-the-box-oob-software-image.md)
 
 Any upgrades from a release higher then 0.91 is done via over the network process (OTA) and will not require any physical intervention on the gateway. See the planned roadmap below for the new features.This can also be done via [Using Mender software management | Upgrading-your-image-using-Mender](using-mender-software-management.md#upgrading-your-image-using-mender) .
 
@@ -29,7 +29,7 @@ The new upgrade mechanism requires a new hard disk (eMMC) layout and therefore a
 
 1. Download the image from the SolidSense server:&#x20;
 
-[V1.1a image (\~650MB)](https://images.solidsense.io/SolidSense/Solidsense-1.1a-2020120300.img.xz) You can check [Introduction to SolidSense Out-of-the-Box (OOB) software image](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264667139)  for the latest roadmap images.
+[V1.1a image (\~650MB)](https://images.solidsense.io/SolidSense/Solidsense-1.1a-2020120300.img.xz) You can check [Introduction to SolidSense Out-of-the-Box (OOB) software image](/homepage/solidsense/solidsense-software/other-software-articles/introduction-to-solidsense-out-of-the-box-oob-software-image.md)  for the latest roadmap images.
 
 2\. Flash the image an a USB stick (good quality) using a tool like Etcher
 
@@ -60,8 +60,8 @@ The default network configuration is the same as in previous version:
 
 There is no installation required and no need to gain access via ssh on the gateway for additional manual intervention, all configuration can be done via Kura.
 
-see [Configuring SolidSense networking with Kura](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179294)
+see [Configuring SolidSense networking with Kura](/homepage/solidsense/solidsense-software/kura/configuring-solidsense-networking-with-kura.md)
 
-see  [Configuring and testing the Wirepas gateway software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241) . Note that no installation is required.
+see  [Configuring and testing the Wirepas gateway software](/homepage/solidsense/solidsense-software/wirepas/configuring-and-testing-the-wirepas-gateway-software.md) . Note that no installation is required.
 
-From the version 0.95 on, the default configuration is controlled by the [Configuration provisioning of the SolidSense gateways](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264765441) . Please look to the corresponding documentation.
+From the version 0.95 on, the default configuration is controlled by the [Configuration provisioning of the SolidSense gateways](/homepage/solidsense/solidsense-software/provisioning-and-configuration/configuration-provisioning-of-the-solidsense-gateways.md) . Please look to the corresponding documentation.

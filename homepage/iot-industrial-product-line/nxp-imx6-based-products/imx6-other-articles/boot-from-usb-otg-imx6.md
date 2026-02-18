@@ -35,7 +35,7 @@ wget https://solid-run-images.sos-de-fra-1.exo.io/IMX6/U-Boot/v2018.01/u-boot-im
 
 3\. Serial connection
 
-Please see our pages [Cubox-i](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493654/#booting-form-an-sd-card), [HummingBoard Edge](https://solidrun.atlassian.net/wiki/spaces/developer/pages/270401543/#booting-form-an-sd-card) under serial connection section.
+Please see our pages [Cubox-i](/homepage/iot-industrial-product-line/nxp-imx6-based-products/cubox-i-quick-start-guide.md#booting-from-an-sd-card), [HummingBoard Edge](/homepage/iot-industrial-product-line/nxp-imx6-based-products/hummingboard-imx6-sbc-quick-start-guide/hummingboard-edge-quick-start-guide.md#booting-from-an-sd-card) under serial connection section.
 
 4\. Connect your Male to Male USB-A cable to the OTG port on your device.
 

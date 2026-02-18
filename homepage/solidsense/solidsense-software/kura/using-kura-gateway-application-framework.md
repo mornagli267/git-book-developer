@@ -42,7 +42,7 @@ The command tab allow to execute Linux commands if the Command service is enable
 
 #### Network
 
-The page allows the configuration of the 3 network interfaces Ethernet, WiFi and Cellular. The basic configuration principles are explained in the [Configuring and testing the Wirepas gateway software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241) . For gateways that are remote, an extreme care needs to be taken when re-configuring the network as it can result in communication loss requiring to send someone locally for recovery.
+The page allows the configuration of the 3 network interfaces Ethernet, WiFi and Cellular. The basic configuration principles are explained in the [Configuring and testing the Wirepas gateway software](/homepage/solidsense/solidsense-software/wirepas/configuring-and-testing-the-wirepas-gateway-software.md) . For gateways that are remote, an extreme care needs to be taken when re-configuring the network as it can result in communication loss requiring to send someone locally for recovery.
 
 The Ethernet and WiFi interfaces can be configured as LAN or WAN interfaces and obviously the Cellular interface only as WAN. Only ONE WAN interface can be configured at a given time, so to switch from one WAN interface to another, the initial interface must be either disabled or configured as LAN.
 

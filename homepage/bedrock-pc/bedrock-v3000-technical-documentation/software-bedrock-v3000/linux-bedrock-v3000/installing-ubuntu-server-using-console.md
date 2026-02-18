@@ -36,7 +36,7 @@ This installation process has been validated by SolidRun with the following conf
 # Installation process  
 Creating bootable USB drive
 
-Please follow instructions at [https://solidrun.atlassian.net/l/cp/m9Reo11r](https://solidrun.atlassian.net/l/cp/m9Reo11r)
+Please follow instructions at [/homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/creating-bootable-usb-drive-for-bedrock-v3000.md](/homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/creating-bootable-usb-drive-for-bedrock-v3000.md)
 
 <a id="connecting-serial-console"></a>
 

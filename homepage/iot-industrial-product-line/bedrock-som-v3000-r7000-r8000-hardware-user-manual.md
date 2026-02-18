@@ -85,7 +85,7 @@ Mechanical Files Download Link:\
 
 ## **Bedrock Cartridge**
 
-As part of developing a custom extension board for the Bedrock SOM, it’s recommended to use [Bedrock Cartridge](https://solidrun.atlassian.net/wiki/spaces/developer/pages/634454119/Bedrock+Cartridge+SoM+3D+model).
+As part of developing a custom extension board for the Bedrock SOM, it’s recommended to use [Bedrock Cartridge](/homepage/bedrock-pc/bedrock-mechanical-documentation/bedrock-deck-cartridge-som-3d-models.md).
 
 Bedrock Cartridge provides the following:
 

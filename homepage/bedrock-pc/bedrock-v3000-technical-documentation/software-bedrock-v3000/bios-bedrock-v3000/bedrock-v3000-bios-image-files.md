@@ -7,7 +7,7 @@ Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and
 
 
 {% hint style="info" %}
-Before updating BIOS, you are advised to [check current BIOS version](https://solidrun.atlassian.net/wiki/spaces/developer/pages/464027649/Bedrock+V3000+BIOS+Documentation#how-to-check-bios-version)
+Before updating BIOS, you are advised to [check current BIOS version](/homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-image-files.md#how-to-check-bios-version)
 {% endhint %}
 
 

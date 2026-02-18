@@ -30,7 +30,7 @@ Manufacturer PN: 1827703
 ![](../../../../.gitbook/assets/image-20231012-090249.png)
 
 {% hint style="info" %}
-SolidRun offers [SRBD-CABDC](https://solidrun.atlassian.net/wiki/spaces/developer/pages/492470278/Bedrock+R7000+Accessories#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
+SolidRun offers [SRBD-CABDC](/homepage/bedrock-pc/bedrock-r8000-technical-documentation/bedrock-r8000-r7000-accessories.md#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
 {% endhint %}
 
 

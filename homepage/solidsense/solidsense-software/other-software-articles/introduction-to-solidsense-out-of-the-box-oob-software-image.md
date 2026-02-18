@@ -30,7 +30,7 @@ With just some configurations using Kura the gateway can:
 8. Develop additional Python 3 applications
 9. Run you Docker application containers
 
-So that is a lot that you can already do on the basis of our standard image. However, to be in full control this image can be customized using our Yocto recipes that are available in our [List of SolidSense software repository](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264568840)
+So that is a lot that you can already do on the basis of our standard image. However, to be in full control this image can be customized using our Yocto recipes that are available in our [List of SolidSense software repository](/homepage/solidsense/solidsense-software/application-development/list-of-solidsense-software-repository.md)
 
 ## SolidSense OOB Software roadmap
 
@@ -74,7 +74,7 @@ The new SolidSense gateways N6 Industrial and N8 Compact are delivered directly 
 
 Upgrade to 2.0 is only possible from version 1.1 or 1.1a, so if you have a very old version (like 0.9xx) please upgrade first to 1.1a
 
-Upgrade from 1.1 to 2.0 needs a new Kura database, so by default all your settings will be lost and the new configuration will be the default one. To avoid that issue please create a provisioning file with your own default configuration. [Configuration provisioning of the SolidSense gateways](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264765441) . The provisioning file is reapplied upon upgrade.
+Upgrade from 1.1 to 2.0 needs a new Kura database, so by default all your settings will be lost and the new configuration will be the default one. To avoid that issue please create a provisioning file with your own default configuration. [Configuration provisioning of the SolidSense gateways](/homepage/solidsense/solidsense-software/provisioning-and-configuration/configuration-provisioning-of-the-solidsense-gateways.md) . The provisioning file is reapplied upon upgrade.
 
 #### Troubleshooting upgrade
 

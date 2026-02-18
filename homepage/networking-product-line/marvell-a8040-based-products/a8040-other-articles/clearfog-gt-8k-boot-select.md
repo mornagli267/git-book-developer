@@ -4,7 +4,7 @@
 
 You will need to download an operating system for the ClearFog GT-8K and flash in to a blank SD card in order to use the system.
 
-* You can download official release distributions and find flashing instructions at our [ClearFog GT 8K Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212382)  page.
+* You can download official release distributions and find flashing instructions at our [ClearFog GT 8K Quick Start Guide](/homepage/networking-product-line/marvell-a8040-based-products/clearfog-gt-8k-quick-start-guide.md)  page.
 * For more information about how to flash the SD card, please refer to [Flashing an SD Card](/homepage/other-articles/flashing-an-sd-card.md) .
 
 ## Boot Select

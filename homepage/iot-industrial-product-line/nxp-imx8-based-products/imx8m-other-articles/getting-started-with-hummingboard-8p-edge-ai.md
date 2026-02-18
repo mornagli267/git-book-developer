@@ -57,7 +57,7 @@ Before powering up the board for the first time it is recommended to select the 
 
 “X” means don’t care, leave as is.
 
-For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) page.
+For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) page.
 
 ### Booting from SD card
 
@@ -86,7 +86,7 @@ Ensure the Hailo-8 M.2 module with a heatsink is installed into the M.2 connecto
 
 ## Boot
 
-Please refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing the necessary serial connection software in Linux/Windows. You are ready to boot the board once you have installed the required serial connection software. Plug the DC power supply. The board will start booting, and you will see the boot log in your terminal.
+Please refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing the necessary serial connection software in Linux/Windows. You are ready to boot the board once you have installed the required serial connection software. Plug the DC power supply. The board will start booting, and you will see the boot log in your terminal.
 
 ```
 [  OK  ] Started User Database Manager.                                                                                        

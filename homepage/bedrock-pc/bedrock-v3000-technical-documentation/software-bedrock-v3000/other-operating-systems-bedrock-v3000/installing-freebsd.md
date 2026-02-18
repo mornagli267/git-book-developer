@@ -21,11 +21,11 @@ The installation was validated at SolidRun using the following setup:
 
 ### Creating bootable USB drive
 
-Please follow instructions at [Creating bootable USB drive](https://solidrun.atlassian.net/l/cp/m9Reo11r)
+Please follow instructions at [Creating bootable USB drive](/homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/creating-bootable-usb-drive-for-bedrock-v3000.md)
 
 ### Connecting serial console
 
-Please follow instructions at [Using serial console with Bedrock V3000](https://solidrun.atlassian.net/wiki/spaces/developer/pages/472481800)
+Please follow instructions at [Using serial console with Bedrock V3000](/homepage/bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/using-serial-console-with-bedrock.md)
 
 ### BIOS settings
 

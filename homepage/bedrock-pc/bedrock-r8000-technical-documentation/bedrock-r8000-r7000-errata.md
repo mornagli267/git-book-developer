@@ -36,7 +36,7 @@ Internal port configuration issue involving the SoC firmware and BIOS.
 
 Due to some power management issues, the USB ports hot plug is disabled.  
 You can prevent the OS from using the ACPI power management policies by using this workaround.  
-[https://solidrun.atlassian.net/wiki/spaces/developer/pages/666370082/Bedrock+Troubleshooting#USB-10G-(Closest-to-console-port)-hotplug-doesn't-work](../bedrock-troubleshooting.md#usb-10g-closest-to-console-port-hotplug-doesnt-work)
+[Bedrock Troubleshooting - USB-10G Hotplug](../bedrock-troubleshooting.md#usb-10g-closest-to-console-port-hotplug-doesnt-work)
 
 <a id="older-bedrock-with-ryzen-hs-do-not-support-ddr5-4800"></a>
 
@@ -71,6 +71,6 @@ DDR5 voltage circuit is revised for all units starting from B7D-241101-000
 
 ### Work around
 
-Install [BIOS for Ryzen HS](https://solidrun.atlassian.net/wiki/spaces/developer/pages/edit-v2/530546703#bios-for-ryzen-hs-cpus) that defaults to DDR5 5600 MT/s.
+Install [BIOS for Ryzen HS](/homepage/bedrock-pc/bedrock-r8000-technical-documentation/software-bedrock-r8000/bios-bedrock-r8000-r7000/bedrock-r8000-r7000-bios-image-files.md#bios-for-ryzen-hs-cpus) that defaults to DDR5 5600 MT/s.
 
 If DDR5 setting was changed and Bedrock does not boot, then [reset BIOS](../bedrock-r8000-technical-documentation/software-bedrock-r8000/bios-bedrock-r8000-r7000/bedrock-r8000-r7000-bios-reset.md).

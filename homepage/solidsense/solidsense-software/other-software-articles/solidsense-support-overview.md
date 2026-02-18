@@ -20,7 +20,7 @@ Alternatively, you can use the direct email address : [solidsense-support@solid-
 #### Free support
 
 A lot of investment is going into documenting and maintaining the SolidSense public and open knowledge base support center.\
-The published articles and information regarding SolidSense product line could be found at [SolidSense Software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/199884801) .\
+The published articles and information regarding SolidSense product line could be found at [SolidSense Software](/homepage/solidsense/solidsense-software.md) .\
 Most of the questions could be quickly addressed by reviewing our knowledge base which is being updated on a weekly basis with new information and more articles. If you still have questions regarding one of the topics please feel free to contact us for clarifications and advice and we will answer on a best effort basis.
 
 #### Options for paid support

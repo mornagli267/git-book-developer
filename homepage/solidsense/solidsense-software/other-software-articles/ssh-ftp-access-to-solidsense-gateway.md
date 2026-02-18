@@ -10,9 +10,9 @@ The documentation for SolidSense software is not maintained by SolidRun and the 
 
 #### SSH Access
 
-For specific operations it can be useful to have a direct SSH to the gateway. This is also the case for users that wants to add their specific applications or configuration. In most of the case SSH access can be possible only through LAN access. WAN are generally using firewalls and NAT that are making the direct SSH login on the gateway impossible. However, there are some possibilities that are explained here [Using Remote.it to access SolidSense gateway](https://solidrun.atlassian.net/wiki/spaces/developer/pages/265027593)
+For specific operations it can be useful to have a direct SSH to the gateway. This is also the case for users that wants to add their specific applications or configuration. In most of the case SSH access can be possible only through LAN access. WAN are generally using firewalls and NAT that are making the direct SSH login on the gateway impossible. However, there are some possibilities that are explained here [Using Remote.it to access SolidSense gateway](/homepage/solidsense/solidsense-software/other-software-articles/using-remoteit-to-access-solidsense-gateway.md)
 
-The first step is to know your network configuration, the simplest is to get it via Kura ([Configuring SolidSense networking with Kura](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179294) )
+The first step is to know your network configuration, the simplest is to get it via Kura ([Configuring SolidSense networking with Kura](/homepage/solidsense/solidsense-software/kura/configuring-solidsense-networking-with-kura.md) )
 
 With the default gateway configuration the simplest is to use the WiFi access point:
 

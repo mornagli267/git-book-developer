@@ -40,7 +40,7 @@ The guide will give a technical overview about the product and by the end of it 
 
 
 {% hint style="info" %}
-Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493937) .
+Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](/homepage/networking-product-line/marvell-cn913x-based-products/cn9132-com-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -98,7 +98,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [CN913x COM Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/295796739) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [CN913x COM Boot Select](/homepage/networking-product-line/marvell-cn913x-based-products/cn913x-other-articles/cn913x-com-boot-select.md) .
 
 ## Booting from an SPI card
 
@@ -153,7 +153,7 @@ Connect your power adapter to the DC jack, and then connect the adapter to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 In u-boot prompt, to continue booting from SD card, run the following:
 
@@ -197,7 +197,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212203) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](/homepage/networking-product-line/marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
 
 ## SIM Card Slot
 
@@ -210,8 +210,8 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Build from source
 
-* CN913x Build - [CN913x Build - Script](https://solidrun.atlassian.net/wiki/spaces/developer/pages/201097229)
-* U-Boot, Atf and Mv-ddr-marvel Build - [CN913x u-boot, atf and mv-ddr-marvell - Self Build](https://solidrun.atlassian.net/wiki/spaces/developer/pages/200769556)
+* CN913x Build - [CN913x Build - Script](/homepage/networking-product-line/marvell-cn913x-based-products/cn913x-software/cn913x-build.md)
+* U-Boot, Atf and Mv-ddr-marvel Build - [CN913x u-boot, atf and mv-ddr-marvell - Self Build](/homepage/networking-product-line/marvell-cn913x-based-products/cn913x-other-articles/cn9132-com-on-honeycomb-lx2.md)
 
 ## Documentation
 

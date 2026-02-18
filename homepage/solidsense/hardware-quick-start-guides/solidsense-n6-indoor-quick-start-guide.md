@@ -74,7 +74,7 @@ LTE – Quectel EC25 (Main) | SMA
 ![](../../../.gitbook/assets/image-20220117-162928.png)
 
 {% hint style="success" %}
-**Please Note** For more information about the antennas used (optional) with the SolidSense N6 indoor please see this article : [SolidSense N6 Indoor Kits](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916781)
+**Please Note** For more information about the antennas used (optional) with the SolidSense N6 indoor please see this article : [SolidSense N6 Indoor Kits](/homepage/solidsense/solidsense-other-articles/solidsense-n6-indoor-kits.md)
 {% endhint %}
 
 
@@ -133,7 +133,7 @@ The product comes with a SolidSense built in software and ready to go.
 
 ## Network Configuration
 
-For managing your IoT gateway, monitor the gateway status, and manage the network configuration, you can refer to [Configuring SolidSense networking with Kura](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179294) .
+For managing your IoT gateway, monitor the gateway status, and manage the network configuration, you can refer to [Configuring SolidSense networking with Kura](/homepage/solidsense/solidsense-software/kura/configuring-solidsense-networking-with-kura.md) .
 
 Please see below picture to get the serial number for SSID of the network.
 
@@ -141,7 +141,7 @@ Please see below picture to get the serial number for SSID of the network.
 
 ![](../../../.gitbook/assets/image-20220117-152655.png)
 
-If you are using SolidSense as a Wirepas gateway you can directly configure your Wirepas gateway by referring to [Configuring and testing the Wirepas gateway software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/263946241) .
+If you are using SolidSense as a Wirepas gateway you can directly configure your Wirepas gateway by referring to [Configuring and testing the Wirepas gateway software](/homepage/solidsense/solidsense-software/wirepas/configuring-and-testing-the-wirepas-gateway-software.md) .
 
 For flashing or re-flashing Wirepas sinks, please refer to [Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)](../solidsense-software/wirepas/flashing-or-re-flashing-wirepas-sinks-on-solidsense-gateway-v09-and-up.md) .
 
@@ -363,7 +363,7 @@ l2ping -c 4  $MAC
 
 ## Support
 
-Please follow our [SolidSense Support Overview](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264437768) page.
+Please follow our [SolidSense Support Overview](/homepage/solidsense/solidsense-software/other-software-articles/solidsense-support-overview.md) page.
 
 ## Documentation
 

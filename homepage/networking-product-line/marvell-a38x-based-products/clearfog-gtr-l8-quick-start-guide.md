@@ -84,7 +84,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GTR Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/301432842) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GTR Boot Select](/homepage/networking-product-line/marvell-a38x-based-products/a388-other-articles/clearfog-gtr-boot-select.md) .
 
 ## Booting from an eMMC card
 
@@ -139,7 +139,7 @@ Connect your power adapter to the DC jack, and then connect the adapter to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -151,7 +151,7 @@ Once you installed the necessary serial connection software, you should be able 
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212203) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](/homepage/networking-product-line/marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
 
 ## SIM Card Slot
 
@@ -161,15 +161,15 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 | **OS**                                                  |                                                                                        |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| ![](../../../.gitbook/assets/image-20211223-141905.png) | [A38X Buildroot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277587) |
-| ![](../../../.gitbook/assets/image-20211223-141939.png) | [Yocto](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277178)          |
+| ![](../../../.gitbook/assets/image-20211223-141905.png) | [A38X Buildroot](/homepage/networking-product-line/marvell-a38x-based-products/a388-software/a388-buildroot.md) |
+| ![](../../../.gitbook/assets/image-20211223-141939.png) | [Yocto](/homepage/networking-product-line/marvell-a38x-based-products/a388-software/yocto-for-clearfog-platforms.md)          |
 | ![](../../../.gitbook/assets/image-20220118-112849.png) | [Debian](https://images.solid-run.com/A38X/Debian)                                     |
-| ![](../../../.gitbook/assets/image-20220119-065742.png) | [OpenWrt](https://solidrun.atlassian.net/wiki/spaces/developer/pages/302055435)        |
+| ![](../../../.gitbook/assets/image-20220119-065742.png) | [OpenWrt](/homepage/networking-product-line/marvell-a38x-based-products/a388-software/a388-openwrt.md)        |
 
 ## Build U-Boot & kernel from sources
 
-* U-Boot Build - [A38X U-Boot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212134)
-* Kernel Build - [A38X Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287244407)
+* U-Boot Build - [A38X U-Boot](/homepage/networking-product-line/marvell-a38x-based-products/a388-software/a38x-u-boot.md)
+* Kernel Build - [A38X Kernel](/homepage/networking-product-line/marvell-a38x-based-products/a388-software/a388-kernel.md)
 
 ## Documentation
 

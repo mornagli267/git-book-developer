@@ -97,4 +97,4 @@ The standard configuration should suffice general use. We only recommend making 
 
 ### Booting a kernel
 
-Please refer to [i.MX6 U-Boot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179374)  on our U-Boot page.
+Please refer to [i.MX6 U-Boot](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-u-boot.md)  on our U-Boot page.

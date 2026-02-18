@@ -7,7 +7,7 @@ The documentation for SolidSense software is not maintained by SolidRun and the 
 
 ## Introduction
 
-From version 1.1 on, the BLE gateway is integrated in the SolidSense MQTT gateway. Please refer to the [SolidSense MQTT gateway](https://solidrun.atlassian.net/wiki/spaces/developer/pages/264142849) . Alternatively the Kura framework can be used as well to develop BLE applications connected to the cloud. Please refer to Kura documentation and to the corresponding section in the SolidSense documentation.
+From version 1.1 on, the BLE gateway is integrated in the SolidSense MQTT gateway. Please refer to the [SolidSense MQTT gateway](/homepage/solidsense/solidsense-software/application-development/solidsense-mqtt-gateway.md) . Alternatively the Kura framework can be used as well to develop BLE applications connected to the cloud. Please refer to Kura documentation and to the corresponding section in the SolidSense documentation.
 
 This software package allows to easily develop Bluetooth Low Energy (BLE 4.2) applications on top of the SolidSense gateway. It can be used either on the TI WL1831 chip (hci0) or one of the Nordic chip (nRF52832 on indoor or nRF52840 on outdoor) if they are not used by Wirepas. The Nordic are on the interfaces hc1 and hci2. Gateways delivered before February 2020 do not have a BLE stack flashed on the Nordic chip, in that case the Bluetooth stack can be flashed from the shell. See the corresponding paragraph below.
 
@@ -29,7 +29,7 @@ One or both Nordic chips can be configured to support Bluetooth Low Energy and b
 
 In order to be effective, there are several steps that needs to be performed:
 
-1. The Nordic chip needs to be flashed with the Bluetooth stack. This is explained here: [Bluetooth Low Energy – Installation and operation | Flashing-the-Nordic-chip-with-BLE-stack-–-N6-Indoor](https://solidrun.atlassian.net/wiki/spaces/developer/pages/267026433#flashing-the-nordic-chip-with-ble-stack-n6-indoor)
+1. The Nordic chip needs to be flashed with the Bluetooth stack. This is explained here: [Bluetooth Low Energy – Installation and operation | Flashing-the-Nordic-chip-with-BLE-stack-–-N6-Indoor](/homepage/solidsense/solidsense-software/ble/bluetooth-low-energy-installation-and-operation.md#flashing-the-nordic-chip-with-ble-stack-n6-indoor)
 2. The supporting systemd services ble1 and ble2 respectively needs to be enabled and started. Alternatively, the custom configuration file can be edited to configure automatically the BLE services during provisioning.
 
 ### Automatic provisioning of Bluetooth hc1 and/or hci2

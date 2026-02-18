@@ -39,7 +39,7 @@ Note that `/dev/sdX` must match the device node of the SD card on your PC host.
 {% endhint %}
 
 
-2\. Set the Clearfog board DIP switches to boot from SD. See the [ClearFog A388 Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286655684)  article for details.
+2\. Set the Clearfog board DIP switches to boot from SD. See the [ClearFog A388 Boot Select](/homepage/networking-product-line/marvell-a38x-based-products/a388-other-articles/clearfog-a388-boot-select.md)  article for details.
 
 3\. Insert your SD card to the SD card slot, and power up the board.
 

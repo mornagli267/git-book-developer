@@ -2,7 +2,7 @@
 
 The intention of this page is to provide developers the utilities to boot SolidRun based i.MX6 boards (by default HummingBoard2) that can boot from Micro SD, eMMC and M.2 SSD.
 
-The difference between this page and the older page [eFuses for i.MX6 SOM](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212307)  is that the later demonstrates how to blow fuses of i.MX6 to boot in a production line, rather a developer friendly environment.
+The difference between this page and the older page [eFuses for i.MX6 SOM](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/efuses-for-imx6-som.md)  is that the later demonstrates how to blow fuses of i.MX6 to boot in a production line, rather a developer friendly environment.
 
 In this tutorial you will learn how to boot a standalone minimal kernel with buildroot based initial ramdisk that is completely booted off the USB OTG port and boots into a prompt.
 
@@ -15,7 +15,7 @@ Once the prompt is there you can blow fuses, download files (wget) and perform o
 3. Terminal emulation (putty, minicom etc..) that are connected to HummingBoard2 serial terminal 115200bps 8N1 (J25 pin header where pin 1-gnd,2-i.MX6 TX, 3-i.MX6 RX) – newer PCB layout: J2 pins (6,8,10)
 4. Download and build – imx\_usb\_loader (credit to BoundaryDevices for the great tool) –[https://github.com/boundarydevices/imx\_usb\_loader](https://github.com/boundarydevices/imx_usb_loader)
 5. RECOMMENDED – For ease of use we already built imx\_usb\_loader as static binary with libusb-1.0 and all required configuration files. It can be downloaded from [Here-Rev1.1](https://wiki.solid-run.com/lib/exe/fetch.php?media=products:imx6:microsom:imx_usb_loader-solidrun-rev-1.1.tar.bz2)
-6. USB host to host cable – refer to [eFuses for i.MX6 SOM](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212307)  USB host to host cable preparation
+6. USB host to host cable – refer to [eFuses for i.MX6 SOM](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/efuses-for-imx6-som.md)  USB host to host cable preparation
 
 ### Booting through USB OTG
 
@@ -125,7 +125,7 @@ echo 0x10 > /sys/fsl_otp/HW_OCOTP_CFG5
 
 For this we blow the boot device, then tell i.MX6 that next boot it should use the selected boot device in the efuses.
 
-Booting from eMMC is trickier than MicroSD or SATA since the device is soldered on the board and can’t be modified by simply taking it out and flashing it on a PC. So when flashing u-boot to the eMMC device, make sure you use a u-boot image that you can get into it’s console in case you need to modify it afterwards. MicroSOM rev 1.5 has a 0402 resistor pads that can be short to keep the eMMC device in reset. Refer to [eFuses for i.MX6 SOM](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212307)  Forcing eMMC reset. If you are using the older version of the SOM (rev 1.3) that doesn’t have this force eMMC then the only option is to swap the SOM with another one that is set to boot from Micro SD, boot it up, erase the eMMC and flash the eMMC with a working u-boot/OS etc…
+Booting from eMMC is trickier than MicroSD or SATA since the device is soldered on the board and can’t be modified by simply taking it out and flashing it on a PC. So when flashing u-boot to the eMMC device, make sure you use a u-boot image that you can get into it’s console in case you need to modify it afterwards. MicroSOM rev 1.5 has a 0402 resistor pads that can be short to keep the eMMC device in reset. Refer to [eFuses for i.MX6 SOM](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/efuses-for-imx6-som.md)  Forcing eMMC reset. If you are using the older version of the SOM (rev 1.3) that doesn’t have this force eMMC then the only option is to swap the SOM with another one that is set to boot from Micro SD, boot it up, erase the eMMC and flash the eMMC with a working u-boot/OS etc…
 
 **Under Linux –**
 

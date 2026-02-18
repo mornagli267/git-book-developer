@@ -43,7 +43,7 @@ The guide will give a technical overview about the product and by the end of it 
 | **Environment**      | No enclosure                          |
 
 {% hint style="info" %}
-Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493466).
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-som-hardware-user-manual.md).
 {% endhint %}
 
 
@@ -119,7 +119,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial connection**
 
-Please connect the UART cable to your device pins, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please connect the UART cable to your device pins, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -146,7 +146,7 @@ apt-get upgrade
 reboot
 ```
 
-* For more detailed information, please refer to [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717) .
+* For more detailed information, please refer to [i.MX6 Debian](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-debian.md) .
 
 **Wi-fi**
 
@@ -323,15 +323,15 @@ This will bring up the following:
 
 | **OS**                                                     |                                                                                         |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277717)    |
-| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277558) |
-| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179285) |
-| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287212021) |
+| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-debian.md)    |
+| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/yocto-for-imx6.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-archlinux.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/xbian-for-imx6.md) |
 
 ## Build U-Boot & Kernel from sources
 
-* Build a Linux kernel -  [i.MX6 Kernel](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916713)
-* Build a U-Boot - [i.MX6 U-Boot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179374)
+* Build a Linux kernel -  [i.MX6 Kernel](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-kernel.md)
+* Build a U-Boot - [i.MX6 U-Boot](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/imx6-u-boot.md)
 
 ## Documentation
 

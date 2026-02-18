@@ -38,7 +38,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product&_ga=2.156269240.2016484779.1641802897-2012112798.1622706355)                                                                                                                            |
 
 {% hint style="info" %}
-Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493766) .
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -87,7 +87,7 @@ Before powering up the board for the first time it is recommended to select the 
 
 “X” means don’t care, leave as is.
 
-For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) page.
+For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) page.
 
 ## Booting from SD card
 
@@ -137,7 +137,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -175,7 +175,7 @@ wget http://solid-run-images.sos-de-fra-1.exo.io/IMX8/imx8mp_build/build_date_20
 xz -dc imx8mp-sdhc-debian-ddc90d8.img.xz | dd of=/dev/mmcblk2 bs=4k conv=fdatasync
 ```
 
-3. Set the boot select to boot from eMMC as documented [here](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) and do reset to boot from eMMC.
+3. Set the boot select to boot from eMMC as documented [here](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) and do reset to boot from eMMC.
 
 ### **Final stages**
 
@@ -334,7 +334,7 @@ l2ping -c 4  $MAC
 
 #### GPIO Pins Control
 
-In order to be able to control the GPIO pins, please refer to [GPIO Pins Control - HummingBoard Pulse/Mate & i.MX8M Plus SOM](https://solidrun.atlassian.net/wiki/spaces/developer/pages/396197889)
+In order to be able to control the GPIO pins, please refer to [GPIO Pins Control - HummingBoard Pulse/Mate & i.MX8M Plus SOM](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/gpio-pins-control-hummingboard-pulse-mate-imx8m-plus-som.md)
 
 #### Enable the MINI-PCIe slot ‘J20’
 
@@ -365,7 +365,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
 
 #### Enable the M.2 slot ‘M1’
 
@@ -392,7 +392,7 @@ echo 1 > /sys/class/gpio/gpio7/value
 
 #### SPI
 
-For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](https://solidrun.atlassian.net/wiki/spaces/developer/pages/edit-v2/321880065?draftShareId=ac699b08-ef2b-4682-9832-b012e01aeef0).
+For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/spi-from-linux-with-spidev.md).
 
 #### Audio
 
@@ -489,11 +489,11 @@ $ sudo adduser username
 
 #### Basler Camera
 
-For getting started with the Camera Module on your board, please see this documentation [Basler Camera Quick Start Guide](https://solidrun.atlassian.net/wiki/spaces/developer/pages/315588609).
+For getting started with the Camera Module on your board, please see this documentation [Basler Camera Quick Start Guide](/homepage/iot-industrial-product-line/nxp-imx8-based-products/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-plus-som-quick-start-guide/hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md).
 
 ## TLV EEPROM Support
 
-Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](https://solidrun.atlassian.net/wiki/spaces/developer/pages/344883516) for additional information.
+Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
 
 ## MAC Address
 
@@ -528,7 +528,7 @@ There are two options for storing MAC addresses on the i.MX8MP platform:
 
 ## Build from source
 
-* [i.MX8M Software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493777)
+* [i.MX8M Software](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software.md)
 
 ## Documentation
 

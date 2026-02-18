@@ -370,7 +370,7 @@ $ mmcli --modem=/your/modem/location --3gpp-register-in-operator=<network ID>
 $ mmcli --modem=/your/modem/location 
 ```
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
 
 **GUI On Debian**
 

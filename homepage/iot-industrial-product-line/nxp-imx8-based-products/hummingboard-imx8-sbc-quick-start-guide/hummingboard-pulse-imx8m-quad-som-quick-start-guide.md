@@ -35,7 +35,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product)                                                                                                                                                                                        |
 
 {% hint style="info" %}
-Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=287899798) .
+Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -76,7 +76,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
 
 ## Booting from SD card
 
@@ -124,7 +124,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -217,7 +217,7 @@ Restart your device and it should connect to the wireless network. If it doesn't
 
 #### Bluetooth
 
-For Building Newt Nimble BLEHCI firmware, you can follow this page [Building Newt Nimble BLEHCI firmware for the iMX8MQ NINA-B1 Module](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287179461) .
+For Building Newt Nimble BLEHCI firmware, you can follow this page [Building Newt Nimble BLEHCI firmware for the iMX8MQ NINA-B1 Module](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/building-newt-nimble-blehci-firmware-for-the-imx8mq-nina-b1-module.md) .
 
 #### Cellular Modem
 
@@ -225,7 +225,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
 
 {% hint style="info" %}
 Please Note: In order to use the mini-PCIe, a HummingBoard Pulse must not be combined with a microSOM that has WIFI. For more information, please refer to: [mini-PCIe](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md#mini-pcie-by-default-not-functional-on-hummingboard-pulse)
@@ -237,11 +237,11 @@ Please Note: In order to use the mini-PCIe, a HummingBoard Pulse must not be com
 | **OS**                                                           |                                                                                   |
 | ---------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | ![](<../../../../.gitbook/assets/image-20211024-150854 (1).png>) | [Debian](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md) |
-| ![](<../../../../.gitbook/assets/image-20211024-150920 (1).png>) | [Buildroot](https://solidrun.atlassian.net/wiki/spaces/developer/pages/286916774) |
+| ![](<../../../../.gitbook/assets/image-20211024-150920 (1).png>) | [Buildroot](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software/buildroot-for-imx8m.md) |
 
 ## Build from source
 
-* [i.MX8M Software](https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493777)
+* [i.MX8M Software](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software.md)
 
 ## Documentation
 

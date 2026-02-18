@@ -115,5 +115,5 @@ cog http://www.solid-run.com/
 
 ### References
 
-- [Yocto for i.MX6](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287277558)
+- [Yocto for i.MX6](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-software/yocto-for-imx6.md)
 - [https://github.com/Igalia/meta-webkit/wiki](https://github.com/Igalia/meta-webkit/wiki)

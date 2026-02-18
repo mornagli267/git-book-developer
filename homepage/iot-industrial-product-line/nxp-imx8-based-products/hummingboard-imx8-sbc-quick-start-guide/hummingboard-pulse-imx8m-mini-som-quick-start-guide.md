@@ -35,7 +35,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product\&filter_som-com-family=nxp-i-mx8m-mini)                                                                                                                                                 |
 
 {% hint style="info" %}
-Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](https://solidrun.atlassian.net/wiki/pages/resumedraft.action?draftId=197493788) .
+Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-mini-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -76,7 +76,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287343073) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
 
 ## Booting from SD card
 
@@ -126,7 +126,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -274,7 +274,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
 
 ## List Of Supported OS
 

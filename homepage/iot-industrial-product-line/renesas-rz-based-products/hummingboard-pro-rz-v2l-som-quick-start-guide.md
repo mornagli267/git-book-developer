@@ -161,7 +161,7 @@ xz -dc rzv2l-solidrun-sd-debian-f22483f.img.xz | dd of=/dev/sdX oflag=direct sta
 * **Note:** The system should turn on by default when the power is connected (without pressing the button).
 
 6. **Serial Connection**\
-   Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+   Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 * In order to be able to log in , please insert “root” as a username as follows:\
   ![](../../../.gitbook/assets/image-20231128-150935.png)
@@ -363,7 +363,7 @@ $ mmcli --modem=/your/modem/location --3gpp-register-in-operator=<network ID>
 $ mmcli --modem=/your/modem/location 
 ```
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](https://solidrun.atlassian.net/wiki/spaces/developer/pages/274661454) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
 
 **GUI On Debian**
 

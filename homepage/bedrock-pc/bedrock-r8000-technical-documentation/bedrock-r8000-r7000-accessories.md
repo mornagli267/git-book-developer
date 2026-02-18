@@ -73,7 +73,7 @@ To be used with a 3rd party PSU.
 
 ### Stand for Bedrock
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Stand](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
+See [Bedrock Mounting Options - Stand](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-STAND21
@@ -82,7 +82,7 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 ### Wall mounting bracket
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#Wall-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
+See [Bedrock Mounting Options - Wall Mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-WALL21
@@ -91,7 +91,7 @@ See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedroc
 
 ### DIN Rail bracket
 
-See [https://solidrun.atlassian.net/wiki/spaces/developer/pages/456851457/Bedrock+Mounting+options#DIN-Rail-mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
+See [Bedrock Mounting Options - DIN Rail Mounting](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-DIN21

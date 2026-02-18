@@ -66,4 +66,4 @@ cat /dev/ttymxc1 > /tmp/rs485_test &
 echo "rs485" > /dev/ttymxc1
 ```
 
-* For more information, please refer to [HummingBoard CBi RS485 and CANBus pin mapping](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287178867) .
+* For more information, please refer to [HummingBoard CBi RS485 and CANBus pin mapping](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/hummingboard-cbi-rs485-and-canbus-pin-mapping.md) .

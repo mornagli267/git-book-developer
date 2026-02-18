@@ -102,7 +102,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](https://solidrun.atlassian.net/wiki/spaces/developer/pages/287801409) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](/homepage/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -242,7 +242,7 @@ l2ping -c 4  $MAC
 
 ## TLV EEPROM Support
 
-Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](https://solidrun.atlassian.net/wiki/spaces/developer/pages/344883516) for additional information.
+Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
 
 ## List Of Supported OS
 
@@ -250,7 +250,7 @@ Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are bein
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | ![](../../../.gitbook/assets/image-20211024-150854.png)       | [Documentation/debian-11\_sr8.md at bsp](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr8.md)             |
 | ![](<../../../.gitbook/assets/image-20211024-151110 (1).png>) | [GitHub - SolidRun/meta-solidrun-arm-imx8 at zeus-imx8mp](https://github.com/SolidRun/meta-solidrun-arm-imx8/tree/zeus-imx8mp) |
-| ![](../../../.gitbook/assets/image-20211024-151020.png)       | [Cubox-M Android](https://solidrun.atlassian.net/wiki/spaces/developer/pages/261488680)                                        |
+| ![](../../../.gitbook/assets/image-20211024-151020.png)       | [Cubox-M Android](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software/cubox-m-android.md)                                        |
 | ![](../../../.gitbook/assets/image-20211024-150920.png)       | [GitHub - SolidRun/imx8mp\_build](https://github.com/SolidRun/imx8mp_build)                                                    |
 
 ## Build from source

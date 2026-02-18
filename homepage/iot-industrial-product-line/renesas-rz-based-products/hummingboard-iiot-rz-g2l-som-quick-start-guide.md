@@ -310,7 +310,7 @@ You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
 #### SPI
 
-For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](https://solidrun.atlassian.net/wiki/spaces/developer/pages/edit-v2/321880065?draftShareId=ac699b08-ef2b-4682-9832-b012e01aeef0).
+For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](/homepage/iot-industrial-product-line/nxp-imx8-based-products/imx8m-other-articles/spi-from-linux-with-spidev.md).
 
 **GUI On Debian**
 

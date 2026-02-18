@@ -21,4 +21,4 @@ No warranty of accuracy is given concerning the contents of the information cont
 |     |     |     |     |
 | --- | --- | --- | --- |
 | **Short Description** | **Errata** | **Affected PCB rev** | **Fix or workaround** |
-| Replace Atheros PHY PN AR8035-AL1A-R with Analog Devices PHY PN ADIN1300BCPZ | Due to components availability SolidRun is issuing a new revision of i.MX6 SOM with updated PHY. | Rev 1.9 | [i.MX6 Rev 1.9 - Analog Devices PHY](https://solidrun.atlassian.net/wiki/spaces/developer/pages/294486017) |
+| Replace Atheros PHY PN AR8035-AL1A-R with Analog Devices PHY PN ADIN1300BCPZ | Due to components availability SolidRun is issuing a new revision of i.MX6 SOM with updated PHY. | Rev 1.9 | [i.MX6 Rev 1.9 - Analog Devices PHY](/homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/imx6-pcb-rev-19-and-20-analog-devices-phy.md) |

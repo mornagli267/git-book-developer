@@ -38,7 +38,7 @@ Please make sure to have cmake 3.19 or a newer version.
 
 Connect your micro USB cable to your device.
 
-* You can refer to the serial connection section in one of our quick start guide pages - [Cubox-M](https://solidrun.atlassian.net/wiki/spaces/developer/pages/200015887/#booting-form-an-sd-card), [HummingBoard Pulse](https://solidrun.atlassian.net/wiki/spaces/developer/pages/262144001/#booting-from-sd-card).
+* You can refer to the serial connection section in one of our quick start guide pages - [Cubox-M](/homepage/iot-industrial-product-line/nxp-imx8-based-products/cubox-m-quick-start-guide.md#booting-from-an-sd-card), [HummingBoard Pulse](/homepage/iot-industrial-product-line/nxp-imx8-based-products/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-plus-som-quick-start-guide.md#booting-from-sd-card).
 
 5\. Connect the Male to Male USB-A cable to the OTG port on your device.
 
