@@ -15,10 +15,10 @@ Welcome to the SolidRun Developer Center - your comprehensive resource for hardw
 
 | | |
 |---|---|
-| [HAILO 15 Based Products](homepage/iot-industrial-product-line/hailo-15-based-products.md) | [NXP i.MX8 Based Products](homepage/iot-industrial-product-line/nxp-imx8-based-products.md) |
-| [Renesas RZ Based Products](homepage/iot-industrial-product-line/renesas-rz-based-products.md) | [TI AM64x Based Products](homepage/iot-industrial-product-line/ti-am64x-based-products.md) |
-| [NXP i.MX6 Based Products](homepage/iot-industrial-product-line/nxp-imx6-based-products.md) | [Intel Braswell IB8000/IB3710](homepage/iot-industrial-product-line/intel-braswell-ib8000-ib3710.md) |
-| [Bedrock SOM Hardware Manual](homepage/iot-industrial-product-line/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md) | |
+| [HAILO 15 Based Products](hailo.md) | [NXP i.MX8 Based Products](nxp.md) |
+| [Renesas RZ Based Products](renesas.md) | [TI AM64x Based Products](ti.md) |
+| [NXP i.MX6 Based Products](nxp.md) | [Intel Braswell IB8000/IB3710](intel.md) |
+| [Bedrock SOM Hardware Manual](amd/r8000-r7000/com-som/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md) | |
 
 ---
 
@@ -26,10 +26,10 @@ Welcome to the SolidRun Developer Center - your comprehensive resource for hardw
 
 | | |
 |---|---|
-| [AMD V3000 COM Express](homepage/networking-product-line/amd-v3000-com-express-based-products.md) | [NXP LX2162A Based Products](homepage/networking-product-line/nxp-lx2162a-based-products.md) |
-| [NXP LX2160A Based Products](homepage/networking-product-line/nxp-lx2160a-based-products.md) | [Marvell CN913x Based Products](homepage/networking-product-line/marvell-cn913x-based-products.md) |
+| [AMD V3000 COM Express](amd.md) | [NXP LX2162A Based Products](nxp.md) |
+| [NXP LX2160A Based Products](nxp.md) | [Marvell CN913x Based Products](marvell.md) |
 | [SolidWAN LX2162A](homepage/networking-product-line/solidwan-lx2162a.md) | [SolidWAN Single/Dual](homepage/networking-product-line/solidwan-single-dual.md) |
-| [Marvell A38x Based Products](homepage/networking-product-line/marvell-a38x-based-products.md) | [Marvell A8040 Based Products](homepage/networking-product-line/marvell-a8040-based-products.md) |
+| [Marvell A38x Based Products](marvell.md) | [Marvell A8040 Based Products](marvell.md) |
 
 ---
 
@@ -37,8 +37,8 @@ Welcome to the SolidRun Developer Center - your comprehensive resource for hardw
 
 | | |
 |---|---|
-| [Hardware Quick Start Guides](homepage/solidsense/hardware-quick-start-guides.md) | [SolidSense Software](homepage/solidsense/solidsense-software.md) |
-| [SolidSense Other Articles](homepage/solidsense/solidsense-other-articles.md) | |
+| [Hardware Quick Start Guides](solidsense/hardware-quick-start-guides.md) | [SolidSense Software](solidsense/solidsense-software.md) |
+| [SolidSense Other Articles](solidsense/solidsense-other-articles.md) | |
 
 ---
 
@@ -46,8 +46,8 @@ Welcome to the SolidRun Developer Center - your comprehensive resource for hardw
 
 | | |
 |---|---|
-| [Bedrock PC](homepage/bedrock-pc.md) | [Other Articles](homepage/other-articles.md) |
-| [Pinout Planner Tool Guide](homepage/pinout-planner-tool-guide.md) | |
+| [Bedrock PC](amd.md) | [Other Articles](other-articles.md) |
+| [Pinout Planner Tool Guide](pinout-planner-tool-guide.md) | |
 
 ---
 
