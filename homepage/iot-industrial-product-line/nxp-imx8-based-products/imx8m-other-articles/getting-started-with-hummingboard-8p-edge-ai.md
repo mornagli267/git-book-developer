@@ -40,7 +40,7 @@ zstd -k -d imx-hailo-demo-image-imx8mpsolidrun.wic.zst
 sudo dd if=imx-hailo-demo-image-imx8mpsolidrun.wic of=/dev/sdX bs=1M
 ```
 
-* For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025).
+* For more information, please visit [Flashing an SD Card](/homepage/other-articles/flashing-an-sd-card.md).
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all its partitions are unmounted.

@@ -2,7 +2,7 @@
 
 ## SD Card
 
-You will need to download an operating system for the HummingBoard RZ/G2LC | RZ/G2L | RZ/V2L and flash into a blank SD card to use the system. You can download official release distributions and find flashing instructions at our [software](https://developer.solid-run.com/software/) page. If you need help to flash the SD card, please see our article [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
+You will need to download an operating system for the HummingBoard RZ/G2LC | RZ/G2L | RZ/V2L and flash into a blank SD card to use the system. You can download official release distributions and find flashing instructions at our [software](https://developer.solid-run.com/software/) page. If you need help to flash the SD card, please see our article [Flashing an SD Card](/homepage/other-articles/flashing-an-sd-card.md) .
 
 #### Boot Select
 

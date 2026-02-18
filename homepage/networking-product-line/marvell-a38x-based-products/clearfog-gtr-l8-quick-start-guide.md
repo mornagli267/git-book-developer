@@ -122,7 +122,7 @@ Use the following commands for writing the image to an USB Disk:
 xz -dc sr-a38x-debian-buster-20200114.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](https://solidrun.atlassian.net/wiki/spaces/developer/pages/288129025) .
+* For more information, please visit [Flashing an SD Card](/homepage/other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a USB Disk into your Linux PC, the following assumes that the USB is added as /dev/sdX and all it’s partitions are unmounted.
