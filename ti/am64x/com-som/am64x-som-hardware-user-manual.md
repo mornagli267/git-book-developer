@@ -810,9 +810,8 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                            | File                                                                                                                                                               | Modified                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="am64x-som-hardware-user-manual.md#section-43c4797e-37ac-472b-8558-9509184a66e7">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493821/Reliability+prediction+for+TI+AM64x+SOM+V1.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [Reliability prediction for TI AM64x SOM V1.pdf](../../../wiki/download/attachments/197493821/Reliability%20prediction%20for%20TI%20AM64x%20SOM%20V1.pdf) | Apr 14, 2022 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+* [Reliability prediction for TI AM64x SOM V1.pdf](../sbc-platform/attachments/Reliability%20prediction%20for%20TI%20AM64x%20SOM%20V1.pdf)
+
 
 [Signals%20Allocation.xlsx](attachments/Signals%20Allocation.xlsx)
 

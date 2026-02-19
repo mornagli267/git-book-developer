@@ -463,13 +463,12 @@ RZ/G2UL SOM **does not** support a Display port interface, so Debian GUI is not 
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                      | File                                                                                                                                      | Modified                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-ripple-rz-g2ul-som-quick-start-guide.md#section-914ef429-48cf-4c1b-88f5-eda67a86a1d9">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/598212944/HummingBoard-REV.2.5-pcb.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>          | ZIP Archive [HummingBoard-REV.2.5-pcb.zip](../../../wiki/download/attachments/598212944/HummingBoard-REV.2.5-pcb.zip)                     | Mar 19, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-ripple-rz-g2ul-som-quick-start-guide.md#section-9e4afd9c-28b6-49ed-afd9-4174bd5481b1">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/598212944/HummingBoard+Mechanical+Drawings.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>  | ZIP Archive [HummingBoard Mechanical Drawings.zip](../../../wiki/download/attachments/598212944/HummingBoard%20Mechanical%20Drawings.zip) | Mar 19, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-ripple-rz-g2ul-som-quick-start-guide.md#section-b8b84a17-a9f4-4a1c-b9c0-719fd470bbf4">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/598212944/HummingBoard-Part-Assembly.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>        | ZIP Archive [HummingBoard-Part-Assembly.zip](../../../wiki/download/attachments/598212944/HummingBoard-Part-Assembly.zip)                 | Mar 19, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-ripple-rz-g2ul-som-quick-start-guide.md#section-663d4635-77c0-44a5-9baf-cebca903568a">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/598212944/HummingBoard+Gerbers.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>              | ZIP Archive [HummingBoard Gerbers.zip](../../../wiki/download/attachments/598212944/HummingBoard%20Gerbers.zip)                           | Mar 19, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="hummingboard-ripple-rz-g2ul-som-quick-start-guide.md#section-08e86e93-c6d0-4dec-afdd-74ca2b64c97f">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/598212944/hummingboard-v2.5-Full-schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [hummingboard-v2.5-Full-schematics.pdf](../../../wiki/download/attachments/598212944/hummingboard-v2.5-Full-schematics.pdf)      | Mar 19, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+* [HummingBoard-REV.2.5-pcb.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-REV.2.5-pcb.zip)
+* [HummingBoard Mechanical Drawings.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Mechanical%20Drawings.zip)
+* [HummingBoard-Part-Assembly.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-Part-Assembly.zip)
+* [HummingBoard Gerbers.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Gerbers.zip)
+* [hummingboard-v2.5-Full-schematics.pdf](../../rz-g2l-v2l/sbc-platform/attachments/hummingboard-v2.5-Full-schematics.pdf)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -477,7 +476,6 @@ Upload file
 
 File description
 
-[Download All](../../../wiki/download/all/_attachments)
 
 ## Related Articles <a href="#hummingboardripple-and-rz-g2ulsomquickstartguide-relatedarticles" id="hummingboardripple-and-rz-g2ulsomquickstartguide-relatedarticles"></a>
 

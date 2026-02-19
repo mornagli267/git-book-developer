@@ -617,12 +617,10 @@ Following are the COM express type 7 AB and CD pin mapping –
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                       | File                                                                                                                                          | Modified                                                                                      |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="cn9132-com-hardware-user-manual.md#section-2ca05027-d13f-444d-8286-66d9e11a01fd">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493937/CN9132+COM+3D-files.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>                  | ZIP Archive [CN9132 COM 3D-files.zip](../../../wiki/download/attachments/197493937/CN9132%20COM%203D-files.zip)                               | Nov 08, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
-| <p>Labels<br><br>- No labels<br>- <a href="cn9132-com-hardware-user-manual.md#section-e3293594-24b1-4571-a1a5-e1832398654d">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493937/CN9132+COM_1.1-simplified-schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [CN9132 COM\_1.1-simplified-schematics.pdf](../../../wiki/download/attachments/197493937/CN9132%20COM_1.1-simplified-schematics.pdf) | Nov 08, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+* [CN9132 COM 3D-files.zip](../sbc-platform/attachments/CN9132%20COM%203D-files.zip)
+* [CN9132 COM_1.1-simplified-schematics.pdf](../sbc-platform/attachments/CN9132%20COM_1.1-simplified-schematics.pdf)
 
-[Download All](../../../wiki/download/all_attachments)
+
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=CEx7+CN9132\&post_type=product)
 

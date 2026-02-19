@@ -215,13 +215,11 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                               | File                                                                                                                           | Modified                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="cn9132-com-evk-quick-start-guide.md#section-04eb52a3-ab64-4d15-95be-67478f7b6c7c">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493948/ClearFog+CX+CN9K+Schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [ClearFog CX CN9K Schematics.pdf](../../../wiki/download/attachments/197493948/ClearFog%20CX%20CN9K%20Schematics.pdf) | Dec 26, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
-| <p>Labels<br><br>- No labels<br>- <a href="cn9132-com-evk-quick-start-guide.md#section-b5c15f65-a02f-476b-a279-5db4daabfa39">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493948/ClearFog+CN9-v1.2-Assy.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>      | ZIP Archive [ClearFog CN9-v1.2-Assy.zip](../../../wiki/download/attachments/197493948/ClearFog%20CN9-v1.2-Assy.zip)            | Dec 26, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
-| <p>Labels<br><br>- No labels<br>- <a href="cn9132-com-evk-quick-start-guide.md#section-f36bd63f-4ee5-49ba-9f66-fd07f83d5cdb">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493948/ClearFog+CX+CN9K+3D.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>         | ZIP Archive [ClearFog CX CN9K 3D.zip](../../../wiki/download/attachments/197493948/ClearFog%20CX%20CN9K%203D.zip)              | Dec 26, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+* [ClearFog CX CN9K Schematics.pdf](attachments/ClearFog%20CX%20CN9K%20Schematics.pdf)
+* [ClearFog CN9-v1.2-Assy.zip](attachments/ClearFog%20CN9-v1.2-Assy.zip)
+* [ClearFog CX CN9K 3D.zip](attachments/ClearFog%20CX%20CN9K%203D.zip)
 
-[Download All](../../../wiki/download/all_attachments)
+
 
 ## Related Articles
 

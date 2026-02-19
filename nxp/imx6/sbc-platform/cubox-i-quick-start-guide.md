@@ -223,12 +223,10 @@ l2ping -c 4  $MAC
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                  | File                                                                                                            | Modified                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="cubox-i-quick-start-guide.md#section-81545eb8-650e-415a-8922-62fa0cfcc8f1">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493654/cubox-i-plastic-model.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [cubox-i-plastic-model.zip](../../../wiki/download/attachments/197493654/cubox-i-plastic-model.zip) | Oct 10, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
-| <p>Labels<br><br>- No labels<br>- <a href="cubox-i-quick-start-guide.md#section-0433bb84-cbfe-4e53-a966-fc8072fe9cb3">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197493654/CuBox-I+schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>    | PDF File [CuBox-I schematics.pdf](../../../wiki/download/attachments/197493654/CuBox-I%20schematics.pdf)        | Oct 21, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+* [cubox-i-plastic-model.zip](attachments/cubox-i-plastic-model.zip)
+* [CuBox-I schematics.pdf](attachments/CuBox-I%20schematics.pdf)
 
-[Download All](../../../wiki/download/all_attachments)
+
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355)
 

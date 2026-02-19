@@ -259,9 +259,8 @@ Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are bein
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                    | File                                                                                                                | Modified                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="cubox-m-quick-start-guide.md#section-53f9d402-68fd-4f68-829d-485c0b5d9db3">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/200015887/CuBox-M-Schematics-v1.1.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [CuBox-M-Schematics-v1.1.zip](../../../wiki/download/attachments/200015887/CuBox-M-Schematics-v1.1.zip) | Mar 13, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+* [CuBox-M-Schematics-v1.1.zip](attachments/CuBox-M-Schematics-v1.1.zip)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -269,9 +268,9 @@ Upload file
 
 File description
 
-|                                                                                                                                                                                                                                                                                                                                                                                                    | File                                                                                                                | Modified                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="cubox-m-quick-start-guide.md#section-e8ddd31b-8621-4e9c-8c6f-fa6d19ccf2a9">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/200015887/CuBox-M-Schematics-v1.1.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [CuBox-M-Schematics-v1.1.zip](../../../wiki/download/attachments/200015887/CuBox-M-Schematics-v1.1.zip) | Mar 13, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+
+* [CuBox-M-Schematics-v1.1.zip](attachments/CuBox-M-Schematics-v1.1.zip)
+
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=CuBox+M\&post_type=product)
 

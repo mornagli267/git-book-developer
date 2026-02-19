@@ -599,10 +599,9 @@ Please refer to the SolidRun website for more information regarding part numbers
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                  | File                                                                                                                        | Modified                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="imx8-dxl-som-hardware-user-manual.md#section-80757c79-ef08-48ee-a14a-70b5b671663a">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/613416973/IMX8XL+SOM-v2_BoardAndModels.step">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | File [IMX8XL SOM-v2\_BoardAndModels.step](../../../wiki/download/attachments/613416973/IMX8XL%20SOM-v2_BoardAndModels.step) | Mar 11, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="imx8-dxl-som-hardware-user-manual.md#section-1b945e56-c8cf-413b-81a2-b474d05a49de">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/613416973/IMX8DXL_SOM_V2X_3D_model.rar">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>      | File [IMX8DXL\_SOM\_V2X\_3D\_model.rar](../../../wiki/download/attachments/613416973/IMX8DXL_SOM_V2X_3D_model.rar)          | Mar 11, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+* [IMX8XL SOM-v2_BoardAndModels.step](../sbc-platform/attachments/IMX8XL%20SOM-v2_BoardAndModels.step)
+* [IMX8DXL_SOM_V2X_3D_model.rar](../sbc-platform/attachments/IMX8DXL_SOM_V2X_3D_model.rar)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -610,7 +609,6 @@ Upload file
 
 File description
 
-[Download All](../../../wiki/download/all/_attachments)
 
 ## Related Articles <a href="#i.mx8dxlsomhardwareusermanual-relatedarticles" id="i.mx8dxlsomhardwareusermanual-relatedarticles"></a>
 

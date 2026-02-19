@@ -81,7 +81,7 @@ The following figure describes the LX2162A SOM Blocks Diagram.
 
 ## Simplified Schematics
 
-Following is a link to that simplified schematics of the board : [LX2162A COM Simplified Schematics](https://solidrun.atlassian.net/wiki/download/attachments/197494140/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf?api=v2)
+Following is a link to that simplified schematics of the board : [LX2162A COM Simplified Schematics](../sbc-platform/attachments/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf)
 
 LX2162A SOM simplified schematics is intended for the following audience –
 
@@ -90,7 +90,7 @@ LX2162A SOM simplified schematics is intended for the following audience –
 
 ## Module dimensions and board to board header orientation
 
-[SOM bottom side DXF file](https://solidrun.atlassian.net/wiki/download/attachments/197494140/LX2162A-SOM-bottom-dxf.dxf?api=v2) - use attached dxf file for board dimensions, mounting holes and board to board connectors location
+[SOM bottom side DXF file](../sbc-platform/attachments/LX2162A-SOM-bottom-dxf.dxf) - use attached dxf file for board dimensions, mounting holes and board to board connectors location
 
 \*note the board to board pin numbers and keep in mind this is bottom view
 
@@ -277,14 +277,12 @@ SERDES 1 block has 4 SERDESes, and SERDES 2 block has 8 SERDESes that can be con
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                | File                                                                                                                                                       | Modified                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="lx2162a-som-hardware-user-manual.md#section-d944186c-4d80-49a2-b83e-9c61aedd6bae">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197494140/LX2162A+SOM+pinout.xlsx">View</a></p>                      | Microsoft Excel Spreadsheet [LX2162A SOM pinout.xlsx](../../../wiki/download/attachments/197494140/LX2162A%20SOM%20pinout.xlsx)                            | Mar 27, 2022 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/)                       |
-| <p>Labels<br><br>- No labels<br>- <a href="lx2162a-som-hardware-user-manual.md#section-3204dd6f-09e0-4ef6-9a40-d9f83807792f">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197494140/LX2162A+SOM+Simplified+Schematics+Rev1.0.pdf">View</a></p> | PDF File [LX2162A SOM Simplified Schematics Rev1.0.pdf](../../../wiki/download/attachments/197494140/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf) | Apr 03, 2022 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/)                       |
-| <p>Labels<br><br>- No labels<br>- <a href="lx2162a-som-hardware-user-manual.md#section-8e99736e-ef89-4872-b6ef-537e3b587f0b">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197494140/LX2162A-SOM-bottom-dxf.dxf">View</a></p>                   | File [LX2162A-SOM-bottom-dxf.dxf](../../../wiki/download/attachments/197494140/LX2162A-SOM-bottom-dxf.dxf)                                                 | Apr 13, 2022 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/)                       |
-| <p>Labels<br><br>- No labels<br>- <a href="lx2162a-som-hardware-user-manual.md#section-6b87a1d0-1399-4aa2-ae37-8489b9dd86b3">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/197494140/LX2162-SOM-v+1_0--3D.zip">View</a></p>                     | ZIP Archive [LX2162-SOM-v 1\_0--3D.zip](../../../wiki/download/attachments/197494140/LX2162-SOM-v%201_0--3D.zip)                                           | Oct 18, 2023 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
+* [LX2162A SOM pinout.xlsx](../sbc-platform/attachments/LX2162A%20SOM%20pinout.xlsx)
+* [LX2162A SOM Simplified Schematics Rev1.0.pdf](../sbc-platform/attachments/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf)
+* [LX2162A-SOM-bottom-dxf.dxf](../sbc-platform/attachments/LX2162A-SOM-bottom-dxf.dxf)
+* [LX2162-SOM-v 1_0--3D.zip](../sbc-platform/attachments/LX2162-SOM-v%201_0--3D.zip)
 
-[Download All](../../../wiki/download/all_attachments)
+
 
 ## Related Articles
 

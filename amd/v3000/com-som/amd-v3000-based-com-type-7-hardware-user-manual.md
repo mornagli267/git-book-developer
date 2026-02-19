@@ -365,10 +365,9 @@ TBD
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                | File                                                                                                                                    | Modified                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="amd-v3000-based-com-type-7-hardware-user-manual.md#section-c2eb1521-0bc9-49b4-b486-d5f39421c281">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/593395713/HS00030+heatsink+rev+1.1+STEP.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [HS00030 heatsink rev 1.1 STEP.zip](../../../wiki/download/attachments/593395713/HS00030%20heatsink%20rev%201.1%20STEP.zip) | Jul 23, 2024 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
-| <p>Labels<br><br>- No labels<br>- <a href="amd-v3000-based-com-type-7-hardware-user-manual.md#section-05e351b3-4df3-43c9-9588-6a1b88ac8332">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/593395713/AMD-V3K-CEX7+STEP-rev-1_0.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>     | ZIP Archive [AMD-V3K-CEX7 STEP-rev-1\_0.zip](../../../wiki/download/attachments/593395713/AMD-V3K-CEX7%20STEP-rev-1_0.zip)              | Feb 01, 2024 by [Rabeeh Khoury](../../../wiki/people/557058:99a92153-3f5e-430e-b8cf-907fde28b14e/) |
+* [HS00030 heatsink rev 1.1 STEP.zip](../sbc-platform/attachments/HS00030%20heatsink%20rev%201.1%20STEP.zip)
+* [AMD-V3K-CEX7 STEP-rev-1_0.zip](../sbc-platform/attachments/AMD-V3K-CEX7%20STEP-rev-1_0.zip)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -376,7 +375,6 @@ Upload file
 
 File description
 
-[Download All](../../../wiki/download/all/_attachments)
 
 [ Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
 

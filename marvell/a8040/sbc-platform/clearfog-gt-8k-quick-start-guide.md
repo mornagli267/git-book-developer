@@ -211,12 +211,10 @@ reboot
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                | File                                                                                                                                                        | Modified                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-gt-8k-quick-start-guide.md#section-1d5fff38-3511-40a9-bc8c-9354e43cf7fa">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/287212382/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [ClearFog-GT-8K-rev-1\_1-Simplified-Schematics.pdf](../../../wiki/download/attachments/287212382/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf) | Dec 28, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-gt-8k-quick-start-guide.md#section-0fa3c41f-ba89-4541-9def-0a66f9666e22">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/287212382/ClearFog+GT+8K+Full+Board+Assy_Rev.1.rar">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>         | File [ClearFog GT 8K Full Board Assy\_Rev.1.rar](../../../wiki/download/attachments/287212382/ClearFog%20GT%208K%20Full%20Board%20Assy_Rev.1.rar)           | Dec 28, 2021 by [SolidRun](../../../wiki/people/557058:12be2ae4-3a6e-40cc-a677-bdfc4c987d1f/) |
+* [ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf](attachments/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf)
+* [ClearFog GT 8K Full Board Assy_Rev.1.rar](attachments/ClearFog%20GT%208K%20Full%20Board%20Assy_Rev.1.rar)
 
-[Download All](../../../wiki/download/all_attachments)
+
 
 ## Related Articles
 

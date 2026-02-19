@@ -50,9 +50,9 @@
 
 #### Simplified Schematics
 
-|                                                                                                                                                                                                                                                                      | File                                                                                                                                                            | Modified                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="_bedrock-r7000-som.md#section-75844d72-8ed8-4ddd-8d1c-8a3f3c74f8b7">Edit Labels</a><br><br>[Preview] <a href="../../../../wiki/download/attachments/485949636/SolidRun+Bedrock+V3000+SoM+Specifications.pdf">View</a></p> | PDF File [SolidRun Bedrock V3000 SoM Specifications.pdf](../../../../wiki/download/attachments/485949636/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf) | Jul 23, 2023 by [Irad Stavi](../../../../wiki/people/6370e7fe9960988ef6bb7091/) |
+
+* [SolidRun Bedrock V3000 SoM Specifications.pdf](../sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/attachments/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf)
+
 
 #### Mechanical Files
 

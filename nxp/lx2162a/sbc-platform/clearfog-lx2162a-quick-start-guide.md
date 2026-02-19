@@ -329,10 +329,9 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 
 ## Documentation
 
-|                                     | File                                                                                                                             | Modified      |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| Schematics and Board Layout Rev 1.1 | [Rev 1.1 files here](https://solidrun.atlassian.net/wiki/download/attachments/199131187/ClearFog-LX2162A_Rev1.1.zip?api=v2)      | December 2022 |
-| Mechanical files Rev 1.1            | [Rev 1.1 files here](https://solidrun.atlassian.net/wiki/download/attachments/199131187/ClearFog-LX2162A_Mech_Rev1.1.zip?api=v2) | December 2022 |
+* ClearFog-LX2162A_Rev1.1.zip?api=v2 — _file not found in repository_
+* ClearFog-LX2162A_Mech_Rev1.1.zip?api=v2 — _file not found in repository_
+
 
 ## Related Articles
 
@@ -350,11 +349,10 @@ Related pages
 
 [LX2162A Software](lx2162a-software.md)LX2160A Software[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)
 
-|                                                                                                                                                                                                                                                                                                   | File                                                                                                                                                                                         | Modified                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-lx2162a-quick-start-guide.md#section-a0955862-fc88-4366-b589-e351e7ce5eb3">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/199131187/ClearFog+LX2162+STEP.zip">View</a></p>                                      | ZIP Archive [ClearFog LX2162 STEP.zip](../../../wiki/download/attachments/199131187/ClearFog%20LX2162%20STEP.zip)                                                                            | May 31, 2022 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/) |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-lx2162a-quick-start-guide.md#section-d03e304e-a325-4342-9230-f2bfa1389856">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/199131187/PRELIMINARY+ClearFog-LX2162A+Simplified+Schematics+Rev1.0.pdf">View</a></p> | PDF File [PRELIMINARY ClearFog-LX2162A Simplified Schematics Rev1.0.pdf](../../../wiki/download/attachments/199131187/PRELIMINARY%20ClearFog-LX2162A%20Simplified%20Schematics%20Rev1.0.pdf) | May 31, 2022 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/) |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-lx2162a-quick-start-guide.md#section-809d7fac-35a3-4774-b263-9acad1461a55">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/199131187/ClearFog-LX2162A_Rev1.1.zip">View</a></p>                                   | ZIP Archive [ClearFog-LX2162A\_Rev1.1.zip](../../../wiki/download/attachments/199131187/ClearFog-LX2162A_Rev1.1.zip)                                                                         | Jan 05, 2023 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/) |
-| <p>Labels<br><br>- No labels<br>- <a href="clearfog-lx2162a-quick-start-guide.md#section-a37d6de6-5558-4451-afa7-851d0373fde9">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/199131187/ClearFog-LX2162A_Mech_Rev1.1.zip">View</a></p>                              | ZIP Archive [ClearFog-LX2162A\_Mech\_Rev1.1.zip](../../../wiki/download/attachments/199131187/ClearFog-LX2162A_Mech_Rev1.1.zip)                                                              | Jan 05, 2023 by [Ilan Braun](../../../wiki/people/6231e3991f014e0069cd4610/) |
 
-[Download All](../../../wiki/download/all_attachments)
+* [ClearFog LX2162 STEP.zip](attachments/ClearFog%20LX2162%20STEP.zip)
+* [PRELIMINARY ClearFog-LX2162A Simplified Schematics Rev1.0.pdf](attachments/PRELIMINARY%20ClearFog-LX2162A%20Simplified%20Schematics%20Rev1.0.pdf)
+* [ClearFog-LX2162A_Rev1.1.zip](attachments/ClearFog-LX2162A_Rev1.1.zip)
+* [ClearFog-LX2162A_Mech_Rev1.1.zip](attachments/ClearFog-LX2162A_Mech_Rev1.1.zip)
+
+

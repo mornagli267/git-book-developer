@@ -367,10 +367,10 @@ TBD
 
 ### Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                        | File                                                                                                                                              | Modified                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <p>Labels<br><br>- No labels<br>- <a href="amd-r8000-based-com-type-6-hardware-user-manual.md#section-09d2cef1-ac20-452d-b3e4-2c412e744ea7">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/1619886087/amd-mitx-cex6-1.0.0+-+B-t-B+Headers.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>  | PDF File [amd-mitx-cex6-1.0.0 - B-t-B Headers.pdf](../../../wiki/download/attachments/1619886087/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf)   | Jan 08, 2026 by [Firas Abd El Gani](../../../wiki/people/63f1fc9d263233e653a7e15d/) |
-| <p>Labels<br><br>- No labels<br>- <a href="amd-r8000-based-com-type-6-hardware-user-manual.md#section-12b31fba-ff09-473f-8924-fea53ae5355d">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/1619886087/amd-fp7r2-com6-1.0.0+-+B-t-B+Headers.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [amd-fp7r2-com6-1.0.0 - B-t-B Headers.pdf](../../../wiki/download/attachments/1619886087/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf) | Jan 08, 2026 by [Firas Abd El Gani](../../../wiki/people/63f1fc9d263233e653a7e15d/) |
+
+* [amd-mitx-cex6-1.0.0 - B-t-B Headers.pdf](attachments/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf)
+* [amd-fp7r2-com6-1.0.0 - B-t-B Headers.pdf](attachments/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -378,7 +378,6 @@ Upload file
 
 File description
 
-[Download All](../../../wiki/download/all_attachments)
 
 [Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
 

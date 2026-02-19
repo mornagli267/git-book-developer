@@ -640,9 +640,8 @@ Following is a diagram of the TOP VIEW of the RZG2L/V2L.
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                              | File                                                                                                                                                               | Modified                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="rz-g2l-and-rz-v2l-som-hardware-user-manual.md#section-6cea4cd3-6f09-4a2c-9ea5-b32cd59736b8">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/511148033/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | PDF File [rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf](../../../wiki/download/attachments/511148033/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf) | Dec 31, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+* [rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf](../sbc-platform/attachments/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf)
+
 
 [RZG2L\_pinfunction\_List\_r1.1.xlsx](attachments/RZG2L_pinfunction_List_r1.1.xlsx)
 

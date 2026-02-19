@@ -590,10 +590,9 @@ Following is a diagram of the TOP VIEW of the RZG2LC/UL.
 
 ## Documentation
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                           | File                                                                                                                                                  | Modified                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <p>Labels<br><br>- No labels<br>- <a href="rz-g2lc-som-hardware-user-manual.md#section-66c24648-a700-4676-92b6-be5effa2303d">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/411861054/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p> | ZIP Archive [RZ\_G2LC-UL-SOM\_BoardAndModels-step-file.zip](../../../wiki/download/attachments/411861054/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip) | May 15, 2023 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
-| <p>Labels<br><br>- No labels<br>- <a href="rz-g2lc-som-hardware-user-manual.md#section-2c0cf0d0-a610-4e80-ba17-e68f5f9baf24">Edit Labels</a><br><br>[Preview] <a href="../../../wiki/download/attachments/411861054/rzg2lc-som-1.2-simplified.pdf">View</a> <a href="../../../wiki/pages/editattachment.action">Properties</a> <a href="../../../wiki/pages/confirmattachmentremoval.action">Delete</a></p>               | PDF File [rzg2lc-som-1.2-simplified.pdf](../../../wiki/download/attachments/411861054/rzg2lc-som-1.2-simplified.pdf)                                  | Jan 24, 2024 by [Yazan Shhady](../../../wiki/people/5f67bce9ed55c7006abc6319/) |
+* [RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip](../../rz-g2l-v2l/sbc-platform/attachments/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip)
+* [rzg2lc-som-1.2-simplified.pdf](../../rz-g2l-v2l/sbc-platform/attachments/rzg2lc-som-1.2-simplified.pdf)
+
 
 * Drag and drop to upload or \[browse for files]&#x20;
 
@@ -601,7 +600,6 @@ Upload file
 
 File description
 
-[Download All](../../../wiki/download/all_attachments)
 
 [Buy a Sample Now](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2lc-som)
 
