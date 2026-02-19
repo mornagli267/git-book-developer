@@ -208,6 +208,7 @@ We run our boards at 1600MHz. Industrial devices are limited to 1333MHz. DRAM ru
 
 * [sr-a38x-microsom-rev1.0-sample_board_assembly.pdf](../sbc-platform/attachments/sr-a38x-microsom-rev1.0-sample_board_assembly.pdf)
 {% file src="../../../.gitbook/assets/a38x-microsom-schematics-simplified-rev2.1.pdf" %}
+{% file src="../sbc-platform/attachments/a38x-microsom-schematics-simplified-rev2.1.pdf" %}
 * [a38x-microsom-pin-muxing.xlsx](../sbc-platform/attachments/a38x-microsom-pin-muxing.xlsx)
 * [a38x-microsom-step-rev2.0.zip](../sbc-platform/attachments/a38x-microsom-step-rev2.0.zip)
 * [a38x-microsom-3d-design-rev2.0.pdf](../sbc-platform/attachments/a38x-microsom-3d-design-rev2.0.pdf)
