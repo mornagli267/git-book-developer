@@ -617,8 +617,8 @@ Following are the COM express type 7 AB and CD pin mapping –
 
 ## Documentation
 
-* [CN9132 COM 3D-files.zip](../sbc-platform/attachments/CN9132%20COM%203D-files.zip)
-* [CN9132 COM_1.1-simplified-schematics.pdf](../sbc-platform/attachments/CN9132%20COM_1.1-simplified-schematics.pdf)
+{% file src="../sbc-platform/attachments/CN9132%20COM%203D-files.zip" %}
+{% file src="../sbc-platform/attachments/CN9132%20COM_1.1-simplified-schematics.pdf" %}
 
 
 

@@ -173,8 +173,8 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-* [ClearFog GTR L8 Mechanics Production Files.rar](attachments/ClearFog%20GTR%20L8%20Mechanics%20Production%20Files.rar)
-* [ClearFog GTR L8 Documentation Board & Assembly Models.rar](attachments/ClearFog%20GTR%20L8%20Documentation%20Board%20&%20Assembly%20Models.rar)
+{% file src="attachments/ClearFog%20GTR%20L8%20Mechanics%20Production%20Files.rar" %}
+{% file src="attachments/ClearFog%20GTR%20L8%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
 
 
 

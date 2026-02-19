@@ -348,15 +348,15 @@ This will bring up the following:
 
 ## Documentation
 
-* [HummingBoard Gate BOM rev 1.4.2.xlsx](attachments/HummingBoard%20Gate%20BOM%20%20rev%201.4.2.xlsx)
-* [mikrobus_specification-rev2.pdf](attachments/mikrobus_specification-rev2.pdf)
-* [HummingBoard2-v1.4-layout_pcb.zip](attachments/HummingBoard2-v1.4-layout_pcb.zip)
-* [HummingBoard2-gerber-rev1.2.zip](attachments/HummingBoard2-gerber-rev1.2.zip)
-* [rtc-datasheet-onboard.pdf](attachments/rtc-datasheet-onboard.pdf)
-* [HummingBoard2 PCB parts assembly Rev 1.4.zip](attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip)
-* [HummingBoard2 Schematics.pdf](attachments/HummingBoard2%20Schematics.pdf)
-* [HummingBoard2 Assembly-Files.zip](attachments/HummingBoard2%20Assembly-Files.zip)
-* [HummingBoard2 Enclosure-Files.zip](attachments/HummingBoard2%20Enclosure-Files.zip)
+{% file src="attachments/HummingBoard%20Gate%20BOM%20%20rev%201.4.2.xlsx" %}
+{% file src="attachments/mikrobus_specification-rev2.pdf" %}
+{% file src="attachments/HummingBoard2-v1.4-layout_pcb.zip" %}
+{% file src="attachments/HummingBoard2-gerber-rev1.2.zip" %}
+{% file src="attachments/rtc-datasheet-onboard.pdf" %}
+{% file src="attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip" %}
+{% file src="attachments/HummingBoard2%20Schematics.pdf" %}
+{% file src="attachments/HummingBoard2%20Assembly-Files.zip" %}
+{% file src="attachments/HummingBoard2%20Enclosure-Files.zip" %}
 
 
 

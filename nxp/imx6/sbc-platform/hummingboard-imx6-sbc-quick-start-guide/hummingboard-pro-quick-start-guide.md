@@ -335,11 +335,11 @@ This will bring up the following:
 
 ## Documentation
 
-* [HummingBoard-BasePro-Assembly-Files.zip](attachments/HummingBoard-BasePro-Assembly-Files.zip)
-* [hummingboard-pro-rev-3.5-layout.zip](attachments/hummingboard-pro-rev-3.5-layout.zip)
-* [HummingBoard-BasePro-Gerbers.zip](attachments/HummingBoard-BasePro-Gerbers.zip)
-* [HummingBoard Pro BOM Rev 3.5.1.xlsx](attachments/HummingBoard%20Pro%20BOM%20Rev%203.5.1.xlsx)
-* [HummingBoard-BasePro-Schematics.zip](attachments/HummingBoard-BasePro-Schematics.zip)
+{% file src="attachments/HummingBoard-BasePro-Assembly-Files.zip" %}
+{% file src="attachments/hummingboard-pro-rev-3.5-layout.zip" %}
+{% file src="attachments/HummingBoard-BasePro-Gerbers.zip" %}
+{% file src="attachments/HummingBoard%20Pro%20BOM%20Rev%203.5.1.xlsx" %}
+{% file src="attachments/HummingBoard-BasePro-Schematics.zip" %}
 
 
 

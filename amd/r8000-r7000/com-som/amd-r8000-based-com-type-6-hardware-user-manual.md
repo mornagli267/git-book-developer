@@ -368,8 +368,8 @@ TBD
 ### Documentation
 
 
-* [amd-mitx-cex6-1.0.0 - B-t-B Headers.pdf](attachments/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf)
-* [amd-fp7r2-com6-1.0.0 - B-t-B Headers.pdf](attachments/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf)
+{% file src="attachments/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf" %}
+{% file src="attachments/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

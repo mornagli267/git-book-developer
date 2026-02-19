@@ -259,7 +259,7 @@ Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are bein
 
 ## Documentation
 
-* [CuBox-M-Schematics-v1.1.zip](attachments/CuBox-M-Schematics-v1.1.zip)
+{% file src="attachments/CuBox-M-Schematics-v1.1.zip" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;
@@ -269,7 +269,7 @@ Upload file
 File description
 
 
-* [CuBox-M-Schematics-v1.1.zip](attachments/CuBox-M-Schematics-v1.1.zip)
+{% file src="attachments/CuBox-M-Schematics-v1.1.zip" %}
 
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=CuBox+M\&post_type=product)

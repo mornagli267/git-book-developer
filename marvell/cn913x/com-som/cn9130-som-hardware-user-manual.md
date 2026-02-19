@@ -512,13 +512,13 @@ PTP is supported by the CN9130 Linux Etherent Controller Driver “MVPP2”, ens
 
 ## Documentation
 
-* [cn9130_som_rev1.1-simplified schematics.pdf](../sbc-platform/attachments/cn9130_som_rev1.1-simplified%20schematics.pdf)
-* [CN9130-som-heatsink-files.zip](../sbc-platform/attachments/CN9130-som-heatsink-files.zip)
-* [B2B pinout A388 and CN9130.xlsx](../sbc-platform/attachments/B2B%20pinout%20A388%20and%20CN9130.xlsx)
-* [CN9130-SOM-Mechanical-Files.zip](../sbc-platform/attachments/CN9130-SOM-Mechanical-Files.zip)
-* [CN9130_SOM_REV1.1_STEP.zip](../sbc-platform/attachments/CN9130_SOM_REV1.1_STEP.zip)
-* [Reliability prediction for CN9130 SOM V1.pdf](../sbc-platform/attachments/Reliability%20prediction%20for%20CN9130%20SOM%20V1.pdf)
-* [CN9130_SOM_REV1.3_3D.zip](../sbc-platform/attachments/CN9130_SOM_REV1.3_3D.zip)
+{% file src="../sbc-platform/attachments/cn9130_som_rev1.1-simplified%20schematics.pdf" %}
+{% file src="../sbc-platform/attachments/CN9130-som-heatsink-files.zip" %}
+{% file src="../sbc-platform/attachments/B2B%20pinout%20A388%20and%20CN9130.xlsx" %}
+{% file src="../sbc-platform/attachments/CN9130-SOM-Mechanical-Files.zip" %}
+{% file src="../sbc-platform/attachments/CN9130_SOM_REV1.1_STEP.zip" %}
+{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20CN9130%20SOM%20V1.pdf" %}
+{% file src="../sbc-platform/attachments/CN9130_SOM_REV1.3_3D.zip" %}
 
 
 

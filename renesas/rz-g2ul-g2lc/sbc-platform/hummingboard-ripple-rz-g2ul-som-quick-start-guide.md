@@ -463,11 +463,11 @@ RZ/G2UL SOM **does not** support a Display port interface, so Debian GUI is not 
 
 ## Documentation
 
-* [HummingBoard-REV.2.5-pcb.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-REV.2.5-pcb.zip)
-* [HummingBoard Mechanical Drawings.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Mechanical%20Drawings.zip)
-* [HummingBoard-Part-Assembly.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-Part-Assembly.zip)
-* [HummingBoard Gerbers.zip](../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Gerbers.zip)
-* [hummingboard-v2.5-Full-schematics.pdf](../../rz-g2l-v2l/sbc-platform/attachments/hummingboard-v2.5-Full-schematics.pdf)
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-REV.2.5-pcb.zip" %}
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Mechanical%20Drawings.zip" %}
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-Part-Assembly.zip" %}
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Gerbers.zip" %}
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/hummingboard-v2.5-Full-schematics.pdf" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

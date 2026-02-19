@@ -520,15 +520,15 @@ There are two options for storing MAC addresses on the i.MX8MP platform:
 
 ## Documentation
 
-* [HummingBoard Pulse Pin MUX.xlsx](attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx)
-* [HummingBoard iMX8 Gerbers.zip](attachments/HummingBoard%20iMX8%20Gerbers.zip)
-* [HummingBoard iMX8 PCB.zip](attachments/HummingBoard%20iMX8%20PCB.zip)
-* [HummingBoard Puls-REV.2.5-pcb.zip](attachments/HummingBoard%20Puls-REV.2.5-pcb.zip)
-* [HummingBoard iMX8 Mechanical Drawings.zip](attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip)
-* [HummingBoard iMX8 Schematics.zip](attachments/HummingBoard%20iMX8%20Schematics.zip)
-* [HummingBoard-Pulse-Part-Assembly.zip](attachments/HummingBoard-Pulse-Part-Assembly.zip)
-* [hummingboard-pro-extended-v1.0-simplified-schematics.pdf](attachments/hummingboard-pro-extended-v1.0-simplified-schematics.pdf)
-* [hummingboard-pro_extended_v1.0_full_schematics.pdf](attachments/hummingboard-pro_extended_v1.0_full_schematics.pdf)
+{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
+{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
+{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
+{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
+{% file src="attachments/hummingboard-pro-extended-v1.0-simplified-schematics.pdf" %}
+{% file src="attachments/hummingboard-pro_extended_v1.0_full_schematics.pdf" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

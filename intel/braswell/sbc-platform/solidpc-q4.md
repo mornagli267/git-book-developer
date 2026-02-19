@@ -87,14 +87,14 @@ Please see our guide how to get to [Linux terminal via serial connection.](../..
 
 ## Documentation
 
-* [solidpc-q4-schematics-rev-1.3.pdf](attachments/solidpc-q4-schematics-rev-1.3.pdf)
-* [solidpc-q4-gerbers-rev1.2.zip](attachments/solidpc-q4-gerbers-rev1.2.zip)
-* [solidpc-rev1.2-component-side-silk.pdf](attachments/solidpc-rev1.2-component-side-silk.pdf)
-* [sr-ibx-solidpc-full-assy-v1.zip](attachments/sr-ibx-solidpc-full-assy-v1.zip)
-* [solidpc-q4-bom.xlsx](attachments/solidpc-q4-bom.xlsx)
-* [solidpc-q4-enclosure.zip](attachments/solidpc-q4-enclosure.zip)
-* [solidpc-q4-heatsink.zip](attachments/solidpc-q4-heatsink.zip)
-* [solidpc-q4-schematics-rev-1.3-dsn.zip](attachments/solidpc-q4-schematics-rev-1.3-dsn.zip)
+{% file src="attachments/solidpc-q4-schematics-rev-1.3.pdf" %}
+{% file src="attachments/solidpc-q4-gerbers-rev1.2.zip" %}
+{% file src="attachments/solidpc-rev1.2-component-side-silk.pdf" %}
+{% file src="attachments/sr-ibx-solidpc-full-assy-v1.zip" %}
+{% file src="attachments/solidpc-q4-bom.xlsx" %}
+{% file src="attachments/solidpc-q4-enclosure.zip" %}
+{% file src="attachments/solidpc-q4-heatsink.zip" %}
+{% file src="attachments/solidpc-q4-schematics-rev-1.3-dsn.zip" %}
 
 
 

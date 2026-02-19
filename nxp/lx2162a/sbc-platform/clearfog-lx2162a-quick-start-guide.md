@@ -350,9 +350,9 @@ Related pages
 [LX2162A Software](lx2162a-software.md)LX2160A Software[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)
 
 
-* [ClearFog LX2162 STEP.zip](attachments/ClearFog%20LX2162%20STEP.zip)
-* [PRELIMINARY ClearFog-LX2162A Simplified Schematics Rev1.0.pdf](attachments/PRELIMINARY%20ClearFog-LX2162A%20Simplified%20Schematics%20Rev1.0.pdf)
-* [ClearFog-LX2162A_Rev1.1.zip](attachments/ClearFog-LX2162A_Rev1.1.zip)
-* [ClearFog-LX2162A_Mech_Rev1.1.zip](attachments/ClearFog-LX2162A_Mech_Rev1.1.zip)
+{% file src="attachments/ClearFog%20LX2162%20STEP.zip" %}
+{% file src="attachments/PRELIMINARY%20ClearFog-LX2162A%20Simplified%20Schematics%20Rev1.0.pdf" %}
+{% file src="attachments/ClearFog-LX2162A_Rev1.1.zip" %}
+{% file src="attachments/ClearFog-LX2162A_Mech_Rev1.1.zip" %}
 
 

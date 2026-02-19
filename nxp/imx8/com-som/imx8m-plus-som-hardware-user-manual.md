@@ -702,10 +702,10 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-* [SOM IMX8M-Plus-rev1.2 Mechanical.rar](../sbc-platform/attachments/SOM%20IMX8M-Plus-rev1.2%20Mechanical.rar)
-* [i.MX8M Plus SOM Simplified Schematics Rev 1.1.pdf](../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.1.pdf)
-* [Reliability prediction for MX8M Plus V1.pdf](../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Plus%20V1.pdf)
-* [i.MX8M Plus SOM Simplified Schematics Rev 1.2.pdf](../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.2.pdf)
+{% file src="../sbc-platform/attachments/SOM%20IMX8M-Plus-rev1.2%20Mechanical.rar" %}
+{% file src="../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.1.pdf" %}
+{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Plus%20V1.pdf" %}
+{% file src="../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.2.pdf" %}
 
 
 

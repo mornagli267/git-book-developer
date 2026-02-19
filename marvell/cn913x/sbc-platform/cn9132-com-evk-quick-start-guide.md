@@ -215,9 +215,9 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-* [ClearFog CX CN9K Schematics.pdf](attachments/ClearFog%20CX%20CN9K%20Schematics.pdf)
-* [ClearFog CN9-v1.2-Assy.zip](attachments/ClearFog%20CN9-v1.2-Assy.zip)
-* [ClearFog CX CN9K 3D.zip](attachments/ClearFog%20CX%20CN9K%203D.zip)
+{% file src="attachments/ClearFog%20CX%20CN9K%20Schematics.pdf" %}
+{% file src="attachments/ClearFog%20CN9-v1.2-Assy.zip" %}
+{% file src="attachments/ClearFog%20CX%20CN9K%203D.zip" %}
 
 
 

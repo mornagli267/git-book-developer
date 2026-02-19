@@ -277,10 +277,10 @@ SERDES 1 block has 4 SERDESes, and SERDES 2 block has 8 SERDESes that can be con
 
 ## Documentation
 
-* [LX2162A SOM pinout.xlsx](../sbc-platform/attachments/LX2162A%20SOM%20pinout.xlsx)
-* [LX2162A SOM Simplified Schematics Rev1.0.pdf](../sbc-platform/attachments/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf)
-* [LX2162A-SOM-bottom-dxf.dxf](../sbc-platform/attachments/LX2162A-SOM-bottom-dxf.dxf)
-* [LX2162-SOM-v 1_0--3D.zip](../sbc-platform/attachments/LX2162-SOM-v%201_0--3D.zip)
+{% file src="../sbc-platform/attachments/LX2162A%20SOM%20pinout.xlsx" %}
+{% file src="../sbc-platform/attachments/LX2162A%20SOM%20Simplified%20Schematics%20Rev1.0.pdf" %}
+{% file src="../sbc-platform/attachments/LX2162A-SOM-bottom-dxf.dxf" %}
+{% file src="../sbc-platform/attachments/LX2162-SOM-v%201_0--3D.zip" %}
 
 
 

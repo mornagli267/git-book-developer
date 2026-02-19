@@ -223,8 +223,8 @@ l2ping -c 4  $MAC
 
 ## Documentation
 
-* [cubox-i-plastic-model.zip](attachments/cubox-i-plastic-model.zip)
-* [CuBox-I schematics.pdf](attachments/CuBox-I%20schematics.pdf)
+{% file src="attachments/cubox-i-plastic-model.zip" %}
+{% file src="attachments/CuBox-I%20schematics.pdf" %}
 
 
 

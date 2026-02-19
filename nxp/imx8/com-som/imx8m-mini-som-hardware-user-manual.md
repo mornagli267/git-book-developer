@@ -472,10 +472,10 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-* [sr-imx8m-carrierboard-heatsink-rev1.0.zip](../sbc-platform/attachments/sr-imx8m-carrierboard-heatsink-rev1.0.zip)
-* [i.MX8M Mini SOM - Documentation Board & Assembly Models.rar](../sbc-platform/attachments/i.MX8M%20Mini%20SOM%20-%20Documentation%20Board%20&%20Assembly%20Models.rar)
-* [imx8m-mini-simplified-schematics-r1.2.pdf](../sbc-platform/attachments/imx8m-mini-simplified-schematics-r1.2.pdf)
-* [Reliability prediction for MX8M Mini V1.pdf](../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Mini%20V1.pdf)
+{% file src="../sbc-platform/attachments/sr-imx8m-carrierboard-heatsink-rev1.0.zip" %}
+{% file src="../sbc-platform/attachments/i.MX8M%20Mini%20SOM%20-%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
+{% file src="../sbc-platform/attachments/imx8m-mini-simplified-schematics-r1.2.pdf" %}
+{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Mini%20V1.pdf" %}
 
 
 

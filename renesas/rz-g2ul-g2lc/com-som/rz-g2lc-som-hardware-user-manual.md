@@ -590,8 +590,8 @@ Following is a diagram of the TOP VIEW of the RZG2LC/UL.
 
 ## Documentation
 
-* [RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip](../../rz-g2l-v2l/sbc-platform/attachments/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip)
-* [rzg2lc-som-1.2-simplified.pdf](../../rz-g2l-v2l/sbc-platform/attachments/rzg2lc-som-1.2-simplified.pdf)
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip" %}
+{% file src="../../rz-g2l-v2l/sbc-platform/attachments/rzg2lc-som-1.2-simplified.pdf" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

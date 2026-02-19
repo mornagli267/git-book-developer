@@ -201,15 +201,15 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-* [rtc-datasheet-onboard.pdf](attachments/rtc-datasheet-onboard.pdf)
-* [ClearFog Pro BOM rev 2.1.4.xlsx](attachments/ClearFog%20Pro%20BOM%20rev%202.1.4.xlsx)
-* [clearfog_pro-rev.2.1-gerber.zip](attachments/clearfog_pro-rev.2.1-gerber.zip)
-* [clearfog_pro-rev2.1-pcb-layout.zip](attachments/clearfog_pro-rev2.1-pcb-layout.zip)
-* [clearfog-schematics-2.1.pdf](attachments/clearfog-schematics-2.1.pdf)
-* [ClearFog-Pro-Enclosure-Files.zip](attachments/ClearFog-Pro-Enclosure-Files.zip)
-* [ARMADA-A388-SOM-Heatsink.zip](attachments/ARMADA-A388-SOM-Heatsink.zip)
-* [clearfog_pro-rev.2.1-mechanical_assembly-3dpdf-pdf.zip](attachments/clearfog_pro-rev.2.1-mechanical_assembly-3dpdf-pdf.zip)
-* [clearfo-pro-schematics-rev2.2.pdf](attachments/clearfo-pro-schematics-rev2.2.pdf)
+{% file src="attachments/rtc-datasheet-onboard.pdf" %}
+{% file src="attachments/ClearFog%20Pro%20BOM%20rev%202.1.4.xlsx" %}
+{% file src="attachments/clearfog_pro-rev.2.1-gerber.zip" %}
+{% file src="attachments/clearfog_pro-rev2.1-pcb-layout.zip" %}
+{% file src="attachments/clearfog-schematics-2.1.pdf" %}
+{% file src="attachments/ClearFog-Pro-Enclosure-Files.zip" %}
+{% file src="attachments/ARMADA-A388-SOM-Heatsink.zip" %}
+{% file src="attachments/clearfog_pro-rev.2.1-mechanical_assembly-3dpdf-pdf.zip" %}
+{% file src="attachments/clearfo-pro-schematics-rev2.2.pdf" %}
 
 
 

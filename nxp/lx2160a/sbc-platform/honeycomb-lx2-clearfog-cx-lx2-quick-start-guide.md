@@ -361,8 +361,8 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 
 ## Documentation
 
-* [ClearFog-CX-and-HoneyComb-Schematics-and-Layout-4977.zip](attachments/ClearFog-CX-and-HoneyComb-Schematics-and-Layout-4977.zip)
-* [ClearFog CX LX2, HoneyComb LX2 Mechanical.zip](attachments/ClearFog%20CX%20LX2,%20HoneyComb%20LX2%20Mechanical.zip)
+{% file src="attachments/ClearFog-CX-and-HoneyComb-Schematics-and-Layout-4977.zip" %}
+{% file src="attachments/ClearFog%20CX%20LX2,%20HoneyComb%20LX2%20Mechanical.zip" %}
 
 
 

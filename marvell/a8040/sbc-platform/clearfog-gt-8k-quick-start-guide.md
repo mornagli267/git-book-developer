@@ -211,8 +211,8 @@ reboot
 
 ## Documentation
 
-* [ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf](attachments/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf)
-* [ClearFog GT 8K Full Board Assy_Rev.1.rar](attachments/ClearFog%20GT%208K%20Full%20Board%20Assy_Rev.1.rar)
+{% file src="attachments/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf" %}
+{% file src="attachments/ClearFog%20GT%208K%20Full%20Board%20Assy_Rev.1.rar" %}
 
 
 

@@ -463,13 +463,13 @@ and then install the NXP CodeWarrior Development Studio for QorIQ LS series - AR
 
 ## Documentation
 
-* [LX2160A-CEX7-Rev 2.1-3D-Model.zip](../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-3D-Model.zip)
-* [LX2160A-CEX7-Rev 2.1-AssyPS.pdf](../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-AssyPS.pdf)
-* [lx2160a-cex7-2.1-simplified-schematics.pdf](../sbc-platform/attachments/lx2160a-cex7-2.1-simplified-schematics.pdf)
-* [LX2160A 1U low profile heat-sink datasheet.pdf](../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%20datasheet.pdf)
-* [LX2160A 1U low profile heat-sink 3D.zip](../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%203D.zip)
-* [S-Parameters - LX2160A_CEX7.zip](../sbc-platform/attachments/S-Parameters%20-%20LX2160A_CEX7.zip)
-* [MTBF For LX2160A COM.pdf](../sbc-platform/attachments/MTBF%20For%20LX2160A%20COM.pdf)
+{% file src="../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-3D-Model.zip" %}
+{% file src="../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-AssyPS.pdf" %}
+{% file src="../sbc-platform/attachments/lx2160a-cex7-2.1-simplified-schematics.pdf" %}
+{% file src="../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%20datasheet.pdf" %}
+{% file src="../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%203D.zip" %}
+{% file src="../sbc-platform/attachments/S-Parameters%20-%20LX2160A_CEX7.zip" %}
+{% file src="../sbc-platform/attachments/MTBF%20For%20LX2160A%20COM.pdf" %}
 
 
 

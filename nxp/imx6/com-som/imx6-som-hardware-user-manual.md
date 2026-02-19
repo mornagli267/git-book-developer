@@ -682,15 +682,15 @@ Refer to SolidRun HummingBoard and CuBox-i design and layout, where there are ex
 
 ## Documentation
 
-* [iMX6 SOM Heatsink.zip](../sbc-platform/attachments/iMX6%20SOM%20Heatsink.zip)
-* [Diff between Rev 1.3 and Rev 1.5.pdf](../sbc-platform/attachments/Diff%20between%20Rev%201.3%20and%20Rev%201.5.pdf)
-* [imx6-rev-1_5-simplified-schematics.pdf](../sbc-platform/attachments/imx6-rev-1_5-simplified-schematics.pdf)
-* [sr-usom-mx6-3_b2b_connectors_locations.zip](../sbc-platform/attachments/sr-usom-mx6-3_b2b_connectors_locations.zip)
-* [iMX6 SOM Mechanical files.zip](../sbc-platform/attachments/iMX6%20SOM%20Mechanical%20files.zip)
-* [imx6 som MTBF.pdf](../sbc-platform/attachments/imx6%20som%20MTBF.pdf)
-* [sr-usom-mx6-fusing.zip](../sbc-platform/attachments/sr-usom-mx6-fusing.zip)
-* [i,MX6 SOM Heatsink 3D.STEP](../sbc-platform/attachments/i,MX6%20SOM%20Heatsink%203D.STEP)
-* [imx6-som-rev-2.0-schematics.pdf](../sbc-platform/attachments/imx6-som-rev-2.0-schematics.pdf)
+{% file src="../sbc-platform/attachments/iMX6%20SOM%20Heatsink.zip" %}
+{% file src="../sbc-platform/attachments/Diff%20between%20Rev%201.3%20and%20Rev%201.5.pdf" %}
+{% file src="../sbc-platform/attachments/imx6-rev-1_5-simplified-schematics.pdf" %}
+{% file src="../sbc-platform/attachments/sr-usom-mx6-3_b2b_connectors_locations.zip" %}
+{% file src="../sbc-platform/attachments/iMX6%20SOM%20Mechanical%20files.zip" %}
+{% file src="../sbc-platform/attachments/imx6%20som%20MTBF.pdf" %}
+{% file src="../sbc-platform/attachments/sr-usom-mx6-fusing.zip" %}
+{% file src="../sbc-platform/attachments/i,MX6%20SOM%20Heatsink%203D.STEP" %}
+{% file src="../sbc-platform/attachments/imx6-som-rev-2.0-schematics.pdf" %}
 
 
 

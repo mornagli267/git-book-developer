@@ -640,7 +640,7 @@ Following is a diagram of the TOP VIEW of the RZG2L/V2L.
 
 ## Documentation
 
-* [rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf](../sbc-platform/attachments/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf)
+{% file src="../sbc-platform/attachments/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf" %}
 
 
 [RZG2L\_pinfunction\_List\_r1.1.xlsx](attachments/RZG2L_pinfunction_List_r1.1.xlsx)

@@ -599,8 +599,8 @@ Please refer to the SolidRun website for more information regarding part numbers
 
 ## Documentation
 
-* [IMX8XL SOM-v2_BoardAndModels.step](../sbc-platform/attachments/IMX8XL%20SOM-v2_BoardAndModels.step)
-* [IMX8DXL_SOM_V2X_3D_model.rar](../sbc-platform/attachments/IMX8DXL_SOM_V2X_3D_model.rar)
+{% file src="../sbc-platform/attachments/IMX8XL%20SOM-v2_BoardAndModels.step" %}
+{% file src="../sbc-platform/attachments/IMX8DXL_SOM_V2X_3D_model.rar" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

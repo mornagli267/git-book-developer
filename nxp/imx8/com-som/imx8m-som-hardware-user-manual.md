@@ -666,8 +666,8 @@ Refer to SolidRun HummingBoard and CuBox Pulse design and layout, where there ar
 
 ## Documentation
 
-* [imx8m-simplified-schematics-v2.pdf](../sbc-platform/attachments/imx8m-simplified-schematics-v2.pdf)
-* [sr-imx8m-heatsink-rev1.0.zip](../sbc-platform/attachments/sr-imx8m-heatsink-rev1.0.zip)
-* [i.MX8M SOM Documentation Board & Assembly Models.rar](../sbc-platform/attachments/i.MX8M%20SOM%20Documentation%20Board%20&%20Assembly%20Models.rar)
+{% file src="../sbc-platform/attachments/imx8m-simplified-schematics-v2.pdf" %}
+{% file src="../sbc-platform/attachments/sr-imx8m-heatsink-rev1.0.zip" %}
+{% file src="../sbc-platform/attachments/i.MX8M%20SOM%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
 
 

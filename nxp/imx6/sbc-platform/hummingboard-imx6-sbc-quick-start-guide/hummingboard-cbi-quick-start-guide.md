@@ -381,12 +381,12 @@ For testing your CANBus and RS-485 interfaces, please refer to [HummingBoard CBi
 
 ## Documentation
 
-* [HummingBoard2 Assembly-Files.zip](attachments/HummingBoard2%20Assembly-Files.zip)
-* [HummingBoard2 Enclosure-Files.zip](attachments/HummingBoard2%20Enclosure-Files.zip)
-* [HummingBoard2-v1.4-layout_pcb.zip](attachments/HummingBoard2-v1.4-layout_pcb.zip)
-* [HummingBoard2-gerber-rev1.2.zip](attachments/HummingBoard2-gerber-rev1.2.zip)
-* [HummingBoard2 PCB parts assembly Rev 1.4.zip](attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip)
-* [HummingBoard2 Schematics.pdf](attachments/HummingBoard2%20Schematics.pdf)
+{% file src="attachments/HummingBoard2%20Assembly-Files.zip" %}
+{% file src="attachments/HummingBoard2%20Enclosure-Files.zip" %}
+{% file src="attachments/HummingBoard2-v1.4-layout_pcb.zip" %}
+{% file src="attachments/HummingBoard2-gerber-rev1.2.zip" %}
+{% file src="attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip" %}
+{% file src="attachments/HummingBoard2%20Schematics.pdf" %}
 
 
 

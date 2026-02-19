@@ -532,14 +532,14 @@ There are two options for storing MAC addresses on the i.MX8MP platform:
 
 ## Documentation
 
-* [HummingBoard-Pulse-Part-Assembly.zip](attachments/HummingBoard-Pulse-Part-Assembly.zip)
-* [HummingBoard iMX8 Schematics.zip](attachments/HummingBoard%20iMX8%20Schematics.zip)
-* [HummingBoard iMX8 Mechanical Drawings.zip](attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip)
-* [HummingBoard Puls-REV.2.5-pcb.zip](attachments/HummingBoard%20Puls-REV.2.5-pcb.zip)
-* [HummingBoard iMX8 PCB.zip](attachments/HummingBoard%20iMX8%20PCB.zip)
-* [HummingBoard iMX8 Gerbers.zip](attachments/HummingBoard%20iMX8%20Gerbers.zip)
-* [HummingBoard Pulse Pin MUX.xlsx](attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx)
-* [HS00016-Heatsink.zip](attachments/HS00016-Heatsink.zip)
+{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
+{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
+{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
+{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
+{% file src="attachments/HS00016-Heatsink.zip" %}
 
 
 

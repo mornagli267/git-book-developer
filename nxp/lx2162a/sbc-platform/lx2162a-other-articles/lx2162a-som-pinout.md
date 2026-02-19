@@ -120,5 +120,5 @@ Following is a pinout for the [LX2162A SOM](https://www.solid-run.com/embedded-n
 ## Attachments
 
 
-* [LX2162A SOM pinout.xlsx](attachments/LX2162A%20SOM%20pinout.xlsx)
+{% file src="attachments/LX2162A%20SOM%20pinout.xlsx" %}
 

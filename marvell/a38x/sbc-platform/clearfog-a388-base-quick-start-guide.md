@@ -206,16 +206,16 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-* [ClearFog Base Rev 1.1 vs Rev 1.2.pdf](attachments/ClearFog%20Base%20Rev%201.1%20vs%20Rev%201.2.pdf)
-* [ClearFog-Base-Mechanical Files.zip](attachments/ClearFog-Base-Mechanical%20Files.zip)
-* [ClearFog Base Enclosure Files.zip](attachments/ClearFog%20Base%20Enclosure%20Files.zip)
-* [ClearFog Base BOM rev 1.2.4.xlsx](attachments/ClearFog%20Base%20BOM%20rev%201.2.4.xlsx)
-* [clearfog_base-rev.1.2-gerber.zip](attachments/clearfog_base-rev.1.2-gerber.zip)
-* [clearfog_base-rev1.1-MTBF.pdf](attachments/clearfog_base-rev1.1-MTBF.pdf)
-* [clearfog_base-rev1.2-pcb-layout.zip](attachments/clearfog_base-rev1.2-pcb-layout.zip)
-* [ClearFog-Base-Schematics.zip](attachments/ClearFog-Base-Schematics.zip)
-* [clearfog-base-cn9130-schematics-rev1.4.pdf](attachments/clearfog-base-cn9130-schematics-rev1.4.pdf)
-* [clearfog-base-schematics-rev1.4.pdf](attachments/clearfog-base-schematics-rev1.4.pdf)
+{% file src="attachments/ClearFog%20Base%20Rev%201.1%20vs%20Rev%201.2.pdf" %}
+{% file src="attachments/ClearFog-Base-Mechanical%20Files.zip" %}
+{% file src="attachments/ClearFog%20Base%20Enclosure%20Files.zip" %}
+{% file src="attachments/ClearFog%20Base%20BOM%20rev%201.2.4.xlsx" %}
+{% file src="attachments/clearfog_base-rev.1.2-gerber.zip" %}
+{% file src="attachments/clearfog_base-rev1.1-MTBF.pdf" %}
+{% file src="attachments/clearfog_base-rev1.2-pcb-layout.zip" %}
+{% file src="attachments/ClearFog-Base-Schematics.zip" %}
+{% file src="attachments/clearfog-base-cn9130-schematics-rev1.4.pdf" %}
+{% file src="attachments/clearfog-base-schematics-rev1.4.pdf" %}
 
 
 

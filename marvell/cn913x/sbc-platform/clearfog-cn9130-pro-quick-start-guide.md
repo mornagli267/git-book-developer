@@ -294,16 +294,16 @@ Starting from April 01. 2022, the EEPROMs on Carriers, SoMs and COM-Express Modu
 
 ## Documentation
 
-* [clearfog_pro-cn9130-rev.2.1-gerber.zip](attachments/clearfog_pro-cn9130-rev.2.1-gerber.zip)
-* [clearfog_pro-cn9130-rev.2.1-mechanical_assembly-3dpdf-pdf.zip](attachments/clearfog_pro-cn9130-rev.2.1-mechanical_assembly-3dpdf-pdf.zip)
-* [clearfog_pro-cn9130-rev2.1-pcb-layout.zip](attachments/clearfog_pro-cn9130-rev2.1-pcb-layout.zip)
-* [mikrobus_specification-rev2.pdf](attachments/mikrobus_specification-rev2.pdf)
-* [ClearFog-Pro-CN9130-Enclosure-Files.zip](attachments/ClearFog-Pro-CN9130-Enclosure-Files.zip)
-* [clearfog-pro-cn9130-schematics-2.1.pdf](attachments/clearfog-pro-cn9130-schematics-2.1.pdf)
-* [rtc-datasheet-onboard.pdf](attachments/rtc-datasheet-onboard.pdf)
-* [ClearFog Pro CN9130 BOM rev 2.1.4.xlsx](attachments/ClearFog%20Pro%20CN9130%20BOM%20rev%202.1.4.xlsx)
-* [ARMighty-Rev-2.2-pcb.zip](attachments/ARMighty-Rev-2.2-pcb.zip)
-* [clearfo-pro-schematics-rev2.2.pdf](attachments/clearfo-pro-schematics-rev2.2.pdf)
+{% file src="attachments/clearfog_pro-cn9130-rev.2.1-gerber.zip" %}
+{% file src="attachments/clearfog_pro-cn9130-rev.2.1-mechanical_assembly-3dpdf-pdf.zip" %}
+{% file src="attachments/clearfog_pro-cn9130-rev2.1-pcb-layout.zip" %}
+{% file src="attachments/mikrobus_specification-rev2.pdf" %}
+{% file src="attachments/ClearFog-Pro-CN9130-Enclosure-Files.zip" %}
+{% file src="attachments/clearfog-pro-cn9130-schematics-2.1.pdf" %}
+{% file src="attachments/rtc-datasheet-onboard.pdf" %}
+{% file src="attachments/ClearFog%20Pro%20CN9130%20BOM%20rev%202.1.4.xlsx" %}
+{% file src="attachments/ARMighty-Rev-2.2-pcb.zip" %}
+{% file src="attachments/clearfo-pro-schematics-rev2.2.pdf" %}
 
 
 

@@ -23,7 +23,7 @@
 
 ## Manuals
 
-* [Bedrock R8000 Product Brief](https://www.solid-run.com/wp-content/uploads/2024/10/Bedrock-R8000-Product-Brief-2024.pdf)
+{% file src="https://www.solid-run.com/wp-content/uploads/2024/10/Bedrock-R8000-Product-Brief-2024.pdf" %}
 * [Bedrock R8000 | Owner's Manual](bedrock-r8000-technical-documentation/bedrock-r8000-r7000-user-guide/bedrock-r8000-r7000-owners-manual.md)
 * [Custom NIO design guide](../iot-industrial-product-line/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md)
 

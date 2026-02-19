@@ -365,8 +365,8 @@ TBD
 
 ## Documentation
 
-* [HS00030 heatsink rev 1.1 STEP.zip](../sbc-platform/attachments/HS00030%20heatsink%20rev%201.1%20STEP.zip)
-* [AMD-V3K-CEX7 STEP-rev-1_0.zip](../sbc-platform/attachments/AMD-V3K-CEX7%20STEP-rev-1_0.zip)
+{% file src="../sbc-platform/attachments/HS00030%20heatsink%20rev%201.1%20STEP.zip" %}
+{% file src="../sbc-platform/attachments/AMD-V3K-CEX7%20STEP-rev-1_0.zip" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

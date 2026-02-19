@@ -810,7 +810,7 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-* [Reliability prediction for TI AM64x SOM V1.pdf](../sbc-platform/attachments/Reliability%20prediction%20for%20TI%20AM64x%20SOM%20V1.pdf)
+{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20TI%20AM64x%20SOM%20V1.pdf" %}
 
 
 [Signals%20Allocation.xlsx](attachments/Signals%20Allocation.xlsx)

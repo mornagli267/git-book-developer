@@ -28,7 +28,7 @@ No warranty of accuracy is given concerning the contents of the information cont
 | SFP+ fail to link up on optics module      | HW bug - TX\_DIS is floating causing optic transceiver to shut Tx laser due to module internal PU                                                                                                          | REV 1.1              | <p>Stitching of TX_DIS to GND<br><br><strong>*see attached instructions</strong></p>                                                                                                                 |
 
 
-* [ECO - Clearfog LX2162A_SFP_PU_3V3_ORING_and_SFP_Tx_Dis_.pdf](attachments/ECO%20%20-%20Clearfog%20LX2162A_SFP_PU_3V3_ORING_and_SFP_Tx_Dis_.pdf)
+{% file src="attachments/ECO%20%20-%20Clearfog%20LX2162A_SFP_PU_3V3_ORING_and_SFP_Tx_Dis_.pdf" %}
 
 
 * Drag and drop to upload or \[browse for files]&#x20;

@@ -293,15 +293,15 @@ Starting from April 01. 2022, the EEPROMs on Carriers, SoMs and COM-Express Modu
 
 ## Documentation
 
-* [clearfog_base-cn9130-rev1.1-mtbf.pdf](attachments/clearfog_base-cn9130-rev1.1-mtbf.pdf)
-* [clearfog_base-cn9130-rev1.2-pcb-layout.zip](attachments/clearfog_base-cn9130-rev1.2-pcb-layout.zip)
-* [mikrobus_specification-rev2.pdf](attachments/mikrobus_specification-rev2.pdf)
-* [clearfog_base-cn9130-enclosure-rev2.5.zip](attachments/clearfog_base-cn9130-enclosure-rev2.5.zip)
-* [ClearFog Base CN9130 BOM rev 1.2.4.xlsx](attachments/ClearFog%20Base%20CN9130%20BOM%20rev%201.2.4.xlsx)
-* [ClearFog-Base-CN9130-Assy-Files.zip](attachments/ClearFog-Base-CN9130-Assy-Files.zip)
-* [ClearFog-Base-CN9130-Schematics.zip](attachments/ClearFog-Base-CN9130-Schematics.zip)
-* [clearfog_base-cn9130-rev.1.2-gerber.zip](attachments/clearfog_base-cn9130-rev.1.2-gerber.zip)
-* [clearfog-base-cn9130-schematics-rev1.4.pdf](attachments/clearfog-base-cn9130-schematics-rev1.4.pdf)
+{% file src="attachments/clearfog_base-cn9130-rev1.1-mtbf.pdf" %}
+{% file src="attachments/clearfog_base-cn9130-rev1.2-pcb-layout.zip" %}
+{% file src="attachments/mikrobus_specification-rev2.pdf" %}
+{% file src="attachments/clearfog_base-cn9130-enclosure-rev2.5.zip" %}
+{% file src="attachments/ClearFog%20Base%20CN9130%20BOM%20rev%201.2.4.xlsx" %}
+{% file src="attachments/ClearFog-Base-CN9130-Assy-Files.zip" %}
+{% file src="attachments/ClearFog-Base-CN9130-Schematics.zip" %}
+{% file src="attachments/clearfog_base-cn9130-rev.1.2-gerber.zip" %}
+{% file src="attachments/clearfog-base-cn9130-schematics-rev1.4.pdf" %}
 
 
 
