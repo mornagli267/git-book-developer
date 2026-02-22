@@ -8,5 +8,5 @@ Documentation for SolidRun products based on the Renesas RZ/V2N processor.
 
 | Category | Description |
 |---|---|
-| [COM / SOM](renesas/rz-v2n/com-som.md) | System-on-Module documentation |
-| [SBC / Platform](renesas/rz-v2n/sbc-platform.md) | Single Board Computers and platform documentation |
+| [COM / SOM](rz-v2n/com-som.md) | System-on-Module documentation |
+| [SBC / Platform](rz-v2n/sbc-platform.md) | Single Board Computers and platform documentation |

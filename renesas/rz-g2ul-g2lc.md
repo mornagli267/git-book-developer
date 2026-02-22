@@ -8,5 +8,5 @@ Documentation for SolidRun products based on the Renesas RZ/G2UL and RZ/G2LC pro
 
 | Category | Description |
 |---|---|
-| [COM / SOM](renesas/rz-g2ul-g2lc/com-som.md) | System-on-Module documentation |
-| [SBC / Platform](renesas/rz-g2ul-g2lc/sbc-platform.md) | Single Board Computers and platform documentation |
+| [COM / SOM](rz-g2ul-g2lc/com-som.md) | System-on-Module documentation |
+| [SBC / Platform](rz-g2ul-g2lc/sbc-platform.md) | Single Board Computers and platform documentation |

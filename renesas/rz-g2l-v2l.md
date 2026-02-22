@@ -8,5 +8,5 @@ Documentation for SolidRun products based on the Renesas RZ/G2L and RZ/V2L proce
 
 | Category | Description |
 |---|---|
-| [COM / SOM](renesas/rz-g2l-v2l/com-som.md) | System-on-Module documentation |
-| [SBC / Platform](renesas/rz-g2l-v2l/sbc-platform.md) | Single Board Computers and platform documentation |
+| [COM / SOM](rz-g2l-v2l/com-som.md) | System-on-Module documentation |
+| [SBC / Platform](rz-g2l-v2l/sbc-platform.md) | Single Board Computers and platform documentation |
