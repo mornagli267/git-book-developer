@@ -122,7 +122,7 @@ Recommended version
 
 **MD5**: e8952b3f53159f7c1e7c71c75d81f60a
 
-{% file src="./attachments/BIOS_BDR7K_EV_V30.signed" %}
+{% file src="attachments/BIOS_BDR7K_EV_V30.signed" %}
 
 <a id="known-issues"></a>
 
