@@ -475,6 +475,4 @@ and then install the NXP CodeWarrior Development Studio for QorIQ LS series - AR
 
 [Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
 
-## Related Articles
 
-Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden

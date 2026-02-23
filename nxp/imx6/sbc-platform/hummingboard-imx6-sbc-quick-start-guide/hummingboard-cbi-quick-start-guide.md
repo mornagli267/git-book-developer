@@ -392,6 +392,4 @@ For testing your CANBus and RS-485 interfaces, please refer to [HummingBoard CBi
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355)
 
-## Related Articles
 
-Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden

@@ -333,7 +333,6 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 * ClearFog-LX2162A_Mech_Rev1.1.zip?api=v2 — _file not found in repository_
 
 
-## Related Articles
 
 * Page:[LX2162A SOM vs LX2160A COM Differences](lx2162a-other-articles/lx2162a-som-vs-lx2160a-com-differences.md)
   * [lx2160a-com](https://solidrun.atlassian.net/wiki/label/lx2160a-com)

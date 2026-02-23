@@ -302,6 +302,4 @@ You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product\&filter_som-com-family=nxp-i-mx8m-mini)
 
-## Related Articles
 
-Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden

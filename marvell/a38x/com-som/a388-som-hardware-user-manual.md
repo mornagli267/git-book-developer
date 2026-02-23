@@ -217,6 +217,4 @@ We run our boards at 1600MHz. Industrial devices are limited to 1333MHz. DRAM ru
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=marvell-a388&_ga=2.85367450.2016484779.1641802897-2012112798.1622706355)
 
-## Related Articles
 
-Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden

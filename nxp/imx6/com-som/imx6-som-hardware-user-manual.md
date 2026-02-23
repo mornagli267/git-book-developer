@@ -696,6 +696,4 @@ Refer to SolidRun HummingBoard and CuBox-i design and layout, where there are ex
 
 [Buy a Sample Now](https://shop.solid-run.com/?orderby=price\&filter_som-com-family=nxp-i-mx6&_ga=2.61323183.2016484779.1641802897-2012112798.1622706355)
 
-## Related Articles
 
-Error rendering macro 'contentbylabel' : CQL was parsed but the search manager was unable to execute the search. Error message: com.atlassian.confluence.api.service.exceptions.scale.SSStatusCodeException: There was an illegal request passed to XP-Search Aggregator API : HTTP/1.1 403 Forbidden
