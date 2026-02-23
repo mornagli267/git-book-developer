@@ -11,12 +11,12 @@ The recommended kit for evaluating Bedrock R7000 Basic.
 
 The kit includes:
 
-* [PSU 90W](../../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
-* [US AC Cable & EU AC Cable](../../other-articles/snippets/common-bedrock-accessories.md#us-eu-uk-au-ac-cable)
+* [PSU 90W](../../../../other-articles/common-bedrock-accessories.md#psu-90w)
+* [US AC Cable & EU AC Cable](../../../../other-articles/common-bedrock-accessories.md#us-eu-uk-au-ac-cable)
 * [Stand for Bedrock](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 * [Wall mounting bracket](../bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 * [DIN Rail bracket](../bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
-* [Console mini-USB to USB-A](../../other-articles/snippets/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
+* [Console mini-USB to USB-A](../../../../other-articles/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-R7BEVAL
@@ -29,7 +29,7 @@ Minimal evaluation kit is a low cost kit for trying out Bedrock.
 
 The kit includes:
 
-* [PSU 90W](../../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
+* [PSU 90W](../../../../other-articles/common-bedrock-accessories.md#psu-90w)
 * [Stand for Bedrock](../bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 {% hint style="info" %}

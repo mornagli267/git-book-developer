@@ -7,7 +7,7 @@ Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and
 
 
 {% hint style="info" %}
-Before updating BIOS, you are advised to [check current BIOS version](../../../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-settings.md#how-to-check-bios-version)
+Before updating BIOS, you are advised to [check current BIOS version](../../../../../v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bedrock-v3000-bios-settings.md#how-to-check-bios-version)
 {% endhint %}
 
 
@@ -109,7 +109,7 @@ Recommended version
 
 ### Revision notes
 
-- Fixed issue of [connected HDMI leading to reboot](../../../../bedrock-pc/bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
+- Fixed issue of [connected HDMI leading to reboot](../../../bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
 - Fixed issue where some USB devices were rebooting the system
 
 <a id="bios-v30-eval-for-bedrock-r8000-r7000"></a>
@@ -128,7 +128,7 @@ Recommended version
 
 ### Known Issues
 
-- Constant reboots when using HDMI on windows: [connected HDMI leading to reboot](../../../../bedrock-pc/bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
+- Constant reboots when using HDMI on windows: [connected HDMI leading to reboot](../../../bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
 - System might reboot when accessing some USB devices
 
 <a id="revision-notes"></a>
@@ -153,7 +153,7 @@ Recommended version
 
 ### Known Issues
 
-- Constant reboots when using HDMI on windows: [connected HDMI leading to reboot](../../../../bedrock-pc/bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
+- Constant reboots when using HDMI on windows: [connected HDMI leading to reboot](../../../bedrock-troubleshooting.md#system-reboots-under-certain-conditions-while-hdmi-is-connected)
 - System might reboot when accessing some USB devices
 
 <a id="revision-notes"></a>

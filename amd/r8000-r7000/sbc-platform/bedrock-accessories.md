@@ -13,12 +13,12 @@ The recommended kit for evaluating Bedrock V3000 Basic.
 
 The kit includes:
 
-* [PSU 90W](../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
-* [US AC Cable & EU AC Cable](../other-articles/snippets/common-bedrock-accessories.md#us-eu-uk-au-ac-cable)
+* [PSU 90W](../../../other-articles/common-bedrock-accessories.md#psu-90w)
+* [US AC Cable & EU AC Cable](../../../other-articles/common-bedrock-accessories.md#us-eu-uk-au-ac-cable)
 * [Stand for Bedrock](bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 * [Wall mounting bracket](bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 * [DIN Rail bracket](bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
-* [Console mini-USB to USB-A](../other-articles/snippets/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
+* [Console mini-USB to USB-A](../../../other-articles/common-bedrock-accessories.md#console-mini-usb-to-usb-a)
 * [SFP+ Module Copper](/amd/r8000-r7000/sbc-platform/bedrock-accessories.md#sfp-module-copper)
 
 |                                                                                                                                                                                                                  |                                                      |                                                      |
@@ -37,7 +37,7 @@ Minimal evaluation kit is a low cost kit for trying out Bedrock.
 
 The kit includes:
 
-* [PSU 90W](../other-articles/snippets/common-bedrock-accessories.md#psu-90w)
+* [PSU 90W](../../../other-articles/common-bedrock-accessories.md#psu-90w)
 * [Stand for Bedrock](bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 ![](../../.gitbook/assets/0e6593fd-7423-4204-83ff-eecb6f08d8d2#media-blob-url=true\&id=3dbfdde9-fa49-4f40-8921-03545cddaeeb\&collection=contentId-492437517\&contextId=492994561\&height=1846\&width=4000\&alt=)

@@ -45,7 +45,7 @@ To be used with a 3rd party PSU.
 
 ### Stand for Bedrock
 
-See [Bedrock Mounting Options - Stand](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
+See [Bedrock Mounting Options - Stand](../amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options.md#stand)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-STAND21
@@ -56,7 +56,7 @@ See [Bedrock Mounting Options - Stand](../../bedrock-pc/bedrock-mechanical-docum
 
 ### Wall mounting bracket
 
-See [Bedrock Mounting Options - Wall Mounting](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
+See [Bedrock Mounting Options - Wall Mounting](../amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options.md#wall-mounting)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-WALL21
@@ -67,7 +67,7 @@ See [Bedrock Mounting Options - Wall Mounting](../../bedrock-pc/bedrock-mechanic
 
 ### DIN Rail bracket
 
-See [Bedrock Mounting Options - DIN Rail Mounting](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
+See [Bedrock Mounting Options - DIN Rail Mounting](../amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options.md#din-rail-mounting)
 
 {% hint style="info" %}
 **Ordering code**: SRBD-DIN21

@@ -66,7 +66,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/G2UL Boot Select](rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md#when-using-hummingboard-ripple-rz-g2lc-or-rz-g2ul-som) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/G2UL Boot Select](../../rz-g2l-v2l/sbc-platform/rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md#when-using-hummingboard-ripple-rz-g2lc-or-rz-g2ul-som) .
 
 {% hint style="info" %}
 eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → off : eMMC , on : SD
@@ -200,7 +200,7 @@ In the end you should see with “lsblk” that the partition size is in the req
 #### Internet
 
 Connect an Ethernet cable to your HummingBoard Pulse (for internet access during boot-up).\
-Models HummingBoard with WiFi, can be connected via [WiFi](../nxp-imx8-based-products/cubox-m-quick-start-guide.md#wifi) or wired Ethernet.
+Models HummingBoard with WiFi, can be connected via [WiFi](../../../nxp/imx8/sbc-platform/cubox-m-quick-start-guide.md#wifi) or wired Ethernet.
 
 * Please check you Ethernet connection.
 * Use the following commands in order to keep your system up-to-date:

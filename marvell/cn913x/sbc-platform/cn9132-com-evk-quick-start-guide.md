@@ -35,7 +35,7 @@ The guide will give a technical overview about the product and by the end of it 
 | Enclosure                        | None                                                                                                                                                                                                                                                     |
 
 {% hint style="info" %}
-(\*) Configurable [SERDESs](cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
+(\*) Configurable [SERDESs](../com-som/cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
 {% endhint %}
 
 
