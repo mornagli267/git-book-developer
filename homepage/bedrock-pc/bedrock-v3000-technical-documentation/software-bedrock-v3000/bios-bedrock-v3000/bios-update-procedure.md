@@ -1,10 +1,8 @@
 # BIOS Update procedure
 
-## Download utility
+## BIOS way
 
-Download the [AFU Utility from AMI](https://www.ami.com/bios-uefi-utilities/)'s website, select APTIO V AMI FIRMWARE UPDATE UTILITY
-
-## Option 1: Update From BIOS Setup (easy)
+### Option 1: Update From BIOS Setup (easy)
 
 Newer BIOS images support updating the BIOS from the BIOS Setup utility to do so, follow the next steps:
 
@@ -33,7 +31,13 @@ Newer BIOS images support updating the BIOS from the BIOS Setup utility to do so
 Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
 {% endhint %}
 
-## Option 2: Update from windows GUI (easy)
+## AMI AFU ways
+
+### Download AMI AFU utility
+
+Download the [AFU Utility from AMI](https://www.ami.com/bios-uefi-utilities/)'s website, select APTIO V AMI FIRMWARE UPDATE UTILITY
+
+### Option 2: Update from windows GUI (easy)
 
 * In AMI utilities directory go to:
   * afu\afuwin\64\\
@@ -53,7 +57,7 @@ Do not power off or unplug your device during the update process, doing so may r
 * After the update is finished, press any key to reboot the system
 * After the update, the device can reset upt to 3 times, this is OK.
 
-## Option 3: Update from windows cmd
+### Option 3: Update from windows cmd
 
 * In AMI utilities directory go to:
   * afu\afuwin\64\\
@@ -78,7 +82,7 @@ Do not power off or unplug your device during the update process, doing so may r
 * When disconnecting power from the device for the firtst time after update, you might need to press the power button in order to turn on the device.
 * After the update, the device can reset upt to 3 times, this is OK.
 
-## Option 4: USB Drive using UEFI (advanced)
+### Option 4: USB Drive using UEFI (advanced)
 
 * Copy the files to the USB Drive you created in the [Create EFI shell bootable USB drive](how-to-create-an-efi-shell-bootable-usb-drive.md) section
 * Boot Bedrock to EFI shell
