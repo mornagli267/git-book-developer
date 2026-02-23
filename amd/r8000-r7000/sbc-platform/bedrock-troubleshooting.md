@@ -137,4 +137,3 @@ After re-assembly Bedrock does not power up / some features do not function prop
 - Tighten NIO screws.
 - Complete assembly and test power up and functionality.
 
-Error rendering macro 'include' : com.atlassian.renderer.v2.macro.MacroException: No title provided.

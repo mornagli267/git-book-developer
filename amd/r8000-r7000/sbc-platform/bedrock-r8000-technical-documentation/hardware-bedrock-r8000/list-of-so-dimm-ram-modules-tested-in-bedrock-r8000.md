@@ -5,4 +5,3 @@ For [BIOS V23](../../bedrock-r8000-technical-documentation/software-bedrock-r800
 {% endhint %}
 
 
-Error rendering macro 'include' : com.atlassian.renderer.v2.macro.MacroException: No title provided.
