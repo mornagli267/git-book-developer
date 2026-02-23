@@ -402,7 +402,7 @@ Integration with the SR-SOM-MX6 is easy, power sequencing wise. Note the followi
 
 1. MX6 is very flexible when it comes to selecting the boot source. This section describes how to set pull up /down on the carrier board in order to perform boot indicated by GPIOs
 
-Blowing the device’s eFuses is alternative to using GPIOs in order to set boot source. This topic is widely covered on the SolidRun [eFuses for i.MX6 SOM (Developers page)](imx6-other-articles/efuses-for-imx6-som-developers-page.md) .
+Blowing the device’s eFuses is alternative to using GPIOs in order to set boot source. This topic is widely covered on the SolidRun [eFuses for i.MX6 SOM (Developers page)](../sbc-platform/imx6-other-articles/efuses-for-imx6-som-developers-page.md) .
 
 {% hint style="warning" %}
 If the boot method is set, via eFuses (irreversible operation) then boot select via GPIO pull up/down will be void and ONLY the eFusing configuration regulates the boot device.
@@ -419,7 +419,7 @@ The following are the general instructions on how to perform boot from different
 1. BOOT\_CFGx\[7:0] is pulled down in reset and then reverts to pull up.
 2. The user should pull up the required pins, but making sure that all pins in the bus are either floating, tri-stated in reset (POR\_B) or pulled down.
 
-Since the above forces the user to pull up/down the entire bus, below are more pervasive examples of 3 different boot sources used as in [HummingBoard Edge Quick Start Guide](hummingboard-imx6-sbc-quick-start-guide/hummingboard-edge-quick-start-guide.md) :
+Since the above forces the user to pull up/down the entire bus, below are more pervasive examples of 3 different boot sources used as in [HummingBoard Edge Quick Start Guide](../sbc-platform/hummingboard-imx6-sbc-quick-start-guide/hummingboard-edge-quick-start-guide.md) :
 
 * SDHC2 SD
 * SDHC3 eMMC

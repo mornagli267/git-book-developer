@@ -58,13 +58,13 @@ Here is what you will need to power up the board:
 
 #### Recommended Cables
 
-Please refer to the [tested SFP modules](../../bedrock-pc/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/sfp-modules-tested-with-bedrock-v3000.md) page
+Please refer to the [tested SFP modules](bedrock-v3000-technical-documentation/hardware-bedrock-v3000/sfp-modules-tested-with-bedrock-v3000.md) page
 
 ## Booting the machine
 
 Download & install images:
 
-You can use the [Ubuntu server installation instructions](../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) page or download [Pre-installed images](../../other-articles/snippets/bedrock-images-info.md).
+You can use the [Ubuntu server installation instructions](bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) page or download [Pre-installed images](../../../other-articles/bedrock-images-info.md).
 
 If using the Pre-installed image, flash it to a USB stick using the following commands:
 
@@ -91,11 +91,11 @@ Very first boot might take a while due to DDR training
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../../bedrock-pc/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/sfp-modules-tested-with-bedrock-v3000.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](bedrock-v3000-technical-documentation/hardware-bedrock-v3000/sfp-modules-tested-with-bedrock-v3000.md) .
 
 ## SO-DIMM Modules
 
-For some SO-DIMM modules that work on SolidRun hardware platforms, please refer to [List of tested SO-DIMMs](../../other-articles/snippets/list-of-so-dimm-ram-modules-tested-with-ryzen-v3000-com7.md) .
+For some SO-DIMM modules that work on SolidRun hardware platforms, please refer to [List of tested SO-DIMMs](../../../other-articles/list-of-so-dimm-ram-modules-tested-with-ryzen-v3000-com7.md) .
 
 ## OS list
 

@@ -39,7 +39,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                                  | [Buy Now](https://shop.solid-run.com/product/SRG2L-EVKHR-R00/)                        |
 
 {% hint style="info" %}
-\[\*] **eMMC Speed Mode:** HighSpeed (up to 52MHz) Supported with RZ/G2LC SOM. For more detailed information about our SOM-RZ/G2LC series please visit this user manual : [RZ/G2LC SOM Hardware User Manual](rz-g2lc-som-hardware-user-manual.md) .
+\[\*] **eMMC Speed Mode:** HighSpeed (up to 52MHz) Supported with RZ/G2LC SOM. For more detailed information about our SOM-RZ/G2LC series please visit this user manual : [RZ/G2LC SOM Hardware User Manual](../com-som/rz-g2lc-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -74,7 +74,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/G2LC Boot Select](rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard RZ/G2LC Boot Select](../../rz-g2l-v2l/sbc-platform/rz-g2-other-articles/hummingboard-rz-g2lc-g2ul-g2l-v2l-boot-select.md) .
 
 {% hint style="info" %}
 eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → off : eMMC , on : SD
@@ -151,7 +151,7 @@ wget https://solid-run-images.sos-de-fra-1.exo.io/RZ/Debian/build_date_20240529-
 xz -dc rzg2lc-solidrun-sd-emmc-debian-f22483f.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync 
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 * **Note:** Plug a micro SD into your Linux PC, the following assumes that the USB-Disk / Micro-SD is added as /dev/sdX and all it’s partitions are unmounted.
 * **Note:** You can use the following command for writing to the SD in case you generated your own image:
 
@@ -169,7 +169,7 @@ $ sudo dd if=/your/image/path of=/dev/sdX bs=4k conv=fdatasync
 * **Note:** The system should turn on by default when the power is connected (without pressing the button).
 
 6. **Serial Connection**\
-   Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
+   Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
    Once you installed the necessary serial connection software, you should be able to see the following:
 
 ![](../../../.gitbook/assets/image-20231127-133436.png)

@@ -49,7 +49,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                      | [Buy Now](https://shop.solid-run.com/?s=ClearFog+Pro+CN9130\&post_type=product&_ga=2.122003336.2016484779.1641802897-2012112798.1622706355) |
 
 {% hint style="info" %}
-Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](cn9130-som-hardware-user-manual.md) .
+Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](../com-som/cn9130-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -143,7 +143,7 @@ Use the following commands for writing the image to an SD card:
 xz -dc ubuntu-cn9130-cf-pro-mmc:1:0.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md).
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md).
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -160,7 +160,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to the m
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing the necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing the necessary serial connection software in Linux/Windows.
 
 In u-boot prompt, to continue booting from the SD card, run the following:
 
@@ -230,7 +230,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to the m
 
 **4. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing the necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing the necessary serial connection software in Linux/Windows.
 
 **5. Set the boot command to load the image from the eMMC device:**
 
@@ -264,7 +264,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../../a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
 
 ## SIM Card Slot
 

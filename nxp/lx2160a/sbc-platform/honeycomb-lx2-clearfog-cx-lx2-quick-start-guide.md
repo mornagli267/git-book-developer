@@ -129,7 +129,7 @@ Use the following commands for writing the image to an SD card:
 xz -dc lx2160a_....img.xz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -146,7 +146,7 @@ Connect your power ATX, and then connect the adaptor to mains supply.
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 **6. Install rootfs Image to eMMC (or microSD)**
 
@@ -217,7 +217,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../../../marvell/a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
 
 ## Using the built-in NICs
 

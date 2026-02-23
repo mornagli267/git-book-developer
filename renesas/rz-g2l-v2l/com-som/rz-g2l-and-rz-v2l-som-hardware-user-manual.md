@@ -52,7 +52,7 @@ Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRu
 
 The following products are provided by SolidRun both as production-level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard Pro](hummingboard-pro-rz-g2l-som-quick-start-guide.md) – An extended board computer incorporating the SOM with different Linux distributions while adding extra hardware functionalities and access to the hardware.
+* [HummingBoard Pro](../sbc-platform/hummingboard-pro-rz-g2l-som-quick-start-guide.md) – An extended board computer incorporating the SOM with different Linux distributions while adding extra hardware functionalities and access to the hardware.
 
 ## Description
 

@@ -6,4 +6,4 @@
 
 ## See also
 
-[Bedrock V3000 Certificates](../bedrock-v3000-technical-documentation/bedrock-v3000-certificates.md)
+[Bedrock V3000 Certificates](../../../v3000/sbc-platform/bedrock-v3000-technical-documentation/bedrock-v3000-certificates.md)

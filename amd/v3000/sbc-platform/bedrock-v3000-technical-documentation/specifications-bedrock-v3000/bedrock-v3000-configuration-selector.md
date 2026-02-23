@@ -8,7 +8,7 @@ Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-compute
 
 
 {% hint style="info" %}
-See also [Bedrock R8000 | R7000 Configuration Selector](../../bedrock-r8000-technical-documentation/specifications-bedrock-r8000/bedrock-r8000-configuration-selector.md)
+See also [Bedrock R8000 | R7000 Configuration Selector](../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/specifications-bedrock-r8000/bedrock-r8000-configuration-selector.md)
 {% endhint %}
 
 
@@ -54,7 +54,7 @@ Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-compute
 * Download [Bedrock V3000 Basic Options](https://drive.google.com/file/d/1WUQz6Xbin7rTTiBjjoPDa51Hxq1vCwTz/view) diagram
 * Mark the checkboxes of the desired options like in the sample below
 * Save as PDF
-* Pick accessories - [Bedrock V3000 Accessories](../../bedrock-accessories.md)
+* Pick accessories - [Bedrock V3000 Accessories](../../../../r8000-r7000/sbc-platform/bedrock-accessories.md)
 * Send both PDF and list of accessories to **bedrock.sales@solid-run.com**
 
 \[![](../../../../.gitbook/assets/Bp-AG1S11IeZ2eW90HjdTNBWSgGLkS-BXKYIQMFXMZgn5a1-3AYwlAvPF-DcLKs-HYoTnFy5AK_1yWCh2FH603WWKChqhOLnGw2eNWhkGfm0x1Opx2gWbsl6TcfDozaGpqVaZ_ISymgD6Jfsy2QAy9M)

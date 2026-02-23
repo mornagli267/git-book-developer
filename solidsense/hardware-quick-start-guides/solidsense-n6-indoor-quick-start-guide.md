@@ -117,7 +117,7 @@ SolidSense uses PN B50(15-02)G8-09-A023-B52 by BTOP : [http://www.magnetic-rj45j
 * Power consumption maximum: 8W
 * Diameter : Outer 5.5mm , Inner 2.1mm with twist & lock feature
 
-Please refer to this article for more information :  [i.MX6 Application Note – Suspend to Memory Power Measurements](../../iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/imx6-application-note-suspend-to-memory-power-measurements.md)
+Please refer to this article for more information :  [i.MX6 Application Note – Suspend to Memory Power Measurements](../../nxp/imx6/sbc-platform/imx6-other-articles/imx6-application-note-suspend-to-memory-power-measurements.md)
 
 ## The system can be used in 4 ways
 

@@ -50,7 +50,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                           | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Ripple%22\&post_type=product&_ga=2.89019160.2016484779.1641802897-2012112798.1622706355) |
 
 {% hint style="info" %}
-Supported with i.MX8M-MINI SOM. For more detailed informaiton about our SOM-i.MX8M series please visit our user manual : [i.MX8M Mini SOM Hardware User Manual](../imx8m-mini-som-hardware-user-manual.md)
+Supported with i.MX8M-MINI SOM. For more detailed informaiton about our SOM-i.MX8M series please visit our user manual : [i.MX8M Mini SOM Hardware User Manual](../../com-som/imx8m-mini-som-hardware-user-manual.md)
 {% endhint %}
 
 
@@ -124,7 +124,7 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-imx8-debian-buster-20210706-cli-imx8mm-sdhc-hummingboard-pulse.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync 
 ```
 
-* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -141,7 +141,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 5\. Serial Connection
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -290,7 +290,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](../../nxp-imx6-based-products/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 #### GPIO pins Control
 

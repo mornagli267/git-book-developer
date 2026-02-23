@@ -50,7 +50,7 @@ Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRu
 
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard Ripple](hummingboard-ripple-rz-g2lc-som-quick-start-guide.md) – A board computer that incorporates the SOM retains the same Android and different Linux distributions while adding extra hardware functionalities and access to the hardware.
+* [HummingBoard Ripple](../sbc-platform/hummingboard-ripple-rz-g2lc-som-quick-start-guide.md) – A board computer that incorporates the SOM retains the same Android and different Linux distributions while adding extra hardware functionalities and access to the hardware.
 
 ## Description
 

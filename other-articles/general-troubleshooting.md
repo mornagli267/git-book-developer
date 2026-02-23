@@ -80,4 +80,4 @@ Convection cooling does not work effectively in the following cases
 2. Bedrock is positioned on a flat surface without the stand
 3. Bedrock is placed in a small closed cabinet with no ventilation which results in elevated temperature of ambient air
 
-See [Bedrock Mounting options](../../bedrock-pc/bedrock-mechanical-documentation/bedrock-mounting-options.md) for proper positioning of Bedrock.
+See [Bedrock Mounting options](../amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options.md) for proper positioning of Bedrock.

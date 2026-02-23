@@ -1,7 +1,7 @@
 # AMD V3000 COM Express BIOS Image Files
 
 {% hint style="info" %}
-Please follow [BIOS update procedure](../../../../amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
+Please follow [BIOS update procedure](../sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/bios-bedrock-v3000/bios-update-procedure.md) carefully.
 Incorrect BIOS update might lead to BIOS corruption that cannot be recovered and would require an RMA.
 {% endhint %}
 
@@ -37,4 +37,4 @@ BIOS\_COV3K\_REL\_V1\_18.rom.gz
 
 ### Revision notes
 
-- Added option to [switch between 2x4 and 1x8 on the Full size PCI-e connector](../../../../amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) .
+- Added option to [switch between 2x4 and 1x8 on the Full size PCI-e connector](../sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) .

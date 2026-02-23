@@ -80,7 +80,7 @@ A system using the SOM can use the suspend to memory feature and consume, depend
 
 ## **SOM i.MX6 Quad Power Measurements**
 
-These are the numbers for the iMX6 Quad on the [HummingBoard Edge](../../nxp-imx6-based-products/hummingboard-imx6-sbc-quick-start-guide/hummingboard-edge-quick-start-guide.md), which is the worst case scenario **without taking into account external peripherals**.
+These are the numbers for the iMX6 Quad on the [HummingBoard Edge](../hummingboard-imx6-sbc-quick-start-guide/hummingboard-edge-quick-start-guide.md), which is the worst case scenario **without taking into account external peripherals**.
 
 **SOM Details** : SOM i.MX6 quad with 2GByte memory, Gigabit phy and wifi/bt SiP .
 

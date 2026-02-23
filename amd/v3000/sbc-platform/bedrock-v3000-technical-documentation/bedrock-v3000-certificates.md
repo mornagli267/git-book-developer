@@ -6,4 +6,4 @@
 
 ## See also
 
-[Bedrock R7000 Certificates](../bedrock-r8000-technical-documentation/bedrock-r8000-r7000-certificates.md)
+[Bedrock R7000 Certificates](../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/bedrock-r8000-r7000-certificates.md)

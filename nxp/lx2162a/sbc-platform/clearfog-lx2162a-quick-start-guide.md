@@ -126,7 +126,7 @@ Use the following commands for writing the image to an SD card:
 xz -dc lx2160a_....img.xz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -136,7 +136,7 @@ Note: Plug a micro SD into your Linux PC, the following assumes that the micro S
 1. SD card insertion\
    Please Insert the SD card into your device.
 2. Serial Connection\
-   Please insert the miniUSB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+   Please insert the miniUSB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 3. Power connection\
    Connect your DC power , and then connect the adaptor to mains supply.
 
@@ -212,7 +212,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../marvell-a38x-based-products/a388-other-articles/sfp-modules.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../../../marvell/a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
 
 ## Packet Generator using DPDK
 
@@ -338,14 +338,14 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 * Page:[LX2162A SOM vs LX2160A COM Differences](lx2162a-other-articles/lx2162a-som-vs-lx2160a-com-differences.md)
   * [lx2160a-com](https://solidrun.atlassian.net/wiki/label/lx2160a-com)
   * [lx2162a-som](https://solidrun.atlassian.net/wiki/label/lx2162a-som)
-* Page:[Flashing an SD Card](../../other-articles/flashing-an-sd-card.md)
+* Page:[Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md)
   * [flash-sd-card](https://solidrun.atlassian.net/wiki/label/flash-sd-card)
-* Page:[Serial Connection](../../other-articles/serial-connection.md)
+* Page:[Serial Connection](../../../other-articles/serial-connection.md)
   * [serial-connection](https://solidrun.atlassian.net/wiki/label/serial-connection)
 
 Related pages
 
-[LX2160A COM Hardware User Manual](../nxp-lx2160a-based-products/lx2160a-com-hardware-user-manual.md)LX2162A COM Hardware User Manual[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)Often read together
+[LX2160A COM Hardware User Manual](../../lx2160a/com-som/lx2160a-com-hardware-user-manual.md)LX2162A COM Hardware User Manual[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)Often read together
 
 [LX2162A Software](lx2162a-software.md)LX2160A Software[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)
 

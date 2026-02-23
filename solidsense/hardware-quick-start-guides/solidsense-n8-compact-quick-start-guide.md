@@ -313,13 +313,13 @@ The following shows how to set the switches on the boot source selector:
 
 | **OS**                                                  |                                                                                                                                                      |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../../../.gitbook/assets/image-20211219-112058.png) | [IMX8M Nano Compact - Yocto](../../iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software/solidsense-n8-compact-yocto.md) |
+| ![](../../../.gitbook/assets/image-20211219-112058.png) | [IMX8M Nano Compact - Yocto](../../nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software/solidsense-n8-compact-yocto.md) |
 | ![](../../../.gitbook/assets/image-20211219-085009.png) | [Buildroot](https://github.com/SolidRun/imx8mp_build/tree/imx8mn)                                                                                    |
 
 ### Build from sources
 
-* [i.MX8M Nano Compact ATF, U-Boot and Linux kernel](../../iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software/solidsense-n8-compact-atf-u-boot-and-linux-kernel.md)
-* [IMX8M Nano Compact - Yocto](../../iot-industrial-product-line/nxp-imx8-based-products/imx8m-plus-mini-nano-software/solidsense-n8-compact-yocto.md)
+* [i.MX8M Nano Compact ATF, U-Boot and Linux kernel](../../nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software/solidsense-n8-compact-atf-u-boot-and-linux-kernel.md)
+* [IMX8M Nano Compact - Yocto](../../nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software/solidsense-n8-compact-yocto.md)
 * [https://github.com/SolidRun/imx8mp\_build/tree/develop-lf-6.6.52-2.2.0-imx8mn](https://github.com/SolidRun/imx8mp_build/tree/develop-lf-6.6.52-2.2.0-imx8mn)
 
 ### Support

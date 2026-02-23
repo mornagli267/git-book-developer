@@ -36,7 +36,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                                  | [Buy Now](https://shop.solid-run.com/?s=CuBox+M\&post_type=product)                         |
 
 {% hint style="info" %}
-Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](imx8m-plus-som-hardware-user-manual.md) .
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](../com-som/imx8m-plus-som-hardware-user-manual.md) .
 {% endhint %}
 
 

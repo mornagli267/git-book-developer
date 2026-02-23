@@ -36,7 +36,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                                  | [Buy Now](https://shop.solid-run.com/product/SRG2L-EVKHBPRO-R01/?_gl=1*a7bvju*_gcl_aw*R0NMLjE3MDA0MDYzMzAuRUFJYUlRb2JDaE1JdGJHbmdlTy1nZ01WRXkwR0FCMnlqZ2dfRUFBWUFTQUFFZ0loNl9EX0J3RQ..*_gcl_au*NzcxNzAzMjc2LjE2OTgxNTc0NTc.&_ga=2.143329333.1607792420.1701175848-1805271611.1656861289&_gac=1.44876432.1700406450.EAIaIQobChMItbGngeO-ggMVEy0GAB2yjgg_EAAYASAAEgIh6_D_BwE) |
 
 {% hint style="info" %}
-Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
+Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](../com-som/rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -148,7 +148,7 @@ wget https://solid-run-images.sos-de-fra-1.exo.io/RZ/Debian/build_date_20240529-
 xz -dc rzg2l-solidrun-sd-debian-f22483f.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync 
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 * **Note:** Plug a micro SD into your Linux PC, the following assumes that the USB-Disk / Micro-SD is added as /dev/sdX and all it’s partitions are unmounted.
 * **Note:** You can use the following command for writing to the SD in case you generated your own image:
 
@@ -166,7 +166,7 @@ $ sudo dd if=/your/image/path of=/dev/sdX bs=4k conv=fdatasync
 * **Note:** The system should turn on by default when the power is connected (without pressing the button).
 
 6. **Serial Connection**\
-   Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
+   Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
    Once you installed the necessary serial connection software, you should be able to see the following:
 
 In order to be able to log in , please insert “root” as a username as follows:

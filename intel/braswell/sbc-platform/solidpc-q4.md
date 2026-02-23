@@ -83,7 +83,7 @@ How to install & Flash [BIOS](ib8000-bios-flash-via-dediprog.md).
 
 ### Linux terminal
 
-Please see our guide how to get to [Linux terminal via serial connection.](../../other-articles/serial-connection.md)
+Please see our guide how to get to [Linux terminal via serial connection.](../../../other-articles/serial-connection.md)
 
 ## Documentation
 

@@ -45,7 +45,7 @@ sudo bmaptool copy imx-image-full-imx8mp-sr-som.rootfs.wic.zst /dev/sdX
 zstdcat imx-image-full-imx8mp-sr-som.rootfs.wic.zst | sudo dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 **Note:** Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -62,7 +62,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, reboot your device and you should be able to see the following:
 

@@ -62,7 +62,7 @@ The module integrates the following features –
 
 Since this module is based on SolidRun’s Bedrock product line, it shares lots of the design and features such as memory modules that were tested -
 
-[List of SO-DIMM RAM modules tested with Bedrock V3000](../../bedrock-pc/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/list-of-so-dimm-ram-modules-tested-with-bedrock-v3000.md)
+[List of SO-DIMM RAM modules tested with Bedrock V3000](../sbc-platform/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/list-of-so-dimm-ram-modules-tested-with-bedrock-v3000.md)
 
 ## Description
 

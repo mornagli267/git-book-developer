@@ -41,7 +41,7 @@ Configure the boot-mode for microSD using onboard DIP switch S1:
 
 ### Console
 
-Start an application for serial console - such as [PuTTY](https://www.putty.org/) or [tio](https://github.com/tio/tio). Configure it for baud rate 115200 and the COMx or ttyUSBy interface representing the micro-USB console connection. For details also see [Serial Connection](../../other-articles/serial-connection.md).
+Start an application for serial console - such as [PuTTY](https://www.putty.org/) or [tio](https://github.com/tio/tio). Configure it for baud rate 115200 and the COMx or ttyUSBy interface representing the micro-USB console connection. For details also see [Serial Connection](../../../other-articles/serial-connection.md).
 
 ## Software Setup
 

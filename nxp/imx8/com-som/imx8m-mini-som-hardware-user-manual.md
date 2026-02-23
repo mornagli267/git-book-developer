@@ -41,8 +41,8 @@ The SolidRun’s SR-SOM-MX8M-Mini is a low power, low cost high performance micr
 
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-mini-som-quick-start-guide.md) – A SBC that incorporates the SOM retains the different Linux distributions while adding extra hardware functionalities and access to the hardware.
-* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](hummingboard-imx8-sbc-quick-start-guide/hummingboard-ripple-imx8m-mini-som-quick-start-guide.md) –  A low cost SBC computer (Partial assembly of the HummingBoard Pulse) optimized for the i.MX8M-Mini.
+* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-mini-som-quick-start-guide.md) – A SBC that incorporates the SOM retains the different Linux distributions while adding extra hardware functionalities and access to the hardware.
+* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-ripple-imx8m-mini-som-quick-start-guide.md) –  A low cost SBC computer (Partial assembly of the HummingBoard Pulse) optimized for the i.MX8M-Mini.
 
 ## Description
 

@@ -60,7 +60,7 @@ Here is what you will need to power up the board:
 
 Download & install images:
 
-You can use the [Ubuntu server installation instructions](../../bedrock-pc/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) page or download [Pre-installed images](../../other-articles/snippets/bedrock-images-info.md).
+You can use the [Ubuntu server installation instructions](../../v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-ubuntu-server-using-console.md) page or download [Pre-installed images](../../../other-articles/bedrock-images-info.md).
 
 If using the Pre-installed image, flash it to a USB stick using the following commands:
 
@@ -87,7 +87,7 @@ Very first boot might take a while due to DDR training
 
 ## SO-DIMM Modules
 
-For some SO-DIMM modules that work on SolidRun hardware platforms, please refer to [List of tested SO-DIMMs](../../other-articles/snippets/list-of-so-dimm-ram-modules-tested-with-ryzen-v3000-com7.md) .
+For some SO-DIMM modules that work on SolidRun hardware platforms, please refer to [List of tested SO-DIMMs](../../../other-articles/list-of-so-dimm-ram-modules-tested-with-ryzen-v3000-com7.md) .
 
 ## OS list
 

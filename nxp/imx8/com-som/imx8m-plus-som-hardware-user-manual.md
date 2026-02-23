@@ -47,8 +47,8 @@ SolidRun’s SR-SOM- i.MX8M family is a high-performance microsystem on module (
 
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard Pulse & i.MX8M Plus SOM Quick Start Guide](hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-plus-som-quick-start-guide.md)
-* [HummingBoard Mate & i.MX8M Plus SOM Quick Start Guide](hummingboard-imx8-sbc-quick-start-guide/hummingboard-mate-imx8m-plus-som-quick-start-guide.md)
+* [HummingBoard Pulse & i.MX8M Plus SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-plus-som-quick-start-guide.md)
+* [HummingBoard Mate & i.MX8M Plus SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-mate-imx8m-plus-som-quick-start-guide.md)
 
 ## Description
 

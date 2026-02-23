@@ -147,7 +147,7 @@ Use the following commands for writing the image to an SD card:
 gunzip -dc core-image-weston-rzv2n-evk.rootfs-20251224162903.wic.gz | dd of=/dev/sdX bs=4k conv=fdatasync 
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -164,7 +164,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 5. **Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 

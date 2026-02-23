@@ -37,7 +37,7 @@ The guide will give a technical overview about the product and by the end of it 
 |                                  | [Buy Now](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/?filter_som-com-family=renesas-rz-g2l) |
 
 {% hint style="info" %}
-Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
+Supported with RZ/G2L SOM. For more detailed information about our SOM RZ/G2L series please visit this user manual : [RZ/G2L SOM Hardware User Manual](../com-som/rz-g2l-and-rz-v2l-som-hardware-user-manual.md) .
 {% endhint %}
 
 

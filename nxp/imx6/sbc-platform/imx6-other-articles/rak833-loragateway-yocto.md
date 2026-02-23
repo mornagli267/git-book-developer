@@ -18,7 +18,7 @@ ubuntu16.Other versions of the operating system may have unpredictable errors.
 
 step1 : Download
 
-refer to guide ([Yocto for i.MX6](../../nxp-imx6-based-products/imx6-software/yocto-for-imx6.md) )
+refer to guide ([Yocto for i.MX6](../imx6-software/yocto-for-imx6.md) )
 
 First, get Poky:
 

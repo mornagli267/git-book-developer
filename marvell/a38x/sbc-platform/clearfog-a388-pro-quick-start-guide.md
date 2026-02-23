@@ -15,7 +15,7 @@ The following quick start guide provides background information about the [Clear
 
 The guide will give a technical overview about the product and by the end of it you should be able to boot an operating system and begin testing your application.
 
-For CN9130 SOM Software, please refrer to the following link:[CN913x Build](../marvell-cn913x-based-products/cn913x-software/cn913x-build.md)
+For CN9130 SOM Software, please refrer to the following link:[CN913x Build](../../cn913x/sbc-platform/cn913x-software/cn913x-build.md)
 
 ## Specifications
 
@@ -50,7 +50,7 @@ For CN9130 SOM Software, please refrer to the following link:[CN913x Build](../m
 |                      | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/marvell-family/clearfog-base-pro/?_ga=2.126128654.2016484779.1641802897-2012112798.1622706355) |
 
 {% hint style="info" %}
-Supported with A388 SOM. For more detailed information about our A388 SOM series please visit this user manual : [A388 SOM Hardware User Manual](a388-som-hardware-user-manual.md) .
+Supported with A388 SOM. For more detailed information about our A388 SOM series please visit this user manual : [A388 SOM Hardware User Manual](../com-som/a388-som-hardware-user-manual.md) .
 {% endhint %}
 
 
@@ -127,7 +127,7 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-a38x-debian-bullseye-20220427.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](../../other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
@@ -158,7 +158,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **7. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 

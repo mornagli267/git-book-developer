@@ -29,7 +29,7 @@ It is recommended to use the Rufus (windows method for .iso files).
 
 ### Connecting serial console
 
-Please follow instructions at [Using serial console with Bedrock V3000](../../../bedrock-v3000-technical-documentation/software-bedrock-v3000/using-serial-console-with-bedrock.md)
+Please follow instructions at [Using serial console with Bedrock V3000](../../../../../v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/using-serial-console-with-bedrock.md)
 
 ### BIOS Boot select
 

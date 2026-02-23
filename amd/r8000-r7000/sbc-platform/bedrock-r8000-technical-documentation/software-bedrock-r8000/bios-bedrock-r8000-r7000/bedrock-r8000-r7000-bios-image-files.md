@@ -67,7 +67,7 @@ Recommended version
   - Fixed System Management Unit (SMU) in power tab not opening the SMU menu
 - Added Automatic switching between Full size DisplayPort & USB-C Thunderbolt.
 - Added option to change SMBIOS tables 1, 2 & 3 from on boardEEprom.
-  - see: [TLV Writer Documentation](../../../../../other-articles/tlv-writer-documentation.md)
+  - see: [TLV Writer Documentation](../../../../../../other-articles/tlv-writer-documentation.md)
 - Added SMBIOS tables 8 & 9
 
 <a id="bios-v101-release-for-bedrock-r8000-r7000"></a>
@@ -90,7 +90,7 @@ Recommended version
 - Default memory speed set as follows:
   - BIOS for Ryzen U: 4800MT/s (Can be [changed in BIOS menu](../../software-bedrock-r8000/howto-guides-bedrock-r8000-r7000/setting-ddr-memory-frequency-on-bedrock-r8000-r7000.md))
   - BIOS for Ryzen HS: 5600MT/s (Can be [changed in BIOS menu](../../software-bedrock-r8000/howto-guides-bedrock-r8000-r7000/setting-ddr-memory-frequency-on-bedrock-r8000-r7000.md))
-- Added visual feedback on BIOS settings reset saved in SPI flash [BIOS reset instructions](../../../../../other-articles/bedrock-bios-reset-button.md)
+- Added visual feedback on BIOS settings reset saved in SPI flash [BIOS reset instructions](../../../../../../other-articles/bedrock-bios-reset-button.md)
 - Fixed splash screen not showing up
 
 <a id="bios-v33-eval-for-bedrock-r8000-r7000"></a>
