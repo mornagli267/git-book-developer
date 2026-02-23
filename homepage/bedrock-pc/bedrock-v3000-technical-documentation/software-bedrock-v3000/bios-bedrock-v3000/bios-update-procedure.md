@@ -29,7 +29,9 @@ Newer BIOS images support updating the BIOS from the BIOS Setup utility to do so
 
 * Wait for the BIOS to finish updating
 
-
+{% hint style="warning" %}
+Do not power off or unplug your device during the update process, doing so may result in bricking and RMA.
+{% endhint %}
 
 ## Option 2: Update from windows GUI (easy)
 
