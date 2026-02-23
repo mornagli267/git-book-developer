@@ -51,11 +51,9 @@ The guide will give a technical overview about the product and by the end of it 
 (\*\*\*) Assembly option on the SOM
 {% endhint %}
 
-
 {% hint style="info" %}
 Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](cn9130-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 ## **Block Diagram**
 
@@ -118,7 +116,6 @@ Once you set the switches, you can apply the following for booting from an **SPI
 **Please Note:** The **SPI** including U-Boot by default.
 {% endhint %}
 
-
 **1. Downloading the Ubuntu 20.04 image**
 
 ```
@@ -140,7 +137,6 @@ xz -dc ubuntu-cn9130-cf-base-mmc:1:0.img.xz | dd of=/dev/sdX bs=4k conv=fdatasyn
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -168,7 +164,6 @@ boot
 {% hint style="warning" %}
 **Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
 {% endhint %}
-
 
 Once you installed the necessary serial connection software and ran the above commands , you should be able to see the following:
 
@@ -260,7 +255,7 @@ For some SFP modules that work on SolidRun networking hardware platforms, please
 
 ## SIM Card Slot
 
-{% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4.pdf" %}
+{% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4 (4).pdf" %}
 
 [clearfog-base-schematics-rev1.4.pdf](../../../.gitbook/assets/clearfog-base-schematics-rev1.4.pdf)
 
@@ -271,7 +266,6 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 {% hint style="warning" %}
 **Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
 {% endhint %}
-
 
 ## TLV EEPROM Support
 
