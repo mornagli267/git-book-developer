@@ -103,7 +103,7 @@ Recommended version
 
 **MD5**: 60db00923bfab1ddcdc62292ff1c4746
 
-[BIOS_BDR7K_EV_V33.signed](./attachments/BIOS_BDR7K_EV_V33.signed)
+{% file src="./attachments/BIOS_BDR7K_EV_V33.signed" %}
 
 <a id="revision-notes"></a>
 
@@ -122,7 +122,7 @@ Recommended version
 
 **MD5**: e8952b3f53159f7c1e7c71c75d81f60a
 
-[BIOS_BDR7K_EV_V30.signed](./attachments/BIOS_BDR7K_EV_V30.signed)
+{% file src="./attachments/BIOS_BDR7K_EV_V30.signed" %}
 
 <a id="known-issues"></a>
 
@@ -147,7 +147,7 @@ Recommended version
 
 **MD5**: d4795bd80360de55c35645b5ea8dae0e
 
-[BIOS_BDR7000_EVAL_V29.signed](./attachments/BIOS_BDR7000_EVAL_V29.signed)
+{% file src="./attachments/BIOS_BDR7000_EVAL_V29.signed" %}
 
 <a id="known-issues"></a>
 
@@ -172,7 +172,7 @@ Recommended version
 
 **MD5**: f267cb0c0ef32ca1f447b5990c1cd7d6
 
-[BIOS_BDR7000_EVAL_V28.signed](./attachments/BIOS_BDR7000_EVAL_V28.signed)
+{% file src="./attachments/BIOS_BDR7000_EVAL_V28.signed" %}
 
 <a id="revision-notes"></a>
 
@@ -191,7 +191,7 @@ Recommended version
 
 **MD5**: 39d600bbf77ae02cdeee516c7f369a87
 
-[BIOS_BDR7000_EVAL_V25.signed](./attachments/BIOS_BDR7000_EVAL_V25.signed)
+{% file src="./attachments/BIOS_BDR7000_EVAL_V25.signed" %}
 
 <a id="revision-notes"></a>
 

@@ -643,7 +643,7 @@ Following is a diagram of the TOP VIEW of the RZG2L/V2L.
 {% file src="../sbc-platform/attachments/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf" %}
 
 
-[RZG2L\_pinfunction\_List\_r1.1.xlsx](attachments/RZG2L_pinfunction_List_r1.1.xlsx)
+{% file src="attachments/RZG2L_pinfunction_List_r1.1.xlsx" %}
 
 [Buy a Sample Now](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2l-som/)
 
