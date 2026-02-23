@@ -2,7 +2,7 @@
 
 ![certificates.png](<../../../.gitbook/assets/certificates (1).png>)
 
-{% file src="attachments/Bedrock%20V3000%20CE-FCC%20Certificate.pdf" %}
+[Bedrock%20V3000%20CE-FCC%20Certificate.pdf](attachments/Bedrock%20V3000%20CE-FCC%20Certificate.pdf)
 
 ## See also
 

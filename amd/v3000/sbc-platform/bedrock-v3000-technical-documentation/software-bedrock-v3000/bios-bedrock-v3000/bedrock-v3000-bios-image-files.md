@@ -25,7 +25,7 @@ Before updating BIOS, you are advised to [check current BIOS version](/amd/v3000
 
 **MD5**: 64ce5d561001dda950843c0af03af243
 
-{% file src="./attachments/BIOS_BDV3000_RELEASE_V1.03_SIGNED.BIN" %}
+[BIOS_BDV3000_RELEASE_V1.03_SIGNED.BIN](./attachments/BIOS_BDV3000_RELEASE_V1.03_SIGNED.BIN)
 
 <a id="revision-notes"></a>
 
@@ -47,7 +47,7 @@ Before updating BIOS, you are advised to [check current BIOS version](/amd/v3000
 
 **MD5**: ee49a250859b8e36fe138efff553d746
 
-{% file src="./attachments/BIOS_BDV3000_RELEASE_V1.01_SIGNED.BIN" %}
+[BIOS_BDV3000_RELEASE_V1.01_SIGNED.BIN](./attachments/BIOS_BDV3000_RELEASE_V1.01_SIGNED.BIN)
 
 <a id="revision-notes"></a>
 
@@ -65,7 +65,7 @@ Before updating BIOS, you are advised to [check current BIOS version](/amd/v3000
 
 **MD5**: 68f94b371618e942a529187b19ebbfbc
 
-{% file src="./attachments/BIOS_BDV3000_RELEASE_V1_SIGNED.BIN" %}
+[BIOS_BDV3000_RELEASE_V1_SIGNED.BIN](./attachments/BIOS_BDV3000_RELEASE_V1_SIGNED.BIN)
 
 <a id="revision-notes"></a>
 

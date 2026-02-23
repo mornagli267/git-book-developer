@@ -31,7 +31,7 @@ BIOS\_COV3K\_REL\_V1\_18.rom.gz
 
 **MD5:** 6f5bdc621a6010545f369c90edfc77f5
 
-{% file src="./attachments/BIOS_COV3K_REL_V1_18.rom.gz" %}
+[BIOS_COV3K_REL_V1_18.rom.gz](./attachments/BIOS_COV3K_REL_V1_18.rom.gz)
 
 <a id="revision-notes"></a>
 
