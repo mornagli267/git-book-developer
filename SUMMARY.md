@@ -56,7 +56,7 @@
           * [Bedrock R8000 Configuration Selector](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/specifications-bedrock-r8000/bedrock-r8000-configuration-selector.md)
       * [Bedrock Accessories](amd/r8000-r7000/sbc-platform/bedrock-accessories.md)
       * [Bedrock Mechanical Documentation](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation.md)
-        * [Bedrock 3D Models](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-3d-model.md)
+        * [Bedrock 3D Model](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-3d-model.md)
         * [Bedrock Deck Cartridge SOM 3D Models](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-deck-cartridge-som-3d-models.md)
         * [Bedrock Mounting Options](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options.md)
           * [DIN Rail Bracket Assembly and Usage Diagrams](amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-mounting-options/din-rail-bracket-assembly-and-usage-diagrams.md)
