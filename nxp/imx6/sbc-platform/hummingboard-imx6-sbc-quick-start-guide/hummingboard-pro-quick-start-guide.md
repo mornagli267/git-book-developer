@@ -43,16 +43,14 @@ The guide will give a technical overview about the product and by the end of it 
 | **Environment**      | No enclosure                          |
 
 {% hint style="info" %}
-Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](/nxp/imx6/com-som/imx6-som-hardware-user-manual.md).
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../../com-som/imx6-som-hardware-user-manual.md).
 {% endhint %}
-
 
 {% hint style="info" %}
 **Please Note** (\*) RAM type and speed dependent on SOM\
 (\*\*) Supported with SOM i.MX6 Dual and above\
 (\*\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
 {% endhint %}
-
 
 #### **Block Diagram**
 
@@ -102,12 +100,11 @@ Use the following commands for writing the image to an SD card:
 gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -119,7 +116,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial connection**
 
-Please connect the UART cable to your device pins, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please connect the UART cable to your device pins, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -146,7 +143,7 @@ apt-get upgrade
 reboot
 ```
 
-* For more detailed information, please refer to [i.MX6 Debian](/nxp/imx6/sbc-platform/imx6-software/imx6-debian.md) .
+* For more detailed information, please refer to [i.MX6 Debian](../imx6-software/imx6-debian.md) .
 
 **Wi-fi**
 
@@ -163,7 +160,6 @@ ifconfig wlan0 up
 {% hint style="info" %}
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
-
 
 2\. Install the wpa\_supplicant package:
 
@@ -203,7 +199,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -277,13 +272,11 @@ Pin 10 buffered i.MX6 UART RX – pulled up to 3.3v
 Notice that the pin number starts as pin #1 on the edge of the board, then number #2 is the one towards the corner of the board.
 {% endhint %}
 
-
 #### Install GUI Support
 
 {% hint style="info" %}
 Note that HDMI doesn’t display anything by default.
 {% endhint %}
-
 
 **Wayland**
 
@@ -301,7 +294,6 @@ Note that HDMI doesn’t display anything by default.
 By default one application is available, the terminal emulator, at the upper left corner.
 {% endhint %}
 
-
 2\. Start weston FROM A PHYSICAL TERMINAL (from the above terminal, not remote or serial session):
 
 ```
@@ -312,7 +304,6 @@ By default one application is available, the terminal emulator, at the upper lef
 Make sure to run the above without sudo.
 {% endhint %}
 
-
 This will bring up the following:
 
 ![](../../../../.gitbook/assets/IMG-6920-20211014-132727.jpg)
@@ -321,26 +312,26 @@ This will bring up the following:
 
 ## List Of Supported OS
 
-| **OS**                                                     |                                                                                         |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](/nxp/imx6/sbc-platform/imx6-software/imx6-debian.md)    |
-| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](/nxp/imx6/sbc-platform/imx6-software/yocto-for-imx6.md) |
-| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](/nxp/imx6/sbc-platform/imx6-software/imx6-archlinux.md) |
-| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](/nxp/imx6/sbc-platform/imx6-software/xbian-for-imx6.md) |
+| **OS**                                                     |                                                       |
+| ---------------------------------------------------------- | ----------------------------------------------------- |
+| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](../imx6-software/imx6-debian.md)       |
+| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](../imx6-software/yocto-for-imx6.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](../imx6-software/imx6-archlinux.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](../imx6-software/xbian-for-imx6.md) |
 
 ## Build U-Boot & Kernel from sources
 
-* Build a Linux kernel -  [i.MX6 Kernel](/nxp/imx6/sbc-platform/imx6-software/imx6-kernel.md)
-* Build a U-Boot - [i.MX6 U-Boot](/nxp/imx6/sbc-platform/imx6-software/imx6-u-boot.md)
+* Build a Linux kernel - [i.MX6 Kernel](../imx6-software/imx6-kernel.md)
+* Build a U-Boot - [i.MX6 U-Boot](../imx6-software/imx6-u-boot.md)
 
 ## Documentation
 
-{% file src="attachments/HummingBoard-BasePro-Assembly-Files.zip" %}
-{% file src="attachments/hummingboard-pro-rev-3.5-layout.zip" %}
-{% file src="attachments/HummingBoard-BasePro-Gerbers.zip" %}
-{% file src="attachments/HummingBoard%20Pro%20BOM%20Rev%203.5.1.xlsx" %}
-{% file src="attachments/HummingBoard-BasePro-Schematics.zip" %}
+{% file src="../../../../.gitbook/assets/HummingBoard-BasePro-Assembly-Files.zip" %}
 
+{% file src="../../../../.gitbook/assets/hummingboard-pro-rev-3.5-layout.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard-BasePro-Gerbers.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard Pro BOM Rev 3.5.1.xlsx" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard-BasePro-Schematics.zip" %}

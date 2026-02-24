@@ -21,11 +21,11 @@ The installation was validated at SolidRun using the following setup:
 
 ### Creating bootable USB drive
 
-Please follow instructions at [Creating bootable USB drive](/amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/creating-bootable-usb-drive-for-bedrock-v3000.md)
+Please follow instructions at [Creating bootable USB drive](../creating-bootable-usb-drive-for-bedrock-v3000.md)
 
 ### Connecting serial console
 
-Please follow instructions at [Using serial console with Bedrock V3000](/amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/using-serial-console-with-bedrock.md)
+Please follow instructions at [Using serial console with Bedrock V3000](../using-serial-console-with-bedrock.md)
 
 ### BIOS settings
 
@@ -39,10 +39,8 @@ Please follow instructions at [Using serial console with Bedrock V3000](/amd/v30
 
 When you see the main boot menu:
 
-![](../../../../../.gitbook/assets/image-20231102-121643.png)
-
-* Press "esc" or the arrow buttons to go to the boot option shell&#x20;
-* Set the console redirection (copy to the terminal):&#x20;
+* Press "esc" or the arrow buttons to go to the boot option shell
+* Set the console redirection (copy to the terminal):
 * ```
   ```
 
@@ -159,14 +157,13 @@ hw.uart.console="mm:0xfedc9000,rs:2" 
 Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
 {% endhint %}
 
-
 **Thats it, you can reboot the system and use it.**
 
 ### Tips
 
 **Hididng kernel output**
 
-* Add to /boot/loader.conf.local:&#x20;
+* Add to /boot/loader.conf.local:
   * ```
     ```
 

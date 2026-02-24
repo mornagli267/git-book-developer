@@ -53,13 +53,11 @@ The guide will give a technical overview about the product and by the end of it 
 Supported with i.MX8M-MINI SOM. For more detailed informaiton about our SOM-i.MX8M series please visit our user manual : [i.MX8M Mini SOM Hardware User Manual](../../com-som/imx8m-mini-som-hardware-user-manual.md)
 {% endhint %}
 
-
 {% hint style="info" %}
 **Please Note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
 (\*\*) Only supported with the i.MX8M SoC.\
 (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
 {% endhint %}
-
 
 #### Block Diagram
 
@@ -103,7 +101,6 @@ The following shows how to set the switches on the boot source selector:
 Please Note: The black rectangle represents the switch position.
 {% endhint %}
 
-
 Once you set the switches, you can apply the following for booting from SD card:
 
 1\. Downloading the Debian image
@@ -129,7 +126,6 @@ xz -dc sr-imx8-debian-buster-20210706-cli-imx8mm-sdhc-hummingboard-pulse.img.xz 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 3\. SD card insertion
 
@@ -185,7 +181,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -224,7 +219,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -310,16 +304,18 @@ To control on the GPIO pins, please follow this page [GPIO Pins Control - Hummin
 
 ## Documentation
 
-{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
-{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
-{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
+{% file src="../../../../.gitbook/assets/HummingBoard Pulse Pin MUX.xlsx" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard-Pulse-Part-Assembly.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Schematics.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Mechanical Drawings.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Puls-REV.2.5-pcb.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 PCB.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Gerbers.zip" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Ripple%22\&post_type=product&_ga=2.89019160.2016484779.1641802897-2012112798.1622706355)
-
-

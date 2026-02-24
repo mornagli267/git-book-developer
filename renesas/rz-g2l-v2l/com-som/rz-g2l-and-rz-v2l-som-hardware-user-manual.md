@@ -16,37 +16,37 @@
 This User Manual relates to the SolidRun’s RZG2 series, which includes
 
 * RZG2L Dual-core ARM A55 (1.2GHz) w Cortex-M33 (200MHz)
-* RZV2L Dual-core ARM A55 (1.2GHz) w Cortex-M33 (200MHz) and Renesas Original AI Accelerator "DRP-AI"&#x20;
+* RZV2L Dual-core ARM A55 (1.2GHz) w Cortex-M33 (200MHz) and Renesas Original AI Accelerator "DRP-AI"
 
 ## Overview
 
-The SolidRun’s RZG2L/V2L family is a high-performance 64-Bit Renesas. RZ/G2 Based SOMs with Integrated GPU for Next-Gen Human-Machine Interfaces. RZV2L is adding an AI accelerator to the G2L.&#x20;
+The SolidRun’s RZG2L/V2L family is a high-performance 64-Bit Renesas. RZ/G2 Based SOMs with Integrated GPU for Next-Gen Human-Machine Interfaces. RZV2L is adding an AI accelerator to the G2L.
 
-Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRun RZ/G2 SOMs combine a powerful MPU, GPU, extended ECC, Ethernet, and offer long-term Linux software support.&#x20;
+Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRun RZ/G2 SOMs combine a powerful MPU, GPU, extended ECC, Ethernet, and offer long-term Linux software support.
 
 #### Highlighted Features
 
-* Ultra-small footprint SOM (47x30mm) including three board-to-board connectors (250 total pins number).&#x20;
-* Renesas’s SoC supports the DUAL version.&#x20;
-  * Dual Cortex A55 and up to 1.2GHz&#x20;
-  * Cortex-M33 subsystem processor supports real-time tasks.&#x20;
-  * Video codec (H.264).&#x20;
-  * AI accelerator; DRP-AI (**V2L only**)&#x20;
-  * High-security engines.&#x20;
-  * Dual Ethernet interfaces.&#x20;
-  * Up to two CAN interfaces.&#x20;
-  * High industrial reliability with in-line ECC on DDR4 and on on-chip RAM.&#x20;
-  * Single MIPI-CSI and single MIPI-DSI (H.264)&#x20;
-  * Optional RGB interface.&#x20;
-  * Two USB 2.0.&#x20;
-* DDR4 memory in x16 configurations supports up to 2GB and up to 1.6GT/s.&#x20;
-* Up to 128GB eMMC.&#x20;
-* 1Mb QSPI NOR Flash&#x20;
-* Wi-Fi 11b/g/n/ac + Bluetooth 5.0 certified module&#x20;
-* 1Mb QSPI NOR Flash&#x20;
-* 1Kb I2C EEPROM&#x20;
-* Power management devices&#x20;
-* Commercial and industrial temperature grade support.&#x20;
+* Ultra-small footprint SOM (47x30mm) including three board-to-board connectors (250 total pins number).
+* Renesas’s SoC supports the DUAL version.
+  * Dual Cortex A55 and up to 1.2GHz
+  * Cortex-M33 subsystem processor supports real-time tasks.
+  * Video codec (H.264).
+  * AI accelerator; DRP-AI (**V2L only**)
+  * High-security engines.
+  * Dual Ethernet interfaces.
+  * Up to two CAN interfaces.
+  * High industrial reliability with in-line ECC on DDR4 and on on-chip RAM.
+  * Single MIPI-CSI and single MIPI-DSI (H.264)
+  * Optional RGB interface.
+  * Two USB 2.0.
+* DDR4 memory in x16 configurations supports up to 2GB and up to 1.6GT/s.
+* Up to 128GB eMMC.
+* 1Mb QSPI NOR Flash
+* Wi-Fi 11b/g/n/ac + Bluetooth 5.0 certified module
+* 1Mb QSPI NOR Flash
+* 1Kb I2C EEPROM
+* Power management devices
+* Commercial and industrial temperature grade support.
 
 #### Supporting Products
 
@@ -64,36 +64,36 @@ The following figure describes the RZ/G2L Blocks Diagram.
 
 #### Features Summary
 
-Following are the features summary of the SOM. Notice that some of the features are pinout multiplexed (please refer to the pin mux table below and the Renesas datasheets):&#x20;
+Following are the features summary of the SOM. Notice that some of the features are pinout multiplexed (please refer to the pin mux table below and the Renesas datasheets):
 
-* Renesas’s RZG2 series SoC (Dual ARM® Cortex™ A55 Processor, up to 1.2 GHz)&#x20;
-* Cortex-M33 (200MHz) subsystem processor.&#x20;
-* AI accelerator; DRP-AI (**V2L only**)&#x20;
-* Up to 2GByte DDR4 memory and up to 1.6GT/s&#x20;
-* Eight bits eMMC 5.1 memory or a four bits SD interface&#x20;
-* 1Kb I2C EEPROM.&#x20;
-* 8Mb QSPI NOR Flash.&#x20;
-* 4-lanes MIPI-DSI interface&#x20;
-* Optional RGB (8,8,8) interface.&#x20;
-* 3D graphics engine (Arm Mali-G31).&#x20;
-* Video codec (H.264).&#x20;
-* 4-lanes MIPI CSI-2 &#x20;
-* Dual 10/100/1000 Mbps Ethernet PHY&#x20;
-* Wi-Fi (802.11a/b/g/n/ac) + BT (5.0) Murata's certified module &#x20;
-* Two USB 2.0 Host and Device&#x20;
-* Single eSPI interface.&#x20;
-* Up to four Serial interfaces.&#x20;
-* Up to 2 CAN-FD.&#x20;
-* Power:&#x20;
-  * A single 5.0V input using B-to-B connector.&#x20;
-  * 3.3V/1A output to support carrier's digital interfaces.&#x20;
-  * RAA215300 PMIC&#x20;
+* Renesas’s RZG2 series SoC (Dual ARM® Cortex™ A55 Processor, up to 1.2 GHz)
+* Cortex-M33 (200MHz) subsystem processor.
+* AI accelerator; DRP-AI (**V2L only**)
+* Up to 2GByte DDR4 memory and up to 1.6GT/s
+* Eight bits eMMC 5.1 memory or a four bits SD interface
+* 1Kb I2C EEPROM.
+* 8Mb QSPI NOR Flash.
+* 4-lanes MIPI-DSI interface
+* Optional RGB (8,8,8) interface.
+* 3D graphics engine (Arm Mali-G31).
+* Video codec (H.264).
+* 4-lanes MIPI CSI-2
+* Dual 10/100/1000 Mbps Ethernet PHY
+* Wi-Fi (802.11a/b/g/n/ac) + BT (5.0) Murata's certified module
+* Two USB 2.0 Host and Device
+* Single eSPI interface.
+* Up to four Serial interfaces.
+* Up to 2 CAN-FD.
+* Power:
+  * A single 5.0V input using B-to-B connector.
+  * 3.3V/1A output to support carrier's digital interfaces.
+  * RAA215300 PMIC
 
 ## Core System Components
 
 #### RZ/G2L SoC Family
 
-Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRun RZ/G2 SOMs combine a powerful MPU, GPU, extended ECC, Ethernet, and offer long-term Linux software support&#x20;
+Ideal for automation, smart buildings, network cameras, and IoT devices, SolidRun RZ/G2 SOMs combine a powerful MPU, GPU, extended ECC, Ethernet, and offer long-term Linux software support
 
 ![](../../../.gitbook/assets/image-20221215-075410.png)
 
@@ -118,7 +118,7 @@ The RZG2L SOM supports a variety of memory interfaces for booting and data stora
 
 #### **eMMC and SD NAND Memory**
 
-SD0 of the RZG2L/V2L can be configured as an 8-bit eMMC interface or a 4-bit SDIO. Configuration can be done during the boot process (Boot strap pins, SD0\_DEV\_SEL) or by SW (SD0\_DEV\_SEL\_SW, GPIO\_P22\_1).&#x20;
+SD0 of the RZG2L/V2L can be configured as an 8-bit eMMC interface or a 4-bit SDIO. Configuration can be done during the boot process (Boot strap pins, SD0\_DEV\_SEL) or by SW (SD0\_DEV\_SEL\_SW, GPIO\_P22\_1).
 
 Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog switch.
 
@@ -126,8 +126,7 @@ Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog sw
 The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
 {% endhint %}
 
-
-&#x20;**eMMC**
+**eMMC**
 
 * Up to 128GB memory space.
 * 8 Bits data bus.
@@ -173,10 +172,9 @@ The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors
 **\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
 {% endhint %}
 
-
 #### **10/100/1000 Mbps Ethernet PHY**
 
-&#x20;The SOM supports two fast Ethernet interfaces.
+The SOM supports two fast Ethernet interfaces.
 
 ![](<../../../.gitbook/assets/RZ_G2L_V2L Eth 2023(1)-20231015-094209.png>)
 
@@ -193,7 +191,7 @@ The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors
 
 #### **WI-FI & BT**
 
-&#x20;The WI-FI & BT module is Murata’s 1MW module Based on Cypress CYW43455 chip. The WI-FI main features are:
+The WI-FI & BT module is Murata’s 1MW module Based on Cypress CYW43455 chip. The WI-FI main features are:
 
 * Operate at ISM frequency Band (2.4/5 GHz)
 * IEEE Standards Support 802.11a, 802.11b, 802.11g, 802.11n, 802.11ac
@@ -237,7 +235,6 @@ The USB’s main features are:
 **Note – The voltage on VBUS is 5V.**
 {% endhint %}
 
-
 #### MIPI CSI
 
 The following figure describes the CSI interface.
@@ -270,8 +267,8 @@ The DSI main features are:
 #### Parallel Interface
 
 * Support WXGA (1280x800), 60 fps.
-* Support Output Data Format: RGB666 / RGB888.&#x20;
-* CLK / HD / VD timing signal supported.&#x20;
+* Support Output Data Format: RGB666 / RGB888.
+* CLK / HD / VD timing signal supported.
 
 #### UART
 
@@ -292,7 +289,6 @@ The UART interface's main features are:
 **Note – UART interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
 
-
 #### SPI
 
 Up to 3 SPI interfaces. The following figure describes the eSPI interface.
@@ -308,7 +304,6 @@ Up to 3 SPI interfaces. The following figure describes the eSPI interface.
 {% hint style="warning" %}
 **Note SPI interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
-
 
 #### I2C
 
@@ -330,7 +325,6 @@ The I2C main features are:
 {% hint style="warning" %}
 **Note – I2C interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
-
 
 #### uSD
 
@@ -456,7 +450,7 @@ The CAN main features are:
 | 27      | ETH-LED                                            |     | LED1\_0/PHY\_CFG1                                          | 3V3 |   | 28      | M.2\_GPS\_EN#                | NA  | RZ\_SCIF4\_RX       | 3V3 |
 | 29      | HEADER (CON4)                                      |     | GPIO\_P43\_1                                               | 3V3 |   | 30      | J9-59 (BT\_FW\_FLASH, J9-59) | NA  | RZ\_SCIF4\_TX       | 3V3 |
 | 31      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SCL                                             | 3V3 |   | 32      | MIKROBUS (J8-3)              | NA  | RZ\_RSPI1\_SSL      | 3V3 |
-| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SDA                                             | 3V3 |   | 34      | CSI-CON  (J19) or DSI-HDMI   | 3V3 | RZ\_SCIF4\_CLK      | 3V3 |
+| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SDA                                             | 3V3 |   | 34      | CSI-CON (J19) or DSI-HDMI    | 3V3 | RZ\_SCIF4\_CLK      | 3V3 |
 | 35      | GND                                                |     | GND                                                        |     |   | 36      | GND                          |     | GND                 |     |
 | 37      | USB\_HUB\_CH1\_PWR\_EN                             | 3V3 | RZ\_USB1\_VBUSEN                                           | 3V3 |   | 38      | MICRO-SD                     | SD2 | SD\_SD0\_CLK        | SD2 |
 | 39      | J9-55 (BT\_FW\_FLASH, J9-55)                       | NA  | GPIO\_P43\_2                                               | 3V3 |   | 40      | MICRO-SD                     | SD2 | SD\_SD0\_CMD        | SD2 |
@@ -582,7 +576,6 @@ The PMIC supports an RTC that can be powered by a battery (J7-63).
 **(\*) Note – The PMIC enables the power at Power-Up (No need to push the ON/OFF).**
 {% endhint %}
 
-
 ## RZG2L/V2L INTEGRATION MANUAL
 
 #### POWER UP SEQUENCE
@@ -595,7 +588,7 @@ When using the SOM 3.3V output there is no need to consider its power sequence. 
 
 **Strap pins Booting**
 
-The RZG2L/V2L boost from different NVM or serial interfaces according to external resistors setting. The boot configuration is set by the three configuration signals (MD0, MD1, and MD2) and a selection signal (SD0\_DEV\_SEL) that select between eMMC and uSD (Mux on SOM). Below is a table describing the configuration modes.&#x20;
+The RZG2L/V2L boost from different NVM or serial interfaces according to external resistors setting. The boot configuration is set by the three configuration signals (MD0, MD1, and MD2) and a selection signal (SD0\_DEV\_SEL) that select between eMMC and uSD (Mux on SOM). Below is a table describing the configuration modes.
 
 | <p><strong>MD2</strong><br><br>J5001-41</p> | <p><strong>MD1</strong><br><br>J5001-5</p> | <p><strong>MD0</strong><br><br>J5001-3</p> | <p><strong>SD0_DEV_SEL</strong><br><br>J9-64</p> | **MODE**                     |
 | ------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------------ | ---------------------------- |
@@ -607,7 +600,6 @@ The RZG2L/V2L boost from different NVM or serial interfaces according to externa
 {% hint style="info" %}
 Note – There are setting resistors on the SOM, but they are not assembled in the default configuration. Setting is done on the carrier board.
 {% endhint %}
-
 
 #### I2C INTERFACES
 
@@ -640,11 +632,8 @@ Following is a diagram of the TOP VIEW of the RZG2L/V2L.
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf" %}
-
+{% file src="../../../.gitbook/assets/rzg2l-and-rzv2l-som-rev1.2-simplified-schematics.pdf" %}
 
 [RZG2L\_pinfunction\_List\_r1.1.xlsx](attachments/RZG2L_pinfunction_List_r1.1.xlsx)
 
 [Buy a Sample Now](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2l-som/)
-
-

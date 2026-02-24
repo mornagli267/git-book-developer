@@ -72,7 +72,6 @@ Before powering up the board for the first time it is recommended to select the 
 eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → off : eMMC , on : SD
 {% endhint %}
 
-
 ## Generating Yocto, Buildroot and Debian image
 
 **Buildroot/Debian**
@@ -124,7 +123,6 @@ The following shows how to set the switches on the boot source selector:
 Please Note: The black rectangle represents the switch position.
 {% endhint %}
 
-
 Once you set the switches, you can apply the following for booting from SD card:
 
 1. **Downloading the image**\
@@ -143,7 +141,7 @@ wget https://solid-run-images.sos-de-fra-1.exo.io/RZ/rzg2lc_build/20231122-63915
 xz -dc rzg2ul-solidrun-sd-debian-6391518.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync 
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 * **Note:** Plug a micro SD into your Linux PC, the following assumes that the USB-Disk / Micro-SD is added as /dev/sdX and all it’s partitions are unmounted.
 * **Note:** You can use the following command for writing to the SD in case you generated your own image:
 
@@ -161,7 +159,7 @@ $ sudo dd if=/your/image/path of=/dev/sdX bs=4k conv=fdatasync
 * **Note:** The system should turn on by default when the power is connected (without pressing the button).
 
 6. **Serial Connection**\
-   Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
+   Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.\
    Once you installed the necessary serial connection software, you should be able to see the following:
 
 ![image-20231127-133436.png](../../../.gitbook/assets/image-20231127-133436.png)
@@ -229,7 +227,6 @@ $ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2. Install the wpa\_supplicant package:
 
 ```
@@ -267,7 +264,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5. Make sure it works:
 
@@ -365,7 +361,7 @@ $ mmcli --modem=/your/modem/location --3gpp-register-in-operator=<network ID>
 $ mmcli --modem=/your/modem/location 
 ```
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 **GUI On Debian**
 
@@ -413,7 +409,6 @@ weston
 Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
 {% endhint %}
 
-
 For working with **GNOME** GUI on top of Xorg:
 
 1. Install Xorg.
@@ -446,7 +441,6 @@ $ sudo adduser username
 RZ/G2UL SOM **does not** support a Display port interface, so Debian GUI is not relevant for this product.
 {% endhint %}
 
-
 #### List Of Supported OS
 
 | **OS**                                                        |                                                                       |
@@ -463,19 +457,20 @@ RZ/G2UL SOM **does not** support a Display port interface, so Debian GUI is not 
 
 ## Documentation
 
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-REV.2.5-pcb.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Mechanical%20Drawings.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-Part-Assembly.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Gerbers.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/hummingboard-v2.5-Full-schematics.pdf" %}
+{% file src="../../../.gitbook/assets/HummingBoard-REV.2.5-pcb.zip" %}
 
+{% file src="../../../.gitbook/assets/HummingBoard Mechanical Drawings.zip" %}
 
-* Drag and drop to upload or \[browse for files]&#x20;
+{% file src="../../../.gitbook/assets/HummingBoard-Part-Assembly.zip" %}
+
+{% file src="../../../.gitbook/assets/HummingBoard Gerbers.zip" %}
+
+{% file src="../../../.gitbook/assets/hummingboard-v2.5-Full-schematics.pdf" %}
+
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-
 ## Related Articles <a href="#hummingboardripple-and-rz-g2ulsomquickstartguide-relatedarticles" id="hummingboardripple-and-rz-g2ulsomquickstartguide-relatedarticles"></a>
-

@@ -14,7 +14,6 @@
 No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the SolidRun IMX8 DXL series, which includes.
@@ -259,7 +258,6 @@ For more details see the CPU datasheet. [i.MX 8XLite Applications Processors for
 {% hint style="info" %}
 **Note – The voltage on VBUS can support 5V.**
 {% endhint %}
-
 
 #### RGMI
 
@@ -599,16 +597,14 @@ Please refer to the SolidRun website for more information regarding part numbers
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/IMX8XL%20SOM-v2_BoardAndModels.step" %}
-{% file src="../sbc-platform/attachments/IMX8DXL_SOM_V2X_3D_model.rar" %}
+{% file src="../../../.gitbook/assets/IMX8XL SOM-v2_BoardAndModels.step" %}
 
+{% file src="../../../.gitbook/assets/IMX8DXL_SOM_V2X_3D_model.rar" %}
 
-* Drag and drop to upload or \[browse for files]&#x20;
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-
 ## Related Articles <a href="#i.mx8dxlsomhardwareusermanual-relatedarticles" id="i.mx8dxlsomhardwareusermanual-relatedarticles"></a>
-

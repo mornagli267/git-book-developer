@@ -42,7 +42,6 @@ The guide will give a technical overview about the product and by the end of it 
 \[\*] **eMMC Speed Mode:** HighSpeed (up to 52MHz) Supported with RZ/G2LC SOM. For more detailed information about our SOM-RZ/G2LC series please visit this user manual : [RZ/G2LC SOM Hardware User Manual](../com-som/rz-g2lc-som-hardware-user-manual.md) .
 {% endhint %}
 
-
 #### Block Diagram
 
 The following figure describes the RZ/G2LC Block Diagram.
@@ -79,7 +78,6 @@ Before powering up the board for the first time it is recommended to select the 
 {% hint style="info" %}
 eMMC and SD connect to the same SDIO signals via MUX so we can’t have access to the SD & eMMC at the same time, select eMMC/SD by setting switch **S3**{6} → off : eMMC , on : SD
 {% endhint %}
-
 
 ## Generating Yocto, Buildroot and Debian image
 
@@ -131,7 +129,6 @@ The following shows how to set the switches on the boot source selector:
 {% hint style="info" %}
 Please Note: The black rectangle represents the switch position.
 {% endhint %}
-
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -237,7 +234,6 @@ $ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2. Install the wpa\_supplicant package:
 
 ```
@@ -275,7 +271,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5. Make sure it works:
 
@@ -373,7 +368,7 @@ $ mmcli --modem=/your/modem/location --3gpp-register-in-operator=<network ID>
 $ mmcli --modem=/your/modem/location 
 ```
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 **GUI On Debian**
 
@@ -421,7 +416,6 @@ weston
 Run the `weston` command from the **Dissplay Terminal** using keyboard (PHYSICAL TERMINAL not serial session or remote connection)
 {% endhint %}
 
-
 For working with **GNOME** GUI on top of Xorg:
 
 1. Install Xorg.
@@ -466,12 +460,12 @@ $ sudo adduser username
 
 ## Documentation
 
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-REV.2.5-pcb.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Mechanical%20Drawings.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard-Part-Assembly.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/HummingBoard%20Gerbers.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/hummingboard-v2.5-Full-schematics.pdf" %}
+{% file src="../../../.gitbook/assets/HummingBoard-REV.2.5-pcb.zip" %}
 
+{% file src="../../../.gitbook/assets/HummingBoard Mechanical Drawings.zip" %}
 
+{% file src="../../../.gitbook/assets/HummingBoard-Part-Assembly.zip" %}
 
+{% file src="../../../.gitbook/assets/HummingBoard Gerbers.zip" %}
 
+{% file src="../../../.gitbook/assets/hummingboard-v2.5-Full-schematics.pdf" %}

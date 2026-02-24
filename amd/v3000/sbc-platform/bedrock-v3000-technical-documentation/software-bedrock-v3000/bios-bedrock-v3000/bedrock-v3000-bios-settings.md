@@ -25,13 +25,13 @@
 ## How to check BIOS version
 
 * Enter BIOS settings
-* In **Main** tab look for **Project Version**![](../../../../../.gitbook/assets/image-20230829-115137.png)
+* In **Main** tab look for **Project Version**![](../../../../../../.gitbook/assets/image-20230829-115137.png)
 * The Project Version string has the format 0ASCSK 0.00.0**XX**\
   **XX** is the BIOS version
 
 ## Main screen
 
-![](../../../../../.gitbook/assets/image-20230803-144154.png)
+![](../../../../../../.gitbook/assets/image-20230803-144154.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 
@@ -45,7 +45,7 @@ options
 
 ## Power screen
 
-![](../../../../../.gitbook/assets/image-20230803-144115.png)
+![](../../../../../../.gitbook/assets/image-20230803-144115.png)
 
 * CPU Power Settings:
   * Default CPU Power Settings (default setting)
@@ -63,7 +63,7 @@ options
 
 ## Advanced screen
 
-![](../../../../../.gitbook/assets/image-20230803-144142.png)
+![](../../../../../../.gitbook/assets/image-20230803-144142.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 
@@ -159,7 +159,6 @@ Option ROM Dispatch Policy
 Changing Device(s) Option ROM dispatch policy may affect system’s ability to post and/or boot!
 {% endhint %}
 
-
 * Restore if Failure: Disabled / Enabled (if enabled and system fails to boot it will restore this and CSM screens settings to default)
 * Primary Video Ignore: Disabled / Enabled
 * On Board Network Controller: Disabled / Enabled
@@ -177,7 +176,6 @@ PCI Subsystem Settings
 **WARNING**:\
 Changing PCIE Device(s) settings may have unwanted side effects! System may HANG!
 {% endhint %}
-
 
 * Above 4G Decoding: Disabled / Enabled
 * Re-Size BAR Support: Disabled / Enabled
@@ -882,7 +880,7 @@ AMD CBS
 
 ## Chipset screen
 
-![](../../../../../.gitbook/assets/image-20230803-144219.png)
+![](../../../../../../.gitbook/assets/image-20230803-144219.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 
@@ -897,7 +895,7 @@ submenus
 
 ## Security screen
 
-![](../../../../../.gitbook/assets/image-20230803-144228.png)
+![](../../../../../../.gitbook/assets/image-20230803-144228.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 
@@ -912,7 +910,7 @@ submenus
 
 ## Boot screen
 
-![](../../../../../.gitbook/assets/image-20230803-144239.png)
+![](../../../../../../.gitbook/assets/image-20230803-144239.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 
@@ -935,7 +933,7 @@ options
 
 ## Save & Exit screen
 
-![](../../../../../.gitbook/assets/image-20230803-144247.png)
+![](../../../../../../.gitbook/assets/image-20230803-144247.png)
 
 ![](https://developer.resources.solid-run.com/wiki/images/icons/grey_arrow_down.png)
 

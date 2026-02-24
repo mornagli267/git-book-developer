@@ -1,4 +1,4 @@
-# Installing devices on SX 4M2
+# Installing Devices on SX-4M2
 
 ## Installing devices on SX 4M2
 
@@ -7,29 +7,23 @@ Below is a guide about the fastening mechanism of M.2 cards on SX 4M2:
 
 ## General description
 
-![](../../../.gitbook/assets/image-20230707-085806.png)
-
 The locking mechanism has two parts
 
-|          |                                                         |
-| -------- | ------------------------------------------------------- |
-| Standoff | ![](../../../.gitbook/assets/image-20230707-090045.png) |
-| Screw    | ![](../../../.gitbook/assets/image-20230707-090111.png) |
+|          |   |
+| -------- | - |
+| Standoff |   |
+| Screw    |   |
 
 SX 4M2 has multiple key-hole shaped openings for supporting different M.2 sizes.
 
-![](../../../.gitbook/assets/image-20230707-090419.png)
-
 ## Installation guide
 
-1. Insert standoff in keyhole, groove down.![](../../../.gitbook/assets/image-20230707-092055.png)
-2. Push standoff to the narrow end of the keyhole.![](../../../.gitbook/assets/image-20230707-092434.png) **Tip:** If pushing the standoff in place is difficult, consider using a 4mm hex socket for pushing the standoff in place.
-3. Install M.2 card in the M.2 slot and tighten the screw onto the standoff![](../../../.gitbook/assets/image-20230707-092858.png)
+1. Insert standoff in keyhole, groove down.
+2. Push standoff to the narrow end of the keyhole. **Tip:** If pushing the standoff in place is difficult, consider using a 4mm hex socket for pushing the standoff in place.
+3. Install M.2 card in the M.2 slot and tighten the screw onto the standoff
 
 #### Thermal coupling of SSD
 
 Most of the power is generated in the flash controller which in nearly all NVME SSDs is located close to the M.2 edge connector, on the component side. A 0.5mm/1mm 20x20 mm positioned as depicted would be effective in keeping the NVME SSD cool.
-
-![](../../../.gitbook/assets/image-20230728-073801.png)
 
 Additional such pad can be placed further away from the M.2 connector. This would extract heat from the flash chips.

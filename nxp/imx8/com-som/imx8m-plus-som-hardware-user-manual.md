@@ -14,7 +14,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the [SolidRun i.MX8M-PLUS series](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8m-plus-som/) , which includes;
@@ -85,7 +84,7 @@ Following are the features summary of the SOM. Notice that some of the features 
 * Power:
   * A single 5.0V input using B-t-B connector
   * A single 5.0V input using an On-SOM connector (Standalone operation)
-  * 3V output to support carrier’s digital interfaces&#x20;
+  * 3V output to support carrier’s digital interfaces
 
 ## Core System Components
 
@@ -168,7 +167,6 @@ The SOM supports two Giga Ethernet interfaces. Both interfaces are connected to 
 Please note that default SOM configuration includes only 1 PHY. For 2nd PHY option please contact us for details.
 {% endhint %}
 
-
 * ![](../../../.gitbook/assets/image-20211228-143312.png) RGMII interface.
 * 3 Ethernet interfaces for 1000BASE-T, 100BASE-TX, and10BASE-T.
 * Analog Device’s ADIN1300 PHY.
@@ -206,7 +204,6 @@ The i.MX8M-PLUS SOM supports a 4-Lanes MIPI CSI-2 interface. A 28 pins FPC conne
 {% hint style="warning" %}
 **Please note** To connect CSI channel 2 to the ISP core, both ISPs need to be activated.
 {% endhint %}
-
 
 #### LVDS Interface
 
@@ -276,11 +273,9 @@ The USB main features are:
 **Please note** The voltage on VBUS is limited to 3.3V.
 {% endhint %}
 
-
 {% hint style="warning" %}
 **Please note** There are no decupling capacitors on the SOM.
 {% endhint %}
-
 
 #### MIPI CSI
 
@@ -330,7 +325,6 @@ The Audio main features are:
 **Please note** SAI1 signals are not directly output to the B-t-B connector. It can be used as an ALT function using other signals.
 {% endhint %}
 
-
 #### HDMI
 
 The i.MX8M-PLUS supports HDMI interface. The following figure describes the HDMI interface.
@@ -366,7 +360,6 @@ The UART interfaces main features are:
 **Please note** UART interfaces are available as ALT functional signals of other signals.
 {% endhint %}
 
-
 #### eSPI
 
 The i.MX8M-PLUS SOM supports an eSPI interface. The following figure describes the eSPI interface.
@@ -380,7 +373,6 @@ The i.MX8M-PLUS SOM supports an eSPI interface. The following figure describes t
 {% hint style="warning" %}
 **Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
 {% endhint %}
-
 
 #### I2C
 
@@ -400,7 +392,6 @@ The I2C main features are:
 {% hint style="warning" %}
 **Please note** I2C interfaces are available as ALT functional signals of other signals.
 {% endhint %}
-
 
 #### uSD
 
@@ -502,7 +493,7 @@ The uSD supports the following features:
 | 77      | HDMI CON (J1)        |     | EARC\_N\_HPD               |     |   | 78      | HEADER (CON4)             | NA  | ETH1\_TRX0\_P (Second ETH)           |     |
 | 79      | HDMI CON (J1)        |     | EARC\_P\_UTIL              |     |   | 80      | HEADER (CON4)             | NA  | ETH1\_TRX0\_N (Second ETH)           |     |
 
-&#x20;J9
+J9
 
 |         |                                                    |     |                                       |     |   |         |                              |     |                                              |     |
 | ------- | -------------------------------------------------- | --- | ------------------------------------- | --- | - | ------- | ---------------------------- | --- | -------------------------------------------- | --- |
@@ -523,7 +514,7 @@ The uSD supports the following features:
 | 27      | ETH-LED                                            |     | LED1\_0/PHY\_CFG0                     |     |   | 28      | M.2\_GPS\_EN#                | NA  | M.2\_GPS\_EN#, GPIO1.IO\[07]                 | 3V3 |
 | 29      | HEADER (CON4)                                      |     | NC                                    |     |   | 30      | J9-59 (BT\_FW\_FLASH, J9-59) | NA  | NC                                           |     |
 | 31      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | I2C3\_SCL                             | 3V3 |   | 32      | MIKROBUS (J8-3)              | NA  | ECSPI2\_SS0, GPIO5.IO\[13]                   | 3V3 |
-| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | I2C3\_SDA                             | 3V3 |   | 34      | CSI-CON  (J19) or DSI-HDMI   | 3V3 | NC                                           |     |
+| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | I2C3\_SDA                             | 3V3 |   | 34      | CSI-CON (J19) or DSI-HDMI    | 3V3 | NC                                           |     |
 | 35      | GND                                                |     | GND                                   |     |   | 36      | GND                          |     | GND                                          |     |
 | 37      | USB\_HUB\_CH1\_PWR\_EN                             | 3V3 | USB\_HUB\_CH1\_PWR\_EN, GPIO1.IO\[14] | 3V3 |   | 38      | MICRO-SD                     | SD2 | SD2\_CLK, GPIO2.IO\[13]                      | SD2 |
 | 39      | J9-55 (BT\_FW\_FLASH, J9-55)                       | NA  | NC                                    |     |   | 40      | MICRO-SD                     | SD2 | SD2\_CMD, GPIO2.IO\[14]                      | SD2 |
@@ -602,11 +593,9 @@ A reset can be triggered by an external reset signal (Switch) or the internal Wa
 **Please note** Resetting the SOM also turn the power rails off including the 3.3V out.
 {% endhint %}
 
-
 {% hint style="warning" %}
 **Please note** Pressing the reset switch trigger a reset pulse in the PMIC
 {% endhint %}
-
 
 ## Integration Manual
 
@@ -678,7 +667,7 @@ JTAG interface is on the i.MX8M-PLUS SOM and is exposed as test pins on the prin
 
 ![](../../../.gitbook/assets/image-20211228-143547.png)
 
-TP-10 -> JTAG\_MOD.  TP-6 -> JTAG\_TDI. TP-7 -> JTAG\_TMS.
+TP-10 -> JTAG\_MOD. TP-6 -> JTAG\_TDI. TP-7 -> JTAG\_TMS.
 
 TP-8 -> JTAG\_TCK. TP-9 -> JTAG\_TDO.
 
@@ -702,13 +691,12 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/SOM%20IMX8M-Plus-rev1.2%20Mechanical.rar" %}
-{% file src="../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.1.pdf" %}
-{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Plus%20V1.pdf" %}
-{% file src="../sbc-platform/attachments/i.MX8M%20Plus%20SOM%20Simplified%20Schematics%20Rev%201.2.pdf" %}
+{% file src="../../../.gitbook/assets/SOM IMX8M-Plus-rev1.2 Mechanical.rar" %}
 
+{% file src="../../../.gitbook/assets/i.MX8M Plus SOM Simplified Schematics Rev 1.1.pdf" %}
 
+{% file src="../../../.gitbook/assets/Reliability prediction for MX8M Plus V1.pdf" %}
+
+{% file src="../../../.gitbook/assets/i.MX8M Plus SOM Simplified Schematics Rev 1.2.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=nxp-i-mx8m-plus&_ga=2.77455388.884515332.1641198699-2012112798.1622706355)
-
-

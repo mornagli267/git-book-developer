@@ -77,7 +77,6 @@ dd if=<image_name.img> of=/dev/sdx bs=1M status=progress; sync
 NOTE: check the /dev/sdx device you need using the `lsblk` command
 {% endhint %}
 
-
 ## Booting to OS
 
 Insert the USB stick to the device and power it on.
@@ -87,7 +86,6 @@ Wait for the device to boot.
 {% hint style="info" %}
 Very first boot might take a while due to DDR training
 {% endhint %}
-
 
 ## SFP Modules
 
@@ -113,11 +111,9 @@ For some SO-DIMM modules that work on SolidRun hardware platforms, please refer 
 (1) HoneyComb AMD V3000 by default is headless, installation will require additional hardware to install Windows using a display adapter, or additional kernel parameters to enable ttyS4 on linux.
 {% endhint %}
 
-
 {% hint style="info" %}
 (2) As of JUL 7 2024 (FreeBSD 14.01) the AMD XGBE driver on **FreeBSD** does not fully support SFP, later versions will eventually have the driver fixed.
 {% endhint %}
-
 
 ## Documentation
 
@@ -126,8 +122,4 @@ For some SO-DIMM modules that work on SolidRun hardware platforms, please refer 
 | Schematics and Board Layout | [AMD-Honeycomb.pdf](attachments/AMD-Honeycomb.pdf) | 19-JUN-2024 |
 | Mechanical files            | To be added                                        |             |
 
-
-
-
-{% file src="attachments/AMD-Honeycomb.pdf" %}
-
+{% file src="../../../.gitbook/assets/AMD-Honeycomb.pdf" %}

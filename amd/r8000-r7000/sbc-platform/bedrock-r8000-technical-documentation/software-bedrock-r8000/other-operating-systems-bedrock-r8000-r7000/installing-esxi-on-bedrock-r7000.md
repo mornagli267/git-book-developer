@@ -44,19 +44,16 @@ You need to choose your USB bootable device to start the installation.
 
 * Wait until the installer will finishe setting up and prompt you to continue the installation ,(the last part of the loading could take some time, this is fine).
 * Press Enter
-
-![](../../../../../.gitbook/assets/image-20231217-151103.png)
-
-* Accept user agreement, press F11![](../../../../../.gitbook/assets/image-20231217-151246.png)
-* Choose installation disk, press Enter![](../../../../../.gitbook/assets/image-20231217-153144.png)
-* Choose a keyboard layout, press Enter![](../../../../../.gitbook/assets/image-20231217-154235.png)
-* Choose root password , choose a password and pres Enter![](../../../../../.gitbook/assets/image-20231217-154539.png)
-* Confirm destructive action![](../../../../../.gitbook/assets/image-20231217-155134.png)
-* Wait until the installation finishes![](../../../../../.gitbook/assets/image-20231217-155213.png)
-* Remove the installlation media and reboot the device![](../../../../../.gitbook/assets/image-20231217-161213.png)
+* Accept user agreement, press F11
+* Choose installation disk, press Enter
+* Choose a keyboard layout, press Enter
+* Choose root password , choose a password and pres Enter
+* Confirm destructive action
+* Wait until the installation finishes
+* Remove the installlation media and reboot the device
 * System will reboot, wait for it to power on
-* After system boots you will se the following screen![](../../../../../.gitbook/assets/image-20231217-161430.png) You can connect using any of the methods shown in the screen.
+* After system boots you will se the following screen You can connect using any of the methods shown in the screen.
 * Login to your account
   * username: root
-  * Password: \*password you choose during installation\*![](../../../../../.gitbook/assets/image-20231217-161731.png)
-* Thats it![](../../../../../.gitbook/assets/image-20231217-161834.png)
+  * Password: \*password you choose during installation\*
+* Thats it

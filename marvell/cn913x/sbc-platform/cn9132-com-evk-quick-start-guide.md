@@ -38,11 +38,9 @@ The guide will give a technical overview about the product and by the end of it 
 (\*) Configurable [SERDESs](../com-som/cn9132-com-hardware-user-manual.md#serdes-muxing) based on Marvell CN913x processor specifications.
 {% endhint %}
 
-
 {% hint style="info" %}
-Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](/marvell/cn913x/com-som/cn9132-com-hardware-user-manual.md) .
+Supported with CN9132 COM. For more detailed information about our CN9132 COM series please visit this user manual : [CN9132 COM Hardware User Manual](../com-som/cn9132-com-hardware-user-manual.md) .
 {% endhint %}
-
 
 ## **Block Diagram**
 
@@ -85,7 +83,6 @@ Here is what you will need to power up the board:
 For Applications using CN9130 with few additional interfaces, a power supply of 12V@2.5A is sufficient.
 {% endhint %}
 
-
 ## Recommended Cables
 
 The following is a list of industry-standard cables, sorted by type, with the necessary compliance requirements that have been proven to work well with the CN913x product family.
@@ -98,7 +95,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [CN913x COM Boot Select](/marvell/cn913x/sbc-platform/cn913x-other-articles/cn913x-com-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [CN913x COM Boot Select](cn913x-other-articles/cn913x-com-boot-select.md) .
 
 ## Booting from an SPI card
 
@@ -119,7 +116,6 @@ Once you set the switches, you can apply the following for booting from an **SPI
 **Please Note:** The **SPI** including U-Boot by default.
 {% endhint %}
 
-
 **1. Downloading the Ubuntu 20.04 image**
 
 ```
@@ -136,12 +132,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc cn9130-cex7_config_0_ubuntu-4cbe176.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -153,7 +148,7 @@ Connect your power adapter to the DC jack, and then connect the adapter to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 In u-boot prompt, to continue booting from SD card, run the following:
 
@@ -168,7 +163,6 @@ boot
 {% hint style="warning" %}
 **Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
 {% endhint %}
-
 
 Once you installed the necessary serial connection software and ran the above commands , you should be able to see the following:
 
@@ -197,7 +191,7 @@ Please see below an example of resizing the filesystem :
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](/marvell/a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](../../a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
 
 ## SIM Card Slot
 
@@ -207,18 +201,15 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 **Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
 {% endhint %}
 
-
 ## Build from source
 
-* CN913x Build - [CN913x Build - Script](/marvell/cn913x/sbc-platform/cn913x-software/cn913x-build.md)
-* U-Boot, Atf and Mv-ddr-marvel Build - [CN913x u-boot, atf and mv-ddr-marvell - Self Build](/marvell/cn913x/sbc-platform/cn913x-other-articles/cn9132-com-on-honeycomb-lx2.md)
+* CN913x Build - [CN913x Build - Script](cn913x-software/cn913x-build.md)
+* U-Boot, Atf and Mv-ddr-marvel Build - [CN913x u-boot, atf and mv-ddr-marvell - Self Build](cn913x-other-articles/cn9132-com-on-honeycomb-lx2.md)
 
 ## Documentation
 
-{% file src="attachments/ClearFog%20CX%20CN9K%20Schematics.pdf" %}
-{% file src="attachments/ClearFog%20CN9-v1.2-Assy.zip" %}
-{% file src="attachments/ClearFog%20CX%20CN9K%203D.zip" %}
+{% file src="../../../.gitbook/assets/ClearFog CX CN9K Schematics.pdf" %}
 
+{% file src="../../../.gitbook/assets/ClearFog CN9-v1.2-Assy.zip" %}
 
-
-
+{% file src="../../../.gitbook/assets/ClearFog CX CN9K 3D.zip" %}

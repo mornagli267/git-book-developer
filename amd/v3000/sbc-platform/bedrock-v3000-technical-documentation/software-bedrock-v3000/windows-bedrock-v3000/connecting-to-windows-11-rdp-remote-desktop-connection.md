@@ -24,14 +24,13 @@ This document describesthe RDP connection process on Bedrock V3000.
 For easier identifrication you can check the label on the back side of the Bedrock to check the mac units addresses.
 {% endhint %}
 
-
 #### Method 1
 
 * Connect in the Bedrock Unit to your router and wait for about 30 seconds for it to compeletely boot, get an IP and enable the RDP functionality.
 * Open your routers web interface
 * Find the active DHCP leases and see what is the IP of your unit\
   example: (your routers web interface will probably look different)\
-  ![image-20240417-135558.png](../../../../../.gitbook/assets/image-20240417-135558.png)
+  ![image-20240417-135558.png](../../../../../../.gitbook/assets/image-20240417-135558.png)
 
 #### Method 2
 
@@ -63,22 +62,21 @@ DESKTOP-S57BJI2.lan (192.168.17.182) at d0:63:b4:05:b3:63 [ether] on enxb04f13d1
 password: root
 {% endhint %}
 
-
 #### Windows
 
 From another Windows device:
 
 * search for remote desktop connection in your search bar.
 
-![image-20240417-140405.png](../../../../../.gitbook/assets/image-20240417-140405.png)
+![image-20240417-140405.png](../../../../../../.gitbook/assets/image-20240417-140405.png)
 
 * Open the app and type the IP you found in the previous step
 
-![image-20240417-140604.png](../../../../../.gitbook/assets/image-20240417-140604.png)
+![image-20240417-140604.png](../../../../../../.gitbook/assets/image-20240417-140604.png)
 
 * Enter your devices credentials and click OK
 
-![image-20240417-141014.png](../../../../../.gitbook/assets/image-20240417-141014.png)
+![image-20240417-141014.png](../../../../../../.gitbook/assets/image-20240417-141014.png)
 
 #### Linux
 
@@ -92,9 +90,9 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 
 * Open remmina
 
-![image-20240417-141838.png](../../../../../.gitbook/assets/image-20240417-141838.png)
+![image-20240417-141838.png](../../../../../../.gitbook/assets/image-20240417-141838.png)
 
-* Click on a new connection in the upper left corner![image-20240417-142005.png](../../../../../.gitbook/assets/image-20240417-142005.png)
+* Click on a new connection in the upper left corner![image-20240417-142005.png](../../../../../../.gitbook/assets/image-20240417-142005.png)
 * In the server and domain enter the IP address you found in the previous step
 * Enter the username and password
 * Click save and connect
@@ -103,4 +101,3 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 Note:\
 You can also cnhange the connection connection name in the upper part. You can also share a folder with the windows machine you are connecting to.
 {% endhint %}
-

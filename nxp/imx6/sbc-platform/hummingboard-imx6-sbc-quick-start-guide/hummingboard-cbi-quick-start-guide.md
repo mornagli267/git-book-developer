@@ -47,9 +47,8 @@ The guide will give a technical overview about the product and by the end of it 
 |                      | [Buy Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355) |
 
 {% hint style="info" %}
-Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](/nxp/imx6/com-som/imx6-som-hardware-user-manual.md) .
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../../com-som/imx6-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 #### **Block Diagram**
 
@@ -91,7 +90,6 @@ For Booting from an SD card, jumpers need to be setup at J5005 as follows:
 Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
 {% endhint %}
 
-
 Once you setup the jumpers, you can apply the following for booting from an SD card.
 
 **1. Downloading the Debian image**
@@ -112,12 +110,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-imx6-debian-bullseye-20220712-cli-sdhc.img.xz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -129,14 +126,13 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial connection**
 
-Please connect the UART cable to the pins on connector J25 as shown in the below picture, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please connect the UART cable to the pins on connector J25 as shown in the below picture, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 ![](../../../../.gitbook/assets/image-20211114-100743.png)
 
 {% hint style="info" %}
 For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
 {% endhint %}
-
 
 Once you installed the necessary serial connection software, please run the following:
 
@@ -207,7 +203,6 @@ make
 Before you run the above, please install some helping commands by running: `apt-get install make gcc git`
 {% endhint %}
 
-
 2\. Copy the output of the exec file bu running:
 
 ```
@@ -237,7 +232,7 @@ apt-get upgrade
 reboot
 ```
 
-* For more detailed information, please refer to [i.MX6 Debian](/nxp/imx6/sbc-platform/imx6-software/imx6-debian.md) .
+* For more detailed information, please refer to [i.MX6 Debian](../imx6-software/imx6-debian.md) .
 
 **Wi-fi**
 
@@ -254,7 +249,6 @@ ifconfig wlan0 up
 {% hint style="info" %}
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
-
 
 2\. Install the wpa\_supplicant package:
 
@@ -294,7 +288,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -355,7 +348,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md).
+* For some cellular modules to be connected, please refer to [Cellular Modules](../imx6-other-articles/cellular-modules.md).
 
 #### GPIO pins Control
 
@@ -363,33 +356,34 @@ In order to be able to control the GPIO pins, please refer to [HummingBoard Edge
 
 ## CanBUS and RS485 Test
 
-For testing your CANBus and RS-485 interfaces, please refer to [HummingBoard CBi RS485 and CAN bus](/nxp/imx6/sbc-platform/imx6-other-articles/hummingboard-cbi-rs485-and-can-bus.md) .
+For testing your CANBus and RS-485 interfaces, please refer to [HummingBoard CBi RS485 and CAN bus](../imx6-other-articles/hummingboard-cbi-rs485-and-can-bus.md) .
 
 ## List Of Supported OS
 
-| **OS**                                                     |                                                                                         |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](/nxp/imx6/sbc-platform/imx6-software/imx6-debian.md)    |
-| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](/nxp/imx6/sbc-platform/imx6-software/yocto-for-imx6.md) |
-| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](/nxp/imx6/sbc-platform/imx6-software/imx6-archlinux.md) |
-| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](/nxp/imx6/sbc-platform/imx6-software/xbian-for-imx6.md) |
+| **OS**                                                     |                                                       |
+| ---------------------------------------------------------- | ----------------------------------------------------- |
+| ![](../../../../.gitbook/assets/image-20211223-104106.png) | [i.MX6 Debian](../imx6-software/imx6-debian.md)       |
+| ![](../../../../.gitbook/assets/image-20211223-104124.png) | [Yocto for i.MX6](../imx6-software/yocto-for-imx6.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104144.png) | [i.MX6 Archlinux](../imx6-software/imx6-archlinux.md) |
+| ![](../../../../.gitbook/assets/image-20211223-104259.png) | [XBian for i.MX6](../imx6-software/xbian-for-imx6.md) |
 
 ## Build U-Boot & Kernel from sources
 
-* Build a Linux kernel -  [i.MX6 Kernel](/nxp/imx6/sbc-platform/imx6-software/imx6-kernel.md)
-* Build a U-Boot - [i.MX6 U-Boot](/nxp/imx6/sbc-platform/imx6-software/imx6-u-boot.md)
+* Build a Linux kernel - [i.MX6 Kernel](../imx6-software/imx6-kernel.md)
+* Build a U-Boot - [i.MX6 U-Boot](../imx6-software/imx6-u-boot.md)
 
 ## Documentation
 
-{% file src="attachments/HummingBoard2%20Assembly-Files.zip" %}
-{% file src="attachments/HummingBoard2%20Enclosure-Files.zip" %}
-{% file src="attachments/HummingBoard2-v1.4-layout_pcb.zip" %}
-{% file src="attachments/HummingBoard2-gerber-rev1.2.zip" %}
-{% file src="attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip" %}
-{% file src="attachments/HummingBoard2%20Schematics.pdf" %}
+{% file src="../../../../.gitbook/assets/HummingBoard2 Assembly-Files.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard2 Enclosure-Files.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard2-v1.4-layout_pcb.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2-gerber-rev1.2.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 PCB parts assembly Rev 1.4.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 Schematics.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/hummingboard-cbi/?_ga=2.88522648.2016484779.1641802897-2012112798.1622706355)
-
-

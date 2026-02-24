@@ -15,7 +15,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This document is intended for hardware engineers that are willing to integrate [CN913x COM express type 7](https://www.solid-run.com/embedded-networking/marvell-octeon-tx2-family/cex7-cn913x-com/) module from SolidRun ltd.
@@ -609,7 +608,7 @@ Following are the COM express type 7 AB and CD pin mapping –
 
 **Q:** Are the I2C signals 3.3v?
 
-**A:** Per the COM express specifications, all GPIO and control signals are in the 3.3v domain. Please refer to the AB and CD header description on the pull-up values of those signals. &#x20;
+**A:** Per the COM express specifications, all GPIO and control signals are in the 3.3v domain. Please refer to the AB and CD header description on the pull-up values of those signals.
 
 **Q:** Can the SERDES lanes be configured differently than the COM express standard?
 
@@ -617,11 +616,8 @@ Following are the COM express type 7 AB and CD pin mapping –
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/CN9132%20COM%203D-files.zip" %}
-{% file src="../sbc-platform/attachments/CN9132%20COM_1.1-simplified-schematics.pdf" %}
+{% file src="../../../.gitbook/assets/CN9132 COM 3D-files.zip" %}
 
-
+{% file src="../../../.gitbook/assets/CN9132 COM_1.1-simplified-schematics.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=CEx7+CN9132\&post_type=product)
-
-

@@ -1,6 +1,6 @@
-# Bedrock R7000 mechanical drawing
+# Bedrock R7000 Mechanical Drawing
 
-\[![](../../../.gitbook/assets/image-20230810-163146.png)
+\[
 
 ]\(https://drive.google.com/file/d/1Zc-UxcrVR4p3tVFkMaHvP7\_pF-VoOrOM/view?usp=drive\_link)
 

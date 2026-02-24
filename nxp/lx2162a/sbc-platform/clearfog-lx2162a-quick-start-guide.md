@@ -45,7 +45,6 @@ The following figure describes the ClearFog LX2162A Block Diagram.
 * Serdes-2 lanes are routed to 8x 1GbE RJ-45 ports trough Marvell Octal PHY \*or 6x 1GbE RJ-45 ports trough Marvell Octal PHY and 2 mPCIe x1 Gen 3.0
 {% endhint %}
 
-
 ## Visual features overview
 
 Please see below the features overview of the connector side of the ClearFog LX2162A
@@ -108,7 +107,7 @@ Once you set the switches, you can apply the following for booting from an SD ca
 
 Download a pre-built image from [images.solid-run.com](https://images.solid-run.com/LX2k/lx2160a_build)
 
-Those images are organised by branch, build date and commit ID from [github.com/SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)  project that you can clone and build by yourself. Image filenames are generated with boot media, serdes protocol, module and board names.
+Those images are organised by branch, build date and commit ID from [github.com/SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build) project that you can clone and build by yourself. Image filenames are generated with boot media, serdes protocol, module and board names.
 
 For example -
 
@@ -131,7 +130,6 @@ xz -dc lx2160a_....img.xz | dd of=/dev/sdX bs=4M conv=fsync
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 1. SD card insertion\
    Please Insert the SD card into your device.
@@ -167,13 +165,11 @@ mmc write 0xa4000000 0 0xd2000
 After programming to eMMC **and** removing microSD, the Boot Select switch must be changed to “eMMC” as shown in the table above.
 {% endhint %}
 
-
 ![](<../../../.gitbook/assets/image-20220112-165616 (2).png>)
 
 {% hint style="warning" %}
 **Please Note:** The above commands should be run only once (in the fist boot), or when a new image is to be used.
 {% endhint %}
-
 
 Boot the machine by running ‘**boot**’ in u-boot.
 
@@ -188,7 +184,6 @@ Once you installed the necessary serial connection software and ran the above co
 {% hint style="warning" %}
 **Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
 {% endhint %}
-
 
 1. Final stages
 
@@ -307,33 +302,29 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 
 {% hint style="warning" %}
 **Please note**
+
 * In the same way, can install Debian or another Linux arm64 distribution.
 {% endhint %}
 
-
 {% hint style="warning" %}
 **Please note**
-* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
-* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
-{% endhint %}
 
+* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
+* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or root=/dev/sdx .
+{% endhint %}
 
 ## Build From Source
 
 * You can build your own image using the script in here – [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)
 
 {% hint style="success" %}
-* Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
+- Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
 {% endhint %}
-
 
 ## Documentation
 
-* ClearFog-LX2162A_Rev1.1.zip?api=v2 — _file not found in repository_
-* ClearFog-LX2162A_Mech_Rev1.1.zip?api=v2 — _file not found in repository_
-
-
-
+* ClearFog-LX2162A\_Rev1.1.zip?api=v2 — _file not found in repository_
+* ClearFog-LX2162A\_Mech\_Rev1.1.zip?api=v2 — _file not found in repository_
 * Page:[LX2162A SOM vs LX2160A COM Differences](lx2162a-other-articles/lx2162a-som-vs-lx2160a-com-differences.md)
   * [lx2160a-com](https://solidrun.atlassian.net/wiki/label/lx2160a-com)
   * [lx2162a-som](https://solidrun.atlassian.net/wiki/label/lx2162a-som)
@@ -348,10 +339,10 @@ Related pages
 
 [LX2162A Software](lx2162a-software.md)LX2160A Software[Developer Center](https://developer.resources.solid-run.com/wiki/spaces/developer)
 
+{% file src="../../../.gitbook/assets/ClearFog LX2162 STEP.zip" %}
 
-{% file src="attachments/ClearFog%20LX2162%20STEP.zip" %}
-{% file src="attachments/PRELIMINARY%20ClearFog-LX2162A%20Simplified%20Schematics%20Rev1.0.pdf" %}
-{% file src="attachments/ClearFog-LX2162A_Rev1.1.zip" %}
-{% file src="attachments/ClearFog-LX2162A_Mech_Rev1.1.zip" %}
+{% file src="../../../.gitbook/assets/PRELIMINARY ClearFog-LX2162A Simplified Schematics Rev1.0.pdf" %}
 
+{% file src="../../../.gitbook/assets/ClearFog-LX2162A_Rev1.1.zip" %}
 
+{% file src="../../../.gitbook/assets/ClearFog-LX2162A_Mech_Rev1.1.zip" %}

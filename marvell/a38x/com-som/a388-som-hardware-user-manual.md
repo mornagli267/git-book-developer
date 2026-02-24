@@ -35,10 +35,10 @@ The A388 SOM has one global ground domain, four power input domains and one powe
 
 {% hint style="info" %}
 **Notes:**
+
 1. Power consumption of 7.5W on B2B V MAIN domain assuming all devices are assembled and all functions are operating at full utilization.
 2. The A388 SOM has one B2B V 1V8 output power domain which is used to power the High Speed SERDES PHYs as well as the GigE PHY. In addition to those loads, the B2B 1V8 source can provide additional 0.5A to loads on carrier board.
 {% endhint %}
-
 
 In addition to the power domain signals, there are other signals which are used for power management and power-up/down sequencing:
 
@@ -137,7 +137,6 @@ A GigE PHY {Marvell 88E1512) is integrated into the A388 SOM and is connected to
 **Note** Based on default PHY device driver programming of PHY configuration registers.
 {% endhint %}
 
-
 Following is one way of connecting the B2B GE1 LEDx K signals to the actual LED devices. Notice that the LED devices must have a high enough Vf {Forward voltage) to ensure no light is emitted when the B2B GE1 LEDx K signals are high {approximately 1.8v).
 
 ![](../../../.gitbook/assets/image-20211107-102142.png)
@@ -206,15 +205,16 @@ We run our boards at 1600MHz. Industrial devices are limited to 1333MHz. DRAM ru
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/sr-a38x-microsom-rev1.0-sample_board_assembly.pdf" %}
-{% file src="../sbc-platform/attachments/a38x-microsom-schematics-simplified-rev2.1.pdf" %}
-{% file src="../sbc-platform/attachments/a38x-microsom-pin-muxing.xlsx" %}
-{% file src="../sbc-platform/attachments/a38x-microsom-step-rev2.0.zip" %}
-{% file src="../sbc-platform/attachments/a38x-microsom-3d-design-rev2.0.pdf" %}
-{% file src="../sbc-platform/attachments/a38x-microsom-dxf-rev2.0.zip" %}
+{% file src="../../../.gitbook/assets/sr-a38x-microsom-rev1.0-sample_board_assembly.pdf" %}
 
+{% file src="../../../.gitbook/assets/a38x-microsom-schematics-simplified-rev2.1 (1).pdf" %}
 
+{% file src="../../../.gitbook/assets/a38x-microsom-pin-muxing.xlsx" %}
+
+{% file src="../../../.gitbook/assets/a38x-microsom-step-rev2.0.zip" %}
+
+{% file src="../../../.gitbook/assets/a38x-microsom-3d-design-rev2.0.pdf" %}
+
+{% file src="../../../.gitbook/assets/a38x-microsom-dxf-rev2.0.zip" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=marvell-a388&_ga=2.85367450.2016484779.1641802897-2012112798.1622706355)
-
-

@@ -36,7 +36,6 @@ The guide will give a technical overview about the product and by the end of it 
 (\*) 802.3bt supported only on 4 x RJ45 ports (90W each), 802.3at/af is supported on all 8 ports (30W each).
 {% endhint %}
 
-
 ## Block Diagram
 
 The following figure describes the **ClearFog GTR L8** Block Diagram.
@@ -67,10 +66,10 @@ Here is what you will need to power up the board:
 
 {% hint style="info" %}
 The ClearFog GTR L8 has a wide range of 10V-54V input power supplies:
+
 * 10V – 54V when not enabling PoE PSE
 * 48V – 54V when enabling PoE PSE
 {% endhint %}
-
 
 ## Recommended Cables
 
@@ -84,7 +83,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GTR Boot Select](/marvell/a38x/sbc-platform/a388-other-articles/clearfog-gtr-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GTR Boot Select](a388-other-articles/clearfog-gtr-boot-select.md) .
 
 ## Booting from an eMMC card
 
@@ -102,7 +101,6 @@ The following shows how to set the switches on the boot source selector:
 {% hint style="success" %}
 The ClearFog GTR including [U-Boot](https://solid-run-images.sos-de-fra-1.exo.io/A38X/U-Boot/u-boot-clearfog-gtr-mmc.kwb) into eMMC by default. **Note:** Here can find the U-Boot Binaries - [SolidRun Images](https://images.solid-run.com/A38X/U-Boot)
 {% endhint %}
-
 
 Once you set the switches, you can apply the following for booting from an eMMC card.
 
@@ -122,12 +120,11 @@ Use the following commands for writing the image to an USB Disk:
 xz -dc sr-a38x-debian-buster-20200114.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a USB Disk into your Linux PC, the following assumes that the USB is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. USB Disk insertion**
 
@@ -139,7 +136,7 @@ Connect your power adapter to the DC jack, and then connect the adapter to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -151,7 +148,7 @@ Once you installed the necessary serial connection software, you should be able 
 
 ## SFP Modules
 
-For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](/marvell/a38x/sbc-platform/a388-other-articles/sfp-modules.md) .
+For some SFP modules that work on SolidRun networking hardware platforms, please refer to [SFP Modules](a388-other-articles/sfp-modules.md) .
 
 ## SIM Card Slot
 
@@ -159,22 +156,20 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## List Of Supported OS
 
-| **OS**                                                  |                                                                                        |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| ![](../../../.gitbook/assets/image-20211223-141905.png) | [A38X Buildroot](/marvell/a38x/sbc-platform/a388-software/a388-buildroot.md) |
-| ![](../../../.gitbook/assets/image-20211223-141939.png) | [Yocto](/marvell/a38x/sbc-platform/a388-software/yocto-for-clearfog-platforms.md)          |
-| ![](../../../.gitbook/assets/image-20220118-112849.png) | [Debian](https://images.solid-run.com/A38X/Debian)                                     |
-| ![](../../../.gitbook/assets/image-20220119-065742.png) | [OpenWrt](/marvell/a38x/sbc-platform/a388-software/a388-openwrt.md)        |
+| **OS**                                                  |                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------ |
+| ![](../../../.gitbook/assets/image-20211223-141905.png) | [A38X Buildroot](a388-software/a388-buildroot.md)      |
+| ![](../../../.gitbook/assets/image-20211223-141939.png) | [Yocto](a388-software/yocto-for-clearfog-platforms.md) |
+| ![](../../../.gitbook/assets/image-20220118-112849.png) | [Debian](https://images.solid-run.com/A38X/Debian)     |
+| ![](../../../.gitbook/assets/image-20220119-065742.png) | [OpenWrt](a388-software/a388-openwrt.md)               |
 
 ## Build U-Boot & kernel from sources
 
-* U-Boot Build - [A38X U-Boot](/marvell/a38x/sbc-platform/a388-software/a38x-u-boot.md)
-* Kernel Build - [A38X Kernel](/marvell/a38x/sbc-platform/a388-software/a388-kernel.md)
+* U-Boot Build - [A38X U-Boot](a388-software/a38x-u-boot.md)
+* Kernel Build - [A38X Kernel](a388-software/a388-kernel.md)
 
 ## Documentation
 
-{% file src="attachments/ClearFog%20GTR%20L8%20Mechanics%20Production%20Files.rar" %}
-{% file src="attachments/ClearFog%20GTR%20L8%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
+{% file src="../../../.gitbook/assets/ClearFog GTR L8 Mechanics Production Files.rar" %}
 
-
-
+{% file src="../../../.gitbook/assets/ClearFog GTR L8 Documentation Board & Assembly Models.rar" %}

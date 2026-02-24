@@ -1,7 +1,5 @@
 # Bedrock R8000 | R7000 Certificates
 
-![certificates.png](../../../.gitbook/assets/certificates.png)
-
 [Bedrock%20R7000%20CE-FCC%20Certificate.pdf](attachments/Bedrock%20R7000%20CE-FCC%20Certificate.pdf)
 
 ## See also

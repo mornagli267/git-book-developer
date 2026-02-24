@@ -12,7 +12,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the SolidRun [SOM i.MX8M series](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8-som/), which includes:
@@ -158,7 +157,6 @@ The i.MX8M SOM support varieties of memory interfaces for booting and data stora
 **Please Note** All boot configuration signals are available on the SOM connector.
 {% endhint %}
 
-
 #### 10/100/1000 MBPS Ethernet PHY
 
 The Ethernet PHY is based on the Qualcomm / Atheros AR8031. The following figure describes the Giga Ethernet interface.
@@ -205,7 +203,6 @@ The i.MX8 SOM uses U-BLOX’s NINA-B111 module. The module is based on Nordic’
 {% hint style="warning" %}
 **Please note** The Silex M.2 module doesn’t support BT over UART.
 {% endhint %}
-
 
 #### MIPI CSI-2 CAMERA INTERFACE
 
@@ -264,7 +261,7 @@ The USB main features are:
 * The TX signals are DC coupled by capacitors.
 * Complies with USB specification rev 3.0 (xHCI compatible).
 * USB dual-role operation and can be configured as host or device.
-* &#x20;Super-speed (5 Gbit/s), high-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations.
+* Super-speed (5 Gbit/s), high-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations.
 * Supports four programmable, bidirectional USB endpoints.
 * OTG (on-the-go) 2.0 compliant, which includes both device and host capability. Super-speed operation is not supported when OTG is enabled.
 * The USB 3.0 module operates in following modes:
@@ -322,7 +319,6 @@ For more details check the i.MX8M datasheet and AN.
 **Please note** SAI1 signals are used as boot configuration during POR.
 {% endhint %}
 
-
 #### HDMI
 
 The i.MX8M supports the HDMI interface including the signal termination. The following figure describes the HDMI interface :
@@ -341,7 +337,6 @@ For more details check the i.MX8 datasheet.
 {% hint style="warning" %}
 **Please note** To support DPI, the pull-Up termination resistors are not assembled.
 {% endhint %}
-
 
 #### UART
 
@@ -381,7 +376,6 @@ The i.MX8 SOM supports an eSPI interface. The following figure describes the eSP
 {% hint style="warning" %}
 **Please note** eSPI channel 1 is not available as default configuration. The signals supporting channel 1 are available as GPIO.
 {% endhint %}
-
 
 #### I2C
 
@@ -600,7 +594,6 @@ The following table describes how the booting signals need to be set to support 
 NAND booting is not an option on the i.MX8M SOM. 2. SPI NOR is an option on the carrier board (Not on the SOM). 3. The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
 {% endhint %}
 
-
 #### I2C Interfaces
 
 The i.MX8 SOM uses I2C1 interface for its internal configurations. The following table describes the address mapping.
@@ -666,8 +659,8 @@ Refer to SolidRun HummingBoard and CuBox Pulse design and layout, where there ar
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/imx8m-simplified-schematics-v2.pdf" %}
-{% file src="../sbc-platform/attachments/sr-imx8m-heatsink-rev1.0.zip" %}
-{% file src="../sbc-platform/attachments/i.MX8M%20SOM%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
+{% file src="../../../.gitbook/assets/imx8m-simplified-schematics-v2.pdf" %}
 
+{% file src="../../../.gitbook/assets/sr-imx8m-heatsink-rev1.0.zip" %}
 
+{% file src="../../../.gitbook/assets/i.MX8M SOM Documentation Board & Assembly Models.rar" %}

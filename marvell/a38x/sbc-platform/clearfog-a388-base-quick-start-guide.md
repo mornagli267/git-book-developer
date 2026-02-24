@@ -53,11 +53,9 @@ For CN9130 SOM Software, please refrer to the following link:[CN913x Build](../.
 (\*\*\*) Assembly option on the SOM
 {% endhint %}
 
-
 {% hint style="info" %}
 Supported with A388 SOM. For more detailed information about our A388 SOM series please visit this user manual : [A388 SOM Hardware User Manual](../com-som/a388-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 ## **Block Diagram**
 
@@ -138,7 +136,6 @@ xz -dc sr-a38x-debian-bullseye-20220427.img.xz | dd of=/dev/sdX bs=4k conv=fdata
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
 
-
 **3. U-Boot installation**
 
 ```
@@ -189,7 +186,6 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 **Please Note** If your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
 {% endhint %}
 
-
 ## List Of Supported OS
 
 | **OS**                                                  |                                                                               |
@@ -206,19 +202,24 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 
 ## Documentation
 
-{% file src="attachments/ClearFog%20Base%20Rev%201.1%20vs%20Rev%201.2.pdf" %}
-{% file src="attachments/ClearFog-Base-Mechanical%20Files.zip" %}
-{% file src="attachments/ClearFog%20Base%20Enclosure%20Files.zip" %}
-{% file src="attachments/ClearFog%20Base%20BOM%20rev%201.2.4.xlsx" %}
-{% file src="attachments/clearfog_base-rev.1.2-gerber.zip" %}
-{% file src="attachments/clearfog_base-rev1.1-MTBF.pdf" %}
-{% file src="attachments/clearfog_base-rev1.2-pcb-layout.zip" %}
-{% file src="attachments/ClearFog-Base-Schematics.zip" %}
-{% file src="attachments/clearfog-base-cn9130-schematics-rev1.4.pdf" %}
-{% file src="attachments/clearfog-base-schematics-rev1.4.pdf" %}
+{% file src="../../../.gitbook/assets/ClearFog Base Rev 1.1 vs Rev 1.2.pdf" %}
 
+{% file src="../../../.gitbook/assets/ClearFog-Base-Mechanical Files.zip" %}
 
+{% file src="../../../.gitbook/assets/ClearFog Base Enclosure Files.zip" %}
+
+{% file src="../../../.gitbook/assets/ClearFog Base BOM rev 1.2.4.xlsx" %}
+
+{% file src="../../../.gitbook/assets/clearfog_base-rev.1.2-gerber.zip" %}
+
+{% file src="../../../.gitbook/assets/clearfog_base-rev1.1-MTBF.pdf" %}
+
+{% file src="../../../.gitbook/assets/clearfog_base-rev1.2-pcb-layout.zip" %}
+
+{% file src="../../../.gitbook/assets/ClearFog-Base-Schematics.zip" %}
+
+{% file src="../../../.gitbook/assets/clearfog-base-cn9130-schematics-rev1.4 (1).pdf" %}
+
+{% file src="../../../.gitbook/assets/clearfog-base-schematics-rev1.4 (1).pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/marvell-family/clearfog-base-pro/?_ga=2.126128654.2016484779.1641802897-2012112798.1622706355)
-
-

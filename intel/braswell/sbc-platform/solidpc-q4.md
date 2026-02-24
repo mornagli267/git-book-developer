@@ -87,15 +87,18 @@ Please see our guide how to get to [Linux terminal via serial connection.](../..
 
 ## Documentation
 
-{% file src="attachments/solidpc-q4-schematics-rev-1.3.pdf" %}
-{% file src="attachments/solidpc-q4-gerbers-rev1.2.zip" %}
-{% file src="attachments/solidpc-rev1.2-component-side-silk.pdf" %}
-{% file src="attachments/sr-ibx-solidpc-full-assy-v1.zip" %}
-{% file src="attachments/solidpc-q4-bom.xlsx" %}
-{% file src="attachments/solidpc-q4-enclosure.zip" %}
-{% file src="attachments/solidpc-q4-heatsink.zip" %}
-{% file src="attachments/solidpc-q4-schematics-rev-1.3-dsn.zip" %}
+{% file src="../../../.gitbook/assets/solidpc-q4-schematics-rev-1.3.pdf" %}
 
+{% file src="../../../.gitbook/assets/solidpc-q4-gerbers-rev1.2.zip" %}
 
+{% file src="../../../.gitbook/assets/solidpc-rev1.2-component-side-silk.pdf" %}
 
+{% file src="../../../.gitbook/assets/sr-ibx-solidpc-full-assy-v1.zip" %}
 
+{% file src="../../../.gitbook/assets/solidpc-q4-bom.xlsx" %}
+
+{% file src="../../../.gitbook/assets/solidpc-q4-enclosure.zip" %}
+
+{% file src="../../../.gitbook/assets/solidpc-q4-heatsink.zip" %}
+
+{% file src="../../../.gitbook/assets/solidpc-q4-schematics-rev-1.3-dsn.zip" %}

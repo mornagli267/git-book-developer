@@ -38,9 +38,8 @@ The guide will give a technical overview about the product and by the end of it 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355)
 
 {% hint style="info" %}
-Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](/nxp/imx6/com-som/imx6-som-hardware-user-manual.md).
+Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../com-som/imx6-som-hardware-user-manual.md).
 {% endhint %}
-
 
 #### Block Diagram
 
@@ -70,7 +69,6 @@ The following figure describes the i.MX6 Block Diagram.
 Note that using an adaptor with an output voltage which is higher than 5V will damage your device and possibly other connected USB devices.
 {% endhint %}
 
-
 ## Booting form an SD card
 
 **1. Downloading the Yocto image**
@@ -91,12 +89,11 @@ Use the following commands for writing the image to an SD card:
 gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=fsync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -110,10 +107,9 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 A red LED will light up at the front panel. This is an indication of boot loader firmware is running.If you find you need additional help, please contact us and we’ll do our best to get back to you with more personal support.
 {% endhint %}
 
-
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see a log-in prompt similar to the following:
 
@@ -209,25 +205,22 @@ l2ping -c 4  $MAC
 
 ## List Of Supported OS
 
-| **OS**                                                        |                                                                                         |
-| ------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image-20211223-104106 (1).png>) | [i.MX6 Debian](/nxp/imx6/sbc-platform/imx6-software/imx6-debian.md)    |
-| ![](<../../../.gitbook/assets/image-20211223-104124 (1).png>) | [Yocto for i.MX6](/nxp/imx6/sbc-platform/imx6-software/yocto-for-imx6.md) |
-| ![](<../../../.gitbook/assets/image-20211223-104144 (1).png>) | [i.MX6 Archlinux](/nxp/imx6/sbc-platform/imx6-software/imx6-archlinux.md) |
-| ![](<../../../.gitbook/assets/image-20211223-104259 (1).png>) | [XBian for i.MX6](/nxp/imx6/sbc-platform/imx6-software/xbian-for-imx6.md) |
+| **OS**                                                        |                                                    |
+| ------------------------------------------------------------- | -------------------------------------------------- |
+| ![](<../../../.gitbook/assets/image-20211223-104106 (1).png>) | [i.MX6 Debian](imx6-software/imx6-debian.md)       |
+| ![](<../../../.gitbook/assets/image-20211223-104124 (1).png>) | [Yocto for i.MX6](imx6-software/yocto-for-imx6.md) |
+| ![](<../../../.gitbook/assets/image-20211223-104144 (1).png>) | [i.MX6 Archlinux](imx6-software/imx6-archlinux.md) |
+| ![](<../../../.gitbook/assets/image-20211223-104259 (1).png>) | [XBian for i.MX6](imx6-software/xbian-for-imx6.md) |
 
 ## Build U-Boot & Kernel from sources
 
-* Build a Linux kernel -  [i.MX6 Kernel](/nxp/imx6/sbc-platform/imx6-software/imx6-kernel.md)
-* Build a U-Boot - [i.MX6 U-Boot](/nxp/imx6/sbc-platform/imx6-software/imx6-u-boot.md)
+* Build a Linux kernel - [i.MX6 Kernel](imx6-software/imx6-kernel.md)
+* Build a U-Boot - [i.MX6 U-Boot](imx6-software/imx6-u-boot.md)
 
 ## Documentation
 
-{% file src="attachments/cubox-i-plastic-model.zip" %}
-{% file src="attachments/CuBox-I%20schematics.pdf" %}
+{% file src="../../../.gitbook/assets/cubox-i-plastic-model.zip" %}
 
-
+{% file src="../../../.gitbook/assets/CuBox-I schematics.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/embedded-computers/nxp-family/cubox-i/?_ga=2.159864382.2016484779.1641802897-2012112798.1622706355)
-
-

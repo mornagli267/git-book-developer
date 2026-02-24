@@ -35,16 +35,14 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product)                                                                                                                                                                                        |
 
 {% hint style="info" %}
-Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](/nxp/imx8/com-som/imx8m-som-hardware-user-manual.md) .
+Supported with i.MX8M SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M SOM](../../com-som/imx8m-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 {% hint style="info" %}
 **Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
 (\*\*) Only supported with the i.MX8M SoC.\
 (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
 {% endhint %}
-
 
 #### Block Diagram
 
@@ -76,7 +74,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](/nxp/imx8/sbc-platform/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](../imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
 
 ## Booting from SD card
 
@@ -87,7 +85,6 @@ The following shows how to set the switches on the boot source selector:
 {% hint style="info" %}
 Please Note: The black rectangle represents the switch position.
 {% endhint %}
-
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -113,7 +110,6 @@ xz -dc sr-imx8-debian-bullseye-20201020-cli-imx8mq-sdhc-hummingboard-pulse.img.x
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
 
-
 **3. SD card insertion**
 
 Please Insert the SD card into your device.
@@ -124,7 +120,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -168,7 +164,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -208,7 +203,6 @@ EOF
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
 
-
 5\. Make sure it works:
 
 Restart your device and it should connect to the wireless network. If it doesn't, repeat above steps or get help from an adult.
@@ -217,7 +211,7 @@ Restart your device and it should connect to the wireless network. If it doesn't
 
 #### Bluetooth
 
-For Building Newt Nimble BLEHCI firmware, you can follow this page [Building Newt Nimble BLEHCI firmware for the iMX8MQ NINA-B1 Module](/nxp/imx8/sbc-platform/imx8m-other-articles/building-newt-nimble-blehci-firmware-for-the-imx8mq-nina-b1-module.md) .
+For Building Newt Nimble BLEHCI firmware, you can follow this page [Building Newt Nimble BLEHCI firmware for the iMX8MQ NINA-B1 Module](../imx8m-other-articles/building-newt-nimble-blehci-firmware-for-the-imx8mq-nina-b1-module.md) .
 
 #### Cellular Modem
 
@@ -225,42 +219,45 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 {% hint style="info" %}
 Please Note: In order to use the mini-PCIe, a HummingBoard Pulse must not be combined with a microSOM that has WIFI. For more information, please refer to: [mini-PCIe](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md#mini-pcie-by-default-not-functional-on-hummingboard-pulse)
 {% endhint %}
-
 
 ## List Of Supported OS
 
 | **OS**                                                           |                                                                                   |
 | ---------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | ![](<../../../../.gitbook/assets/image-20211024-150854 (1).png>) | [Debian](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr.md) |
-| ![](<../../../../.gitbook/assets/image-20211024-150920 (1).png>) | [Buildroot](/nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software/buildroot-for-imx8m.md) |
+| ![](<../../../../.gitbook/assets/image-20211024-150920 (1).png>) | [Buildroot](../imx8m-plus-mini-nano-software/buildroot-for-imx8m.md)              |
 
 ## Build from source
 
-* [i.MX8M Software](/nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software.md)
+* [i.MX8M Software](../imx8m-plus-mini-nano-software.md)
 
 ## Documentation
 
-{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
-{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
-{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
+{% file src="../../../../.gitbook/assets/HummingBoard-Pulse-Part-Assembly.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Schematics.zip" %}
 
-* Drag and drop to upload or \[browse for files]&#x20;
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Mechanical Drawings.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Puls-REV.2.5-pcb.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 PCB.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Gerbers.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Pulse Pin MUX.xlsx" %}
+
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-[ Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post\\_type=product)
+[Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post\\_type=product)
 
 ### Related Articles <a href="#hummingboardpulse-and-i.mx8mquadsomquickstartguide-relatedarticles" id="hummingboardpulse-and-i.mx8mquadsomquickstartguide-relatedarticles"></a>
-

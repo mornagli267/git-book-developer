@@ -1,6 +1,4 @@
-# Bedrock R8000 Technical Documentation
-
-![](<../../.gitbook/assets/R7000 Basic Poster (1).jpg>)
+# Bedrock R8000 | R7000 Technical Documentation
 
 {% hint style="info" %}
 **Bedrock R7000** is not available for new designs and is replaced by **Bedrock R8000**. SolidRun is fully supporting existing Bedrock R7000 customers.
@@ -23,9 +21,7 @@
 
 ## Manuals
 
-{% file src="https://www.solid-run.com/wp-content/uploads/2024/10/Bedrock-R8000-Product-Brief-2024.pdf" %}
-* [Bedrock R8000 | Owner's Manual](bedrock-r8000-technical-documentation/bedrock-r8000-r7000-user-guide/bedrock-r8000-r7000-owners-manual.md)
-* [Custom NIO design guide](../com-som/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md)
+\* \[Bedrock R8000 | Owner's Manual]\(bedrock-r8000-technical-documentation/bedrock-r8000-r7000-user-guide/bedrock-r8000-r7000-owners-manual.md) \* \[Custom NIO design guide]\(../com-som/bedrock-som-v3000-r7000-r8000-hardware-user-manual.md)
 
 ## See also
 

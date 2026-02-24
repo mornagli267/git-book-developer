@@ -1,4 +1,4 @@
-# \_Bedrock R7000 SoM
+# Bedrock R7000 SoM
 
 ## Revisions and Notes
 
@@ -50,9 +50,7 @@
 
 #### Simplified Schematics
 
-
-{% file src="../sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/attachments/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf" %}
-
+{% file src="../../../.gitbook/assets/SolidRun Bedrock V3000 SoM Specifications.pdf" %}
 
 #### Mechanical Files
 

@@ -6,11 +6,9 @@
 Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#evaluate-bedrock) first to register with SolidRun and begin email exchange
 {% endhint %}
 
-
 {% hint style="info" %}
 See also [Bedrock R8000 | R7000 Configuration Selector](../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/specifications-bedrock-r8000/bedrock-r8000-configuration-selector.md)
 {% endhint %}
-
 
 ## Installing the Configuration Selector
 
@@ -21,15 +19,11 @@ Make a copy of [Bedrock V3000 configuration selector for 1st order](https://docs
 Use Google Sheets (The configuration selector is a Google Sheets spreadsheet).
 {% endhint %}
 
-
 {% hint style="info" %}
 1st order must be for a ready-to-use Bedrock including RAM, storage, operating system and power supply. Follow-up orders can be for bare-bone Bedrock allowing the customer to install his own RAM, storage and operating system and use different power source. For these options please use [Bedrock V3000 configuration for follow-up orders](https://docs.google.com/spreadsheets/d/1a1jhk6L1a9kreAnBVr9ITeNdcWoVI_PdZJbyNWuYRz8/copy?usp=share_link)
 {% endhint %}
 
-
 ## Using the Configuration Selector
-
-![](<../../../../.gitbook/assets/configurator instructions (1).jpg>)
 
 1. To configure Bedrock, use the drop-downs on **Options** column.
 2. Consistency rules are enforced dynamically, ensuring always valid configuration
@@ -43,13 +37,11 @@ Make sure to select needed accessories proper evaluation.\
 It is recommended to order an evaluation kit which includes the typically needed accessories.
 {% endhint %}
 
-
 ## If you can’t access Google Sheets
 
 {% hint style="info" %}
 Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-computers/industrial-embedded-computers/bedrock-v3000-basic/#evaluate-bedrock) first to register with SolidRun and begin email exchange
 {% endhint %}
-
 
 * Download [Bedrock V3000 Basic Options](https://drive.google.com/file/d/1WUQz6Xbin7rTTiBjjoPDa51Hxq1vCwTz/view) diagram
 * Mark the checkboxes of the desired options like in the sample below
@@ -57,6 +49,6 @@ Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-compute
 * Pick accessories - [Bedrock V3000 Accessories](../../../../r8000-r7000/sbc-platform/bedrock-accessories.md)
 * Send both PDF and list of accessories to **bedrock.sales@solid-run.com**
 
-\[![](../../../../.gitbook/assets/Bp-AG1S11IeZ2eW90HjdTNBWSgGLkS-BXKYIQMFXMZgn5a1-3AYwlAvPF-DcLKs-HYoTnFy5AK_1yWCh2FH603WWKChqhOLnGw2eNWhkGfm0x1Opx2gWbsl6TcfDozaGpqVaZ_ISymgD6Jfsy2QAy9M)
+\[
 
 ]\(https://drive.google.com/file/d/1WUQz6Xbin7rTTiBjjoPDa51Hxq1vCwTz/view)

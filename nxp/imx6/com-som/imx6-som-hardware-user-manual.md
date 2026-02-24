@@ -14,7 +14,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the SolidRun [SOM-i.MX6 series](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx6-family/imx6-som/#overview), which includes –
@@ -126,7 +125,6 @@ The Freescale i.MX6 SoC is an implementation of the ARM CortexTM-A9 core, which 
 Please refer to Freescale i.MX6 datasheets with regards to differences between the various devices, number of processors, L2 cache size, GPU supported (i.e. gc880 vs gc2000), etc…
 {% endhint %}
 
-
 #### 10/100/1000 MBPS Ethernet PHY
 
 The Ethernet PHY is based on the Qualcomm / Atheros AR8035 PHY and incorporates the following features:
@@ -236,7 +234,6 @@ The SOM incorporates a Qualcomm / Atheros AR8035 PHY. The PHY connectivity is as
 **Please note** Note that due to internal i.MX6 buses the 1000Mbps interface speed is limited to 470Mbps.
 {% endhint %}
 
-
 #### 802.11 b/g/n and Bluetooth SiP
 
 The SOM incorporates AzureWave AW-660 SiP or TI Wilink8 SiP. The SiP interfaces are:
@@ -256,48 +253,48 @@ The SOM uses the header of these board-to-board connectors which is fixed in hei
 
 This board-to-board header uses Hirose DF40 DH40C-80DP-0.4V(51) header. The pin description may be found in the following tables:
 
-| **Notes**      | **IC ball number** | **IC pad name** | **Driving IC** | **Schematics pad** | **Pin number** | **Pin number** | **Schematics pad**       | **Driving IC** | **IC pad name**    | **IC ball number** | **Notes**                                                                                                                                                      |
-| -------------- | ------------------ | --------------- | -------------- | ------------------ | -------------- | -------------- | ------------------------ | -------------- | ------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                |                    |                 |                | GND                | 2              | 1              | MDI\_TRXN3               | Ethernet PHY   | MDI\_TRXN3         | 19                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 100 Ohm   | B14                | SATA\_RXP       | i.MX6          | SATA\_RXP          | 4              | 3              | MDI\_TRXP3               | Ethernet PHY   | MDI\_TRXP3         | 18                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 100 Ohm   | A14                | SATA\_RXM       | i.MX6          | SATA\_RXN          | 6              | 5              | GND                      |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 8              | 7              | MDI\_TRXN2               | Ethernet PHY   | MDI\_TRXN2         | 16                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 100 Ohm   | B12                | SATA\_TXM       | i.MX6          | SATA\_TXN          | 10             | 9              | MDI\_TRXP2               | Ethernet PHY   | MDI\_TRXP2         | 15                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 100 Ohm   | A12                | SATA\_TXP       | i.MX6          | SATA\_TXP          | 12             | 11             | GND                      |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 14             | 13             | MDI\_TRXN1               | Ethernet PHY   | MDI\_TRXN1         | 13                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 90 Ohm    | A6                 | USB\_OTG\_DP    | i.MX6          | USB\_OTG\_DP       | 16             | 15             | MDI\_TRXP1               | Ethernet PHY   | MDI\_TRXP1         | 12                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 90 Ohm    | B6                 | USB\_OTG\_DN    | i.MX6          | USB\_OTG\_DN       | 18             | 17             | GND                      |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 20             | 19             | MDI\_TRXN0               | Ethernet PHY   | MDI\_TRXN0         | 10                 | Diff 100 Ohm                                                                                                                                                   |
-| Diff 90 Ohm    | E10                | USB\_H1\_DP     | i.MX6          | USB\_HOST\_DP      | 22             | 21             | MDI\_TRXP0               | Ethernet PHY   | MDI\_TRXP0         | 9                  | Diff 100 Ohm                                                                                                                                                   |
-| Diff 90 Ohm    | F10                | USB\_H1\_DN     | i.MX6          | USB\_HOST\_DN      | 24             | 23             | GND                      |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 26             | 25             | LED\_10\_100\_1000       | Ethernet PHY   | LED\_10\_100\_1000 | 22                 |                                                                                                                                                                |
-|                | T5                 | GPIO\_0         | i.MX6          | USB\_H1\_PWR\_EN   | 28             | 27             | LED\_ACT                 | Ethernet PHY   | LED\_ACT           | 21                 |                                                                                                                                                                |
-|                | E23                | EIM\_D22        | i.MX6          | USB\_OTG\_PWR\_EN  | 30             | 29             | ETH\_TCT                 | Ethernet PHY   | ETH\_TCT           | N/A                |                                                                                                                                                                |
-| BOOT\_CFG4\[5] | K20                | EIM\_RW         | i.MX6          | ECSPI2\_SS0        | 32             | 31             | I2C3\_SCL                | i.MX6          | EIM\_D17           | F21                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                   |
-| BOOT\_CFG4\[2] | K22                | EIM\_LBA        | i.MX6          | ECSPI2\_SS1        | 34             | 33             | I2C3\_SDA                | i.MX6          | EIM\_D18           | D24                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                   |
-|                |                    |                 |                | GND                | 36             | 35             | GND                      |                |                    |                    |                                                                                                                                                                |
-|                | C21                | SD2\_CLK        | i.MX6          | SD2\_CLK           | 38             | 37             | SD3\_CLK                 | i.MX6          | SD3\_CLK           | D14                | This signal is not available on SOM V1.9+ with or without eMMC, or on SOM V1.5 with eMMC.                                                                      |
-|                | F19                | SD2\_CMD        | i.MX6          | SD2\_CMD           | 40             | 39             | SD3\_CMD                 | i.MX6          | SD3\_CMD           | B13                | This signal is not available on SOM V1.9+ with or without eMMC, or on SOM V1.5 with eMMC.                                                                      |
-|                | A22                | SD2\_DATA0      | i.MX6          | SD2\_DATA0         | 42             | 41             | PWM2\_OUT                | i.MX6          | DISP0\_DAT9        | T25                |                                                                                                                                                                |
-|                | E20                | SD2\_DATA1      | i.MX6          | SD2\_DATA1         | 44             | 43             | USB\_OTG\_VBUS           | i.MX6          | USB\_OTG\_VBUS     | E9                 |                                                                                                                                                                |
-|                | A23                | SD2\_DATA2      | i.MX6          | SD2\_DATA2         | 46             | 45             | ECSPI2\_MISO             | i.MX6          | EIM\_OE            | J24                |                                                                                                                                                                |
-|                | B22                | SD2\_DATA3      | i.MX6          | SD2\_DATA3         | 48             | 47             | ECSPI2\_MOSI             | i.MX6          | EIM\_CS1           | J23                |                                                                                                                                                                |
-|                | R6                 | GPIO\_4         | i.MX6          | SD2\_CD\_B         | 50             | 49             | ECSPI2\_SCLK             | i.MX6          | EIM\_CS0           | H24                |                                                                                                                                                                |
-|                | D10                | USB\_H1\_VBUS   | i.MX6          | USB\_H1\_VBUS      | 52             | 51             | I2C1\_SDA                | i.MX6          | EIM\_D28           | G23                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                   |
-| BOOT\_CFG1\[6] | K25                | EIM\_DA6        | i.MX6          | DISP1\_DATA03      | 54             | 53             | I2C1\_SCL                | i.MX6          | EIM\_D21           | H20                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                   |
-| BOOT\_CFG1\[7] | L25                | EIM\_DA7        | i.MX6          | DISP1\_DATA02      | 56             | 55             | PWM3\_OUT                | i.MX6          | SD4\_DAT1          | B19                |                                                                                                                                                                |
-| BOOT\_CFG1\[3] | K24                | EIM\_DA3        | i.MX6          | DISP1\_DATA06      | 58             | 57             | PWM4\_OUT                | i.MX6          | SD4\_DAT2          | F17                |                                                                                                                                                                |
-| BOOT\_CFG2\[0] | L24                | EIM\_DA8        | i.MX6          | DISP1\_DATA01      | 60             | 59             | \_\_NC\_\_SPDIF\_CLK\_IN | NC             |                    |                    |                                                                                                                                                                |
-| BOOT\_CFG1\[4] | L22                | EIM\_DA4        | i.MX6          | DISP1\_DATA05      | 62             | 61             | NVCC\_SD2                | i.MX6          | NVCC\_SD2          | G17                |                                                                                                                                                                |
-| BOOT\_CFG1\[5] | L23                | EIM\_DA5        | i.MX6          | DISP1\_DATA04      | 64             | 63             | NVCC\_SD3                | i.MX6          | NVCC\_SD3          | G14                |                                                                                                                                                                |
-| BOOT\_CFG2\[1] | M21                | EIM\_DA9        | i.MX6          | DISP1\_DATA00      | 66             | 65             | NVCC\_EIM0               | Many           |                    |                    | <p>Although called NVCC_EIM0, this power rail supplies the i.MX6, Ethernet phy, WiFi / BT and others.<br> Refer to the public schematics for more details.</p> |
-|                | R22                | DISP0\_DAT8     | i.MX6          | PWM1\_OUT          | 68             | 67             | NVCC\_EIM0               |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 70             | 69             | VSNVS\_3V0               | i.MX6          |                    |                    | In rev 1.2 and beyond this is VDD\_SNVS\_IN and VDDHIGH\_IN power domains                                                                                      |
-|                |                    |                 |                | GND                | 72             | 71             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 74             | 73             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 76             | 75             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 78             | 77             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                                |
-|                |                    |                 |                | GND                | 80             | 79             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                                |
+| **Notes**      | **IC ball number** | **IC pad name** | **Driving IC** | **Schematics pad** | **Pin number** | **Pin number** | **Schematics pad**       | **Driving IC** | **IC pad name**    | **IC ball number** | **Notes**                                                                                                                                                     |
+| -------------- | ------------------ | --------------- | -------------- | ------------------ | -------------- | -------------- | ------------------------ | -------------- | ------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                |                    |                 |                | GND                | 2              | 1              | MDI\_TRXN3               | Ethernet PHY   | MDI\_TRXN3         | 19                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 100 Ohm   | B14                | SATA\_RXP       | i.MX6          | SATA\_RXP          | 4              | 3              | MDI\_TRXP3               | Ethernet PHY   | MDI\_TRXP3         | 18                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 100 Ohm   | A14                | SATA\_RXM       | i.MX6          | SATA\_RXN          | 6              | 5              | GND                      |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 8              | 7              | MDI\_TRXN2               | Ethernet PHY   | MDI\_TRXN2         | 16                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 100 Ohm   | B12                | SATA\_TXM       | i.MX6          | SATA\_TXN          | 10             | 9              | MDI\_TRXP2               | Ethernet PHY   | MDI\_TRXP2         | 15                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 100 Ohm   | A12                | SATA\_TXP       | i.MX6          | SATA\_TXP          | 12             | 11             | GND                      |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 14             | 13             | MDI\_TRXN1               | Ethernet PHY   | MDI\_TRXN1         | 13                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 90 Ohm    | A6                 | USB\_OTG\_DP    | i.MX6          | USB\_OTG\_DP       | 16             | 15             | MDI\_TRXP1               | Ethernet PHY   | MDI\_TRXP1         | 12                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 90 Ohm    | B6                 | USB\_OTG\_DN    | i.MX6          | USB\_OTG\_DN       | 18             | 17             | GND                      |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 20             | 19             | MDI\_TRXN0               | Ethernet PHY   | MDI\_TRXN0         | 10                 | Diff 100 Ohm                                                                                                                                                  |
+| Diff 90 Ohm    | E10                | USB\_H1\_DP     | i.MX6          | USB\_HOST\_DP      | 22             | 21             | MDI\_TRXP0               | Ethernet PHY   | MDI\_TRXP0         | 9                  | Diff 100 Ohm                                                                                                                                                  |
+| Diff 90 Ohm    | F10                | USB\_H1\_DN     | i.MX6          | USB\_HOST\_DN      | 24             | 23             | GND                      |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 26             | 25             | LED\_10\_100\_1000       | Ethernet PHY   | LED\_10\_100\_1000 | 22                 |                                                                                                                                                               |
+|                | T5                 | GPIO\_0         | i.MX6          | USB\_H1\_PWR\_EN   | 28             | 27             | LED\_ACT                 | Ethernet PHY   | LED\_ACT           | 21                 |                                                                                                                                                               |
+|                | E23                | EIM\_D22        | i.MX6          | USB\_OTG\_PWR\_EN  | 30             | 29             | ETH\_TCT                 | Ethernet PHY   | ETH\_TCT           | N/A                |                                                                                                                                                               |
+| BOOT\_CFG4\[5] | K20                | EIM\_RW         | i.MX6          | ECSPI2\_SS0        | 32             | 31             | I2C3\_SCL                | i.MX6          | EIM\_D17           | F21                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                  |
+| BOOT\_CFG4\[2] | K22                | EIM\_LBA        | i.MX6          | ECSPI2\_SS1        | 34             | 33             | I2C3\_SDA                | i.MX6          | EIM\_D18           | D24                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                  |
+|                |                    |                 |                | GND                | 36             | 35             | GND                      |                |                    |                    |                                                                                                                                                               |
+|                | C21                | SD2\_CLK        | i.MX6          | SD2\_CLK           | 38             | 37             | SD3\_CLK                 | i.MX6          | SD3\_CLK           | D14                | This signal is not available on SOM V1.9+ with or without eMMC, or on SOM V1.5 with eMMC.                                                                     |
+|                | F19                | SD2\_CMD        | i.MX6          | SD2\_CMD           | 40             | 39             | SD3\_CMD                 | i.MX6          | SD3\_CMD           | B13                | This signal is not available on SOM V1.9+ with or without eMMC, or on SOM V1.5 with eMMC.                                                                     |
+|                | A22                | SD2\_DATA0      | i.MX6          | SD2\_DATA0         | 42             | 41             | PWM2\_OUT                | i.MX6          | DISP0\_DAT9        | T25                |                                                                                                                                                               |
+|                | E20                | SD2\_DATA1      | i.MX6          | SD2\_DATA1         | 44             | 43             | USB\_OTG\_VBUS           | i.MX6          | USB\_OTG\_VBUS     | E9                 |                                                                                                                                                               |
+|                | A23                | SD2\_DATA2      | i.MX6          | SD2\_DATA2         | 46             | 45             | ECSPI2\_MISO             | i.MX6          | EIM\_OE            | J24                |                                                                                                                                                               |
+|                | B22                | SD2\_DATA3      | i.MX6          | SD2\_DATA3         | 48             | 47             | ECSPI2\_MOSI             | i.MX6          | EIM\_CS1           | J23                |                                                                                                                                                               |
+|                | R6                 | GPIO\_4         | i.MX6          | SD2\_CD\_B         | 50             | 49             | ECSPI2\_SCLK             | i.MX6          | EIM\_CS0           | H24                |                                                                                                                                                               |
+|                | D10                | USB\_H1\_VBUS   | i.MX6          | USB\_H1\_VBUS      | 52             | 51             | I2C1\_SDA                | i.MX6          | EIM\_D28           | G23                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                  |
+| BOOT\_CFG1\[6] | K25                | EIM\_DA6        | i.MX6          | DISP1\_DATA03      | 54             | 53             | I2C1\_SCL                | i.MX6          | EIM\_D21           | H20                | 4.7kohm NVCC\_EIM0 pulled up                                                                                                                                  |
+| BOOT\_CFG1\[7] | L25                | EIM\_DA7        | i.MX6          | DISP1\_DATA02      | 56             | 55             | PWM3\_OUT                | i.MX6          | SD4\_DAT1          | B19                |                                                                                                                                                               |
+| BOOT\_CFG1\[3] | K24                | EIM\_DA3        | i.MX6          | DISP1\_DATA06      | 58             | 57             | PWM4\_OUT                | i.MX6          | SD4\_DAT2          | F17                |                                                                                                                                                               |
+| BOOT\_CFG2\[0] | L24                | EIM\_DA8        | i.MX6          | DISP1\_DATA01      | 60             | 59             | \_\_NC\_\_SPDIF\_CLK\_IN | NC             |                    |                    |                                                                                                                                                               |
+| BOOT\_CFG1\[4] | L22                | EIM\_DA4        | i.MX6          | DISP1\_DATA05      | 62             | 61             | NVCC\_SD2                | i.MX6          | NVCC\_SD2          | G17                |                                                                                                                                                               |
+| BOOT\_CFG1\[5] | L23                | EIM\_DA5        | i.MX6          | DISP1\_DATA04      | 64             | 63             | NVCC\_SD3                | i.MX6          | NVCC\_SD3          | G14                |                                                                                                                                                               |
+| BOOT\_CFG2\[1] | M21                | EIM\_DA9        | i.MX6          | DISP1\_DATA00      | 66             | 65             | NVCC\_EIM0               | Many           |                    |                    | <p>Although called NVCC_EIM0, this power rail supplies the i.MX6, Ethernet phy, WiFi / BT and others.<br>Refer to the public schematics for more details.</p> |
+|                | R22                | DISP0\_DAT8     | i.MX6          | PWM1\_OUT          | 68             | 67             | NVCC\_EIM0               |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 70             | 69             | VSNVS\_3V0               | i.MX6          |                    |                    | In rev 1.2 and beyond this is VDD\_SNVS\_IN and VDDHIGH\_IN power domains                                                                                     |
+|                |                    |                 |                | GND                | 72             | 71             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 74             | 73             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 76             | 75             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 78             | 77             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                               |
+|                |                    |                 |                | GND                | 80             | 79             | VIN\_5V0                 |                |                    |                    |                                                                                                                                                               |
 
 #### J8004 Board to Board Header Pin Description
 
@@ -395,7 +392,6 @@ Integration with the SR-SOM-MX6 is easy, power sequencing wise. Note the followi
 **Please note** Notice the HummingBoard design, where there is a single 3.2V power rail generated from the 5V DC IN (either via LDO or external DC-DC), and that rail is directly applied to VSNVS\_3V0, NVCC\_EIM0 together with the VIN\_5V0.
 {% endhint %}
 
-
 * Notice that a cost saving practice when integrating SR-SOM-MX6 is to have a single DC-DC of output voltage 3.2v, and -+100mV ripple that supplies all the SR-SOM-MX6 supplies, except the USB\_OTG\_VBUS and USB\_HOST\_VBUS which are 5V when
 
 ## **i.MX6 SOM GPIO (Internal) Boot Source Configuration**
@@ -408,11 +404,9 @@ Blowing the device’s eFuses is alternative to using GPIOs in order to set boot
 If the boot method is set, via eFuses (irreversible operation) then boot select via GPIO pull up/down will be void and ONLY the eFusing configuration regulates the boot device.
 {% endhint %}
 
-
 {% hint style="warning" %}
 The section below assumes that the SOM’s boot eFuses are not set, it also assumes that the boot mode is set to BOOT\_MODE\[1:0] = 0b10, indicating boot from GPIOs.
 {% endhint %}
-
 
 The following are the general instructions on how to perform boot from different common sources, the guideline in general is the following –
 
@@ -440,7 +434,6 @@ The following must be pulled up (10 kohm or lower):
 {% hint style="warning" %}
 **Please note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
 {% endhint %}
-
 
 |                   |                    |                         |                                       |
 | ----------------- | ------------------ | ----------------------- | ------------------------------------- |
@@ -483,7 +476,6 @@ The following must be pulled up (10 kohm or lower):
 SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
 {% endhint %}
 
-
 |                   |                    |                         |                         |
 | ----------------- | ------------------ | ----------------------- | ----------------------- |
 | **BOOT CFG name** | **i.MX6 pad name** | **Schematics pad name** | **Notes**               |
@@ -521,7 +513,6 @@ The following must be pulled up (10 kohm or lower):
 **Please Note** SolidRun tested pulling down the signals as described below, but the user can experiment with the signals that are not marked with ‘Must be 0’; but SolidRun does not test those signals behavior.
 {% endhint %}
 
-
 |                   |                    |                         |                                                         |
 | ----------------- | ------------------ | ----------------------- | ------------------------------------------------------- |
 | **BOOT CFG name** | **i.MX6 pad name** | **Schematics pad name** | **Notes**                                               |
@@ -542,7 +533,7 @@ The other signals in BOOT\_CFG1, BOOT\_CFG2, BOOT\_CFG3 and BOOT\_CFG4 that are 
 
 #### **Rev 1.3 Debugging Capability**
 
-&#x20;Rev 1.3 of SR-SOM-MX6 exposes two main debugging interfaces:
+Rev 1.3 of SR-SOM-MX6 exposes two main debugging interfaces:
 
 1. UART interface
 2. JTAG interface
@@ -608,7 +599,6 @@ Notes:
 It takes about 60 minutes to reach that stable 87c Tjunction.
 {% endhint %}
 
-
 1. This is using Linux suspend to memory when the front LED is off. This consumption is mainly due to DDR entering self-refresh (2GByte) and some consumption on the 3.3V LDO and leakage on the processor and SoC digital part rails.
 
 #### imx6 SOM Power Consumption
@@ -644,7 +634,6 @@ Following are the maximum ratings on different power signals and power rails.
 HDMI I2C is voltage boosted using VIN\_5V0 power rail. Due to that VIN\_5V0 = 5V is recommended since HDMI EDID requires 5V voltage.
 {% endhint %}
 
-
 1. AR8035 Gigabit Ethernet PHY consumes 150mA out of those in a 100-meter cable configuration.
 2. This is reduced to 150mA when the AR8035 is not active.
 3. Assumes ultra-high speed: 1.8v, 100MHz clock rate and double data rate on data; 4-bit data on SD2 and 8-bit data on SD3.
@@ -653,7 +642,6 @@ HDMI I2C is voltage boosted using VIN\_5V0 power rail. Due to that VIN\_5V0 = 5V
 {% hint style="warning" %}
 Notice that a common practice when integrating SR-SOM-MX6 is to have a single DC-DC, of 3.2v that supplies all the SR-SOM-MX6 supplies, except the USB\_OTG\_VBUS and USB\_HOST\_VBUS.
 {% endhint %}
-
 
 5\. SR-SOM-MX6 rev 1.5 incorporates TI WiLink8 based device vs. BCM4330. This adds 285mA on the NVCC\_EIM0 but remove 200mA requirement from VIN\_5V0.
 
@@ -671,7 +659,6 @@ Note the following details:
 Since this is a TOP VIEW of the print side of the SR-SOM-MX6, the diagram above describes the dimensions and placement of the board-to-board headers, mechanical holes and boundaries of the SR-SOM-MX6, as-is.
 {% endhint %}
 
-
 * J5002 is the main board-to-board header (bottom side in the diagram).
 * J8004 is the second board-to-board header (upper side in the diagram).
 * J5001 is the third board-to-board header (right side in the diagram).
@@ -682,18 +669,22 @@ Refer to SolidRun HummingBoard and CuBox-i design and layout, where there are ex
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/iMX6%20SOM%20Heatsink.zip" %}
-{% file src="../sbc-platform/attachments/Diff%20between%20Rev%201.3%20and%20Rev%201.5.pdf" %}
-{% file src="../sbc-platform/attachments/imx6-rev-1_5-simplified-schematics.pdf" %}
-{% file src="../sbc-platform/attachments/sr-usom-mx6-3_b2b_connectors_locations.zip" %}
-{% file src="../sbc-platform/attachments/iMX6%20SOM%20Mechanical%20files.zip" %}
-{% file src="../sbc-platform/attachments/imx6%20som%20MTBF.pdf" %}
-{% file src="../sbc-platform/attachments/sr-usom-mx6-fusing.zip" %}
-{% file src="../sbc-platform/attachments/i,MX6%20SOM%20Heatsink%203D.STEP" %}
-{% file src="../sbc-platform/attachments/imx6-som-rev-2.0-schematics.pdf" %}
+{% file src="../../../.gitbook/assets/iMX6 SOM Heatsink.zip" %}
 
+{% file src="../../../.gitbook/assets/Diff between Rev 1.3 and Rev 1.5.pdf" %}
 
+{% file src="../../../.gitbook/assets/imx6-rev-1_5-simplified-schematics.pdf" %}
+
+{% file src="../../../.gitbook/assets/sr-usom-mx6-3_b2b_connectors_locations.zip" %}
+
+{% file src="../../../.gitbook/assets/iMX6 SOM Mechanical files.zip" %}
+
+{% file src="../../../.gitbook/assets/imx6 som MTBF.pdf" %}
+
+{% file src="../../../.gitbook/assets/sr-usom-mx6-fusing.zip" %}
+
+{% file src="../../../.gitbook/assets/i,MX6 SOM Heatsink 3D.STEP" %}
+
+{% file src="../../../.gitbook/assets/imx6-som-rev-2.0-schematics.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?orderby=price\&filter_som-com-family=nxp-i-mx6&_ga=2.61323183.2016484779.1641802897-2012112798.1622706355)
-
-

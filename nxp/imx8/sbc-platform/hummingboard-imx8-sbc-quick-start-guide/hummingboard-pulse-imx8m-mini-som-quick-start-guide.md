@@ -35,16 +35,14 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product\&filter_som-com-family=nxp-i-mx8m-mini)                                                                                                                                                 |
 
 {% hint style="info" %}
-Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](/nxp/imx8/com-som/imx8m-mini-som-hardware-user-manual.md) .
+Supported with i.MX8M-MINI SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Mini SOM Hardware User Manual](../../com-som/imx8m-mini-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 {% hint style="info" %}
 **Please note** (\*) Only USB 2.0 supported with the i.MX8M Mini SoC.\
 (\*\*) Only supported with the i.MX8M SoC.\
 (\*\*\*) Only 1 x MIPI-CSI supported with the i.MX8M Mini SoC.
 {% endhint %}
-
 
 #### Block Diagram
 
@@ -76,7 +74,7 @@ Here is what you will need to power up and use the board:
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](/nxp/imx8/sbc-platform/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [HummingBoard Pulse and Ripple Boot Select](../imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) .
 
 ## Booting from SD card
 
@@ -87,7 +85,6 @@ The following shows how to set the switches on the boot source selector:
 {% hint style="info" %}
 Please Note: The black rectangle represents the switch position.
 {% endhint %}
-
 
 Once you set the switches, you can apply the following for booting from SD card:
 
@@ -109,12 +106,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-imx8-debian-buster-20210706-cli-imx8mm-sdhc-hummingboard-pulse.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -126,7 +122,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -170,7 +166,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -209,7 +204,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -274,7 +268,7 @@ The cellular modem is a more fully featured extension of which contains a cellul
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 ## List Of Supported OS
 
@@ -290,16 +284,18 @@ You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
 ## Documentation
 
-{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
-{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
-{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
+{% file src="../../../../.gitbook/assets/HummingBoard Pulse Pin MUX.xlsx" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard-Pulse-Part-Assembly.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Schematics.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Mechanical Drawings.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Puls-REV.2.5-pcb.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 PCB.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Gerbers.zip" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product\&filter_som-com-family=nxp-i-mx8m-mini)
-
-

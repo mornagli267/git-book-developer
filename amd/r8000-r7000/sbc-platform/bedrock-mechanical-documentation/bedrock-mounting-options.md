@@ -1,4 +1,4 @@
-# Bedrock Mounting options
+# Bedrock Mounting Options
 
 The compact footprint of Bedrock, robust structure, effective fanless cooling and DC input tolerance simplify Bedrock integration. All Bedrock I/O is brought to the front panel, with DC input and antennas in the top panel. The bottom and rear panel are both reserved for mounting, allowing full usability while Bedrock is mounted to a wall or to a desk.
 
@@ -16,8 +16,6 @@ SolidRun offers multiple types of mounting brackets, including lever-based DIN-R
   * [Bedrock threaded holes for mounting](bedrock-mounting-options.md#bedrock-threaded-holes-for-mounting)
 
 ## DIN-Rail mounting
-
-![](../../../.gitbook/assets/image-20230414-103646.png)
 
 Bedrock is designed for effective deployment as a DIN Rail mounted IPC with the following features:
 
@@ -40,14 +38,9 @@ SolidRun offers an advanced DIN Rail mounting bracket for Bedrock PC with the fo
 DIN Rail mounting bracket ordering PN: **SRBD-DIN21**
 {% endhint %}
 
-
 [DIN Rail bracket assembly and usage diagrams](bedrock-mounting-options/din-rail-bracket-assembly-and-usage-diagrams.md)
 
 ## Wall mounting
-
-![](../../../.gitbook/assets/image-20230414-140513.png)
-
-![](../../../.gitbook/assets/image-20230414-140322.png)
 
 Bedrock Wall Mounting Bracket is designed for simple one-time fixing Bedrock to a wall using only two screws.\
 The bracket has the following features:
@@ -57,16 +50,11 @@ The bracket has the following features:
 * Easy access to connectors and indicators
 * Robustness - Bedrock is screwed to the bracket, then bracket is screwed to the wall
 
-![](../../../.gitbook/assets/image-20230414-142535.png)
-
 {% hint style="info" %}
 Wall mounting bracket ordering PN: **SRBD-WALL21**
 {% endhint %}
 
-
 ## Stand
-
-![](../../../.gitbook/assets/image-20230414-143941.png)
 
 The Bedrock Stand is designed for using Bedrock on a desk. It elevates Bedrock above the desk for cooling and keeps it stable in vertical position.
 
@@ -83,16 +71,11 @@ The Stand is recommended for Bedrock evaluation.
 Stand ordering PN: **SRBD-STAND21**
 {% endhint %}
 
-
 ## Bedrock Tile mounting
-
-![](../../../.gitbook/assets/image-20230414-144635.png)
 
 When integrating an IPC in tight space convection cooling becomes ineffective and is better replaced with conduction cooling. It is also desirable to make the IPC as compact and thin as possible.
 
 Bedrock Tile is designed for these use cases. The ribbed chassis walls are replaced with flat walls with blind threadings for fastening Bedrock Tile to a cold plate. A key feature of Bedrock Tile is that it preserves the 360º internal heat distribution so it can be cooled from either side. With thickness of just 29mm and volume of 0.6 liter, Bedrock Tile is easy to integrate in tight spaces. Having all connectors on one side further simplifies the integration.
-
-![](../../../.gitbook/assets/image-20230414-145200.png)
 
 See also:
 
@@ -104,14 +87,11 @@ See also:
 Tile is an ordering option of Bedrock
 {% endhint %}
 
-
 ## Designing custom mounting for Bedrock PC
 
 ### Mounting guidelines
 
 For effective passive cooling of Bedrock please consider the following:
-
-![](../../../.gitbook/assets/image-20230414-111548.png)
 
 * **Bedrock should be positioned vertically.**\
   This allows effective airflow along Bedrock external cooling ribs which is important for effective convection cooling.\

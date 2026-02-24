@@ -2,8 +2,6 @@
 
 ## Bedrock SOM V3000 / R7000 / R8000 - Hardware User Manual
 
-![](../../.gitbook/assets/e2I938HxMdmXcRQAR4ucFky9uCd0oRptWQZF0YSB2MlnNW-mYT01w0psTVjI5NzVNUx9fstX6Y1kLKyofj1Bs54UQf9IGHH2iuAyK9BihurDYtUzACJrPIX5aiB7mkex7cRojTIdiYwyyZEXGvhAB7E)
-
 |                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |              |           |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- |
 | **Date**          | **Owner**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Revision** | **Notes** |
@@ -40,12 +38,9 @@ Each section of this manual provides detailed information and technical specific
 
 ## **Bedrock SOM Block Diagram**
 
-![image-20240523-104242.png](../../.gitbook/assets/image-20240523-104242.png)
-
 {% hint style="info" %}
 Please note that Port 9 (Lanes: 17-20) are used for the SoM’s Internal NVME.
 {% endhint %}
-
 
 Feature Summary:
 
@@ -74,18 +69,14 @@ Feature Summary:
 
 SoM Board Dimensions: 83 x 75.76 mm (Top View):
 
-![](../../.gitbook/assets/lFOnTdbvfWJrIdtKj-x6Tnb2h5uEIZjNXp9GZl1vh3IYMB-iOnVP511JVqqF8KrDLX4jI3gmeC9nm_ze7sTFhuXLeTpH7iS4KzQtWHWcwjq3AzqflhAjqAwMc2CKF8acYKCU7Km6H0PrzwmPleDNyOU)
-
 Mechanical Files Download Link:\
 [Bedrock SOM - Mechanical Files.zip](https://drive.google.com/file/d/1x6WCio1rlT2fanu_FUwZUYKD36Y2fDIM/view?usp=sharing)
 
 ## **Typical Block Diagram of a complete system**
 
-![](../../.gitbook/assets/9-3scmofEZyiAROu_OZ3UtOJZACxxmRJewHw9TG03bXGIsoT46i476oNv6HrBYG2z8XWufvWf8NPOJHW4tWtVhnzHNYm1MIHZpXxuRvSYnJ1DmzT1k1naINzyvVGE7ytSapV90TZCgcMQDE3Y3RCO3o)
-
 ## **Bedrock Cartridge**
 
-As part of developing a custom extension board for the Bedrock SOM, it’s recommended to use [Bedrock Cartridge](/amd/r8000-r7000/sbc-platform/bedrock-mechanical-documentation/bedrock-deck-cartridge-som-3d-models.md).
+As part of developing a custom extension board for the Bedrock SOM, it’s recommended to use [Bedrock Cartridge](../sbc-platform/bedrock-mechanical-documentation/bedrock-deck-cartridge-som-3d-models.md).
 
 Bedrock Cartridge provides the following:
 
@@ -101,8 +92,6 @@ Bedrock Cartridge provides the following:
 * Physical protection and rigidity to the SOM
 * Rigid chassis for the Bedrock Deck with multiple threaded mounting holes
 
-![](../../.gitbook/assets/ChlqefgmxN68Xjj7MEKfkkDTsjjKOm--f20j0t1gI2JXvz7ONQnyR6kzotxZmqpPPrLI7nYoHt1iVVTulAbYS2A1Gf9gjzFvMXGjlGMUT3AfdZzdZmRh-bax_bnGJ0Sn7ksgRIDfnpnZD6ubdVXKT_w)
-
 ## **SOM Board-to-Board Connectors - MFG P/N**
 
 | <p>Connector RefDes on<br><br>Bedrock SoM</p> | MFG P/N                  | <p>Connector RefDes on<br><br>NIO</p> | MFG P/N                  |
@@ -114,11 +103,7 @@ Bedrock Cartridge provides the following:
 
 Bedrock SoM Connectors (Males):
 
-![](../../.gitbook/assets/ZgncuI2R5bTgyxBKRCtxSAJrlJXRnC86-UWlh456bAGt_IutGNx_JuQYLmTR_PbG2aAeiFvupY9aD-ZweaYdMpQ9trlWf2VRENU2N7y8X1e8Dhct9QgtAYkQuCA_2HU0KoOuWoI7MchG74qAv5Vv4zw)
-
 NIO Connectors (Females):
-
-![](../../.gitbook/assets/JXWIxruhWqtKhLeylcTp7jPHNE0l9X23_e4eQbm3niMbykBhnb0UFO37XfIt54higRVDx2qXSkAhU0PuPu7DBVlf6qr2azXCGwrke52ufPdNYIOE12sysoiQ3bjL5CmQlzYsjYh_ekvWm8Qd_CFZutM)
 
 Note: Top Side of SoM is placed on Top Side of NIO, where the two boards are flipped one towards the other.
 
@@ -126,8 +111,6 @@ Note: Top Side of SoM is placed on Top Side of NIO, where the two boards are fli
 
 The following is an example of the B2B pinout in NIO.\
 Please note that the pinout relates to the _female_ connectors on a carrier, **to which the Bedrock SoM male Connectors are inserted**, and here we gave an example for SolidRun NIO Connectors (J4, J5, J6, J7). It’s important to be careful which pin is number #1.
-
-![](../../.gitbook/assets/mJ_FRFaGzvYwRC37nPP_-etZhV9YeV4FA1I-9DfzPd9MaLI1psMy26Dwo2dTPyfoo18CNFEWcteBwYHP7xtFx5PyIiNTi9fpst9sAovKsMp-E7-KrzsI0nrc0W4Isdd5k5xrpf-x9OTg0jwSdKy_jws)
 
 #### NIO R7000 Basic pinout
 
@@ -230,14 +213,14 @@ Please note that the pinout relates to the _female_ connectors on a carrier, **t
 
 ## **OrCad Symbols**
 
-In the following link you will find a PDF and OrCad Symbols for the NIO board-to-board connectors, to which the SoM (Male) Connectors are inserted:&#x20;
+In the following link you will find a PDF and OrCad Symbols for the NIO board-to-board connectors, to which the SoM (Male) Connectors are inserted:
 
 1. [**NIO BtB Connectors - PDF**](https://drive.google.com/file/d/1xB46dORFV3Gp8puEIqd73Do4I4A2uQde/view?usp=sharing)
 2. [**NIO BtB Connectors - OrCad Symbols**](https://drive.google.com/file/d/1xFvehTro61wH1tTmV1JiQuoHRzARKDgt/view?usp=sharing)
 
 ## **Differential Signals Impedance**
 
-[In this Excel](https://docs.google.com/spreadsheets/d/1FFL56p2GHO3JOiYYOMDi9Uce2WsCgf6ddNtgSrbaBDc/edit?usp=sharing), you will find a list for the impedance for each differential signal.&#x20;
+[In this Excel](https://docs.google.com/spreadsheets/d/1FFL56p2GHO3JOiYYOMDi9Uce2WsCgf6ddNtgSrbaBDc/edit?usp=sharing), you will find a list for the impedance for each differential signal.
 
 Note: All differential pairs are 90-Ohm, the rest are GPIOs/Single-Ended signals which are 50-Ohm by default.
 
@@ -253,8 +236,6 @@ The cartridge is assembled in the factory and should not be disassembled. It pro
 * Thermal pad should be applied on NVME
 * If device is intended to work at high ambient temperature it is advised to apply thermal gel between SODIMMs and RAM cover and thermal grease on top side of RAM cover
 * The frame of the skirt is thermally coupled to the cold plate. Consider applying thermal paste on the frame of the skirt.
-
-![Thermal\_Grease2.png](../../.gitbook/assets/Thermal_Grease2.png)
 
 ## **Power Consumption**
 
@@ -311,7 +292,6 @@ The tests outlined in the table above were conducted while the system was runnin
 Note: the measurements were performed with 19V input voltage.
 {% endhint %}
 
-
 ## **Power Input**
 
 The recommended input range for the SoM is 12V-24V.
@@ -320,12 +300,7 @@ The recommended input range for the SoM is 12V-24V.
 Note: there is no reverse polarity protection on the SoM, please be careful not to confuse between the “+” and “-” signs. (**Red is Positive “+”**, **Black is Negative “-”**)
 {% endhint %}
 
-
-![](../../.gitbook/assets/0RMlhOtSRfdf6sYgznDfNW8KbIKu-vGoG9YKoVizeQ7d1LjR4kq3HED-OB8BCpMVnxkVBfZJGZPmCBWpiGi_qQC4qE8NLQc81Ku5AqJLHfH_eFjUgjF3tqsrxv1LTWdJb_K0AuLgAIDiO2ifUYE0V6I)
-
 SolidRun uses Molex [1053071202](https://www.molex.com/en-us/products/part-detail/1053071202) Connector to interface between the SoM power input and the Phoenix Connecter.
-
-![](../../.gitbook/assets/2t1J54AFT1l6woDGp2Nl5nb_Yww_9_yub0HC8DIlSz-4vmRn0wLfFlNrT2tlyICiyBYsTGv4gIcz88UqH6r5OPbstloUeetUmbu-fHCnOQec4ly0y2XWC9gqqsDyCtvIhKlIJA4u5BR9BwHMtN1XZCQ)
 
 ## **Flashing BIOS and MPS Power Controller**
 

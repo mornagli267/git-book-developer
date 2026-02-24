@@ -39,7 +39,6 @@ The guide will give a technical overview about the product and by the end of it 
 Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](../com-som/imx8m-plus-som-hardware-user-manual.md) .
 {% endhint %}
 
-
 #### Block Diagram
 
 The following figure describes the i.MX8M-PLUS Block Diagram.
@@ -64,7 +63,6 @@ The following figure describes the i.MX8M-PLUS Block Diagram.
 Note that using an adaptor with an output voltage which is higher than 12V will damage your device and possibly other connected USB devices.
 {% endhint %}
 
-
 ## Booting form an SD card
 
 **1. Downloading the Debian image**
@@ -85,12 +83,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc imx8mp-sdhc-debian-87b97f9.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -102,7 +99,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -146,7 +143,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -185,7 +181,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -242,7 +237,7 @@ l2ping -c 4  $MAC
 
 ## TLV EEPROM Support
 
-Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](/nxp/imx8/sbc-platform/imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
+Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
 
 ## List Of Supported OS
 
@@ -250,7 +245,7 @@ Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are bein
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | ![](../../../.gitbook/assets/image-20211024-150854.png)       | [Documentation/debian-11\_sr8.md at bsp](https://github.com/SolidRun/documentation/blob/bsp/imx8/debian-11_sr8.md)             |
 | ![](<../../../.gitbook/assets/image-20211024-151110 (1).png>) | [GitHub - SolidRun/meta-solidrun-arm-imx8 at zeus-imx8mp](https://github.com/SolidRun/meta-solidrun-arm-imx8/tree/zeus-imx8mp) |
-| ![](../../../.gitbook/assets/image-20211024-151020.png)       | [Cubox-M Android](/nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software/cubox-m-android.md)                                        |
+| ![](../../../.gitbook/assets/image-20211024-151020.png)       | [Cubox-M Android](imx8m-plus-mini-nano-software/cubox-m-android.md)                                                            |
 | ![](../../../.gitbook/assets/image-20211024-150920.png)       | [GitHub - SolidRun/imx8mp\_build](https://github.com/SolidRun/imx8mp_build)                                                    |
 
 ## Build from source
@@ -259,19 +254,14 @@ Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are bein
 
 ## Documentation
 
-{% file src="attachments/CuBox-M-Schematics-v1.1.zip" %}
+{% file src="../../../.gitbook/assets/CuBox-M-Schematics-v1.1.zip" %}
 
-
-* Drag and drop to upload or \[browse for files]&#x20;
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-
-{% file src="attachments/CuBox-M-Schematics-v1.1.zip" %}
-
+{% file src="../../../.gitbook/assets/CuBox-M-Schematics-v1.1.zip" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=CuBox+M\&post_type=product)
-
-

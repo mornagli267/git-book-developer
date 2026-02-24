@@ -43,7 +43,6 @@ The guide will give a technical overview about the product and by the end of it 
 * Serdes-1 lanes 4..7 are directly connected to the 4xSFP+ ports
 {% endhint %}
 
-
 ## **Block Diagram**
 
 The following figure describes the ClearFog CX Block Diagram.
@@ -112,12 +111,11 @@ Once you set the switches, you can apply the following for booting from an SD ca
 
 Download a pre-built snapshot image from [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
 
-Those images are organised by branch, build-date and commit id from the [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)  project that you can clone and build by yourself.
+Those images are organised by branch, build-date and commit id from the [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build) project that you can clone and build by yourself.
 
 {% hint style="info" %}
 **Please note** The prebuilt images are configured for SO-DIMM DDR4 with speed of 2900, 2600 and 2400 Mtps (with or without ECC support),. Images that have the infix `_xspi_` are intended to be flashed into SPI and recommended for later use after booting another image from micro SD
 {% endhint %}
-
 
 You can build your own image using the script in here – [GitHub - SolidRun/lx2160a\_build](https://github.com/SolidRun/lx2160a_build)
 
@@ -135,7 +133,6 @@ xz -dc lx2160a_....img.xz | dd of=/dev/sdX bs=4M conv=fsync
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
 
-
 **3. SD card insertion**
 
 Please Insert the SD card into your device.
@@ -152,7 +149,7 @@ Please insert the micro USB into your device, then you can refer to [Serial Conn
 
 The default images are designed to simplify installation of rootfs to eMMC, booting only into a minimal initramfs. For access to a full featured rootfs, install the contained image to either eMMC or the very same microSD:
 
-&#x20;Stop the u-boot count down by clicking any key –
+Stop the u-boot count down by clicking any key –
 
 ![](<../../../.gitbook/assets/image-20220112-165255 (1).png>)
 
@@ -178,7 +175,6 @@ mmc write 0xa4000000 0 0xd2000
 **Please Note:** The above commands should be run only once (in the fist boot), or when a new image is to be used.
 {% endhint %}
 
-
 Boot the machine by running ‘**boot**’ in u-boot.
 
 Once you installed the necessary serial connection software and ran the above commands , you should be able to see the following:
@@ -192,7 +188,6 @@ Once you installed the necessary serial connection software and ran the above co
 {% hint style="warning" %}
 **Please note** If you are willing to use a similar image in production you must change this password, or completely disable root login.
 {% endhint %}
-
 
 **7. Final stages**
 
@@ -335,17 +330,17 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 
 {% hint style="warning" %}
 **Please note**
+
 * If you need to install the Gentoo to the SATA change the /dev/nvme0n1p1 to /dev/sdx.
 * In the same way, can install Debian or another Linux arm64 distribution.
 {% endhint %}
 
-
 {% hint style="warning" %}
 **Please note**
-* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
-* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or  root=/dev/sdx .
-{% endhint %}
 
+* The default bootcmd probes every device and looks for a /extlinux/extlinux.conf
+* The kernel command line uses the PARTUUID to boot the right drive can editing the root in the extlinux.conf to use directly root=/dev/nvme0n1p1 or root=/dev/sdx .
+{% endhint %}
 
 ## Build From Source
 
@@ -354,16 +349,12 @@ The bootloader and kernel provided are recent enough to install Gentoo from the 
 * Using HoneyComb LX2K as a Desktop - [https://github.com/Wooty-B/LX2K\_Guide](https://github.com/Wooty-B/LX2K_Guide)
 
 {% hint style="success" %}
-* Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
-* Download a UEFI firmware for the LX2160a from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_uefi)
+- Download a pre-built snapshot image based on Ubuntu 20.04 from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_build)
+- Download a UEFI firmware for the LX2160a from here [SolidRun Images](https://images.solid-run.com/LX2k/lx2160a_uefi)
 {% endhint %}
-
 
 ## Documentation
 
-{% file src="attachments/ClearFog-CX-and-HoneyComb-Schematics-and-Layout-4977.zip" %}
-{% file src="attachments/ClearFog%20CX%20LX2,%20HoneyComb%20LX2%20Mechanical.zip" %}
+{% file src="../../../.gitbook/assets/ClearFog-CX-and-HoneyComb-Schematics-and-Layout-4977 (1).zip" %}
 
-
-
-
+{% file src="../../../.gitbook/assets/ClearFog CX LX2, HoneyComb LX2 Mechanical (1).zip" %}

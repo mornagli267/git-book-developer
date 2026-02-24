@@ -13,7 +13,6 @@
 No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 |                                            |                                                                                                                                                                                                            |                      |                                                                                                                                                                                                      |
@@ -27,11 +26,9 @@ No warranty of accuracy is given concerning the contents of the information cont
 | 3.3V has a low voltage around 2.7V         | HW bug - voltage drop on O-Ring diodes due to low current rating of the component                                                                                                                          | REV 1.1              | <p>Remove D48 and assemble 0ohm 1/2W 0603 resistor from pin #1 to pin #3<br><br><strong>*see attached instructions</strong></p>                                                                      |
 | SFP+ fail to link up on optics module      | HW bug - TX\_DIS is floating causing optic transceiver to shut Tx laser due to module internal PU                                                                                                          | REV 1.1              | <p>Stitching of TX_DIS to GND<br><br><strong>*see attached instructions</strong></p>                                                                                                                 |
 
+{% file src="../../../../.gitbook/assets/ECO  - Clearfog LX2162A_SFP_PU_3V3_ORING_and_SFP_Tx_Dis_.pdf" %}
 
-{% file src="attachments/ECO%20%20-%20Clearfog%20LX2162A_SFP_PU_3V3_ORING_and_SFP_Tx_Dis_.pdf" %}
-
-
-* Drag and drop to upload or \[browse for files]&#x20;
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 

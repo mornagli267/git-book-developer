@@ -39,9 +39,8 @@ The guide will give a technical overview about the product and by the end of it 
 |                  | [Buy Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product&_ga=2.156269240.2016484779.1641802897-2012112798.1622706355) |
 
 {% hint style="info" %}
-Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](/nxp/imx8/com-som/imx8m-plus-som-hardware-user-manual.md) .
+Supported with i.MX8M-PLUS SOM. For more detailed information about our SOM-i.MX8M series please visit this user manual : [i.MX8M Plus SOM Hardware User Manual](../../com-som/imx8m-plus-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 #### Block Diagram
 
@@ -81,7 +80,7 @@ Before powering up the board for the first time it is recommended to select the 
 
 “X” means don’t care, leave as is.
 
-For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](/nxp/imx8/sbc-platform/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) page.
+For additional options, please refer to [i.MX8M Series HummingBoard Boot Select](../imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) page.
 
 ## Booting from SD card
 
@@ -92,7 +91,6 @@ The following shows how to set the switches on the boot source selector:
 {% hint style="info" %}
 Note: The black rectangle represents the switch position.
 {% endhint %}
-
 
 Once you set the switches, you can apply the following for booting from an SD card.
 
@@ -114,12 +112,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc debian-bootimg-cffbac8.img.xz | sudo dd of=/dev/sdX bs=4k conv=fdatasync status=progress
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -131,7 +128,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -169,7 +166,7 @@ wget http://solid-run-images.sos-de-fra-1.exo.io/IMX8/imx8mp_build/build_date_20
 xz -dc imx8mp-sdhc-debian-ddc90d8.img.xz | dd of=/dev/mmcblk2 bs=4k conv=fdatasync
 ```
 
-3. Set the boot select to boot from eMMC as documented [here](/nxp/imx8/sbc-platform/imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) and do reset to boot from eMMC.
+3. Set the boot select to boot from eMMC as documented [here](../imx8m-other-articles/hummingboard-pulse-ripple-mate-and-pro-boot-select.md) and do reset to boot from eMMC.
 
 ### **Final stages**
 
@@ -246,7 +243,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -285,7 +281,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -342,7 +337,7 @@ l2ping -c 4  $MAC
 
 #### GPIO Pins Control
 
-In order to be able to control the GPIO pins, please refer to [GPIO Pins Control - HummingBoard Pulse/Mate & i.MX8M Plus SOM](/nxp/imx8/sbc-platform/imx8m-other-articles/gpio-pins-control-hummingboard-pulse-mate-imx8m-plus-som.md)
+In order to be able to control the GPIO pins, please refer to [GPIO Pins Control - HummingBoard Pulse/Mate & i.MX8M Plus SOM](../imx8m-other-articles/gpio-pins-control-hummingboard-pulse-mate-imx8m-plus-som.md)
 
 **Please Note**
 
@@ -351,18 +346,17 @@ In order to be able to control the GPIO pins, please refer to [GPIO Pins Control
 * M.2 interface supports PCIe and USB 3.0 interfaces
 {% endhint %}
 
-
 #### Cellular Modem
 
 The cellular modem is a more fully featured extension of which contains a cellular module with additional hardware interfaces and a SIM card slot.
 
 You can connect your cellular modem to the mPCIe, and insert a SIM card.
 
-* For some cellular modules to be connected, please refer to [Cellular Modules](/nxp/imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
+* For some cellular modules to be connected, please refer to [Cellular Modules](../../../imx6/sbc-platform/imx6-other-articles/cellular-modules.md) .
 
 #### SPI
 
-For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](/nxp/imx8/sbc-platform/imx8m-other-articles/spi-from-linux-with-spidev.md).
+For testing you serial peripheral interface - SPI, please see this documentation [SPI from Linux with spidev](../imx8m-other-articles/spi-from-linux-with-spidev.md).
 
 #### Audio
 
@@ -425,12 +419,11 @@ $ export XDG_RUNTIME_DIR=/your/directory/location
 
 5. Run Weston.
 
-* &#x20;Connect your HDMI cable and you should be able to see the following :![](<../../../../.gitbook/assets/IMG-6928-20211014-134838 (1).jpg>)
+* Connect your HDMI cable and you should be able to see the following :![](<../../../../.gitbook/assets/IMG-6928-20211014-134838 (1).jpg>)
 
 {% hint style="info" %}
 By default one application is available, the terminal emulator, at the upper left corner.
 {% endhint %}
-
 
 * Start weston FROM A PHYSICAL TERMINAL (from the above terminal, not remote or serial session):
 
@@ -474,14 +467,13 @@ $ sudo adduser username
 For more applications, you can refer to [GUI Support](https://github.com/SolidRun/documentation/blob/bsp/imx6/debian-11_sr1.md#wayland) to install X11, OpenGL-ES, GStreamer, or you can follow this page [Gnome](https://linuxhint.com/install_gnome_debian_10_minimal_server/) for installing Gnome desktop
 {% endhint %}
 
-
 #### Basler Camera
 
-For getting started with the Camera Module on your board, please see this documentation [Basler Camera Quick Start Guide](/nxp/imx8/sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-plus-som-quick-start-guide/hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md).
+For getting started with the Camera Module on your board, please see this documentation [Basler Camera Quick Start Guide](hummingboard-pulse-imx8m-plus-som-quick-start-guide/hummingboard-pulse-ripple-pro-imx8m-plus-basler-camera-quick-start-guide.md).
 
 ## TLV EEPROM Support
 
-Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](/nxp/imx8/sbc-platform/imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
+Starting from April 01. 2022, the EEPROMs on Carriers, i.MX8M Plus SoMs are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [iMXMP EEPROM documentation](../imx8m-other-articles/imx8mp-eeprom-programming-tlv.md) for additional information.
 
 ## MAC Address
 
@@ -516,28 +508,32 @@ There are two options for storing MAC addresses on the i.MX8MP platform:
 
 ## Build from source
 
-* [i.MX8M Software](/nxp/imx8/sbc-platform/imx8m-plus-mini-nano-software.md)
+* [i.MX8M Software](../imx8m-plus-mini-nano-software.md)
 
 ## Documentation
 
-{% file src="attachments/HummingBoard%20Pulse%20Pin%20MUX.xlsx" %}
-{% file src="attachments/HummingBoard%20iMX8%20Gerbers.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20PCB.zip" %}
-{% file src="attachments/HummingBoard%20Puls-REV.2.5-pcb.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Mechanical%20Drawings.zip" %}
-{% file src="attachments/HummingBoard%20iMX8%20Schematics.zip" %}
-{% file src="attachments/HummingBoard-Pulse-Part-Assembly.zip" %}
-{% file src="attachments/hummingboard-pro-extended-v1.0-simplified-schematics.pdf" %}
-{% file src="attachments/hummingboard-pro_extended_v1.0_full_schematics.pdf" %}
+{% file src="../../../../.gitbook/assets/HummingBoard Pulse Pin MUX.xlsx" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Gerbers.zip" %}
 
-* Drag and drop to upload or \[browse for files]&#x20;
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 PCB.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Puls-REV.2.5-pcb.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Mechanical Drawings.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard iMX8 Schematics.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard-Pulse-Part-Assembly.zip" %}
+
+{% file src="../../../../.gitbook/assets/hummingboard-pro-extended-v1.0-simplified-schematics.pdf" %}
+
+{% file src="../../../../.gitbook/assets/hummingboard-pro_extended_v1.0_full_schematics.pdf" %}
+
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-
 [Buy a Sample Now](https://shop.solid-run.com/?s=%22HummingBoard+Pulse%22\&post_type=product&_ga=2.156269240.2016484779.1641802897-2012112798.1622706355)
-
-

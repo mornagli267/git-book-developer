@@ -46,13 +46,11 @@ The guide will give a technical overview about the product and by the end of it 
 Supported with i.MX6 SOM. For more detailed information about our SOM-i.MX6 series please visit this user manual : [i.MX6 SOM Hardware User Manual](../../com-som/imx6-som-hardware-user-manual.md).
 {% endhint %}
 
-
 {% hint style="info" %}
 **Please Note**\
 (\*) RAM type and speed dependent on SOM\
 (\*\*) 1000 Mbps link is limited to 470Mbps actual bandwidth due to internal chip buses
 {% endhint %}
-
 
 #### **Block Diagram**
 
@@ -94,7 +92,6 @@ For Booting from an SD card, jumpers need to be setup at J5005 as follows:
 Before you set the boot jumpers, please refer to [HummingBoard Edge/Gate Boot Jumpers](../imx6-other-articles/hummingboard-edge-gate-boot-jumpers.md) for more information about J5005.
 {% endhint %}
 
-
 Once you setup the jumpers, you can apply the following for booting from an SD card.
 
 **1. Downloading the Yocto image**
@@ -121,7 +118,6 @@ gzip -dc core-image-weston-sdk-imx6qdlcubox.wic.gz | dd of=/dev/sdX bs=4M conv=s
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
 
-
 **3. SD card insertion**
 
 Please Insert the SD card into your device.
@@ -139,7 +135,6 @@ Please connect the UART cable to the pins on connector J25 as shown in the below
 {% hint style="info" %}
 For more information about J25 connector, please refer to [HummingBoard Gate/Edge UART console](../imx6-other-articles/hummingboard-gate-edge-uart-console.md) .
 {% endhint %}
-
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -184,7 +179,6 @@ ifconfig wlan0 up
 To discover your wireless network interface name, see [Network Interfaces](https://wiki.archlinux.org/title/Network_configuration#network_interfaces).
 {% endhint %}
 
-
 2\. Install the wpa\_supplicant package:
 
 ```
@@ -223,7 +217,6 @@ EOF
 {% hint style="info" %}
 Check your personal ssids by running : ‘iw dev wlan0 scan’
 {% endhint %}
-
 
 5\. Make sure it works:
 
@@ -296,7 +289,6 @@ In order to be able to control the GPIO pins, please refer to [HummingBoard Edge
 Note that HDMI doesn’t display anything by default.
 {% endhint %}
 
-
 **Wayland**
 
 1\. Install Weston :
@@ -313,7 +305,6 @@ Note that HDMI doesn’t display anything by default.
 `By default one application is available, the terminal emulator, at the upper left corner.`
 {% endhint %}
 
-
 2\. Start Weston FROM A PHYSICAL TERMINAL (from the above terminal, not remote or serial session):
 
 ```
@@ -323,7 +314,6 @@ Note that HDMI doesn’t display anything by default.
 {% hint style="warning" %}
 Make sure to run the above without sudo.
 {% endhint %}
-
 
 This will bring up the following:
 
@@ -342,23 +332,27 @@ This will bring up the following:
 
 ## Build U-Boot & Kernel from sources
 
-* Build a Linux kernel -  [i.MX6 Kernel](../imx6-software/imx6-kernel.md)
+* Build a Linux kernel - [i.MX6 Kernel](../imx6-software/imx6-kernel.md)
 * Build a U-Boot - [i.MX6 U-Boot](../imx6-software/imx6-u-boot.md)
 
 ## Documentation
 
-{% file src="attachments/HummingBoard2-v1.4-layout_pcb.zip" %}
-{% file src="attachments/HummingBoard2-gerber-rev1.2.zip" %}
-{% file src="attachments/rtc-datasheet-onboard.pdf" %}
-{% file src="attachments/HummingBoard2%20PCB%20parts%20assembly%20Rev%201.4.zip" %}
-{% file src="attachments/HummingBoard2%20Schematics.pdf" %}
-{% file src="attachments/HummingBoard2%20Assembly-Files.zip" %}
-{% file src="attachments/HummingBoard2%20Enclosure-Files.zip" %}
-{% file src="attachments/HummingBoard%20Edge%20BOM%20%20rev%201.4.2.xlsx" %}
-{% file src="attachments/mikrobus_specification-rev2.pdf" %}
+{% file src="../../../../.gitbook/assets/HummingBoard2-v1.4-layout_pcb.zip" %}
 
+{% file src="../../../../.gitbook/assets/HummingBoard2-gerber-rev1.2.zip" %}
 
+{% file src="../../../../.gitbook/assets/rtc-datasheet-onboard (2).pdf" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 PCB parts assembly Rev 1.4.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 Schematics.pdf" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 Assembly-Files.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard2 Enclosure-Files.zip" %}
+
+{% file src="../../../../.gitbook/assets/HummingBoard Edge BOM  rev 1.4.2.xlsx" %}
+
+{% file src="../../../../.gitbook/assets/mikrobus_specification-rev2 (1).pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/product-tag/hummingboard-edge/?_ga=2.56061992.2016484779.1641802897-2012112798.1622706355)
-
-

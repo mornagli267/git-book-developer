@@ -38,10 +38,10 @@ Either you use the Headers and a flashing device to upgrade the BIOS, the AMI So
 
 Latest Bios-Versions:
 
-| Name     | Version | Date       | Link                                                                                                                                                                                                                                            |
-| -------- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IBx Bios | 0.381   | 2021-08-09 | [PRODUCTION\_TXE\_8MB\_BIOSv38-fixed-spd-2Gb-4Gb-dvfs-disbled-2n-rh-autodetected-disabled-rx-tx-power-disabled.bin](attachments/PRODUCTION_TXE_8MB_BIOSv38-fixed-spd-2Gb-4Gb-dvfs-disbled-2n-rh-autodetected-disabled-rx-tx-power-disabled.bin) |
-| IBx Bios | 0.38    | 2018-06-28 | [sr-ibx-ami-bios-v38.zip](attachments/sr-ibx-ami-bios-v38.zip)                                                                                                                                                                                  |
+| Name     | Version | Date       | Link                                                                                                                                                                                                                                                                                                                       |
+| -------- | ------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IBx Bios | 0.381   | 2021-08-09 | [PRODUCTION\_TXE\_8MB\_BIOSv38-fixed-spd-2Gb-4Gb-dvfs-disbled-2n-rh-autodetected-disabled-rx-tx-power-disabled.bin](../../../homepage/iot-industrial-product-line/intel-braswell-ib8000-ib3710/attachments/PRODUCTION_TXE_8MB_BIOSv38-fixed-spd-2Gb-4Gb-dvfs-disbled-2n-rh-autodetected-disabled-rx-tx-power-disabled.bin) |
+| IBx Bios | 0.38    | 2018-06-28 | [sr-ibx-ami-bios-v38.zip](../../../homepage/iot-industrial-product-line/intel-braswell-ib8000-ib3710/attachments/sr-ibx-ami-bios-v38.zip)                                                                                                                                                                                  |
 
 ### Hardware
 

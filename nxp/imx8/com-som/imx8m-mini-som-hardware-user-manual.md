@@ -11,7 +11,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the SolidRun [SOM i.MX8M Mini-series](https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8m-mini-som/), which includes:
@@ -42,7 +41,7 @@ The SolidRun’s SR-SOM-MX8M-Mini is a low power, low cost high performance micr
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
 * [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-pulse-imx8m-mini-som-quick-start-guide.md) – A SBC that incorporates the SOM retains the different Linux distributions while adding extra hardware functionalities and access to the hardware.
-* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-ripple-imx8m-mini-som-quick-start-guide.md) –  A low cost SBC computer (Partial assembly of the HummingBoard Pulse) optimized for the i.MX8M-Mini.
+* [HummingBoard Pulse & i.MX8M Mini SOM Quick Start Guide](../sbc-platform/hummingboard-imx8-sbc-quick-start-guide/hummingboard-ripple-imx8m-mini-som-quick-start-guide.md) – A low cost SBC computer (Partial assembly of the HummingBoard Pulse) optimized for the i.MX8M-Mini.
 
 ## Description
 
@@ -142,7 +141,6 @@ The i.MX8M-Mini SOM support varieties of memory interfaces for booting and data 
 {% hint style="info" %}
 (\*) All boot configuration signals are available on the SOM connector.
 {% endhint %}
-
 
 #### 10/100/1000 MBPS ETHERNET PHY
 
@@ -261,7 +259,6 @@ For more details check the i.MX8M-Mini [datasheet](https://www.nxp.com/products/
 SAI1 signals are used as boot configuration during POR.
 {% endhint %}
 
-
 #### UART
 
 The i.MX8M-Mini SOM can support up to 4 UART interfaces. The following figure describes the UART interfaces.
@@ -302,7 +299,6 @@ The i.MX8M-Mini SOM supports an eSPI interface. The following figure describes t
 {% hint style="warning" %}
 eSPI Shares signals with UART-4.
 {% endhint %}
-
 
 #### I2C
 
@@ -399,11 +395,11 @@ The following table describes how the booting signals need to be set to support 
 
 {% hint style="warning" %}
 **Please note**
+
 * NAND booting is not an option on the i.MX8M-mini SOM.
 * SPI NOR is an option on the carrier board (Not on the SOM).
 * The configuration signals can be used as I/O or Audio interfaces after POR. Make sure that during POR it keep the booting requirements.
 {% endhint %}
-
 
 #### I2C Interfaces
 
@@ -448,7 +444,7 @@ JTAG interface is on the i.MX8M-Mini SOM and is exposed as test pins on print si
 
 ![](../../../.gitbook/assets/image-20211107-122353.png)
 
-TP-1 -> JTAG\_nTRST.  TP-2 -> JTAG\_TDI. TP-3 -> JTAG\_TMS.
+TP-1 -> JTAG\_nTRST. TP-2 -> JTAG\_TDI. TP-3 -> JTAG\_TMS.
 
 TP-4 -> JTAG\_TCK. TP-5 -> JTAG\_TDO.
 
@@ -472,13 +468,12 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/sr-imx8m-carrierboard-heatsink-rev1.0.zip" %}
-{% file src="../sbc-platform/attachments/i.MX8M%20Mini%20SOM%20-%20Documentation%20Board%20&%20Assembly%20Models.rar" %}
-{% file src="../sbc-platform/attachments/imx8m-mini-simplified-schematics-r1.2.pdf" %}
-{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20MX8M%20Mini%20V1.pdf" %}
+{% file src="../../../.gitbook/assets/sr-imx8m-carrierboard-heatsink-rev1.0.zip" %}
 
+{% file src="../../../.gitbook/assets/i.MX8M Mini SOM - Documentation Board & Assembly Models.rar" %}
 
+{% file src="../../../.gitbook/assets/imx8m-mini-simplified-schematics-r1.2.pdf" %}
+
+{% file src="../../../.gitbook/assets/Reliability prediction for MX8M Mini V1.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=nxp-i-mx8m-mini&_ga=2.160415294.2016484779.1641802897-2012112798.1622706355)
-
-

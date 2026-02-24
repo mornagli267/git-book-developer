@@ -1,8 +1,6 @@
-# Bedrock Deck, Cartridge & SOM 3D models
+# Bedrock Deck Cartridge SOM 3D Models
 
 ## Bedrock Deck, Cartridge & SOM 3D models
-
-![image-20240613-100540.png](../../../.gitbook/assets/image-20240613-100540.png)
 
 ## Bedrock Deck
 
@@ -11,9 +9,6 @@ If you consider embedding Bedrock-boards inside a fully custom enclosure, you wo
 {% hint style="info" %}
 SolidRun recommends using [Bedrock Tile](bedrock-mounting-options.md#bedrock-tile-mounting) which is much easier to integrate
 {% endhint %}
-
-
-![image-20240613-100001.png](../../../.gitbook/assets/image-20240613-100001.png)
 
 ### Notes:
 
@@ -25,8 +20,6 @@ SolidRun recommends using [Bedrock Tile](bedrock-mounting-options.md#bedrock-til
 ## Bedrock Cartridge
 
 If you consider designing a custom NIO (carrier board)for Bedrock SOM, starting from Bedrock Cartridge is the way to go.
-
-![image-20240302-130910.png](../../../.gitbook/assets/image-20240302-130910.png)
 
 Bedrock Cartridge provides the following:
 
@@ -45,8 +38,6 @@ Bedrock Cartridge provides the following:
 [Download Bedrock Cartridge 3D model](https://drive.google.com/file/d/1rjxXaTqUv_GOF7j7SQUg-WScW7H0wOlQ/view?usp=drive_link)
 
 ## Bedrock SOM
-
-![image-20240302-131050.png](../../../.gitbook/assets/image-20240302-131050.png)
 
 If you decide to design directly with Bedrock SOM, it is advised to use Bedrock Cartridge as reference.
 

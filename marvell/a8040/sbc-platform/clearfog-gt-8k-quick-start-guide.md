@@ -43,11 +43,11 @@ The guide will give a technical overview about the product and by the end of it 
 
 {% hint style="success" %}
 **Please note** (\*) The default configuration in the release software:
+
 * CON4 = mPCIe0 configure to be PCIe
 * CON3 = mPCI1 configure to SATA (can use mpcie to m.2 adapter)
 * CON2 = mPCI2 configure to be USB 3.0 (can connect an LTE modem, this slot has a SIM connection) You can change the configuration as needed
 {% endhint %}
-
 
 ## **Block Diagram**
 
@@ -107,7 +107,7 @@ These examples are the cables which SolidRun uses for testing, and should provid
 
 ## Boot Select
 
-Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GT-8K Boot Select](/marvell/a8040/sbc-platform/a8040-other-articles/clearfog-gt-8k-boot-select.md) .
+Before powering up the board for the first time it is recommended to select the boot media. In order to configure the boot media, please refer to [ClearFog GT-8K Boot Select](a8040-other-articles/clearfog-gt-8k-boot-select.md) .
 
 ## Booting from an SPI card
 
@@ -118,7 +118,7 @@ The switches on the boot source **SW6** selector must be set as follows:
 | Switch 1 | Switch 2 | Switch 3 | Switch 4 | Switch 5 |
 | OFF      | OFF      | ON       | OFF      | OFF      |
 
-The following shows how to set the switches on the boot source selector:&#x20;
+The following shows how to set the switches on the boot source selector:
 
 ![](../../../.gitbook/assets/image-20220112-172148.png)
 
@@ -127,7 +127,6 @@ Once you set the switches, you can apply the following for booting from an SD ca
 {% hint style="warning" %}
 **Please Note:** Boot is made from SPI by default
 {% endhint %}
-
 
 **1. Downloading the Debian image**
 
@@ -147,12 +146,11 @@ Use the following commands for writing the image to an SD card:
 xz -dc sr-8040-debian-buster-20190616-cfgt-sdhc.img.xz | dd of=/dev/sdX bs=4k conv=fdatasync
 ```
 
-* For more information, please visit [Flashing an SD Card](/other-articles/flashing-an-sd-card.md) .
+* For more information, please visit [Flashing an SD Card](../../../other-articles/flashing-an-sd-card.md) .
 
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -164,7 +162,7 @@ Connect your power adaptor to the DC jack, and then connect the adaptor to mains
 
 **5. Serial Connection**
 
-Please insert the micro USB into your device, then you can refer to [Serial Connection](/other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
+Please insert the micro USB into your device, then you can refer to [Serial Connection](../../../other-articles/serial-connection.md) for installing necessary serial connection software in Linux/Windows.
 
 ### Connecting a USB to UART adapter to ClearFog GT 8K
 
@@ -175,7 +173,6 @@ On the top side of the ClearFog GT 8K, there is a header for connecting the adap
 {% hint style="warning" %}
 **Please Note** The pin that is closest to the mechanical hole should be connected to the ground cable (black), the middle pin should be connected to the Tx (green cable) and the 3’rd pin should be connected to the Rx (white). The red cable should not be connected!
 {% endhint %}
-
 
 Once you installed the necessary serial connection software, you should be able to see the following:
 
@@ -203,7 +200,7 @@ reboot
 ## Build From Source
 
 * You can build your own image using the script in here – [GitHub - SolidRun/clearfog-gt-8k-build](https://github.com/SolidRun/clearfog-gt-8k-build)
-* U-Boot -  [GitHub - SolidRun/8040-uboot](https://github.com/SolidRun/Documentation/blob/bsp/8040/u-boot.md)
+* U-Boot - [GitHub - SolidRun/8040-uboot](https://github.com/SolidRun/Documentation/blob/bsp/8040/u-boot.md)
 
 ## ClearFog GT 8K With Enclosure
 
@@ -211,9 +208,6 @@ reboot
 
 ## Documentation
 
-{% file src="attachments/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf" %}
-{% file src="attachments/ClearFog%20GT%208K%20Full%20Board%20Assy_Rev.1.rar" %}
+{% file src="../../../.gitbook/assets/ClearFog-GT-8K-rev-1_1-Simplified-Schematics.pdf" %}
 
-
-
-
+{% file src="../../../.gitbook/assets/ClearFog GT 8K Full Board Assy_Rev.1.rar" %}

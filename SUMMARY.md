@@ -413,6 +413,8 @@
     * [Wirepas](solidsense/solidsense-software/wirepas.md)
       * [Configuring and testing the Wirepas gateway software](solidsense/solidsense-software/wirepas/configuring-and-testing-the-wirepas-gateway-software.md)
       * [Flashing or Re-flashing Wirepas sinks on SolidSense gateway (V0.9 and up)](solidsense/solidsense-software/wirepas/flashing-or-re-flashing-wirepas-sinks-on-solidsense-gateway-v09-and-up.md)
+* [Bedrock](bedrock/README.md)
+  * [Bedrock Page use reusable content](bedrock/bedrock-page-use-reusable-content.md)
 * [Other Articles](other-articles.md)
   * [Application Note: eMMC Lifetime Optimization](other-articles/application-note-emmc-lifetime-optimization.md)
   * [Connecting to Wi-Fi with connmanctl](other-articles/connecting-to-wi-fi-with-connmanctl.md)

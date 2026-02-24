@@ -1,7 +1,5 @@
 # Bedrock V3000 Technical Documentation
 
-![](../../.gitbook/assets/banner.530.jpg)
-
 ## Bedrock V3000 Technical Articles
 
 ## Bedrock Mechanical Documentation

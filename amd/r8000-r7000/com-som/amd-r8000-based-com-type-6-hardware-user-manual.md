@@ -13,11 +13,9 @@
 No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 {% hint style="info" %}
 Page is under construction and NOT final
 {% endhint %}
-
 
 ## Introduction
 
@@ -121,7 +119,6 @@ Since the measurement are done on the input of the pico-psu; the SoC consumption
 {% hint style="warning" %}
 **Please note** (\*) – The Linux command is ‘memtester 100M > /dev/null &’ ran 16x times where 16 is the thread count (\*\*) – The Linux command ‘cpuburn’ is ran two times in background. The reason cpuburn was chosen since it can generate most heat out of the cores (the core pipeline most utilized). (\*\*\*) – This measurement was taken when the fan is disconnected and the power was measured when the die reached 105c. Notice that keeping the fan disconnected will make the processor reach temperatures that are out of spec.
 {% endhint %}
-
 
 ### Maximum Current Consumption
 
@@ -367,17 +364,15 @@ TBD
 
 ### Documentation
 
+{% file src="../../../.gitbook/assets/amd-mitx-cex6-1.0.0 - B-t-B Headers.pdf" %}
 
-{% file src="attachments/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf" %}
-{% file src="attachments/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf" %}
+{% file src="../../../.gitbook/assets/amd-fp7r2-com6-1.0.0 - B-t-B Headers.pdf" %}
 
-
-* Drag and drop to upload or \[browse for files]&#x20;
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
-
 
 [Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
 

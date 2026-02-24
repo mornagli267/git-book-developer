@@ -50,9 +50,7 @@
 
 #### Simplified Schematics
 
-
-{% file src="../sbc-platform/bedrock-v3000-technical-documentation/hardware-bedrock-v3000/attachments/SolidRun%20Bedrock%20V3000%20SoM%20Specifications.pdf" %}
-
+{% file src="../../../.gitbook/assets/SolidRun Bedrock V3000 SoM Specifications (1).pdf" %}
 
 #### Mechanical Files
 

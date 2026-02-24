@@ -14,7 +14,6 @@
 **Disclaimer** No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This User Manual relates to the SolidRun SR-SOM-AM64xx-series, which includes
@@ -31,8 +30,8 @@ The SolidRun’s SR-SOM-AM64xx is a low power, low-cost high performance micro s
 
 * Ultra-small footprint SOM (47x30mm) including three board-to-board connectors (250 total pins number).
 * TI's AM64XX SoC:\
-  \-  Single/Dual core Cortex A53 up to 1.0GHz\
-  \-  400 MHz Cortex-M4F subsystem processor supports real time tasks.\
+  \- Single/Dual core Cortex A53 up to 1.0GHz\
+  \- 400 MHz Cortex-M4F subsystem processor supports real time tasks.\
   \- Up to two dual-core Cortex-R5F MCU subsystems at up to 800 MHz, integrated for real-time processing.\
   \- Safety & Security engines
 * DDR4 (1.6 GHz) memory in x16 configurations supports up to 2GB and inline ECC
@@ -47,7 +46,7 @@ The SolidRun’s SR-SOM-AM64xx is a low power, low-cost high performance micro s
 
 The following products are provided from SolidRun both as production level platforms and as reference examples on how to incorporate the SOM in different levels of integration:
 
-* [HummingBoard AM64x](/ti/am64x/sbc-platform/am64x-hummingboard-t-quick-start-guide.md)– A board computer that incorporates the SOM retains the same Linux distributions while adding extra hardware functionalities and access to the hardware.
+* [HummingBoard AM64x](../sbc-platform/am64x-hummingboard-t-quick-start-guide.md)– A board computer that incorporates the SOM retains the same Linux distributions while adding extra hardware functionalities and access to the hardware.
 
 ## Description
 
@@ -61,31 +60,31 @@ The following figure describes the AM64xx SOM's Blocks Diagram.
 
 Following is the features summary of the SOM. Notice that some of the features are pinout multiplexed (please refer to the pin mux table and the TI's AM64xx data sheets):
 
-·         Dual/Single ARM® Cortex™ A53 Processor, up to 1.0 GHz
+· Dual/Single ARM® Cortex™ A53 Processor, up to 1.0 GHz
 
-·         Dual or single dual-core Cortex R5F Up to 800 MHz
+· Dual or single dual-core Cortex R5F Up to 800 MHz
 
-·         Cortex-M4 subsystem processor up to 400 MHz
+· Cortex-M4 subsystem processor up to 400 MHz
 
-·         Up to 2GByte DDR4 memory
+· Up to 2GByte DDR4 memory
 
-·         Up to 64 GB eight bits eMMC memory.
+· Up to 64 GB eight bits eMMC memory.
 
-·         OSPI/QSPI NOR Flash memory.
+· OSPI/QSPI NOR Flash memory.
 
-·         I2C EEPROM.
+· I2C EEPROM.
 
-·         Up to 3 x 10/100/1000 Mbps Ethernet PHY
+· Up to 3 x 10/100/1000 Mbps Ethernet PHY
 
-o   Up to two gigabit Industrial Communication Subsystems e.g., ECAT, Profinet etc.
+o Up to two gigabit Industrial Communication Subsystems e.g., ECAT, Profinet etc.
 
-o   Time stamping
+o Time stamping
 
-o   TSN
+o TSN
 
-·         SUB Giga modem (CC1312)
+· SUB Giga modem (CC1312)
 
-·         Variety of interfaces and IO on Board-to-Board connectors.
+· Variety of interfaces and IO on Board-to-Board connectors.
 
 A single 5.0V interface
 
@@ -114,7 +113,7 @@ The AM64xx SOM supports varieties of memory interfaces for booting and data stor
 
 #### eMMC NAND Flash
 
-&#x20;Up to 64GB memory space.
+Up to 64GB memory space.
 
 * 8 Bits data bus.
 * Support of eMMC5.1 Host Specification (JESD84-B51).
@@ -133,35 +132,34 @@ The AM64xx SOM supports varieties of memory interfaces for booting and data stor
 
 #### EEPROM (SOM)
 
-&#x20;·       1Kb EEPROM
+· 1Kb EEPROM
 
-·       ON-Semi’s CAT24AA01TDI or compatible
+· ON-Semi’s CAT24AA01TDI or compatible
 
-·       Address 0X50 (7 bits format)
+· Address 0X50 (7 bits format)
 
-·       Stores SOM’s configuration such as MAC addresses, Memory Configuration, Serial Number etc.\
-&#x20;      → Not recommended for customer data.
+· Stores SOM’s configuration such as MAC addresses, Memory Configuration, Serial Number etc.\
+→ Not recommended for customer data.
 
 #### Micro-SD (Carrier)
 
-&#x20;·        Optional on Carrier board
+· Optional on Carrier board
 
-·        Implements 4 data bits.
+· Implements 4 data bits.
 
-·        SD Host Controller Standard Specification 4.10 and SD Physical Layer Specification v3.01.
+· SD Host Controller Standard Specification 4.10 and SD Physical Layer Specification v3.01.
 
-·        SDIO Specification v3.00
+· SDIO Specification v3.00
 
-·        DDR50: UHS-I 1.8 V signalling, frequency up to 50 MHz, up to 50 MBps.
+· DDR50: UHS-I 1.8 V signalling, frequency up to 50 MHz, up to 50 MBps.
 
-·        SDR104 is NOT supported.
+· SDR104 is NOT supported.
 
-·        Can be used as BOOT NVM \*
+· Can be used as BOOT NVM \*
 
 {% hint style="warning" %}
 **\*Note – All boot configuration signals are available on the SOM connector.**
 {% endhint %}
-
 
 #### 10/100/1000 Mbps Ethernet Interfaces
 
@@ -186,13 +184,13 @@ The three Giga Ethernet PHY are TI’s DP83869:
 * Time Stamping support.
 * Industrial protocols used in master and slave mode, such as:
 
-o   EtherCAT®
+o EtherCAT®
 
-o   PROFINET™
+o PROFINET™
 
-o   EtherNet/IP™
+o EtherNet/IP™
 
-o   Others
+o Others
 
 #### CPSW3G
 
@@ -217,7 +215,6 @@ ICSSG1 clock is connected to CPSW3G output clock and ICSSG2 is connected to ICSS
 **Note – Clock need to be active before reset signal is de-asserts**
 {% endhint %}
 
-
 ## AM64xx External Interfaces
 
 #### General
@@ -226,17 +223,17 @@ The SOM incorporates three Hirose DF40 board-to-board headers.
 
 The selection of the Hirose DF40 is due to the following criteria:
 
-·         Miniature (0.4m pitch)
+· Miniature (0.4m pitch)
 
-·         Highly reliable manufacturer
+· Highly reliable manufacturer
 
-·         Availability (worldwide distribution channels)
+· Availability (worldwide distribution channels)
 
-·         Excellent signal integrity (supports 6Gbps)
+· Excellent signal integrity (supports 6Gbps)
 
-o   Please contact Hirose or SolidRun for reliability and test result data.
+o Please contact Hirose or SolidRun for reliability and test result data.
 
-·         Mating height of between 1.5mm to 3.0mm. AM64xx headers are fixed, the final mating height is determined by carrier implementation
+· Mating height of between 1.5mm to 3.0mm. AM64xx headers are fixed, the final mating height is determined by carrier implementation
 
 #### Supported Interfaces - Main
 
@@ -248,42 +245,41 @@ The AM64xx supports a single Ser/Des interface. The Ser/Des can be configured as
 
 **The PCIe main features are:**
 
-·         Ser/Des is configured as PCIe.
+· Ser/Des is configured as PCIe.
 
-·         On board coupling capacitors for TX and CLK.
+· On board coupling capacitors for TX and CLK.
 
-·         PCIe clock is generated on the AM64xx SoC.
+· PCIe clock is generated on the AM64xx SoC.
 
-·         Single PCIe lane up to 5.0GT/lane.
+· Single PCIe lane up to 5.0GT/lane.
 
-·         Gen2 (5 Gbps 8/10-bit encoding), and Gen1 (2.5 Gbps 8/10-bit encoding) with auto-negotiation.
+· Gen2 (5 Gbps 8/10-bit encoding), and Gen1 (2.5 Gbps 8/10-bit encoding) with auto-negotiation.
 
-·         Compliant to PCI-Express® Base Specification, Revision 4.0 (Version 0.7).
+· Compliant to PCI-Express® Base Specification, Revision 4.0 (Version 0.7).
 
-·         PHY Interface for the PCI Express Architecture, Version 4.2 compliance.
+· PHY Interface for the PCI Express Architecture, Version 4.2 compliance.
 
-·         Supports Spread Spectrum Clocking in Transmitter and Receiver.
+· Supports Spread Spectrum Clocking in Transmitter and Receiver.
 
 **USB main features are:**
 
-·         Ser/Des is configured as USB 3.1.
+· Ser/Des is configured as USB 3.1.
 
-·         Universal Serial Bus 3.1 (USB) subsystem with integrated USB2.0 PHY
+· Universal Serial Bus 3.1 (USB) subsystem with integrated USB2.0 PHY
 
-·         Dual-Role Device (DRD) capability
+· Dual-Role Device (DRD) capability
 
-·         Compliance with USB 3.1 Gen1 Specification
+· Compliance with USB 3.1 Gen1 Specification
 
-·         Support of Peripheral (aka Device) mode at Super Speed (SS at 5 Gbps), High Speed (HS at 480 Mbps), and Full Speed (FS at 12 Mbps)
+· Support of Peripheral (aka Device) mode at Super Speed (SS at 5 Gbps), High Speed (HS at 480 Mbps), and Full Speed (FS at 12 Mbps)
 
-·         Support of Host mode at Super Speed (SS at 5 Gbps), High Speed (HS at 480 Mbps), Full Speed (FS at 12 Mbps), and Low Speed (LS at 1.5 Mbps)
+· Support of Host mode at Super Speed (SS at 5 Gbps), High Speed (HS at 480 Mbps), Full Speed (FS at 12 Mbps), and Low Speed (LS at 1.5 Mbps)
 
-·         ECC on internal RAMs
+· ECC on internal RAMs
 
 {% hint style="warning" %}
 **NOTE – USB 2.0 is always available even if the Ser/Des is configured as PCIe**.
 {% endhint %}
-
 
 #### UART
 
@@ -293,26 +289,25 @@ The AM64xx SOM can support up to 4 UART interfaces. The following figure describ
 
 The UART interfaces main features are:
 
-·         UART 0 supports TX, RX, CTS and RTS. After POR it is used as terminal.
+· UART 0 supports TX, RX, CTS and RTS. After POR it is used as terminal.
 
-·         UART 2 supports TX, RX, CTS and RTS.
+· UART 2 supports TX, RX, CTS and RTS.
 
-·         UART 3 Supports TX, RX, CTS and RTS.
+· UART 3 Supports TX, RX, CTS and RTS.
 
-·         UART 4 support TX, RX
+· UART 4 support TX, RX
 
-·         RS-485 external transceiver auto flow control support.
+· RS-485 external transceiver auto flow control support.
 
-·         Baud rates up to 3.6 Mbps. Auto-baud between 1200 bits/s and 115.2 Kbits/s.
+· Baud rates up to 3.6 Mbps. Auto-baud between 1200 bits/s and 115.2 Kbits/s.
 
-·         Flow control: Hardware (RTS/CTS) or software (XON/XOFF).
+· Flow control: Hardware (RTS/CTS) or software (XON/XOFF).
 
-·         Optional multi-drop transmission.
+· Optional multi-drop transmission.
 
 {% hint style="warning" %}
 **Note – The UART signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
 {% endhint %}
-
 
 #### eSPI
 
@@ -320,16 +315,15 @@ The AM64xx SOM supports two eSPI interface. The following figure describes the e
 
 ![](../../../.gitbook/assets/image-20220525-051541.png)
 
-·         Single HW chip select nSS0.
+· Single HW chip select nSS0.
 
-·         Master/Slave configurable.
+· Master/Slave configurable.
 
-·         Serial clock with programmable frequency, polarity, and phase for each channel.
+· Serial clock with programmable frequency, polarity, and phase for each channel.
 
 {% hint style="warning" %}
 **Note – The eSPI signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
 {% endhint %}
-
 
 #### I2C
 
@@ -339,47 +333,45 @@ The AM64xx SOM supports up to two I2C Interfaces. The following figure describes
 
 The I2C main features are:
 
-·         I2C-0 is connected to the SOM EEPROM and BtB connector.
+· I2C-0 is connected to the SOM EEPROM and BtB connector.
 
-·         I2C-1 is available on the connector by default.
+· I2C-1 is available on the connector by default.
 
-·         Pull-up resistors assembled on SOM.
+· Pull-up resistors assembled on SOM.
 
-·         Multi-master operation.
+· Multi-master operation.
 
-·         In Standard mode, I2C supports the data transfer rates up to 100 kbits/s.
+· In Standard mode, I2C supports the data transfer rates up to 100 kbits/s.
 
-·         In Fast mode, data transfer rates up to 400 kbits/s can be achieved.
+· In Fast mode, data transfer rates up to 400 kbits/s can be achieved.
 
 {% hint style="warning" %}
 **Note – The I2C signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
 {% endhint %}
 
-
 #### uSD
 
 The uSD supports the following features:
 
-·         AM64xx’s MMC-1.
+· AM64xx’s MMC-1.
 
-·        Optional on Carrier board
+· Optional on Carrier board
 
-·        Implements 4 data bits.
+· Implements 4 data bits.
 
-·        SD Host Controller Standard Specification 4.10 and SD Physical Layer Specification v3.01.
+· SD Host Controller Standard Specification 4.10 and SD Physical Layer Specification v3.01.
 
-·        SDIO Specification v3.00
+· SDIO Specification v3.00
 
-·        DDR50: UHS-I 1.8 V signalling, frequency up to 50 MHz, up to 50 MBps.
+· DDR50: UHS-I 1.8 V signalling, frequency up to 50 MHz, up to 50 MBps.
 
-·        SDR104 is NOT supported.
+· SDR104 is NOT supported.
 
-·        Can be used as BOOT NVM \*
+· Can be used as BOOT NVM \*
 
 {% hint style="warning" %}
 **Note – The SDIO signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
 {% endhint %}
-
 
 #### MCAN
 
@@ -389,45 +381,43 @@ The AM64xx supports up to two CAN interfaces.
 
 MCAN main features are:
 
-·         Conforms with CAN Protocol 2.0 A, B and ISO 11898-1:2015.
+· Conforms with CAN Protocol 2.0 A, B and ISO 11898-1:2015.
 
-·         Full CAN FD support (up to 64 data bytes).
+· Full CAN FD support (up to 64 data bytes).
 
 {% hint style="warning" %}
 **Note – The MCAN signals are multiplexed with other functional options. Refer to the Pin MUX tools for optional functionalities.**
 {% endhint %}
 
-
 #### ADC
 
 The AM64xx support up to eight Analog to Digital lines. The Analog-to-Digital Converter (ADC) module contains a single 12-bit ADC which can be multiplexed to any 1of 8 analog inputs (channels).
 
-·         4 MSPS rate with a 60 MHz SMPL\_CLK.
+· 4 MSPS rate with a 60 MHz SMPL\_CLK.
 
-·         Functional Internal Diagnostic Debug Mode.
+· Functional Internal Diagnostic Debug Mode.
 
-·         Single-ended or differential input options.
+· Single-ended or differential input options.
 
-·         Simultaneous sampling is NOT supported.
+· Simultaneous sampling is NOT supported.
 
 #### GPIO
 
 The AM64xx support GPIO interfaces that can be multiplex with alternative function interfaces. Some of the interfaces are:
 
-·         Fast serial interface (FSI).
+· Fast serial interface (FSI).
 
-·         Enhanced Capture Module.
+· Enhanced Capture Module.
 
-·         Enhanced PWM.
+· Enhanced PWM.
 
-·         Timers
+· Timers
 
-·         More
+· More
 
 {% hint style="info" %}
 Refer to the Pin MUX tools for optional functionalities.
 {% endhint %}
-
 
 ## Connector’s Signal Description
 
@@ -452,7 +442,7 @@ Refer to the Pin MUX tools for optional functionalities.
 | 15             | BOOTMODE7 (GPIO0\_22)                 | GPMC0\_AD7        | V21                 | 3V3            | PU/PD (R87/R98)                             | BOOTMODE7                                        |
 | 16             | GND                                   |                   |                     |                |                                             | GND                                              |
 | 17             | BOOTMODE6 (GPIO0\_21)                 | GPMC0\_AD6        | V20                 | 3V3            | DIP-Switch (S1-9, PD) / EXTENDER (J5-5)     | BOOTMODE6                                        |
-| 18             | GPMC0\_ADVn\_ALE  (GPIO0\_32)         | GPMC0\_ADVN\_ALE  | P16                 | 3V3            | M.2 WiFi Disable (M2-8)                     | M.2\_W\_DIS#                                     |
+| 18             | GPMC0\_ADVn\_ALE (GPIO0\_32)          | GPMC0\_ADVN\_ALE  | P16                 | 3V3            | M.2 WiFi Disable (M2-8)                     | M.2\_W\_DIS#                                     |
 | 19             | PRG0\_MDIO0\_MDC (GPIO1\_41)          | PRG0\_MDIO0\_MDC  | P3                  | 3V3            | SerDes MUX Enable                           | PCIe\_EN                                         |
 | 20             | PRG0\_PRU0GPO5/UART3\_RTSn            | PRG0\_PRU0\_GPO5  | R3                  | 3V3            | RS-485-RE#/DE (U18-2/3)                     | PRG0\_PRU0GPO5/UART3\_RTSn                       |
 | 21             | BOOTMODE2 (GPIO0\_17)                 | GPMC0\_AD2        | T18                 | 3V3            |                                             | NC                                               |
@@ -686,11 +676,11 @@ The AM64xx SOM’s power is a single 5V source. It uses Discreet power converter
 
 The power architecture main features are:
 
-·         Single 5V power source.
+· Single 5V power source.
 
-·         Buck-Boost on the input enable lower power connection e.g. battery.
+· Buck-Boost on the input enable lower power connection e.g. battery.
 
-·         3.3V output up to 1A (Need to calculate system and SOM power).
+· 3.3V output up to 1A (Need to calculate system and SOM power).
 
 #### VPP\_1V8
 
@@ -735,20 +725,19 @@ The AM64xx SOM can boot from different NVM according to an external resistors co
 
 The available booting NVM are:
 
-·         eMMC on MMC0.
+· eMMC on MMC0.
 
-·         uSD card on MMC1.
+· uSD card on MMC1.
 
-·         QSPI on QSPIA.
+· QSPI on QSPIA.
 
-·         UART
+· UART
 
-·         USB
+· USB
 
 {% hint style="warning" %}
 Note – Ethernet boot is NOT supported
 {% endhint %}
-
 
 There are 16 boot mode signals \[BOOTMODE 0-15]. The table below describes the supported boot option in the AM64xx system (SOM and Carrier).
 
@@ -757,7 +746,6 @@ There are 16 boot mode signals \[BOOTMODE 0-15]. The table below describes the s
 {% hint style="warning" %}
 **Note – the PLL frequency is set on the SOM. Other frequencies required a special SKU.** **Note – The Boot signals have an alternative functionality. Make sure it fixed during reset.**
 {% endhint %}
-
 
 #### I2C Interfaces
 
@@ -794,27 +782,24 @@ Following is a diagram of the TOP and BOTTOM view of the SR-AM64xx.
 
 **Note the following details:**
 
-·         The carrier board must use the same footprint as in the above mechanical footprint.\
-Since this is a TOP VIEW of the print side of the AM64xx, the diagram above describes the dimensions and placement of the board-to-board  headers, mechanical holes and boundaries of the AM64xx, as-is.
+· The carrier board must use the same footprint as in the above mechanical footprint.\
+Since this is a TOP VIEW of the print side of the AM64xx, the diagram above describes the dimensions and placement of the board-to-board headers, mechanical holes and boundaries of the AM64xx, as-is.
 
-·         J9 is the main board-to-board  header (bottom side in the diagram).
+· J9 is the main board-to-board header (bottom side in the diagram).
 
-·         J7 is the second board-to-board  header (upper side in the diagram).
+· J7 is the second board-to-board header (upper side in the diagram).
 
-·         J5001 is the third board-to-board  header (right side in the diagram).
+· J5001 is the third board-to-board header (right side in the diagram).
 
-·         In case 1.5mm mating height was chosen, then the AM64xx requirement would be that all area beneath it on the carrier will be all dedicated ONLY for the board-to-board connectivity; no other components are allowed.\
+· In case 1.5mm mating height was chosen, then the AM64xx requirement would be that all area beneath it on the carrier will be all dedicated ONLY for the board-to-board connectivity; no other components are allowed.\
 In case higher mating is chosen, then 1.5mm should be reserved for the AM64xx. For instance, if 3.5mm mating height is chosen, then 1.5mm is dedicated to the AM64xx print side components and the remaining 2mm for the carrier components underneath the AM64xx.
 
 Refer to SolidRun HummingBoard design and layout, where there are examples of the main and second 80 pin header board-to-board usage.
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20TI%20AM64x%20SOM%20V1.pdf" %}
-
+{% file src="../../../.gitbook/assets/Reliability prediction for TI AM64x SOM V1.pdf" %}
 
 [Signals%20Allocation.xlsx](attachments/Signals%20Allocation.xlsx)
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=ti-am64x)
-
-

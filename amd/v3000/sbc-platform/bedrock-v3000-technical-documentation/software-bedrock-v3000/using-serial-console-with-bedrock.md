@@ -26,7 +26,7 @@ sudo dmesg | grep ttyUSB*
 * Choose **Serial** from the 3 bullet choices
 * In the **serial line** type COMX
 * Where X is the number assigned to your serial adapter in the device manager
-  * Open device manager, and look for serial adapters, look for the COMX that corresponds to your serial connection:![image-20240617-110508.png](../../../../.gitbook/assets/image-20240617-110508.png)
+  * Open device manager, and look for serial adapters, look for the COMX that corresponds to your serial connection:![image-20240617-110508.png](../../../../../.gitbook/assets/image-20240617-110508.png)
 * **Speed** should be 115200
 * You can click on save to save the current configuration for faster connection in the future
 * Click on **open**
@@ -53,7 +53,7 @@ NOTE: when using TIO in BIOS, the currently selected setting could be invisible 
 
 * Use a mini-USB to USB-A cable to connect Bedrock console port to an available USB port on your host PC.
 
-![](../../../../.gitbook/assets/image-20230604-084319.png)
+![](../../../../../.gitbook/assets/image-20230604-084319.png)
 
 * Start Terminal utility on your host
 

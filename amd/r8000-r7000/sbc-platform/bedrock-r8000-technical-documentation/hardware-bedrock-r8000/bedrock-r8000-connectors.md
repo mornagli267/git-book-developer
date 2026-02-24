@@ -26,9 +26,8 @@ Manufacturer PN: 1827703
 [https://www.phoenixcontact.com/en-us/products/pcb-plug-mc-15-2-stf-381-1827703](https://www.phoenixcontact.com/en-us/products/pcb-plug-mc-15-2-stf-381-1827703)
 
 {% hint style="info" %}
-SolidRun offers [SRBD-CABDC](/amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/bedrock-r8000-r7000-accessories.md#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
+SolidRun offers [SRBD-CABDC](../bedrock-r8000-r7000-accessories.md#dc-cable-phoenix-connector) Pigtail DC cable for Bedrock with the mating connector
 {% endhint %}
-
 
 ## Remote power button connector
 
@@ -36,8 +35,6 @@ Manufacturer: [Molex](https://www.molex.com/en-us/home)\
 Manufacturer PN: 353630460
 
 #### Remote power button pinout
-
-![](<../../../../.gitbook/assets/power button.jpg>)
 
 #### Remote power LED parameters
 
@@ -59,18 +56,10 @@ Manufacturer PN: 353630460
 
 WiFi connector type in Bedrock: **Female RP-SMA** (center pin)
 
-![](../../../../.gitbook/assets/image-20230512-092939.png)
-
 Use a **Male RP-SMA** WiFi antenna (center hole)
-
-![](../../../../.gitbook/assets/image-20230512-093038.png)
 
 ## LTE/5G antenna connector
 
 LTE/5G connector type in Bedrock: **Female SMA** (center hole)
 
-![](../../../../.gitbook/assets/image-20230512-093331.png)
-
 Use a **Male SMA** LTE/5G antenna (center pin)
-
-![](../../../../.gitbook/assets/image-20230512-093408.png)

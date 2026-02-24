@@ -17,7 +17,6 @@
 No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This document is intended for hardware engineers that are willing to integrate
@@ -111,7 +110,6 @@ Since the measurement is done on the input of the pico-psu; the SoC consumption 
 {% hint style="warning" %}
 **Please note** (\*) – The Linux command is ‘memtester 100M > /dev/null &’ ran 16x times where 16 is the core count (\*\*) – The Linux command ‘cpuburn-krait’ is ran two times in background. The reason cpuburn-krait was chosen since it can generate most heat out of the cores (the core pipeline most utilized). (\*\*\*) – This measurement was taken when the fan is disconnected and the power was measured when the die reached 105c. Notice that keeping the fan disconnected will make the processor reach temperatures that are out of spec.
 {% endhint %}
-
 
 ## Maximum Current Consumption
 
@@ -463,16 +461,18 @@ and then install the NXP CodeWarrior Development Studio for QorIQ LS series - AR
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-3D-Model.zip" %}
-{% file src="../sbc-platform/attachments/LX2160A-CEX7-Rev%202.1-AssyPS.pdf" %}
-{% file src="../sbc-platform/attachments/lx2160a-cex7-2.1-simplified-schematics.pdf" %}
-{% file src="../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%20datasheet.pdf" %}
-{% file src="../sbc-platform/attachments/LX2160A%201U%20low%20profile%20heat-sink%203D.zip" %}
-{% file src="../sbc-platform/attachments/S-Parameters%20-%20LX2160A_CEX7.zip" %}
-{% file src="../sbc-platform/attachments/MTBF%20For%20LX2160A%20COM.pdf" %}
+{% file src="../../../.gitbook/assets/LX2160A-CEX7-Rev 2.1-3D-Model.zip" %}
 
+{% file src="../../../.gitbook/assets/LX2160A-CEX7-Rev 2.1-AssyPS.pdf" %}
 
+{% file src="../../../.gitbook/assets/lx2160a-cex7-2.1-simplified-schematics.pdf" %}
+
+{% file src="../../../.gitbook/assets/LX2160A 1U low profile heat-sink datasheet.pdf" %}
+
+{% file src="../../../.gitbook/assets/LX2160A 1U low profile heat-sink 3D.zip" %}
+
+{% file src="../../../.gitbook/assets/S-Parameters - LX2160A_CEX7.zip" %}
+
+{% file src="../../../.gitbook/assets/MTBF For LX2160A COM.pdf" %}
 
 [Buy a Sample Online](https://shop.solid-run.com/product-category/iot-industrial-soms-coms/nxp-family/nxp-layerscape-lx2160a/)
-
-

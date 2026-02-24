@@ -124,8 +124,7 @@ Selecting SD0’s physical connection (eMMC or uSD card) is done by an analog sw
 The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors.
 {% endhint %}
 
-
-&#x20;**eMMC**
+**eMMC**
 
 * Up to 64GB memory space
 * 8 Bits data bus.
@@ -171,10 +170,9 @@ The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors
 **\* Note – eMMC and uSD share the same signals.** **\*\* Note – Boot configuration is set by the Boot-strap pins**
 {% endhint %}
 
-
 #### **10/100 Mbps Ethernet PHY**
 
-&#x20;The SOM supports single fast Ethernet interfaces.
+The SOM supports single fast Ethernet interfaces.
 
 ![](../../../.gitbook/assets/image-20221215-091457.png)
 
@@ -191,7 +189,7 @@ The state of the analog switch can be set by a DIP-Switch, SW or PU/PD resistors
 
 #### **WI-FI & BT**
 
-&#x20;The WI-FI & BT module is Murata’s 1YN module Based on Cypress CYW43439W. hip. The WI-FI main features are:
+The WI-FI & BT module is Murata’s 1YN module Based on Cypress CYW43439W. hip. The WI-FI main features are:
 
 * Operate at ISM frequency Band (2.4)
 * IEEE Standards Support 802.11a, 802.11b, 802.11g and 802.11n
@@ -235,7 +233,6 @@ The USB’s main features are:
 {% hint style="warning" %}
 **Note – The voltage on VBUS is 5V.**
 {% endhint %}
-
 
 #### MIPI CSI
 
@@ -284,11 +281,9 @@ The Audio main features are:
 Note – Audio Clock signal is an input, should be provided by the carrier board.
 {% endhint %}
 
-
 {% hint style="warning" %}
 Note – Some of the signals are multiplexed with other functionalities. Check datasheet for more information.
 {% endhint %}
-
 
 #### UART
 
@@ -308,7 +303,6 @@ The UART interface's main features are:
 **Note – UART interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
 
-
 #### SPI
 
 Up to 3 SPI interfaces. The following figure describes the eSPI interface.
@@ -324,7 +318,6 @@ Up to 3 SPI interfaces. The following figure describes the eSPI interface.
 {% hint style="warning" %}
 **Note UART interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
-
 
 #### I2C
 
@@ -346,7 +339,6 @@ The I2C main features are:
 {% hint style="warning" %}
 **Note – I2C interfaces are available as ALT functional signals of other signals.**
 {% endhint %}
-
 
 #### uSD
 
@@ -472,7 +464,7 @@ The CAN main features are:
 | 27      | ETH-LED                                            |     | LED1             | 3V3 |   | 28      | M.2\_GPS\_EN#                | NA  | NC                  |     |
 | 29      | HEADER (CON4)                                      |     | NC               |     |   | 30      | J9-59 (BT\_FW\_FLASH, J9-59) | NA  | NC                  |     |
 | 31      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SCL   | 3V3 |   | 32      | MIKROBUS (J8-3)              | NA  | RZ\_RSPI1\_SSL      | 3V3 |
-| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SDA   | 3V3 |   | 34      | CSI-CON  (J19) or DSI-HDMI   | 3V3 | RZ\_P40\_2          | 3V3 |
+| 33      | MIPI-DSI, ETH-NIC, DSI-CON, CSI-CON, RTC, MIKROBUS | 3V3 | RZ\_RIIC0\_SDA   | 3V3 |   | 34      | CSI-CON (J19) or DSI-HDMI    | 3V3 | RZ\_P40\_2          | 3V3 |
 | 35      | GND                                                |     | GND              |     |   | 36      | GND                          |     | GND                 |     |
 | 37      | USB\_HUB\_CH1\_PWR\_EN                             | 3V3 | RZ\_USB1\_VBUSEN | 3V3 |   | 38      | MICRO-SD                     | SD2 | SD\_SD0\_CLK        | SD2 |
 | 39      | J9-55 (BT\_FW\_FLASH, J9-55)                       | NA  | NC               |     |   | 40      | MICRO-SD                     | SD2 | SD\_SD0\_CMD        | SD2 |
@@ -590,17 +582,14 @@ Following is a diagram of the TOP VIEW of the RZG2LC/UL.
 
 ## Documentation
 
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip" %}
-{% file src="../../rz-g2l-v2l/sbc-platform/attachments/rzg2lc-som-1.2-simplified.pdf" %}
+{% file src="../../../.gitbook/assets/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip" %}
 
+{% file src="../../../.gitbook/assets/rzg2lc-som-1.2-simplified.pdf" %}
 
-* Drag and drop to upload or \[browse for files]&#x20;
+* Drag and drop to upload or \[browse for files]
 
 Upload file
 
 File description
 
-
 [Buy a Sample Now](https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2lc-som)
-
-

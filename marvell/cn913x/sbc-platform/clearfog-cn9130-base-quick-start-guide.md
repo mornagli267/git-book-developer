@@ -51,11 +51,9 @@ The guide will give a technical overview about the product and by the end of it 
 (\*\*\*) Assembly option on the SOM
 {% endhint %}
 
-
 {% hint style="info" %}
 Supported with CN9130 SOM. For more detailed information about our CN9130 SOM series please visit this user manual : [CN9130 SOM Hardware User Manual](../com-som/cn9130-som-hardware-user-manual.md) .
 {% endhint %}
-
 
 ## **Block Diagram**
 
@@ -118,7 +116,6 @@ Once you set the switches, you can apply the following for booting from an **SPI
 **Please Note:** The **SPI** including U-Boot by default.
 {% endhint %}
 
-
 **1. Downloading the Ubuntu 20.04 image**
 
 ```
@@ -140,7 +137,6 @@ xz -dc ubuntu-cn9130-cf-base-mmc:1:0.img.xz | dd of=/dev/sdX bs=4k conv=fdatasyn
 {% hint style="info" %}
 Note: Plug a micro SD into your Linux PC, the following assumes that the micro SD is added as /dev/sdX and all it’s partitions are unmounted.
 {% endhint %}
-
 
 **3. SD card insertion**
 
@@ -168,7 +164,6 @@ boot
 {% hint style="warning" %}
 **Please Note:** Boot is made from SPI by default, so in order to continue booting from an SD card, the above commands should be run only once (in the fist boot).
 {% endhint %}
-
 
 Once you installed the necessary serial connection software and ran the above commands , you should be able to see the following:
 
@@ -272,7 +267,6 @@ It is possible to utilize a Cellular connection by inserting a SIM card into the
 **Please Note** If you your ClearFog has dual SIM card slots, an additional cellular modem will need to be installed in the mini PCIe connection in order to utilize the 2nd SIM connection.
 {% endhint %}
 
-
 ## TLV EEPROM Support
 
 Starting from April 01. 2022, the EEPROMs on Carriers, SoMs and COM-Express Modules are being programmed with identifying information such as the product name and SKUs to allow for programmatic identification of hardware. Check our [CN913x EEPROM documentation](cn913x-other-articles/cn913x-eeprom-programming-tlv.md) for additional information.
@@ -293,18 +287,22 @@ Starting from April 01. 2022, the EEPROMs on Carriers, SoMs and COM-Express Modu
 
 ## Documentation
 
-{% file src="attachments/clearfog_base-cn9130-rev1.1-mtbf.pdf" %}
-{% file src="attachments/clearfog_base-cn9130-rev1.2-pcb-layout.zip" %}
-{% file src="attachments/mikrobus_specification-rev2.pdf" %}
-{% file src="attachments/clearfog_base-cn9130-enclosure-rev2.5.zip" %}
-{% file src="attachments/ClearFog%20Base%20CN9130%20BOM%20rev%201.2.4.xlsx" %}
-{% file src="attachments/ClearFog-Base-CN9130-Assy-Files.zip" %}
-{% file src="attachments/ClearFog-Base-CN9130-Schematics.zip" %}
-{% file src="attachments/clearfog_base-cn9130-rev.1.2-gerber.zip" %}
-{% file src="attachments/clearfog-base-cn9130-schematics-rev1.4.pdf" %}
+{% file src="../../../.gitbook/assets/clearfog_base-cn9130-rev1.1-mtbf.pdf" %}
 
+{% file src="../../../.gitbook/assets/clearfog_base-cn9130-rev1.2-pcb-layout.zip" %}
 
+{% file src="../../../.gitbook/assets/mikrobus_specification-rev2.pdf" %}
+
+{% file src="../../../.gitbook/assets/clearfog_base-cn9130-enclosure-rev2.5.zip" %}
+
+{% file src="../../../.gitbook/assets/ClearFog Base CN9130 BOM rev 1.2.4.xlsx" %}
+
+{% file src="../../../.gitbook/assets/ClearFog-Base-CN9130-Assy-Files.zip" %}
+
+{% file src="../../../.gitbook/assets/ClearFog-Base-CN9130-Schematics.zip" %}
+
+{% file src="../../../.gitbook/assets/clearfog_base-cn9130-rev.1.2-gerber.zip" %}
+
+{% file src="../../../.gitbook/assets/clearfog-base-cn9130-schematics-rev1.4.pdf" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/?s=ClearFog+Base+CN9130\&post_type=product)
-
-

@@ -18,19 +18,17 @@
 No warranty of accuracy is given concerning the contents of the information contained in this publication. To the extent permitted by law no liability (including liability to any person by reason of negligence) will be accepted by SolidRun Ltd., its subsidiaries or employees for any direct or indirect loss or damage caused by omissions from or inaccuracies in this document. SolidRun Ltd. reserves the right to change details in this publication without prior notice. Product and company names herein may be the trademarks of their respective owners.
 {% endhint %}
 
-
 ## Introduction
 
 This document is intended for hardware engineers that are willing to integrate the [CN9130 SOM](https://www.solid-run.com/embedded-networking/marvell-octeon-tx2-family/cn9130-som/) from SolidRun ltd, into their own design.
 
 The document provides details with regards CN9130 SOM rev 1.1.
 
-The CN9130 SOM is pin and size compatible to the A388 SOM by SolidRun and can be used as an upgrade for the existing ClearFog Base and ClearFog Pro.&#x20;
+The CN9130 SOM is pin and size compatible to the A388 SOM by SolidRun and can be used as an upgrade for the existing ClearFog Base and ClearFog Pro.
 
 {% hint style="warning" %}
 **Note:** the pinout of the CN9130 and A388 are slightly different due to the MPP muxing of each SoC. please review carefully the tables below
 {% endhint %}
-
 
 #### Overview
 
@@ -41,7 +39,7 @@ The SoC highlights are up to 2.2GHz with 4 Cortex A72 Arm cores, DDR4 controller
 The module integrates the following features –
 
 1. CN9130 SoC (up to 2.2GHz).
-2. &#x20;On board 64bit DDR4 bus supporting up to 16GB at 2400MT/s without ECC
+2. On board 64bit DDR4 bus supporting up to 16GB at 2400MT/s without ECC
 3. Single 12V or 5V DC-input is required.
 
 #### Block Diagram
@@ -78,9 +76,9 @@ The module integrates the following features –
 
 Both SOMs have exactly the same form factor and footprint
 
-The CN9130 SOM was designed to support SolidRun’s ClearFog Base/Pro. In case of any custom design based on A388 that wants to upgrade to CN9130, any case needs to be examined individually and  review carefully the borad-to-board pinout&#x20;
+The CN9130 SOM was designed to support SolidRun’s ClearFog Base/Pro. In case of any custom design based on A388 that wants to upgrade to CN9130, any case needs to be examined individually and review carefully the borad-to-board pinout
 
-In the documentation section there is an excel table with exact pinout difference&#x20;
+In the documentation section there is an excel table with exact pinout difference
 
 Main differences due to SoC pinout:
 
@@ -103,10 +101,9 @@ The following power consumption measurements were conducted on the following set
 3. No mPCIe / USB / SATA / ETH cable were connected to the carrier board
 4. Temperature measurement was taken from linux using the following command\
    ‘cat /sys/class/thermal/thermal\_zone?/temp’
-5. Current and Voltage measured using an oscilloscope&#x20;
+5. Current and Voltage measured using an oscilloscope
 6. Linux command ‘memtester 100M > /dev/null &’ ran 4 times according to core count
-7. Linux command ‘cpuburn-krait’ is ran 4 times in background. The reason cpuburn-krait was chosen is since it can generate most heat out of the cores (the core pipeline are most utilized)\
-   &#x20;
+7. Linux command ‘cpuburn-krait’ is ran 4 times in background. The reason cpuburn-krait was chosen is since it can generate most heat out of the cores (the core pipeline are most utilized)<br>
 
 #### Frequency Scaling
 
@@ -132,7 +129,7 @@ The measurements below were conducted without frequency scaling, to reflect the 
 
 ## CN9130 SOM extensions
 
-The CN9130 has two extension busses of  high performance, low latency and low power Marvell® MoChi interfaces (MCi). Each bus is comprised of 4x high speed differential pairs and a dedicated LVDS clock. Both busses are exposed through the SOM connector,  enabling to connect 1 or 2 additional 88F8215 comprising the kits of CN9131 and CN9132 on the carrier board and extending the SERDES count from 6 to 12 or 18.&#x20;
+The CN9130 has two extension busses of high performance, low latency and low power Marvell® MoChi interfaces (MCi). Each bus is comprised of 4x high speed differential pairs and a dedicated LVDS clock. Both busses are exposed through the SOM connector, enabling to connect 1 or 2 additional 88F8215 comprising the kits of CN9131 and CN9132 on the carrier board and extending the SERDES count from 6 to 12 or 18.
 
 #### SERDES Muxing CN9130 – CP0:
 
@@ -274,7 +271,7 @@ The following port configuration can’t be used simultaneously:
 
 Following are the SOM Connectors J1, J2, J3 pin mapping –
 
-GND pins are marked with Red&#x20;
+GND pins are marked with Red
 
 The SOM has 3 connectors:
 
@@ -294,7 +291,7 @@ The SOM has 3 connectors:
 3. Spacers
 
 * Manufacture PN: N0143416A (for 1.5mm stacking height)
-* Screw M1.6&#x20;
+* Screw M1.6
 
 #### Connector J1
 
@@ -430,7 +427,7 @@ The SOM has 3 connectors:
 
 SolidRun provides few types of heatsinks:
 
-1. Cool-plate: flattens the surface of the SOM, making it easier for integration  in any enclosure design
+1. Cool-plate: flattens the surface of the SOM, making it easier for integration in any enclosure design
 2. Evaluation heatsink: add-on for the cool-plate, with short ribs, enabling to mount a 40mmX40mm fan. This heatsink is to be used in open frame systems, to enable developers to work with the CN9130 SOM during bring-up and software development
 
 ## Precision Time Protocol (PTP)
@@ -512,14 +509,18 @@ PTP is supported by the CN9130 Linux Etherent Controller Driver “MVPP2”, ens
 
 ## Documentation
 
-{% file src="../sbc-platform/attachments/cn9130_som_rev1.1-simplified%20schematics.pdf" %}
-{% file src="../sbc-platform/attachments/CN9130-som-heatsink-files.zip" %}
-{% file src="../sbc-platform/attachments/B2B%20pinout%20A388%20and%20CN9130.xlsx" %}
-{% file src="../sbc-platform/attachments/CN9130-SOM-Mechanical-Files.zip" %}
-{% file src="../sbc-platform/attachments/CN9130_SOM_REV1.1_STEP.zip" %}
-{% file src="../sbc-platform/attachments/Reliability%20prediction%20for%20CN9130%20SOM%20V1.pdf" %}
-{% file src="../sbc-platform/attachments/CN9130_SOM_REV1.3_3D.zip" %}
+{% file src="../../../.gitbook/assets/cn9130_som_rev1.1-simplified schematics.pdf" %}
 
+{% file src="../../../.gitbook/assets/CN9130-som-heatsink-files.zip" %}
 
+{% file src="../../../.gitbook/assets/B2B pinout A388 and CN9130.xlsx" %}
+
+{% file src="../../../.gitbook/assets/CN9130-SOM-Mechanical-Files.zip" %}
+
+{% file src="../../../.gitbook/assets/CN9130_SOM_REV1.1_STEP.zip" %}
+
+{% file src="../../../.gitbook/assets/Reliability prediction for CN9130 SOM V1.pdf" %}
+
+{% file src="../../../.gitbook/assets/CN9130_SOM_REV1.3_3D.zip" %}
 
 [Buy a Sample Now](https://shop.solid-run.com/product-category/networking-soms-coms/cn9130-som/?_ga=2.268861170.2016484779.1641802897-2012112798.1622706355)
