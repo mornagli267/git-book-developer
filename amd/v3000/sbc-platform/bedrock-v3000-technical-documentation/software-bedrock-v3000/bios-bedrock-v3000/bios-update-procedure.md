@@ -10,20 +10,20 @@ Newer BIOS images support updating the BIOS from the BIOS Setup utility to do so
 * Connect power to the device then press (DEL / ESC) continuously until BIOS screen shows up.
 * In BIOS menu go to the Firmware update screen:
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Select your USB stick that has the BIOS Image file:
 
-<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Select the BIOSimage file you want to update to:
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * BIOS Image will be loaded
 * Select: "Update image"
 
-<figure><img src="../../../../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Wait for the BIOS to finish updating
 

@@ -416,6 +416,7 @@
 * [Other Articles](other-articles.md)
   * [Snippets](other-articles/snippets/README.md)
     * [Bedrock Linux default username & password](other-articles/snippets/bedrock-r8000-r7000-linux-default-username-password.md)
+    * [Setting TPM module on AMD BIOS](other-articles/snippets/setting-tpm-module-on-amd-bios.md)
   * [Application Note: eMMC Lifetime Optimization](other-articles/application-note-emmc-lifetime-optimization.md)
   * [Connecting to Wi-Fi with connmanctl](other-articles/connecting-to-wi-fi-with-connmanctl.md)
   * [Flashing an SD Card](other-articles/flashing-an-sd-card.md)
