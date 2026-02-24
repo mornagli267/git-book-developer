@@ -6,6 +6,6 @@ title: Bedorck Cert
 
 # See also
 
-test - edit on source only - after this part is embed in other pages
+test - edit on source only - after this part is embed in other pagess
 
 [Bedrock R7000 Certificates](../../amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/bedrock-r8000-r7000-certificates.md)
