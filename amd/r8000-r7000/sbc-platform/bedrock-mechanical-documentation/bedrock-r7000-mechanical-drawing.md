@@ -1,8 +1,10 @@
 # Bedrock R7000 Mechanical Drawing
 
-\[
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-]\(https://drive.google.com/file/d/1Zc-UxcrVR4p3tVFkMaHvP7\_pF-VoOrOM/view?usp=drive\_link)
+Bedrock R7000 Basic 30W
+
+
 
 ## See also
 
