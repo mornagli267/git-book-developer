@@ -1,11 +1,14 @@
 # Bedrock Windows Drivers
 
+<a id="lte-5g-modem-drivers"></a>
+
 ### **LTE / 5G Modem Drivers**
 
-{% file src="../.gitbook/assets/Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe" %}
-
+- [Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe](./attachments/Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe)
 - [Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe](./attachments/Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe)
 - [Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip](./attachments/Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip)
+
+<a id="intel-ethernet-drivers"></a>
 
 ### Intel Ethernet drivers
 
@@ -13,6 +16,8 @@
 
 While Intel's i226-TI drivers are typically auto-installed during a Windows update, there might be instances where they aren't.  
 If that's the case, please follow the installation instructions below.
+
+<a id="installation-instructions-for-intel-ethernet-drivers"></a>
 
 ### **Installation Instructions for Intel Ethernet Drivers**:
 
