@@ -70,10 +70,14 @@ set gfxpayload=keep
 linux        /casper/vmlinuz   quiet  --- 
 initrd        /casper/initrd
 ```
-- Remove the quiet parameter and change the entry that starts with ‘linux’ to look as follows:
-- ```
-linux /casper/vmlinuz console=tty1 console=ttyS4,115200n8 systemd.wants=serial-getty@ttyS4 —
+- Remove the quiet parameter and change the entry that starts with 'linux' to look as follows:
+
+
 ```
+linux /casper/vmlinuz console=tty1 console=ttyS4,115200n8 systemd.wants=serial-getty@ttyS4 —
+
+```
+
 - Wait for the live USB to boot
 
 {% hint style="info" %}
