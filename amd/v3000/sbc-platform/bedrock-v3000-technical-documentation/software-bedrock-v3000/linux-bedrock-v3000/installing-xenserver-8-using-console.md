@@ -71,10 +71,12 @@ setparams 'install'
 	module2 /boot/vmlinuz console=hvc0 console=tty0
 	module2 /install.img
 ```
-- Change the entry that starts with ‘module2 /boot/vmlinuz’ to look as follows:
-- ```
+
+- Change the entry that starts with 'module2 /boot/vmlinuz' to look as follows:
+```
 module2 /boot/vmlinuz console=hvc0 console=tty0 console=ttyS4,115200n8
 ```
+
 - Wait for the live USB to boot to the installer
 
 {% hint style="info" %}
