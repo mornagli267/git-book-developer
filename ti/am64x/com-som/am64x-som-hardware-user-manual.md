@@ -800,6 +800,6 @@ Refer to SolidRun HummingBoard design and layout, where there are examples of th
 
 {% file src="../../../.gitbook/assets/Reliability prediction for TI AM64x SOM V1.pdf" %}
 
-{% file src="../../../.gitbook/assets/Signals Allocation.xlsx" %}
+[Signals%20Allocation.xlsx](attachments/Signals%20Allocation.xlsx)
 
 [Buy a Sample Now](https://shop.solid-run.com/?filter_som-com-family=ti-am64x)

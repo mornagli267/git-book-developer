@@ -578,7 +578,7 @@ Following is a diagram of the TOP VIEW of the RZG2LC/UL.
 
 ![](../../../.gitbook/assets/image-20221212-075459.png)
 
-{% file src="../../../.gitbook/assets/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip" %}
+[RZ\_G2LC-UL-SOM\_BoardAndModels-step-file.zip](attachments/RZ_G2LC-UL-SOM_BoardAndModels-step-file.zip)
 
 ## Documentation
 

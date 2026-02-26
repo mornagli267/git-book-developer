@@ -70,9 +70,9 @@ The following figure describes the AMD R8000 COM express type 6 Blocks Diagram.
 
 Following is a link to that simplified schematics (currently only COM headers) of the board :
 
-{% file src="../../../.gitbook/assets/amd-fp7r2-com6-1.0.0 - B-t-B Headers.pdf" %}
+[amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf](attachments/amd-fp7r2-com6-1.0.0%20-%20B-t-B%20Headers.pdf)
 
-{% file src="../../../.gitbook/assets/amd-mitx-cex6-1.0.0 - B-t-B Headers.pdf" %}
+[amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf](attachments/amd-mitx-cex6-1.0.0%20-%20B-t-B%20Headers.pdf)
 
 The AMD R8000 COM Express Type 6 simplified schematics is intended for the following audience –
 

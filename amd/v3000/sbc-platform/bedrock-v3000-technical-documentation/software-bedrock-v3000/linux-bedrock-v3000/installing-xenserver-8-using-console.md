@@ -88,80 +88,80 @@ module2 /boot/vmlinuz console=hvc0 console=tty0 console=ttyS4,115200n8
 
 - After live USB boots, the installer will start
 
-!![image-20241117-084728.png](../../../../../../.gitbook/assets/image-20241117-084728.png)
+![image-20241117-084728.png](./attachments/image-20241117-084728.png)
 
 - Select your Desired keymap
 
-!![image-20241117-084815.png](../../../../../../.gitbook/assets/image-20241117-084815.png)
+![image-20241117-084815.png](./attachments/image-20241117-084815.png)
 
 - Press OK to cuntinue with installation
 - Accept EUA
 
-!![image-20241117-085031.png](../../../../../../.gitbook/assets/image-20241117-085031.png)
+![image-20241117-085031.png](./attachments/image-20241117-085031.png)
 
 - Choose if you want to install or upgrade Xen in this case well select “Perform clean installation”
 
-!![image-20241117-085055.png](../../../../../../.gitbook/assets/image-20241117-085055.png)
+![image-20241117-085055.png](./attachments/image-20241117-085055.png)
 
 - Select installation drive
 
-!![image-20241117-085136.png](../../../../../../.gitbook/assets/image-20241117-085136.png)
+![image-20241117-085136.png](./attachments/image-20241117-085136.png)
 
 - Select VM storage location
 
-!![image-20241117-085218.png](../../../../../../.gitbook/assets/image-20241117-085218.png)
+![image-20241117-085218.png](./attachments/image-20241117-085218.png)
 
 - Enable thin provisioning if required
 
-!![image-20241117-085308.png](../../../../../../.gitbook/assets/image-20241117-085308.png)
+![image-20241117-085308.png](./attachments/image-20241117-085308.png)
 
 - Select installation media source, in this case were using a USB drive so we select Local media
 
-!![image-20241117-085400.png](../../../../../../.gitbook/assets/image-20241117-085400.png)
+![image-20241117-085400.png](./attachments/image-20241117-085400.png)
 
-!![image-20241117-085519.png](../../../../../../.gitbook/assets/image-20241117-085519.png)
+![image-20241117-085519.png](./attachments/image-20241117-085519.png)
 
-!![image-20241117-085554.png](../../../../../../.gitbook/assets/image-20241117-085554.png)
+![image-20241117-085554.png](./attachments/image-20241117-085554.png)
 
 - Verify installation source
 
-!![image-20241117-085621.png](../../../../../../.gitbook/assets/image-20241117-085621.png)
+![image-20241117-085621.png](./attachments/image-20241117-085621.png)
 
 - Select password
 
-!![image-20241117-085722.png](../../../../../../.gitbook/assets/image-20241117-085722.png)
+![image-20241117-085722.png](./attachments/image-20241117-085722.png)
 
 - Choose which network interface will be used to connect to the management server
 
-!![image-20241117-085826.png](../../../../../../.gitbook/assets/image-20241117-085826.png)
+![image-20241117-085826.png](./attachments/image-20241117-085826.png)
 
-!![image-20241117-085840.png](../../../../../../.gitbook/assets/image-20241117-085840.png)
+![image-20241117-085840.png](./attachments/image-20241117-085840.png)
 
 - Configure networking settings
 
-!![image-20241117-090115.png](../../../../../../.gitbook/assets/image-20241117-090115.png)
+![image-20241117-090115.png](./attachments/image-20241117-090115.png)
 
-!![image-20241117-090143.png](../../../../../../.gitbook/assets/image-20241117-090143.png)
+![image-20241117-090143.png](./attachments/image-20241117-090143.png)
 
 - Select time zone
 
-!![image-20241117-090256.png](../../../../../../.gitbook/assets/image-20241117-090256.png)
+![image-20241117-090256.png](./attachments/image-20241117-090256.png)
 
 - Select system time settings
 
-!![image-20241117-090338.png](../../../../../../.gitbook/assets/image-20241117-090338.png)
+![image-20241117-090338.png](./attachments/image-20241117-090338.png)
 
 - Confirm installation
 
-!![image-20241117-090413.png](../../../../../../.gitbook/assets/image-20241117-090413.png)
+![image-20241117-090413.png](./attachments/image-20241117-090413.png)
 
 - Wait until installation is complete
 
-!![image-20241117-090536.png](../../../../../../.gitbook/assets/image-20241117-090536.png)
+![image-20241117-090536.png](./attachments/image-20241117-090536.png)
 
 - Select supplemental packages if required
 
-!![image-20241117-090843.png](../../../../../../.gitbook/assets/image-20241117-090843.png)
+![image-20241117-090843.png](./attachments/image-20241117-090843.png)
 
 - When prompted, remove the installation media and press enter
 - Device will be rebooted

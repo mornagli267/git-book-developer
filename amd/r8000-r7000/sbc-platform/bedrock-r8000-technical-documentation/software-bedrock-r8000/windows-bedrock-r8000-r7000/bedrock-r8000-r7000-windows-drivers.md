@@ -30,13 +30,13 @@ To install these driver run the downloaded installer file and go through the ins
 
 - [Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe](./attachments/Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe)
 - [Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe](./attachments/Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe)
-- {% file src="../../../../../../.gitbook/assets/Quectel_Windows_USB_Driver_Q_RNDIS_V1.1.4.zip" %}
+- [Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip](./attachments/Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip)
 
 <a id="intel-ethernet-drivers"></a>
 
 ### Intel Ethernet drivers
 
-{% file src="../../../../../../.gitbook/assets/PRO2500.zip" %}
+[PRO2500.zip](./attachments/PRO2500.zip)
 
 While Intel's i226-TI drivers are typically auto-installed during a Windows update, there might be instances where they aren't.  
 If that's the case, please follow the installation instructions below.

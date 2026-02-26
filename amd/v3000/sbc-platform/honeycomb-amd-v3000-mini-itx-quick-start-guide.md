@@ -119,7 +119,7 @@ For some SO-DIMM modules that work on SolidRun hardware platforms, please refer 
 
 |                             | File                                               | Modified    |
 | --------------------------- | -------------------------------------------------- | ----------- |
-| Schematics and Board Layout | {% file src="../../../.gitbook/assets/AMD-Honeycomb.pdf" %} | 19-JUN-2024 |
+| Schematics and Board Layout | [AMD-Honeycomb.pdf](attachments/AMD-Honeycomb.pdf) | 19-JUN-2024 |
 | Mechanical files            | To be added                                        |             |
 
 {% file src="../../../.gitbook/assets/AMD-Honeycomb.pdf" %}
