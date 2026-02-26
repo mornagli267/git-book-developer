@@ -17,7 +17,7 @@
 
 ### Intel Ethernet drivers
 
-[PRO2500.zip](./attachments/PRO2500.zip)
+{% file src="../.gitbook/assets/PRO2500.zip" %}
 
 While Intel's i226-TI drivers are typically auto-installed during a Windows update, there might be instances where they aren't.  
 If that's the case, please follow the installation instructions below.
