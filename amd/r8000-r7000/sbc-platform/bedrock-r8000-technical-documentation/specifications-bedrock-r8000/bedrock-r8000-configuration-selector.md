@@ -38,7 +38,7 @@ Please fill the [Bedrock inquiry form](https://www.solid-run.com/fanless-compute
 
 * Download Bedrock R8000 Options diagram
 
-[Bedrock%20R8000%20Options%20rev%202.02.pdf](attachments/Bedrock%20R8000%20Options%20rev%202.02.pdf)
+{% file src="../../../../../.gitbook/assets/Bedrock R8000 Options rev 2.02.pdf" %}
 
 * Mark the checkboxes of the desired options like in the sample below
 * Save as PDF

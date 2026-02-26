@@ -36,7 +36,7 @@ Baud rate used for connection is : 125000. This is to match with the Sink Servic
 
 For N6 Indoor and Outdoor versions here is the schematic if needed:&#x20;
 
-[ublox-pinout-solidsense-v20.pdf](attachments/ublox-pinout-solidsense-v20.pdf)
+{% file src="../../../.gitbook/assets/ublox-pinout-solidsense-v20.pdf" %}
 
 The gateway firmware level must be at least solidsense-V0.9-2019111100 (This can be verified by checking the Device page in Kura). If you are not in that revision or up please ask Solid Run support for assistance.
 

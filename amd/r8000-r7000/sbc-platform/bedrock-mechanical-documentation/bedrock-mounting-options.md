@@ -65,7 +65,7 @@ The Stand is recommended for Bedrock evaluation.
 
 ### Bedrock Stand 3D model
 
-[Bedrock%20Stand.zip](attachments/Bedrock%20Stand.zip)
+{% file src="../../../../.gitbook/assets/Bedrock Stand.zip" %}
 
 {% hint style="info" %}
 Stand ordering PN: **SRBD-STAND21**

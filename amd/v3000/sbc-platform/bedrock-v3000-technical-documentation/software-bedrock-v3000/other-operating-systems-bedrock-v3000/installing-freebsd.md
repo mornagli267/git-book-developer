@@ -54,98 +54,98 @@ set hw.uart.console="mm:0xfedc9000,rs:2" boot
 
 - Choose install:
 
-![](./attachments/image-20231102-121731.png)
+!![image-20231102-121731.png](../../../../../../.gitbook/assets/image-20231102-121731.png)
 
 - Choose keymap:
 
-![](./attachments/image-20231102-125222.png)
+!![image-20231102-125222.png](../../../../../../.gitbook/assets/image-20231102-125222.png)
 
 - Choose host name for your device:
 
-![](./attachments/image-20231102-121754.png)
+!![image-20231102-121754.png](../../../../../../.gitbook/assets/image-20231102-121754.png)
 
 - Choose system components, press enter for default:
 
-![](./attachments/image-20231102-121807.png)
+!![image-20231102-121807.png](../../../../../../.gitbook/assets/image-20231102-121807.png)
 
 - Select Auto (UFS) Guided UFS Disk Setup:
 
-![](./attachments/image-20231102-121909.png)
+!![image-20231102-121909.png](../../../../../../.gitbook/assets/image-20231102-121909.png)
 
 - Select installation disk:
 
-![](./attachments/image-20231102-121921.png)
+!![image-20231102-121921.png](../../../../../../.gitbook/assets/image-20231102-121921.png)
 
 - Select Entire disk:
 
-![](./attachments/image-20231102-121932.png)
+!![image-20231102-121932.png](../../../../../../.gitbook/assets/image-20231102-121932.png)
 
 - Confirm destructive action:
 
-![](./attachments/image-20231102-122035.png)
+!![image-20231102-122035.png](../../../../../../.gitbook/assets/image-20231102-122035.png)
 
 - Select partition scheme:
 
-![](./attachments/image-20231102-122054.png)
+!![image-20231102-122054.png](../../../../../../.gitbook/assets/image-20231102-122054.png)
 
 - Review disk setup and select Finish:
 
-![](./attachments/image-20231102-122108.png)
+!![image-20231102-122108.png](../../../../../../.gitbook/assets/image-20231102-122108.png)
 
 - Confirm destructive action:
 
-![](./attachments/image-20231102-122126.png)
+!![image-20231102-122126.png](../../../../../../.gitbook/assets/image-20231102-122126.png)
 
 - Wait for the installation to finish:
 
-![](./attachments/image-20231102-122148.png)
+!![image-20231102-122148.png](../../../../../../.gitbook/assets/image-20231102-122148.png)
 
-![](./attachments/image-20231102-125621.png)
+!![image-20231102-125621.png](../../../../../../.gitbook/assets/image-20231102-125621.png)
 
 - Select password:
 
-![](./attachments/image-20231102-122300.png)
+!![image-20231102-122300.png](../../../../../../.gitbook/assets/image-20231102-122300.png)
 
 - Select network interface to configure:
 
-![](./attachments/image-20231102-122329.png)
+!![image-20231102-122329.png](../../../../../../.gitbook/assets/image-20231102-122329.png)
 
 - Follow the istructions to configure the interface.
 
 - Configure resolver, enter for default:
 
-![](./attachments/image-20231102-125743.png)
+!![image-20231102-125743.png](../../../../../../.gitbook/assets/image-20231102-125743.png)
 
 - Select local time and time zone, select no:
 
-![](./attachments/image-20231102-125851.png)
+!![image-20231102-125851.png](../../../../../../.gitbook/assets/image-20231102-125851.png)
 
-![](./attachments/image-20231102-125931.png)
+!![image-20231102-125931.png](../../../../../../.gitbook/assets/image-20231102-125931.png)
 
-![](./attachments/image-20231102-130019.png)
+!![image-20231102-130019.png](../../../../../../.gitbook/assets/image-20231102-130019.png)
 
-![](./attachments/image-20231102-130045.png)
+!![image-20231102-130045.png](../../../../../../.gitbook/assets/image-20231102-130045.png)
 
 - Configure your system:
 
-![](./attachments/image-20231102-122553.png)
+!![image-20231102-122553.png](../../../../../../.gitbook/assets/image-20231102-122553.png)
 
 - Configure system hardening:
 
-![](./attachments/image-20231102-122633.png)
+!![image-20231102-122633.png](../../../../../../.gitbook/assets/image-20231102-122633.png)
 
 - Add users if needed:  
 Follow the istructions to add a new user
 
-![](./attachments/image-20231102-122713.png)
+!![image-20231102-122713.png](../../../../../../.gitbook/assets/image-20231102-122713.png)
 
 - Apply the configurations and exit the isntaller:
 
-![](./attachments/image-20231102-122837.png)
+!![image-20231102-122837.png](../../../../../../.gitbook/assets/image-20231102-122837.png)
 
 - Open shell to further configure the system:
 
-![](./attachments/image-20231102-123041.png)
+!![image-20231102-123041.png](../../../../../../.gitbook/assets/image-20231102-123041.png)
 
 - Select yes because we will need to make the following modifications to enable console: 
   - Create the `/boot/loader.conf.local` file, which will contain our changes and add: 
