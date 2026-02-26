@@ -4,7 +4,7 @@
 
 ### **LTE / 5G Modem Drivers**
 
-- [Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe](./attachments/Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe)
+{% file src="../.gitbook/assets/Quectel_LTE_Windows_USB_Driver_For_MBIM_V1.0.exe" %}
 - [Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe](./attachments/Quectel_Windows_USB_Driver(Q)_NDIS_V2.2.exe)
 - [Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip](./attachments/Quectel_Windows_USB_Driver(Q)_RNDIS_V1.1.4.zip)
 
