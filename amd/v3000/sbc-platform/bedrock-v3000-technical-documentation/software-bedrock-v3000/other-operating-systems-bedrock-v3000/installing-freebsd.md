@@ -50,7 +50,7 @@ set hw.uart.console="mm:0xfedc9000,rs:2" boot
 - Kernel messages will start to spill out, wait until you see the following prompt:
 - Select console type, press enter for default(VT100):
 
-![](./attachments/image-20231102-125048.png)
+![image-20231102-125048.png](../../../../../../.gitbook/assets/image-20231102-125048.png)
 
 - Choose install:
 
