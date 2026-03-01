@@ -48,7 +48,7 @@ When you see the main boot menu:
 - Kernel messages will start to spill out, wait until you see the following prompt:
 - Select console type, press enter for default(VT100):
 
-![image-20231102-125048.png](../../../../../../.gitbook/assets/image-20231102-125048.png)
+![image-20231102-125048.png](./attachments/image-20231102-125048.png)
 
 - Choose install:
 
