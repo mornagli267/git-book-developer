@@ -120,14 +120,14 @@ Enable the ttyS4 console to be able to interact with the system.
   - In the line that says: linux        /boot/vmlinuz-5.15.0-43-generic root=UUID=4c58e5aa-6443-4fb2-84e7-4ac2265a7b9e ro recovery nomodeset dis\_ucode\_ldr
   - Add the console parameters to grub after the ‘ro’ parameter
     - from this:
-    - ```
-linux        /boot/vmlinuz-6.2.0-27-generic root=UUID=1dfc1a94-6289-4b15-9f4f-0fb36c083841 ro
-```
+      ```
+      linux        /boot/vmlinuz-6.2.0-27-generic root=UUID=1dfc1a94-6289-4b15-9f4f-0fb36c083841 ro
+      ```
     - to this:
-      - ```
-linux        /boot/vmlinuz-6.2.0-27-generic root=UUID=1dfc1a94-6289-4b15-9f4f-0fb36c083841 ro
-console=tty1 console=ttyS4,115200n8 systemd.wants=serial-getty@ttyS4 quiet
-```
+    ```
+    linux        /boot/vmlinuz-6.2.0-27-generic root=UUID=1dfc1a94-6289-4b15-9f4f-0fb36c083841 ro
+    console=tty1 console=ttyS4,115200n8 systemd.wants=serial-getty@ttyS4 quiet
+    ```
       - Note: if you want to see the boot logs remove the `quiet` argumentPress ctrl+x to boot
 - Type to enable the ttyS4 service automatically when you boot: `systemctl enable serial-getty@ttyS4`
 - edit grub config file: `nano /etc/default/grub`
