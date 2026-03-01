@@ -41,12 +41,10 @@ When you see the main boot menu:
 
 * Press "esc" or the arrow buttons to go to the boot option shell
 * Set the console redirection (copy to the terminal):
-* ```
   ```
-
-set hw.uart.console="mm:0xfedc9000,rs:2" boot
-
-````
+  set hw.uart.console="mm:0xfedc9000,rs:2"
+  boot
+  ```
 - Kernel messages will start to spill out, wait until you see the following prompt:
 - Select console type, press enter for default(VT100):
 
@@ -149,9 +147,9 @@ Follow the istructions to add a new user
 
 - Select yes because we will need to make the following modifications to enable console: 
   - Create the `/boot/loader.conf.local` file, which will contain our changes and add: 
-  - ```
-hw.uart.console="mm:0xfedc9000,rs:2" 
-````
+    ```
+    hw.uart.console="mm:0xfedc9000,rs:2" 
+    ````
 
 {% hint style="warning" %}
 Note: /boot/loader.conf recreates itself each boot or update, so this will override the changes.
@@ -164,27 +162,20 @@ Note: /boot/loader.conf recreates itself each boot or update, so this will overr
 **Hididng kernel output**
 
 * Add to /boot/loader.conf.local:
-  * ```
-    ```
-
-boot\_mute="YES"
-
-````
+  ```
+  boot\_mute="YES"
+  ````
 
 <a id="disabling-hyperthreading"></a>
 
 #### **Disabling Hyperthreading**
 
 - Add to /boot/loader.conf.local: 
-  - ```
-machdep.hyperthreading_allowed="0"
-````
+  ```
+  machdep.hyperthreading_allowed="0"
+  ```
 
 * To verify the change run:
-  * ```
-    ```
-
-sysctl machdep.hyperthreading\_allowed
-
-```
-```
+  ```
+  sysctl machdep.hyperthreading_allowed
+  ```
