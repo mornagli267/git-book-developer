@@ -104,6 +104,7 @@ Recommended version
 **MD5**: 60db00923bfab1ddcdc62292ff1c4746
 
 [BIOS_BDR7K_EV_V33.signed](./attachments/BIOS_BDR7K_EV_V33.signed)
+{% file src="../../../../../../.gitbook/assets/BIOS_BDR7K_EV_V33.signed" %}
 
 <a id="revision-notes"></a>
 
