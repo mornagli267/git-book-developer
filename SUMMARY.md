@@ -357,6 +357,8 @@
         * [HoneyComb / ClearFog CX LX2 Errata List](nxp/lx2160a/sbc-platform/honeycomb-lx2-clearfog-cx-lx2-quick-start-guide/honeycomb-clearfog-cx-lx2-errata-list.md)
       * [LX2160A Other Articles](nxp/lx2160a/sbc-platform/lx2160a-other-articles.md)
         * [LX2160A COM Tested SO-DIMM Memory](nxp/lx2160a/sbc-platform/lx2160a-other-articles/lx2160a-com-tested-so-dimm-memory.md)
+        * [LX2160A CEX-7 JTAG](nxp/lx2160a/sbc-platform/lx2160a-other-articles/lx2160a-cex-7-jtag.md)
+        * [LX2160 JTAG with OpenOCD](nxp/lx2160a/sbc-platform/lx2160a-other-articles/lx2160-jtag-with-openocd.md)
       * [LX2160A Software](nxp/lx2160a/sbc-platform/lx2160a-software.md)
         * [DPDK on LX2160A](nxp/lx2160a/sbc-platform/lx2160a-software/dpdk-on-lx2160a.md)
         * [KGDB Kernel Debugger](nxp/lx2160a/sbc-platform/lx2160a-software/kgdb-kernel-debugger.md)
