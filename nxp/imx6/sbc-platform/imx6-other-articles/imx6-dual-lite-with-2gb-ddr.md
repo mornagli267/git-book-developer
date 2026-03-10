@@ -60,4 +60,8 @@ dd if=u-boot.img of=/dev/sdX bs=1k seek=69 conv=sync
 
 Attached here is a pre-built U-Boot and SPL with the above changes applied.
 
-[u-boot.img](../../../../homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/attachments/u-boot.img) [SPL](../../../../homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/attachments/SPL/) [0001-add-imx6dl\_2g\_mmcd\_calib.patch](../../../../homepage/iot-industrial-product-line/nxp-imx6-based-products/imx6-other-articles/attachments/0001-add-imx6dl_2g_mmcd_calib.patch)
+{% file src="../../../../.gitbook/assets/u-boot.img" %}
+
+{% file src="../../../../.gitbook/assets/SPL" %}
+
+{% file src="../../../../.gitbook/assets/0001-add-imx6dl_2g_mmcd_calib.patch" %}
