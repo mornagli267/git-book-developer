@@ -1,3 +1,9 @@
 # Hardware - Bedrock RAI300
 
-<!-- TODO: This page was exported as a Confluence RefinedWiki page-tree macro (JavaScript only, no content). Add real hardware documentation content here. -->
+## Bedrock Hardware pages
+
+- [List of SO-DIMM RAM modules tested in Bedrock R8000 | RAI300](../../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/list-of-so-dimm-ram-modules-tested-in-bedrock-r8000.md)
+- [Bedrock R7000 SoM](../../../../../r8000-r7000/com-som/bedrock-r7000-som.md)
+- [Bedrock R8000 connectors](../../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/bedrock-r8000-connectors.md)
+- [Bedrock DC Input and PM (Power Module)](../../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/bedrock-dc-input-and-pm-power-module.md)
+- [Bedrock Industrial Temperature Range](../../../../../r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/hardware-bedrock-r8000/bedrock-r8000-industrial-temperature-range.md)
