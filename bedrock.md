@@ -10,8 +10,8 @@ icon: server
 <table data-view="cards">
     <thead>
         <tr>
-            <th>Title</th>
-            <th data-card-target data-type="content-ref">Target</th>
+            <th></th>
+            <th data-card-target data-type="content-ref"></th>
         </tr>
     </thead>
     <tbody>
