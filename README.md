@@ -14,6 +14,8 @@ layout:
     visible: false
 ---
 
+![Developer Center Banner](.gitbook/assets/developer-center-banner.png)
+
 # SolidRun Developer Center
 
 ## Bedrock PC
