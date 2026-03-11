@@ -27,46 +27,21 @@ layout:
     </thead>
     <tbody>
         <tr>
-            <td><strong>Bedrock RAI300</strong> — Ryzen AI 300</td>
+            <td><strong>Bedrock RAI300</strong> - Ryzen AI 300</td>
             <td><a href="amd/rai300/sbc-platform/bedrock-rai300-technical-documentation.md">Bedrock RAI300</a></td>
         </tr>
         <tr>
-            <td><strong>Bedrock R8000 | R7000</strong> — Ryzen 8000/7000</td>
+            <td><strong>Bedrock R8000 | R7000</strong> - Ryzen 8000/7000</td>
             <td><a href="amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation.md">Bedrock R8000</a></td>
         </tr>
         <tr>
-            <td><strong>Bedrock V3000</strong> — Ryzen Embedded V3000</td>
+            <td><strong>Bedrock V3000</strong> - Ryzen Embedded V3000</td>
             <td><a href="amd/v3000/sbc-platform/bedrock-v3000-technical-documentation.md">Bedrock V3000</a></td>
         </tr>
     </tbody>
 </table>
 
-[All Bedrock documentation, BIOS files, drivers, and configuration tools →](bedrock.md)
-
-<h2 align="center">AMD</h2>
-
-<table data-view="cards">
-    <thead>
-        <tr>
-            <th></th>
-            <th data-card-target data-type="content-ref" data-hidden>Target</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Ryzen R8000 / R7000</strong> — Bedrock, HoneyComb, COM Express</td>
-            <td><a href="amd/r8000-r7000.md">R8000 / R7000</a></td>
-        </tr>
-        <tr>
-            <td><strong>Ryzen V3000</strong> — Bedrock, HoneyComb, COM Express</td>
-            <td><a href="amd/v3000.md">V3000</a></td>
-        </tr>
-        <tr>
-            <td><strong>Ryzen AI 300</strong> — Bedrock RAI300</td>
-            <td><a href="amd/rai300.md">RAI300</a></td>
-        </tr>
-    </tbody>
-</table>
+[All Bedrock documentation, BIOS files, drivers, and configuration tools ->](bedrock.md) | [AMD HoneyComb & COM Express ->](amd.md)
 
 <h2 align="center">NXP</h2>
 
@@ -79,19 +54,19 @@ layout:
     </thead>
     <tbody>
         <tr>
-            <td><strong>i.MX8</strong> — Plus / Mini / Nano / DXL</td>
+            <td><strong>i.MX8</strong> - Plus / Mini / Nano / DXL</td>
             <td><a href="nxp/imx8.md">i.MX8</a></td>
         </tr>
         <tr>
-            <td><strong>i.MX6</strong> — CuBox-i, HummingBoard</td>
+            <td><strong>i.MX6</strong> - CuBox-i, HummingBoard</td>
             <td><a href="nxp/imx6.md">i.MX6</a></td>
         </tr>
         <tr>
-            <td><strong>LX2160A</strong> — HoneyComb / ClearFog CX</td>
+            <td><strong>LX2160A</strong> - HoneyComb / ClearFog CX</td>
             <td><a href="nxp/lx2160a.md">LX2160A</a></td>
         </tr>
         <tr>
-            <td><strong>LX2162A</strong> — ClearFog LX2162A</td>
+            <td><strong>LX2162A</strong> - ClearFog LX2162A</td>
             <td><a href="nxp/lx2162a.md">LX2162A</a></td>
         </tr>
     </tbody>
@@ -108,15 +83,15 @@ layout:
     </thead>
     <tbody>
         <tr>
-            <td><strong>CN913x</strong> — CN9130 / CN9132</td>
+            <td><strong>CN913x</strong> - CN9130 / CN9132</td>
             <td><a href="marvell/cn913x.md">CN913x</a></td>
         </tr>
         <tr>
-            <td><strong>ARMADA A8040</strong> — ClearFog GT 8K / MACCHIATObin</td>
+            <td><strong>ARMADA A8040</strong> - ClearFog GT 8K / MACCHIATObin</td>
             <td><a href="marvell/a8040.md">A8040</a></td>
         </tr>
         <tr>
-            <td><strong>ARMADA A38x</strong> — ClearFog Base / Pro / GTR</td>
+            <td><strong>ARMADA A38x</strong> - ClearFog Base / Pro / GTR</td>
             <td><a href="marvell/a38x.md">A38x</a></td>
         </tr>
     </tbody>
@@ -133,21 +108,21 @@ layout:
     </thead>
     <tbody>
         <tr>
-            <td><strong>RZ/G2L & RZ/V2L</strong> — HummingBoard EU205 / Pro / Ripple / IIoT</td>
+            <td><strong>RZ/G2L & RZ/V2L</strong> - HummingBoard EU205 / Pro / Ripple / IIoT</td>
             <td><a href="renesas/rz-g2l-v2l.md">RZ/G2L & RZ/V2L</a></td>
         </tr>
         <tr>
-            <td><strong>RZ/G2UL & RZ/G2LC</strong> — HummingBoard Ripple</td>
+            <td><strong>RZ/G2UL & RZ/G2LC</strong> - HummingBoard Ripple</td>
             <td><a href="renesas/rz-g2ul-g2lc.md">RZ/G2UL & RZ/G2LC</a></td>
         </tr>
         <tr>
-            <td><strong>RZ/V2N</strong> — HummingBoard IIoT</td>
+            <td><strong>RZ/V2N</strong> - HummingBoard IIoT</td>
             <td><a href="renesas/rz-v2n.md">RZ/V2N</a></td>
         </tr>
     </tbody>
 </table>
 
-<h2 align="center">Hailo · TI · Intel</h2>
+<h2 align="center">Hailo - TI - Intel</h2>
 
 <table data-view="cards">
     <thead>
@@ -158,15 +133,15 @@ layout:
     </thead>
     <tbody>
         <tr>
-            <td><strong>Hailo 15</strong> — HummingBoard & Hailo 15 SOM</td>
+            <td><strong>Hailo 15</strong> - HummingBoard & Hailo 15 SOM</td>
             <td><a href="hailo/hailo-15.md">Hailo 15</a></td>
         </tr>
         <tr>
-            <td><strong>TI AM64x</strong> — HummingBoard-T</td>
+            <td><strong>TI AM64x</strong> - HummingBoard-T</td>
             <td><a href="ti/am64x.md">AM64x</a></td>
         </tr>
         <tr>
-            <td><strong>Intel Braswell</strong> — IB8000 / IB3710 / SolidPC</td>
+            <td><strong>Intel Braswell</strong> - IB8000 / IB3710 / SolidPC</td>
             <td><a href="intel/braswell.md">Braswell</a></td>
         </tr>
     </tbody>
