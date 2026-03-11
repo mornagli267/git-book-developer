@@ -2,7 +2,7 @@
 
 The LX2160A COM-Express Type 7 Module provides an ARM CoreSight compatible [10-pin header](https://www.digikey.de/short/9pvb4m4d) (also known as 9-pin Cortex-M) labeled **U3014**, for use with an external debugger such as J-Link, or [NXP's CodeWarrior TAP](https://www.nxp.com/design/design-center/development-boards-and-designs/CW_TAP):
 
-![lx2160a-cex7-jtag.png](./attachments/lx2160a-cex7-jtag.png)
+![lx2160a-cex7-jtag.png](../../../../.gitbook/assets/lx2160a-cex7-jtag.png)
 
 ## Decoupling TRST\_B and PORESET\_B
 
@@ -10,9 +10,9 @@ The CEX-7 Module internally connects from PORESET\_B to TRST\_B making it imposs
 
 It is possible to remove zero ohm 0402 resistor R9399 which results in TRST\_B floating. It is located below the heat-sink, as shown below:
 
-![lx2160a-cex7-jtag-r9399-location.png](./attachments/lx2160a-cex7-jtag-r9399-location.png)
+![lx2160a-cex7-jtag-r9399-location.png](../../../../.gitbook/assets/lx2160a-cex7-jtag-r9399-location.png)
 
-![lx2160a-cex7-jtag-r9399-location-magnified.png](./attachments/lx2160a-cex7-jtag-r9399-location-magnified.png)
+![lx2160a-cex7-jtag-r9399-location-magnified.png](../../../../.gitbook/assets/lx2160a-cex7-jtag-r9399-location-magnified.png)
 
 ## Connecting JTAG Adapters
 
@@ -20,13 +20,13 @@ The connection between JTAG and board must not swap any wires. Pin 1 on the JTAG
 
 ### ARM 10-Pin Adapter
 
-![lx2160-cex7-arm-jtag-adapter-connected.jpg](./attachments/lx2160-cex7-arm-jtag-adapter-connected.jpg)
+![lx2160-cex7-arm-jtag-adapter-connected.jpg](../../../../.gitbook/assets/lx2160-cex7-arm-jtag-adapter-connected.jpg)
 
 ### Connecting CodeWarrior TAP
 
-![codewarrior-tap-connected.jpg](./attachments/codewarrior-tap-connected.jpg)
+![codewarrior-tap-connected.jpg](<../../../../.gitbook/assets/codewarrior-tap-connected (1).jpg>)
 
-![lx2160-cex7-codewarrior-tap-connected.jpg](./attachments/lx2160-cex7-codewarrior-tap-connected.jpg)
+![lx2160-cex7-codewarrior-tap-connected.jpg](../../../../.gitbook/assets/lx2160-cex7-codewarrior-tap-connected.jpg)
 
 ## Using CodeWarrior Software with CodeWarrior TAP
 
@@ -36,7 +36,7 @@ On the LAN the tap acquires a DHCP lease and responds to hostname "FSLXXYYZZ" wh
 
 Within the CodeWarrior Software the TAP is automatically usable when connected over USB. In case of Ethernet / LAN the hostname must be entered to the "Probe Address" Column of "Target connections" UI:
 
-![codewarrior-tap-address.png](./attachments/codewarrior-tap-address.png)
+![codewarrior-tap-address.png](<../../../../.gitbook/assets/codewarrior-tap-address (1).png>)
 
 ## OpenOCD
 
