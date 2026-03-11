@@ -1,6 +1,7 @@
 # Table of contents
 
 * [SolidRun Developer Center](README.md)
+* [Bedrock PC](bedrock.md)
 * [AMD](amd.md)
   * [Ryzen R8000 / R7000](amd/r8000-r7000.md)
     * [COM / SOM](amd/r8000-r7000/com-som.md)
