@@ -16,8 +16,6 @@ layout:
 
 ![Developer Center Banner](.gitbook/assets/developer-center-banner.png)
 
-# SolidRun Developer Center
-
 <h2 align="center">Bedrock PC</h2>
 
 <table data-view="cards">
