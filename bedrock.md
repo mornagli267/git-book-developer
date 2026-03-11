@@ -2,7 +2,7 @@
 description: >-
   Bedrock is SolidRun's family of fanless industrial PCs powered by AMD Ryzen
   processors. Find technical documentation, hardware manuals, BIOS files,
-  software guides, and configuration tools for all Bed
+  software guides, and configuration tools for all Bedrock models.
 icon: server
 layout:
   width: wide
