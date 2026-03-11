@@ -21,7 +21,7 @@ layout:
 <table data-view="cards">
     <thead>
         <tr>
-            <th data-hidden>Title</th>
+            <th></th>
             <th data-card-target data-type="content-ref" data-hidden>Target</th>
         </tr>
     </thead>
@@ -48,7 +48,7 @@ layout:
 <table data-view="cards">
     <thead>
         <tr>
-            <th data-hidden>Title</th>
+            <th></th>
             <th data-card-target data-type="content-ref" data-hidden>Target</th>
         </tr>
     </thead>
@@ -97,7 +97,7 @@ layout:
 <table data-view="cards">
     <thead>
         <tr>
-            <th data-hidden>Title</th>
+            <th></th>
             <th data-card-target data-type="content-ref" data-hidden>Target</th>
         </tr>
     </thead>
@@ -134,7 +134,7 @@ layout:
 <table data-view="cards">
     <thead>
         <tr>
-            <th data-hidden>Title</th>
+            <th></th>
             <th data-card-target data-type="content-ref" data-hidden>Target</th>
         </tr>
     </thead>
