@@ -18,7 +18,7 @@ layout:
 
 # SolidRun Developer Center
 
-## Bedrock PC
+<h2 align="center">Bedrock PC</h2>
 
 <table data-view="cards">
     <thead>
@@ -45,9 +45,7 @@ layout:
 
 [All Bedrock documentation, BIOS files, drivers, and configuration tools →](bedrock.md)
 
-## Browse by Vendor
-
-### AMD
+<h2 align="center">AMD</h2>
 
 <table data-view="cards">
     <thead>
@@ -72,7 +70,7 @@ layout:
     </tbody>
 </table>
 
-### NXP
+<h2 align="center">NXP</h2>
 
 <table data-view="cards">
     <thead>
@@ -101,7 +99,7 @@ layout:
     </tbody>
 </table>
 
-### Marvell
+<h2 align="center">Marvell</h2>
 
 <table data-view="cards">
     <thead>
@@ -126,34 +124,57 @@ layout:
     </tbody>
 </table>
 
-{% columns %}
-{% column %}
+<h2 align="center">Renesas</h2>
 
-### Renesas
+<table data-view="cards">
+    <thead>
+        <tr>
+            <th></th>
+            <th data-card-target data-type="content-ref" data-hidden>Target</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>RZ/G2L & RZ/V2L</strong> — HummingBoard EU205 / Pro / Ripple / IIoT</td>
+            <td><a href="renesas/rz-g2l-v2l.md">RZ/G2L & RZ/V2L</a></td>
+        </tr>
+        <tr>
+            <td><strong>RZ/G2UL & RZ/G2LC</strong> — HummingBoard Ripple</td>
+            <td><a href="renesas/rz-g2ul-g2lc.md">RZ/G2UL & RZ/G2LC</a></td>
+        </tr>
+        <tr>
+            <td><strong>RZ/V2N</strong> — HummingBoard IIoT</td>
+            <td><a href="renesas/rz-v2n.md">RZ/V2N</a></td>
+        </tr>
+    </tbody>
+</table>
 
-- [RZ/G2L & RZ/V2L](renesas/rz-g2l-v2l.md) — HummingBoard EU205 / Pro / Ripple / IIoT
-- [RZ/G2UL & RZ/G2LC](renesas/rz-g2ul-g2lc.md) — HummingBoard Ripple
-- [RZ/V2N](renesas/rz-v2n.md) — HummingBoard IIoT
+<h2 align="center">Hailo · TI · Intel</h2>
 
-### Hailo
+<table data-view="cards">
+    <thead>
+        <tr>
+            <th></th>
+            <th data-card-target data-type="content-ref" data-hidden>Target</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Hailo 15</strong> — HummingBoard & Hailo 15 SOM</td>
+            <td><a href="hailo/hailo-15.md">Hailo 15</a></td>
+        </tr>
+        <tr>
+            <td><strong>TI AM64x</strong> — HummingBoard-T</td>
+            <td><a href="ti/am64x.md">AM64x</a></td>
+        </tr>
+        <tr>
+            <td><strong>Intel Braswell</strong> — IB8000 / IB3710 / SolidPC</td>
+            <td><a href="intel/braswell.md">Braswell</a></td>
+        </tr>
+    </tbody>
+</table>
 
-- [Hailo 15](hailo/hailo-15.md) — HummingBoard & Hailo 15 SOM
-
-{% endcolumn %}
-{% column %}
-
-### TI
-
-- [AM64x](ti/am64x.md) — HummingBoard-T
-
-### Intel
-
-- [Braswell (IB8000 / IB3710)](intel/braswell.md) — SolidPC
-
-{% endcolumn %}
-{% endcolumns %}
-
-## SolidSense Gateways
+<h2 align="center">SolidSense Gateways</h2>
 
 <table data-view="cards">
     <thead>
@@ -178,7 +199,7 @@ layout:
     </tbody>
 </table>
 
-## Additional Resources
+<h2 align="center">Additional Resources</h2>
 
 {% columns %}
 {% column %}
