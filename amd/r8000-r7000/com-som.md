@@ -22,7 +22,7 @@ Use this section for **COM Express Type 6** and **SoM (System-on-Module)** docum
 
 ### Related SoM pages
 
-* [Bedrock R7000 SoM](com-som/bedrock-r7000-som.md)
+* [<mark style="color:blue;">Bedrock R7000 SoM</mark>](com-som/bedrock-r7000-som.md)
 
 {% hint style="info" %}
 Looking for the full platform docs (Bedrock systems and HoneyComb mini-ITX)? Go to [<mark style="color:blue;">SBC / Platform</mark>](sbc-platform.md)<mark style="color:blue;">.</mark>
