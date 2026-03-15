@@ -26,7 +26,7 @@ layout:
 
 <h3 align="center">Bedrock PC</h3>
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td><strong>Bedrock RAI300</strong> - Ryzen AI 300</td><td><a href="amd/rai300/sbc-platform/bedrock-rai300-technical-documentation.md">bedrock-rai300-technical-documentation.md</a></td></tr><tr><td><strong>Bedrock R8000 | R7000</strong> - Ryzen 8000/7000</td><td><a href="amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation.md">bedrock-r8000-technical-documentation.md</a></td></tr><tr><td><strong>Bedrock V3000</strong> - Ryzen Embedded V3000</td><td><a href="amd/v3000/sbc-platform/bedrock-v3000-technical-documentation.md">bedrock-v3000-technical-documentation.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td><strong>Bedrock RAI300</strong> - Ryzen AI 300</td><td><a href="amd/rai300/sbc-platform/bedrock-rai300-technical-documentation.md">bedrock-rai300-technical-documentation.md</a></td></tr><tr><td><strong>Bedrock R8000 | R7000</strong> - Ryzen 8000 / 7000</td><td><a href="amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation.md">bedrock-r8000-technical-documentation.md</a></td></tr><tr><td><strong>Bedrock V3000</strong> - Ryzen Embedded V3000</td><td><a href="amd/v3000/sbc-platform/bedrock-v3000-technical-documentation.md">bedrock-v3000-technical-documentation.md</a></td></tr></tbody></table>
 
 [All Bedrock documentation, BIOS files, drivers, and configuration tools >](bedrock.md)&#x20;
 
