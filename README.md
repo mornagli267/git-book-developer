@@ -34,7 +34,7 @@ layout:
 
 <h3 align="center">NXP</h3>
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td><strong>i.MX8</strong> - Plus / Mini / Nano / DXL</td><td><a href="nxp/imx8.md">imx8.md</a></td></tr><tr><td><strong>i.MX6</strong> - CuBox-i, HummingBoard</td><td><a href="nxp/imx6.md">imx6.md</a></td></tr><tr><td><strong>LX2160A</strong> - HoneyComb / ClearFog CX</td><td><a href="nxp/lx2160a.md">lx2160a.md</a></td></tr><tr><td><strong>LX2162A</strong> - ClearFog LX2162A</td><td><a href="nxp/lx2162a.md">lx2162a.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td><strong>i.MX8</strong> - Plus / Mini / Nano / DXL</td><td><a href="nxp/imx8.md">imx8.md</a></td></tr><tr><td><strong>i.MX6</strong> - CuBox-i / HummingBoard</td><td><a href="nxp/imx6.md">imx6.md</a></td></tr><tr><td><strong>LX2160A</strong> - HoneyComb / ClearFog CX</td><td><a href="nxp/lx2160a.md">lx2160a.md</a></td></tr><tr><td><strong>LX2162A</strong> - ClearFog LX2162A</td><td><a href="nxp/lx2162a.md">lx2162a.md</a></td></tr></tbody></table>
 
 <h3 align="center">Marvell</h3>
 
