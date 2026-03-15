@@ -68,7 +68,8 @@ layout:
 {% column %}
 #### Quick Links
 
-* [SolidRun Website](https://www.solid-run.com/)
+* [<mark style="color:red;">SolidRun Website</mark>](https://www.solid-run.com/)
+* [<mark style="color:red;">SolidRun Shop</mark>](https://shop.solid-run.com/)
 * [Community Forums](https://community.solid-run.com/)
 * [Technical Support](https://www.solid-run.com/contact-us/#technical-support)
 * [GitHub Repositories](https://github.com/SolidRun)
