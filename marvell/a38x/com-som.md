@@ -9,7 +9,7 @@ description: >-
 
 Marvell ARMADA A38x (A388) computer-on-module and system-on-module documentation for SolidRun A388 SoM products.
 
-Use this section for the A388 SoM hardware user manual, carrier board integration details, connector information, power requirements, boot configuration, and interface documentation.
+Use this section for the A388 SoM hardware user manual, carrier board integration details, connector information, power requirements, boot configuration,  and interface documentation.
 
 ### Available documentation
 
