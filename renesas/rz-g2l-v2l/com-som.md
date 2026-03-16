@@ -29,5 +29,5 @@ It covers the **hardware user manual**, **boot options**, **power**, **interface
 
 ### Related documentation
 
-* [RZ/G2L & RZ/V2L overview](../rz-g2l-v2l.md)
-* [RZ/G2L & RZ/V2L SBC / Platform](sbc-platform.md)
+* [<mark style="color:blue;">RZ/G2L & RZ/V2L overview</mark>](../rz-g2l-v2l.md)
+* [<mark style="color:blue;">RZ/G2L & RZ/V2L SBC / Platform</mark>](sbc-platform.md)
