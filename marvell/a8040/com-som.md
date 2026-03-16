@@ -11,4 +11,4 @@ Marvell ARMADA A8040 COM and SoM documentation for SolidRun computer-on-module a
 
 Use this section for ARMADA A8040 hardware documentation, module integration guidance, carrier board design references, boot details, power requirements, and interface information.
 
-For ClearFog GT 8K and MACCHIATObin documentation, see [SBC / Platform](sbc-platform.md).
+For ClearFog GT 8K and MACCHIATObin documentation, see [<mark style="color:blue;">SBC / Platform</mark>](sbc-platform.md).
