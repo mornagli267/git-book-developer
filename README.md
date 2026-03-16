@@ -22,7 +22,7 @@ layout:
 
 # SolidRun Developer Center
 
-![Developer Center Banner](.gitbook/assets/developer-center-banner.png)
+<figure><img src=".gitbook/assets/developer_center_banner_1500x300.png" alt="SolidRun Developer Center"><figcaption></figcaption></figure>
 
 <h3 align="center">Bedrock PC</h3>
 
