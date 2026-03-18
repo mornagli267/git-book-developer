@@ -118,17 +118,17 @@ These resources cover **Linux installation**, **Windows drivers**, **Windows act
 
 **Windows**
 
-* [Installing Windows on R7000](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/software-bedrock-r8000/windows-bedrock-r8000-r7000/installing-windows-on-bedrock-r7000.md)
-* [Bedrock Windows Drivers](other-articles/bedrock-windows-drivers.md)
+* [<mark style="color:blue;">Installing Windows on R7000</mark>](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/software-bedrock-r8000/windows-bedrock-r8000-r7000/installing-windows-on-bedrock-r7000.md)
+* [<mark style="color:blue;">Bedrock Windows Drivers</mark>](other-articles/bedrock-windows-drivers.md)
 * [<mark style="color:blue;">Windows Activation</mark>](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/software-bedrock-r8000/windows-bedrock-r8000-r7000/windows-activation.md)
 
 **Other Operating Systems**
 
 * [<mark style="color:blue;">Installing FreeBSD</mark>](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-freebsd.md)
-* [Installing OPNsense](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-opnsense.md)
-* [Installing PFsense](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-pfsense.md)
-* [Installing ESXi on R7000](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/software-bedrock-r8000/other-operating-systems-bedrock-r8000-r7000/installing-esxi-on-bedrock-r7000.md)
-* [Installing XenServer 8](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-xenserver-8-using-console.md)
+* [<mark style="color:blue;">Installing OPNsense</mark>](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-opnsense.md)
+* [<mark style="color:blue;">Installing PFsense</mark>](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/other-operating-systems-bedrock-v3000/installing-pfsense.md)
+* [<mark style="color:blue;">Installing ESXi on R7000</mark>](amd/r8000-r7000/sbc-platform/bedrock-r8000-technical-documentation/software-bedrock-r8000/other-operating-systems-bedrock-r8000-r7000/installing-esxi-on-bedrock-r7000.md)
+* [<mark style="color:blue;">Installing XenServer 8</mark>](amd/v3000/sbc-platform/bedrock-v3000-technical-documentation/software-bedrock-v3000/linux-bedrock-v3000/installing-xenserver-8-using-console.md)
 {% endcolumn %}
 
 {% column %}
